@@ -629,7 +629,8 @@ select::-ms-expand {
   background-size: 100%;
   display: flex;
   align-items: center;
-  background-position: bottom; }
+  background-position: bottom;
+  background-repeat: no-repeat; }
 
 .text-half-apply {
   padding-left: 21%; }
@@ -766,11 +767,149 @@ select::-ms-expand {
     #banner #search-box .col-md-2 {
       margin-bottom: 20px; }
       #banner #search-box .col-md-2 select {
-        background-image: none; }
+        background-image: none;
+        border-radius: 7px; }
     #banner #search-box .year, #banner #search-box .body-type {
       display: none; }
 
-  .mobile-word {
-    display: block; } }
+  #banner #search-box .col-md-2 button {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 7px; }
+    #banner #search-box .col-md-2 button .mobile-word {
+      display: block;
+      margin-left: 5px; }
+
+  .advanced-text {
+    display: none; }
+
+  #special-offers-section {
+    background-color: #47494A; }
+
+  #special-offers.featured {
+    padding: 0 7px 20% 7px; }
+    #special-offers.featured .title-featured {
+      margin: 0;
+      padding: 10% 0;
+      color: #ffffff; }
+
+  .car-tile .car-title {
+    background-color: #ffffff; }
+
+  .apply, .apply-description {
+    background-size: 200%;
+    align-items: initial;
+    padding: 0 20px; }
+    .apply .button-half-apply, .apply .text-half-apply, .apply-description .button-half-apply, .apply-description .text-half-apply {
+      top: 0;
+      padding-left: 15px; }
+    .apply .title-apply, .apply-description .title-apply {
+      margin-top: 40px;
+      font-size: 5vw; }
+    .apply .text-p-apply, .apply-description .text-p-apply {
+      font-weight: 400;
+      font-size: 5vw; }
+    .apply .button-half-apply button, .apply-description .button-half-apply button {
+      width: 100%;
+      padding: 15px 50px;
+      font-size: 4.5vw; }
+
+  .apply {
+    min-height: 100vh; }
+
+  .apply-description {
+    padding: 2% 20px 15% 20px; }
+
+  .img-under-apply-section {
+    display: none; }
+
+  .under-apply-section {
+    padding: 8% 0; }
+    .under-apply-section .text-half-under-apply-section p {
+      font-size: 3.5vw; }
+
+  .pay-us-visit .col-md-4 p.text-under-hours {
+    font-size: 4vw; }
+  .pay-us-visit .title-pay-us-visit {
+    text-align: left; }
+  .pay-us-visit .text-img-pay-us-visit {
+    display: flex;
+    flex-direction: column; }
+    .pay-us-visit .text-img-pay-us-visit p {
+      order: 1;
+      font-size: 4.5vw; }
+      .pay-us-visit .text-img-pay-us-visit p br {
+        display: none; }
+  .pay-us-visit .col-md-4 {
+    margin-top: 15px; }
+    .pay-us-visit .col-md-4 h6 {
+      font-weight: 600;
+      font-size: 5.5vw; }
+  .pay-us-visit .card-body.card-body-opening-hours ul li .row .col-6:last-child {
+    text-align: right; }
+  .pay-us-visit .card-body.card-body-opening-hours ul li .row .col-6 {
+    font-size: 4.5vw;
+    font-weight: 600; } }
+@media (min-width: 450px) and (max-width: 768px) {
+  #banner #banner-image img {
+    height: auto; } }
+@media (min-width: 769px) and (max-width: 1000px) {
+  #banner #search-box .col-md-2 button, #banner #search-box .col-md-2 select {
+    height: 45px; }
+
+  #banner #search-box .col-md-2 button img {
+    left: -3px; }
+
+  #banner .top-img img {
+    width: auto; }
+
+  #banner .advanced-text {
+    margin-top: 15px; }
+
+  .apply, .apply-description {
+    min-height: 50vh; }
+    .apply .text-half-apply, .apply-description .text-half-apply {
+      padding-left: 0; }
+
+  .under-apply-section .container {
+    padding: 0; }
+  .under-apply-section .img-under-apply-section {
+    display: flex;
+    align-items: center; }
+    .under-apply-section .img-under-apply-section img {
+      width: 110%; }
+
+  .apply-description {
+    min-height: 35vh; }
+
+  .pay-us-visit .col-md-4 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  #banner .top-img {
+    margin-bottom: 15%; } }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #banner .top-img .title-top-img {
+    font-size: 1.3rem; }
+
+  .titles-logo.col-md-5 {
+    padding-right: 4%;
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%; }
+
+  .title-contact {
+    margin-right: 20px; }
+
+  .bottom-half-header .container ul li a .h6-title {
+    font-size: 0.7rem; }
+
+  #banner .advanced-text {
+    margin-top: 15px; }
+
+  .apply {
+    min-height: 73vh; } }
 
 /*# sourceMappingURL=style.css.map */
