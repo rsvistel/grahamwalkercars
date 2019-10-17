@@ -627,6 +627,7 @@ select::-ms-expand
   display: flex
   align-items: center
   background-position: bottom
+  background-repeat: no-repeat
 .text-half-apply
   padding-left: 21%
 .button-half-apply, .text-half-apply
@@ -766,8 +767,146 @@ select::-ms-expand
       margin-bottom: 20px
       select
         background-image: none
+        border-radius: 7px
     .year, .body-type
       display: none
-  .mobile-word
-    display: block
+  #banner #search-box .col-md-2 button
+    display: flex
+    justify-content: center
+    font-size: 18px
+    border-radius: 7px
+    .mobile-word
+      display: block
+      margin-left: 5px
+  .advanced-text
+    display: none
+  #special-offers-section
+    background-color: #47494A
+  #special-offers.featured
+    padding: 0 7px 20% 7px
+    .title-featured
+      margin: 0
+      padding: 10% 0
+      color: #ffffff
+  .car-tile .car-title
+    background-color: #ffffff
+  .apply, .apply-description
+    background-size: 200%
+    align-items: initial
+    padding: 0 20px
+    .button-half-apply, .text-half-apply
+      top: 0
+      padding-left: 15px
+    .title-apply
+      margin-top: 40px
+      font-size: 5vw
+    .text-p-apply
+      font-weight: 400
+      font-size: 5vw
+    .button-half-apply button
+      width: 100%
+      padding: 15px 50px
+      font-size: 4.5vw
+  .apply
+    min-height: 100vh
+
+  .apply-description
+    padding: 2% 20px 15% 20px
+
+  .img-under-apply-section
+    display: none
+
+  .under-apply-section
+    padding: 8% 0
+    .text-half-under-apply-section p
+      font-size: 3.5vw
+  .pay-us-visit
+    .col-md-4 p.text-under-hours
+      font-size: 4vw
+    .title-pay-us-visit
+      text-align: left
+    .text-img-pay-us-visit
+      display: flex
+      flex-direction: column
+      p
+        order: 1
+        font-size: 4.5vw
+        br
+          display: none
+    .col-md-4
+      margin-top: 15px
+      h6
+        font-weight: 600
+        font-size: 5.5vw
+    .card-body.card-body-opening-hours ul li .row .col-6:last-child
+      text-align: right
+    .card-body.card-body-opening-hours ul li .row .col-6
+      font-size: 4.5vw
+      font-weight: 600
+
+@media (min-width: 450px) and (max-width: 768px)
+  #banner #banner-image img
+    height: auto
+
+@media (min-width: 769px) and (max-width: 1000px)
+  #banner #search-box .col-md-2 button, #banner #search-box .col-md-2 select
+    height: 45px
+
+  #banner #search-box .col-md-2 button img
+    left: -3px
+
+  #banner .top-img img
+    width: auto
+
+  #banner .advanced-text
+    margin-top: 15px
+
+  .apply, .apply-description
+    min-height: 50vh
+    .text-half-apply
+      padding-left: 0
+  .under-apply-section
+    .container
+      padding: 0
+    .img-under-apply-section
+      display: flex
+      align-items: center
+      img
+        width: 110%
+
+  .apply-description
+    min-height: 35vh
+
+  .pay-us-visit .col-md-4
+    -ms-flex: 0 0 50%
+    flex: 0 0 50%
+    max-width: 50%
+
+  #banner .top-img
+    margin-bottom: 15%
+
+@media (min-width: 1000px) and (max-width: 1200px)
+  #banner .top-img .title-top-img
+    font-size: 1.3rem
+
+  .titles-logo.col-md-5
+    padding-right: 4%
+    -ms-flex: 0 0 33.3%
+    flex: 0 0 33.3%
+    max-width: 33.3%
+
+  .title-contact
+    margin-right: 20px
+
+  .bottom-half-header .container ul li a .h6-title
+    font-size: 0.7rem
+
+  #banner .advanced-text
+    margin-top: 15px
+
+  .apply
+    min-height: 73vh
+
+
+
 //Footer
