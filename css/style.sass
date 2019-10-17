@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap')
+$primary-font: 'Montserrat', sans-serif
+$secondary-font: 'Open Sans', sans-serif
+$dark-blue: #005EAA
+$light-blue: #00C4FC
+$dark-gray: #333333
+$light-gray: #777777
+$gray: #EAEDF0
+*
+  box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
+  margin: 0
+  padding: 0
+
+html, body
+  max-width: 100%
+  overflow-x: hidden
+  font-size: 16px
+
+body
+  padding: 0
+  margin: 0
+  min-height: 100vh
+  font-family: $primary-font
+
+object, embed
+  pointer-events: none
+
+a:hover
+  text-decoration: none
+
+select::-ms-expand
+  display: none
+.m-top-10
+  margin-top: 10px
+
+
+//Header
+.header.topnav
+  background: #333
+  color: #ffffff
+.upper-half-header
+  padding: 0.5% 0 1% 0
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+.title-logo
+  text-transform: uppercase
+  font-size: 1.625rem
+  //line-height: 2vw
+  letter-spacing: 1px
+  font-weight: 700
+  font-family: $secondary-font
+.titles-logo
+  padding-left: 0
+  padding-right: 11%
+  img
+    width: 100%
+.motors-title-logo
+  color: $dark-blue
+
+  .text-title-address
+    text-transform: uppercase
+    font-size: 1rem
+    font-weight: 400
+    margin-bottom: 0
+    font-family: $secondary-font
+    line-height: 1.1rem
+    margin-left: 2px
+.title-address img, .title-contact img
+  margin-right: 6px
+.title-address img
+  width: 7%
+.title-contact img
+  width: 16%
+.number-phone
+  h4
+    margin-bottom: 0
+.title-address, .title-contact
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  float: left
+  padding: 0
+  h4
+    font-family: $secondary-font
+    font-size: 1.1rem
+.stars-block
+  color: #FFA500
+  font-size: 21px
+.title-logo-bottom
+  margin: 0 1.5rem
+  font-family: $secondary-font
+  font-size: 1.188rem
+  font-weight: 600
+.number-phone
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  margin-left: 2px
+
+.upper-half-header
+  .col-md-2
+    -ms-flex: 0 0 12%
+    flex: 0 0 12%
+    max-width: 12%
+.sales-text
+  font-weight: 400
+  font-size: 0.95rem
+  font-family: $primary-font
+  text-transform: uppercase
+  line-height: 0.7rem
+.sales-number
+  font-family: $secondary-font
+  font-weight: 700
+.social-icon img
+  pointer-events: none
+  cursor: pointer
+  width: 40px
+  height: 40px
+.social-icon
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: flex-end
+  ul
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    list-style-type: none
+    li
+      margin-right: 17px
+      transition: 0.4s
+      &:last-child
+        margin-right: 0px
+    a
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+.social-icon.stars-block.col-md-1
+  justify-content: flex-start
+.bottom-half-header
+  background-color: #ebedf0
+  height: 35px
+  padding: 0 2.7%
+  .container
+    padding-left: 0
+    ul
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      list-style-type: none
+      margin-bottom: 0
+      li
+        padding: 0 1.4%
+        height: 35px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        transition: 0.5s
+        .fa-chevron-down
+          color: #000000
+        &:hover
+          background-color: $dark-blue
+          cursor: pointer
+          .h6-title, .fa-chevron-down
+            color: #ffffff
+        &.active
+          background-color: $dark-blue
+          .h6-title
+            color: #ffffff
+        a
+          text-decoration: none
+          color: #000000
+          &:hover
+            color: #ffffff
+          .h6-title
+            text-transform: uppercase
+            font-family: 'Montserrat', sans-serif
+            font-weight: 600
+            font-size: 0.8rem
+            color: #000000
+    .bottom-half-header__link-mobile
+      display: none
+.bottom-half-header .container ul li:hover .h6-title-dropdown
+  color: #000000
+
+.dropdown .dropbtn
+  font-size: 0.9rem
+
+.bottom-half-header .container ul li:first-child
+  margin-left: -7px
+.mobile-open
+  display: none
+.mobile-section-under-header
+  display: none
+.navbar
+  overflow: hidden
+  background-color: #333
+.navbar a
+  float: left
+  font-size: 16px
+  color: white
+  text-align: center
+  padding: 14px 16px
+  text-decoration: none
+.flex-dropdown
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+.flex-dropdown h6
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  margin-right: 5px
+.dropdown
+  float: left
+  overflow: initial
+.dropdown .dropbtn
+  font-size: 16px
+  border: none
+  outline: none
+  color: white
+  background-color: inherit
+  font-family: inherit
+  margin: 0
+.dropdown-content
+  display: none
+  position: absolute
+  background-color: #ebedf0
+  min-width: 160px
+  z-index: 1000
+  border: 1px solid $dark-blue
+  margin-left: -14.5px
+  margin-top: 10px
+.dropdown-content a
+  float: none
+  color: black
+  padding: 14px 16px
+  text-decoration: none
+  display: block
+  text-align: left
+.dropdown-content a:hover
+  background-color: #ddd
+.bottom-half-header .container ul li
+  .dropdown-content h6
+    color: #000000
+  &:hover .dropdown-content
+    display: block
+//Header
+
+
+//Banner
+#banner
+  order: 1
+  position: relative
+  text-align: center
+  .top-img
+    position: absolute
+    bottom: 0
+    margin-bottom: 14.35%
+    width: 100%
+    height: 5.7%
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 35%
+      position: absolute
+    .title-top-img
+      color: white
+      text-transform: uppercase
+      z-index: 1
+  #banner-image
+    text-align: center
+    img
+      width: 100%
+  .advanced-text
+    color: white
+    font-family: Arial, sans-serif
+    text-align: right
+    margin-top: 30px
+    position: absolute
+    width: 100%
+    text-decoration: underline
+    padding: 0 15px
+  #search-box
+    width: 100%
+    height: 40%
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    margin: 0 auto
+    background: rgba(34, 34, 34, 0.85)
+    display: flex
+    align-items: center
+    .container
+      position: relative
+    h3
+      color: #fff
+      text-align: left
+      margin: 13px 0 7px 0
+      font-size: 1.5rem
+      font-family: $primary-font
+      img
+        height: 20px
+    .col-md-2
+      text-align: center
+      padding: 0 1px
+      select
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        background-image: url(../img/home/arrow-down.png)
+        background-position: center right 10px
+        background-size: 8%
+        background-repeat: no-repeat
+        background-color: white
+        border-radius: 0
+        padding-left: 20px
+        font-family: Arial, sans-serif
+      button
+        background: #D10609
+        border: none
+        border-radius: 0
+        color: white
+        font-family: Arial, sans-serif
+        text-transform: uppercase
+        img
+          width: 25px
+          position: relative
+          top: -1px
+          left: -15px
+      button, select
+        width: 100%
+        height: 55px
+        border: 0
+        .mobile-word
+          display: none
+
+
+@media only screen and (max-width: 768px)
+  #banner
+    #banner-image
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      img
+        height: 200px
+        width: auto
+    #search-box
+      position: static
+      background: rgba(0,0,0,1)
+      padding: 2% 5% 2%
+      .container
+        padding: 0
+        h3
+          font-weight: 400
+          font-size: 22px
+          margin-bottom: 13px
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          -webkit-box-align: center
+          -ms-flex-align: center
+          align-items: center
+          img
+            margin-right: 9px
+        form
+          padding: 0 7px
+        .col-md-3
+          margin-bottom: 16px
+          select
+            font-size: 12.5px
+            height: 43px
+          button
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-pack: center
+            -ms-flex-pack: center
+            justify-content: center
+            text-transform: uppercase
+            font-weight: 600
+            .mobile-word
+              display: block
+              margin-left: 5px
+            img
+              display: none
+//Banner&Search
+
+
+//Featured
+.featured
+  .title-featured
+    font-family: $primary-font
+    text-transform: uppercase
+    text-align: center
+    width: 100%
+    font-weight: 300
+    font-size: 1.5rem
+    margin: 3% 0 2% 0
+
+//Special Offers
+#special-offers
+  order: 3
+  margin-bottom: 2%
+  .title-special-offer
+    font-size: 1.6rem
+    text-align: center
+    margin: 1.5% 0
+  .owl-carousel
+    padding: 0 3%
+    .owl-nav.disabled
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      justify-content: space-between
+      pointer-events: none
+      button
+        pointer-events: auto
+        img
+          pointer-events: none
+          width: 65px
+          height: 65px
+
+#special-offers .owl-carousel .owl-stage-outer
+  width: 102%
+
+//Special Offers
+//Car Tile
+.owl-carousel
+  display: block
+.fas.fa-star
+  color: #FFC207
+#special-offers .owl-carousel .owl-stage-outer
+  width: 102%
+.car-tile
+  border-radius: 7px
+  padding: 0
+  a, a:hover
+    color: black
+    text-decoration: initial
+  .car-title
+    padding: 8px 3px
+    margin-top: 1px
+    border: 1px solid #808080
+    border-bottom-right-radius: 7px
+    border-bottom-left-radius: 7px
+    .titles-car-card
+      padding: 0 7px
+    h2, p
+      font-size: 16px
+    h2
+      font-weight: 700
+      text-align: start
+    p
+      font-family: $secondary-font
+      line-height: 21px
+      font-weight: 400
+  .car-image
+    position: relative
+    img
+      width: 100%
+    .car-like, .car-image-counter
+      position: absolute
+      bottom: 0
+      left: 0
+    .car-like
+      text-align: right
+      right: 0
+      z-index: 101
+      cursor: pointer
+      width: auto
+      display: flex
+      justify-content: flex-end
+      top: 0
+      margin: 0 auto
+      img
+        width: auto
+        max-height: 30px
+        margin: 2px
+    .car-image-counter
+      color: #fff
+      padding: 7px 12px
+    .car-image-counter-home
+      display: flex
+      align-items: center
+      img
+        margin-right: 4px
+        width: 24px
+        height: 16.84px
+  .car-price
+    font-size: 22px
+    .row
+      margin: 0
+    .col-6
+      background: #ECEBE9
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+      padding: 4% 0
+      &:first-child
+        border-right: 1px solid #fff
+        font-weight: 600
+        font-family: Arial Rounded MT, sans-serif
+        border-top-left-radius: 7px
+      &:last-child
+        border-left: 1px solid #fff
+        color: $light-blue
+        font-weight: 600
+        font-family: Arial Rounded MT, sans-serif
+        line-height: 15px
+        border-top-right-radius: 7px
+        p
+          font-size: 9px
+          font-weight: 400
+          font-family: Arial, sans-serif
+  .car-desc
+    padding: 6% 0
+    .row
+      margin: 0
+    .col-6
+      margin: 3% 0
+      padding: 0 8%
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      img
+        width: 21%
+        max-height: 18px
+      h6
+        margin-left: 8px
+        font-size: 11px
+        font-family: Arial, sans-serif
+        color: $light-gray
+        text-transform: capitalize
+@media only screen and (max-width: 768px)
+  .owl-nav
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    pointer-events: none
+    button
+      pointer-events: auto
+      img
+        pointer-events: none
+
+  #special-offers
+    padding: 0 7px
+    .owl-carousel .owl-stage-outer
+      height: auto
+    .title-special-offer
+      font-weight: 500
+      text-align: start
+      font-size: 23px
+      margin: 5% 15px
+
+//Car Tile
+//Featured
+
+
+//APPLY
+.apply
+  background-image: url("../img/home/ban.png")
+  min-height: 86vh
+  background-size: 100%
+  display: flex
+  align-items: center
+  background-position: bottom
+.text-half-apply
+  padding-left: 21%
+.button-half-apply, .text-half-apply
+  top: -40px
+.button-half-apply button
+  background: #D10609
+  padding: 15px 75px
+  text-transform: uppercase
+  color: white
+  border: 0
+  border-radius: 7px
+.button-half-apply
+  padding-top: 11%
+
+
+.title-apply
+  font-weight: 800
+  font-family: $primary-font
+  margin-bottom: 40px
+  font-size: 17px
+
+.text-p-apply
+  font-weight: 700
+  font-family: $primary-font
+  font-size: 18px
+  padding-right: 5%
+
+.apply-description
+  background-color: #3C3C40
+  min-height: 50vh
+  display: flex
+  align-items: center
+  padding-top: 5%
+  .text-half-apply-description
+    color: white
+
+.under-apply-section
+  padding: 3% 0
+  .text-half-under-apply-section
+    display: flex
+    flex-direction: column
+    justify-content: center
+    p
+      margin-bottom: 20px
+      font-size: 14px
+      font-family: $secondary-font
+  .img-under-apply-section img
+    width: 100%
+//Apply
+
+//pay-us-visit
+.pay-us-visit
+  background-color: #515151
+  color: #ffffff
+  padding: 2% 0 5% 0
+  .container-section
+    display: flex
+    justify-content: space-around
+  .title-pay-us-visit
+    font-size: 18px
+    text-transform: uppercase
+    font-family: Arial, sans-serif
+    text-align: center
+  .col-md-4
+    margin-top: 35px
+    p, h6
+      text-align: center
+      padding-right: 15px
+    img
+      width: 100%
+    p
+      font-family: $secondary-font
+      margin-bottom: 15px
+      font-weight: 300
+      font-size: 17px
+    h6
+      font-family: Arial, sans-serif
+      text-transform: uppercase
+      font-size: 18px
+    p.text-under-hours
+      font-size: 16px
+      font-weight: 300
+      font-family: Arial, sans-serif
+  .card-body
+    padding: 1.25rem 0
+    ul
+      list-style: none
+      font-family: $primary-font
+      color: #ffffff
+      li
+        font-size: 18px
+        margin-bottom: 10px
+        .col-6
+          font-family: Arial, sans-serif
+          text-transform: uppercase
+          font-size: 17px
+//pay-us-visit
+
+
+//Footer
+.footer
+  background-color: #333
+  color: #ffffff
+  padding: 5% 0
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .established
+      font-family: "Times New Roman", sans-serif
+      margin-top: 7px
+    .title-number, .title-address
+      font-family: $secondary-font
+    .title-number
+      margin-top: 20px
+    .title-address
+      margin: 15px 0
+      text-align: center
+
+@media (max-width: 768px)
+  #banner .top-img
+    bottom: initial
+    margin-bottom: 0
+    margin-top: -8.5vw
+    .title-top-img
+      font-size: 5vw
+    img
+      width: 92%
+    .advanced-text
+      display: none
+
+  #banner #search-box
+    background-color: #222
+    padding: 7% 5% 9% 5%
+    .col-md-2
+      margin-bottom: 20px
+      select
+        background-image: none
+    .year, .body-type
+      display: none
+  .mobile-word
+    display: block
+//Footer
