@@ -305,9 +305,16 @@ select::-ms-expand {
     margin-bottom: 14.35%;
     width: 100%;
     height: 5.7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    justify-content: center; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center; }
     #banner .top-img img {
       width: 35%;
       position: absolute; }
@@ -625,8 +632,8 @@ select::-ms-expand {
       margin: 5% 15px; } }
 .apply {
   background-image: url("../img/home/ban.png");
-  min-height: 86vh;
-  background-size: 100%;
+  min-height: 700px;
+  background-size: 100% 100%;
   display: flex;
   align-items: center;
   background-position: bottom;
@@ -663,7 +670,7 @@ select::-ms-expand {
 
 .apply-description {
   background-color: #3C3C40;
-  min-height: 50vh;
+  min-height: 300px;
   display: flex;
   align-items: center;
   padding-top: 5%; }
@@ -695,23 +702,23 @@ select::-ms-expand {
     text-transform: uppercase;
     font-family: Arial, sans-serif;
     text-align: center; }
-  .pay-us-visit .col-md-4 {
+  .pay-us-visit .col-lg-6 {
     margin-top: 35px; }
-    .pay-us-visit .col-md-4 p, .pay-us-visit .col-md-4 h6 {
+    .pay-us-visit .col-lg-6 p, .pay-us-visit .col-lg-6 h6 {
       text-align: center;
       padding-right: 15px; }
-    .pay-us-visit .col-md-4 img {
+    .pay-us-visit .col-lg-6 img {
       width: 100%; }
-    .pay-us-visit .col-md-4 p {
+    .pay-us-visit .col-lg-6 p {
       font-family: "Open Sans", sans-serif;
       margin-bottom: 15px;
       font-weight: 300;
       font-size: 17px; }
-    .pay-us-visit .col-md-4 h6 {
+    .pay-us-visit .col-lg-6 h6 {
       font-family: Arial, sans-serif;
       text-transform: uppercase;
       font-size: 18px; }
-    .pay-us-visit .col-md-4 p.text-under-hours {
+    .pay-us-visit .col-lg-6 p.text-under-hours {
       font-size: 16px;
       font-weight: 300;
       font-family: Arial, sans-serif; }
@@ -816,7 +823,7 @@ select::-ms-expand {
       font-size: 4.5vw; }
 
   .apply {
-    min-height: 100vh; }
+    min-height: 60vh; }
 
   .apply-description {
     padding: 2% 20px 15% 20px; }
@@ -829,7 +836,7 @@ select::-ms-expand {
     .under-apply-section .text-half-under-apply-section p {
       font-size: 3.5vw; }
 
-  .pay-us-visit .col-md-4 p.text-under-hours {
+  .pay-us-visit .col-lg-6 p.text-under-hours {
     font-size: 4vw; }
   .pay-us-visit .title-pay-us-visit {
     text-align: left; }
@@ -841,9 +848,9 @@ select::-ms-expand {
       font-size: 4.5vw; }
       .pay-us-visit .text-img-pay-us-visit p br {
         display: none; }
-  .pay-us-visit .col-md-4 {
+  .pay-us-visit .col-lg-6 {
     margin-top: 15px; }
-    .pay-us-visit .col-md-4 h6 {
+    .pay-us-visit .col-lg-6 h6 {
       font-weight: 600;
       font-size: 5.5vw; }
   .pay-us-visit .card-body.card-body-opening-hours ul li .row .col-6:last-child {
@@ -867,10 +874,8 @@ select::-ms-expand {
   #banner .advanced-text {
     margin-top: 15px; }
 
-  .apply, .apply-description {
-    min-height: 50vh; }
-    .apply .text-half-apply, .apply-description .text-half-apply {
-      padding-left: 0; }
+  .apply .text-half-apply, .apply-description .text-half-apply {
+    padding-left: 0; }
 
   .under-apply-section .container {
     padding: 0; }
@@ -880,10 +885,7 @@ select::-ms-expand {
     .under-apply-section .img-under-apply-section img {
       width: 110%; }
 
-  .apply-description {
-    min-height: 35vh; }
-
-  .pay-us-visit .col-md-4 {
+  .pay-us-visit .col-lg-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; }
@@ -907,9 +909,9 @@ select::-ms-expand {
     font-size: 0.7rem; }
 
   #banner .advanced-text {
-    margin-top: 15px; }
-
+    margin-top: 15px; } }
+@media (min-width: 320px) and (max-width: 600px) {
   .apply {
-    min-height: 73vh; } }
+    min-height: 100vh; } }
 
 /*# sourceMappingURL=style.css.map */
