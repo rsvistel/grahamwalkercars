@@ -59,7 +59,7 @@ select::-ms-expand
   font-family: $secondary-font
 .titles-logo
   padding-left: 0
-  padding-right: 11%
+  //padding-right: 11%
   img
     width: 100%
 .motors-title-logo
@@ -76,9 +76,9 @@ select::-ms-expand
 .title-address img, .title-contact img
   margin-right: 6px
 .title-address img
-  width: 7%
+  //width: 7%
 .title-contact img
-  width: 16%
+  //width: 16%
 .number-phone
   h4
     margin-bottom: 0
@@ -129,8 +129,8 @@ select::-ms-expand
 .social-icon img
   pointer-events: none
   cursor: pointer
-  width: 40px
-  height: 40px
+  // width: 40px
+  // height: 40px
 .social-icon
   display: -webkit-box
   display: -ms-flexbox
@@ -161,122 +161,228 @@ select::-ms-expand
       display: flex
 .social-icon.stars-block.col-md-1
   justify-content: flex-start
+// .bottom-half-header
+//   background-color: #ebedf0
+//   height: 35px
+//   padding: 0 2.7%
+//   .container
+//     padding-left: 0
+//     ul
+//       display: -webkit-box
+//       display: -ms-flexbox
+//       display: flex
+//       -webkit-box-align: center
+//       -ms-flex-align: center
+//       align-items: center
+//       list-style-type: none
+//       margin-bottom: 0
+//       li
+//         padding: 0 1.4%
+//         height: 35px
+//         display: -webkit-box
+//         display: -ms-flexbox
+//         display: flex
+//         -webkit-box-align: center
+//         -ms-flex-align: center
+//         align-items: center
+//         transition: 0.5s
+//         .fa-chevron-down
+        //   color: #000000
+        // &:hover
+        //   background-color: $dark-blue
+        //   cursor: pointer
+        //   .h6-title, .fa-chevron-down
+        //     color: #ffffff
+        // &.active
+        //   background-color: $dark-blue
+        //   .h6-title
+        //     color: #ffffff
+        // a
+        //   text-decoration: none
+        //   color: #000000
+        //   &:hover
+        //     color: #ffffff
+        //   .h6-title
+        //     text-transform: uppercase
+        //     font-family: 'Montserrat', sans-serif
+        //     font-weight: 600
+        //     font-size: 0.8rem
+        //     color: #000000
+//     .bottom-half-header__link-mobile
+//       display: none
+// .bottom-half-header .container ul li:hover .h6-title-dropdown
+//   color: #000000
+
+// .dropdown .dropbtn
+//   font-size: 0.9rem
+
+// .bottom-half-header .container ul li:first-child
+//   margin-left: -7px
+// .mobile-open
+//   display: none
+// .mobile-section-under-header
+//   display: none
+// .navbar
+//   overflow: hidden
+//   background-color: #333
+// .navbar a
+//   float: left
+//   font-size: 16px
+//   color: white
+//   text-align: center
+//   padding: 14px 16px
+//   text-decoration: none
+// .flex-dropdown
+//   display: -webkit-box
+//   display: -ms-flexbox
+//   display: flex
+// .flex-dropdown h6
+//   display: -webkit-box
+//   display: -ms-flexbox
+//   display: flex
+//   margin-right: 5px
+// .dropdown
+//   float: left
+//   overflow: initial
+// .dropdown .dropbtn
+//   font-size: 16px
+//   border: none
+//   outline: none
+//   color: white
+//   background-color: inherit
+//   font-family: inherit
+//   margin: 0
+// .dropdown-content
+//   display: none
+//   position: absolute
+//   background-color: #ebedf0
+//   min-width: 160px
+//   z-index: 1000
+//   border: 1px solid $dark-blue
+//   margin-left: -14.5px
+//   margin-top: 10px
+// .dropdown-content a
+//   float: none
+//   color: black
+//   padding: 14px 16px
+//   text-decoration: none
+//   display: block
+//   text-align: left
+// .dropdown-content a:hover
+//   background-color: #ddd
+// .bottom-half-header .container ul li
+//   .dropdown-content h6
+//     color: #000000
+//   &:hover .dropdown-content
+//     display: block
+
+@media (max-width: 991px)
+  .upper-half-header
+    .sales-number
+      white-space: nowrap
+
 .bottom-half-header
   background-color: #ebedf0
-  height: 35px
-  padding: 0 2.7%
-  .container
-    padding-left: 0
-    ul
+.navbar
+  padding: 0
+  ul
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    list-style-type: none
+    margin-bottom: 0
+    li
       display: -webkit-box
       display: -ms-flexbox
       display: flex
       -webkit-box-align: center
       -ms-flex-align: center
       align-items: center
-      list-style-type: none
-      margin-bottom: 0
-      li
-        padding: 0 1.4%
-        height: 35px
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
-        -webkit-box-align: center
-        -ms-flex-align: center
-        align-items: center
-        transition: 0.5s
-        .fa-chevron-down
+      transition: 0.5s
+      .fa-chevron-down
           color: #000000
+      &:hover
+        background-color: $dark-blue
+        cursor: pointer
+        .h6-title, .fa-chevron-down
+          color: #ffffff
+      &.active
+        background-color: $dark-blue
+        .h6-title
+          color: #ffffff
+      a
+        text-decoration: none
+        color: #000000
         &:hover
-          background-color: $dark-blue
-          cursor: pointer
-          .h6-title, .fa-chevron-down
-            color: #ffffff
-        &.active
-          background-color: $dark-blue
-          .h6-title
-            color: #ffffff
-        a
-          text-decoration: none
-          color: #000000
-          &:hover
-            color: #ffffff
-          .h6-title
-            text-transform: uppercase
-            font-family: 'Montserrat', sans-serif
-            font-weight: 600
-            font-size: 0.8rem
-            color: #000000
-    .bottom-half-header__link-mobile
-      display: none
-.bottom-half-header .container ul li:hover .h6-title-dropdown
-  color: #000000
+          color: #ffffff
+      .nav-link
+        text-transform: uppercase
+        font-family: 'Montserrat', sans-serif
+        font-weight: 600
+        font-size: 13px
+        color: #000000
+        text-align: center
+        display: inline-block
 
-.dropdown .dropbtn
-  font-size: 0.9rem
+@media (min-width: 768px) and (max-width: 991px)
+  .navbar
+    ul
+      li
+        .nav-link
+          font-size: 10px
 
-.bottom-half-header .container ul li:first-child
-  margin-left: -7px
-.mobile-open
-  display: none
-.mobile-section-under-header
-  display: none
-.navbar
-  overflow: hidden
-  background-color: #333
-.navbar a
-  float: left
-  font-size: 16px
-  color: white
-  text-align: center
-  padding: 14px 16px
-  text-decoration: none
-.flex-dropdown
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-.flex-dropdown h6
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  margin-right: 5px
-.dropdown
-  float: left
-  overflow: initial
-.dropdown .dropbtn
-  font-size: 16px
-  border: none
-  outline: none
-  color: white
-  background-color: inherit
-  font-family: inherit
-  margin: 0
-.dropdown-content
-  display: none
-  position: absolute
-  background-color: #ebedf0
-  min-width: 160px
-  z-index: 1000
-  border: 1px solid $dark-blue
-  margin-left: -14.5px
-  margin-top: 10px
-.dropdown-content a
-  float: none
-  color: black
-  padding: 14px 16px
-  text-decoration: none
-  display: block
-  text-align: left
-.dropdown-content a:hover
-  background-color: #ddd
-.bottom-half-header .container ul li
-  .dropdown-content h6
-    color: #000000
-  &:hover .dropdown-content
-    display: block
+@media (min-width: 768px)
+  .mobile-block
+    display: none
+
+@media (max-width: 767px)
+  body
+    margin-top: 28px
+  .upper-half-header
+    display: none
+  .mobile-block
+    display: flex
+  .mobile-block-items
+  .navbar
+    background-color: #ebedf0
+    position: fixed
+    padding: 0
+    z-index: 1030
+    right: 0
+    left: 0
+    border-radius: 0
+    top: 0
+    border-width: 0 0 1px
+  .mobile-block-items
+    .navbar-toggler
+      padding: 0.3rem
+      outline: none
+    .far,.fas
+      display: block
+      color: #ffffff
+    .fas.fa-star
+      color: #ffffff
+      font-size: 1.25rem
+    span
+      color: #ffffff
+      font-size: 9px
+      text-transform: uppercase
+  .mobile-menu
+    background: #014563
+  .mobile-search
+    background: #D20709
+  .mobile-reserve, .mobile-favourite, .mobile-phone
+    background: #323232
+
+@media (min-width: 768px)
+  .navbar-expand-md .navbar-nav .nav-link
+    padding-right: 0.5vw
+    padding-left: 0.5vw
+
 //Header
-
 
 //Banner
 #banner
@@ -477,6 +583,7 @@ select::-ms-expand
   display: block
 .fas.fa-star
   color: #FFC207
+  font-size: 2vw
 #special-offers .owl-carousel .owl-stage-outer
   width: 102%
 .car-tile
