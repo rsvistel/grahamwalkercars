@@ -53,7 +53,8 @@ select::-ms-expand {
   font-family: "Open Sans", sans-serif; }
 
 .titles-logo {
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 5%; }
   .titles-logo img {
     width: 100%; }
 
@@ -89,7 +90,7 @@ select::-ms-expand {
 
 .stars-block {
   color: #FFA500;
-  font-size: 21px; }
+  font-size: 1rem; }
 
 .title-logo-bottom {
   margin: 0 1.5rem;
@@ -161,7 +162,9 @@ select::-ms-expand {
 
 @media (max-width: 991px) {
   .upper-half-header .sales-number {
-    white-space: nowrap; } }
+    white-space: nowrap; }
+  .upper-half-header .text-title-address {
+    font-size: 15px; } }
 .bottom-half-header {
   background-color: #ebedf0; }
 
@@ -450,8 +453,7 @@ select::-ms-expand {
   display: block; }
 
 .fas.fa-star {
-  color: #FFC207;
-  font-size: 2vw; }
+  color: #FFC207; }
 
 #special-offers .owl-carousel .owl-stage-outer {
   width: 102%; }
