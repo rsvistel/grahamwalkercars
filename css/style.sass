@@ -841,25 +841,6 @@ select::-ms-expand
 //pay-us-visit
 
 
-//Shortlist
-.shortlist
-  background-color: #47494A
-  .car-tile .car-title
-    background-color: #ffffff
-  .featured .title-featured, h6
-    color: white
-    font-family: $primary-font
-    font-weight: 400
-  h6
-    margin-bottom: 5%
-    padding: 0 23%
-
-@media (max-width: 768px)
-  .shortlist h6
-    padding: 0 3%
-    line-height: 25px
-
-//Shortlist
 
 //Footer
 .footer
@@ -1045,6 +1026,29 @@ select::-ms-expand
   .apply
       min-height: 100vh
 
-
-
 //Footer
+
+
+//Shortlist
+.shortlist
+  background-color: #47494A
+  .car-tile .car-title
+    background-color: #ffffff
+  .featured .title-featured, h6
+    color: white
+    font-family: $primary-font
+    font-weight: 400
+  h6
+    margin-bottom: 5%
+    padding: 0 23%
+
+@media (max-width: 768px)
+  .shortlist h6
+    display: none
+  .shortlist, #special-offers-section
+    background-color: white
+    .featured .title-featured, h6
+      color: #000000
+
+
+//Shortlist
