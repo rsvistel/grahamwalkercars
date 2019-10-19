@@ -706,6 +706,22 @@ select::-ms-expand {
           text-transform: uppercase;
           font-size: 17px; }
 
+.shortlist {
+  background-color: #47494A; }
+  .shortlist .car-tile .car-title {
+    background-color: #ffffff; }
+  .shortlist .featured .title-featured, .shortlist h6 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; }
+  .shortlist h6 {
+    margin-bottom: 5%;
+    padding: 0 23%; }
+
+@media (max-width: 768px) {
+  .shortlist h6 {
+    padding: 0 3%;
+    line-height: 25px; } }
 .footer {
   background-color: #333;
   color: #ffffff;
