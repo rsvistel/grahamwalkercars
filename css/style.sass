@@ -545,7 +545,7 @@ select::-ms-expand
     text-align: center
     width: 100%
     font-weight: 300
-    font-size: 1.5rem
+    font-size: 1.9rem
     margin: 3% 0 2% 0
 
 //Special Offers
@@ -1052,3 +1052,85 @@ select::-ms-expand
 
 
 //Shortlist
+
+
+//About
+.about
+  .about-title
+    font-family: $primary-font
+    text-transform: uppercase
+    background-color: #47494A
+    color: white
+    padding: 4%
+    font-size: 1.9rem
+    text-align: center
+    font-weight: 400
+  .about-section
+    background-image: url("../img/about/banner.png")
+    background-repeat: no-repeat
+    padding: 7% 0 13% 0
+    background-position: center
+    background-size: cover
+    p
+      font-family: Arial, sans-serif
+      color: white
+      font-weight: 300
+      margin-bottom: 20px
+      padding-right: 15px
+    .name
+      margin-top: 50px
+  .mobile-title
+    display: none
+    background-color: initial
+    font-weight: 600
+    font-size: 5.5vw
+    font-family: $primary-font
+    text-transform: uppercase
+    color: white
+    padding: 10%
+    text-align: center
+  .img-about-section img
+    width: 100%
+.mobile-header-img
+  display: none
+  background-color: #47494A
+
+@media (max-width: 768px)
+  .about
+    margin-top: 51px
+    .about-title
+      display: none
+    .mobile-title
+      display: block
+      padding: 3% 0 7% 0
+    .about-section
+      background-image: url("../img/about/cars-dark.png")
+      padding: 7% 0 30% 0
+      p
+        padding: 8px
+        font-size: 4.5vw
+        margin-bottom: 10px
+      .name
+        margin-top: 25px
+        margin-left: 7px
+  .img-about-section
+    display: none
+  .mobile-header-img
+    display: block
+    background-color: #1f1f1f
+    padding: 15px
+    img
+      width: 95%
+      text-align: center
+@media (min-width: 769px) and (max-width: 1000px)
+  .about .about-section .container .row
+    display: flex
+    flex-direction: column
+    align-items: center
+    .col-md-6
+      -ms-flex: 0 0 75%
+      flex: 0 0 75%
+      max-width: 75%
+    .img-about-section
+      margin-top: 50px
+//About
