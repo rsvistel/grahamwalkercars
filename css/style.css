@@ -225,11 +225,15 @@ select::-ms-expand {
   right: 0 !important;
   left: 30% !important; }
 
+.left-search {
+  right: 30% !important;
+  left: 0 !important; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar ul li .nav-link {
     font-size: 10px; } }
 @media (min-width: 768px) {
-  .mobile-block, .mobile-section-under-header {
+  .mobile-block, .mobile-section-under-header, .accordion__wrapper {
     display: none; }
 
   .mobile-close-btn {
@@ -316,14 +320,22 @@ select::-ms-expand {
     border-right: 1px solid #ffff;
     border-bottom: 1px solid #ffff; }
 
-  .navbar-collapse {
+  .menubar {
     background-color: #333333;
     position: fixed;
     top: 0;
-    transition: all 0.8s ease-out;
+    transition: all 0.3s ease-out;
     height: 100%;
     width: 100%;
-    left: 100%;
+    left: 100%; }
+
+  .menu-search {
+    background-color: #F7F7F9;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease-out;
+    height: 100%;
+    width: 70%;
     overflow-y: scroll; }
 
   .navbar-nav .nav-item .nav-link {
@@ -339,7 +351,8 @@ select::-ms-expand {
   .mobile-close-btn {
     background: #014563;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 3vw 3vw 3vw 5vw !important; }
     .mobile-close-btn span {
       text-transform: uppercase;
       color: #ffffff;
@@ -353,7 +366,13 @@ select::-ms-expand {
     padding: 20vw 2vw 5vw 2vw; }
 
   .active-menu {
-    position: fixed; } }
+    position: fixed; }
+
+  .accordion__title {
+    background-image: url("../img/home/arrow-down.png");
+    background-position: center right 10px;
+    background-size: 13%;
+    background-repeat: no-repeat; } }
 @media (orientation: landscape) {
   .mobile-section-under-header {
     padding: 11vw 2vw 2vw 2vw;

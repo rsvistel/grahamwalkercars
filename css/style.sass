@@ -337,6 +337,10 @@ select::-ms-expand
   right: 0 !important
   left: 30% !important
 
+.left-search
+  right: 30% !important
+  left: 0 !important
+
 // .overlay
 //   display: none
 //   position: fixed
@@ -355,7 +359,7 @@ select::-ms-expand
           font-size: 10px
 
 @media (min-width: 768px)
-  .mobile-block, .mobile-section-under-header
+  .mobile-block, .mobile-section-under-header, .accordion__wrapper
     display: none
   .mobile-close-btn
     display: none
@@ -434,14 +438,21 @@ select::-ms-expand
     width: 22%
     border-right: 1px solid #ffff
     border-bottom: 1px solid #ffff
-  .navbar-collapse
+  .menubar
     background-color: #333333
     position: fixed
     top: 0
-    transition: all 0.8s ease-out
+    transition: all 0.3s ease-out
     height: 100%
     width: 100%
     left: 100%
+  .menu-search
+    background-color: #F7F7F9
+    position: fixed
+    top: 0
+    transition: all 0.3s ease-out
+    height: 100%
+    width: 70%
     overflow-y: scroll
   .navbar-nav
     .nav-item
@@ -460,6 +471,7 @@ select::-ms-expand
     background: #014563
     display: flex
     justify-content: space-between
+    padding: 3vw 3vw 3vw 5vw !important
     span
       text-transform: uppercase
       color: #ffffff
@@ -473,6 +485,149 @@ select::-ms-expand
     padding: 20vw 2vw 5vw 2vw
   .active-menu
     position: fixed
+
+  .accordion__title
+    background-image: url('../img/home/arrow-down.png')
+    background-position: center right 10px
+    background-size: 13%
+    background-repeat: no-repeat
+
+    
+//   .block-search-results #accordion.cards-serch-results .card .card-body
+//     .switcher
+//       font-size: 13px
+//   #price-from-select, #price-to-model
+//       width: 70%
+
+// .block-used-cars
+//   margin-top: 23px
+//   .search-results-container
+//     .car-tile
+//         margin-bottom: 2%
+//         max-width: 32%
+//         &:nth-child(3n + 2)
+//           margin: 0 2% 2% 2%
+//     .title-block-used-cars
+//       font-weight: 700
+//     .filter-navigation-menu
+//       margin-bottom: 2%
+//       .pagination, .filters
+//         .more-pages
+//           display: none
+//         .col-md-6
+//           padding: 0
+//           &:last-child
+//             text-align: right
+//             ul
+//               li
+//                 display: inline-block
+//                 padding: 0
+//                 margin: 0
+//                 font-family: "Open Sans", sans-serif
+//       .filters
+//         padding: 1% 0
+//         border: 1px solid #C0C0C0
+//         .col-md-6
+//           padding: 0 15px
+//           ul
+//             li
+//               margin-left: 4%
+//       .pagination
+//         align-items: center
+//         margin: 1% 0
+//         .col-md-6
+//           &:last-child
+//               height: 26px
+//               display: -webkit-box
+//               display: -ms-flexbox
+//               display: flex
+//               -webkit-box-pack: end
+//               -ms-flex-pack: end
+//               justify-content: flex-end
+//             img
+//               height: 26px
+//             ul
+//                display: -webkit-box
+//                display: -ms-flexbox
+//                display: flex
+//                -webkit-box-pack: end
+//                -ms-flex-pack: end
+//                justify-content: flex-end
+//                li
+//                   border: 1px solid #C0C0C0
+//                   padding: 0 5px
+//                   &:first-child
+//                      border-left: none
+//                   &:last-child
+//                      border-right: none
+//       .filters-mobile
+//          display: -webkit-box
+//          display: -ms-flexbox
+//          display: flex
+//          -webkit-box-pack: justify
+//          -ms-flex-pack: justify
+//          justify-content: space-between
+//          -webkit-box-align: center
+//          -ms-flex-align: center
+//          align-items: center
+//          margin: 0 15px
+//          font-size: 13px
+//          .cards-show
+//             font-style: italic
+//          #mobile-filter
+//             border: 1px solid grey
+//             padding: 3% 2%
+//             width: 35%
+//             text-align: left
+//             position: relative
+//             background-image: url(../img/home/arrow-down.svg)
+//             background-position: center right 10px
+//             background-size: 13%
+//             background-repeat: no-repeat
+//             ul
+//                visibility: hidden
+//                display: block
+//                z-index: 101
+//                position: absolute
+//                top: -1px
+//                left: -1px
+//                right: -1px
+//                width: calc(100% + 2px)
+//                list-style: none
+//                background: white
+//                border: 1px solid grey
+//                li
+//                   padding: 7% 4%
+//                &.opened
+//                   visibility: visible
+// .show-more
+//    background: #F7F7F9
+//    color: $dark-blue
+//    font-family: "Open Sans", sans-serif
+//    padding: 20px 10px
+//    display: -webkit-box
+//    display: -ms-flexbox
+//    display: flex
+//    -webkit-box-pack: center
+//    -ms-flex-pack: center
+//    justify-content: center
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    border-bottom: 1px solid #CCCCCC
+//    text-transform: capitalize
+//    font-weight: 300
+
+// .mobile-accordion-filter-value
+//    display: none
+
+// .search-block-used-cars .car-tile .car-desc .col-6 h6
+//    font-size: 13px
+
+// .search-block-used-cars .car-tile .car-price
+//    font-size: 25px
+//    .col-6:last-child
+//       line-height: 17px
 
   // .overlay
   //   display: none
