@@ -312,11 +312,20 @@ select::-ms-expand {
 
   .menubar {
     background-color: #333333;
+    position: fixed;
+    top: 0;
     transition: all 0.3s ease-out;
+    height: 100%;
+    width: 100%;
     overflow-y: scroll; }
 
   .menu-search {
     background-color: #F7F7F9;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease-out;
+    height: 100%;
+    width: 100%;
     overflow-y: scroll; }
 
   .navbar-nav .nav-item .nav-link {
