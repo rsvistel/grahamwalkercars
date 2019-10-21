@@ -133,4 +133,14 @@ $(document).ready(function () {
             $(this).find('img').attr('src', 'img/home/Group%20373.svg')
         }
     });
+
+        $('.navbar-toggler').click(function(){
+        $('.navbar-collapse').toggleClass('right');
+        // $('.overlay').toggleClass('active');
+        $('.navbar-toggler').toggleClass('indexcity');
+    });
+
+    $('.overlay').on('click', function () {
+        $('.overlay').removeClass('active');
+    });
 });

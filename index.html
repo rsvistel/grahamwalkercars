@@ -18,52 +18,54 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 upper-half-header">
-                <div class="titles-logo col-md-4">
-                    <!--<h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>-->
-                    <!--<h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>-->
-                    <img class="img-fluid" src="img/header/graham.png" alt="">
+                        <div class="titles-logo col-md-5">
+                                <!--<h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>-->
+                                <!--<h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>-->
+                                <img class="img-fluid" src="img/header/graham.png" alt="">
+                            </div>
+                            <!-- <div class="mobile-open">
+                                <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
+                                <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
+                            </div> -->
+            
+                            <div class="title-contact col-md-2">
+                                <img class="img-fluid" src="img/header/phone.png" alt=""/>
+                                <div class="number-phone">
+                                    <h6 class="sales-number">01-4973333</h6>
+                                </div>
+                            </div>
+            
+                            <div class="title-address col-md-3">
+                                <img class="img-fluid" src="img/header/location.png" alt=""/>
+                                <h4 class="text-title-address">Harold's Cross Road, Dublin 6</h4>
+                            </div>
+            
+                            <div class="social-icon col-md-1">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/header/facebook.png" alt=""/>
+                                        </a>
+                                    </li>
+            
+                                </ul>
+                            </div>
+                            <div class="social-icon stars-block col-md-1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                 </div>
-                <!-- <div class="mobile-open">
-                    <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
-                    <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
-                </div> -->
-
-                <div class="title-contact col-md-2">
-                    <img class="img-fluid" src="img/header/phone.png" alt=""/>
-                    <div class="number-phone">
-                        <h6 class="sales-number">01-4973333</h6>
-                    </div>
-                </div>
-
-                <div class="title-address col-md-3 offset-md-1 offset-lg-0">
-                    <img class="img-fluid" src="img/header/location.png" alt=""/>
-                    <h4 class="text-title-address">Harold's Cross Road, Dublin 6</h4>
-                </div>
-
-                <div class="social-icon col-md-1">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img class="img-fluid" src="img/header/facebook.png" alt=""/>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="social-icon stars-block col-md-1">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
         </div>
     </div>
     <div class="bottom-half-header">
             <div class="container">
             <div class="row">
-                        <nav class="navbar navbar-expand-md">
+                        <nav class="navbar navbar-expand-md" role="navigation">
+                                <div class="navbar-header">
                                 <div class="mobile-block-items mobile-search">
                                         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                                 <i class="fas fa-search"></i>
@@ -88,18 +90,27 @@
                                         <span>Phone</span>
                                         </button>
                                 </div>
-                                <div class="mobile-block-items mobile-menu">
-                                    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                        <i class="fas fa-bars"></i>
-                                        <span>Options</span>
-                                    </button>
+                                    <div class="mobile-block-items mobile-menu">
+                                        <button class="navbar-toggler custom-toggler mobile-menu-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <i class="fas fa-bars"></i>
+                                            <span>Options</span>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                            <li class="nav-item ml-0">
+                                <div class="navbar-collapse">
+                                        <ul class="navbar-nav ml-auto py-md-0">
+                                            <li class="navbar-toggler mobile-close-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                <div>
+                                                    <span>Options</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
                                                 <a class="nav-link" href="#">home</a>
                                             </li>
-                                            <li class="nav-item  ">
+                                            <li class="nav-item">
                                                 <a class="nav-link" href="#">used cars</a>
                                             </li>
                                             <li class="nav-item ">
@@ -547,6 +558,7 @@
             <img src="img/header/facebook.png" alt="" />
     </div>
 </div>
+<div class="overlay"></div>
 <script src="owl-carousel/dist/owl-carousel.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
