@@ -142,8 +142,14 @@ $(document).ready(function () {
 
     $('.btn-search').click(function(){
         $('.menu-search').toggleClass('left-search');
-        $('body').toggleClass('active-searh');
+        $('body').toggleClass('active-menu');
         $('.btn-search').toggleClass('indexcity');
     });
+
+    $(function() {
+        $(document).click(function (event) {
+          $('.navbar-collapse').collapse('hide');
+        });
+      });
 
 });
