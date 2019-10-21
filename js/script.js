@@ -136,7 +136,7 @@ $(document).ready(function () {
 
         $('.navbar-toggler').click(function(){
         $('.navbar-collapse').toggleClass('right');
-        // $('.overlay').toggleClass('active');
+        $('body').toggleClass('active-menu');
         $('.navbar-toggler').toggleClass('indexcity');
     });
 

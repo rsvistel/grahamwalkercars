@@ -331,7 +331,7 @@ select::-ms-expand
         display: inline-block
 
 .indexcity
-  z-index: 9999
+  z-index: 100
 
 .right
   right: 0 !important
@@ -355,7 +355,7 @@ select::-ms-expand
           font-size: 10px
 
 @media (min-width: 768px)
-  .mobile-block
+  .mobile-block, .mobile-section-under-header
     display: none
   .mobile-close-btn
     display: none
@@ -364,11 +364,9 @@ select::-ms-expand
     padding-left: 0.5vw
 
 @media only screen and (max-width: 767px)
-  body
-    margin-top: 28px
   .upper-half-header
     display: none
-  .mobile-block
+  .mobile-block, .mobile-section-under-header
     display: flex
   .mobile-close-btn
     display: flex
@@ -386,6 +384,7 @@ select::-ms-expand
   .mobile-block-items
     .navbar-toggler
       outline: none
+      padding: 0
       // display: flex
       // flex-direction: column
       // align-items: center
@@ -410,26 +409,31 @@ select::-ms-expand
   .mobile-menu
     background: #014563
     width: 20%
+    border-bottom: 1px solid #ffff
     .fa-bars
       font-size: 20px
   .mobile-search
     background: #D20709
     width: 20%
     border-right: 1px solid #ffff
+    border-bottom: 1px solid #ffff
   .mobile-reserve
     background: #323232
     width: 19%
     border-right: 1px solid #ffff
+    border-bottom: 1px solid #ffff
   .mobile-phone
     background: #323232
     width: 19%
     border-right: 1px solid #ffff
+    border-bottom: 1px solid #ffff
     .fa-phone-alt
       font-size: 18px
   .mobile-favourite
     background: #323232
     width: 22%
     border-right: 1px solid #ffff
+    border-bottom: 1px solid #ffff
   .navbar-collapse
     background-color: #333333
     position: fixed
@@ -438,6 +442,7 @@ select::-ms-expand
     height: 100%
     width: 100%
     left: 100%
+    overflow-y: scroll
   .navbar-nav
     .nav-item
       .nav-link
@@ -464,19 +469,30 @@ select::-ms-expand
     .fa-times
       padding-right: 1vw
 
-  .overlay
-    display: none
+  .mobile-section-under-header
+    padding: 20vw 2vw 5vw 2vw
+  .active-menu
     position: fixed
-    width: 100vw
-    height: 100vh
-    background: rgba(0, 0, 0, 0.7)
-    z-index: 998
-    opacity: 0
-    transition: all 0.5s ease-in-out
 
-  .overlay.active
-    display: block
-    opacity: 1
+  // .overlay
+  //   display: none
+  //   top: 0
+  //   left: 0
+  //   position: fixed
+  //   width: 100vw
+  //   height: 100vh
+  //   opacity: 0
+  //   z-index: 99
+  //   background-color: #C2C2C2
+
+  // .overlay.active
+  //   display: block
+  //   opacity: 1
+
+@media (orientation: landscape)
+  .mobile-section-under-header
+    padding: 11vw 2vw 2vw 2vw
+    justify-content: center
 
 
 //Header
