@@ -76,9 +76,9 @@ select::-ms-expand
 .title-address img, .title-contact img
   margin-right: 6px
 .title-address img
-  //width: 7%
+  width: 7%
 .title-contact img
-  //width: 16%
+  width: 16%
 .number-phone
   h4
     margin-bottom: 0
@@ -93,7 +93,7 @@ select::-ms-expand
   padding: 0
   h4
     font-family: $secondary-font
-    font-size: 1.1rem
+    font-size: 1.05rem
 .stars-block
   color: #FFA500
   font-size: 1rem
@@ -117,6 +117,7 @@ select::-ms-expand
     -ms-flex: 0 0 12%
     flex: 0 0 12%
     max-width: 12%
+    margin-right: 1vw
 .sales-text
   font-weight: 400
   font-size: 0.95rem
@@ -276,12 +277,13 @@ select::-ms-expand
 //   &:hover .dropdown-content
 //     display: block
 
+
 @media (max-width: 991px)
   .upper-half-header
     .sales-number
       white-space: nowrap
     .text-title-address
-      font-size: 15px
+      font-size: 14px
 
 .bottom-half-header
   background-color: #ebedf0
@@ -329,6 +331,17 @@ select::-ms-expand
         text-align: center
         display: inline-block
 
+.indexcity
+  z-index: 100
+
+.right
+  right: 0 !important
+  left: 30% !important
+
+.left-search
+  right: 30% !important
+  left: 0 !important
+
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
     ul
@@ -337,15 +350,20 @@ select::-ms-expand
           font-size: 10px
 
 @media (min-width: 768px)
-  .mobile-block
+  .mobile-block, .mobile-section-under-header, .accordion__wrapper
     display: none
+  .mobile-close-btn
+    display: none
+  .navbar-expand-md .navbar-nav .nav-link
+    padding-right: 0.5vw
+    padding-left: 0.5vw
 
-@media (max-width: 767px)
-  body
-    margin-top: 28px
+@media only screen and (max-width: 767px)
   .upper-half-header
     display: none
-  .mobile-block
+  .mobile-block, .mobile-section-under-header
+    display: flex
+  .mobile-close-btn
     display: flex
   .mobile-block-items
   .navbar
@@ -360,30 +378,147 @@ select::-ms-expand
     border-width: 0 0 1px
   .mobile-block-items
     .navbar-toggler
-      padding: 0.3rem
       outline: none
+      padding: 0
+      // display: flex
+      // flex-direction: column
+      // align-items: center
+      width: 100%
+      text-align: center
     .far,.fas
       display: block
       color: #ffffff
+      font-size: 17px
     .fas.fa-star
       color: #ffffff
-      font-size: 1.25rem
+      font-size: 17px
     span
       color: #ffffff
       font-size: 9px
       text-transform: uppercase
+  .navbar-header
+    display: flex
+    width: 100%
+  .mobile-menu, .mobile-search, .mobile-reserve, .mobile-phone, .mobile-favourite
+    padding-top: 2vw
   .mobile-menu
     background: #014563
+    width: 20%
+    border-bottom: 1px solid #ffff
+    .fa-bars
+      font-size: 20px
   .mobile-search
     background: #D20709
-  .mobile-reserve, .mobile-favourite, .mobile-phone
+    width: 20%
+    border-right: 1px solid #ffff
+    border-bottom: 1px solid #ffff
+  .mobile-reserve
     background: #323232
+    width: 19%
+    border-right: 1px solid #ffff
+    border-bottom: 1px solid #ffff
+  .mobile-phone
+    background: #323232
+    width: 19%
+    border-right: 1px solid #ffff
+    border-bottom: 1px solid #ffff
+    .fa-phone-alt
+      font-size: 18px
+  .mobile-favourite
+    background: #323232
+    width: 22%
+    border-right: 1px solid #ffff
+    border-bottom: 1px solid #ffff
+  .menubar
+    background-color: #333333
+    position: fixed
+    top: 0
+    transition: all 0.3s ease-out
+    height: 100%
+    width: 100%
+    left: 100%
+    overflow-y: scroll
+  .menu-search
+    background-color: #F7F7F9
+    position: fixed
+    top: 0
+    transition: all 0.3s ease-out
+    height: 100%
+    width: 74%
+    overflow-y: scroll
+  .navbar-nav
+    .nav-item
+      .nav-link
+        color: #ffffff
+  .navbar
+    ul
+      align-items: flex-start
+      li
+        padding: 1.5vw 0 1.5vw 5vw
+        border-bottom: 1px solid #ffffff
+        width: 70%
+      li:nth-child(2)
+        border-top: 1px solid #ffffff!important
+      li:hover
+        //background-color: transparent
+  .mobile-close-btn
+    background: #014563
+    display: flex
+    justify-content: space-between
+    padding: 3vw 3vw 3vw 5vw !important
+    border-radius: none
+    span
+      text-transform: uppercase
+      color: #ffffff
+      font-size: 13px!important
+      vertical-align: middle
+      padding: 3vw 1vw 3vw 0
+    .fa-times
+      padding-right: 1vw
 
-@media (min-width: 768px)
-  .navbar-expand-md .navbar-nav .nav-link
-    padding-right: 0.5vw
-    padding-left: 0.5vw
+  .mobile-section-under-header
+    padding: 20vw 2vw 5vw 2vw
+  .active-menu
+    position: fixed
+  .active-search
+    position: fixed
 
+  .accordion__title
+    background-image: url('../img/home/arrow-down.png')
+    background-position: center right 10px
+    background-repeat: no-repeat
+
+  .menu-search
+    .card
+      background-color: #F7F7F9
+      border-radius: 0
+      border: none
+      border-bottom: 1px solid #DADCDD!important
+    .card-header
+      padding: 0
+    .accordion__button
+      padding: .75rem 1.25rem
+      text-transform: uppercase
+      width: 100%
+      text-align: left
+    .mobile-search-btn
+      background: #D20709
+      display: flex
+      justify-content: space-between
+      padding: 3vw 3vw 3vw 5vw !important
+      border-radius: 0
+      border: none
+
+@media (orientation: landscape)
+  .mobile-section-under-header
+    padding: 11vw 2vw 2vw 2vw
+    justify-content: center
+
+@media (min-width: 768px) and (max-width: 1000px)
+  .titles-logo img
+    width: 85%
+  .sales-number
+    font-size: 1.5vw
 //Header
 
 //Banner

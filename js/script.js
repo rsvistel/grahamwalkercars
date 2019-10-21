@@ -133,4 +133,17 @@ $(document).ready(function () {
             $(this).find('img').attr('src', 'img/home/Group%20373.svg')
         }
     });
+
+        $('.mobile-menu-btn').click(function(){
+        $('.menubar').toggleClass('right');
+        $('body').toggleClass('active-menu');
+        $('.mobile-menu-btn').toggleClass('indexcity');
+    });
+
+    $('.btn-search').click(function(){
+        $('.menu-search').toggleClass('left-search');
+        $('body').toggleClass('active-searh');
+        $('.btn-search').toggleClass('indexcity');
+    });
+
 });
