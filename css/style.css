@@ -117,7 +117,8 @@ select::-ms-expand {
 .upper-half-header .col-md-2 {
   -ms-flex: 0 0 12%;
   flex: 0 0 12%;
-  max-width: 12%; }
+  max-width: 12%;
+  margin-right: 1vw; }
 
 .sales-text {
   font-weight: 400;
@@ -170,7 +171,7 @@ select::-ms-expand {
   .upper-half-header .sales-number {
     white-space: nowrap; }
   .upper-half-header .text-title-address {
-    font-size: 15px; } }
+    font-size: 14px; } }
 .bottom-half-header {
   background-color: #ebedf0; }
 
@@ -400,6 +401,12 @@ select::-ms-expand {
   .mobile-section-under-header {
     padding: 11vw 2vw 2vw 2vw;
     justify-content: center; } }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .titles-logo img {
+    width: 85%; }
+
+  .sales-number {
+    font-size: 1.5vw; } }
 #banner {
   order: 1;
   position: relative;

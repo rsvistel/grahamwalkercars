@@ -117,6 +117,7 @@ select::-ms-expand
     -ms-flex: 0 0 12%
     flex: 0 0 12%
     max-width: 12%
+    margin-right: 1vw
 .sales-text
   font-weight: 400
   font-size: 0.95rem
@@ -282,7 +283,7 @@ select::-ms-expand
     .sales-number
       white-space: nowrap
     .text-title-address
-      font-size: 15px
+      font-size: 14px
 
 .bottom-half-header
   background-color: #ebedf0
@@ -340,16 +341,6 @@ select::-ms-expand
 .left-search
   right: 30% !important
   left: 0 !important
-
-// .overlay
-//   display: none
-//   position: fixed
-//   width: 100vw
-//   height: 100vh
-//   background: rgba(0, 0, 0, 0.7)
-//   z-index: 998
-//   opacity: 0
-//   transition: all 0.5s ease-in-out
 
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
@@ -520,7 +511,11 @@ select::-ms-expand
     padding: 11vw 2vw 2vw 2vw
     justify-content: center
 
-
+@media (min-width: 768px) and (max-width: 1000px)
+  .titles-logo img
+    width: 85%
+  .sales-number
+    font-size: 1.5vw
 //Header
 
 //Banner
