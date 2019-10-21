@@ -349,6 +349,8 @@ select::-ms-expand {
       padding: 1.5vw 0 1.5vw 5vw;
       border-bottom: 1px solid #ffffff;
       width: 70%; }
+    .navbar ul li:nth-child(2) {
+      border-top: 1px solid #ffffff !important; }
 
   .mobile-close-btn {
     background: #014563;
@@ -382,6 +384,7 @@ select::-ms-expand {
   .menu-search .card {
     background-color: #F7F7F9;
     border-radius: 0;
+    border: none;
     border-bottom: 1px solid #DADCDD !important; }
   .menu-search .card-header {
     padding: 0; }
