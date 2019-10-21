@@ -331,16 +331,16 @@ select::-ms-expand
         text-align: center
         display: inline-block
 
-.indexcity
-  z-index: 100
+// .indexcity
+//   z-index: 100
 
-.right
-  right: 0 !important
-  left: 30% !important
+// .right
+//   right: 0 !important
+//   left: 30% !important
 
-.left-search
-  right: 30% !important
-  left: 0 !important
+// .left-search
+//   right: 30% !important
+//   left: 0 !important
 
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
@@ -436,7 +436,7 @@ select::-ms-expand
     transition: all 0.3s ease-out
     height: 100%
     width: 100%
-    left: 100%
+    //left: 100%
     overflow-y: scroll
   .menu-search
     background-color: #F7F7F9
@@ -444,7 +444,8 @@ select::-ms-expand
     top: 0
     transition: all 0.3s ease-out
     height: 100%
-    width: 74%
+    width: 100%
+    //right: 100%
     overflow-y: scroll
   .navbar-nav
     .nav-item
@@ -456,7 +457,8 @@ select::-ms-expand
       li
         padding: 1.5vw 0 1.5vw 5vw
         border-bottom: 1px solid #ffffff
-        width: 70%
+        //width: 70%
+        width: 100%
       li:nth-child(2)
         border-top: 1px solid #ffffff!important
       li:hover
@@ -477,7 +479,7 @@ select::-ms-expand
       padding-right: 1vw
 
   .mobile-section-under-header
-    padding: 20vw 2vw 5vw 2vw
+    padding: 14vw 2vw 1vw 2vw
   .active-menu
     position: fixed
   .active-search
@@ -505,9 +507,13 @@ select::-ms-expand
       background: #D20709
       display: flex
       justify-content: space-between
-      padding: 3vw 3vw 3vw 5vw !important
+      padding: 3vw 4.5vw 3vw 3vw !important
       border-radius: 0
       border: none
+      text-transform: uppercase
+      span
+        font-size: 13px
+        padding-left: 2vw
 
 @media (orientation: landscape)
   .mobile-section-under-header
