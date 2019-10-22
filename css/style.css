@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -1282,5 +1283,40 @@ select::-ms-expand {
 @media (min-width: 768px) and (max-width: 1000px) {
   .homepage-1 #banner .top-img {
     margin-bottom: 40.7%; } }
+.contact-us .pay-us-visit .form-section {
+  background-color: #828282;
+  padding: 20px 25px; }
+  .contact-us .pay-us-visit .form-section .form-control {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #777;
+    border-radius: 5px !important; }
+  .contact-us .pay-us-visit .form-section .btn.btn-primary.accordion-used-car__form-button {
+    background-color: #454146;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    padding: 13px 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 3px; }
+  .contact-us .pay-us-visit .form-section .button-section {
+    display: flex;
+    justify-content: center; }
+.contact-us .pay-us-visit .text-img-pay-us-visit img {
+  width: 100%; }
+.contact-us .pay-us-visit .text-container {
+  background-color: #828282;
+  padding: 20px 10px 50px 10px;
+  height: 100%; }
+  .contact-us .pay-us-visit .text-container h6 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center; }
+.contact-us .title-form-section {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
