@@ -54,7 +54,8 @@ select::-ms-expand {
 
 .titles-logo {
   padding-left: 0;
-  padding-right: 5%; }
+  padding-right: 5%;
+  margin-right: 9%; }
   .titles-logo img {
     width: 100%; }
 
@@ -282,8 +283,9 @@ select::-ms-expand {
     font-size: 17px; }
   .mobile-block-items span {
     color: #ffffff;
-    font-size: 9px;
-    text-transform: uppercase; }
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 1px; }
 
   .navbar-header {
     display: flex;
@@ -345,13 +347,13 @@ select::-ms-expand {
     align-items: flex-start; }
     .navbar ul li {
       padding: 1.5vw 0 1.5vw 5vw;
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 2px solid #6E6E6E;
       width: 74%; }
     .navbar ul li:nth-child(2) {
-      border-top: 1px solid #ffffff !important; }
+      border-top: 2px solid #6E6E6E !important; }
 
   .mobile-close-btn {
-    background: #014563;
+    background: #014563 !important;
     display: flex;
     justify-content: space-between;
     padding: 2vw 6vw 2vw 5vw !important;
@@ -366,7 +368,9 @@ select::-ms-expand {
       padding-right: 1vw; }
 
   .mobile-section-under-header {
-    padding: 14vw 2vw 1vw 2vw; }
+    padding: 52px 2vw 1vw 2vw; }
+    .mobile-section-under-header img {
+      width: 70%; }
 
   .active-menu {
     position: fixed; }
@@ -400,18 +404,28 @@ select::-ms-expand {
     border: none;
     text-transform: uppercase; }
     .menu-search .mobile-search-btn span {
-      font-size: 13px;
+      font-size: 1rem;
       vertical-align: middle; } }
 @media (orientation: landscape) {
   .mobile-section-under-header {
-    padding: 11vw 2vw 2vw 2vw;
+    padding: 70px 2vw 2vw 2vw;
     justify-content: center; } }
 @media (min-width: 768px) and (max-width: 1000px) {
-  .titles-logo img {
-    width: 85%; }
+  .titles-logo {
+    margin-right: 0; }
 
   .sales-number {
-    font-size: 1.5vw; } }
+    font-size: 1.5vw; }
+
+  .upper-half-header .col-md-2 {
+    margin-right: 3vw; }
+
+  .social-icon .stars-block .fas.fa-star {
+    font-size: 14px; } }
+@media (max-width: 320px) {
+  .mobile-block-items span {
+    color: #ffffff;
+    font-size: 9px; } }
 #banner {
   order: 1;
   position: relative;

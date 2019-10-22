@@ -60,6 +60,7 @@ select::-ms-expand
 .titles-logo
   padding-left: 0
   padding-right: 5%
+  margin-right: 9%
   img
     width: 100%
 .motors-title-logo
@@ -397,8 +398,9 @@ select::-ms-expand
       font-size: 17px
     span
       color: #ffffff
-      font-size: 9px
+      font-size: 12px
       text-transform: uppercase
+      margin-bottom: 1px
   .navbar-header
     display: flex
     width: 100%
@@ -459,14 +461,12 @@ select::-ms-expand
       align-items: flex-start
       li
         padding: 1.5vw 0 1.5vw 5vw
-        border-bottom: 1px solid #ffffff
+        border-bottom: 2px solid #6E6E6E
         width: 74%
       li:nth-child(2)
-        border-top: 1px solid #ffffff!important
-      li:hover
-        //background-color: transparent
+        border-top: 2px solid #6E6E6E!important
   .mobile-close-btn
-    background: #014563
+    background: #014563!important
     display: flex
     justify-content: space-between
     padding: 2vw 6vw 2vw 5vw !important
@@ -481,7 +481,10 @@ select::-ms-expand
       padding-right: 1vw
 
   .mobile-section-under-header
-    padding: 14vw 2vw 1vw 2vw
+    padding: 52px 2vw 1vw 2vw
+    img
+      width: 70%
+
   .active-menu
     position: fixed
   .active-search
@@ -515,19 +518,34 @@ select::-ms-expand
       border: none
       text-transform: uppercase
       span
-        font-size: 13px
+        font-size: 1rem
         vertical-align: middle
 
 @media (orientation: landscape)
   .mobile-section-under-header
-    padding: 11vw 2vw 2vw 2vw
+    padding: 70px 2vw 2vw 2vw
     justify-content: center
 
 @media (min-width: 768px) and (max-width: 1000px)
+  .titles-logo
+    margin-right: 0
   .titles-logo img
-    width: 85%
+    //width: 85%
   .sales-number
     font-size: 1.5vw
+  .upper-half-header
+    .col-md-2
+      margin-right: 3vw
+  .social-icon
+    .stars-block
+      .fas.fa-star
+        font-size: 14px
+        
+@media (max-width: 320px)
+  .mobile-block-items
+    span
+      color: #ffffff
+      font-size: 9px
 //Header
 
 //Banner
