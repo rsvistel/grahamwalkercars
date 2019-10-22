@@ -365,9 +365,6 @@ select::-ms-expand
 
   .mobile-section-under-header
     padding: 52px 2vw 1vw 2vw
-    img
-      width: 70%
-
   .active-menu
     position: fixed
   .active-search
@@ -1369,7 +1366,11 @@ select::-ms-expand
 
 //Contact
 .contact-us
+  .pay-us-visit-contact
+    background-color: #47494A
   .pay-us-visit
+    .col-md-4
+      padding: 0 19px
     .form-section
       background-color: #828282
       padding: 20px 25px
@@ -1384,7 +1385,7 @@ select::-ms-expand
         font-family: 'Roboto', sans-serif
         padding: 13px 60px
         text-transform: uppercase
-        font-weight: 600
+        font-weight: 500
         font-size: 18px
         margin-top: 3px
       .button-section
@@ -1400,10 +1401,75 @@ select::-ms-expand
       h6
         font-family: $secondary-font
         text-align: center
+        margin-top: 15px
+    .opening-hours
+      background-color: #828282
+      padding: 20px 17px
+    .card-body
+      padding-left: 0
+      padding-bottom: 0
+      ul li .col-6
+        font-weight: 600
+        font-size: 19px
+      ul li .row .col-6:last-child
+        text-align: right
+    .text-under-hours
+      text-align: center
+      font-family: $secondary-font
+      margin-top: 45px
   .title-form-section
     font-family: Arial, sans-serif
     font-weight: 600
     text-align: center
     margin: 10px 0 20px 0
     text-transform: uppercase
+
+
+@media (max-width: 768px)
+  .contact-us
+    .about-title
+      display: none
+    .pay-us-visit
+      .form-section
+        background-color: #47494A
+        .btn.btn-primary.accordion-used-car__form-button
+          background: #D10609
+      .col-md-4
+        -ms-flex: 0 0 100%
+        flex: 0 0 100%
+        max-width: 100%
+      .text-container
+        background-color: #47494A
+        margin-top: 30px
+        padding: 20px 0 50px 0
+        .title-form-section
+          text-align: left
+      .opening-hours
+        background-color: #47494A
+      .text-container h6, .text-under-hours
+        font-size: 18px
+
+@media (min-width: 769px) and (max-width: 1000px)
+  .contact-us .pay-us-visit
+    .container-section
+      display: flex
+      flex-direction: column
+      align-items: center
+    .col-md-4
+      -ms-flex: 0 0 60%
+      flex: 0 0 60%
+      max-width: 60%
+      background-color: #47494A
+  .contact-us .pay-us-visit .text-container
+    background-color: #47494A
+
+
+@media (min-width: 1000px) and (max-width: 1200px)
+  .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit
+    padding: 0 10px
+    .text-container
+      padding: 20px 3px 50px 3px
+
+  .contact-us .pay-us-visit .card-body ul li .col-6
+    font-size: 18px
 //Contact
