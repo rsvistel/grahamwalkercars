@@ -361,8 +361,11 @@ select::-ms-expand
 @media only screen and (max-width: 767px)
   .upper-half-header
     display: none
-  .mobile-block, .mobile-section-under-header
+  .mobile-block
     display: flex
+  .mobile-section-under-header
+    display: flex
+    justify-content: center
   .mobile-close-btn
     display: flex
   .mobile-block-items
@@ -478,7 +481,7 @@ select::-ms-expand
       padding-right: 1vw
 
   .mobile-section-under-header
-    padding: 14vw 2vw 1vw 2vw
+    padding: 9vw 2vw 1vw 2vw
   .active-menu
     position: fixed
   .active-search
@@ -548,11 +551,16 @@ select::-ms-expand
     text-align: center
     img
       width: 35%
-      position: absolute
+      position: relative
     .title-top-img
       color: white
       text-transform: uppercase
+      position: absolute
       z-index: 1
+      top: 50%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -50%)
   #banner-image
     text-align: center
     img
@@ -884,7 +892,7 @@ select::-ms-expand
 .text-half-apply
   padding-left: 21%
 .button-half-apply, .text-half-apply
-  top: -40px
+  padding-bottom: 13%
 .button-half-apply button
   background: #D10609
   padding: 15px 75px
