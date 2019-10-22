@@ -12,7 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="contact-us">
 <section class="header topnav" id="myTopnav">
     <div class="container">
         <div class="row">
@@ -462,15 +462,45 @@
 
 <div class="pay-us-visit">
     <div class="container">
-        <h6 class="title-pay-us-visit">pay us a visit</h6>
         <div class="row container-section">
-            <div class="col-12 col-md-12 col-lg-6  text-img-pay-us-visit">
-                <p>214 - 218 Harold's Cross Road,<br>
-                    Dublin 6</p>
-                <img src="img/home/map.png" alt="">
+
+            <div class="col-md-4 form-section">
+                <h5 class="title-form-section">SEND US A MESSAGE</h5>
+                <div class="form-container">
+                    <form action="#" method="post" class="accordion-used-car__form">
+                        <div class="form-group form-group-50">
+                            <input type="text" class="form-control accordion-used-car__form-control" id="InputName"
+                                   placeholder="Name">
+                        </div>
+                        <div class="form-group form-group-50">
+                            <input type="text" class="form-control accordion-used-car__form-control" id="InputPhone"
+                                   placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control accordion-used-car__form-control" id="InputEmail"
+                                   placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                        <textarea
+                                class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
+                                id="FormControlTextarea" rows="5" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="col-md-12 button-section">
+                           <button type="submit" class="btn btn-primary accordion-used-car__form-button">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
-            <div class="col-12 col-md-12 col-lg-6">
+            <div class="col-4 col-md-4 col-lg-4  text-img-pay-us-visit">
+                <div class="text-container">
+                   <h5 class="title-form-section">pay us a visit</h5>
+                   <img src="img/home/map.png" alt="">
+                   <h6>214 - 218 Harold's Cross Road,Dublin 6</h6>
+                </div>
+            </div>
+
+            <div class="col-4 col-md-4 col-lg-4">
                 <h6>opening hours</h6>
                 <div class="card-body card-body-opening-hours">
                     <ul>
@@ -521,135 +551,6 @@
                 <p class="text-under-hours">Out of hours by arrangement</p>
             </div>
         </div>
-    </div>
-</div>
-
-
-
-<div class="contact-us-section contact-us">
-    <div class="container">
-
-        <div class="card-body accordion-used-car__card-body col-md-5">
-            <h6 class="title-contact-us title-contact-us-card-body">Contact Us </h6>
-            <div class="form-container">
-                <form action="#" method="post" class="accordion-used-car__form">
-                    <div class="form-group form-group-50">
-                        <input type="text" class="form-control accordion-used-car__form-control" id="InputName"
-                               placeholder="Name">
-                    </div>
-                    <div class="form-group form-group-50">
-                        <input type="text" class="form-control accordion-used-car__form-control" id="InputPhone"
-                               placeholder="Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control accordion-used-car__form-control" id="InputEmail"
-                               placeholder="Email Address">
-                    </div>
-                    <div class="form-group">
-                        <textarea
-                                class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
-                                id="FormControlTextarea" rows="5" placeholder="Your message"></textarea>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label accordion-used-car__form-check" for="exampleCheck1">I agree that
-                            Bill Griffin Motors may store the information submitted
-                            here in order for them to reply to my query.</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary accordion-used-car__form-button">Send Enquiry</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="col-md-7 block-right-location" id="office">
-
-            <div class="col-md-6 location-contact">
-                <div class="card card-location">
-                    <div class="card-title title-contact-us-card-body">Location</div>
-                    <div class="card-body">
-                        <div id="map"></div>
-                    </div>
-                    <div class="input-search">
-                        <input type="search" id="site-search" name="q"
-                               aria-label="Search through site content"
-                               placeholder="Enter your location to get directions.">
-                        <button class="search-button">Go</button>
-                        <button class="directions-buuton">Get Directions</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 working-hours">
-                <div class="card">
-                    <div class="title-address col-md-12">
-                        <img src="img/workshop/loc.svg" alt="">
-                        <h4 class="text-title-address">frank fahey centre, naas road<br> walkinstown, dublin 12, d12f5yw
-                        </h4>
-                    </div>
-                    <div class="title-contact col-md-12">
-                        <img src="img/workshop/tel.svg" alt="">
-                        <div class="number-phone">
-                            <h6 class="sales-number">01-4569562</h6>
-                        </div>
-                    </div>
-
-                    <div class="title-contact title-mail col-md-12">
-                        <img src="img/workshop/mail.svg" alt="">
-                        <div class="number-phone">
-                            <h6 class="sales-number">contact@billgriffinmotors.ie</h6>
-                        </div>
-                    </div>
-                    <div class="card-body card-body-opening-hours">
-                        <img src="img/workshop/clock.svg" alt="">
-                        <ul>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Monday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Tuesday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Wednesday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li class="highlighted">
-                                <div class="row">
-                                    <div class="col-6">Thursday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Friday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Saturday:</div>
-                                    <div class="col-6">10:00 to 13:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Sunday:</div>
-                                    <div class="col-6">Closed</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 
