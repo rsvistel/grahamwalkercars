@@ -427,7 +427,7 @@ select::-ms-expand
     width: 100%
     text-decoration: underline
     padding: 0 15px
-  #search-box
+  .search-box
     width: 100%
     height: 40%
     position: absolute
@@ -495,7 +495,7 @@ select::-ms-expand
       img
         height: 200px
         width: auto
-    #search-box
+    .search-box
       position: static
       background: rgba(0,0,0,1)
       padding: 2% 5% 2%
@@ -875,7 +875,7 @@ select::-ms-expand
     .advanced-text
       display: none
 
-  #banner #search-box
+  #banner .search-box
     background-color: #222
     padding: 7% 5% 9% 5%
     .col-md-2
@@ -885,7 +885,7 @@ select::-ms-expand
         border-radius: 7px
     .year, .body-type
       display: none
-  #banner #search-box .col-md-2 button
+  #banner .search-box .col-md-2 button
     display: flex
     justify-content: center
     font-size: 18px
@@ -964,10 +964,10 @@ select::-ms-expand
     height: auto
 
 @media (min-width: 769px) and (max-width: 1000px)
-  #banner #search-box .col-md-2 button, #banner #search-box .col-md-2 select
+  #banner .search-box .col-md-2 button, #banner .search-box .col-md-2 select
     height: 45px
 
-  #banner #search-box .col-md-2 button img
+  #banner .search-box .col-md-2 button img
     left: -3px
 
   #banner .top-img img
@@ -1226,3 +1226,67 @@ select::-ms-expand
     padding-left: 0
 
 ////Workshop
+
+
+//homepage-1
+.button-homepage-none
+  display: none
+.homepage-1
+  #banner .search-box.search-box-1
+    height: 20%
+  #banner .search-box.search-box-2
+    padding-bottom: 10%
+  #banner .top-img
+    margin-bottom: 39.94%
+  #banner .search-box.search-box-1
+    margin-bottom: 26.66%
+  #banner .search-box form .col-md-2
+    -ms-flex: 0 0 20%
+    flex: 0 0 20%
+    max-width: 20%
+
+  #banner .search-box .col-md-2.button-homepage-1
+    display: flex
+    justify-content: center
+    -ms-flex: 0 0 100%
+    flex: 0 0 100%
+    max-width: 100%
+    margin-top: 50px
+    button
+      width: 20%
+      border-radius: 4px
+
+@media (max-width: 768px)
+  .homepage-1 #banner .search-box.search-box-2
+    display: none
+
+  .button-homepage-none
+    display: block
+
+  .homepage-1
+    #banner #banner-image img
+      height: 300px
+
+    #banner .search-box form .col-md-2
+      -ms-flex: 0 0 100%
+      flex: 0 0 100%
+      max-width: 100%
+    #banner .top-img
+      margin-top: -9vw
+      img
+        width: 95%
+    #banner .search-box.search-box-1
+      margin-bottom: 5%
+
+@media (max-width: 768px) and (min-width: 450px)
+  .homepage-1
+    #banner #banner-image img
+      height: 550px
+    #banner .top-img
+      margin-top: -8.5vw
+
+@media (min-width: 768px) and (max-width: 1000px)
+  .homepage-1 #banner .top-img
+    margin-bottom: 40.7%
+
+//homepage-1
