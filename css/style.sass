@@ -567,7 +567,7 @@ select::-ms-expand
     width: 100%
     text-decoration: underline
     padding: 0 15px
-  #search-box
+  .search-box
     width: 100%
     height: 40%
     position: absolute
@@ -635,7 +635,7 @@ select::-ms-expand
       img
         height: 200px
         width: auto
-    #search-box
+    .search-box
       position: static
       background: rgba(0,0,0,1)
       padding: 2% 5% 2%
@@ -1015,7 +1015,7 @@ select::-ms-expand
     .advanced-text
       display: none
 
-  #banner #search-box
+  #banner .search-box
     background-color: #222
     padding: 7% 5% 9% 5%
     .col-md-2
@@ -1025,7 +1025,7 @@ select::-ms-expand
         border-radius: 7px
     .year, .body-type
       display: none
-  #banner #search-box .col-md-2 button
+  #banner .search-box .col-md-2 button
     display: flex
     justify-content: center
     font-size: 18px
@@ -1104,10 +1104,10 @@ select::-ms-expand
     height: auto
 
 @media (min-width: 769px) and (max-width: 1000px)
-  #banner #search-box .col-md-2 button, #banner #search-box .col-md-2 select
+  #banner .search-box .col-md-2 button, #banner .search-box .col-md-2 select
     height: 45px
 
-  #banner #search-box .col-md-2 button img
+  #banner .search-box .col-md-2 button img
     left: -3px
 
   #banner .top-img img
@@ -1195,16 +1195,16 @@ select::-ms-expand
 
 
 //About
+.about-title
+  font-family: $primary-font
+  text-transform: uppercase
+  background-color: #47494A
+  color: white
+  padding: 3%
+  font-size: 1.9rem
+  text-align: center
+  font-weight: 400
 .about
-  .about-title
-    font-family: $primary-font
-    text-transform: uppercase
-    background-color: #47494A
-    color: white
-    padding: 4%
-    font-size: 1.9rem
-    text-align: center
-    font-weight: 400
   .about-section
     background-image: url("../img/about/banner.png")
     background-repeat: no-repeat
@@ -1274,3 +1274,159 @@ select::-ms-expand
     .img-about-section
       margin-top: 50px
 //About
+
+
+//Workshop
+.mobile-title-workshop-section
+  display: none
+  font-family: Arial, sans-serif
+  font-size: 5.3vw
+  text-align: center
+  margin: 30px 0
+  padding: 0 3%
+
+
+.workshop-section
+  background-image: url("../img/workshop/ban.png")
+  background-repeat: no-repeat
+  padding: 4% 0 13% 0
+  background-position: center
+  background-size: cover
+  .container
+    padding: 0
+  .text-top-workshop-section
+    font-family: Arial, sans-serif
+    padding: 0 25%
+  .item-text
+    font-family: Arial, sans-serif
+    padding-right: 0
+    padding-left: 25px
+    h6
+      font-size: 17px
+      margin-bottom: 9px
+    p
+      font-size: 15px
+  .item-img img
+    width: 100%
+    margin-top: 10px
+  .block-workshop-section
+    display: flex
+    margin-top: 60px
+
+@media (max-width: 768px)
+  .workshop-section
+    .item-text
+      padding-left: 10px
+      h6
+        font-size: 5.3vw
+      p
+        font-size: 4.5vw
+    .item-img
+      padding-right: 5px
+    .text-top-workshop-section
+      padding: 0 3%
+      font-size: 4.5vw
+    .block-workshop-section:nth-child(2n)
+      flex-direction: row-reverse
+      .item-text
+        padding-left: 0
+        padding-right: 10px
+      .item-img
+        padding-left: 10px
+
+
+  .mobile-title-workshop-section
+    display: block
+
+@media (min-width: 769px) and (max-width: 1000px)
+  .workshop-section
+    .text-top-workshop-section
+      padding: 0 21%
+    //.block-workshop-section
+    //  padding: 0
+    //  .item-text
+    //    padding-left: 0
+    //  .item-img
+    //    padding-left: 0
+    //    padding-right: 3px
+
+    .block-workshop-section
+      flex-direction: column
+      .col-md-6
+        -ms-flex: 0 0 100%
+        flex: 0 0 100%
+        max-width: 100%
+      .item-img
+        text-align: center
+        img
+          width: 75%
+          margin-top: -60px
+@media (min-width: 1000px) and (max-width: 1200px)
+  .workshop-section .item-text
+    padding-left: 0
+
+////Workshop
+
+
+//homepage-1
+.button-homepage-none
+  display: none
+.homepage-1
+  #banner .search-box.search-box-1
+    height: 20%
+  #banner .search-box.search-box-2
+    padding-bottom: 10%
+  #banner .top-img
+    margin-bottom: 39.94%
+  #banner .search-box.search-box-1
+    margin-bottom: 26.66%
+  #banner .search-box form .col-md-2
+    -ms-flex: 0 0 20%
+    flex: 0 0 20%
+    max-width: 20%
+
+  #banner .search-box .col-md-2.button-homepage-1
+    display: flex
+    justify-content: center
+    -ms-flex: 0 0 100%
+    flex: 0 0 100%
+    max-width: 100%
+    margin-top: 50px
+    button
+      width: 20%
+      border-radius: 4px
+
+@media (max-width: 768px)
+  .homepage-1 #banner .search-box.search-box-2
+    display: none
+
+  .button-homepage-none
+    display: block
+
+  .homepage-1
+    #banner #banner-image img
+      height: 300px
+
+    #banner .search-box form .col-md-2
+      -ms-flex: 0 0 100%
+      flex: 0 0 100%
+      max-width: 100%
+    #banner .top-img
+      margin-top: -9vw
+      img
+        width: 95%
+    #banner .search-box.search-box-1
+      margin-bottom: 5%
+
+@media (max-width: 768px) and (min-width: 450px)
+  .homepage-1
+    #banner #banner-image img
+      height: 550px
+    #banner .top-img
+      margin-top: -8.5vw
+
+@media (min-width: 768px) and (max-width: 1000px)
+  .homepage-1 #banner .top-img
+    margin-bottom: 40.7%
+
+//homepage-1
