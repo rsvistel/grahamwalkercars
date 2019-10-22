@@ -347,7 +347,7 @@ select::-ms-expand
         border-bottom: 2px solid #6E6E6E
         width: 74%
       li:nth-child(2)
-        border-top: 2px solid #6E6E6E!important
+        //border-top: 2px solid #6E6E6E!important
   .mobile-close-btn
     background: #014563!important
     display: flex
@@ -632,6 +632,7 @@ select::-ms-expand
       left: 0
       justify-content: space-between
       pointer-events: none
+      display: none
       button
         pointer-events: auto
         img
@@ -666,6 +667,7 @@ select::-ms-expand
       padding: 0 7px
     h2, p
       font-size: 16px
+      white-space: nowrap
     h2
       font-weight: 700
       text-align: start
@@ -794,7 +796,9 @@ select::-ms-expand
 
 //Car Tile
 //Featured
-
+@media (min-width: 992px) and (max-width: 1250px)
+  .car-title h2
+    font-size: 13px!important
 
 //APPLY
 .apply

@@ -146,17 +146,4 @@ $(document).ready(function () {
         // $('body').toggleClass('active-menu');
         $('.btn-search').toggleClass('indexcity');
     });
-
-    // $(function() {
-    //     $(document).click(function (event) {
-    //       $('.menubar').collapse('hide');
-    //       event.stopPropagation();
-    //     });
-    //   });
-
-    // $('.overlay').on('click', function () {
-    //     $('.overlay').removeClass('active');
-    // });
-
-
 });

@@ -350,8 +350,6 @@ select::-ms-expand {
       padding: 1.5vw 0 1.5vw 5vw;
       border-bottom: 2px solid #6E6E6E;
       width: 74%; }
-    .navbar ul li:nth-child(2) {
-      border-top: 2px solid #6E6E6E !important; }
 
   .mobile-close-btn {
     background: #014563 !important;
@@ -605,7 +603,8 @@ select::-ms-expand {
       right: 0;
       left: 0;
       justify-content: space-between;
-      pointer-events: none; }
+      pointer-events: none;
+      display: none; }
       #special-offers .owl-carousel .owl-nav.disabled button {
         pointer-events: auto; }
         #special-offers .owl-carousel .owl-nav.disabled button img {
@@ -640,7 +639,8 @@ select::-ms-expand {
     .car-tile .car-title .titles-car-card {
       padding: 0 7px; }
     .car-tile .car-title h2, .car-tile .car-title p {
-      font-size: 16px; }
+      font-size: 16px;
+      white-space: nowrap; }
     .car-tile .car-title h2 {
       font-weight: 700;
       text-align: start; }
@@ -767,6 +767,9 @@ select::-ms-expand {
       text-align: start;
       font-size: 23px;
       margin: 5% 15px; } }
+@media (min-width: 992px) and (max-width: 1250px) {
+  .car-title h2 {
+    font-size: 13px !important; } }
 .apply {
   background-image: url("../img/home/ban.png");
   min-height: 700px;
