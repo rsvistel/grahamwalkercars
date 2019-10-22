@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="overlay"></div>
+    <!-- <div class="overlay"></div> -->
     <section class="header topnav" id="myTopnav">
         <div class="container">
             <div class="row">
@@ -58,31 +58,31 @@
                     <nav class="navbar navbar-expand-md">
                         <div class="navbar-header">
                             <div class="mobile-block-items mobile-search">
-                                <button class="navbar-toggler custom-toggler btn-search" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler custom-toggler btn-search" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
                                     <i class="fas fa-search"></i>
                                     <span>Search</span>
                                 </button>
                             </div>
                             <div class="mobile-block-items mobile-reserve">
-                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve" aria-expanded="false" aria-label="reserve">
                                     <i class="fas fa-star"></i>
                                     <span>Reserve</span>
                                 </button>
                             </div>
                             <div class="mobile-block-items mobile-favourite">
-                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-favourites" aria-controls="darck-btn-favourites" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-favourites" aria-controls="darck-btn-favourites" aria-expanded="false" aria-label="favourites">
                                     <i class="far fa-heart"></i>
                                     <span>Favourites</span>
                                 </button>
                             </div>
                             <div class="mobile-block-items mobile-phone">
-                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-phone" aria-controls="darck-btn-phone" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-phone" aria-controls="darck-btn-phone" aria-expanded="false" aria-label="phone">
                                     <i class="fas fa-phone-alt"></i>
                                     <span>Phone</span>
                                 </button>
                             </div>
                             <div class="mobile-block-items mobile-menu">
-                                <button class="navbar-toggler custom-toggler mobile-menu-btn" type="button" data-toggle="collapse" data-target=".menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler custom-toggler mobile-menu-btn" type="button" data-toggle="collapse" data-target=".menubar" aria-controls="menubar" aria-expanded="false" aria-label="navigation">
                                     <i class="fas fa-bars"></i>
                                     <span>Options</span>
                                 </button>
@@ -93,7 +93,7 @@
                                 <div class="accordion__wrapper">
                                     <div class="accordion" id="accordion">
                                         <div class="card">
-                                            <div class="navbar-toggler mobile-search-btn btn-search" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="Toggle navigation">
+                                            <div class="navbar-toggler mobile-search-btn btn-search" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" role="navigation">
                                                 <div>
                                                     <span>Search</span>
                                                 </div>
@@ -259,10 +259,20 @@
                             <li>Reserve</li>
                             </ul>
                         </div>
+                        <div class="navbar-collapse collapse darck-btn-favourites">
+                                <ul class="navbar-nav ml-auto py-md-0  darck-btn">
+                                <li>Favourites</li>
+                                </ul>
+                        </div>
+                        <div class="navbar-collapse collapse darck-btn-phone">
+                            <ul class="navbar-nav ml-auto py-md-0  darck-btn">
+                            <li>Phone</li>
+                            </ul>
+                        </div>
 
                         <div class="navbar-collapse collapse menubar">
                             <ul class="navbar-nav ml-auto py-md-0">
-                                <li class="navbar-toggler mobile-close-btn mobile-menu-btn" type="button" data-toggle="collapse" data-target=".menubar" aria-controls="menubar" aria-expanded="false">
+                                <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse" data-target=".menubar" aria-controls="menubar" aria-expanded="false">
                                     <div>
                                         <span>Options</span>
                                     </div>
@@ -390,10 +400,12 @@
                         <div class="car-image">
                             <img src="img/home/bmw.png" alt="frame-car-image">
                             <div class="car-image-counter car-image-counter-home">
-                                <img src="img/home/photo.png" alt="" /> 16
+                                <img src="img/home/photo.png" alt=""> 16
                             </div>
                             <div class="car-like">
-                                <a href="#saved"><img src="img/home/heart.png" alt="saved" /></a>
+                                <a href="#">
+                                    <img src="img/home/heart.png" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="car-title">
@@ -419,10 +431,12 @@
                         <div class="car-image">
                             <img src="img/home/audi.png" alt="frame-car-image">
                             <div class="car-image-counter car-image-counter-home">
-                                <img src="img/home/photo.png" /> 16
+                                <img src="img/home/photo.png" alt=""> 16
                             </div>
                             <div class="car-like">
-                                <a href="#saved"><img src="img/home/heart.png" alt="saved" /></a>
+                                <a href="#">
+                                    <img src="img/home/heart.png" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="car-title">
@@ -448,10 +462,12 @@
                         <div class="car-image">
                             <img src="img/home/golf.png" alt="frame-car-image">
                             <div class="car-image-counter car-image-counter-home">
-                                <img src="img/home/photo.png" /> 16
+                                <img src="img/home/photo.png"> 16
                             </div>
                             <div class="car-like">
-                                <a href="#saved"><img src="img/home/heart.png" alt="saved" /></a>
+                                <a href="#">
+                                    <img src="img/home/heart.png" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="car-title">
@@ -477,10 +493,12 @@
                         <div class="car-image">
                             <img src="img/home/x5.png" alt="frame-car-image">
                             <div class="car-image-counter car-image-counter-home">
-                                <img src="img/home/photo.png" /> 16
+                                <img src="img/home/photo.png"> 16
                             </div>
                             <div class="car-like">
-                                <a href="#saved"><img src="img/home/heart.png" alt="saved" /></a>
+                                <a href="#">
+                                    <img src="img/home/heart.png" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="car-title">
