@@ -234,8 +234,8 @@ select::-ms-expand {
   .navbar ul li .nav-link {
     font-size: 10px; } }
 @media (min-width: 768px) {
-  .mobile-block, .mobile-section-under-header, .accordion__wrapper {
-    display: none; }
+  .mobile-block, .mobile-section-under-header, .accordion__wrapper, .darck-btn {
+    display: none !important; }
 
   .mobile-close-btn {
     display: none; }
@@ -247,7 +247,7 @@ select::-ms-expand {
   .upper-half-header {
     display: none; }
 
-  .mobile-block {
+  .mobile-block, .darck-btn {
     display: flex; }
 
   .mobile-section-under-header {
