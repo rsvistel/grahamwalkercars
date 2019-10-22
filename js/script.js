@@ -140,11 +140,11 @@ $(document).ready(function () {
         $('.mobile-menu-btn').toggleClass('indexcity');
     });
 
-    $('.btn-search').click(function(){
-        $('.menu-search').toggleClass('left-search');
-        // $('body').toggleClass('active-menu');
-        $('.btn-search').toggleClass('indexcity');
-    });
+    // $('.btn-search').click(function(){
+    //     $('.menu-search').toggleClass('left-search');
+    //     // $('body').toggleClass('active-menu');
+    //     $('.btn-search').toggleClass('indexcity');
+    // });
 
     // $(function() {
     //     $(document).click(function (event) {
