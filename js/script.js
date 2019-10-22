@@ -133,4 +133,30 @@ $(document).ready(function () {
             $(this).find('img').attr('src', 'img/home/Group%20373.svg')
         }
     });
+
+        $('.mobile-menu-btn').click(function() {
+        $('.menubar').toggleClass('right');
+        // $('.overlay').toggleClass('active');
+        // $('body').toggleClass('active-menu');
+        $('.mobile-menu-btn').toggleClass('indexcity');
+    });
+
+    $('.btn-search').click(function() {
+        // $('.overlay').toggleClass('active');
+        // $('body').toggleClass('active-menu');
+        $('.btn-search').toggleClass('indexcity');
+    });
+
+    // $(function() {
+    //     $(document).click(function (event) {
+    //       $('.menubar').collapse('hide');
+    //       event.stopPropagation();
+    //     });
+    //   });
+
+    // $('.overlay').on('click', function () {
+    //     $('.overlay').removeClass('active');
+    // });
+
+
 });
