@@ -60,6 +60,7 @@ select::-ms-expand
 .titles-logo
   padding-left: 0
   padding-right: 5%
+  margin-right: 9%
   img
     width: 100%
 .motors-title-logo
@@ -162,121 +163,6 @@ select::-ms-expand
       display: flex
 .social-icon.stars-block.col-md-1
   justify-content: flex-start
-// .bottom-half-header
-//   background-color: #ebedf0
-//   height: 35px
-//   padding: 0 2.7%
-//   .container
-//     padding-left: 0
-//     ul
-//       display: -webkit-box
-//       display: -ms-flexbox
-//       display: flex
-//       -webkit-box-align: center
-//       -ms-flex-align: center
-//       align-items: center
-//       list-style-type: none
-//       margin-bottom: 0
-//       li
-//         padding: 0 1.4%
-//         height: 35px
-//         display: -webkit-box
-//         display: -ms-flexbox
-//         display: flex
-//         -webkit-box-align: center
-//         -ms-flex-align: center
-//         align-items: center
-//         transition: 0.5s
-//         .fa-chevron-down
-        //   color: #000000
-        // &:hover
-        //   background-color: $dark-blue
-        //   cursor: pointer
-        //   .h6-title, .fa-chevron-down
-        //     color: #ffffff
-        // &.active
-        //   background-color: $dark-blue
-        //   .h6-title
-        //     color: #ffffff
-        // a
-        //   text-decoration: none
-        //   color: #000000
-        //   &:hover
-        //     color: #ffffff
-        //   .h6-title
-        //     text-transform: uppercase
-        //     font-family: 'Montserrat', sans-serif
-        //     font-weight: 600
-        //     font-size: 0.8rem
-        //     color: #000000
-//     .bottom-half-header__link-mobile
-//       display: none
-// .bottom-half-header .container ul li:hover .h6-title-dropdown
-//   color: #000000
-
-// .dropdown .dropbtn
-//   font-size: 0.9rem
-
-// .bottom-half-header .container ul li:first-child
-//   margin-left: -7px
-// .mobile-open
-//   display: none
-// .mobile-section-under-header
-//   display: none
-// .navbar
-//   overflow: hidden
-//   background-color: #333
-// .navbar a
-//   float: left
-//   font-size: 16px
-//   color: white
-//   text-align: center
-//   padding: 14px 16px
-//   text-decoration: none
-// .flex-dropdown
-//   display: -webkit-box
-//   display: -ms-flexbox
-//   display: flex
-// .flex-dropdown h6
-//   display: -webkit-box
-//   display: -ms-flexbox
-//   display: flex
-//   margin-right: 5px
-// .dropdown
-//   float: left
-//   overflow: initial
-// .dropdown .dropbtn
-//   font-size: 16px
-//   border: none
-//   outline: none
-//   color: white
-//   background-color: inherit
-//   font-family: inherit
-//   margin: 0
-// .dropdown-content
-//   display: none
-//   position: absolute
-//   background-color: #ebedf0
-//   min-width: 160px
-//   z-index: 1000
-//   border: 1px solid $dark-blue
-//   margin-left: -14.5px
-//   margin-top: 10px
-// .dropdown-content a
-//   float: none
-//   color: black
-//   padding: 14px 16px
-//   text-decoration: none
-//   display: block
-//   text-align: left
-// .dropdown-content a:hover
-//   background-color: #ddd
-// .bottom-half-header .container ul li
-//   .dropdown-content h6
-//     color: #000000
-//   &:hover .dropdown-content
-//     display: block
-
 
 @media (max-width: 991px)
   .upper-half-header
@@ -331,16 +217,16 @@ select::-ms-expand
         text-align: center
         display: inline-block
 
-// .indexcity
-//   z-index: 100
+.indexcity
+  z-index: 100
 
-// .right
-//   right: 0 !important
-//   left: 30% !important
+.right
+  right: 0 !important
+  left: 30% !important
 
-// .left-search
-//   right: 30% !important
-//   left: 0 !important
+.left-search
+  right: 30% !important
+  left: 0 !important
 
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
@@ -350,8 +236,8 @@ select::-ms-expand
           font-size: 10px
 
 @media (min-width: 768px)
-  .mobile-block, .mobile-section-under-header, .accordion__wrapper
-    display: none
+  .mobile-block, .mobile-section-under-header, .accordion__wrapper, .darck-btn
+    display: none!important
   .mobile-close-btn
     display: none
   .navbar-expand-md .navbar-nav .nav-link
@@ -361,8 +247,11 @@ select::-ms-expand
 @media only screen and (max-width: 767px)
   .upper-half-header
     display: none
-  .mobile-block, .mobile-section-under-header
+  .mobile-block, .darck-btn
     display: flex
+  .mobile-section-under-header
+    display: flex
+    justify-content: center
   .mobile-close-btn
     display: flex
   .mobile-block-items
@@ -394,8 +283,9 @@ select::-ms-expand
       font-size: 17px
     span
       color: #ffffff
-      font-size: 9px
+      font-size: 12px
       text-transform: uppercase
+      margin-bottom: 1px
   .navbar-header
     display: flex
     width: 100%
@@ -406,7 +296,7 @@ select::-ms-expand
     width: 20%
     border-bottom: 1px solid #ffff
     .fa-bars
-      font-size: 20px
+      //font-size: 20px
   .mobile-search
     background: #D20709
     width: 20%
@@ -423,7 +313,7 @@ select::-ms-expand
     border-right: 1px solid #ffff
     border-bottom: 1px solid #ffff
     .fa-phone-alt
-      font-size: 18px
+      //font-size: 18px
   .mobile-favourite
     background: #323232
     width: 22%
@@ -433,19 +323,16 @@ select::-ms-expand
     background-color: #333333
     position: fixed
     top: 0
-    transition: all 0.3s ease-out
     height: 100%
     width: 100%
-    //left: 100%
+    left: 100%
     overflow-y: scroll
   .menu-search
-    background-color: #F7F7F9
     position: fixed
     top: 0
-    transition: all 0.3s ease-out
+    background-color: #F7F7F9
     height: 100%
-    width: 100%
-    //right: 100%
+    width: 74%
     overflow-y: scroll
   .navbar-nav
     .nav-item
@@ -456,18 +343,15 @@ select::-ms-expand
       align-items: flex-start
       li
         padding: 1.5vw 0 1.5vw 5vw
-        border-bottom: 1px solid #ffffff
-        //width: 70%
-        width: 100%
+        border-bottom: 2px solid #6E6E6E
+        width: 74%
       li:nth-child(2)
-        border-top: 1px solid #ffffff!important
-      li:hover
-        //background-color: transparent
+        border-top: 2px solid #6E6E6E!important
   .mobile-close-btn
-    background: #014563
+    background: #014563!important
     display: flex
     justify-content: space-between
-    padding: 3vw 3vw 3vw 5vw !important
+    padding: 2vw 6vw 2vw 5vw !important
     border-radius: none
     span
       text-transform: uppercase
@@ -479,7 +363,10 @@ select::-ms-expand
       padding-right: 1vw
 
   .mobile-section-under-header
-    padding: 14vw 2vw 1vw 2vw
+    padding: 52px 2vw 1vw 2vw
+    img
+      width: 70%
+
   .active-menu
     position: fixed
   .active-search
@@ -489,10 +376,10 @@ select::-ms-expand
     background-image: url('../img/home/arrow-down.png')
     background-position: center right 10px
     background-repeat: no-repeat
+    background-size: 4%
 
   .menu-search
     .card
-      background-color: #F7F7F9
       border-radius: 0
       border: none
       border-bottom: 1px solid #DADCDD!important
@@ -507,23 +394,53 @@ select::-ms-expand
       background: #D20709
       display: flex
       justify-content: space-between
-      padding: 3vw 2vw 3vw 3vw !important
+      //padding: 0.75rem 1.25rem !important
+      padding: 3vw 2.6vw 3vw 5vw !important
       border-radius: 0
       border: none
       text-transform: uppercase
       span
-        font-size: 13px
+        font-size: 1rem
+        vertical-align: middle
+  // .overlay
+  //   display: none
+  //   top: 0
+  //   left: 0
+  //   position: fixed
+  //   width: 100vw
+  //   height: 100vh
+  //   opacity: 0
+  //   z-index: 99
+  //   background-color: #C2C2C2
+
+  // .overlay.active
+  //   display: block
+  //   opacity: 1
 
 @media (orientation: landscape)
   .mobile-section-under-header
-    padding: 11vw 2vw 2vw 2vw
+    padding: 70px 2vw 2vw 2vw
     justify-content: center
 
 @media (min-width: 768px) and (max-width: 1000px)
+  .titles-logo
+    margin-right: 0
   .titles-logo img
-    width: 85%
+    //width: 85%
   .sales-number
     font-size: 1.5vw
+  .upper-half-header
+    .col-md-2
+      margin-right: 3vw
+  .social-icon
+    .stars-block
+      .fas.fa-star
+        font-size: 14px
+@media (max-width: 320px)
+  .mobile-block-items
+    span
+      color: #ffffff
+      font-size: 9px
 //Header
 
 //Banner
@@ -549,11 +466,16 @@ select::-ms-expand
     text-align: center
     img
       width: 35%
-      position: absolute
+      position: relative
     .title-top-img
       color: white
       text-transform: uppercase
+      position: absolute
       z-index: 1
+      top: 50%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -50%)
   #banner-image
     text-align: center
     img
@@ -885,7 +807,7 @@ select::-ms-expand
 .text-half-apply
   padding-left: 21%
 .button-half-apply, .text-half-apply
-  top: -40px
+  padding-bottom: 13%
 .button-half-apply button
   background: #D10609
   padding: 15px 75px
@@ -945,6 +867,7 @@ select::-ms-expand
     text-transform: uppercase
     font-family: Arial, sans-serif
     text-align: center
+    font-weight: 600
   .col-lg-6
     margin-top: 35px
     p, h6
@@ -967,6 +890,7 @@ select::-ms-expand
       font-family: Arial, sans-serif
   .card-body
     padding: 1.25rem 0
+    padding-left: 6vw
     ul
       list-style: none
       font-family: $primary-font
@@ -978,6 +902,12 @@ select::-ms-expand
           font-family: Arial, sans-serif
           text-transform: uppercase
           font-size: 17px
+
+
+@media (max-width: 768px)
+  .pay-us-visit .card-body
+      padding-left: 0
+
 //pay-us-visit
 
 

@@ -54,7 +54,8 @@ select::-ms-expand {
 
 .titles-logo {
   padding-left: 0;
-  padding-right: 5%; }
+  padding-right: 5%;
+  margin-right: 9%; }
   .titles-logo img {
     width: 100%; }
 
@@ -219,12 +220,23 @@ select::-ms-expand {
         text-align: center;
         display: inline-block; }
 
+.indexcity {
+  z-index: 100; }
+
+.right {
+  right: 0 !important;
+  left: 30% !important; }
+
+.left-search {
+  right: 30% !important;
+  left: 0 !important; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar ul li .nav-link {
     font-size: 10px; } }
 @media (min-width: 768px) {
-  .mobile-block, .mobile-section-under-header, .accordion__wrapper {
-    display: none; }
+  .mobile-block, .mobile-section-under-header, .accordion__wrapper, .darck-btn {
+    display: none !important; }
 
   .mobile-close-btn {
     display: none; }
@@ -236,8 +248,12 @@ select::-ms-expand {
   .upper-half-header {
     display: none; }
 
-  .mobile-block, .mobile-section-under-header {
+  .mobile-block, .darck-btn {
     display: flex; }
+
+  .mobile-section-under-header {
+    display: flex;
+    justify-content: center; }
 
   .mobile-close-btn {
     display: flex; }
@@ -267,8 +283,9 @@ select::-ms-expand {
     font-size: 17px; }
   .mobile-block-items span {
     color: #ffffff;
-    font-size: 9px;
-    text-transform: uppercase; }
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 1px; }
 
   .navbar-header {
     display: flex;
@@ -281,8 +298,6 @@ select::-ms-expand {
     background: #014563;
     width: 20%;
     border-bottom: 1px solid #ffff; }
-    .mobile-menu .fa-bars {
-      font-size: 20px; }
 
   .mobile-search {
     background: #D20709;
@@ -301,8 +316,6 @@ select::-ms-expand {
     width: 19%;
     border-right: 1px solid #ffff;
     border-bottom: 1px solid #ffff; }
-    .mobile-phone .fa-phone-alt {
-      font-size: 18px; }
 
   .mobile-favourite {
     background: #323232;
@@ -314,18 +327,17 @@ select::-ms-expand {
     background-color: #333333;
     position: fixed;
     top: 0;
-    transition: all 0.3s ease-out;
     height: 100%;
     width: 100%;
+    left: 100%;
     overflow-y: scroll; }
 
   .menu-search {
-    background-color: #F7F7F9;
     position: fixed;
     top: 0;
-    transition: all 0.3s ease-out;
+    background-color: #F7F7F9;
     height: 100%;
-    width: 100%;
+    width: 74%;
     overflow-y: scroll; }
 
   .navbar-nav .nav-item .nav-link {
@@ -335,16 +347,16 @@ select::-ms-expand {
     align-items: flex-start; }
     .navbar ul li {
       padding: 1.5vw 0 1.5vw 5vw;
-      border-bottom: 1px solid #ffffff;
-      width: 100%; }
+      border-bottom: 2px solid #6E6E6E;
+      width: 74%; }
     .navbar ul li:nth-child(2) {
-      border-top: 1px solid #ffffff !important; }
+      border-top: 2px solid #6E6E6E !important; }
 
   .mobile-close-btn {
-    background: #014563;
+    background: #014563 !important;
     display: flex;
     justify-content: space-between;
-    padding: 3vw 3vw 3vw 5vw !important;
+    padding: 2vw 6vw 2vw 5vw !important;
     border-radius: none; }
     .mobile-close-btn span {
       text-transform: uppercase;
@@ -356,7 +368,9 @@ select::-ms-expand {
       padding-right: 1vw; }
 
   .mobile-section-under-header {
-    padding: 14vw 2vw 1vw 2vw; }
+    padding: 52px 2vw 1vw 2vw; }
+    .mobile-section-under-header img {
+      width: 70%; }
 
   .active-menu {
     position: fixed; }
@@ -367,10 +381,10 @@ select::-ms-expand {
   .accordion__title {
     background-image: url("../img/home/arrow-down.png");
     background-position: center right 10px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 4%; }
 
   .menu-search .card {
-    background-color: #F7F7F9;
     border-radius: 0;
     border: none;
     border-bottom: 1px solid #DADCDD !important; }
@@ -385,22 +399,33 @@ select::-ms-expand {
     background: #D20709;
     display: flex;
     justify-content: space-between;
-    padding: 3vw 2vw 3vw 3vw !important;
+    padding: 3vw 2.6vw 3vw 5vw !important;
     border-radius: 0;
     border: none;
     text-transform: uppercase; }
     .menu-search .mobile-search-btn span {
-      font-size: 13px; } }
+      font-size: 1rem;
+      vertical-align: middle; } }
 @media (orientation: landscape) {
   .mobile-section-under-header {
-    padding: 11vw 2vw 2vw 2vw;
+    padding: 70px 2vw 2vw 2vw;
     justify-content: center; } }
 @media (min-width: 768px) and (max-width: 1000px) {
-  .titles-logo img {
-    width: 85%; }
+  .titles-logo {
+    margin-right: 0; }
 
   .sales-number {
-    font-size: 1.5vw; } }
+    font-size: 1.5vw; }
+
+  .upper-half-header .col-md-2 {
+    margin-right: 3vw; }
+
+  .social-icon .stars-block .fas.fa-star {
+    font-size: 14px; } }
+@media (max-width: 320px) {
+  .mobile-block-items span {
+    color: #ffffff;
+    font-size: 9px; } }
 #banner {
   order: 1;
   position: relative;
@@ -423,11 +448,16 @@ select::-ms-expand {
     text-align: center; }
     #banner .top-img img {
       width: 35%;
-      position: absolute; }
+      position: relative; }
     #banner .top-img .title-top-img {
       color: white;
       text-transform: uppercase;
-      z-index: 1; }
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
   #banner #banner-image {
     text-align: center; }
     #banner #banner-image img {
@@ -749,7 +779,7 @@ select::-ms-expand {
   padding-left: 21%; }
 
 .button-half-apply, .text-half-apply {
-  top: -40px; }
+  padding-bottom: 13%; }
 
 .button-half-apply button {
   background: #D10609;
@@ -807,7 +837,8 @@ select::-ms-expand {
     font-size: 18px;
     text-transform: uppercase;
     font-family: Arial, sans-serif;
-    text-align: center; }
+    text-align: center;
+    font-weight: 600; }
   .pay-us-visit .col-lg-6 {
     margin-top: 35px; }
     .pay-us-visit .col-lg-6 p, .pay-us-visit .col-lg-6 h6 {
@@ -829,7 +860,8 @@ select::-ms-expand {
       font-weight: 300;
       font-family: Arial, sans-serif; }
   .pay-us-visit .card-body {
-    padding: 1.25rem 0; }
+    padding: 1.25rem 0;
+    padding-left: 6vw; }
     .pay-us-visit .card-body ul {
       list-style: none;
       font-family: "Montserrat", sans-serif;
@@ -842,6 +874,9 @@ select::-ms-expand {
           text-transform: uppercase;
           font-size: 17px; }
 
+@media (max-width: 768px) {
+  .pay-us-visit .card-body {
+    padding-left: 0; } }
 .footer {
   background-color: #333;
   color: #ffffff;
