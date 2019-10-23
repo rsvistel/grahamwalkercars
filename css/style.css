@@ -1396,5 +1396,136 @@ select::-ms-expand {
 
   .contact-us .pay-us-visit .card-body ul li .col-6 {
     font-size: 18px; } }
+.modal-used-cars {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  background: white;
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100%; }
+  .modal-used-cars .col-md-4 {
+    float: left;
+    padding: 35px 20px;
+    overflow: hidden; }
+  .modal-used-cars .modal-used-cars-container.container {
+    width: 75%;
+    background: white;
+    margin-top: 4%;
+    padding: 0; }
+    .modal-used-cars .modal-used-cars-container.container .block-ul-modal {
+      color: #666666; }
+    .modal-used-cars .modal-used-cars-container.container .title-cross-block {
+      background-color: #005EAA;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 10px 17px; }
+      .modal-used-cars .modal-used-cars-container.container .title-cross-block embed {
+        width: 25px; }
+    .modal-used-cars .modal-used-cars-container.container .title-modal-used-cars {
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      color: #2D2D2D; }
+    .modal-used-cars .modal-used-cars-container.container h6 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px; }
+    .modal-used-cars .modal-used-cars-container.container .first-title-modal {
+      margin-bottom: 15px; }
+    .modal-used-cars .modal-used-cars-container.container .second-title-modal {
+      text-transform: uppercase; }
+    .modal-used-cars .modal-used-cars-container.container p {
+      margin-bottom: 15px; }
+    .modal-used-cars .modal-used-cars-container.container ul {
+      list-style-type: none; }
+      .modal-used-cars .modal-used-cars-container.container ul li {
+        border-top: 1px solid #D4D4D4;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 9px 0; }
+        .modal-used-cars .modal-used-cars-container.container ul li:last-child {
+          border-bottom: 1px solid #D4D4D4; }
+        .modal-used-cars .modal-used-cars-container.container ul li h6 {
+          font-size: 15px;
+          text-transform: capitalize;
+          font-weight: 400;
+          font-family: "Source Sans Pro", sans-serif; }
+
+.modal-used-cars__title {
+  font-size: 20px;
+  color: #666666;
+  display: inline-block;
+  padding-bottom: 0.8rem; }
+.modal-used-cars__description {
+  font-size: 14px;
+  color: #666666; }
+.modal-used-cars__payments {
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #39F;
+  font-weight: bold; }
+.modal-used-cars__value-text {
+  font-size: 20px; }
+.modal-used-cars__value {
+  font-size: 50px; }
+.modal-used-cars__finance {
+  font-size: 16px; }
+
+.car-modal-close {
+  cursor: pointer; }
+
+@media (min-width: 2000px) {
+  .modal-used-cars .modal-used-cars-container {
+    width: 60%; } }
+@media (min-width: 1650px) {
+  .mechanic-image img {
+    top: 20%; } }
+@media (min-width: 2320px) {
+  .mechanic-image img {
+    top: 27%; } }
+@media (min-width: 1650px) {
+  .mechanic-image img {
+    top: 20%; } }
+@media (max-width: 768px) {
+  .modal-used-cars .modal-used-cars-container {
+    width: 100%;
+    margin-top: 0; }
+
+  .modal-used-cars {
+    overflow: scroll;
+    height: 100vh; }
+    .modal-used-cars .col-md-4 {
+      padding: 15px 10px; }
+
+  .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
+    font-size: 15px; } }
+.finance-icon {
+  background-image: url("../img/finance-icon.png");
+  background-repeat: no-repeat;
+  background-position: 1.6rem center; }
 
 /*# sourceMappingURL=style.css.map */
