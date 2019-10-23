@@ -1450,7 +1450,6 @@ select::-ms-expand
   overflow: hidden
   display: block
   position: relative
-  padding-bottom: 100px
   .search-box
     width: 100%
     height: 40%
@@ -1524,9 +1523,25 @@ select::-ms-expand
   .used-cars-title
     margin-bottom: 3vw
   .filter-navigation-menu
+    display: flex
+    justify-content: flex-end
+    width: 90%
+    margin: 1vw 0 4vw 0
     ul
       list-style: none
       display: flex
+      li
+        background: #C8C8C8
+        color: white
+        width: 50%
+        font-size: 16px
+        vertical-align: center
+        padding: 20px 10px
+        margin-right: 4%
+        border-radius: 5px
+        cursor: pointer
+      .pagination-active-item
+        background: #54C8E3
 
 @media (min-width: 769px) and (max-width: 992px)
   #used-cars.main-wrapper
