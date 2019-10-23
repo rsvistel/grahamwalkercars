@@ -1442,25 +1442,121 @@ select::-ms-expand
 //       margin-bottom: 0
 //       padding-top: 15vw
 
-// .cars-banner-top
-//   background: #47494A
-//   width: 100%
-//   min-height: 400px
-
-.foo
+#used-cars.main-wrapper
+  background-color: white
+  background-image: url('../img/used-cars/bg-used-cars.png')
+  background-repeat: no-repeat
+  background-size: 100% 40%
+  overflow: hidden
+  display: block
+  position: relative
+  padding-bottom: 100px
+  .search-box
     width: 100%
-    min-height: 700px
-    background-color: #47494A
+    height: 40%
+    //position: absolute
+    // bottom: 0
+    // left: 0
+    // right: 0
     margin: 0 auto
-    position: relative
+    // background: rgba(34, 34, 34, 0.85)
+    //display: flex
+    align-items: center
+    .container
+    h3
+      color: #fff
+      text-align: left
+      margin: 13px 0 7px 0
+      font-size: 1.5rem
+      font-family: $primary-font
+      img
+        height: 20px
+    .col-md-2
+      text-align: center
+      padding: 0 1px
+      select
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        background-image: url(../img/home/arrow-down.png)
+        background-position: center right 10px
+        background-size: 8%
+        background-repeat: no-repeat
+        background-color: white
+        border-radius: 0
+        padding-left: 20px
+        font-family: Arial, sans-serif
+      button
+        background: #D10609
+        border: none
+        border-radius: 0
+        color: white
+        font-family: Arial, sans-serif
+        text-transform: uppercase
+        img
+          width: 25px
+          position: relative
+          top: -1px
+          left: -15px
+      button, select
+        width: 100%
+        height: 55px
+        border: 0
+        .mobile-word
+          display: none
+    .search-box-info
+      color: #D1D1D1
+      padding-top: 15px
+      display: flex
+      justify-content: space-between
+      .advanced-text
+        color: #ffffff
+        text-decoration: underline
+        cursor: pointer
+  .car-tile
+    //background: #ffffff
+    // margin-bottom: 2%
+    margin: 0 1% 1% 1%
+    margin-bottom: 2%
+    max-width: 23%
+    .car-title
+      background: #ffffff
+  .used-cars-title
+    margin-bottom: 3vw
+  .filter-navigation-menu
+    ul
+      list-style: none
+      display: flex
 
-.foo2
-    width: 100%
-    height: 150px
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
+@media (min-width: 769px) and (max-width: 992px)
+  #used-cars.main-wrapper
+    .car-tile
+      max-width: 48%
+
+
+@media (max-width: 768px)
+  #used-cars.main-wrapper
+    .car-tile
+      max-width: 100%
+
+// .sed-cars
+//   position: absolute
+//   bottom: 0
+//   width: 100%
+// .foo
+//     width: 100%
+//     min-height: 700px
+//     background-color: #47494A
+//     margin: 0 auto
+//     position: relative
+
+// .foo2
+//     width: 100%
+//     height: 150px
+//     position: absolute
+//     top: 50%
+//     left: 50%
+//     transform: translate(-50%, -50%)
 
 //used cars
 
