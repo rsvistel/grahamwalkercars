@@ -1437,7 +1437,33 @@ select::-ms-expand {
     max-width: 48%; } }
 @media (max-width: 768px) {
   #used-cars.main-wrapper .car-tile {
-    max-width: 100%; } }
+    max-width: 100%; }
+  #used-cars.main-wrapper .search-box {
+    position: static;
+    padding: 2% 5% 2%; }
+    #used-cars.main-wrapper .search-box .container {
+      padding: 0; }
+      #used-cars.main-wrapper .search-box .container h3 {
+        font-weight: 400;
+        font-size: 22px;
+        margin-bottom: 13px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        #used-cars.main-wrapper .search-box .container h3 img {
+          margin-right: 9px; }
+      #used-cars.main-wrapper .search-box .container form {
+        padding: 0 7px; }
+      #used-cars.main-wrapper .search-box .container .col-md-2 {
+        margin-bottom: 16px; }
+        #used-cars.main-wrapper .search-box .container .col-md-2 select {
+          font-size: 12.5px;
+          height: 43px;
+          background-image: none;
+          border-radius: 7px; } }
 @media (max-width: 768px) {
   .contact-us .about-title {
     display: none; }
