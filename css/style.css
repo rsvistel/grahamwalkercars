@@ -1410,6 +1410,8 @@ select::-ms-expand {
     float: left;
     padding: 35px 20px;
     overflow: hidden; }
+    .modal-used-cars .col-md-4 img {
+      width: 100%; }
   .modal-used-cars .modal-used-cars-container.container {
     width: 75%;
     background: white;
@@ -1418,11 +1420,9 @@ select::-ms-expand {
     -webkit-box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73);
     -moz-box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73);
     box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73); }
-  .modal-used-cars .row.modal-used-cars-blocks {
-    padding: 7px; }
-    .modal-used-cars .row.modal-used-cars-blocks .block-ul-modal {
-      color: #666666; }
-    .modal-used-cars .row.modal-used-cars-blocks .title-cross-block {
+    .modal-used-cars .modal-used-cars-container.container .block-ul-modal {
+      color: #171717; }
+    .modal-used-cars .modal-used-cars-container.container .title-cross-block {
       background-color: #DBDBDB;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1431,28 +1431,33 @@ select::-ms-expand {
       -ms-flex-pack: justify;
       justify-content: space-between;
       padding: 10px 17px; }
-      .modal-used-cars .row.modal-used-cars-blocks .title-cross-block embed {
+      .modal-used-cars .modal-used-cars-container.container .title-cross-block embed {
         width: 25px; }
-    .modal-used-cars .row.modal-used-cars-blocks .title-modal-used-cars {
+    .modal-used-cars .modal-used-cars-container.container .title-modal-used-cars {
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       font-weight: 300;
       display: flex;
       align-items: center;
       color: #2D2D2D; }
-    .modal-used-cars .row.modal-used-cars-blocks h6 {
+    .modal-used-cars .modal-used-cars-container.container h6 {
       font-family: "Montserrat", sans-serif;
-      font-size: 18px; }
-    .modal-used-cars .row.modal-used-cars-blocks .first-title-modal {
+      font-size: 18px;
+      font-weight: 400; }
+    .modal-used-cars .modal-used-cars-container.container .first-title-modal {
       margin-bottom: 15px; }
-    .modal-used-cars .row.modal-used-cars-blocks .second-title-modal {
-      text-transform: uppercase; }
-    .modal-used-cars .row.modal-used-cars-blocks p {
+    .modal-used-cars .modal-used-cars-container.container .second-title-modal {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 21px; }
+    .modal-used-cars .modal-used-cars-container.container p {
       margin-bottom: 15px; }
-    .modal-used-cars .row.modal-used-cars-blocks ul {
+    .modal-used-cars .modal-used-cars-container.container ul {
       list-style-type: none; }
-      .modal-used-cars .row.modal-used-cars-blocks ul li {
-        border-top: 1px solid #D4D4D4;
+      .modal-used-cars .modal-used-cars-container.container ul hr {
+        margin: 0 15px;
+        color: #C8C8C8; }
+      .modal-used-cars .modal-used-cars-container.container ul li {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1463,17 +1468,32 @@ select::-ms-expand {
         -ms-flex-align: center;
         align-items: center;
         padding: 9px 0; }
-        .modal-used-cars .row.modal-used-cars-blocks ul li:last-child {
-          border-bottom: 1px solid #D4D4D4; }
-        .modal-used-cars .row.modal-used-cars-blocks ul li h6 {
+        .modal-used-cars .modal-used-cars-container.container ul li h6 {
           font-size: 15px;
           text-transform: capitalize;
           font-weight: 400;
           font-family: "Source Sans Pro", sans-serif; }
+    .modal-used-cars .modal-used-cars-container.container .row.modal-used-cars-blocks {
+      padding: 7px; }
+  .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
+    margin-left: 21%;
+    padding: 0;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 600;
+    font-size: 24px; }
+  .modal-used-cars .card.accordion-used-car__card {
+    background-color: #DBDBDB;
+    border: 0; }
+    .modal-used-cars .card.accordion-used-car__card .card-header:first-child {
+      border: 0;
+      border-radius: 7px;
+      padding: 1.5rem 1.25rem; }
+  .modal-used-cars .modal-used-cars__payments {
+    font-family: "Arial Rounded MT Bold", sans-serif; }
 
 .modal-used-cars__title {
   font-size: 20px;
-  color: #666666;
+  color: #171717;
   display: inline-block;
   padding-bottom: 0.8rem; }
 .modal-used-cars__description {
@@ -1516,7 +1536,7 @@ select::-ms-expand {
   .mechanic-image img {
     top: 20%; } }
 @media (max-width: 768px) {
-  .modal-used-cars .modal-used-cars-container {
+  .modal-used-cars .modal-used-cars-container.container {
     width: 100%;
     margin-top: 0; }
 
@@ -1526,8 +1546,36 @@ select::-ms-expand {
     .modal-used-cars .col-md-4 {
       padding: 15px 10px; }
 
+  .modal-used-cars .modal-used-cars-container.container .row.modal-used-cars-blocks {
+    padding: 7px 15px; }
+
+  .modal-used-cars .modal-used-cars-container.container .title-cross-block {
+    padding: 10px 7px; }
+
   .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
     font-size: 15px; } }
+@media (min-width: 450px) and (max-width: 768px) {
+  .modal-used-cars .modal-used-cars-container.container {
+    width: 70%;
+    margin-top: 5%; } }
+@media (min-width: 769px) and (max-width: 1000px) {
+  .modal-used-cars .col-md-4 img, .modal-used-cars .modal-used-cars-container.container {
+    width: 100%; }
+
+  .modal-used-cars .modal-used-cars-container.container ul li h6, .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
+    font-size: 14px; }
+
+  .finance-icon {
+    background-size: 16%; }
+
+  .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
+    margin-left: 30%; }
+
+  .modal-used-cars .card.accordion-used-car__card .card-header:first-child {
+    padding: 1.5rem 1rem; } }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .modal-used-cars .modal-used-cars-container.container {
+    width: 100%; } }
 .finance-icon {
   background-image: url("../img/finance-icon.png");
   background-repeat: no-repeat;
