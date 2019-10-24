@@ -1800,22 +1800,16 @@ select::-ms-expand {
     float: left; }
     .gallery__center-container img:nth-last-child(-n+3) {
       width: 21.6%;
-      height: auto; }
+      height: auto;
+      margin-bottom: 27px; }
   .gallery__center-container img.main-img {
-    width: 69%;
-    text-align: center; }
-  .gallery__right-container {
-    margin-left: 6%;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; }
-    .gallery__right-container img {
-      width: 302px;
-      height: 191px;
-      margin-bottom: 17px; }
-    .gallery__right-container .last-img {
-      margin-bottom: 0; }
+    width: 76%;
+    height: auto;
+    text-align: center;
+    margin-right: 23px; }
+
+.last-img {
+  margin-bottom: 0 !important; }
 
 #pdf-carss {
   background-color: #F9F9FB; }
