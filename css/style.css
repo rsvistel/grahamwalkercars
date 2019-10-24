@@ -19,7 +19,9 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  width: 1115px;
+  margin: 0 auto; }
 
 object, embed {
   pointer-events: none; }
@@ -1690,5 +1692,141 @@ select::-ms-expand {
   background-image: url("../img/finance-icon.png");
   background-repeat: no-repeat;
   background-position: 1.6rem center; }
+
+#car-page.car-page {
+  background: #F9F9FB;
+  border: 3px solid #517731;
+  padding: 0 20px;
+  margin-top: 5%;
+  color: #333333; }
+  #car-page.car-page .description__sub-title {
+    margin-bottom: 10px; }
+
+.car-page__value {
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 10px; }
+  .car-page__value_name {
+    font-size: 30px;
+    font-weight: bold; }
+  .car-page__value_price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #537127; }
+  .car-page__value_name-second {
+    font-weight: 300; }
+  .car-page__value_price-bottom {
+    font-weight: 300; }
+  .car-page__value_top {
+    display: flex;
+    justify-content: space-between; }
+  .car-page__value_bottom {
+    display: flex;
+    justify-content: space-between; }
+
+.gallery {
+  display: flex;
+  padding-bottom: 6px; }
+  .gallery__center-container {
+    width: 70%; }
+    .gallery__center-container img {
+      width: 100%;
+      height: 609px; }
+  .gallery__right-container {
+    width: 27%;
+    margin-left: 6%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .gallery__right-container img {
+      width: 302px;
+      height: 191px;
+      margin-bottom: 17px; }
+    .gallery__right-container .last-img {
+      margin-bottom: 0; }
+
+#pdf-carss {
+  background-color: #F9F9FB; }
+
+.car-propertis {
+  display: flex;
+  width: 100%;
+  background: #FFFFFF;
+  border: 3px solid #D0D0D0;
+  padding: 10px 0;
+  font-size: 15px;
+  margin-bottom: 8px; }
+  .car-propertis__item {
+    width: 25%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between; }
+  .car-propertis__value {
+    font-weight: bold;
+    text-align: right; }
+
+.star-green {
+  color: green !important; }
+
+.description-car {
+  width: 100%;
+  background: #FFFFFF;
+  border: 3px solid #D0D0D0;
+  padding: 10px 10px 20px 10px;
+  font-size: 15px; }
+
+.img-pdf-carss {
+  position: absolute;
+  left: 0;
+  margin: 10px 0;
+  cursor: pointer; }
+
+.detailes__title {
+  width: 100%;
+  display: flex;
+  color: #68686A;
+  padding: 20px 0 6px 0; }
+.detailes__items {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #FFFFFF;
+  border: 3px solid #D0D0D0;
+  font-size: 15px;
+  padding: 3px 0; }
+.detailes__left-title {
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 25px;
+  padding-bottom: 8px; }
+.detailes__star {
+  padding-bottom: 8px; }
+.detailes__address {
+  padding-bottom: 8px; }
+.detailes__phone {
+  color: #5B7249;
+  font-weight: 700; }
+.detailes__item-map {
+  margin: 0 50px 0 100px; }
+  .detailes__item-map img {
+    height: 100%;
+    width: 379px; }
+.detailes__title-opening {
+  padding-bottom: 20px;
+  padding-top: 10px; }
+.detailes__opening {
+  display: flex; }
+.detailes__day {
+  text-align: left; }
+.detailes__hours {
+  text-align: right; }
+
+.information-dealer {
+  padding: 30px 0 15px 6px; }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; } }
 
 /*# sourceMappingURL=style.css.map */
