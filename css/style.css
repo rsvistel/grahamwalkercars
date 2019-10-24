@@ -19,7 +19,9 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  width: 1115px;
+  margin: 0 auto; }
 
 object, embed {
   pointer-events: none; }
@@ -1690,5 +1692,77 @@ select::-ms-expand {
   background-image: url("../img/finance-icon.png");
   background-repeat: no-repeat;
   background-position: 1.6rem center; }
+
+#car-page.car-page {
+  background: #F9F9FB; }
+
+.car-page__value {
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 10px; }
+  .car-page__value_name {
+    font-size: 30px;
+    font-weight: bold; }
+  .car-page__value_price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #537127; }
+  .car-page__value_top {
+    display: flex;
+    justify-content: space-between; }
+  .car-page__value_bottom {
+    display: flex;
+    justify-content: space-between; }
+
+.gallery {
+  display: flex;
+  padding-bottom: 6px; }
+  .gallery__center-container {
+    width: 70%; }
+    .gallery__center-container img {
+      width: 110%;
+      height: 100%; }
+  .gallery__right-container {
+    width: 30%;
+    text-align: end; }
+    .gallery__right-container img {
+      width: 73%;
+      margin-bottom: 17px; }
+    .gallery__right-container .last-img {
+      margin-bottom: 0; }
+
+.car-propertis {
+  display: flex;
+  width: 100%;
+  background: #FFFFFF;
+  border: 3px solid #D0D0D0;
+  padding: 5px 0;
+  font-size: 15px;
+  margin-bottom: 8px; }
+  .car-propertis__item {
+    width: 25%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between; }
+  .car-propertis__value {
+    font-weight: bold;
+    text-align: right; }
+
+.description-car {
+  width: 100%;
+  background: #FFFFFF;
+  border: 3px solid #D0D0D0;
+  padding: 5px 0;
+  font-size: 15px; }
+
+.detailes__title {
+  width: 100%;
+  display: flex;
+  color: #68686A;
+  padding: 20px 0 6px 0; }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; } }
 
 /*# sourceMappingURL=style.css.map */

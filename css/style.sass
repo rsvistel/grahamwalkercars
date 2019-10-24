@@ -27,6 +27,8 @@ body
   margin: 0
   min-height: 100vh
   font-family: $primary-font
+  width: 1115px
+  margin: 0 auto
 
 object, embed
   pointer-events: none
@@ -1831,3 +1833,79 @@ select::-ms-expand
   background-repeat: no-repeat
   background-position: 1.6rem center
 //Modal
+
+//car-page
+
+#car-page.car-page
+  background: #F9F9FB
+
+.car-page
+  &__value
+    width: 100%
+    padding-top: 20px
+    margin-bottom: 10px
+    &_name
+      font-size: 30px
+      font-weight: bold
+    &_price
+      font-size: 30px
+      font-weight: bold
+      color: #537127
+    &_price-bottom
+    &_top
+      display: flex
+      justify-content: space-between
+    &_bottom
+      display: flex
+      justify-content: space-between
+
+.gallery
+  display: flex
+  padding-bottom: 6px
+  &__center-container
+    width: 70%
+    img
+      width: 110%
+      height: 100%
+  &__right-container
+    width: 30%
+    text-align: end
+    img
+      width: 73%
+      margin-bottom: 17px
+    .last-img
+      margin-bottom: 0
+
+.car-propertis
+  display: flex
+  width: 100%
+  background: #FFFFFF
+  border: 3px solid #D0D0D0
+  padding: 5px 0
+  font-size: 15px
+  margin-bottom: 8px
+  &__item
+    width: 25%
+    padding: 10px 15px
+    display: flex
+    justify-content: space-between
+  &__value
+    font-weight: bold
+    text-align: right
+
+.description-car
+  width: 100%
+  background: #FFFFFF
+  border: 3px solid #D0D0D0
+  padding: 5px 0
+  font-size: 15px
+
+.detailes
+  &__title
+    width: 100%
+    display: flex
+    color: #68686A
+    padding: 20px 0 6px 0
+@media print
+  body
+    -webkit-print-color-adjust: exact
