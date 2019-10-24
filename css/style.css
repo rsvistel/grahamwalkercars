@@ -1731,7 +1731,7 @@ select::-ms-expand {
     text-align: right;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: flex-end; }
     .gallery__right-container img {
       width: 302px;
       height: 191px;
@@ -1744,7 +1744,7 @@ select::-ms-expand {
   width: 100%;
   background: #FFFFFF;
   border: 3px solid #D0D0D0;
-  padding: 5px 0;
+  padding: 10px 0;
   font-size: 15px;
   margin-bottom: 8px; }
   .car-propertis__item {
