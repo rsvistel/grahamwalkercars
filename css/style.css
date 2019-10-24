@@ -1581,4 +1581,73 @@ select::-ms-expand {
   background-repeat: no-repeat;
   background-position: 1.6rem center; }
 
+.previously {
+  background-color: #47494A;
+  text-align: center; }
+  .previously .footer {
+    margin-top: 6%; }
+
+.mobile-title {
+  display: none; }
+
+@media (max-width: 768px) {
+  .previously .footer {
+    margin-top: 0; }
+  .previously iframe.flickr-embed-frame {
+    width: 100% !important; }
+  .previously .mobile-header-img {
+    margin-top: 15%; }
+  .previously .about-title-none {
+    display: none; }
+  .previously .about-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 10% 0; }
+
+  .mobile-title {
+    display: block; } }
+.pdf {
+  width: 1115px;
+  margin: 0 auto; }
+  .pdf .text-pdf {
+    font-family: "Open Sans", sans-serif;
+    padding: 5% 0; }
+    .pdf .text-pdf h1 {
+      font-size: 11.5rem;
+      color: #333333;
+      line-height: 9rem; }
+    .pdf .text-pdf h2 {
+      font-size: 4rem;
+      text-align: right;
+      color: #005EAA;
+      font-weight: 400; }
+    .pdf .text-pdf h3 {
+      font-size: 2rem; }
+    .pdf .text-pdf h4 {
+      font-size: 1.5rem; }
+    .pdf .text-pdf .under-title {
+      font-weight: 400; }
+    .pdf .text-pdf .table-pdf {
+      display: flex; }
+      .pdf .text-pdf .table-pdf ul {
+        width: 33.3333%;
+        padding: 15px 10px;
+        border: 1.5px solid #737373;
+        border-right: 0; }
+        .pdf .text-pdf .table-pdf ul:last-child {
+          border-right: 1.5px solid #737373; }
+        .pdf .text-pdf .table-pdf ul li {
+          display: flex;
+          justify-content: space-between; }
+          .pdf .text-pdf .table-pdf ul li h5 {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            text-transform: capitalize; }
+            .pdf .text-pdf .table-pdf ul li h5:first-child {
+              font-weight: 400; }
+    .pdf .text-pdf .star-first .fa.fa-star {
+      color: #f2ef52; }
+    .pdf .text-pdf .star-second .fa.fa-star {
+      color: #5e8d37; }
+
 /*# sourceMappingURL=style.css.map */
