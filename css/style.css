@@ -1799,7 +1799,7 @@ select::-ms-expand {
     width: 69%;
     float: left; }
     .gallery__center-container img:nth-last-child(-n+3) {
-      width: 29%;
+      width: 21.6%;
       height: auto; }
   .gallery__center-container img.main-img {
     width: 69%;
