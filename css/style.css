@@ -1707,6 +1707,10 @@ select::-ms-expand {
     font-size: 30px;
     font-weight: bold;
     color: #537127; }
+  .car-page__value_name-second {
+    font-weight: 300; }
+  .car-page__value_price-bottom {
+    font-weight: 300; }
   .car-page__value_top {
     display: flex;
     justify-content: space-between; }
@@ -1720,13 +1724,17 @@ select::-ms-expand {
   .gallery__center-container {
     width: 70%; }
     .gallery__center-container img {
-      width: 110%;
-      height: 100%; }
+      width: 100%;
+      height: 609px; }
   .gallery__right-container {
     width: 30%;
-    text-align: end; }
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .gallery__right-container img {
-      width: 73%;
+      width: 302px;
+      height: 191px;
       margin-bottom: 17px; }
     .gallery__right-container .last-img {
       margin-bottom: 0; }
@@ -1748,11 +1756,14 @@ select::-ms-expand {
     font-weight: bold;
     text-align: right; }
 
+.star-green {
+  color: green !important; }
+
 .description-car {
   width: 100%;
   background: #FFFFFF;
   border: 3px solid #D0D0D0;
-  padding: 5px 0;
+  padding: 10px 10px 20px 10px;
   font-size: 15px; }
 
 .detailes__title {
@@ -1760,6 +1771,42 @@ select::-ms-expand {
   display: flex;
   color: #68686A;
   padding: 20px 0 6px 0; }
+.detailes__items {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #FFFFFF;
+  border: 3px solid #D0D0D0;
+  font-size: 15px; }
+.detailes__left-title {
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 25px;
+  padding-bottom: 8px; }
+.detailes__star {
+  padding-bottom: 8px; }
+.detailes__address {
+  padding-bottom: 8px; }
+.detailes__phone {
+  color: #5B7249;
+  font-weight: 700; }
+.detailes__item-map {
+  margin: 0 50px 0 100px; }
+  .detailes__item-map img {
+    height: 100%;
+    width: 379px; }
+.detailes__title-opening {
+  padding-bottom: 20px;
+  padding-top: 10px; }
+.detailes__opening {
+  display: flex; }
+.detailes__day {
+  text-align: left; }
+.detailes__hours {
+  text-align: right; }
+
+.information-dealer {
+  padding: 30px 0 15px 6px; }
 
 @media print {
   body {
