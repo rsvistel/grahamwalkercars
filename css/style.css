@@ -1781,11 +1781,14 @@ select::-ms-expand {
   .car-page__value_price {
     font-size: 30px;
     font-weight: bold;
-    color: #537127; }
+    color: #537127;
+    font-family: "Open Sans", sans-serif; }
   .car-page__value_name-second {
     font-weight: 300; }
   .car-page__value_price-bottom {
-    font-weight: 300; }
+    font-weight: 300;
+    color: #005EAA;
+    font-family: "Open Sans", sans-serif; }
   .car-page__value_top {
     display: flex;
     justify-content: space-between; }
@@ -1806,7 +1809,7 @@ select::-ms-expand {
     width: 76%;
     height: auto;
     text-align: center;
-    margin-right: 23px; }
+    margin-right: 20px; }
 
 .last-img {
   margin-bottom: 0 !important; }
@@ -1821,7 +1824,8 @@ select::-ms-expand {
   border: 3px solid #D0D0D0;
   padding: 10px 0;
   font-size: 15px;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif; }
   .car-propertis__item {
     width: 25%;
     padding: 10px 15px;
