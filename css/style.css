@@ -1897,7 +1897,6 @@ select::-ms-expand {
     -webkit-print-color-adjust: exact; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
-  min-height: 128px;
   width: 100%;
   background: #c8c8c8;
   color: #FFFFFF;
@@ -1909,9 +1908,10 @@ select::-ms-expand {
 .faq .title-blue {
   font-weight: 400;
   color: black;
-  font-size: 1.625rem;
+  font-size: 1.45rem;
   padding-bottom: 8px;
-  text-align: center; }
+  text-align: center;
+  margin: 40px 0; }
 
 .descripton-blue {
   font-size: 0.75rem; }
@@ -1921,7 +1921,8 @@ select::-ms-expand {
 
 .accordion__wrapper-faq {
   font-family: "Montserrat", sans-serif;
-  background-color: #c8c8c8; }
+  background-color: #c8c8c8;
+  padding-bottom: 100px; }
 
 .accordion {
   padding: 0 3.1rem; }
@@ -1981,10 +1982,11 @@ select::-ms-expand {
 .accordion .card-body {
   font-family: "Open Sans", sans-serif;
   background: #c8c8c8;
-  font-size: 17px;
-  padding: 20px 50px;
+  font-size: 16px;
+  padding: 15px 50px;
   font-weight: 700;
-  border-top: 2px solid #c0c0c0; }
+  border-top: 2px solid #c0c0c0;
+  line-height: 20px; }
 
 .accordion__card-items {
   padding-left: 0;
@@ -2014,7 +2016,7 @@ select::-ms-expand {
     font-size: 26px; }
 
   .section__title-blue-container {
-    padding-left: 0; }
+    padding: 0; }
 
   .descripton-blue {
     font-size: 14px; }
@@ -2028,14 +2030,18 @@ select::-ms-expand {
 
   .accordion__button {
     font-size: 18px;
-    text-align: left; }
+    text-align: left;
+    padding: 1.1rem 3rem; }
 
   .accordion .card-body {
     font-size: 15px;
     padding-left: 27px; }
 
   .card-header {
-    padding: 11px 18px; } }
+    padding: 11px 18px; }
+
+  .accordion__wrapper-faq .container {
+    padding: 0; } }
 @media only screen and (max-width: 390px) {
   .title-blue {
     font-size: 1.35rem; }
