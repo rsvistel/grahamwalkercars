@@ -27,9 +27,6 @@ body
   margin: 0
   min-height: 100vh
   font-family: $primary-font
-  width: 1115px
-  margin: 0 auto
-
 object, embed
   pointer-events: none
 
@@ -2071,3 +2068,167 @@ select::-ms-expand
   body
     -webkit-print-color-adjust: exact
 
+//FAQ-page
+.section__title-blue
+  font-family: $primary-font
+  width: 100%
+  background: #c8c8c8
+  color: #FFFFFF
+  padding: 5px 0 0 16px
+
+.section__title-blue-container
+  padding: 0 60px
+.faq
+  .title-blue
+    font-weight: 400
+    color: black
+    font-size: 1.45rem
+    padding-bottom: 8px
+    text-align: center
+    margin: 40px 0
+
+.descripton-blue
+  font-size: 0.75rem
+
+.descripton-blue
+  font-size: 0.75rem
+
+.accordion__wrapper-faq
+  font-family: $primary-font
+  background-color: #c8c8c8
+  padding-bottom: 100px
+
+.accordion
+  padding: 0 3.1rem
+
+.accordion>.card .card-header
+  padding: 0 0
+
+.accordion__button
+  font-size: 16px
+  font-weight: 500
+  font-family: "Helvetica Neue", sans-serif
+  padding: 1.1rem 6rem
+  width: 100%
+  border-radius: 0
+  text-align: left
+  background-color: #4e4e4e
+  color: white
+  text-transform: uppercase
+  &:hover
+    color: white
+
+.accordion__title
+  position: relative
+  color: white
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+.accordion__icon-wrapper
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 1.25rem
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  align-items: center
+  pointer-events: none
+  img
+    width: 23px
+    height: 23px
+
+.accordion__down-icon
+  transform: rotate(0deg)
+
+.accordion__up-icon
+  transform: rotate(180deg)
+
+.accordion>.card
+  cursor: pointer
+  border: 1px solid #CCCCCC
+  border-radius: 0
+
+.accordion .card-body
+  font-family: $secondary-font
+  background: #c8c8c8
+  font-size: 16px
+  padding: 15px 50px
+  font-weight: 700
+  border-top: 2px solid #c0c0c0
+  line-height: 20px
+
+.accordion__card-items
+  padding-left: 0
+  list-style-type: none
+  margin-bottom: 0
+
+.accordion__card-items li
+  padding-bottom: 6px
+
+.accordion__card-items li:last-child
+  padding-bottom: 0
+
+.card-header
+  padding-right: 21px
+  background: #F5F5F5
+
+@media only screen and (max-width: 767px)
+  .section__title-blue
+    padding-bottom: 31px
+    margin-top: 0
+
+  .section__title-blue .container, .accordion__wrapper .container
+    padding: 0
+    max-width: 100%
+  .title-blue
+    font-size: 26px
+  .section__title-blue-container
+    padding: 0
+  .descripton-blue
+    font-size: 14px
+  .accordion__wrapper
+    margin-top: 10px
+  .accordion
+    padding: 0
+    margin-bottom: 0
+
+  .accordion__button
+    font-size: 18px
+    text-align: left
+    padding: 1.1rem 3rem
+
+  .accordion .card-body
+    font-size: 15px
+    padding-left: 27px
+  .card-header
+    padding: 11px 18px
+
+  .accordion__wrapper-faq .container
+    padding: 0
+
+
+@media only screen and  (max-width: 390px)
+  .title-blue
+    font-size: 1.35rem
+  .descripton-blue
+    font-size: 0.8rem
+  .accordion__button
+    font-size: 15px
+  .accordion .card-body
+    font-size: 14px
+
+@media only screen and  (max-width: 320px)
+  .title-blue
+    font-size: 1.2rem
+  .descripton-blue
+    font-size: 0.7rem
+  .accordion__button
+    font-size: 12px
+  .accordion .card-body
+    font-size: 12px
+//FAQ page
