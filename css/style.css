@@ -2066,5 +2066,16 @@ select::-ms-expand {
 
   .accordion .card-body {
     font-size: 12px; } }
+.selling-title-container {
+  background: #47494A;
+  color: #ffffff; }
+
+.selling-title {
+  text-align: left;
+  padding-left: 0;
+  padding-bottom: 1%; }
+
+.selling-title-padding {
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
