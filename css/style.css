@@ -2067,10 +2067,11 @@ select::-ms-expand {
   .accordion .card-body {
     font-size: 12px; } }
 .selling-title-container {
-  background: #47494A;
+  background: #515151;
   color: #ffffff; }
 
 .selling-title {
+  background: #515151;
   text-align: left;
   padding-left: 0;
   padding-bottom: 1%; }
@@ -2079,6 +2080,9 @@ select::-ms-expand {
   padding: 0; }
   .selling-form .form-row {
     margin-bottom: 2rem; }
+  .selling-form .form-control {
+    height: calc(2.2em + .75rem + 2px);
+    padding-left: 1rem; }
   .selling-form .image-input-container input[type='file'] {
     width: 0.1px;
     height: 0.1px;
@@ -2111,9 +2115,28 @@ select::-ms-expand {
 .selling-cat-img {
   position: absolute;
   margin: 0;
-  top: 30%;
+  top: 10%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -30%); }
+  .selling-cat-img ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .selling-cat-img ul li {
+      padding: 1rem 1rem 0.7rem 0;
+      font-size: 15px;
+      font-weight: 300; }
+      .selling-cat-img ul li:before {
+        content: "";
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        vertical-align: middle;
+        border-radius: 50%;
+        background-color: #ffffff;
+        margin-right: 20px; }
+  .selling-cat-img img {
+    margin-top: 3rem; }
 
 /*# sourceMappingURL=style.css.map */
