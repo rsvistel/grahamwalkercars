@@ -2075,7 +2075,45 @@ select::-ms-expand {
   padding-left: 0;
   padding-bottom: 1%; }
 
-.selling-title-padding {
+.selling-form {
   padding: 0; }
+  .selling-form .form-row {
+    margin-bottom: 2rem; }
+  .selling-form .image-input-container input[type='file'] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+  .selling-form .image-input-container .image-input {
+    width: 92%;
+    color: blue;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .selling-form .image-input-container .image-input div {
+      padding: 2rem 0; }
+    .selling-form .image-input-container .image-input img {
+      display: block;
+      margin: 0 auto;
+      pointer-events: none;
+      width: 5%; }
+    .selling-form .image-input-container .image-input .image-input-description {
+      padding: 10px;
+      display: block; }
+
+.selling-cat-img {
+  position: absolute;
+  margin: 0;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -30%); }
 
 /*# sourceMappingURL=style.css.map */

@@ -2242,8 +2242,55 @@ select::-ms-expand
   padding-left: 0
   padding-bottom: 1%
 .selling-title-padding
-  padding: 0
+  //padding: 0
 .selling-description
+
+.selling-form
+  padding: 0
+  .form-row
+    margin-bottom: 2rem
+  .image-input-container
+    input[type='file']
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      z-index: -1
+    .image-input
+      width: 92%
+      color: blue
+      text-align: center
+      background: white
+      cursor: pointer
+      background-color: #fff
+      background-clip: padding-box
+      border: 1px solid #ced4da
+      border-radius: .25rem
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+      div
+        padding: 2rem 0
+      img
+        display: block
+        margin: 0 auto
+        pointer-events: none
+        width: 5%
+      .image-input-description
+        padding: 10px
+        display: block
+      .drop-description
+
+.selling-cat-img
+  position: absolute
+  margin: 0
+  top: 30%
+  left: 50%
+  margin-right: -50%
+  transform: translate(-50%, -30%)
+
+
+
+
 
 
 //Cash for cars
