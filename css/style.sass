@@ -2237,14 +2237,37 @@ select::-ms-expand
 .selling-title-container
   background: #515151
   color: #ffffff
-.selling-title
-  background: #515151
-  text-align: left
-  padding-left: 0
-  padding-bottom: 1%
+  .selling-title
+    background: #515151
+    text-align: left
+    padding-left: 0
+    padding-bottom: 1%
+    font-weight: 300
+  .selling-title-desc
+    font-weight: 400
+  .selling-chechbox
+    margin: 2rem 0 2.5rem 0
+    position: relative
+    padding-left: 35px
+    cursor: pointer
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    input
+      position: absolute
+      top: 0
+      left: 0
+      height: 20px
+      width: 20px
+      background-color: #fff
+  .selling-title-chechbox
+    //margin-right: 10px
+  .chechbox-text
+    font-size: 12px
+    font-weight: 300
 .selling-title-padding
-  //padding: 0
-.selling-description
+  padding: 0
 
 .selling-form
   padding: 0
@@ -2283,14 +2306,38 @@ select::-ms-expand
         padding: 10px
         display: block
       .drop-description
+  .button-block
+    width: 94.5%
+    button
+      background: #3399FF
+      text-transform: uppercase
+      padding: 12px 50px
+  .radio-inline
+    //margin-left: 1rem
+    display: block
+    position: relative
+    padding-left: 1rem
+    margin-bottom: 12px
+    cursor: pointer
+    font-size: 17px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    margin-top: 0.5rem
+    // input
+    //   position: absolute
+    //   opacity: 0
+    //   cursor: pointer
+
 
 .selling-cat-img
-  position: absolute
-  margin: 0
-  top: 10%
-  left: 50%
-  margin-right: -50%
-  transform: translate(-50%, -30%)
+  // position: absolute
+  // margin: 0
+  // top: 13%
+  // left: 50%
+  // margin-right: -50%
+  // transform: translate(-45%, -30%)
   ul
     list-style: none
     margin: 0
@@ -2308,13 +2355,41 @@ select::-ms-expand
         border-radius: 50%
         background-color: #ffffff
         margin-right: 20px
+      &:first-child
+        padding-top: 0
   img
     margin-top: 3rem
 
 
+@media only screen and (max-width: 577px)
+  .selling-title-container
+    padding: 0 2.5rem
+    .selling-title
+      text-align: center
+      padding: 2rem 0
+  .selling-section
+    padding: 0 2.5rem
+  .selling-form
+    padding-bottom: 2rem
+    .image-input-container
+      .image-input
+        width: 100%
+        img
+          width: 10%
+    .button-block
+      display: flex
+      justify-content: center
+      button
+        background: #D10609
+        margin-bottom: 3rem
 
-
-
+  .selling-form
+    .radio-mobile
+      display: contents
+    .hidden-block
+      display: none
+    .radio-inline
+      margin: 0
 
 //Cash for cars
 // .cash-for-cars

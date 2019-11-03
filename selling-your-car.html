@@ -323,18 +323,22 @@
     <div class="selling-title-container">
         <div class="container selling-title-padding">
                 <h2 class="about-title selling-title">Selling your car</h2>
-                <div class="col-6 selling-title-padding">
-                    <p>If you a one-of-a-kind car thet you;d like to sell, you've come to the right place. We specialise in buing and selling the fibest vehicles, this mens we pay the bast prices. Simpli fill in thiis form ans we'll get back to you to disscuss</p>
+                <div class="col-12 col-lg-7 selling-title-padding">
+                    <p class="selling-title-desc">If you a one-of-a-kind car thet you'd like to sell, you've come to the right place. We specialise in buing and selling the fibest vehicles, this mens we pay the bast prices. Simpli fill in thiis form ans we'll get back to you to disscuss</p>
                 </div>
-                <div class="col-8 selling-title-padding">
-                    <label><input class="selling-title-chechbox" type="checkbox" value="" /><span class="chechbox-text">I aggree thet Graham Wolker Cars mey store the information submitted here in order to process my enquiry.</span></label>
+                <div class="col-12 col-lg-10 selling-title-padding">
+                    <label class="selling-chechbox">
+                        <input class="selling-title-chechbox" type="checkbox" value="" />
+                        <span class="chechbox-text">
+                        I aggree thet Graham Wolker Cars mey store the information submitted here in order to process my enquiry.</span>
+                    </label>
                 </div>
         </div>
     </div>
     <div class="pay-us-visit selling-section">
     <div class="container">
         <div class="row container-section">
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-lg-8 selling-title-padding">
                     <form class="col-12 selling-form">
                         <div class="form-row">
                             <label class="col-sm-3 col-form-label"  for="name">Name</label>
@@ -360,22 +364,22 @@
                             <label class="col-sm-3 col-form-label"  for="nct">NCT</label>
                             <input type="text" class="form-control col-sm-8" id="nct" name="name" placeholder="NCT"/>
                         </div>
-                        <div class="form-row">
-                            <label class="col-sm-3 col-form-label">Full Service History</label>
+                        <div class="form-row order-sm-2">
+                            <label class="col-sm-3 col-form-label radio-mobile">Full Service <span class="hidden-block">History</span></label>
                             <label class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="FullYes" value="option1"> Yes
+                                <input type="radio" name="fullYes" id="FullYes" value="option1"> Yes
                                 </label>
                                 <label class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="FullNo" value="option2"> No
+                                <input type="radio" name="fullYes" id="FullNo" value="option2"> No
                             </label>
                         </div>
-                        <div class="form-row">
-                                <label class="col-sm-3 col-form-label">2 Sets of Keys</label>
+                        <div class="form-row  order-sm-1">
+                                <label class="col-sm-3 col-form-label radio-mobile">2 Sets of Keys</label>
                                 <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="KeysYes" value="option1"> Yes
+                                        <input type="radio" name="inlineRadioOptions" id="KeysYes" value="option3"> Yes
                                         </label>
                                         <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="KeysNo" value="option2"> No
+                                        <input type="radio" name="inlineRadioOptions" id="KeysNo" value="option4"> No
                                 </label>
                         </div>
                         <div class="form-row">
@@ -397,9 +401,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-12 button-block">
+                                <button type="submit" class="btn btn-primary float-right">Submit</button>
+                            </div>
                         </form>
                 </div>
-            <div class="col-lg-3 d-sm-none d-lg-block">
+            <div class="d-none d-lg-block col-lg-4">
                 <div class="selling-cat-img">
                     <ul>
                         <li>One og a Kind</li>
