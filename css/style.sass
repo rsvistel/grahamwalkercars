@@ -2765,7 +2765,7 @@ select::-ms-expand
   //Feedback
 #feedback
   order: 2
-  background-image: url("../img/home/Untitled-2.png")
+  background: #EEEEEE
   background-size: cover
   background-repeat: no-repeat
   padding: 7% 0 0
@@ -2776,6 +2776,7 @@ select::-ms-expand
       background: #fff
       text-align: left
       padding: 15px
+      position: relative
       .feedback-title h3, .feedback-author h3
         font-family: 'Poppins', sans-serif
         color: $dark-gray
@@ -2783,29 +2784,25 @@ select::-ms-expand
         font-size: 20px
       .feedback-author h3
         //font-style: italic
-      .feedback-date, .feedback-body, .feedback-company
-        color: $light-gray
+      .feedback-date, .feedback-body
+        color: #797979
         font-family: 'Source Sans Pro', sans-serif
+      .feedback-date
+        font-size: 12px
+        color: #DFDFDF
       .feedback-body
         font-size: 14px
         margin-top: 10px
         padding-left: 5px
         font-weight: 600
-      .fas.fa-quote-left, .fas.fa-quote-right
-        color: #D2D5DA
-        font-size: 28px
       .feedback-stars
         display: -webkit-box
         display: -ms-flexbox
         display: flex
         margin-top: 5px
-      .fas.fa-quote-right
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
-        justify-content: flex-end
         position: absolute
-        width: 90%
+        top: 7%
+        right: 5%
       .fas.fa-quote-left
         margin-right: 5px
       .feedback-author
@@ -2816,8 +2813,9 @@ select::-ms-expand
     border: none
     text-transform: uppercase
     margin: 2% 0 4% 0
-    background: $dark-blue
-    padding: 1% 5%
+    background: #D10609
+    padding: 1.5% 5%
+    border-radius: 7px
     font-family: "Source Sans Pro", sans-serif
   .feedback-rating
     font-family: "Open Sans", sans-serif
@@ -2873,13 +2871,13 @@ select::-ms-expand
       .fas.fa-star
         font-size: 1.5rem
 
-@media screen and (max-width: 767px) and (min-width: 558px)
-  #feedback .feedback-item .fas.fa-quote-right
-      width: 95%
+// @media screen and (max-width: 767px) and (min-width: 558px)
+//   #feedback .feedback-item .fas.fa-quote-right
+//       width: 95%
 
-@media screen and (max-width: 360px)
-  #feedback .feedback-item .fas.fa-quote-right
-      width: 96%
+// @media screen and (max-width: 360px)
+//   #feedback .feedback-item .fas.fa-quote-right
+//       width: 96%
 
 @media screen and (max-width: 424px) and (min-width: 374px)
   #feedback .feedback-item .feedback-body
