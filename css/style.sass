@@ -2555,6 +2555,7 @@ select::-ms-expand
       font-size: 13px
 //Feedback
 
+//Gallery
 .fotorama-container
   display: flex
   justify-content: center
@@ -2576,3 +2577,222 @@ select::-ms-expand
     text-align: center
   .fotorama__nav-wrap, .fotorama__caption, .fotorama__fullscreen-icon, .fotorama__arr
     display: none
+//Gallery
+
+
+//Reserve-vehicle- page
+
+.reserve-page
+  &__title-block
+        align-items: flex-start
+        margin: 10px 0 15px 0
+  &__title
+        font-weight: bold
+        font-style: normal
+        font-size: 20px
+        text-transform: uppercase
+  &__desctiption-pay
+        font-weight: 300
+        margin: 10px 0
+  &__pay
+        font-size: 25px
+        padding: 1.1rem 0 0 0
+        display: inline-block
+  &__line
+        border-top: 1px solid #707070
+        width: 70%
+        display: inline-block
+        margin: 0
+        margin-bottom: 5px
+  &__line-half
+        width: 50%
+        margin: inherit
+        display: block
+  &__card
+        border: 1px solid #707070
+        -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+        -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+        box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+        padding: 1rem
+  &__card-title
+        font-weight: bold
+        font-size: 26px
+  &__card-top-container
+        padding-bottom: 0.5rem
+  &__card-subtitle
+        font-size: 20px
+  &__card-name
+        font-size: 20px
+        font-family: $secondary-font
+        font-weight: bold
+  &__card-model
+        font-size: 16px
+        font-family: $secondary-font
+  &__card-price
+        font-size: 31px
+        font-weight: bold
+  &__card-img-container
+        padding-right: 0
+  &__details-title
+        font-weight: 300
+        display: inline-block
+        padding-top: 1.5rem
+  &__details-description
+        font-size: 15px
+        padding-bottom: 1.3rem
+        display: inline-block
+  &__conditions
+        color: #232323
+        font-weight: bold
+        &:hover
+          color: #232323
+          text-decoration: none
+
+
+.reserve-page___stripe
+  padding: 0
+
+.reserve-page__checkbox-group
+  position: relative
+
+.reserve-page__checkbox
+  position: absolute
+  top: 17px
+  bottom: 0
+  left: 20px
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  height: 20px
+
+.reserve-page__checkbox-confirm
+  height: 25px
+  padding-left: 25px
+  font-size: 15px
+
+.title-reserve-page
+  font-weight: bold
+
+.form-group-first
+  margin-bottom: 2.5rem
+
+#inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber, #cc-number, #cc-expiration, #cc-cvv
+  height: calc(1.5em + 1.53rem + 2px)
+  border-radius: 0
+  box-shadow: none
+
+#inputLastName::-webkit-input-placeholder
+  color: #232323
+  font-size: 16px
+
+#inputFirstName::-webkit-input-placeholder
+  color: #232323
+  font-size: 16px
+
+#inputEmailAddress::-webkit-input-placeholder
+  color: #232323
+  font-size: 16px
+
+#inputContactNumber::-webkit-input-placeholder
+  color: #232323
+  font-size: 16px
+
+#cc-number::-webkit-input-placeholder
+  color: #232323
+  font-size: 16px
+
+#cc-expiration::-webkit-input-placeholder
+  color: #232323
+  font-size: 16px
+
+#cc-cvv::-webkit-input-placeholder
+  color: #232323
+  font-size: 16px
+
+
+#inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber
+  border-top: 0
+  border-right: 0
+  border-left: 0
+  border-bottom: 1px solid #707070
+  padding-left: 0
+  padding-bottom: 0
+  padding-top: 1.375rem
+  color: #232323
+
+#cc-number, #cc-expiration, #cc-cvv
+  border: 1px solid #707070
+  color: #232323
+
+.reserve-page__button-container
+  margin-left: 22.3%
+
+
+@media only screen and (max-width: 1024px)
+  .reserve-page__button-container
+    margin-left: 11%
+
+@media only screen and (max-width: 991px)
+  .reserve-page__button-container
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    margin-left: 0
+
+@media only screen and (max-width: 767px)
+  .reserve-page__card-name
+    font-size: 20px
+    font-family: $secondary-font
+    font-weight: bold
+  .form-group-mobile
+    margin-bottom: 2rem
+  .form-group-mobile-last
+    margin-bottom: 0rem
+  .form-group-first
+    margin-bottom: 0
+  .reserve-page__checkbox-confirm
+    padding-bottom: 4rem
+  .reserve-page__button-container
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    margin: 1rem 0
+  .reserve-page__card-padding
+    padding-right: 0
+  .reserve-page__stripe-wrapper
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+@media only screen and (max-width: 400px)
+  .reserve-page__card
+    padding: 0.5rem
+  .reserve-page__card__card-title
+    font-size: 20px
+  .reserve-page__card-top-container
+    padding-bottom: 0.5rem
+  .reserve-page__card-subtitle
+    font-size: 15px
+    text-align: left
+  .reserve-page__card-price
+    font-size: 1.2rem
+  .reserve-page__card-name
+    font-size: 1rem
+  .reserve-page__card-model
+    font-size: 15px
+
+//Reserve-vehicle- page
+
+.modal-used-cars.reserve-car-modal
+  .col-md-4
+    padding: 20px
+
