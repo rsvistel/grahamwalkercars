@@ -343,13 +343,6 @@
     </div>
     </div>
 </div>
-
-<!-- <h2 class="about-title">previously sold <span class="mobile-title">HIGHLIGHTS</span></h2> -->
-
-<!-- Add images to <div class="fotorama"></div> -->
-
-<!-- <a data-flickr-embed="true" href="https://www.flickr.com/photos/158034657@N08/albums/72157710895142583" title="Canadian Rockies"><img src="https://live.staticflickr.com/65535/48754285947_2d5d348301_z.jpg" width="640" height="427" alt="Canadian Rockies"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> -->
-
 <div class="footer">
     <div class="container">
         <img class="img-fluid" src="img/footer/logo.png" alt="">
@@ -364,24 +357,24 @@
 <script src="js/wow.min.js"></script>
 <script>
     new WOW().init();
-    // $('.owl-special-offers').owlCarousel({
-    //     loop:true,
-    //     margin:30,
-    //     nav:false,
-    //     dots: false,
-    //     // navText: ["<img  src=\"img/home/arrow-left.svg\"/>","<img src=\"img/home/arrow-right.svg\"/>"],
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         768:{
-    //             items:2
-    //         },
-    //         1000:{
-    //             items:4
-    //         }
-    //     }
-    // });
+    $('.owl-special-offers').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        dots: false,
+        // navText: ["<img  src=\"img/home/arrow-left.svg\"/>","<img src=\"img/home/arrow-right.svg\"/>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
     if ($(window).width() < 768) {
         $('.fotorama').fotorama({
             width: 1000,
@@ -389,9 +382,7 @@
             ratio: 16/9,
             allowfullscreen: true,
     });
-    // } else {
-    //     $('.owl-feedback').addClass('off')
-    // }
+    }
 </script>
 <script src="./js/script.js"></script>
 
