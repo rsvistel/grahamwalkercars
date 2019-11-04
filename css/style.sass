@@ -2554,3 +2554,25 @@ select::-ms-expand
   #feedback .feedback-item .feedback-body
       font-size: 13px
 //Feedback
+
+.fotorama-container
+  display: flex
+  justify-content: center
+  margin-bottom: 3rem
+.fotorama-title
+  text-align: left
+  padding-left: 0
+  font-weight: 300
+.fotorama-title-box
+  background: #47494A
+.fotorama-title-mobile
+  display: none
+
+@media screen and (max-width: 768px)
+  .fotorama-title
+    text-align: center
+  .fotorama-title-mobile
+    display: block
+    text-align: center
+  .fotorama__nav-wrap, .fotorama__caption, .fotorama__fullscreen-icon, .fotorama__arr
+    display: none
