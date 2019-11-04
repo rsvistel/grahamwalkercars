@@ -644,7 +644,7 @@ select::-ms-expand
 .owl-carousel
   display: block
 .fas.fa-star
-  color: #FFC207
+  color: #FA9917
 #special-offers .owl-carousel .owl-stage-outer
   width: 102%
 .car-tile
@@ -2780,22 +2780,23 @@ select::-ms-expand
       width: 100%
       min-height: 230px
       max-height: 230px
+      margin-bottom: 1rem
       .feedback-title h3, .feedback-author h3
         font-family: 'Poppins', sans-serif
         color: $dark-gray
         font-weight: 800
-        font-size: 20px
+        font-size: 18px
       .feedback-author h3
         //font-style: italic
       .feedback-date, .feedback-body
         color: #797979
         font-family: 'Source Sans Pro', sans-serif
       .feedback-date
-        font-size: 12px
+        font-size: 14px
         color: #DFDFDF
       .feedback-body
         font-size: 14px
-        margin-top: 10px
+        //margin-top: 10px
         padding-left: 5px
         font-weight: 600
       .feedback-stars
@@ -2804,10 +2805,10 @@ select::-ms-expand
         display: flex
         margin-top: 5px
         position: absolute
-        top: 7%
+        top: 5%
         right: 5%
-      .fas.fa-quote-left
-        margin-right: 5px
+      // .fas.fa-quote-left
+      //   margin-right: 5px
       .feedback-author
         margin-top: 15px
 
@@ -2825,21 +2826,23 @@ select::-ms-expand
 
 @media only screen and (max-width: 768px)
   #feedback
-    background: none
-    padding: 2% 0 0 0
+    //background: none
+    //padding: 2% 0 0 0
     .container
       padding: 0 5px
       h3.feedback-rating, h4.feedback-title
         display: block
       h4.feedback-title
-        border: 1px solid lightgrey
-        text-align: left
+        //border: 1px solid lightgrey
+        text-align: center
+        text-transform: uppercase
+        font-size: 20px
         font-family: $primary-font
-        font-size: 18px
+        //font-size: 18px
         padding: 10px 5px 10px 3%
       h3.feedback-rating
-        border-right: 1px solid lightgrey
-        border-left: 1px solid lightgrey
+        //border-right: 1px solid lightgrey
+        //border-left: 1px solid lightgrey
         padding: 20px 0
         display: -webkit-box
         display: -ms-flexbox
@@ -2851,21 +2854,22 @@ select::-ms-expand
         -ms-flex-align: center
         align-items: center
       .owl-feedback
-        border: 1px solid lightgrey
+        //border: 1px solid lightgrey
         border-top: none
         padding:  0 3.5% 3% 3.5%
         display: block
         .feedback-item
-          border-top: 1px solid lightgrey
-          padding: 10px 0
+          //border-top: 1px solid lightgrey
+          padding: 10px 10px
+          margin-bottom: 1rem
           .fas.fa-star
               font-size: 1rem
           .feedback-title h3
               font-size: 22px
           .feedback-author h3
               font-size: 17px
-      button
-        display: none
+      // button
+      //   display: none
       .five-stars
         margin: 0 15px 0 10px
         font-size: 35px
