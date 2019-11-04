@@ -617,7 +617,7 @@ select::-ms-expand {
   display: block; }
 
 .fas.fa-star {
-  color: #FFC207; }
+  color: #FA9917; }
 
 #special-offers .owl-carousel .owl-stage-outer {
   width: 102%; }
@@ -2255,5 +2255,109 @@ select::-ms-expand {
     font-size: 14px; }
   .selling-form .radio__text {
     padding: 0 0 0 29px; } }
+#feedback {
+  order: 2;
+  background: #EEEEEE;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7% 0 0;
+  text-align: center; }
+  #feedback h3.feedback-rating, #feedback h4.feedback-title {
+    display: none; }
+  #feedback .feedback-item {
+    background: #fff;
+    text-align: left;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    min-height: 230px;
+    max-height: 230px;
+    margin-bottom: 1rem; }
+    #feedback .feedback-item .feedback-title h3, #feedback .feedback-item .feedback-author h3 {
+      font-family: "Poppins", sans-serif;
+      color: #333333;
+      font-weight: 800;
+      font-size: 18px; }
+    #feedback .feedback-item .feedback-date, #feedback .feedback-item .feedback-body {
+      color: #797979;
+      font-family: "Source Sans Pro", sans-serif; }
+    #feedback .feedback-item .feedback-date {
+      font-size: 14px;
+      color: #DFDFDF; }
+    #feedback .feedback-item .feedback-body {
+      font-size: 14px;
+      padding-left: 5px;
+      font-weight: 600; }
+    #feedback .feedback-item .feedback-stars {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 5px;
+      position: absolute;
+      top: 5%;
+      right: 5%; }
+    #feedback .feedback-item .feedback-author {
+      margin-top: 15px; }
+  #feedback .button-feedback {
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    margin: 2% 0 4% 0;
+    background: #D10609;
+    padding: 1.5% 5%;
+    border-radius: 7px;
+    font-family: "Source Sans Pro", sans-serif; }
+  #feedback .feedback-rating {
+    font-family: "Open Sans", sans-serif; }
+
+@media only screen and (max-width: 768px) {
+  #feedback .container {
+    padding: 0 5px; }
+    #feedback .container h3.feedback-rating, #feedback .container h4.feedback-title {
+      display: block; }
+    #feedback .container h4.feedback-title {
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      padding: 10px 5px 30px 0; }
+    #feedback .container h3.feedback-rating {
+      padding: 20px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    #feedback .container .owl-feedback {
+      border-top: none;
+      padding: 0 3.5% 3% 3.5%;
+      display: block; }
+      #feedback .container .owl-feedback .feedback-item {
+        min-height: 170px;
+        min-height: 170px;
+        padding: 10px 10px;
+        margin-bottom: 1rem; }
+        #feedback .container .owl-feedback .feedback-item .fas.fa-star {
+          font-size: 1rem; }
+        #feedback .container .owl-feedback .feedback-item .feedback-author h3 {
+          font-size: 17px; }
+    #feedback .container .button-feedback {
+      margin: 4% 0 13% 0;
+      padding: 4% 10%; }
+    #feedback .container .five-stars {
+      margin: 0 15px 0 10px;
+      font-size: 35px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400; }
+    #feedback .container .fas.fa-star {
+      font-size: 1.5rem; } }
+@media screen and (max-width: 424px) and (min-width: 374px) {
+  #feedback .feedback-item .feedback-body {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */
