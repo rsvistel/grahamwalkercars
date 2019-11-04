@@ -2255,5 +2255,120 @@ select::-ms-expand {
     font-size: 14px; }
   .selling-form .radio__text {
     padding: 0 0 0 29px; } }
+#feedback {
+  order: 2;
+  background-image: url("../img/home/Untitled-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7% 0 0;
+  text-align: center; }
+  #feedback h3.feedback-rating, #feedback h4.feedback-title {
+    display: none; }
+  #feedback .feedback-item {
+    background: #fff;
+    text-align: left;
+    padding: 15px; }
+    #feedback .feedback-item .feedback-title h3, #feedback .feedback-item .feedback-author h3 {
+      font-family: "Poppins", sans-serif;
+      color: #333333;
+      font-weight: 400;
+      font-size: 20px; }
+    #feedback .feedback-item .feedback-date, #feedback .feedback-item .feedback-body, #feedback .feedback-item .feedback-company {
+      color: #777777;
+      font-family: "Source Sans Pro", sans-serif; }
+    #feedback .feedback-item .feedback-body {
+      font-size: 14px;
+      margin-top: 10px;
+      padding-left: 5px;
+      font-weight: 600; }
+    #feedback .feedback-item .fas.fa-quote-left, #feedback .feedback-item .fas.fa-quote-right {
+      color: #D2D5DA;
+      font-size: 28px; }
+    #feedback .feedback-item .feedback-stars {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 5px; }
+    #feedback .feedback-item .fas.fa-quote-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      width: 90%; }
+    #feedback .feedback-item .fas.fa-quote-left {
+      margin-right: 5px; }
+    #feedback .feedback-item .feedback-author {
+      margin-top: 15px; }
+  #feedback .button-feedback {
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    margin: 2% 0 4% 0;
+    background: #005EAA;
+    padding: 1% 5%;
+    font-family: "Source Sans Pro", sans-serif; }
+  #feedback .feedback-rating {
+    font-family: "Open Sans", sans-serif; }
+
+@media only screen and (max-width: 768px) {
+  #feedback {
+    background: none;
+    padding: 2% 0 0 0; }
+    #feedback .container {
+      padding: 0 5px; }
+      #feedback .container h3.feedback-rating, #feedback .container h4.feedback-title {
+        display: block; }
+      #feedback .container h4.feedback-title {
+        border: 1px solid lightgrey;
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        padding: 10px 5px 10px 3%; }
+      #feedback .container h3.feedback-rating {
+        border-right: 1px solid lightgrey;
+        border-left: 1px solid lightgrey;
+        padding: 20px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      #feedback .container .owl-feedback {
+        border: 1px solid lightgrey;
+        border-top: none;
+        padding: 0 3.5% 3% 3.5%;
+        display: block; }
+        #feedback .container .owl-feedback .feedback-item {
+          border-top: 1px solid lightgrey;
+          padding: 10px 0; }
+          #feedback .container .owl-feedback .feedback-item .fas.fa-star {
+            font-size: 1rem; }
+          #feedback .container .owl-feedback .feedback-item .feedback-title h3 {
+            font-size: 22px; }
+          #feedback .container .owl-feedback .feedback-item .feedback-author h3 {
+            font-size: 17px; }
+      #feedback .container button {
+        display: none; }
+      #feedback .container .five-stars {
+        margin: 0 15px 0 10px;
+        font-size: 35px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400; }
+      #feedback .container .fas.fa-star {
+        font-size: 1.5rem; } }
+@media screen and (max-width: 767px) and (min-width: 558px) {
+  #feedback .feedback-item .fas.fa-quote-right {
+    width: 95%; } }
+@media screen and (max-width: 360px) {
+  #feedback .feedback-item .fas.fa-quote-right {
+    width: 96%; } }
+@media screen and (max-width: 424px) and (min-width: 374px) {
+  #feedback .feedback-item .feedback-body {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */

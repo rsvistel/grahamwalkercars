@@ -2761,3 +2761,127 @@ select::-ms-expand
 //     width: 100%
 
 //selling your car
+
+  //Feedback
+#feedback
+  order: 2
+  background-image: url("../img/home/Untitled-2.png")
+  background-size: cover
+  background-repeat: no-repeat
+  padding: 7% 0 0
+  text-align: center
+  h3.feedback-rating, h4.feedback-title
+    display: none
+  .feedback-item
+      background: #fff
+      text-align: left
+      padding: 15px
+      .feedback-title h3, .feedback-author h3
+        font-family: 'Poppins', sans-serif
+        color: $dark-gray
+        font-weight: 400
+        font-size: 20px
+      .feedback-author h3
+        //font-style: italic
+      .feedback-date, .feedback-body, .feedback-company
+        color: $light-gray
+        font-family: 'Source Sans Pro', sans-serif
+      .feedback-body
+        font-size: 14px
+        margin-top: 10px
+        padding-left: 5px
+        font-weight: 600
+      .fas.fa-quote-left, .fas.fa-quote-right
+        color: #D2D5DA
+        font-size: 28px
+      .feedback-stars
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        margin-top: 5px
+      .fas.fa-quote-right
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        justify-content: flex-end
+        position: absolute
+        width: 90%
+      .fas.fa-quote-left
+        margin-right: 5px
+      .feedback-author
+        margin-top: 15px
+
+  .button-feedback
+    color: white
+    border: none
+    text-transform: uppercase
+    margin: 2% 0 4% 0
+    background: $dark-blue
+    padding: 1% 5%
+    font-family: "Source Sans Pro", sans-serif
+  .feedback-rating
+    font-family: "Open Sans", sans-serif
+
+@media only screen and (max-width: 768px)
+  #feedback
+    background: none
+    padding: 2% 0 0 0
+    .container
+      padding: 0 5px
+      h3.feedback-rating, h4.feedback-title
+        display: block
+      h4.feedback-title
+        border: 1px solid lightgrey
+        text-align: left
+        font-family: $primary-font
+        font-size: 18px
+        padding: 10px 5px 10px 3%
+      h3.feedback-rating
+        border-right: 1px solid lightgrey
+        border-left: 1px solid lightgrey
+        padding: 20px 0
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+      .owl-feedback
+        border: 1px solid lightgrey
+        border-top: none
+        padding:  0 3.5% 3% 3.5%
+        display: block
+        .feedback-item
+          border-top: 1px solid lightgrey
+          padding: 10px 0
+          .fas.fa-star
+              font-size: 1rem
+          .feedback-title h3
+              font-size: 22px
+          .feedback-author h3
+              font-size: 17px
+      button
+        display: none
+      .five-stars
+        margin: 0 15px 0 10px
+        font-size: 35px
+        font-family: "Poppins", sans-serif
+        font-weight: 400
+      .fas.fa-star
+        font-size: 1.5rem
+
+@media screen and (max-width: 767px) and (min-width: 558px)
+  #feedback .feedback-item .fas.fa-quote-right
+      width: 95%
+
+@media screen and (max-width: 360px)
+  #feedback .feedback-item .fas.fa-quote-right
+      width: 96%
+
+@media screen and (max-width: 424px) and (min-width: 374px)
+  #feedback .feedback-item .feedback-body
+      font-size: 13px
+//Feedback
