@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap");
@@ -2395,19 +2396,19 @@ select::-ms-expand {
   text-transform: uppercase; }
 .reserve-page__desctiption-pay {
   font-weight: 300;
-  margin: 10px 0; }
+  margin: 10px 0 5px 0; }
 .reserve-page__pay {
-  font-size: 25px;
-  padding: 1.1rem 0 0 0;
-  display: inline-block; }
+  font-size: 22px;
+  display: inline-block;
+  margin-bottom: 10px; }
 .reserve-page__line {
-  border-top: 1px solid #707070;
+  border-top: 1px solid #BFBFBF;
   width: 70%;
   display: inline-block;
   margin: 0;
   margin-bottom: 5px; }
 .reserve-page__line-half {
-  width: 50%;
+  width: 40%;
   margin: inherit;
   display: block; }
 .reserve-page__card {
@@ -2436,19 +2437,29 @@ select::-ms-expand {
 .reserve-page__card-img-container {
   padding-right: 0; }
 .reserve-page__details-title {
-  font-weight: 300;
   display: inline-block;
-  padding-top: 1.5rem; }
+  padding-bottom: 10px; }
 .reserve-page__details-description {
-  font-size: 15px;
-  padding-bottom: 1.3rem;
+  font-size: 14px;
+  padding-bottom: 3%;
   display: inline-block; }
+.reserve-page__button {
+  background: #3399FF;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 7% 20%;
+  border-radius: 7px;
+  font-family: "Source Sans Pro", sans-serif; }
 .reserve-page__conditions {
-  color: #232323;
+  color: #8C8C8C;
   font-weight: bold; }
   .reserve-page__conditions:hover {
-    color: #232323;
+    color: #8C8C8C;
     text-decoration: none; }
+  .reserve-page__conditions img {
+    width: 10px !important; }
 
 .reserve-page___stripe {
   padding: 0; }
@@ -2460,85 +2471,87 @@ select::-ms-expand {
   position: absolute;
   top: 17px;
   bottom: 0;
-  left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 20px; }
 
+.reserve-page__button-container {
+  margin-top: 1rem; }
+
 .reserve-page__checkbox-confirm {
-  height: 25px;
+  margin: 0.5rem 0 0 0 !important;
   padding-left: 25px;
-  font-size: 15px; }
+  font-size: 13px;
+  color: #8C8C8C; }
+
+.reserve-page__сonditions {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
 
 .title-reserve-page {
   font-weight: bold; }
 
-.form-group-first {
-  margin-bottom: 2.5rem; }
-
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber, #cc-number, #cc-expiration, #cc-cvv {
-  height: calc(1.5em + 1.53rem + 2px);
+  height: calc(1em + 1.53rem + 2px);
   border-radius: 0;
   box-shadow: none; }
 
 #inputLastName::-webkit-input-placeholder {
-  color: #232323;
-  font-size: 16px; }
+  color: #8C8C8C;
+  font-size: 16px;
+  font-weight: 300; }
 
 #inputFirstName::-webkit-input-placeholder {
-  color: #232323;
-  font-size: 16px; }
+  color: #8C8C8C;
+  font-size: 16px;
+  font-weight: 300; }
 
 #inputEmailAddress::-webkit-input-placeholder {
-  color: #232323;
-  font-size: 16px; }
+  color: #8C8C8C;
+  font-size: 16px;
+  font-weight: 300; }
 
 #inputContactNumber::-webkit-input-placeholder {
-  color: #232323;
-  font-size: 16px; }
+  color: #8C8C8C;
+  font-size: 16px;
+  font-weight: 300; }
 
 #cc-number::-webkit-input-placeholder {
-  color: #232323;
-  font-size: 16px; }
+  color: #8C8C8C;
+  font-size: 16px;
+  font-weight: 300; }
 
 #cc-expiration::-webkit-input-placeholder {
-  color: #232323;
-  font-size: 16px; }
+  color: #8C8C8C;
+  font-size: 16px;
+  font-weight: 300; }
 
 #cc-cvv::-webkit-input-placeholder {
-  color: #232323;
-  font-size: 16px; }
+  color: #8C8C8C;
+  font-size: 16px;
+  font-weight: 300; }
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #DCDCDC;
   padding-left: 0;
   padding-bottom: 0;
   padding-top: 1.375rem;
-  color: #232323; }
+  color: #232323;
+  font-weight: 300; }
 
 #cc-number, #cc-expiration, #cc-cvv {
-  border: 1px solid #707070;
-  color: #232323; }
+  border: 1px solid #DCDCDC;
+  color: #8C8C8C; }
 
-.reserve-page__button-container {
-  margin-left: 22.3%; }
+.reserve-page-margin-padding {
+  margin: 0;
+  padding: 0; }
 
-@media only screen and (max-width: 1024px) {
-  .reserve-page__button-container {
-    margin-left: 11%; } }
-@media only screen and (max-width: 991px) {
-  .reserve-page__button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-left: 0; } }
 @media only screen and (max-width: 767px) {
   .reserve-page__card-name {
     font-size: 20px;
@@ -2598,7 +2611,32 @@ select::-ms-expand {
 
   .reserve-page__card-model {
     font-size: 15px; } }
-.modal-used-cars.reserve-car-modal .col-md-4 {
-  padding: 20px; }
+.modal-used-cars.reserve-car-modal .modal-used-cars-container {
+  margin-top: 2%; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .col-md-4 {
+    padding: 10px 15px; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .title-cross-block {
+    padding: 5px 10px 8px 8px; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .first-title-modal {
+    margin: 15px 0 6px 0;
+    font-size: 14px; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .second-title-modal {
+    font-size: 18px; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal {
+    font-size: 13px; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .form-group {
+    margin: 0; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .form-group input[type="text"] {
+      margin: 0 0 0.6rem 0; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container label {
+    color: #8C8C8C;
+    margin-bottom: 0.1rem;
+    font-weight: 300; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block {
+    padding-left: 2rem; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block {
+    padding-right: 2rem; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal {
+    padding-right: 0.6rem; }
 
 /*# sourceMappingURL=style.css.map */

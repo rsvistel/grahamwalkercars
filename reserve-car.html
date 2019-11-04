@@ -37,94 +37,98 @@
                     </div>
                    <h6 class="first-title-modal">Your Vehicle Summary</h6>
                    <h6 class="second-title-modal">2017 VOLKSWAGEN GOLF</h6>
-                   <p>R 2.0 TSI 5DR 310BHP</p>
+                   <p class="third-title-modal">R 2.0 TSI 5DR 310BHP</p>
                    <img src="img/home/golf.png" alt="d">
                </div>
 
                <div class="col-md-4 block-ul-modal">
-                   <ul>
-                       <li>
-                           <h6>finance type</h6>
-                           <h6>hire purchase</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Term</h6>
-                           <h6>36 months</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Contract Length</h6>
-                           <h6>36 months</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Cash Price</h6>
-                           <h6>€1,500.00</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Customer Deposit</h6>
-                           <h6>€1,000.00</h6>
-                       </li>
-
-                       <hr>
-                       <li>
-                           <h6>Total amount of credit</h6>
-                           <h6>€500.00</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Total amount payable</h6>
-                           <h6>€1,881.92</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Representative APR</h6>
-                           <h6>49.7%</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Total interest payable</h6>
-                           <h6>€381.92</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Fixed rate of interest pa</h6>
-                           <h6>8.25%</h6>
-                       </li>
-                       <hr>
-                       <li>
-                           <h6>Admin Fee</h6>
-                           <h6>€199.0</h6>
-                       </li>
-
-                   </ul>
+                <div class="reserve-page__details">
+                    <span class="reserve-page__details-title">Your details</span>
+                    <div>
+                        <span class="reserve-page__details-description">Please provide a few personal details</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 reserve-page-margin-padding">
+                        <form class="reserve-page-margin-padding">
+                            <div class="form-group row form-group-first">
+                                <div class="col-sm-12  form-group-mobile">
+                                    <input type="text" class="form-control" id="inputFirstName"
+                                           placeholder="First name *">
+                                </div>
+                                <div class="col-sm-12  form-group-mobile">
+                                    <input type="text" class="form-control" id="inputLastName"
+                                           placeholder="Last name *">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12  form-group-mobile">
+                                    <input type="text" class="form-control" id="inputEmailAddress"
+                                           placeholder="Email Address *">
+                                </div>
+                                <div class="col-sm-12 form-group-mobile form-group-mobile-last">
+                                    <input type="text" class="form-control" id="inputContactNumber"
+                                           placeholder="Contact Number *">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                </div>
                <div class="col-md-4 hire-block">
-                   <div>
-                       <span class="modal-used-cars__title">What is Hire Purchase (HP)</span>
-                       <p class="modal-used-cars__description">Pay any deposit and fees, and then the monthly
-                           repayments to own the vehicle at the end of the
-                           agreement.</p>
-                   </div>
-                   <div class="modal-used-cars__payments">
-                       <div class="modal-used-cars__value-text">
-                           <span>monthly payments</span>
-                       </div>
-                       <div class="modal-used-cars__value">
-                           <span>€24.22</span>
-                       </div>
-                   </div>
-                   <div class="accordion-used-car" id="accordion-used-car-modal">
-                       <div class="card accordion-used-car__card">
-                           <div class="card-header accordion-used-car__card-header finance-icon" id="headingFinance-title">
-                               <a  href="#" class="btn shadow-none accordion-used-car__title modal-used-cars__finance">
-                                   Apply for Finance
-                               </a>
-                           </div>
-                       </div>
-                   </div>
+                    <div class="reserve-page__details">
+                        <span class="reserve-page__details-title">Payment Details</span>
+                        <div>
+                            <span class="reserve-page__details-description">Please provide the payment details that you would like to use to reserve this vehicle</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 mb-3">
+                            <label for="cc-number">Credit / Debit Card Number *</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="Card Number "
+                                   required="">
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 mb-3">
+                            <label for="cc-expiration">Expiry Date *</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="MM  /  YY"
+                                   required="">
+                            <div class="invalid-feedback">
+                                Expiration date required
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 mb-3">
+                            <label for="cc-cvv">CVC *</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="CVC" required="">
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-8 offset-2 d-block reserve-page__stripe no-gutters-mobile">
+                        <div class="reserve-page__stripe-wrapper">
+                            <img class="d-flex justify-content-center" src="img/reserve/stripe.png" alt="stripe">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12 d-block reserve-page-margin-padding">
+                        <div class="form-group row reserve-page__checkbox-group">
+                            <input type="checkbox" class="reserve-page__checkbox" id="exampleCheck1">
+                        </div>
+                        <p class="reserve-page__checkbox-confirm">Please confirm you have read and agree to our<a
+                                class="reserve-page__conditions" href="#">Terms and Conditions <img
+                                src="img/reserve/terms.png" alt="Terms and Conditions"></a></p>
+                                <hr class="reserve-page__line reserve-page__сonditions">
+                    </div>
+                    <div class="col-md-12 col-lg-12 d-block ml-auto">
+                        <div class="reserve-page__button-container">
+                            <button class="reviews-button reserve-page__button">Submit Payment</button>
+                        </div>
+                    </div>
+                </div>
                </div>
            </div>
     </div>
