@@ -2268,11 +2268,14 @@ select::-ms-expand {
     background: #fff;
     text-align: left;
     padding: 15px;
-    position: relative; }
+    position: relative;
+    width: 100%;
+    min-height: 230px;
+    max-height: 230px; }
     #feedback .feedback-item .feedback-title h3, #feedback .feedback-item .feedback-author h3 {
       font-family: "Poppins", sans-serif;
       color: #333333;
-      font-weight: 400;
+      font-weight: 800;
       font-size: 20px; }
     #feedback .feedback-item .feedback-date, #feedback .feedback-item .feedback-body {
       color: #797979;
