@@ -2411,38 +2411,18 @@ select::-ms-expand {
   width: 42%;
   margin: inherit;
   display: block; }
-.reserve-page__card {
-  border: 1px solid #707070;
-  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
-  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
-  padding: 1rem; }
-.reserve-page__card-title {
-  font-weight: bold;
-  font-size: 26px; }
-.reserve-page__card-top-container {
-  padding-bottom: 0.5rem; }
-.reserve-page__card-subtitle {
-  font-size: 20px; }
-.reserve-page__card-name {
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold; }
-.reserve-page__card-model {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif; }
-.reserve-page__card-price {
-  font-size: 31px;
-  font-weight: bold; }
-.reserve-page__card-img-container {
-  padding-right: 0; }
 .reserve-page__details-title {
   display: inline-block;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-size: 20px; }
 .reserve-page__details-description {
   font-size: 20px;
   padding-bottom: 3%;
   display: inline-block; }
+.reserve-page__pay-value {
+  display: none; }
+.reserve-page__summary-mobile {
+  display: none; }
 .reserve-page__button {
   background: #3399FF;
   color: #ffffff;
@@ -2461,7 +2441,7 @@ select::-ms-expand {
     color: #777777;
     text-decoration: none; }
   .reserve-page__conditions img {
-    width: 20px !important; }
+    width: 24px !important; }
 
 .reserve-page___stripe {
   padding: 0; }
@@ -2485,7 +2465,7 @@ select::-ms-expand {
   margin: 0.5rem 0 0 0 !important;
   color: #8C8C8C;
   line-height: 23px;
-  font-size: 17px; }
+  font-size: 20px; }
 
 .reserve-page__сonditions {
   width: 100%;
@@ -2548,121 +2528,17 @@ select::-ms-expand {
   margin: 0;
   padding: 0; }
 
-@media only screen and (max-width: 767px) {
-  .reserve-page__card-name {
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold; }
-
-  .form-group-mobile {
-    margin-bottom: 2rem; }
-
-  .form-group-mobile-last {
-    margin-bottom: 0rem; }
-
-  .form-group-first {
-    margin-bottom: 0; }
-
-  .reserve-page__checkbox-confirm {
-    padding-bottom: 4rem; }
-
-  .reserve-page__button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 1rem 0; }
-
-  .reserve-page__card-padding {
-    padding-right: 0; }
-
-  .reserve-page__stripe-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block {
-    padding-left: 1rem !important; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block {
-    padding: 1rem !important; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal {
-    padding: 1rem !important; } }
-@media only screen and (max-width: 400px) {
-  .reserve-page__card {
-    padding: 0.5rem; }
-
-  .reserve-page__card__card-title {
-    font-size: 20px; }
-
-  .reserve-page__card-top-container {
-    padding-bottom: 0.5rem; }
-
-  .reserve-page__card-subtitle {
-    font-size: 15px;
-    text-align: left; }
-
-  .reserve-page__card-price {
-    font-size: 1.2rem; }
-
-  .reserve-page__card-name {
-    font-size: 1rem; }
-
-  .reserve-page__card-model {
-    font-size: 15px; } }
 .modal-used-cars.reserve-car-modal .modal-used-cars-container {
   margin-top: 1%; }
 .modal-used-cars.reserve-car-modal .container {
   width: 100% !important; }
-  .modal-used-cars.reserve-car-modal .container .col-md-4 {
+  .modal-used-cars.reserve-car-modal .container .col-lg-4 {
     padding: 1% 2%; }
-  .modal-used-cars.reserve-car-modal .container .col-md-4 {
+  .modal-used-cars.reserve-car-modal .container .col-lg-4 {
     float: left;
-    padding: 35px 20px;
     overflow: hidden; }
-    .modal-used-cars.reserve-car-modal .container .col-md-4 img {
-      width: 100%; }
   .modal-used-cars.reserve-car-modal .container .block-ul-modal {
     color: #171717; }
-  .modal-used-cars.reserve-car-modal .container .title-cross-block {
-    background-color: #DBDBDB;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 10px 17px; }
-    .modal-used-cars.reserve-car-modal .container .title-cross-block embed {
-      width: 25px; }
-  .modal-used-cars.reserve-car-modal .container .title-modal-used-cars {
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    color: #2D2D2D; }
-  .modal-used-cars.reserve-car-modal .container h6 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 400; }
-  .modal-used-cars.reserve-car-modal .container .first-title-modal {
-    margin-bottom: 15px; }
-  .modal-used-cars.reserve-car-modal .container .second-title-modal {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 21px; }
-  .modal-used-cars.reserve-car-modal .container p {
-    margin-bottom: 15px; }
-    .modal-used-cars.reserve-car-modal .container p h6 {
-      font-size: 15px;
-      text-transform: capitalize;
-      font-weight: 400;
-      font-family: "Source Sans Pro", sans-serif; }
   .modal-used-cars.reserve-car-modal .container .row.modal-used-cars-blocks {
     padding: 7px; }
   .modal-used-cars.reserve-car-modal .container .title-cross-block {
@@ -2688,11 +2564,135 @@ select::-ms-expand {
   .modal-used-cars.reserve-car-modal .container .hire-block {
     padding-right: 1.8rem;
     font-family: "Roboto", sans-serif;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 23px; }
   .modal-used-cars.reserve-car-modal .container .block-ul-modal {
     padding-right: 0.6rem;
     font-family: "Roboto", sans-serif;
-    font-size: 19px; }
+    font-size: 20px; }
+
+@media only screen and (max-width: 991px) {
+  .reserve-page__card-name {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold; }
+
+  .form-group-mobile {
+    margin-bottom: 2rem; }
+
+  .form-group-mobile-last {
+    margin-bottom: 0rem; }
+
+  .form-group-first {
+    margin-bottom: 0; }
+
+  .reserve-page__checkbox-confirm {
+    padding-bottom: 1rem; }
+
+  .reserve-page__button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 1rem 0; }
+
+  .reserve-page__card-padding {
+    padding-right: 0; }
+
+  .reserve-page__stripe-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+  .modal-used-cars.reserve-car-modal {
+    overflow: scroll;
+    height: 100vh; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal {
+      padding: 1rem 2rem !important; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block {
+      text-align: center; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .title-cross-block {
+      display: none; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .title-cross-block {
+      padding: 0.5% 1% 1% 1%; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .first-title-modal {
+      margin: 15px 0 6px 0;
+      font-size: 15px; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .second-title-modal {
+      font-size: 24px; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal {
+      font-size: 16px; }
+
+  .reserve-page__title-block {
+    align-items: flex-start;
+    margin: 10px 0 15px 0; }
+  .reserve-page__title {
+    text-align: center; }
+  .reserve-page__desctiption-pay {
+    text-align: left; }
+  .reserve-page__pay {
+    text-align: left !important;
+    margin: 1rem 0;
+    font-size: 29px; }
+  .reserve-page__pay-block {
+    text-align: left; }
+  .reserve-page__line {
+    text-align: center;
+    width: 60%; }
+  .reserve-page__line-half {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 16px; }
+  .reserve-page__card {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left; }
+  .reserve-page__card-title {
+    padding-left: 10px; }
+  .reserve-page__pay-value {
+    display: flex;
+    font-size: 33px;
+    padding-top: 1%; }
+  .reserve-page__card-top-container {
+    padding-bottom: 0.5rem; }
+  .reserve-page__button {
+    background: #00509F;
+    font-size: 20px;
+    height: 60px;
+    width: 84%;
+    border-radius: 0;
+    font-weight: 300; }
+  .reserve-page__conditions {
+    font-size: 20px; }
+  .reserve-page__summary {
+    display: none; }
+  .reserve-page__summary-mobile {
+    display: flex;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: Arial Rounded MT, sans-serif; }
+  .reserve-page__summary-vehicle {
+    font-size: 3vw;
+    font-weight: 500;
+    padding-top: 2%; }
+  .reserve-page__summary-title {
+    padding-top: 2%; } }
+@media only screen and (max-width: 768px) {
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .first-title-modal {
+    font-size: 5vw; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .second-title-modal {
+    font-size: 5vw; }
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal {
+    font-size: 3vw; }
+
+  .reserve-page__pay-value {
+    display: flex;
+    font-size: 8vw !important; } }
 
 /*# sourceMappingURL=style.css.map */
