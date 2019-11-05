@@ -1818,6 +1818,17 @@ select::-ms-expand {
 
   .valeting .workshop-section .down-block-workshop-section .img-left, .valeting .valeting-section .down-block-workshop-section .img-left {
     width: 40%; } }
+@media (min-width: 769px) and (max-width: 1000px) {
+  .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section {
+    padding: 0 21%; }
+
+  .valeting .workshop-section .block-workshop-section, .valeting .valeting-section .block-workshop-section {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    flex-direction: row; }
+    .valeting .workshop-section .block-workshop-section .item-img img, .valeting .valeting-section .block-workshop-section .item-img img {
+      width: 100%; } }
 .pdf {
   width: 700px;
   margin: 0 auto; }
