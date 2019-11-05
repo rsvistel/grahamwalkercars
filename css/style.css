@@ -2391,24 +2391,24 @@ select::-ms-expand {
   margin: 10px 0 15px 0; }
 .reserve-page__title {
   font-weight: bold;
-  font-style: normal;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: uppercase; }
 .reserve-page__desctiption-pay {
   font-weight: 300;
-  margin: 10px 0 5px 0; }
+  margin-top: 20px;
+  margin-bottom: 5px !important; }
 .reserve-page__pay {
   font-size: 22px;
   display: inline-block;
   margin-bottom: 10px; }
 .reserve-page__line {
-  border-top: 1px solid #BFBFBF;
-  width: 70%;
+  border-top: 1px solid #808080;
+  width: 85%;
   display: inline-block;
   margin: 0;
   margin-bottom: 5px; }
 .reserve-page__line-half {
-  width: 40%;
+  width: 42%;
   margin: inherit;
   display: block; }
 .reserve-page__card {
@@ -2440,26 +2440,28 @@ select::-ms-expand {
   display: inline-block;
   padding-bottom: 10px; }
 .reserve-page__details-description {
-  font-size: 14px;
+  font-size: 20px;
   padding-bottom: 3%;
   display: inline-block; }
 .reserve-page__button {
   background: #3399FF;
   color: #ffffff;
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  padding: 7% 20%;
-  border-radius: 7px;
-  font-family: "Source Sans Pro", sans-serif; }
+  height: 80px;
+  width: 100%;
+  border-radius: 5px;
+  font-family: Arial, sans-serif; }
 .reserve-page__conditions {
-  color: #8C8C8C;
-  font-weight: bold; }
+  color: #777777;
+  font-weight: bold;
+  font-size: 17px; }
   .reserve-page__conditions:hover {
-    color: #8C8C8C;
+    color: #777777;
     text-decoration: none; }
   .reserve-page__conditions img {
-    width: 10px !important; }
+    width: 20px !important; }
 
 .reserve-page___stripe {
   padding: 0; }
@@ -2481,14 +2483,15 @@ select::-ms-expand {
 
 .reserve-page__checkbox-confirm {
   margin: 0.5rem 0 0 0 !important;
-  padding-left: 25px;
-  font-size: 13px;
-  color: #8C8C8C; }
+  color: #8C8C8C;
+  line-height: 23px;
+  font-size: 17px; }
 
 .reserve-page__сonditions {
   width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  border-top: 1px solid #808080; }
 
 .title-reserve-page {
   font-weight: bold; }
@@ -2499,53 +2502,46 @@ select::-ms-expand {
   box-shadow: none; }
 
 #inputLastName::-webkit-input-placeholder {
-  color: #8C8C8C;
-  font-size: 16px;
-  font-weight: 300; }
+  color: #777777;
+  font-size: 16px; }
 
 #inputFirstName::-webkit-input-placeholder {
-  color: #8C8C8C;
-  font-size: 16px;
-  font-weight: 300; }
+  color: #777777;
+  font-size: 16px; }
 
 #inputEmailAddress::-webkit-input-placeholder {
-  color: #8C8C8C;
-  font-size: 16px;
-  font-weight: 300; }
+  color: #777777;
+  font-size: 16px; }
 
 #inputContactNumber::-webkit-input-placeholder {
-  color: #8C8C8C;
-  font-size: 16px;
-  font-weight: 300; }
+  color: #777777;
+  font-size: 16px; }
 
 #cc-number::-webkit-input-placeholder {
-  color: #8C8C8C;
-  font-size: 16px;
-  font-weight: 300; }
+  color: #777777;
+  font-size: 16px; }
 
 #cc-expiration::-webkit-input-placeholder {
-  color: #8C8C8C;
-  font-size: 16px;
-  font-weight: 300; }
+  color: #777777;
+  font-size: 16px; }
 
 #cc-cvv::-webkit-input-placeholder {
-  color: #8C8C8C;
-  font-size: 16px;
-  font-weight: 300; }
+  color: #777777;
+  font-size: 16px; }
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: 1px solid #DCDCDC;
+  border-bottom: 1px solid #808080;
   padding-left: 0;
   padding-bottom: 0;
   padding-top: 1.375rem;
-  color: #232323;
-  font-weight: 300; }
+  color: #777777;
+  font-family: "Roboto", sans-serif; }
 
 #cc-number, #cc-expiration, #cc-cvv {
-  border: 1px solid #DCDCDC;
+  border: 1px solid #808080;
   color: #8C8C8C; }
 
 .reserve-page-margin-padding {
@@ -2619,31 +2615,84 @@ select::-ms-expand {
   .reserve-page__card-model {
     font-size: 15px; } }
 .modal-used-cars.reserve-car-modal .modal-used-cars-container {
-  margin-top: 2%; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .col-md-4 {
-    padding: 10px 15px; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .title-cross-block {
-    padding: 5px 10px 8px 8px; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .first-title-modal {
+  margin-top: 1%; }
+.modal-used-cars.reserve-car-modal .container {
+  width: 100% !important; }
+  .modal-used-cars.reserve-car-modal .container .col-md-4 {
+    padding: 1% 2%; }
+  .modal-used-cars.reserve-car-modal .container .col-md-4 {
+    float: left;
+    padding: 35px 20px;
+    overflow: hidden; }
+    .modal-used-cars.reserve-car-modal .container .col-md-4 img {
+      width: 100%; }
+  .modal-used-cars.reserve-car-modal .container .block-ul-modal {
+    color: #171717; }
+  .modal-used-cars.reserve-car-modal .container .title-cross-block {
+    background-color: #DBDBDB;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 17px; }
+    .modal-used-cars.reserve-car-modal .container .title-cross-block embed {
+      width: 25px; }
+  .modal-used-cars.reserve-car-modal .container .title-modal-used-cars {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    color: #2D2D2D; }
+  .modal-used-cars.reserve-car-modal .container h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+  .modal-used-cars.reserve-car-modal .container .first-title-modal {
+    margin-bottom: 15px; }
+  .modal-used-cars.reserve-car-modal .container .second-title-modal {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px; }
+  .modal-used-cars.reserve-car-modal .container p {
+    margin-bottom: 15px; }
+    .modal-used-cars.reserve-car-modal .container p h6 {
+      font-size: 15px;
+      text-transform: capitalize;
+      font-weight: 400;
+      font-family: "Source Sans Pro", sans-serif; }
+  .modal-used-cars.reserve-car-modal .container .row.modal-used-cars-blocks {
+    padding: 7px; }
+  .modal-used-cars.reserve-car-modal .container .title-cross-block {
+    padding: 0.5% 1% 1% 1%; }
+  .modal-used-cars.reserve-car-modal .container .first-title-modal {
     margin: 15px 0 6px 0;
-    font-size: 14px; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .second-title-modal {
-    font-size: 18px; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal {
-    font-size: 13px; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .form-group {
+    font-size: 17px; }
+  .modal-used-cars.reserve-car-modal .container .second-title-modal {
+    font-size: 21px; }
+  .modal-used-cars.reserve-car-modal .container .third-title-modal {
+    font-size: 17px; }
+  .modal-used-cars.reserve-car-modal .container .form-group {
     margin: 0; }
-    .modal-used-cars.reserve-car-modal .modal-used-cars-container .form-group input[type="text"] {
-      margin: 0 0 0.6rem 0; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container label {
+    .modal-used-cars.reserve-car-modal .container .form-group input[type="text"] {
+      margin: 0 0 1rem 0; }
+  .modal-used-cars.reserve-car-modal .container label {
     color: #8C8C8C;
     margin-bottom: 0.1rem;
-    font-weight: 300; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block {
-    padding-left: 2rem; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block {
-    padding-right: 2rem; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal {
-    padding-right: 0.6rem; }
+    font-family: "Roboto", sans-serif; }
+  .modal-used-cars.reserve-car-modal .container .img-block {
+    padding-left: 1.8rem;
+    line-height: 23px; }
+  .modal-used-cars.reserve-car-modal .container .hire-block {
+    padding-right: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    line-height: 23px; }
+  .modal-used-cars.reserve-car-modal .container .block-ul-modal {
+    padding-right: 0.6rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px; }
 
 /*# sourceMappingURL=style.css.map */
