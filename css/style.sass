@@ -37,7 +37,8 @@ select::-ms-expand
   display: none
 .m-top-10
   margin-top: 10px
-
+.red
+  color: #BD1316
 //Header
 .header.topnav
   background: #333
@@ -1126,14 +1127,17 @@ select::-ms-expand
 
 
 //About
+.about-title-section
+  background-color: #47494A
+  .container
+    padding: 0 9px
 .about-title
   font-family: $primary-font
   text-transform: uppercase
-  background-color: #47494A
   color: white
-  padding: 3%
+  padding: 3% 0
   font-size: 1.9rem
-  text-align: center
+  text-align: left
   font-weight: 400
 .about
   .about-section
@@ -1215,6 +1219,7 @@ select::-ms-expand
   text-align: center
   margin: 30px 0
   padding: 0 3%
+  text-transform: uppercase
 
 
 .workshop-section
@@ -1227,7 +1232,7 @@ select::-ms-expand
     padding: 0
   .text-top-workshop-section
     font-family: Arial, sans-serif
-    padding: 0 25%
+    padding: 0
   .item-text
     font-family: Arial, sans-serif
     padding-right: 0
@@ -1860,7 +1865,111 @@ select::-ms-expand
 
 //Valeting
 .valeting
-  .workshop-section
+  color: #ffffff
+  font-weight: 400
+  .workshop-section, .valeting-section
+    background-image: url("../img/valeting/ca.png")
+    .text-top-workshop-section
+      padding-right: 50%
+    .block-workshop-section
+      padding: 25px
+      margin-top: 30px
+      .img-text-cover
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+      .item-text, .item-img-block
+        border-top: 1px solid white
+        border-bottom: 1px solid white
+        padding-top: 15px
+      .item-text
+        padding-left: 0
+        padding-bottom: 10px
+        h6
+          margin-bottom: 0
+          text-transform: uppercase
+        p
+          font-size: 14px
+          line-height: 16px
+      .item-img-block
+        padding: 15px 0 15px 10px
+      .item-img
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+          position: relative
+          margin-top: 0
+        .text-item-img
+          position: absolute
+          font-family: Arial, sans-serif
+          text-align: center
+          p
+            font-size: 11px
+    .down-block-workshop-section
+      margin-top: 0
+      .img-left
+        padding: 0
+        img
+          width: 100%
+      .text-block-auto
+        padding-right: 0
+        p
+          font-size: 13px
+    .text-right-block
+      margin-top: 0
+      display: flex
+      justify-content: flex-end
+      p
+        font-size: 13px
+        padding-left: 15px
+
+@media (max-width: 768px)
+  .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section
+    padding-right: 15px
+    margin-bottom: 15%
+
+  .valeting .valeting-section
+    .block-workshop-section
+      margin-top: 0
+      padding-top: 0
+      padding-bottom: 0
+      .item-img-block
+        width: 40%
+        .item-img
+          display: flex
+          justify-content: flex-end
+          padding-right: 0
+          img
+            width: 90%
+    .block-workshop-section:nth-child(2n)
+      flex-direction: row
+    .block-workshop-section.down-block-workshop-section
+      order: 1
+    .block-workshop-section.text-right-block
+      margin: 10px 0 50px 0
+      .col-md-6
+        padding: 0
+        p
+          padding-left: 0
+  .valeting .workshop-section .block-workshop-section .item-text, .valeting .workshop-section .block-workshop-section .item-img-block, .valeting .valeting-section .block-workshop-section .item-text, .valeting .valeting-section .block-workshop-section .item-img-block
+    border-top: 0
+
+  .valeting .workshop-section .down-block-workshop-section .img-left, .valeting .valeting-section .down-block-workshop-section .img-left
+    width: 40%
+
+@media (min-width: 769px) and (max-width: 1000px)
+  .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section
+    padding: 0 21%
+
+  .valeting .workshop-section .block-workshop-section, .valeting .valeting-section .block-workshop-section
+    -ms-flex: 0 0 50%
+    flex: 0 0 50%
+    max-width: 50%
+    flex-direction: row
+    .item-img img
+      width: 100%
 //Valeting
 
 
