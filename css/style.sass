@@ -3034,18 +3034,20 @@ select::-ms-expand
   //reviews-page
 #feedback.reviews-page
   background: #EEEEEE
-  min-width: 300px
-  display: flex
   padding: 2% 2%
-  display: flex
-  flex-wrap: wrap
-  //flex-direction: column
-  align-items:flex-start
+  -webkit-column-count: 3
+  -moz-column-count: 3
+  column-count: 3
+  -webkit-column-gap: 0
+  -moz-column-gap: 0
+  column-gap: 0
+  width: 100vw
   .feedback-item
     display: inline-block
-    width: 32%
+    width: 100%
+    vertical-align: top
     &:nth-child(3n + 2)
-      margin: 0 2% 2% 2%
+        margin: 0 2% 2% 2%
 .reviews-page-title
   margin: 1% 0
 .reviews-page-btn

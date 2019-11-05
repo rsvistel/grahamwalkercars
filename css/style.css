@@ -2807,14 +2807,18 @@ select::-ms-expand {
     font-size: 8vw !important; } }
 #feedback.reviews-page {
   background: #EEEEEE;
-  min-width: 300px;
-  display: flex;
   padding: 2% 2%;
-  display: flex;
-  flex-wrap: wrap; }
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+  width: 100vw; }
   #feedback.reviews-page .feedback-item {
     display: inline-block;
-    width: 32%; }
+    width: 100%;
+    vertical-align: top; }
     #feedback.reviews-page .feedback-item:nth-child(3n + 2) {
       margin: 0 2% 2% 2%; }
 
