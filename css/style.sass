@@ -1217,9 +1217,10 @@ select::-ms-expand
   font-family: Arial, sans-serif
   font-size: 5.3vw
   text-align: center
-  margin: 30px 0
+  margin: 15px 0 20px 0
   padding: 0 3%
   text-transform: uppercase
+  font-weight: 600
 
 
 .workshop-section
@@ -1263,6 +1264,31 @@ select::-ms-expand
         margin-bottom: 6px
 
 @media (max-width: 768px)
+  .workshop.workshop-page
+    .workshop-section
+      padding: 4% 0 15% 0
+      .left-block-workshop-section, .right-block-workshop-section
+        margin: 0
+        padding: 0 25px
+      .item-img-block
+        width: 40%
+      .block-workshop-section-first, .text-under-block-workshop-section-first
+        order: -1
+      .col-md-4.block-workshop-section.down-block-workshop-section
+        display: none
+      .block-workshop-section:nth-child(2n)
+        flex-direction: row
+      .block-workshop-section
+        margin-top: 0
+        padding: 0 25px
+      .block-workshop-section-first, .block-workshop-section-second
+        margin-top: 80px
+      .block-workshop-section-second .item-text, .block-workshop-section-second .item-img-block
+        border-bottom: 0
+      .text-under-block-workshop-section
+        margin-top: 15px
+
+
   .workshop-section
     .item-text
       padding-left: 10px
@@ -1886,11 +1912,31 @@ select::-ms-expand
   .title-block-workshop-section
     color: #D10609
     position: absolute
-    margin-top: -13%
+    margin-top: -12%
     font-family: Arial, sans-serif
     text-transform: uppercase
     font-weight: 600
-    font-size: 30px
+  .block-workshop-section
+    .img-left
+      padding: 0 5px
+      img
+        width: 100%
+    .item-text p
+      padding-right: 15px
+  .text-under-block-workshop-section
+    padding: 0 25px 0 15px
+    p
+      font-size: 14px
+      text-align: right
+      font-family: $primary-font
+  .workshop-section
+    padding: 4% 0 3% 0
+    .block-workshop-section
+      margin-top: 40px
+
+.from
+  font-family: $primary-font
+
 .valeting
   color: #ffffff
   font-weight: 400
