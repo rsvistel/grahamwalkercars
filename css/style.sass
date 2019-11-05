@@ -2697,76 +2697,58 @@ select::-ms-expand
         margin: 10px 0 15px 0
   &__title
         font-weight: bold
-        font-style: normal
-        font-size: 20px
+        font-size: 22px
         text-transform: uppercase
   &__desctiption-pay
         font-weight: 300
-        margin: 10px 0 5px 0
+        margin-top: 20px
+        margin-bottom: 5px!important
   &__pay
         font-size: 22px
         display: inline-block
         margin-bottom: 10px
   &__line
-        border-top: 1px solid #BFBFBF
-        width: 70%
+        border-top: 1px solid #808080
+        width: 85%
         display: inline-block
         margin: 0
         margin-bottom: 5px
   &__line-half
-        width: 40%
+        width: 42%
         margin: inherit
         display: block
-  &__card
-        border: 1px solid #707070
-        -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
-        -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
-        box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
-        padding: 1rem
-  &__card-title
-        font-weight: bold
-        font-size: 26px
-  &__card-top-container
-        padding-bottom: 0.5rem
-  &__card-subtitle
-        font-size: 20px
-  &__card-name
-        font-size: 20px
-        font-family: $secondary-font
-        font-weight: bold
-  &__card-model
-        font-size: 16px
-        font-family: $secondary-font
-  &__card-price
-        font-size: 31px
-        font-weight: bold
-  &__card-img-container
-        padding-right: 0
   &__details-title
         display: inline-block
         padding-bottom: 10px
+        font-size: 20px
   &__details-description
-        font-size: 14px
+        font-size: 20px
         padding-bottom: 3%
         display: inline-block
+  &__pay-value
+        display: none
+  &__summary-mobile
+        display: none
   &__button
     background: #3399FF
     color: #ffffff
     border: none
-    font-size: 20px
+    font-size: 25px
     font-weight: bold
-    //margin: 2% 0 4% 0
-    padding: 7%  20%
-    border-radius: 7px
-    font-family: "Source Sans Pro", sans-serif
+    height: 80px
+    width: 100%
+    //padding: 7%  18%
+    border-radius: 5px
+    font-family: Arial, sans-serif
   &__conditions
-        color: #8C8C8C
+        color: #777777
         font-weight: bold
+        font-size: 17px
         &:hover
-          color: #8C8C8C
+          color: #777777
           text-decoration: none
         img
-          width: 10px!important
+          width: 24px!important
 
 
 .reserve-page___stripe
@@ -2789,16 +2771,16 @@ select::-ms-expand
   margin-top: 1rem
 
 .reserve-page__checkbox-confirm
-  //height: 25px
   margin: 0.5rem 0 0 0!important
-  padding-left: 25px
-  font-size: 13px
   color: #8C8C8C
+  line-height: 23px
+  font-size: 20px
 
 .reserve-page__сonditions
   width: 100%
   padding: 0
   margin: 0
+  border-top: 1px solid #808080
 
 .title-reserve-page
   font-weight: bold
@@ -2809,75 +2791,98 @@ select::-ms-expand
   box-shadow: none
 
 #inputLastName::-webkit-input-placeholder
-  color: #8C8C8C
+  color: #777777
   font-size: 16px
-  font-weight: 300
 
 #inputFirstName::-webkit-input-placeholder
-  color: #8C8C8C
+  color: #777777
   font-size: 16px
-  font-weight: 300
 
 #inputEmailAddress::-webkit-input-placeholder
-  color: #8C8C8C
+  color: #777777
   font-size: 16px
-  font-weight: 300
 
 #inputContactNumber::-webkit-input-placeholder
-  color: #8C8C8C
+  color: #777777
   font-size: 16px
-  font-weight: 300
 
 #cc-number::-webkit-input-placeholder
-  color: #8C8C8C
+  color: #777777
   font-size: 16px
-  font-weight: 300
 
 #cc-expiration::-webkit-input-placeholder
-  color: #8C8C8C
+  color: #777777
   font-size: 16px
-  font-weight: 300
 
 #cc-cvv::-webkit-input-placeholder
-  color: #8C8C8C
+  color: #777777
   font-size: 16px
-  font-weight: 300
 
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber
   border-top: 0
   border-right: 0
   border-left: 0
-  border-bottom: 1px solid #DCDCDC
+  border-bottom: 1px solid #808080
   padding-left: 0
   padding-bottom: 0
   padding-top: 1.375rem
-  color: #232323
-  font-weight: 300
+  color: #777777
+  font-family: 'Roboto', sans-serif
 
 #cc-number, #cc-expiration, #cc-cvv
-  border: 1px solid #DCDCDC
+  border: 1px solid #808080
   color: #8C8C8C
 
 .reserve-page-margin-padding
   margin: 0
   padding: 0
 
-// @media only screen and (max-width: 1024px)
-//   .reserve-page__button-container
-//     margin-left: 11%
+.modal-used-cars.reserve-car-modal
+  .modal-used-cars-container
+    margin-top: 1%
+  .container
+    width: 100%!important
+    .col-lg-4
+      padding: 1% 2%
+    .col-lg-4
+      float: left
+      overflow: hidden
+    .block-ul-modal
+      color: #171717
+    .row.modal-used-cars-blocks
+      padding: 7px
+    .title-cross-block
+      padding: 0.5% 1% 1% 1%
+    .first-title-modal
+      margin: 15px 0 6px 0
+      font-size: 17px
+    .second-title-modal
+      font-size: 21px
+    .third-title-modal
+      font-size: 17px
+    .form-group
+      margin: 0
+      input[type="text"]
+        margin: 0 0 1rem 0
+    label
+      color: #8C8C8C
+      margin-bottom: .1rem
+      font-family: 'Roboto', sans-serif
+    .img-block
+      padding-left: 1.8rem
+      line-height: 23px
+    .hire-block
+      padding-right: 1.8rem
+      font-family: 'Roboto', sans-serif
+      font-size: 20px
+      line-height: 23px
+    .block-ul-modal
+      padding-right: 0.6rem
+      font-family: 'Roboto', sans-serif
+      font-size: 20px
 
-// @media only screen and (max-width: 991px)
-//   .reserve-page__button-container
-//     display: -webkit-box
-//     display: -ms-flexbox
-//     display: flex
-//     -webkit-box-pack: center
-//     -ms-flex-pack: center
-//     justify-content: center
-//     margin-left: 0
-
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 991px)
   .reserve-page__card-name
     font-size: 20px
     font-family: $secondary-font
@@ -2889,7 +2894,7 @@ select::-ms-expand
   .form-group-first
     margin-bottom: 0
   .reserve-page__checkbox-confirm
-    padding-bottom: 4rem
+    padding-bottom: 1rem
   .reserve-page__button-container
     display: -webkit-box
     display: -ms-flexbox
@@ -2908,68 +2913,120 @@ select::-ms-expand
     -ms-flex-pack: center
     justify-content: center
   .modal-used-cars.reserve-car-modal
+    overflow: scroll
+    height: 100vh
     .modal-used-cars-container
+      .hire-block, .img-block, .block-ul-modal
+        padding: 1rem 2rem!important
       .img-block
-        padding-left: 1rem!important
+
+        text-align: center
       .hire-block
-        padding: 1rem!important
+
       .block-ul-modal
-        padding: 1rem!important
+
+      .title-cross-block
+        display: none
+      .title-cross-block
+        padding: 0.5% 1% 1% 1%
+      .first-title-modal
+        margin: 15px 0 6px 0
+        font-size: 15px
+      .second-title-modal
+        font-size: 24px
+      .third-title-modal
+        font-size: 16px
+
+  .reserve-page
+    &__title-block
+          align-items: flex-start
+          margin: 10px 0 15px 0
+    &__title
+          text-align: center
+    &__desctiption-pay
+          text-align: left
+    &__pay
+          text-align: left!important
+          margin: 1rem 0
+          font-size: 29px
+
+    &__pay-block
+          text-align: left
+    &__line
+          text-align: center
+          width: 60%
+    &__line-half
+          width: 30%
+          display: inline-block
+          text-align: center
+          margin-bottom: 16px
+    &__card
+          display: flex
+          flex-direction: row-reverse
+          text-align: left
+    &__card-title
+          padding-left: 10px
+    &__pay-value
+          display: flex
+          font-size: 33px
+          padding-top: 1%
+    &__card-top-container
+          padding-bottom: 0.5rem
+    &__button
+      background: #00509F
+      font-size: 20px
+      height: 60px
+      width: 84%
+      border-radius: 0
+      font-weight: 300
+    &__conditions
+      font-size: 20px
+    &__summary
+      display: none
+    &__summary-mobile
+        display: flex
+        font-size: 4vw
+        font-weight: bold
+        font-family: Arial Rounded MT, sans-serif
+    &__summary-vehicle
+        font-size: 3vw
+        font-weight: 500
+        padding-top: 2%
+    &__summary-title
+        padding-top: 2%
+
+
+@media only screen and (max-width: 768px)
+    .modal-used-cars.reserve-car-modal
+      .modal-used-cars-container
+        .first-title-modal
+          font-size: 5vw
+        .second-title-modal
+          font-size: 5vw
+        .third-title-modal
+          font-size: 3vw
+
+    .reserve-page__pay-value
+        display: flex
+        font-size: 8vw!important
 
 
 
-@media only screen and (max-width: 400px)
-  .reserve-page__card
-    padding: 0.5rem
-  .reserve-page__card__card-title
-    font-size: 20px
-  .reserve-page__card-top-container
-    padding-bottom: 0.5rem
-  .reserve-page__card-subtitle
-    font-size: 15px
-    text-align: left
-  .reserve-page__card-price
-    font-size: 1.2rem
-  .reserve-page__card-name
-    font-size: 1rem
-  .reserve-page__card-model
-    font-size: 15px
+// @media only screen and (max-width: 400px)
+//   .reserve-page__card
+//     padding: 0.5rem
+//   .reserve-page__card__card-title
+//     font-size: 20px
+//   .reserve-page__card-top-container
+//     padding-bottom: 0.5rem
+//   .reserve-page__card-subtitle
+//     font-size: 15px
+//     text-align: left
+//   .reserve-page__card-price
+//     font-size: 1.2rem
+//   .reserve-page__card-name
+//     font-size: 1rem
+//   .reserve-page__card-model
+//     font-size: 15px
 
 //Reserve-vehicle- page
-
-.modal-used-cars.reserve-car-modal
-  .modal-used-cars-container
-    margin-top: 2%
-    // position: absolute
-    // top: 50%
-    // left: 50%
-    // //margin-right: -50%
-    // transform: translate(-50%, -50%)
-    // margin: 0 -50% 0 0
-    .container
-    .col-md-4
-      padding: 10px 15px
-    .title-cross-block
-      padding: 5px 10px 8px 8px
-    .first-title-modal
-      margin: 15px 0 6px 0
-      font-size: 14px
-    .second-title-modal
-      font-size: 18px
-    .third-title-modal
-      font-size: 13px
-    .form-group
-      margin: 0
-      input[type="text"]
-        margin: 0 0 0.6rem 0
-    label
-      color: #8C8C8C
-      margin-bottom: .1rem
-      font-weight: 300
-    .img-block
-      padding-left: 2rem
-    .hire-block
-      padding-right: 2rem
-    .block-ul-modal
-      padding-right: 0.6rem
-
