@@ -2568,8 +2568,8 @@ select::-ms-expand
       padding: 15px
       position: relative
       width: 100%
-      min-height: 230px
-      max-height: 230px
+      // min-height: 230px
+      // max-height: 230px
       margin-bottom: 1rem
       .feedback-title h3, .feedback-author h3
         font-family: 'Poppins', sans-serif
@@ -3030,3 +3030,31 @@ select::-ms-expand
 //     font-size: 15px
 
 //Reserve-vehicle- page
+
+  //reviews-page
+#feedback.reviews-page
+  background: #EEEEEE
+  min-width: 300px
+  display: flex
+  padding: 2% 2%
+  display: flex
+  flex-wrap: wrap
+  //flex-direction: column
+  align-items:flex-start
+  .feedback-item
+    display: inline-block
+    width: 32%
+    &:nth-child(3n + 2)
+      margin: 0 2% 2% 2%
+.reviews-page-title
+  margin: 1% 0
+.reviews-page-btn
+  margin: 5% 0
+  button
+    border: none
+    background: #D10609
+    color: #ffffff
+    text-transform: uppercase
+    padding: 20px 80px
+  //reviews-page
+

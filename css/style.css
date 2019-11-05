@@ -2384,8 +2384,6 @@ select::-ms-expand {
     padding: 15px;
     position: relative;
     width: 100%;
-    min-height: 230px;
-    max-height: 230px;
     margin-bottom: 1rem; }
     #feedback .feedback-item .feedback-title h3, #feedback .feedback-item .feedback-author h3 {
       font-family: "Poppins", sans-serif;
@@ -2807,5 +2805,29 @@ select::-ms-expand {
   .reserve-page__pay-value {
     display: flex;
     font-size: 8vw !important; } }
+#feedback.reviews-page {
+  background: #EEEEEE;
+  min-width: 300px;
+  display: flex;
+  padding: 2% 2%;
+  display: flex;
+  flex-wrap: wrap; }
+  #feedback.reviews-page .feedback-item {
+    display: inline-block;
+    width: 32%; }
+    #feedback.reviews-page .feedback-item:nth-child(3n + 2) {
+      margin: 0 2% 2% 2%; }
+
+.reviews-page-title {
+  margin: 1% 0; }
+
+.reviews-page-btn {
+  margin: 5% 0; }
+  .reviews-page-btn button {
+    border: none;
+    background: #D10609;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px 80px; }
 
 /*# sourceMappingURL=style.css.map */
