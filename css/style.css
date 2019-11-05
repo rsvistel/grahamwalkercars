@@ -1263,7 +1263,10 @@ select::-ms-expand {
   .workshop-section .text-top-workshop-section {
     padding: 0 21%; }
   .workshop-section .block-workshop-section {
-    flex-direction: column; }
+    flex-direction: row;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
     .workshop-section .block-workshop-section .col-md-6 {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
@@ -1271,8 +1274,15 @@ select::-ms-expand {
     .workshop-section .block-workshop-section .item-img {
       text-align: center; }
       .workshop-section .block-workshop-section .item-img img {
-        width: 75%;
-        margin-top: -60px; } }
+        width: 100%; }
+  .workshop-section .block-workshop-section.down-block-workshop-section, .workshop-section .text-under-block-workshop-section {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .workshop-section .block-workshop-section.down-block-workshop-section .img-left, .workshop-section .text-under-block-workshop-section .img-left {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .workshop-section .item-text {
     padding-left: 0; } }

@@ -1326,7 +1326,10 @@ select::-ms-expand
     //    padding-right: 3px
 
     .block-workshop-section
-      flex-direction: column
+      flex-direction: row
+      -ms-flex: 0 0 50%
+      flex: 0 0 50%
+      max-width: 50%
       .col-md-6
         -ms-flex: 0 0 100%
         flex: 0 0 100%
@@ -1334,8 +1337,15 @@ select::-ms-expand
       .item-img
         text-align: center
         img
-          width: 75%
-          margin-top: -60px
+          width: 100%
+    .block-workshop-section.down-block-workshop-section, .text-under-block-workshop-section
+      -ms-flex: 0 0 100%
+      flex: 0 0 100%
+      max-width: 100%
+      .img-left
+        -ms-flex: 0 0 16.666667%
+        flex: 0 0 16.666667%
+        max-width: 16.666667%
 @media (min-width: 1000px) and (max-width: 1200px)
   .workshop-section .item-text
     padding-left: 0
