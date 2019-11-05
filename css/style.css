@@ -1170,16 +1170,18 @@ select::-ms-expand {
   font-family: Arial, sans-serif;
   font-size: 5.3vw;
   text-align: center;
-  margin: 30px 0;
+  margin: 15px 0 20px 0;
   padding: 0 3%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 600; }
 
 .workshop-section {
   background-image: url("../img/workshop/ban.png");
   background-repeat: no-repeat;
   padding: 4% 0 13% 0;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  font-family: Arial, sans-serif; }
   .workshop-section .container {
     padding: 0; }
   .workshop-section .text-top-workshop-section {
@@ -1200,8 +1202,42 @@ select::-ms-expand {
   .workshop-section .block-workshop-section {
     display: flex;
     margin-top: 60px; }
+  .workshop-section .left-block-workshop-section {
+    margin-right: 8%; }
+    .workshop-section .left-block-workshop-section p {
+      margin-bottom: 20px; }
+  .workshop-section .right-block-workshop-section ul {
+    padding-left: 18px;
+    padding-top: 3px; }
+    .workshop-section .right-block-workshop-section ul li {
+      list-style-type: disc;
+      list-style-image: url("../img/workshop/circle.png");
+      margin-bottom: 6px; }
 
 @media (max-width: 768px) {
+  .workshop.workshop-page .workshop-section {
+    padding: 4% 0 15% 0; }
+    .workshop.workshop-page .workshop-section .left-block-workshop-section, .workshop.workshop-page .workshop-section .right-block-workshop-section {
+      margin: 0;
+      padding: 0 25px; }
+    .workshop.workshop-page .workshop-section .item-img-block {
+      width: 40%; }
+    .workshop.workshop-page .workshop-section .block-workshop-section-first, .workshop.workshop-page .workshop-section .text-under-block-workshop-section-first {
+      order: -1; }
+    .workshop.workshop-page .workshop-section .col-md-4.block-workshop-section.down-block-workshop-section {
+      display: none; }
+    .workshop.workshop-page .workshop-section .block-workshop-section:nth-child(2n) {
+      flex-direction: row; }
+    .workshop.workshop-page .workshop-section .block-workshop-section {
+      margin-top: 0;
+      padding: 0 25px; }
+    .workshop.workshop-page .workshop-section .block-workshop-section-first, .workshop.workshop-page .workshop-section .block-workshop-section-second {
+      margin-top: 80px; }
+    .workshop.workshop-page .workshop-section .block-workshop-section-second .item-text, .workshop.workshop-page .workshop-section .block-workshop-section-second .item-img-block {
+      border-bottom: 0; }
+    .workshop.workshop-page .workshop-section .text-under-block-workshop-section {
+      margin-top: 15px; }
+
   .workshop-section .item-text {
     padding-left: 10px; }
     .workshop-section .item-text h6 {
@@ -1227,7 +1263,10 @@ select::-ms-expand {
   .workshop-section .text-top-workshop-section {
     padding: 0 21%; }
   .workshop-section .block-workshop-section {
-    flex-direction: column; }
+    flex-direction: row;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
     .workshop-section .block-workshop-section .col-md-6 {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
@@ -1235,8 +1274,15 @@ select::-ms-expand {
     .workshop-section .block-workshop-section .item-img {
       text-align: center; }
       .workshop-section .block-workshop-section .item-img img {
-        width: 75%;
-        margin-top: -60px; } }
+        width: 100%; }
+  .workshop-section .block-workshop-section.down-block-workshop-section, .workshop-section .text-under-block-workshop-section {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .workshop-section .block-workshop-section.down-block-workshop-section .img-left, .workshop-section .text-under-block-workshop-section .img-left {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .workshop-section .item-text {
     padding-left: 0; } }
@@ -1725,6 +1771,38 @@ select::-ms-expand {
 
   .mobile-title {
     display: block; } }
+.workshop-page .text-item-img {
+  color: white; }
+.workshop-page .block-workshop-section .item-text, .workshop-page .block-workshop-section .item-img-block {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000; }
+.workshop-page .title-block-workshop-section {
+  color: #D10609;
+  position: absolute;
+  margin-top: -12%;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+.workshop-page .block-workshop-section .img-left {
+  padding: 0 5px; }
+  .workshop-page .block-workshop-section .img-left img {
+    width: 100%; }
+.workshop-page .block-workshop-section .item-text p {
+  padding-right: 15px; }
+.workshop-page .text-under-block-workshop-section {
+  padding: 0 25px 0 15px; }
+  .workshop-page .text-under-block-workshop-section p {
+    font-size: 14px;
+    text-align: right;
+    font-family: "Montserrat", sans-serif; }
+.workshop-page .workshop-section {
+  padding: 4% 0 3% 0; }
+  .workshop-page .workshop-section .block-workshop-section {
+    margin-top: 40px; }
+
+.from {
+  font-family: "Montserrat", sans-serif; }
+
 .valeting {
   color: #ffffff;
   font-weight: 400; }
@@ -1732,42 +1810,6 @@ select::-ms-expand {
     background-image: url("../img/valeting/ca.png"); }
     .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section {
       padding-right: 50%; }
-    .valeting .workshop-section .block-workshop-section, .valeting .valeting-section .block-workshop-section {
-      padding: 25px;
-      margin-top: 30px; }
-      .valeting .workshop-section .block-workshop-section .img-text-cover, .valeting .valeting-section .block-workshop-section .img-text-cover {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-      .valeting .workshop-section .block-workshop-section .item-text, .valeting .workshop-section .block-workshop-section .item-img-block, .valeting .valeting-section .block-workshop-section .item-text, .valeting .valeting-section .block-workshop-section .item-img-block {
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        padding-top: 15px; }
-      .valeting .workshop-section .block-workshop-section .item-text, .valeting .valeting-section .block-workshop-section .item-text {
-        padding-left: 0;
-        padding-bottom: 10px; }
-        .valeting .workshop-section .block-workshop-section .item-text h6, .valeting .valeting-section .block-workshop-section .item-text h6 {
-          margin-bottom: 0;
-          text-transform: uppercase; }
-        .valeting .workshop-section .block-workshop-section .item-text p, .valeting .valeting-section .block-workshop-section .item-text p {
-          font-size: 14px;
-          line-height: 16px; }
-      .valeting .workshop-section .block-workshop-section .item-img-block, .valeting .valeting-section .block-workshop-section .item-img-block {
-        padding: 15px 0 15px 10px; }
-      .valeting .workshop-section .block-workshop-section .item-img, .valeting .valeting-section .block-workshop-section .item-img {
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .valeting .workshop-section .block-workshop-section .item-img img, .valeting .valeting-section .block-workshop-section .item-img img {
-          position: relative;
-          margin-top: 0; }
-        .valeting .workshop-section .block-workshop-section .item-img .text-item-img, .valeting .valeting-section .block-workshop-section .item-img .text-item-img {
-          position: absolute;
-          font-family: Arial, sans-serif;
-          text-align: center; }
-          .valeting .workshop-section .block-workshop-section .item-img .text-item-img p, .valeting .valeting-section .block-workshop-section .item-img .text-item-img p {
-            font-size: 11px; }
     .valeting .workshop-section .down-block-workshop-section, .valeting .valeting-section .down-block-workshop-section {
       margin-top: 0; }
       .valeting .workshop-section .down-block-workshop-section .img-left, .valeting .valeting-section .down-block-workshop-section .img-left {
@@ -1785,6 +1827,43 @@ select::-ms-expand {
       .valeting .workshop-section .text-right-block p, .valeting .valeting-section .text-right-block p {
         font-size: 13px;
         padding-left: 15px; }
+
+.block-workshop-section {
+  padding: 25px;
+  margin-top: 30px; }
+  .block-workshop-section .img-text-cover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .block-workshop-section .item-text, .block-workshop-section .item-img-block {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 15px; }
+  .block-workshop-section .item-text {
+    padding-left: 0;
+    padding-bottom: 10px; }
+    .block-workshop-section .item-text h6 {
+      margin-bottom: 0;
+      text-transform: uppercase; }
+    .block-workshop-section .item-text p {
+      font-size: 14px;
+      line-height: 16px; }
+  .block-workshop-section .item-img-block {
+    padding: 15px 0 15px 10px; }
+  .block-workshop-section .item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .block-workshop-section .item-img img {
+      position: relative;
+      margin-top: 0; }
+    .block-workshop-section .item-img .text-item-img {
+      position: absolute;
+      font-family: Arial, sans-serif;
+      text-align: center; }
+      .block-workshop-section .item-img .text-item-img p {
+        font-size: 11px; }
 
 @media (max-width: 768px) {
   .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section {
