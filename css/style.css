@@ -1488,8 +1488,8 @@ select::-ms-expand {
     margin-bottom: 3vw; }
   #used-cars.main-wrapper .filter-navigation-menu {
     display: flex;
+    width: 100%;
     justify-content: flex-end;
-    width: 90%;
     margin: 1vw 0 4vw 0; }
     #used-cars.main-wrapper .filter-navigation-menu ul {
       list-style: none;
@@ -1497,11 +1497,10 @@ select::-ms-expand {
       #used-cars.main-wrapper .filter-navigation-menu ul li {
         background: #C8C8C8;
         color: white;
-        width: 50%;
         font-size: 16px;
         vertical-align: center;
         padding: 20px 10px;
-        margin-right: 4%;
+        margin-right: 15px;
         border-radius: 5px;
         cursor: pointer; }
       #used-cars.main-wrapper .filter-navigation-menu ul .pagination-active-item {
