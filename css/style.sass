@@ -2652,17 +2652,21 @@ select::-ms-expand
       padding: 15px
       position: relative
       width: 100%
-      min-height: 230px
-      max-height: 230px
+      // min-height: 230px
+      // max-height: 230px
       margin-bottom: 1rem
       .feedback-title h3, .feedback-author h3
-        font-family: 'Poppins', sans-serif
-        color: $dark-gray
+        font-family: Arial, sans-serif
+        color: #000000
         font-weight: 800
         font-size: 18px
-      .feedback-date, .feedback-body
-        color: #797979
-        font-family: 'Source Sans Pro', sans-serif
+      .feedback-body
+        color: #515151
+        font-family: 'Roboto', sans-serif
+      .feedback-date
+        font-family: 'Arial', sans-serif
+        color: #CCCCCC
+
       .feedback-date
         font-size: 14px
         color: #DFDFDF
@@ -2689,9 +2693,7 @@ select::-ms-expand
     background: #D10609
     padding: 1.5% 5%
     border-radius: 7px
-    font-family: "Source Sans Pro", sans-serif
-  .feedback-rating
-    font-family: "Open Sans", sans-serif
+    font-family: "Arial", sans-serif
 
 @media only screen and (max-width: 768px)
   #feedback
@@ -2728,8 +2730,6 @@ select::-ms-expand
           margin-bottom: 1rem
           .fas.fa-star
               font-size: 1rem
-          .feedback-title h3
-              //font-size: 22px
           .feedback-author h3
               font-size: 17px
       .button-feedback
@@ -2738,7 +2738,7 @@ select::-ms-expand
       .five-stars
         margin: 0 15px 0 10px
         font-size: 35px
-        font-family: "Poppins", sans-serif
+        //font-family: "Poppins", sans-serif
         font-weight: 400
       .fas.fa-star
         font-size: 1.5rem
@@ -3094,23 +3094,63 @@ select::-ms-expand
         display: flex
         font-size: 8vw!important
 
-
-
-// @media only screen and (max-width: 400px)
-//   .reserve-page__card
-//     padding: 0.5rem
-//   .reserve-page__card__card-title
-//     font-size: 20px
-//   .reserve-page__card-top-container
-//     padding-bottom: 0.5rem
-//   .reserve-page__card-subtitle
-//     font-size: 15px
-//     text-align: left
-//   .reserve-page__card-price
-//     font-size: 1.2rem
-//   .reserve-page__card-name
-//     font-size: 1rem
-//   .reserve-page__card-model
-//     font-size: 15px
-
 //Reserve-vehicle- page
+
+  //reviews-page
+#feedback.reviews-page
+  background: #EEEEEE
+  padding: 1% 0.6%
+  -webkit-column-count: 3
+  -moz-column-count: 3
+  column-count: 3
+  -webkit-column-gap: 0
+  -moz-column-gap: 0
+  column-gap: 0
+  width: 100vw
+  .feedback-item
+    display: inline-block
+    width: 96%
+    vertical-align: top
+    .feedback-body
+      padding-left: 0
+.reviews-page-title-block
+  margin: 1% 0
+.reviews-page-btn
+  margin: 5% 0
+  button
+    border: none
+    background: #D10609
+    color: #ffffff
+    text-transform: uppercase
+    padding: 20px 80px
+
+@media only screen and (max-width: 991px)
+  #feedback.reviews-page
+    background: #47494A
+    padding: 1% 0.6%
+    -webkit-column-count: 2
+    -moz-column-count: 2
+    column-count: 2
+    -webkit-column-gap: 0
+    -moz-column-gap: 0
+    column-gap: 0
+    width: 100vw
+
+@media only screen and (max-width: 768px)
+  #feedback.reviews-page
+    -webkit-column-count: 1
+    -moz-column-count: 1
+    column-count: 1
+    -webkit-column-gap: 0
+    -moz-column-gap: 0
+    column-gap: 0
+    width: 100vw
+  .reviews-page-title
+    text-align: center
+  .reviews-page-btn
+    margin-bottom: 14%
+    margin-top: 10%
+    button
+      padding: 17px 45px
+  //reviews-page
+
