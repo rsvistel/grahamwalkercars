@@ -668,7 +668,7 @@ select::-ms-expand
     color: black
     text-decoration: initial
   .car-title
-    padding: 8px 3px
+    padding: 8px 3px 0 3px
     margin-top: 1px
     border: 1px solid #808080
     border-bottom-right-radius: 7px
@@ -757,27 +757,16 @@ select::-ms-expand
           font-weight: 400
           font-family: Arial, sans-serif
   .car-desc
-    padding: 6% 0
+    padding: 4% 0 2% 0
     .row
       margin: 0
     .col-6
-      margin: 3% 0
-      padding: 0 8%
-      display: -webkit-box
-      display: -ms-flexbox
-      display: flex
-      -webkit-box-align: center
-      -ms-flex-align: center
-      align-items: center
-      img
-        width: 21%
-        max-height: 18px
-      h6
-        margin-left: 8px
-        font-size: 11px
-        font-family: Arial, sans-serif
-        color: $light-gray
-        text-transform: capitalize
+      padding-left: 10%
+      ul
+        margin: 0
+        padding: 0
+        li
+          font-size: 14px
 @media only screen and (max-width: 768px)
   .owl-nav
     position: absolute
@@ -813,6 +802,12 @@ select::-ms-expand
   .car-title h2
     font-size: 13px!important
 
+  .car-tile
+    .car-desc
+      .col-6
+        ul
+          li
+            font-size: 11px
 //APPLY
 .apply
   background-image: url("../img/home/ban.png")
@@ -1494,6 +1489,7 @@ select::-ms-expand
     text-transform: uppercase
 //Contact
 
+//search-resalt
 
 #used-cars.main-wrapper
   background-color: white
@@ -1523,7 +1519,7 @@ select::-ms-expand
       font-family: $primary-font
       img
         height: 20px
-    .col-md-2
+    .col-md-3, .col-md-2
       text-align: center
       padding: 0 1px
       select
@@ -1532,7 +1528,7 @@ select::-ms-expand
         appearance: none
         background-image: url(../img/home/arrow-down.png)
         background-position: center right 10px
-        background-size: 8%
+        background-size: 6%
         background-repeat: no-repeat
         background-color: white
         border-radius: 0
@@ -1556,15 +1552,14 @@ select::-ms-expand
         border: 0
         .mobile-word
           display: none
+    .search-box-info-padding
+      padding: 0
     .search-box-info
-      color: #D1D1D1
+      color: #D2D2D2
       padding-top: 15px
+      font-size: 20px
       display: flex
       justify-content: space-between
-      .advanced-text
-        color: #ffffff
-        text-decoration: underline
-        cursor: pointer
   .car-tile
     //background: #ffffff
     // margin-bottom: 2%
