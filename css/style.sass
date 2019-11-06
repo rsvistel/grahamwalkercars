@@ -500,6 +500,9 @@ select::-ms-expand
     align-items: center
     .container
       position: relative
+      .row
+        display: flex
+        justify-content: center
     h3
       color: #fff
       text-align: left
@@ -508,7 +511,7 @@ select::-ms-expand
       font-family: $primary-font
       img
         height: 20px
-    .col-md-2
+    .col-md-3
       text-align: center
       padding: 0 1px
       select
@@ -517,19 +520,12 @@ select::-ms-expand
         appearance: none
         background-image: url(../img/home/arrow-down.png)
         background-position: center right 10px
-        background-size: 8%
+        background-size: 6%
         background-repeat: no-repeat
         background-color: white
         border-radius: 0
         padding-left: 20px
         font-family: Arial, sans-serif
-      button
-        background: #D10609
-        border: none
-        border-radius: 0
-        color: white
-        font-family: Arial, sans-serif
-        text-transform: uppercase
         img
           width: 25px
           position: relative
@@ -541,6 +537,23 @@ select::-ms-expand
         border: 0
         .mobile-word
           display: none
+    .col-md-2
+      text-align: center
+      padding: 0 1px
+      button
+        background: #D10609
+        border: none
+        border-radius: 0
+        color: white
+        font-family: Arial, sans-serif
+        text-transform: uppercase
+        width: 100%
+        height: 55px
+        border: 0
+        .mobile-word
+          display: none
+        img
+          width: 25px
 
 
 @media only screen and (max-width: 768px)
@@ -690,24 +703,27 @@ select::-ms-expand
       justify-content: flex-end
       top: 0
       margin: 0 auto
+      a
+        display: flex
+        align-items: flex-end
       img
         width: auto
-        max-height: 30px
-        margin: 2px
+        max-height: 20px
+        margin: 10px
     .car-image-counter
       color: #fff
-      padding: 7px 12px
+      padding: 7px 8px
     .car-image-counter-home
       display: flex
       align-items: center
       img
         margin-right: 4px
-        width: 24px
-        height: 16.84px
+        width: 25px
   .car-price
     font-size: 22px
     .row
       margin: 0
+      flex-direction: row-reverse
     .col-6
       background: #ECEBE9
       display: -webkit-box
@@ -725,17 +741,17 @@ select::-ms-expand
       flex-direction: column
       padding: 4% 0
       &:first-child
-        border-right: 1px solid #fff
-        font-weight: 600
-        font-family: Arial Rounded MT, sans-serif
-        border-top-left-radius: 7px
-      &:last-child
         border-left: 1px solid #fff
-        color: $light-blue
         font-weight: 600
-        font-family: Arial Rounded MT, sans-serif
-        line-height: 15px
+        font-family: Arial Rounded MT Bold, sans-serif
         border-top-right-radius: 7px
+      &:last-child
+        border-right: 1px solid #fff
+        color: #D10609
+        font-weight: 600
+        font-family: Arial Rounded MT Bold, sans-serif
+        line-height: 15px
+        border-top-left-radius: 7px
         p
           font-size: 9px
           font-weight: 400
