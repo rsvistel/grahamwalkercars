@@ -1532,6 +1532,10 @@ select::-ms-expand
       font-family: $primary-font
       img
         height: 20px
+    .col-md-3
+        -ms-flex: 0 0 27.75%
+        flex: 0 0 27.75%
+        max-width: 27.75%
     .col-md-3, .col-md-2
       text-align: center
       padding: 0 1px
@@ -1570,7 +1574,7 @@ select::-ms-expand
     .search-box-info
       color: #D2D2D2
       padding-top: 15px
-      font-size: 20px
+      font-size: 17px
       display: flex
       justify-content: space-between
   .car-tile
@@ -1584,10 +1588,15 @@ select::-ms-expand
   .used-cars-title
     margin-bottom: 3vw
   .filter-navigation-menu
-    display: flex
-    width: 100%
-    justify-content: flex-end
     margin: 1vw 0 4vw 0
+    .pagination-bottom
+      display: flex
+      justify-content: flex-end
+      padding: 0
+    .col-md-6
+      display: flex
+      justify-content: flex-end
+      padding: 0
     ul
       list-style: none
       display: flex

@@ -1437,6 +1437,10 @@ select::-ms-expand {
       font-family: "Montserrat", sans-serif; }
       #used-cars.main-wrapper .search-box h3 img {
         height: 20px; }
+    #used-cars.main-wrapper .search-box .col-md-3 {
+      -ms-flex: 0 0 27.75%;
+      flex: 0 0 27.75%;
+      max-width: 27.75%; }
     #used-cars.main-wrapper .search-box .col-md-3, #used-cars.main-wrapper .search-box .col-md-2 {
       text-align: center;
       padding: 0 1px; }
@@ -1475,7 +1479,7 @@ select::-ms-expand {
     #used-cars.main-wrapper .search-box .search-box-info {
       color: #D2D2D2;
       padding-top: 15px;
-      font-size: 20px;
+      font-size: 17px;
       display: flex;
       justify-content: space-between; }
   #used-cars.main-wrapper .car-tile {
@@ -1487,10 +1491,15 @@ select::-ms-expand {
   #used-cars.main-wrapper .used-cars-title {
     margin-bottom: 3vw; }
   #used-cars.main-wrapper .filter-navigation-menu {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
     margin: 1vw 0 4vw 0; }
+    #used-cars.main-wrapper .filter-navigation-menu .pagination-bottom {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0; }
+    #used-cars.main-wrapper .filter-navigation-menu .col-md-6 {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0; }
     #used-cars.main-wrapper .filter-navigation-menu ul {
       list-style: none;
       display: flex; }
