@@ -2266,8 +2266,7 @@ select::-ms-expand {
     background: #515151;
     text-align: left;
     padding-left: 0;
-    padding-bottom: 1%;
-    font-weight: 300; }
+    padding-bottom: 1%; }
   .selling-title-container .selling-title-desc {
     font-weight: 400; }
   .selling-title-container .selling-chechbox {
@@ -2557,8 +2556,7 @@ select::-ms-expand {
 
 .fotorama-title {
   text-align: left;
-  padding-left: 0;
-  font-weight: 300; }
+  padding-left: 0; }
 
 .fotorama-title-box {
   background: #47494A; }
@@ -2574,7 +2572,7 @@ select::-ms-expand {
     display: block;
     text-align: center; }
 
-  .fotorama__nav-wrap, .fotorama__caption, .fotorama__fullscreen-icon, .fotorama__arr {
+  .fotorama__nav-wrap, .fotorama__caption, .fotorama__fullscreen-icon {
     display: none; } }
 .reserve-page__title-block {
   align-items: flex-start;
