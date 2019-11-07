@@ -575,7 +575,9 @@ select::-ms-expand {
         margin-bottom: 16px; }
         #banner .search-box .container .col-md-3 select {
           font-size: 12.5px;
-          height: 43px; }
+          height: 43px;
+          background-image: none;
+          border-radius: 7px; }
         #banner .search-box .container .col-md-3 button {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -902,7 +904,7 @@ select::-ms-expand {
       color: #ffffff; }
       .pay-us-visit .card-body ul li {
         font-size: 18px;
-        margin-bottom: 10px; }
+        margin-bottom: 15px; }
         .pay-us-visit .card-body ul li .col-6 {
           font-family: Arial, sans-serif;
           text-transform: uppercase;
@@ -937,7 +939,7 @@ select::-ms-expand {
   #banner .top-img {
     bottom: initial;
     margin-bottom: 0;
-    margin-top: -8.5vw; }
+    margin-top: -8.4vw; }
     #banner .top-img .title-top-img {
       font-size: 5vw; }
     #banner .top-img img {
@@ -953,7 +955,7 @@ select::-ms-expand {
       #banner .search-box .col-md-2 select {
         background-image: none;
         border-radius: 7px; }
-    #banner .search-box .year, #banner .search-box .body-type {
+    #banner .search-box .body-type {
       display: none; }
 
   #banner .search-box .col-md-2 button {
@@ -972,11 +974,26 @@ select::-ms-expand {
     background-color: #47494A; }
 
   #special-offers.featured {
-    padding: 0 7px 20% 7px; }
+    padding: 0 0 20% 0; }
     #special-offers.featured .title-featured {
       margin: 0;
       padding: 10% 0;
-      color: #ffffff; }
+      color: #ffffff;
+      font-size: 1.1rem;
+      text-align: center; }
+
+  #special-offers .owl-carousel {
+    padding: 0 2%; }
+    #special-offers .owl-carousel .owl-stage {
+      width: 2995px !important;
+      display: flex;
+      justify-content: center; }
+      #special-offers .owl-carousel .owl-stage .owl-item {
+        margin-right: 10px !important;
+        width: 350px !important; }
+
+  #feedback .container h4.feedback-title {
+    display: none; }
 
   .car-tile .car-title {
     background-color: #ffffff; }
@@ -1013,28 +1030,36 @@ select::-ms-expand {
     .under-apply-section .text-half-under-apply-section p {
       font-size: 3.5vw; }
 
-  .pay-us-visit .col-lg-6 p.text-under-hours {
-    font-size: 4vw; }
-  .pay-us-visit .title-pay-us-visit {
-    text-align: left; }
-  .pay-us-visit .text-img-pay-us-visit {
-    display: flex;
-    flex-direction: column; }
-    .pay-us-visit .text-img-pay-us-visit p {
-      order: 1;
+  .pay-us-visit {
+    padding-top: 10%; }
+    .pay-us-visit .col-lg-6 p.text-under-hours {
       font-size: 4.5vw; }
-      .pay-us-visit .text-img-pay-us-visit p br {
-        display: none; }
-  .pay-us-visit .col-lg-6 {
-    margin-top: 15px; }
-    .pay-us-visit .col-lg-6 h6 {
-      font-weight: 600;
-      font-size: 5.5vw; }
-  .pay-us-visit .card-body.card-body-opening-hours ul li .row .col-6:last-child {
-    text-align: right; }
-  .pay-us-visit .card-body.card-body-opening-hours ul li .row .col-6 {
-    font-size: 4.5vw;
-    font-weight: 600; } }
+    .pay-us-visit .title-pay-us-visit {
+      text-align: left; }
+    .pay-us-visit .text-img-pay-us-visit {
+      display: flex;
+      flex-direction: column;
+      background-color: #515151; }
+      .pay-us-visit .text-img-pay-us-visit p {
+        order: 1;
+        font-size: 4.5vw; }
+        .pay-us-visit .text-img-pay-us-visit p br {
+          display: none; }
+    .pay-us-visit .col-lg-6 {
+      margin-top: 15px; }
+      .pay-us-visit .col-lg-6 h6 {
+        font-weight: 600;
+        font-size: 5.5vw; }
+      .pay-us-visit .col-lg-6 p {
+        padding-right: 0;
+        margin-top: 5px; }
+      .pay-us-visit .col-lg-6 img {
+        width: 100%; }
+    .pay-us-visit .card-body.card-body-opening-hours ul li .row .col-6:last-child {
+      text-align: right; }
+    .pay-us-visit .card-body.card-body-opening-hours ul li .row .col-6 {
+      font-size: 4.5vw;
+      font-weight: 600; } }
 @media (min-width: 450px) and (max-width: 768px) {
   #banner #banner-image img {
     height: auto; } }
@@ -1115,9 +1140,9 @@ select::-ms-expand {
   .shortlist h6 {
     display: none; }
 
-  .shortlist, #special-offers-section {
+  .shortlist {
     background-color: white; }
-    .shortlist .featured .title-featured, .shortlist h6, #special-offers-section .featured .title-featured, #special-offers-section h6 {
+    .shortlist .featured .title-featured, .shortlist h6 {
       color: #000000; } }
 .about-title-section {
   background-color: #47494A; }
@@ -1139,6 +1164,8 @@ select::-ms-expand {
   padding: 7% 0 13% 0;
   background-position: center;
   background-size: cover; }
+  .about .about-section .text-about-section {
+    padding-left: 9px; }
   .about .about-section p {
     font-family: Arial, sans-serif;
     color: white;
@@ -1158,7 +1185,7 @@ select::-ms-expand {
   padding: 10%;
   text-align: center; }
 .about .img-about-section img {
-  width: 100%; }
+  width: 110%; }
 
 .mobile-header-img {
   display: none;
@@ -1378,6 +1405,14 @@ select::-ms-expand {
 @media (min-width: 768px) and (max-width: 1000px) {
   .homepage-1 #banner .top-img {
     margin-bottom: 40.7%; } }
+.contact-us .form-check-label {
+  font-size: 13px;
+  line-height: 16px; }
+.contact-us .form-check-agree {
+  margin-left: 30px;
+  margin-bottom: 15px; }
+  .contact-us .form-check-agree .form-check-input {
+    margin-left: -1.5rem; }
 .contact-us .pay-us-visit-contact {
   background-color: #47494A; }
 .contact-us .pay-us-visit .col-md-4 {
@@ -1420,20 +1455,24 @@ select::-ms-expand {
   padding-bottom: 0; }
   .contact-us .pay-us-visit .card-body ul li .col-6 {
     font-weight: 600;
-    font-size: 19px; }
+    font-size: 17.5px; }
   .contact-us .pay-us-visit .card-body ul li .row .col-6:last-child {
     text-align: right; }
 .contact-us .pay-us-visit .text-under-hours {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  margin-top: 45px; }
+  margin-top: 45px;
+  font-size: 18px; }
 .contact-us .title-form-section {
   font-family: Arial, sans-serif;
   font-weight: 600;
   text-align: center;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 30px 0;
   text-transform: uppercase; }
 
+@media (max-width: 768px) {
+  .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit .text-container, .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.opening-hours, .contact-us .pay-us-visit.pay-us-visit-contact {
+    background-color: #515151; } }
 #used-cars.main-wrapper {
   background-color: white;
   background-image: url("../img/used-cars/bg-used-cars.png");
@@ -1639,6 +1678,8 @@ select::-ms-expand {
 @media (max-width: 768px) {
   .contact-us .about-title {
     display: none; }
+  .contact-us .pay-us-visit.pay-us-visit-contact {
+    padding: 0; }
   .contact-us .pay-us-visit .form-section {
     background-color: #47494A; }
     .contact-us .pay-us-visit .form-section .btn.btn-primary.accordion-used-car__form-button {
@@ -1649,8 +1690,8 @@ select::-ms-expand {
     max-width: 100%; }
   .contact-us .pay-us-visit .text-container {
     background-color: #47494A;
-    margin-top: 30px;
-    padding: 20px 0 50px 0; }
+    margin-top: 10px;
+    padding: 20px 0 10px 0; }
     .contact-us .pay-us-visit .text-container .title-form-section {
       text-align: left; }
   .contact-us .pay-us-visit .opening-hours {
@@ -2652,57 +2693,60 @@ select::-ms-expand {
   #feedback .feedback-item .feedback-stars .fas.fa-star {
     font-size: 18px; } }
 @media only screen and (max-width: 768px) {
-  #feedback .container {
-    padding: 0 5px; }
-    #feedback .container h4.feedback-title {
-      text-align: center;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 20px;
-      font-family: "Montserrat", sans-serif;
-      padding: 10px 5px 30px 0; }
-    #feedback .container h3.feedback-rating {
-      padding: 20px 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-    #feedback .container .owl-feedback {
-      border-top: none;
-      padding: 0 3.5% 3% 3.5%;
-      display: block; }
-      #feedback .container .owl-feedback .feedback-item {
-        min-height: 170px;
-        min-height: 170px;
-        padding: 10px 10px;
-        margin-bottom: 1rem; }
-        #feedback .container .owl-feedback .feedback-item .feedback-title h3 {
-          font-size: 20px; }
-        #feedback .container .owl-feedback .feedback-item .feedback-stars {
-          top: 8px;
-          right: 10px; }
-    #feedback .container .button-feedback {
-      margin: 4% 0 13% 0;
-      padding: 4% 10%; }
-    #feedback .container .five-stars {
-      margin: 0 15px 0 10px;
-      font-size: 35px;
-      font-weight: 400; }
-    #feedback .container .fas.fa-star {
-      font-size: 20px; } }
+  #feedback {
+    padding-top: 20%; }
+    #feedback .container {
+      padding: 0 5px; }
+      #feedback .container h4.feedback-title {
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        padding: 10px 5px 30px 0; }
+      #feedback .container h3.feedback-rating {
+        padding: 20px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      #feedback .container .owl-feedback {
+        border-top: none;
+        padding: 0 1.5% 3% 1.5%;
+        display: block; }
+        #feedback .container .owl-feedback .feedback-item {
+          min-height: 170px;
+          min-height: 170px;
+          padding: 10px 10px;
+          margin-bottom: 1rem; }
+          #feedback .container .owl-feedback .feedback-item .feedback-title h3 {
+            font-size: 20px; }
+          #feedback .container .owl-feedback .feedback-item .feedback-stars {
+            top: 8px;
+            right: 10px; }
+      #feedback .container .button-feedback {
+        margin: 6% 0 15% 0;
+        padding: 4% 10%; }
+      #feedback .container .five-stars {
+        margin: 0 15px 0 10px;
+        font-size: 35px;
+        font-weight: 400; }
+      #feedback .container .fas.fa-star {
+        font-size: 20px; } }
 .fotorama-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  margin-top: 2rem; }
 
 .fotorama-title {
   text-align: left;
-  padding-left: 0; }
+  padding-left: 0.5vw; }
 
 .fotorama-title-box {
   background: #47494A; }

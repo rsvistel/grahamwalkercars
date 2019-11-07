@@ -593,6 +593,8 @@ select::-ms-expand
           select
             font-size: 12.5px
             height: 43px
+            background-image: none
+            border-radius: 7px
           button
             display: -webkit-box
             display: -ms-flexbox
@@ -932,7 +934,7 @@ select::-ms-expand
       color: #ffffff
       li
         font-size: 18px
-        margin-bottom: 10px
+        margin-bottom: 15px
         .col-6
           font-family: Arial, sans-serif
           text-transform: uppercase
@@ -973,7 +975,7 @@ select::-ms-expand
   #banner .top-img
     bottom: initial
     margin-bottom: 0
-    margin-top: -8.5vw
+    margin-top: -8.4vw
     .title-top-img
       font-size: 5vw
     img
@@ -989,7 +991,7 @@ select::-ms-expand
       select
         background-image: none
         border-radius: 7px
-    .year, .body-type
+    .body-type
       display: none
   #banner .search-box .col-md-2 button
     display: flex
@@ -1004,11 +1006,24 @@ select::-ms-expand
   #special-offers-section
     background-color: #47494A
   #special-offers.featured
-    padding: 0 7px 20% 7px
+    padding: 0 0 20% 0
     .title-featured
       margin: 0
       padding: 10% 0
       color: #ffffff
+      font-size: 1.1rem
+      text-align: center
+  #special-offers .owl-carousel
+    padding: 0 2%
+    .owl-stage
+      width: 2995px!important
+      display: flex
+      justify-content: center
+      .owl-item
+        margin-right: 10px!important
+        width: 350px!important
+  #feedback .container h4.feedback-title
+    display: none
   .car-tile .car-title
     background-color: #ffffff
   .apply, .apply-description
@@ -1042,13 +1057,15 @@ select::-ms-expand
     .text-half-under-apply-section p
       font-size: 3.5vw
   .pay-us-visit
+    padding-top: 10%
     .col-lg-6 p.text-under-hours
-      font-size: 4vw
+      font-size: 4.5vw
     .title-pay-us-visit
       text-align: left
     .text-img-pay-us-visit
       display: flex
       flex-direction: column
+      background-color: #515151
       p
         order: 1
         font-size: 4.5vw
@@ -1059,6 +1076,11 @@ select::-ms-expand
       h6
         font-weight: 600
         font-size: 5.5vw
+      p
+        padding-right: 0
+        margin-top: 5px
+      img
+        width: 100%
     .card-body.card-body-opening-hours ul li .row .col-6:last-child
       text-align: right
     .card-body.card-body-opening-hours ul li .row .col-6
@@ -1160,7 +1182,7 @@ select::-ms-expand
 @media (max-width: 768px)
   .shortlist h6
     display: none
-  .shortlist, #special-offers-section
+  .shortlist
     background-color: white
     .featured .title-featured, h6
       color: #000000
@@ -1189,6 +1211,8 @@ select::-ms-expand
     padding: 7% 0 13% 0
     background-position: center
     background-size: cover
+    .text-about-section
+      padding-left: 9px
     p
       font-family: Arial, sans-serif
       color: white
@@ -1208,7 +1232,7 @@ select::-ms-expand
     padding: 10%
     text-align: center
   .img-about-section img
-    width: 100%
+    width: 110%
 .mobile-header-img
   display: none
   background-color: #47494A
@@ -1462,6 +1486,14 @@ select::-ms-expand
 
 //Contact
 .contact-us
+  .form-check-label
+    font-size: 13px
+    line-height: 16px
+  .form-check-agree
+    margin-left: 30px
+    margin-bottom: 15px
+    .form-check-input
+      margin-left: -1.5rem
   .pay-us-visit-contact
     background-color: #47494A
   .pay-us-visit
@@ -1506,19 +1538,23 @@ select::-ms-expand
       padding-bottom: 0
       ul li .col-6
         font-weight: 600
-        font-size: 19px
+        font-size: 17.5px
       ul li .row .col-6:last-child
         text-align: right
     .text-under-hours
       text-align: center
       font-family: $secondary-font
       margin-top: 45px
+      font-size: 18px
   .title-form-section
     font-family: Arial, sans-serif
     font-weight: 600
     text-align: center
-    margin: 10px 0 20px 0
+    margin: 10px 0 30px 0
     text-transform: uppercase
+@media (max-width: 768px)
+  .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit .text-container, .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.opening-hours, .contact-us .pay-us-visit.pay-us-visit-contact
+    background-color: #515151
 //Contact
 
 //search-resalt
@@ -1745,6 +1781,8 @@ select::-ms-expand
   .contact-us
     .about-title
       display: none
+    .pay-us-visit.pay-us-visit-contact
+      padding: 0
     .pay-us-visit
       .form-section
         background-color: #47494A
@@ -1756,8 +1794,8 @@ select::-ms-expand
         max-width: 100%
       .text-container
         background-color: #47494A
-        margin-top: 30px
-        padding: 20px 0 50px 0
+        margin-top: 10px
+        padding: 20px 0 10px 0
         .title-form-section
           text-align: left
       .opening-hours
@@ -2835,6 +2873,7 @@ select::-ms-expand
 
 @media only screen and (max-width: 768px)
   #feedback
+    padding-top: 20%
     .container
       padding: 0 5px
       h4.feedback-title
@@ -2857,7 +2896,7 @@ select::-ms-expand
         align-items: center
       .owl-feedback
         border-top: none
-        padding:  0 3.5% 3% 3.5%
+        padding:  0 1.5% 3% 1.5%
         display: block
         .feedback-item
           min-height: 170px
@@ -2870,7 +2909,7 @@ select::-ms-expand
             top: 8px
             right: 10px
       .button-feedback
-        margin: 4% 0 13% 0
+        margin: 6% 0 15% 0
         padding: 4% 10%
       .five-stars
         margin: 0 15px 0 10px
@@ -2890,9 +2929,10 @@ select::-ms-expand
   display: flex
   justify-content: center
   margin-bottom: 3rem
+  margin-top: 2rem
 .fotorama-title
   text-align: left
-  padding-left: 0
+  padding-left: 0.5vw
 .fotorama-title-box
   background: #47494A
 .fotorama-title-mobile
