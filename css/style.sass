@@ -2515,10 +2515,12 @@ select::-ms-expand
     background: #515151
     text-align: left
     padding-left: 0
-    padding-bottom: 1%
+    padding-bottom: 2%
   .selling-title-desc
-    font-weight: 400
+    font-family: Open Sans, sans-serif
+    font-size: 17px
   .selling-chechbox
+    font-family: Open Sans, sans-serif
     margin: 2rem 0 2.5rem 0
     position: relative
     padding-left: 35px
@@ -2531,18 +2533,20 @@ select::-ms-expand
       position: absolute
       top: 0
       left: 0
-      height: 20px
-      width: 20px
+      height: 21px
+      width: 21px
       background-color: #fff
   .selling-title-chechbox
     //margin-right: 10px
   .chechbox-text
-    font-size: 12px
+    font-size: 13.5px
     font-weight: 300
+    display: flex
 .selling-title-padding
   padding: 0
 
 .selling-form
+  font-family: Roboto, sans-serif
   padding: 0
   .form-row
     margin-bottom: 2rem
@@ -2578,6 +2582,8 @@ select::-ms-expand
       .image-input-description
         padding: 10px
         display: block
+        font-size: 18px
+        font-family: Arial, sans-serif
       .drop-description
   .button-block
     width: 94.5%
@@ -2586,7 +2592,6 @@ select::-ms-expand
       text-transform: uppercase
       padding: 12px 50px
   .radio-inline
-    //margin-left: 1rem
     display: block
     position: relative
     padding-left: 1rem
@@ -2599,17 +2604,17 @@ select::-ms-expand
     user-select: none
     margin-top: 0.5rem
 
-
-
 .selling-cat-img
+  font-family: Arial, sans-serif
+  position: absolute
+  top: -4.5%
   ul
     list-style: none
     margin: 0
     padding: 0
     li
       padding: 1rem 1rem 0.7rem 0
-      font-size: 15px
-      font-weight: 300
+      font-size: 24px
       &:before
         content: ''
         display: inline-block
@@ -2626,6 +2631,7 @@ select::-ms-expand
 
 
 .radio
+  font-family: Roboto, sans-serif
   input
     position: absolute
     z-index: -1
@@ -2636,11 +2642,12 @@ select::-ms-expand
   position: relative
   padding: 0 0 0 35px
   cursor: pointer
+  display: block
 
 .radio__text:before
   content: ''
   position: absolute
-  top: -3px
+  //top: -3px
   left: 0
   width: 22px
   height: 22px
@@ -2651,7 +2658,7 @@ select::-ms-expand
 .radio__text:after
   content: ''
   position: absolute
-  //top: 1px
+  top: 3px
   left: 3px
   width: 16px
   height: 16px
