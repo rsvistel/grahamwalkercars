@@ -18,36 +18,26 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 upper-half-header">
-                <div class="titles-logo col-md-4">
-                    <!--<h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>-->
-                    <!--<h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>-->
+                <div class="titles-logo col-md-4 col-lg-4">
                     <img class="img-fluid" src="img/header/graham.png" alt="">
                 </div>
-                <!-- <div class="mobile-open">
-                    <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
-                    <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
-                </div> -->
-
-                <div class="title-contact col-md-2">
-                    <img class="img-fluid" src="img/header/phone.png" alt=""/>
+                <div class="title-contact col-md-2 col-lg-3">
+                    <img class="img-fluid" src="img/header/phone.png" alt="" />
                     <div class="number-phone">
                         <h6 class="sales-number">01-4973333</h6>
                     </div>
                 </div>
-
-                <div class="title-address col-md-3 offset-md-1 offset-lg-0">
-                    <img class="img-fluid" src="img/header/location.png" alt=""/>
+                <div class="title-address col-md-3">
+                    <img class="img-fluid" src="img/header/location.png" alt="" />
                     <h4 class="text-title-address">Harold's Cross Road, Dublin 6</h4>
                 </div>
-
                 <div class="social-icon col-md-1">
                     <ul>
                         <li>
                             <a href="#">
-                                <img class="img-fluid" src="img/header/facebook.png" alt=""/>
+                                <img class="img-fluid" src="img/header/facebook.png" alt="" />
                             </a>
                         </li>
-
                     </ul>
                 </div>
                 <div class="social-icon stars-block col-md-1">
@@ -64,182 +54,272 @@
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-md">
-                    <div class="mobile-block-items mobile-search">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-search"></i>
-                            <span>Search</span>
-                        </button>
+                    <div class="navbar-header">
+                        <div class="mobile-block-items mobile-search">
+                            <button class="navbar-toggler custom-toggler btn-search" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
+                                <i class="fas fa-search"></i>
+                                <span>Search</span>
+                            </button>
+                        </div>
+                        <div class="mobile-block-items mobile-reserve">
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve" aria-expanded="false" aria-label="reserve">
+                                <i class="fas fa-star"></i>
+                                <span>Reserve</span>
+                            </button>
+                        </div>
+                        <div class="mobile-block-items mobile-favourite">
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-favourites" aria-controls="darck-btn-favourites" aria-expanded="false" aria-label="favourites">
+                                <i class="far fa-heart"></i>
+                                <span>Favourites</span>
+                            </button>
+                        </div>
+                        <div class="mobile-block-items mobile-phone">
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-phone" aria-controls="darck-btn-phone" aria-expanded="false" aria-label="phone">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Phone</span>
+                            </button>
+                        </div>
+                        <div class="mobile-block-items mobile-menu">
+                            <button class="navbar-toggler custom-toggler mobile-menu-btn" type="button" data-toggle="collapse" data-target=".menubar" aria-controls="menubar" aria-expanded="false" aria-label="navigation">
+                                <i class="fas fa-bars"></i>
+                                <span>Options</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="mobile-block-items mobile-reserve">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-star"></i>
-                            <span>Reserve</span>
-                        </button>
+                    <div class="navbar-collapse collapse menu-search">
+                        <div class="navbar-nav ml-auto py-md-0">
+                            <div class="accordion__wrapper">
+                                <div class="accordion" id="accordion">
+                                    <div class="card">
+                                        <div class="navbar-toggler mobile-search-btn btn-search" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" role="navigation">
+                                            <div>
+                                                <span>Search</span>
+                                            </div>
+                                            <div>
+                                                <i class="fas fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn  shadow-none accordion__button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    Make
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Modal
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                2
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Price
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                3
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    Year
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                4
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading5">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                    Body Type
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                                            <div class="card-body">
+                                                5
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="mb-0 accordion__title" id="heading6">
+                                                <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                    Milage
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                                            <div class="card-body">
+                                                6
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                                    Fuel Type
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                                            <div class="card-body">
+                                                7
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                                    Transmission
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                                            <div class="card-body">
+                                                8
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button" id="heading9" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                                    Enginer size
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                                            <div class="card-body">
+                                                9
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button" id="heading10" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                                    Colour
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+                                            <div class="card-body">
+                                                10
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mobile-block-items mobile-favourite">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="far fa-heart"></i>
-                            <span>Favourites</span>
-                        </button>
+
+                    <div class="navbar-collapse collapse darck-btn-reserve">
+                        <ul class="navbar-nav ml-auto py-md-0  darck-btn">
+                            <li>Reserve</li>
+                        </ul>
                     </div>
-                    <div class="mobile-block-items mobile-phone">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>Phone</span>
-                        </button>
+                    <div class="navbar-collapse collapse darck-btn-favourites">
+                        <ul class="navbar-nav ml-auto py-md-0  darck-btn">
+                            <li>Favourites</li>
+                        </ul>
                     </div>
-                    <div class="mobile-block-items mobile-menu">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                            <span>Options</span>
-                        </button>
+                    <div class="navbar-collapse collapse darck-btn-phone">
+                        <ul class="navbar-nav ml-auto py-md-0  darck-btn">
+                            <li>Phone</li>
+                        </ul>
                     </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto py-4 py-md-0">
-                            <li class="nav-item ml-0">
+
+                    <div class="navbar-collapse collapse menubar">
+                        <ul class="navbar-nav ml-auto py-md-0">
+                            <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse" data-target=".menubar" aria-controls="menubar" aria-expanded="false">
+                                <div>
+                                    <span>Options</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="index.html">home</a>
                             </li>
-                            <li class="nav-item  ">
-                                <a class="nav-link" href="#">used cars</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="used-cars.html">used cars</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="workshop.html">workshop</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">valeting</a>
+                                <a class="nav-link" href="valeting.html">valeting</a>
                             </li>
                             <li class="nav-item  ">
-                                <a class="nav-link" href="#">selling your car</a>
+                                <a class="nav-link" href="selling-your-car.html">selling your car</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">finance</a>
+                                <a class="nav-link" href="finance-example.html">FINANCE</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="shortlist.html">shortlist</a>
+                                <a class="nav-link" href="shortlist.html">FAVOURITES</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="about.html">about</a>
                             </li>
                             <li class="nav-item  ">
-                                <a class="nav-link" href="#">previously sold</a>
+                                <a class="nav-link" href="reviews.html">REVIEWS</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="previously-sold.html">PREVIOUSLY SOLD</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="contact-us.html">contact us</a>
+                                <a class="nav-link" href="contact-us.html">contact </a>
                             </li>
                         </ul>
                     </div>
-
                 </nav>
             </div>
         </div>
     </div>
-    <!-- <div class="col-md-12 bottom-half-header">
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="#">
-                        <span class="h6-title">home</span>
-                    </a>
-                </li> -->
-    <!--<li>-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">about</span>-->
-    <!--</a>-->
-    <!--</li>-->
-    <!-- <li>
-        <a href="#">
-            <span class="h6-title">used cars</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="h6-title">workshop</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="h6-title">valeting</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="h6-title">selling your car</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="h6-title">finance</span>
-        </a>
-    </li>
-
-    <li>
-        <a href="#">
-            <span class="h6-title">shortlist</span>
-        </a>
-    </li>
-
-    <li>
-        <a href="#">
-            <span class="h6-title">about</span>
-        </a>
-    </li>
-
-    <li>
-        <a href="#">
-            <span class="h6-title">previously sold</span>
-        </a>
-    </li>
-
-    <li>
-        <a href="#">
-            <span class="h6-title">contact us</span>
-        </a>
-    </li> -->
-    <!--<li class="bottom-half-header__dropdown-link">-->
-    <!--<div class="dropdown">-->
-    <!--<a href="#" class="flex-dropdown">-->
-    <!--<div class="dropbtn">-->
-    <!--<span class="h6-title">more</span>-->
-    <!--<i class="fas fa-chevron-down flex-dropdown__chevron-dow"></i>-->
-    <!--</div>-->
-    <!--</a>-->
-    <!--<div class="dropdown-content">-->
-    <!--<a href="#"><span class="h6-title h6-title-dropdown">valeting</span></a>-->
-    <!--<a href="#"><span class="h6-title h6-title-dropdown">value my car</span></a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</li>-->
-    <!--<li class="bottom-half-header__link-mobile">-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">shortlist</span>-->
-    <!--</a>-->
-    <!--</li>-->
-    <!--<li class="bottom-half-header__link-mobile">-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">about</span>-->
-    <!--</a>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">previously sold</span>-->
-    <!--</a>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">contact us</span>-->
-    <!--</a>-->
-    <!--</li>-->
-
-    <!-- </ul>
-</div>
-</div> -->
-    <!-- <div class="mobile-section-under-header col-xs-12 col-md-12">
-        <embed class="" src="img/header/white-phone.svg">
-        <div class="number-phone">
-            <h4 class="contact-text">Contact Us:</h4>
-            <h6 class="sales-number">01-4569562</h6>
-        </div>
-    </div> -->
+    <div class="mobile-section-under-header col-xs-12 col-md-12">
+        <img class="img-fluid" src="img/header/graham.png" alt="">
+    </div>
 </section>
 
 <div id="special-offers-section">
