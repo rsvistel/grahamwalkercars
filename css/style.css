@@ -1813,8 +1813,11 @@ select::-ms-expand {
   display: block;
   width: 20%;
   position: absolute;
-  top: 10%;
-  right: 5%; }
+  right: 0;
+  top: 0; }
+
+.car-page-container {
+  position: relative; }
 
 #car-detail-value.fullscreen, #reviews-car-detail.fullscreen, #description-car-detail.fullscreen {
   display: none; }
