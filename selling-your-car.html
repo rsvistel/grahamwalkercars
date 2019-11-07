@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
+    <title>Selling</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="homepage">
+<body>
     <!-- <div class="overlay"></div> -->
     <section class="header topnav" id="myTopnav">
         <div class="container">
@@ -256,17 +256,17 @@
 
                         <div class="navbar-collapse collapse darck-btn-reserve">
                             <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                            <li>Reserve</li>
+                                <li>Reserve</li>
                             </ul>
                         </div>
                         <div class="navbar-collapse collapse darck-btn-favourites">
-                                <ul class="navbar-nav ml-auto py-md-0  darck-btn">
+                            <ul class="navbar-nav ml-auto py-md-0  darck-btn">
                                 <li>Favourites</li>
-                                </ul>
+                            </ul>
                         </div>
                         <div class="navbar-collapse collapse darck-btn-phone">
                             <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                            <li>Phone</li>
+                                <li>Phone</li>
                             </ul>
                         </div>
 
@@ -323,359 +323,113 @@
             <img class="img-fluid" src="img/header/graham.png" alt="">
         </div>
     </section>
-
-    <div id="homepage">
-        <div id="banner">
-            <div id="banner-image">
-                <img src="img/home/cars.png" alt="frame">
-            </div>
-            <div class="top-img">
-                <h4 class="title-top-img">FIND YOUR PERFECT CAR</h4>
-                <img src="img/home/rectangle.png" alt="" />
-            </div>
-            <div class="search-box">
-                <div class="container">
-                    <form action="homepage.html">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <select>
-                                    <option>Make</option>
-                                    <option>Make 1</option>
-                                    <option>Make 2</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3">
-                                <select>
-                                    <option>Model</option>
-                                    <option>Model 1</option>
-                                    <option>Model 2</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-md-3 year">
-                                <select>
-                                    <option>Year</option>
-                                    <option>Year 1</option>
-                                    <option>Year 2</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-2">
-                                <button type="submit"><img src="img/home/magnifying-glass.png" alt="" /> Search <span class="mobile-word"> 85 used cars</span></button>
-                            </div>
-                        </div>
-                    </form>
-                    <!--<h6 class="advanced-text">Advanced Search</h6>-->
+    <div class="selling-title-container">
+        <div class="container selling-title-padding">
+                <h2 class="about-title selling-title">Selling your car</h2>
+                <div class="col-12 col-lg-7 selling-title-padding">
+                    <p class="selling-title-desc">If you have a one-of-a-kind car that you'd like to sell, you've come to the right place. We specialise in buying and selling the finest vehicles, this means we pay the best prices.  Simply fill in this form and we'll get back to you to discuss.</p>
                 </div>
-            </div>
+                <div class="col-12 col-lg-10 selling-title-padding">
+                    <label class="selling-chechbox">
+                        <input class="selling-title-chechbox" type="checkbox" value="" />
+                        <span class="chechbox-text">
+                        I aggree thet Graham Wolker Cars mey store the information submitted here in order to process my enquiry.</span>
+                    </label>
+                </div>
         </div>
     </div>
-    <div id="special-offers-section">
-        <div id="special-offers" class="container featured">
-            <h2 class="title-featured">FEATURED CARS</h2>
-            <div class="owl-carousel owl-special-offers">
-                <div class="car-tile">
-                    <a href="#">
-                        <div class="car-price">
-                            <div class="row">
-                                <div class="col-6 сar-price-full">€29,995</div>
-                                <div class="col-6 car-price-parts">
-                                    <p>Mounthly payment from</p>
-                                    €220
-                                </div>
-                            </div>
+    <div class="pay-us-visit selling-section">
+    <div class="container">
+        <div class="row container-section">
+            <div class="col-12 col-lg-8 selling-title-padding">
+                    <form class="col-12 selling-form">
+                        <div class="form-row">
+                            <label class="col-sm-3 col-form-label"  for="name">Name</label>
+                            <input type="text" class="form-control col-md-12 col-lg-8" name="name" id="name" placeholder="Name"/>
                         </div>
-                        <div class="car-image">
-                                <div class="car-image-wrap">
-                                        <div class="car-image-gradient"></div>
-                                        <img src="img/home/bmw.png" alt="frame-car-image">
+                        <div class="form-row">
+                            <label class="col-md-3 col-form-label"  for="phone">Phone Number</label>
+                            <input type="text" class="form-control col-md-12 col-lg-8" name="name"  id="phone" placeholder="Phone Number"/>
+                            </div>
+                            <div class="form-row">
+                            <label class="col-md-3 col-form-label"  for="email">Email Address</label>
+                            <input type="text" class="form-control col-md-12 col-lg-8" id="email" name="name" placeholder="Email Address"/>
+                        </div>
+                        <div class="form-row">
+                            <label class="col-md-3 col-form-label"  for="vihicle">Vihicle Registration</label>
+                            <input type="text" class="form-control col-md-12 col-lg-8" id="vihicle" name="name" placeholder="Vihicle Registration"/>
+                        </div>
+                        <div class="form-row">
+                            <label class="col-md-3 col-form-label"  for="mileage">Mileage</label>
+                            <input type="text" class="form-control col-md-12 col-lg-8" id="mileage" name="name" placeholder="Mileage"/>
+                        </div>
+                        <div class="form-row">
+                            <label class="col-sm-3 col-form-label"  for="nct">NCT</label>
+                            <input type="text" class="form-control col-sm-12 col-lg-8" id="nct" name="name" placeholder="NCT"/>
+                        </div>
+                        <div class="form-row order-sm-2">
+                            <label class="col-md-3 col-form-label radio-mobile">Full Service <span class="hidden-block">History</span></label>
+                                <label class="radio-inline radio radio-first">
+                                    <input type="radio" name="fullYes" id="FullYes" value="option1"> 
+                                    <span class="radio__text">Yes</span>
+                                </label>
+                                <label class="radio-inline radio">
+                                    <input type="radio" name="fullYes" id="FullNo" value="option2">
+                                    <span class="radio__text">No</span>
+                                </label>
+                        </div>
+                        <div class="form-row  order-sm-1">
+                                <label class="col-md-3 col-form-label radio-mobile">2 Sets of Keys</label>
+                                    <label class="radio-inline radio radio-last">
+                                        <input type="radio" name="inlineRadioOptions" id="KeysYes" value="option3"> 
+                                        <span class="radio__text">Yes</span>
+                                    </label>
+                                    <label class="radio-inline radio">
+                                        <input type="radio" name="inlineRadioOptions" id="KeysNo" value="option4"> 
+                                        <span class="radio__text">No</span>
+                                    </label>
+                        </div>
+                        <div class="form-row">
+                                <label class="col-md-3 col-form-label"  for="owners">Numbers of Owners</label>
+                                <input type="text" class="form-control col-md-12 col-lg-8" id="owners" name="name" placeholder="Numbers of Owners"/>
+                        </div>
+                        <div class="form-row">
+                                <label class="col-sm-3 col-form-label"  for="tyres">Age of Tyres</label>
+                                <input type="text" class="form-control col-md-12 col-lg-8" id="tyres" name="name" placeholder="Age of Tyres"/>
+                        </div>
+                        <div class="form-row image-input-container">
+                                    <input type="file"
+                                        id="photos" name="name"
+                                        accept="image/png, image/jpeg">
+                                <div class="image-input">
+                                    <div class="drop-description">
+                                        <img src="img/selling-your-car/img-attach.png" alt=""/>
+                                        <span class="image-input-description">browse your device to add photos</span>
                                     </div>
-                            <div class="car-image-counter car-image-counter-home">
-                                <img src="img/home/photo.png" alt=""> 16
-                            </div>
-                            <div class="car-like">
-                                <a href="#">
-                                    <img src="img/home/heart.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="car-title">
-                            <div class="col-md-12 titles-car-card">
-                                <h2>1998 BMW 8 SERIES</h2>
-                                <p>840 CI SPORT 4.4 AUTO</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="car-tile">
-                    <a href="#">
-                        <div class="car-price">
-                            <div class="row">
-                                <div class="col-6 сar-price-full">€13,995</div>
-                                <div class="col-6 car-price-parts">
-                                    <p>Mounthly payment from</p>
-                                    €160
                                 </div>
                             </div>
-                        </div>
-                        <div class="car-image">
-                            <div class="car-image-wrap">
-                                    <div class="car-image-gradient"></div>
-                                    <img src="img/home/audi.png" alt="frame-car-image">
+                            <div class="col-lg-12 button-block">
+                                <button type="submit" class="btn btn-primary float-right">Submit</button>
                             </div>
-                            <div class="car-image-counter car-image-counter-home">
-                                <img src="img/home/photo.png" alt=""> 16
-                            </div>
-                            <div class="car-like">
-                                <a href="#">
-                                    <img src="img/home/heart.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="car-title">
-                            <div class="col-md-12 titles-car-card">
-                                <h2>2012 AUDI A1</h2>
-                                <p>1.2 PETROL</p>
-                            </div>
-                        </div>
-                    </a>
+                        </form>
                 </div>
-
-                <div class="car-tile">
-                    <a href="#">
-                        <div class="car-price">
-                            <div class="row">
-                                <div class="col-6 сar-price-full">€38,995</div>
-                                <div class="col-6 car-price-parts">
-                                    <p>Mounthly payment from</p>
-                                    €220
-                                </div>
-                            </div>
-                        </div>
-                        <div class="car-image">
-                            <div class="car-image-wrap">
-                                    <div class="car-image-gradient"></div>
-                            <img src="img/home/golf.png" alt="frame-car-image">
-                            </div>
-                            <div class="car-image-counter car-image-counter-home">
-                                <img src="img/home/photo.png"> 16
-                            </div>
-                            <div class="car-like">
-                                <a href="#">
-                                    <img src="img/home/heart.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="car-title">
-                            <div class="col-md-12 titles-car-card">
-                                <h2>2017 VOLKSWAGEN GOLF</h2>
-                                <p>840 CI SPORT 4.4 AUTO</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="car-tile">
-                    <a href="#">
-                        <div class="car-price">
-                            <div class="row">
-                                <div class="col-6 сar-price-full">€67,950</div>
-                                <div class="col-6 car-price-parts">
-                                    <p>Mounthly payment from</p>
-                                    €250
-                                </div>
-                            </div>
-                        </div>
-                        <div class="car-image">
-                            <div class="car-image-wrap">
-                                <div class="car-image-gradient"></div>
-                            <img src="img/home/x5.png" alt="frame-car-image">
-                                </div>
-                            <div class="car-image-counter car-image-counter-home">
-                                <img src="img/home/photo.png"> 16
-                            </div>
-                            <div class="car-like">
-                                <a href="#">
-                                    <img src="img/home/heart.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="car-title">
-                            <div class="col-md-12 titles-car-card">
-                                <h2>2017 BMW X5</h2>
-                                <p>XDRIVE 30D M SPORT</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="apply">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6 text-half-apply">
-                    <h6 class="title-apply">APPLY FOR FINANCE TODAY</h6>
-                    <p class="text-p-apply">We offer excellent rates of finance on all our stock. Just find the car you like and get a finance package that's perfect for your situation.</p>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-6 button-half-apply">
-                    <button>apply now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="apply-description">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6 text-half-apply text-half-apply-description">
-                    <h6 class="title-apply title-apply-apply-description">TRADE-IN OR SELL YOUR OLD CAR</h6>
-                    <p class="text-p-apply text-p-apply-apply-description">We offer excellent rates on your old car. Just fill in the form and send us a few pics. We'll get back to you with a free, no-obligation evalutaion.</p>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-6 button-half-apply button-half-apply-apply-description">
-                    <button>apply now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="under-apply-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6 text-half-under-apply-section">
-                    <p>We are a multi-franchise, Boutique car dealership, providing new and hand-picked used cars to discerning customers. </p>
-                    <p>We also provide a high quality car valet and a value for money car service, to original manufacturer's standards. Graham is on site every day to personally ensure that our dependable customer service is maintained. A brief view of our range is available on our web site or can be viewed at our premises in Harolds Cross, Dublin 6w. </p>
-                    <p>With our friendly workshop, we pride ourselves on delivering a reliable and trustworthy service, with a perfect balance between cost and quality. </p>
-                    <p>We are ideally located for motorists in the Dublin 6, Terenure, Rathmines and Rathgar areas, where we have been trading for over 10 years.</p>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-6 img-under-apply-section">
-                    <img src="img/home/img.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="feedback" class="feedback-home">
-        <div class="container">
-            <h4 class="feedback-title feedback-title-top">Customer reviews</h4>
-            <div class="owl-carousel owl-feedback">
-                <div class="feedback-item">
-                    <div class="feedback-title"><h3>Mary Shelly</h3></div>
-                    <div class="feedback-date">Rathmines</div>
-                    <div class="feedback-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="feedback-body">
-                        <span class="title-feedback-body">Happened to be in the market for a new car when I stumbled across Graham's website. Saw a car that caught my eye and called him up. From the get go he was a straight shooter and very professional. He gave ame a fair price for my old car. Today I'm a happy owner of a beautiful car. Will use him again.</span>
-                    </div>
-                </div>
-
-                <div class="feedback-item">
-                    <div class="feedback-title"><h3>Paul Keating</h3></div>
-                    <div class="feedback-date">Terenure</div>
-                    <div class="feedback-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="feedback-body">
-                        <span class="title-feedback-body">Graham bought my car from me. The money was in my account the next working day. Everything was conducted professionally. Would highly recommend.</span>
-                    </div>
-                </div>
-
-                <div class="feedback-item">
-                    <div class="feedback-title"><h3>Susan O'Neil</h3></div>
-                    <div class="feedback-date">Rathgar</div>
-                    <div class="feedback-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="feedback-body">
-                        <span class="title-feedback-body">Excellent service at short notice - I needed a couple of bulbs changed, Graham waited past closing time and did it in a matter of minutes at a v reasonable cost. Would recommend.</span>
+            <div class="d-none d-lg-block col-lg-4">
+                <div class="selling-cat-img">
+                    <ul>
+                        <li>One of a Kind</li>
+                        <li>Top Quality</li>
+                        <li>Vintage</li>
+                        <li>Rare</li>
+                        <li>Prime Examples</li>
+                    </ul>
+                    <div>
+                        <img class="img-fluid" src="img/selling-your-car/car.png" alt="">
                     </div>
                 </div>
             </div>
-            <button class="button-feedback">Read more</button>
         </div>
-    </div>
-
-    <div class="pay-us-visit">
-        <div class="container">
-            <h6 class="title-pay-us-visit">pay us a visit</h6>
-            <div class="row container-section">
-                <div class="col-12 col-md-12 col-lg-6  text-img-pay-us-visit">
-                    <p>214 - 218 Harold's Cross Road,
-                        <br> Dublin 6</p>
-                    <img src="img/home/map.png" alt="">
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-6">
-                    <h6>opening hours</h6>
-                    <div class="card-body card-body-opening-hours">
-                        <ul>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Monday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Tuesday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Wednesday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li class="highlighted">
-                                <div class="row">
-                                    <div class="col-6">Thursday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Friday:</div>
-                                    <div class="col-6">9:00 to 18:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Saturday:</div>
-                                    <div class="col-6">10:00 to 13:00</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6">Sunday:</div>
-                                    <div class="col-6">Closed</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="text-under-hours">Out of hours by arrangement</p>
-                </div>
-            </div>
         </div>
-    </div>
+        </div>
 
     <div class="footer">
         <div class="container">
@@ -687,43 +441,6 @@
             <img src="img/header/facebook.png" alt="" />
         </div>
     </div>
-    <script src="owl-carousel/dist/owl-carousel.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-        $('.owl-special-offers').owlCarousel({
-            loop: true,
-            margin: 30,
-            nav: false,
-            dots: false,
-            // navText: ["<img  src=\"img/home/arrow-left.svg\"/>","<img src=\"img/home/arrow-right.svg\"/>"],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        });
-        if ($(window).width() > 992) {
-            $('.owl-feedback').owlCarousel({
-                loop: true,
-                margin: 30,
-                nav: false,
-                responsive: {
-                    0: {
-                        items: 3
-                    }
-                }
-            });
-        } else {
-            $('.owl-feedback').addClass('off')
-        }
-    </script>
     <script src="./js/script.js"></script>
 
 </body>

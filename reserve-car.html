@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="owl-carousel/dist/assets/owl.carousel.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div class="modal-used-cars reserve-car-modal">
+    <div class="modal-used-cars-container container">
+           <div class="title-cross-block col-md-12">
+               <h5 class="title-modal-used-cars">Reserve this car</h5>
+               <div class="car-modal-close">
+                   <img src="img/crossss.png" alt="">
+               </div>
+           </div>
+           <div class="row modal-used-cars-blocks">
+               <div class="col-lg-4 img-block">
+                    <h3 class="title-about-us title-reserve-page reserve-page__title">Reserve This Car
+                    </h3>
+                    <div>
+                        <hr class="reserve-page__line">
+                    </div>
+                  <div>
+                        <hr class="reserve-page__line reserve-page__line-half">
+                  </div>
+                    <div>
+                        <p class="reserve-page__desctiption-pay">Total to pay to reserve this car</p>
+                        <div class="reserve-page__pay-block">
+                                <span class="reserve-page__pay">€100.00</span>
+                        </div>
+                        <hr class="reserve-page__line">
+                    </div>
+                    <p class="reserve-page__summary-mobile reserve-page__summary-title">Summary</p>
+                    <p class="reserve-page__summary-mobile reserve-page__summary-vehicle">Your Vehicle</p>
+                    <h6 class="first-title-modal reserve-page__summary">Your Vehicle Summary</h6>
+                    <div class="reserve-page__card">
+                        <div class="reserve-page__card-title">
+                            <h6 class="second-title-modal">2017 VOLKSWAGEN GOLF</h6>
+                            <p class="third-title-modal">R 2.0 TSI 5DR 310BHP</p>
+                            <span class="reserve-page__pay-value">€13,995</span>
+                        </div>
+                        <div class="reserve-page__card-img-container">
+                            <img class="img-fluid" src="img/home/golf.png" alt="">
+                        </div>
+                    </div>
+               </div>
+
+               <div class="col-lg-4 block-ul-modal">
+                <div class="reserve-page__details">
+                    <span class="reserve-page__details-title">Your details</span>
+                    <div>
+                        <span class="reserve-page__details-description">Please provide a few personal details</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 reserve-page-margin-padding">
+                        <form class="reserve-page-margin-padding">
+                            <div class="form-group row form-group-first">
+                                <div class="col-sm-12  form-group-mobile">
+                                    <input type="text" class="form-control" id="inputFirstName"
+                                           placeholder="First name *">
+                                </div>
+                                <div class="col-sm-12  form-group-mobile">
+                                    <input type="text" class="form-control" id="inputLastName"
+                                           placeholder="Last name *">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12  form-group-mobile">
+                                    <input type="text" class="form-control" id="inputEmailAddress"
+                                           placeholder="Email Address *">
+                                </div>
+                                <div class="col-sm-12 form-group-mobile form-group-mobile-last">
+                                    <input type="text" class="form-control" id="inputContactNumber"
+                                           placeholder="Contact Number *">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+               </div>
+               <div class="col-lg-4 hire-block">
+                    <div class="reserve-page__details">
+                        <span class="reserve-page__details-title">Payment Details</span>
+                        <div>
+                            <span class="reserve-page__details-description">Please provide the payment details that you would like to use to reserve this vehicle</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 mb-3">
+                            <label for="cc-number">Credit / Debit Card Number *</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="Card Number "
+                                   required="">
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 mb-3">
+                            <label for="cc-expiration">Expiry Date *</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="MM  /  YY"
+                                   required="">
+                            <div class="invalid-feedback">
+                                Expiration date required
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 mb-3">
+                            <label for="cc-cvv">CVC *</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="CVC" required="">
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-8 offset-md-0 offset-md-2 d-block reserve-page__stripe no-gutters-mobile">
+                        <div class="reserve-page__stripe-wrapper">
+                            <img class="d-flex justify-content-center img-fluid" src="img/reserve/stripe.png" alt="stripe">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12 d-block reserve-page-margin-padding">
+                            <div class="form-group row reserve-page__checkbox-group custom-control custom-checkbox">
+                                    <input type="checkbox" class="reserve-page__checkbox custom-control-input custom-control-input" id="customCheck" name="example1">
+                                    <label class="reserve-page__checkbox-confirm custom-control-label" for="customCheck">Please confirm you have read and agree to our<a
+                                    class="reserve-page__conditions" href="#"> Terms and Conditions <img
+                                    src="img/reserve/terms.png" alt="Terms and Conditions"></a></p>
+                            </div>
+                            <div>
+                                    <hr class="reserve-page__сonditions"></label>
+                            </div>
+                    <div class="col-md-12 col-lg-12 d-block ml-auto">
+                        <div class="reserve-page__button-container">
+                            <button class="reviews-button reserve-page__button">Submit Payment</button>
+                        </div>
+                    </div>
+                </div>
+               </div>
+           </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
