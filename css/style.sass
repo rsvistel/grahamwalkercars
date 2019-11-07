@@ -615,7 +615,7 @@ select::-ms-expand
   .title-featured
     font-family: $primary-font
     text-transform: uppercase
-    text-align: center
+    text-align: left
     width: 100%
     font-weight: 300
     font-size: 1.9rem
@@ -685,6 +685,8 @@ select::-ms-expand
     p
       font-family: $secondary-font
       line-height: 21px
+      font-size: 14px
+      margin-bottom: 5px
       font-weight: 400
   .car-image
     position: relative
@@ -850,6 +852,7 @@ select::-ms-expand
   border-radius: 7px
 .button-half-apply
   padding-top: 11%
+  padding-left: 5%
 
 
 .title-apply
@@ -907,7 +910,7 @@ select::-ms-expand
       text-align: center
       padding-right: 15px
     img
-      width: 100%
+      width: 70%
     p
       font-family: $secondary-font
       margin-bottom: 15px
@@ -935,7 +938,8 @@ select::-ms-expand
           font-family: Arial, sans-serif
           text-transform: uppercase
           font-size: 17px
-
+  .col-12.col-md-12.col-lg-6.text-img-pay-us-visit
+    text-align: center
 
 @media (max-width: 768px)
   .pay-us-visit .card-body
@@ -1143,7 +1147,16 @@ select::-ms-expand
     font-weight: 400
   h6
     margin-bottom: 5%
-    padding: 0 23%
+    padding: 0 50% 0 0
+  .owl-carousel.owl-drag .owl-item
+    width: 270px!important
+    margin-right: 15px!important
+  #special-offers .owl-carousel
+    padding: 0
+    margin-bottom: 15%
+  .car-tile .car-image .car-like img
+    max-height: 29px
+    margin: 2px 7px
 
 @media (max-width: 768px)
   .shortlist h6
@@ -1587,7 +1600,7 @@ select::-ms-expand
     .car-title
       background: #ffffff
   .used-cars-title
-    margin-bottom: 3vw
+    margin-bottom: 1vw
   .filter-navigation-menu
     margin: 1vw 0 4vw 0
     .pagination-bottom
@@ -2741,6 +2754,18 @@ select::-ms-expand
 //selling your car
 
   //Feedback
+#feedback.feedback-home
+  .feedback-title-top
+    font-family: Arial, sans-serif
+    text-transform: uppercase
+    margin-bottom: 3%
+    font-size: 19px
+    font-weight: 600
+  .title-feedback-body
+    font-weight: 400
+  .feedback-item
+    min-height: 200px
+
 #feedback
   order: 2
   background: #EEEEEE
@@ -2777,7 +2802,6 @@ select::-ms-expand
         color: #DFDFDF
       .feedback-body
         font-size: 14px
-        padding-left: 5px
         font-weight: 600
       .feedback-stars
         display: -webkit-box
