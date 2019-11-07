@@ -195,7 +195,7 @@ $(document).ready(function () {
         // })
         $('.carousel-inner').click(function () {
             carouselChange(7);
-            $('#carousel-thumb, #car-title').addClass('fullscreen');
+            $('#carousel-thumb, #car-title, #car-accordion').addClass('fullscreen');
             $('body').append('<div class="overlay"></div>');
         });
         function carouselChange(number) {

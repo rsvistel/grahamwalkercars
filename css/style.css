@@ -1745,9 +1745,11 @@ select::-ms-expand {
 
 #carousel-thumb {
   display: flex;
-  z-index: 101; }
+  z-index: 101;
+  width: 80%; }
   #carousel-thumb.fullscreen {
-    display: block; }
+    display: block;
+    width: 70%; }
     #carousel-thumb.fullscreen .carousel-control-prev {
       left: 0;
       right: auto;
@@ -1804,6 +1806,17 @@ select::-ms-expand {
         border-bottom: 0; }
       #carousel-thumb .carousel-indicators li:nth-child(-n+4) {
         display: block; }
+
+#car-accordion {
+  display: flex;
+  z-index: 101;
+  display: block;
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  right: 5%; }
+  #car-accordion.fullscreen {
+    display: block; }
 
 .pdf {
   width: 700px;
@@ -1984,3 +1997,5 @@ select::-ms-expand {
 @media print {
   body {
     -webkit-print-color-adjust: exact; } }
+
+/*# sourceMappingURL=style.css.map */
