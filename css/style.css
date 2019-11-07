@@ -2589,10 +2589,8 @@ select::-ms-expand {
   font-family: Arial, sans-serif;
   text-transform: uppercase;
   margin-bottom: 3%;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 600; }
-#feedback.feedback-home .title-feedback-body {
-  font-weight: 400; }
 #feedback.feedback-home .feedback-item {
   min-height: 200px; }
 
@@ -2601,7 +2599,7 @@ select::-ms-expand {
   background: #EEEEEE;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 1% 0 0 0;
+  padding: 2% 0 0 0;
   text-align: center; }
   #feedback h3.feedback-rating, #feedback h4.feedback-title {
     text-transform: uppercase;
@@ -2609,29 +2607,21 @@ select::-ms-expand {
   #feedback .feedback-item {
     background: #fff;
     text-align: left;
-    padding: 15px;
+    padding: 15px 15px 25px 15px;
     position: relative;
     width: 100%;
-    min-height: 230px;
-    max-height: 230px;
     margin-bottom: 1rem; }
     #feedback .feedback-item .feedback-title h3, #feedback .feedback-item .feedback-author h3 {
       font-family: Arial, sans-serif;
       color: #000000;
-      font-weight: 800;
-      font-size: 18px; }
+      font-weight: 900;
+      font-size: 22px; }
     #feedback .feedback-item .feedback-body {
       color: #525252;
       font-family: "Roboto", sans-serif; }
     #feedback .feedback-item .feedback-date {
       font-family: "Arial", sans-serif;
       color: #CCCCCC; }
-    #feedback .feedback-item .feedback-date {
-      font-size: 14px;
-      color: #DFDFDF; }
-    #feedback .feedback-item .feedback-body {
-      font-size: 14px;
-      font-weight: 600; }
     #feedback .feedback-item .feedback-stars {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2640,6 +2630,8 @@ select::-ms-expand {
       position: absolute;
       top: 6%;
       right: 4%; }
+      #feedback .feedback-item .feedback-stars .fas.fa-star {
+        font-size: 22px; }
     #feedback .feedback-item .feedback-author {
       margin-top: 15px; }
   #feedback .button-feedback {
