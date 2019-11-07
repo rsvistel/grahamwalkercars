@@ -2515,15 +2515,15 @@ select::-ms-expand {
 .radio input:checked + .radio__text:after {
   opacity: 1; }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .selling-title-container {
-    padding: 0 2.5rem; }
+    padding: 0 1rem; }
     .selling-title-container .selling-title {
       text-align: center;
       padding: 2rem 0; }
 
   .selling-section {
-    padding: 0 2.5rem; }
+    padding: 0 1rem; }
 
   .selling-form {
     padding-bottom: 2rem; }
@@ -2547,12 +2547,17 @@ select::-ms-expand {
   .selling-form .radio-inline {
     margin: 0; }
   .selling-form .radio-first {
-    margin-left: 8% !important; }
+    margin-left: 80px !important; }
   .selling-form .radio-last {
-    margin-left: 1% !important; } }
+    margin-left: 62px !important; } }
+@media only screen and (max-width: 577px) {
+  .selling-form .radio-first {
+    margin-left: 40px !important; }
+  .selling-form .radio-last {
+    margin-left: 20px !important; } }
 @media only screen and (max-width: 360px) {
   .selling-form .radio-last {
-    margin-left: 0% !important; }
+    margin-left: 22px !important; }
   .selling-form .radio__text {
     font-size: 14px; }
   .selling-form .radio__text {
