@@ -634,7 +634,8 @@ select::-ms-expand {
   display: block; }
 
 .fas.fa-star {
-  color: #FA9917; }
+  color: #FA9917;
+  font-size: 22px; }
 
 #special-offers .owl-carousel .owl-stage-outer {
   width: 102%; }
@@ -1568,7 +1569,8 @@ select::-ms-expand {
           #used-cars.main-wrapper .search-box .container .mobile-sort-cars p {
             font-size: 19px;
             font-weight: 900;
-            color: #D10609; }
+            color: #D10609;
+            margin-right: 9px; }
           #used-cars.main-wrapper .search-box .container .mobile-sort-cars select {
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -2575,16 +2577,19 @@ select::-ms-expand {
   background: #EEEEEE;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 7% 0 0;
+  padding: 1% 0 0 0;
   text-align: center; }
   #feedback h3.feedback-rating, #feedback h4.feedback-title {
-    display: none; }
+    text-transform: uppercase;
+    margin-bottom: 2%; }
   #feedback .feedback-item {
     background: #fff;
     text-align: left;
     padding: 15px;
     position: relative;
     width: 100%;
+    min-height: 230px;
+    max-height: 230px;
     margin-bottom: 1rem; }
     #feedback .feedback-item .feedback-title h3, #feedback .feedback-item .feedback-author h3 {
       font-family: Arial, sans-serif;
@@ -2592,7 +2597,7 @@ select::-ms-expand {
       font-weight: 800;
       font-size: 18px; }
     #feedback .feedback-item .feedback-body {
-      color: #515151;
+      color: #525252;
       font-family: "Roboto", sans-serif; }
     #feedback .feedback-item .feedback-date {
       font-family: "Arial", sans-serif;
@@ -2610,15 +2615,15 @@ select::-ms-expand {
       display: flex;
       margin-top: 5px;
       position: absolute;
-      top: 5%;
-      right: 5%; }
+      top: 6%;
+      right: 4%; }
     #feedback .feedback-item .feedback-author {
       margin-top: 15px; }
   #feedback .button-feedback {
     color: white;
     border: none;
     text-transform: uppercase;
-    margin: 2% 0 4% 0;
+    margin: 2% 0 3% 0;
     background: #D10609;
     padding: 1.5% 5%;
     border-radius: 7px;
@@ -3007,7 +3012,7 @@ select::-ms-expand {
     font-size: 8vw !important; } }
 #feedback.reviews-page {
   background: #EEEEEE;
-  padding: 1% 0.6%;
+  padding: 2% 0.6%;
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
@@ -3015,15 +3020,47 @@ select::-ms-expand {
   -moz-column-gap: 0;
   column-gap: 0;
   width: 100vw; }
-  #feedback.reviews-page .feedback-item {
+  #feedback.reviews-page .feedback-item-reviews-page {
     display: inline-block;
     width: 96%;
-    vertical-align: top; }
-    #feedback.reviews-page .feedback-item .feedback-body {
+    vertical-align: top;
+    background: #fff;
+    text-align: left;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 1rem; }
+    #feedback.reviews-page .feedback-item-reviews-page .feedback-title h3 {
+      font-family: Arial, sans-serif;
+      color: #000000;
+      font-weight: 800;
+      font-size: 22px; }
+    #feedback.reviews-page .feedback-item-reviews-page .feedback-body {
+      color: #525252;
+      font-family: "Roboto", sans-serif; }
+    #feedback.reviews-page .feedback-item-reviews-page .feedback-date {
+      font-family: "Arial", sans-serif;
+      color: #CCCCCC; }
+    #feedback.reviews-page .feedback-item-reviews-page .feedback-date {
+      font-size: 14px;
+      color: #DFDFDF; }
+    #feedback.reviews-page .feedback-item-reviews-page .feedback-body {
+      font-size: 14px;
+      padding-left: 5px;
+      font-weight: 600; }
+    #feedback.reviews-page .feedback-item-reviews-page .feedback-stars {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 5px;
+      position: absolute;
+      top: 5%;
+      right: 5%; }
+    #feedback.reviews-page .feedback-item-reviews-page .feedback-author {
+      margin-top: 15px; }
+    #feedback.reviews-page .feedback-item-reviews-page .feedback-body {
       padding-left: 0; }
-
-.reviews-page-title-block {
-  margin: 1% 0; }
+    #feedback.reviews-page .feedback-item-reviews-page .reviews-page-title-block {
+      margin: 1% 0; }
 
 .reviews-page-btn {
   margin: 5% 0; }
@@ -3032,7 +3069,10 @@ select::-ms-expand {
     background: #D10609;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 20px 80px; }
+    padding: 20px 80px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-weight: bold; }
 
 @media only screen and (max-width: 991px) {
   #feedback.reviews-page {

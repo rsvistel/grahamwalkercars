@@ -659,6 +659,7 @@ select::-ms-expand
   display: block
 .fas.fa-star
   color: #FA9917
+  font-size: 22px
 #special-offers .owl-carousel .owl-stage-outer
   width: 102%
 .car-tile
@@ -1664,6 +1665,7 @@ select::-ms-expand
             font-size: 19px
             font-weight: 900
             color: #D10609
+            margin-right: 9px
           select
             -webkit-appearance: none
             -moz-appearance: none
@@ -2744,18 +2746,19 @@ select::-ms-expand
   background: #EEEEEE
   background-size: cover
   background-repeat: no-repeat
-  padding: 7% 0 0
+  padding: 1% 0 0 0
   text-align: center
   h3.feedback-rating, h4.feedback-title
-    display: none
+    text-transform: uppercase
+    margin-bottom: 2%
   .feedback-item
       background: #fff
       text-align: left
       padding: 15px
       position: relative
       width: 100%
-      // min-height: 230px
-      // max-height: 230px
+      min-height: 230px
+      max-height: 230px
       margin-bottom: 1rem
       .feedback-title h3, .feedback-author h3
         font-family: Arial, sans-serif
@@ -2763,7 +2766,7 @@ select::-ms-expand
         font-weight: 800
         font-size: 18px
       .feedback-body
-        color: #515151
+        color: #525252
         font-family: 'Roboto', sans-serif
       .feedback-date
         font-family: 'Arial', sans-serif
@@ -2782,8 +2785,8 @@ select::-ms-expand
         display: flex
         margin-top: 5px
         position: absolute
-        top: 5%
-        right: 5%
+        top: 6%
+        right: 4%
       .feedback-author
         margin-top: 15px
 
@@ -2791,7 +2794,7 @@ select::-ms-expand
     color: white
     border: none
     text-transform: uppercase
-    margin: 2% 0 4% 0
+    margin: 2% 0 3% 0
     background: #D10609
     padding: 1.5% 5%
     border-radius: 7px
@@ -3200,7 +3203,7 @@ select::-ms-expand
   //reviews-page
 #feedback.reviews-page
   background: #EEEEEE
-  padding: 1% 0.6%
+  padding: 2% 0.6%
   -webkit-column-count: 3
   -moz-column-count: 3
   column-count: 3
@@ -3208,14 +3211,47 @@ select::-ms-expand
   -moz-column-gap: 0
   column-gap: 0
   width: 100vw
-  .feedback-item
+  .feedback-item-reviews-page
     display: inline-block
     width: 96%
     vertical-align: top
+    background: #fff
+    text-align: left
+    padding: 15px
+    position: relative
+    margin-bottom: 1rem
+    .feedback-title h3
+      font-family: Arial, sans-serif
+      color: #000000
+      font-weight: 800
+      font-size: 22px
+    .feedback-body
+      color: #525252
+      font-family: 'Roboto', sans-serif
+    .feedback-date
+      font-family: 'Arial', sans-serif
+      color: #CCCCCC
+    .feedback-date
+      font-size: 14px
+      color: #DFDFDF
+    .feedback-body
+      font-size: 14px
+      padding-left: 5px
+      font-weight: 600
+    .feedback-stars
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      margin-top: 5px
+      position: absolute
+      top: 5%
+      right: 5%
+    .feedback-author
+      margin-top: 15px
     .feedback-body
       padding-left: 0
-.reviews-page-title-block
-  margin: 1% 0
+    .reviews-page-title-block
+      margin: 1% 0
 .reviews-page-btn
   margin: 5% 0
   button
@@ -3224,6 +3260,9 @@ select::-ms-expand
     color: #ffffff
     text-transform: uppercase
     padding: 20px 80px
+    border-radius: 4px
+    font-family: Arial, sans-serif
+    font-weight: bold
 
 @media only screen and (max-width: 991px)
   #feedback.reviews-page
