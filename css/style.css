@@ -593,7 +593,7 @@ select::-ms-expand {
 .featured .title-featured {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   width: 100%;
   font-weight: 300;
   font-size: 1.9rem;
@@ -1096,7 +1096,16 @@ select::-ms-expand {
     font-weight: 400; }
   .shortlist h6 {
     margin-bottom: 5%;
-    padding: 0 23%; }
+    padding: 0 50% 0 0; }
+  .shortlist .owl-carousel.owl-drag .owl-item {
+    width: 270px !important;
+    margin-right: 15px !important; }
+  .shortlist #special-offers .owl-carousel {
+    padding: 0;
+    margin-bottom: 15%; }
+  .shortlist .car-tile .car-image .car-like img {
+    max-height: 29px;
+    margin: 2px 7px; }
 
 @media (max-width: 768px) {
   .shortlist h6 {
@@ -2480,12 +2489,23 @@ select::-ms-expand {
     font-size: 14px; }
   .selling-form .radio__text {
     padding: 0 0 0 29px; } }
+#feedback.feedback-home .feedback-title-top {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+  font-size: 19px;
+  font-weight: 600; }
+#feedback.feedback-home .title-feedback-body {
+  font-weight: 400; }
+#feedback.feedback-home .feedback-item {
+  min-height: 200px; }
+
 #feedback {
   order: 2;
   background: #EEEEEE;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 3% 0 0;
+  padding: 1.5% 0 0;
   text-align: center; }
   #feedback h3.feedback-rating {
     display: none; }
@@ -2512,7 +2532,6 @@ select::-ms-expand {
       color: #DFDFDF; }
     #feedback .feedback-item .feedback-body {
       font-size: 14px;
-      padding-left: 5px;
       font-weight: 600; }
     #feedback .feedback-item .feedback-stars {
       display: -webkit-box;

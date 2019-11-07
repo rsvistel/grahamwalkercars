@@ -615,7 +615,7 @@ select::-ms-expand
   .title-featured
     font-family: $primary-font
     text-transform: uppercase
-    text-align: center
+    text-align: left
     width: 100%
     font-weight: 300
     font-size: 1.9rem
@@ -1140,7 +1140,16 @@ select::-ms-expand
     font-weight: 400
   h6
     margin-bottom: 5%
-    padding: 0 23%
+    padding: 0 50% 0 0
+  .owl-carousel.owl-drag .owl-item
+    width: 270px!important
+    margin-right: 15px!important
+  #special-offers .owl-carousel
+    padding: 0
+    margin-bottom: 15%
+  .car-tile .car-image .car-like img
+    max-height: 29px
+    margin: 2px 7px
 
 @media (max-width: 768px)
   .shortlist h6
@@ -2672,12 +2681,24 @@ select::-ms-expand
 //selling your car
 
   //Feedback
+#feedback.feedback-home
+  .feedback-title-top
+    font-family: Arial, sans-serif
+    text-transform: uppercase
+    margin-bottom: 3%
+    font-size: 19px
+    font-weight: 600
+  .title-feedback-body
+    font-weight: 400
+  .feedback-item
+    min-height: 200px
+
 #feedback
   order: 2
   background: #EEEEEE
   background-size: cover
   background-repeat: no-repeat
-  padding: 3% 0 0
+  padding: 1.5% 0 0
   text-align: center
   h3.feedback-rating
     display: none
@@ -2687,8 +2708,6 @@ select::-ms-expand
       padding: 15px
       position: relative
       width: 100%
-      // min-height: 230px
-      // max-height: 230px
       margin-bottom: 1rem
       .feedback-title h3, .feedback-author h3
         font-family: Arial, sans-serif
@@ -2707,7 +2726,6 @@ select::-ms-expand
         color: #DFDFDF
       .feedback-body
         font-size: 14px
-        padding-left: 5px
         font-weight: 600
       .feedback-stars
         display: -webkit-box
