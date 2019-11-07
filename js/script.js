@@ -146,4 +146,79 @@ $(document).ready(function () {
         // $('body').toggleClass('active-menu');
         $('.btn-search').toggleClass('indexcity');
     });
+
+
+    if ($('body').hasClass('car-page')) {
+
+        var carouselItems = [];
+        $('#carousel-thumb .carousel-item').each(function () {
+            carouselItems.push($(this));
+        });
+        $('#slideshow-counter span').html($('#carousel-thumb .carousel-item.active').index() + ' of ' + carouselItems.length);
+        //
+        // var images = [];
+        // var activeNumber;
+        // $('.gellery__cars img.d-block').each(function () {
+        //     images.push($(this));
+        // });
+        // $('#carouselUsedCar img.d-block').click(function () {
+        //     $('#carouselExampleControls').carousel(0);
+        // });
+        // $('.gellery__cars .carousel-card-items .carousel-card-item').click(function () {
+        //     var temp = $(this);
+        //     for (var i = 0; i < images.length; i++) {
+        //         if (temp.find('img').attr('src') === images[i].attr('src')) {
+        //             activeNumber = i;
+        //         }
+        //     }
+        //     $('#carouselExampleControls').carousel(activeNumber);
+        //     setTimeout(function () {
+        //         $('.num.mobile-counter__value').html(activeNumber + 1 + ' of ' + carouselItems.length);
+        //     },100);
+        // });
+        //
+        $('#carousel-thumb').bind('slide.bs.carousel', function (e) {
+            setTimeout(function () {
+                if ($('#carousel-thumb').hasClass('fullscreen')) {
+                    carouselChange(7);
+                } else {
+                    carouselChange(4);
+                }
+                $('#slideshow-counter span').html($('#carousel-thumb .carousel-item.active').index() + ' of ' + carouselItems.length);
+            }, 650);
+            // setTimeout(function () {
+            //     $('.num.mobile-counter__value.counter__value').html($('#carouselExampleControls .carousel-item.active').index() + 1 + ' of ' + carouselItems.length);
+            // },650);
+        });
+        // $('.close.used-car__modal-close.used-car__modal-close-col-sm').click(function () {
+        //     $('.num.mobile-counter__value').html('1 of ' + carouselItems.length);
+        // })
+        $('.carousel-inner').click(function () {
+            carouselChange(7);
+            $('#carousel-thumb, #car-title').addClass('fullscreen');
+            $('body').append('<div class="overlay"></div>');
+        });
+        function carouselChange(number) {
+            for (var i = 0; i < carouselItems.length; i++) {
+                if (carouselItems[i].hasClass('active')) {
+                    if (i >= number) {
+                        $('.carousel-indicators li').css('display', 'none');
+                        $('.carousel-indicators li.active').css('display', 'block');
+                        var a = i;
+                        while (a > i - number) {
+                            $('.carousel-indicators li:eq( ' + a + ' )').css('display', 'block');
+                            a--;
+                        }
+                    } else {
+                        $('.carousel-indicators li').css('display', 'none');
+                        var b = 0;
+                        while (b < number) {
+                            $('.carousel-indicators li:eq( ' + b + ' )').css('display', 'block');
+                            b++;
+                        }
+                    }
+                }
+            }
+        }
+    }
 });

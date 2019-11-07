@@ -1718,6 +1718,93 @@ select::-ms-expand {
 
   .mobile-title {
     display: block; } }
+.car-page .overlay {
+  position: absolute;
+  background: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1; }
+
+#car-title {
+  display: flex;
+  justify-content: space-between; }
+  #car-title div.price-block {
+    display: flex; }
+    #car-title div.price-block div:first-child {
+      order: 1; }
+  #car-title.fullscreen {
+    color: #fff;
+    z-index: 1001;
+    position: absolute;
+    width: 100%;
+    left: 0; }
+    #car-title.fullscreen .price-block {
+      display: block; }
+
+#carousel-thumb {
+  display: flex;
+  z-index: 101; }
+  #carousel-thumb.fullscreen {
+    display: block; }
+    #carousel-thumb.fullscreen .carousel-control-prev {
+      left: 0;
+      right: auto;
+      bottom: 0;
+      transform: rotate(-90deg); }
+    #carousel-thumb.fullscreen .carousel-control-next {
+      top: 0;
+      transform: rotate(-90deg); }
+    #carousel-thumb.fullscreen .carousel-indicators {
+      position: relative;
+      flex-direction: row; }
+      #carousel-thumb.fullscreen .carousel-indicators li {
+        margin: 0;
+        width: 14%; }
+        #carousel-thumb.fullscreen .carousel-indicators li:nth-child(-n+6) {
+          display: block; }
+  #carousel-thumb .carousel-inner {
+    flex: 0 0 80.2%; }
+    #carousel-thumb .carousel-inner #slideshow-counter {
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      color: #fff; }
+  #carousel-thumb .carousel-control-next, #carousel-thumb .carousel-control-prev {
+    bottom: auto;
+    z-index: 101;
+    width: 19.7%; }
+  #carousel-thumb .carousel-control-prev {
+    right: 0;
+    left: auto;
+    top: 0; }
+  #carousel-thumb .carousel-control-next {
+    right: 0;
+    bottom: 0;
+    top: auto; }
+  #carousel-thumb .carousel-indicators {
+    position: static;
+    flex-direction: column;
+    flex: 0 0 19.7%;
+    margin: 0;
+    justify-content: space-between; }
+    #carousel-thumb .carousel-indicators li {
+      width: auto;
+      height: auto;
+      text-indent: 0;
+      margin-right: 0;
+      margin-left: 4.5%;
+      border: 0;
+      display: none;
+      opacity: 1; }
+      #carousel-thumb .carousel-indicators li:first-child {
+        border-top: 0; }
+      #carousel-thumb .carousel-indicators li:last-child {
+        border-bottom: 0; }
+      #carousel-thumb .carousel-indicators li:nth-child(-n+4) {
+        display: block; }
+
 .pdf {
   width: 700px;
   margin: 0 auto; }
@@ -1897,5 +1984,3 @@ select::-ms-expand {
 @media print {
   body {
     -webkit-print-color-adjust: exact; } }
-
-/*# sourceMappingURL=style.css.map */
