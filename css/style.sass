@@ -1894,7 +1894,7 @@ select::-ms-expand
 #carousel-thumb
   display: flex
   z-index: 101
-  width: 80%
+  width: 75%
   &.fullscreen
     display: block
     width: 70%
@@ -1962,8 +1962,41 @@ select::-ms-expand
   position: absolute
   top: 10%
   right: 5%
+
+#car-detail-value, #reviews-car-detail, #description-car-detail
   &.fullscreen
-    display: block
+    display: none
+
+.detailse-used-car__title
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+      padding-left: 0
+      padding-right: 0
+
+.detailse-used-car__value
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+
+.detailse-used-car__data
+      font-size: 18px
+      font-weight: bold
+      text-align: right
+
+.detailse-used-car__name
+      font-size: 18px
+      text-align: left
 //Car Detail
 
 //PDF

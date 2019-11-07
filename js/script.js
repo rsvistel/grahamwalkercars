@@ -195,7 +195,7 @@ $(document).ready(function () {
         // })
         $('.carousel-inner').click(function () {
             carouselChange(7);
-            $('#carousel-thumb, #car-title, #car-accordion').addClass('fullscreen');
+            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail').addClass('fullscreen');
             $('body').append('<div class="overlay"></div>');
         });
         function carouselChange(number) {
