@@ -329,14 +329,14 @@
                         <div class="container">
                                 <form action="homepage.html">
                                         <div class="row">
-                                            <div class="col-md-3">
+                                            <div class="col-md-3 desktop-sort-cars">
                                                 <select>
                                                     <option>Make</option>
                                                     <option>Make 1</option>
                                                     <option>Make 2</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-3 desktop-sort-cars">
                                                 <select>
                                                     <option>Model</option>
                                                     <option>Model 1</option>
@@ -344,7 +344,7 @@
                                                 </select>
                                             </div>
 
-                                            <div class="col-md-3 year">
+                                            <div class="col-md-3 year desktop-sort-cars">
                                                 <select>
                                                     <option>Year</option>
                                                     <option>Year 1</option>
@@ -352,14 +352,22 @@
                                                 </select>
                                             </div>
 
-                                            <div class="col-md-2">
+                                            <div class="col-md-2 desktop-sort-cars">
                                                 <button type="submit"><img src="img/home/magnifying-glass.png" alt="" /> Search <span class="mobile-word"> 85 used cars</span></button>
                                             </div>
 
                                             <div class="search-box-info">
                                                     <span>Shoving 41-60 of 126 Vehicles</span>
                                             </div>
-                                        </div>
+                                            <div class="col-md-12 mobile-sort-cars">
+                                                    <p>Sort By:</p>
+                                                <select>
+                                                    <option>Year: Newest</option>
+                                                    <option>Model 1</option>
+                                                    <option>Model 2</option>
+                                                </select>
+                                            </div>
+                                    </div>
                                     </form>
                         </div>
                     </div>
@@ -1305,6 +1313,7 @@
                                     <li>1</li>
                                     <li>2</li>
                                     <li class="pagination-active-item">3</li>
+                                    <li class="more-pages">...</li>
                                     <li>4</li>
                                     <li>5</li>
                                     <li>6</li>
@@ -1330,29 +1339,6 @@
             <img src="img/header/facebook.png" alt="" />
         </div>
     </div>
-    <script src="owl-carousel/dist/owl-carousel.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-        $('.owl-special-offers').owlCarousel({
-            loop: true,
-            margin: 30,
-            nav: false,
-            dots: false,
-            // navText: ["<img  src=\"img/home/arrow-left.svg\"/>","<img src=\"img/home/arrow-right.svg\"/>"],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        });
-    </script>
     <script src="./js/script.js"></script>
 
 </body>
