@@ -2784,7 +2784,7 @@ select::-ms-expand
       // min-height: 230px
       // max-height: 230px
       margin-bottom: 1rem
-      .feedback-title h3, .feedback-author h3
+      .feedback-title h3
         font-family: Arial, sans-serif
         color: #000000
         font-weight: 900
@@ -2801,8 +2801,8 @@ select::-ms-expand
         display: flex
         margin-top: 5px
         position: absolute
-        top: 6%
-        right: 4%
+        top: 14px
+        right: 10px
         .fas.fa-star
           font-size: 22px
       .feedback-author
@@ -2818,12 +2818,17 @@ select::-ms-expand
     border-radius: 7px
     font-family: "Arial", sans-serif
 
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+  #feedback .feedback-item .feedback-stars .fas.fa-star
+    font-size: 18px
+  // #feedback .feedback-item .feedback-stars
+  //   top: 6%
+  //   right: 3%
+
 @media only screen and (max-width: 768px)
   #feedback
     .container
       padding: 0 5px
-      h3.feedback-rating, h4.feedback-title
-        display: block
       h4.feedback-title
         text-align: center
         font-weight: 700
@@ -2851,24 +2856,25 @@ select::-ms-expand
           min-height: 170px
           padding: 10px 10px
           margin-bottom: 1rem
-          .fas.fa-star
-              font-size: 1rem
-          .feedback-author h3
-              font-size: 17px
+          .feedback-title h3
+            font-size: 20px
+          .feedback-stars
+            top: 8px
+            right: 10px
       .button-feedback
         margin: 4% 0 13% 0
         padding: 4% 10%
       .five-stars
         margin: 0 15px 0 10px
         font-size: 35px
-        //font-family: "Poppins", sans-serif
         font-weight: 400
       .fas.fa-star
-        font-size: 1.5rem
+        font-size: 20px
 
-@media screen and (max-width: 424px) and (min-width: 374px)
-  #feedback .feedback-item .feedback-body
-      font-size: 13px
+
+// @media screen and (max-width: 424px) and (min-width: 374px)
+//   #feedback .feedback-item .feedback-body
+//       font-size: 13px
 //Feedback
 
 //Gallery
@@ -3258,8 +3264,8 @@ select::-ms-expand
       display: flex
       margin-top: 5px
       position: absolute
-      top: 8%
-      right: 4%
+      top: 14px
+      right: 10px
       .fas.fa-star
         font-size: 22px
         color: #FA9917
@@ -3299,7 +3305,7 @@ select::-ms-expand
     .feedback-item-reviews-page
       padding: 20px 15px 15px 15px
       .feedback-stars
-        top: 7%
+        top: 13px
   .reviews-page-title
     text-align: center
   .reviews-page-btn
