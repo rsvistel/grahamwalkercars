@@ -3028,6 +3028,11 @@ select::-ms-expand {
   .reserve-page__pay-value {
     display: flex;
     font-size: 8vw !important; } }
+.reserve-car-modal textarea {
+  height: 181px;
+  width: 100%;
+  color: #777777; }
+
 #feedback.reviews-page {
   background: #EEEEEE;
   padding: 2% 0.6%;
