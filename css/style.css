@@ -1502,9 +1502,9 @@ select::-ms-expand {
       display: flex;
       justify-content: space-between; }
   #used-cars.main-wrapper .car-tile {
-    margin: 0 1% 1% 1%;
-    margin-bottom: 2%;
-    max-width: 23%; }
+    max-width: 23.8%;
+    margin-left: 1%;
+    margin-bottom: 1%; }
     #used-cars.main-wrapper .car-tile .car-title {
       background: #ffffff; }
   #used-cars.main-wrapper .used-cars-title {
@@ -1535,6 +1535,9 @@ select::-ms-expand {
       background: #54C8E3; }
     #used-cars.main-wrapper .filter-navigation-menu .more-pages {
       display: none; }
+
+.wrapper-title .container {
+  padding: 0 10px; }
 
 @media (min-width: 769px) and (max-width: 992px) {
   #used-cars.main-wrapper .car-tile {
