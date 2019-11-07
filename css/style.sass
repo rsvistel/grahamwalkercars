@@ -659,7 +659,6 @@ select::-ms-expand
   display: block
 .fas.fa-star
   color: #FA9917
-  font-size: 22px
 #special-offers .owl-carousel .owl-stage-outer
   width: 102%
 .car-tile
@@ -1594,15 +1593,18 @@ select::-ms-expand
       display: flex
       justify-content: space-between
   .car-tile
-    margin: 0 1% 1% 1%
-    margin-bottom: 2%
-    max-width: 23%
+    // margin: 0 1% 1% 1%
+    // margin-bottom: 2%
+    // max-width: 23%
+    max-width: 23.8%
+    margin-left: 1%
+    margin-bottom: 1%
     .car-title
       background: #ffffff
   .used-cars-title
     margin-bottom: 1vw
   .filter-navigation-menu
-    margin: 1vw 0 4vw 0
+    margin: 2vw 0 3vw 0
     .pagination-bottom
       display: flex
       justify-content: flex-end
@@ -1616,16 +1618,21 @@ select::-ms-expand
       display: flex
       li
         background: #C8C8C8
-        color: white
-        font-size: 16px
-        padding: 20px 10px
-        margin-right: 8px
+        color: #000
+        font-size: 20px
+        padding: 15px 15px
+        linr-height: 24px
+        margin-right: 6px
         border-radius: 5px
         cursor: pointer
     .pagination-active-item
       background: #54C8E3
     .more-pages
       display: none
+
+.wrapper-title
+  .container
+    padding: 0 10px
 
 @media (min-width: 769px) and (max-width: 992px)
   #used-cars.main-wrapper
@@ -2759,10 +2766,10 @@ select::-ms-expand
     font-family: Arial, sans-serif
     text-transform: uppercase
     margin-bottom: 3%
-    font-size: 19px
+    font-size: 22px
     font-weight: 600
   .title-feedback-body
-    font-weight: 400
+    //font-weight: 400
   .feedback-item
     min-height: 200px
 
@@ -2771,7 +2778,7 @@ select::-ms-expand
   background: #EEEEEE
   background-size: cover
   background-repeat: no-repeat
-  padding: 1% 0 0 0
+  padding: 2% 0 0 0
   text-align: center
   h3.feedback-rating, h4.feedback-title
     text-transform: uppercase
@@ -2779,38 +2786,33 @@ select::-ms-expand
   .feedback-item
       background: #fff
       text-align: left
-      padding: 15px
+      padding: 15px 15px 25px 15px
       position: relative
       width: 100%
-      min-height: 230px
-      max-height: 230px
+      // min-height: 230px
+      // max-height: 230px
       margin-bottom: 1rem
-      .feedback-title h3, .feedback-author h3
+      .feedback-title h3
         font-family: Arial, sans-serif
         color: #000000
-        font-weight: 800
-        font-size: 18px
+        font-weight: 900
+        font-size: 22px
       .feedback-body
         color: #525252
         font-family: 'Roboto', sans-serif
       .feedback-date
         font-family: 'Arial', sans-serif
         color: #CCCCCC
-
-      .feedback-date
-        font-size: 14px
-        color: #DFDFDF
-      .feedback-body
-        font-size: 14px
-        font-weight: 600
       .feedback-stars
         display: -webkit-box
         display: -ms-flexbox
         display: flex
         margin-top: 5px
         position: absolute
-        top: 6%
-        right: 4%
+        top: 14px
+        right: 10px
+        .fas.fa-star
+          font-size: 22px
       .feedback-author
         margin-top: 15px
 
@@ -2824,12 +2826,17 @@ select::-ms-expand
     border-radius: 7px
     font-family: "Arial", sans-serif
 
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+  #feedback .feedback-item .feedback-stars .fas.fa-star
+    font-size: 18px
+  // #feedback .feedback-item .feedback-stars
+  //   top: 6%
+  //   right: 3%
+
 @media only screen and (max-width: 768px)
   #feedback
     .container
       padding: 0 5px
-      h3.feedback-rating, h4.feedback-title
-        display: block
       h4.feedback-title
         text-align: center
         font-weight: 700
@@ -2857,24 +2864,25 @@ select::-ms-expand
           min-height: 170px
           padding: 10px 10px
           margin-bottom: 1rem
-          .fas.fa-star
-              font-size: 1rem
-          .feedback-author h3
-              font-size: 17px
+          .feedback-title h3
+            font-size: 20px
+          .feedback-stars
+            top: 8px
+            right: 10px
       .button-feedback
         margin: 4% 0 13% 0
         padding: 4% 10%
       .five-stars
         margin: 0 15px 0 10px
         font-size: 35px
-        //font-family: "Poppins", sans-serif
         font-weight: 400
       .fas.fa-star
-        font-size: 1.5rem
+        font-size: 20px
 
-@media screen and (max-width: 424px) and (min-width: 374px)
-  #feedback .feedback-item .feedback-body
-      font-size: 13px
+
+// @media screen and (max-width: 424px) and (min-width: 374px)
+//   #feedback .feedback-item .feedback-body
+//       font-size: 13px
 //Feedback
 
 //Gallery
@@ -3231,49 +3239,44 @@ select::-ms-expand
   -webkit-column-count: 3
   -moz-column-count: 3
   column-count: 3
-  -webkit-column-gap: 0
-  -moz-column-gap: 0
-  column-gap: 0
+  -webkit-column-gap: 3px
+  -moz-column-gap: 3px
+  column-gap: 3px
   width: 100vw
   .feedback-item-reviews-page
     display: inline-block
-    width: 96%
+    width: 98%
     vertical-align: top
     background: #fff
     text-align: left
-    padding: 15px
+    padding: 20px 15px 25px 15px
     position: relative
     margin-bottom: 1rem
+    border-radius: 4px
     .feedback-title h3
       font-family: Arial, sans-serif
       color: #000000
-      font-weight: 800
+      font-weight: 900
       font-size: 22px
     .feedback-body
       color: #525252
       font-family: 'Roboto', sans-serif
+      padding-left: 0
+      line-height: 19px
     .feedback-date
       font-family: 'Arial', sans-serif
       color: #CCCCCC
-    .feedback-date
-      font-size: 14px
-      color: #DFDFDF
-    .feedback-body
-      font-size: 14px
-      padding-left: 5px
-      font-weight: 600
     .feedback-stars
       display: -webkit-box
       display: -ms-flexbox
       display: flex
       margin-top: 5px
       position: absolute
-      top: 5%
-      right: 5%
-    .feedback-author
-      margin-top: 15px
-    .feedback-body
-      padding-left: 0
+      top: 14px
+      right: 10px
+      .fas.fa-star
+        font-size: 22px
+        color: #FA9917
     .reviews-page-title-block
       margin: 1% 0
 .reviews-page-btn
@@ -3288,6 +3291,10 @@ select::-ms-expand
     font-family: Arial, sans-serif
     font-weight: bold
 
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+  #feedback.reviews-page .feedback-item-reviews-page .feedback-stars .fas.fa-star
+    font-size: 20px
+
 @media only screen and (max-width: 991px)
   #feedback.reviews-page
     background: #47494A
@@ -3295,9 +3302,6 @@ select::-ms-expand
     -webkit-column-count: 2
     -moz-column-count: 2
     column-count: 2
-    -webkit-column-gap: 0
-    -moz-column-gap: 0
-    column-gap: 0
     width: 100vw
 
 @media only screen and (max-width: 768px)
@@ -3305,10 +3309,11 @@ select::-ms-expand
     -webkit-column-count: 1
     -moz-column-count: 1
     column-count: 1
-    -webkit-column-gap: 0
-    -moz-column-gap: 0
-    column-gap: 0
     width: 100vw
+    .feedback-item-reviews-page
+      padding: 20px 15px 15px 15px
+      .feedback-stars
+        top: 13px
   .reviews-page-title
     text-align: center
   .reviews-page-btn
