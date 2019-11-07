@@ -771,6 +771,7 @@ select::-ms-expand
           font-family: Arial, sans-serif
   .car-desc
     padding: 4% 0 2% 0
+    font-family: Arial, Helvetica, sans-serif
     .row
       margin: 0
     .col-6
@@ -779,7 +780,7 @@ select::-ms-expand
         margin: 0
         padding: 0
         li
-          font-size: 14px
+          font-size: 16px
 @media only screen and (max-width: 768px)
   .owl-nav
     position: absolute
@@ -809,6 +810,11 @@ select::-ms-expand
       font-size: 23px
       margin: 5% 15px
 
+  .car-tile
+    .car-desc
+      .col-6
+        padding-left: 7%
+
 //Car Tile
 //Featured
 @media (min-width: 992px) and (max-width: 1250px)
@@ -820,7 +826,7 @@ select::-ms-expand
       .col-6
         ul
           li
-            font-size: 11px
+            font-size: 14px
 //APPLY
 .apply
   background-image: url("../img/home/ban.png")
@@ -1515,13 +1521,7 @@ select::-ms-expand
   .search-box
     width: 100%
     height: 40%
-    //position: absolute
-    // bottom: 0
-    // left: 0
-    // right: 0
     margin: 0 auto
-    // background: rgba(34, 34, 34, 0.85)
-    //display: flex
     align-items: center
     .container
     h3
@@ -1536,6 +1536,8 @@ select::-ms-expand
         -ms-flex: 0 0 27.75%
         flex: 0 0 27.75%
         max-width: 27.75%
+    .mobile-sort-cars
+      display: none
     .col-md-3, .col-md-2
       text-align: center
       padding: 0 1px
@@ -1562,7 +1564,7 @@ select::-ms-expand
           width: 25px
           position: relative
           top: -1px
-          left: -15px
+          //left: -15px
       button, select
         width: 100%
         height: 55px
@@ -1578,8 +1580,6 @@ select::-ms-expand
       display: flex
       justify-content: space-between
   .car-tile
-    //background: #ffffff
-    // margin-bottom: 2%
     margin: 0 1% 1% 1%
     margin-bottom: 2%
     max-width: 23%
@@ -1604,69 +1604,118 @@ select::-ms-expand
         background: #C8C8C8
         color: white
         font-size: 16px
-        vertical-align: center
         padding: 20px 10px
-        margin-right: 15px
+        margin-right: 8px
         border-radius: 5px
         cursor: pointer
-      .pagination-active-item
-        background: #54C8E3
+    .pagination-active-item
+      background: #54C8E3
+    .more-pages
+      display: none
 
 @media (min-width: 769px) and (max-width: 992px)
   #used-cars.main-wrapper
     .car-tile
       max-width: 48%
 
-
 @media (max-width: 768px)
   #used-cars.main-wrapper
+    background-image: none
+    .wrapper-title
+      margin-bottom: 8%
     .car-tile
-      max-width: 100%
+      max-width: 95%
+      margin: 10px auto
+    .about-title
+      color: #000
+      text-align: center
+      padding: 8% 0 1% 0
     .search-box
-        position: static
-        padding: 2% 5% 2%
-        .container
+      position: static
+      //padding: 2% 5% 2%
+      .container
+        padding: 0
+        h3
+          font-weight: 400
+          font-size: 22px
+          margin-bottom: 13px
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          -webkit-box-align: center
+          -ms-flex-align: center
+          align-items: center
+          img
+            margin-right: 9px
+        form
+          padding: 0 7px
+        .search-box-info
+          margin: auto
+          padding: 0 0 10% 0
+          font-size: 20px
+        .desktop-sort-cars
+          display: none
+        .mobile-sort-cars
+          display: flex
+          justify-content: space-evenly
+          align-items: center
           padding: 0
-          h3
-            font-weight: 400
-            font-size: 22px
-            margin-bottom: 13px
-            display: -webkit-box
-            display: -ms-flexbox
+          p
+            font-size: 19px
+            font-weight: 900
+            color: #D10609
+          select
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            background-image: url("../img/used-cars/caret-down.png")
+            background-position: center right 10px
+            background-size: 15px
+            background-repeat: no-repeat
+            background-color: white
+            border-radius: 0
+            padding-left: 20px
+            font-family: Montserrat, sans-serif
+            font-size: 20px
+            height: 54px
+            width: 70%
+            border-radius: 5px
+        .col-md-3
+          margin-bottom: 16px
+          -ms-flex: 0 0 100%
+          flex: 0 0 100%
+          max-width: 100%
+          select
+            font-size: 12.5px
+            height: 43px
+            background-image: none
+            //border-radius: 7px
+            font-size: 12.5px
+    .filter-navigation-menu
+      margin: 9% 0 13% 0
+    .pagination-bottom
+      .col-md-6
+        justify-content: center
+        ul
+          li
+            background: #C8C8C8
+            color: white
+            font-size: 16px
+            padding: 20px 14px
+            margin-right: 5px
+            &:nth-child(2)
+              display: none
+            &:nth-child(6)
+              display: none
+            &:nth-child(7)
+              display: none
+            &:last-child
+              margin-right: 0
+          .pagination-active-item
+            background: #54C8E3
+          .more-pages
             display: flex
-            -webkit-box-align: center
-            -ms-flex-align: center
-            align-items: center
-            img
-              margin-right: 9px
-          form
-            padding: 0 7px
-          .col-md-2
-            margin-bottom: 16px
-            select
-              font-size: 12.5px
-              height: 43px
-              background-image: none
-              border-radius: 7px
 
-// .sed-cars
-//   position: absolute
-//   bottom: 0
-//   width: 100%
-// .foo
-//     width: 100%
-//     min-height: 700px
-//     background-color: #47494A
-//     margin: 0 auto
-//     position: relative
-
-// .foo2
-//     width: 100%
-//     height: 150px
-//     position: absolute
-//     top: 50%
-//     left: 50%
-//     transform: translate(-50%, -50%)
 
 //used cars
 
