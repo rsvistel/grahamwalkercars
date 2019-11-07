@@ -1502,7 +1502,7 @@ select::-ms-expand {
       display: flex;
       justify-content: space-between; }
   #used-cars.main-wrapper .car-tile {
-    max-width: 23.8%;
+    max-width: 24%;
     margin-left: 1%;
     margin-bottom: 1%; }
     #used-cars.main-wrapper .car-tile .car-title {
@@ -1539,10 +1539,31 @@ select::-ms-expand {
 .wrapper-title .container {
   padding: 0 10px; }
 
+#used-cars.main-wrapper .car-tile:nth-child(1) {
+  margin-left: 0.4%; }
+
+#used-cars.main-wrapper .car-tile:nth-child(4n-7) {
+  margin-left: 0.4%; }
+
 @media (min-width: 769px) and (max-width: 992px) {
   #used-cars.main-wrapper .car-tile {
-    max-width: 48%; } }
+    max-width: 48%; }
+
+  #used-cars.main-wrapper .car-tile:nth-child(1) {
+    margin-left: 1%; }
+
+  #used-cars.main-wrapper .car-tile:nth-child(4n-7) {
+    margin-left: 1%; }
+
+  #used-cars.main-wrapper .search-box .col-md-2 button img {
+    width: 22px; } }
 @media (max-width: 768px) {
+  #used-cars.main-wrapper .car-tile:nth-child(1) {
+    margin: 10px auto; }
+
+  #used-cars.main-wrapper .car-tile:nth-child(4n-7) {
+    margin: 10px auto; }
+
   #used-cars.main-wrapper {
     background-image: none; }
     #used-cars.main-wrapper .wrapper-title {
@@ -2843,6 +2864,10 @@ select::-ms-expand {
   color: #777777;
   font-size: 16px; }
 
+#textareaReserve::-webkit-input-placeholder {
+  color: #777777;
+  font-size: 16px; }
+
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber {
   border-top: 0;
   border-right: 0;
@@ -3028,6 +3053,11 @@ select::-ms-expand {
   .reserve-page__pay-value {
     display: flex;
     font-size: 8vw !important; } }
+.reserve-car-modal textarea {
+  height: 181px;
+  width: 100%;
+  color: #777777; }
+
 #feedback.reviews-page {
   background: #EEEEEE;
   padding: 2% 0.6%;
