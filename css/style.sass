@@ -2548,11 +2548,14 @@ select::-ms-expand
 .selling-form
   font-family: Roboto, sans-serif
   padding: 0
+  font-size: 20px
   .form-row
     margin-bottom: 2rem
   .form-control
     height: calc(2.2em + .75rem + 2px)
     padding-left: 1rem
+    font-size: 20px
+    color: #777
   .image-input-container
     input[type='file']
       width: 0.1px
@@ -2671,9 +2674,12 @@ select::-ms-expand
 .radio input:checked + .radio__text:after
   opacity: 1
 
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+  .selling-form
+    font-size: 17px
+    .form-control
+      font-size: 17px
 
-
-//@media only screen and (max-width: 577px)
 @media only screen and (max-width: 768px)
   .selling-title-container
     padding: 0 1rem
