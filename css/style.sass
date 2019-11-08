@@ -697,16 +697,14 @@ select::-ms-expand
     .car-image-wrap
       position: relative
       .car-image-gradient
-        position: absolute
-        top: 0
-        bottom: 0
-        right: 0
-        left: 0
-        background: url("/img/home/shadow.png")
-        background-repeat: no-repeat
-        background-repeat: no-repeat
-        background-size: 100%
-        background-position: center bottom
+        &:before
+          content: ''
+          position: absolute
+          width: 100%
+          height: 100%
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(4,4,4,0)), to(rgba(0,0,0,0.8)))
+          background: -o-linear-gradient(rgba(4,4,4,0), rgba(0,0,0,0.8))
+          background: linear-gradient(rgba(4,4,4,0), rgba(0,0,0,0.8))
     img
       width: 100%
     .car-like, .car-image-counter
@@ -1611,6 +1609,9 @@ select::-ms-expand
     .col-md-3, .col-md-2
       text-align: center
       padding: 0 1px
+      .first-select-used-cars
+        border-bottom-left-radius: 5px
+        border-top-left-radius: 5px
       select
         -webkit-appearance: none
         -moz-appearance: none
@@ -1630,6 +1631,8 @@ select::-ms-expand
         color: white
         font-family: Arial, sans-serif
         text-transform: uppercase
+        border-bottom-right-radius: 5px
+        border-top-right-radius: 5px
         img
           width: 25px
           position: relative
