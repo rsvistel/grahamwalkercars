@@ -1914,8 +1914,30 @@ select::-ms-expand
         width: 14%
         &:nth-child(-n+6)
           display: block
+    #carousel-example-multi
+      height: auto
+      .carousel-inner
+        width: 95%
+        margin: 0 auto
+      .carousel-control-prev
+        right: auto
+        left: 0
+        width: auto
+      .carousel-control-next
+        right: 0
+        left: auto
+        width: auto
+      .carousel-item
+        img
+          width: 13.775%
+          margin-right: 0.6%
+          margin-left: 0
+          margin-bottom: 0
+          &:first-child,&:last-child
+            margin: 0
   .carousel-inner
     flex: 0 0 80.2%
+    cursor: pointer
     #slideshow-counter
       position: absolute
       z-index: 10
@@ -1954,6 +1976,55 @@ select::-ms-expand
         border-bottom: 0
       &:nth-child(-n+4)
         display: block
+.vertical .carousel-inner
+  height: 100%
+
+.carousel.vertical .carousel-item
+  -webkit-transition: 0.6s ease-in-out top
+  -moz-transition: 0.6s ease-in-out top
+  -ms-transition: 0.6s ease-in-out top
+  -o-transition: 0.6s ease-in-out top
+  transition: 0.6s ease-in-out top
+
+.carousel.vertical .active
+  top: 0
+
+.carousel.vertical .next
+  top: 100%
+
+.carousel.vertical .prev
+  top: -100%
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right
+  top: 0
+
+.carousel.vertical .active.left
+  top: -100%
+
+.carousel.vertical .active.right
+  top: 100%
+
+.carousel.vertical .carousel-item
+  left: 0
+
+#carousel-example-multi
+  .carousel-control-next, .carousel-control-prev
+    bottom: auto
+    right: 0
+    left: 0
+    width: 100%
+  .carousel-control-prev
+    top: 0
+  .carousel-control-next
+    bottom: 0
+    top: auto
+  .carousel-inner
+    img
+      cursor: pointer
+      margin-left: 1.4%
+      margin-bottom: 1.4%
+
 #car-accordion
   display: flex
   z-index: 101
