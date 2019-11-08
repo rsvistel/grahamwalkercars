@@ -37,12 +37,18 @@ select::-ms-expand
   display: none
 .m-top-10
   margin-top: 10px
+
+.m-top-100
+  margin-top: 119px
 .red
   color: #BD1316
 //Header
 .header.topnav
-  background: #333
+  background: #222222
   color: #ffffff
+  position: fixed
+  width: 100%
+  z-index: 11111
 .upper-half-header
   padding: 0.5% 0 1% 0
   display: -webkit-box
@@ -132,6 +138,7 @@ select::-ms-expand
 .social-icon img
   pointer-events: none
   cursor: pointer
+  width: 70%
   // width: 40px
   // height: 40px
 .social-icon
@@ -233,6 +240,10 @@ select::-ms-expand
 
 .homepage .featured .title-featured
   text-align: center
+.homepage
+  .owl-carousel.owl-drag .owl-item
+    width: 254px!important
+    margin-right: 14.5px!important
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
     ul
@@ -247,6 +258,8 @@ select::-ms-expand
     display: none
   .navbar-expand-md .navbar-nav .nav-link
     padding: 0.95vw
+
+
 
 @media only screen and (max-width: 767px)
   .upper-half-header
@@ -401,8 +414,26 @@ select::-ms-expand
       border: none
       text-transform: uppercase
       span
-        font-size: 1rem
+        font-size: 0.8rem
+        font-family: Arial, sans-serif
         vertical-align: middle
+    .btn.shadow-none.accordion__button
+      background-color: #F7F7F9
+      color: #333
+      border-bottom: 1.5px solid #D1D3D4
+    .accordion__wrapper
+      margin-top: 0
+    .first-card .accordion__button
+      border-top: 1.5px solid #D1D3D4
+    //.card-year .shadow-none.accordion__button
+    //  border-bottom: 1.5px solid #D1D3D4
+    .accordion .card-search
+      border: 0!important
+      .accordion__button
+        border: 0
+    .accordion .card
+      border: 0!important
+
   // .overlay
   //   display: none
   //   top: 0
@@ -442,6 +473,14 @@ select::-ms-expand
     span
       color: #ffffff
       font-size: 9px
+
+@media (max-width: 768px)
+  .navbar-collapse.menu-search .navbar-toggler.mobile-search-btn .cross-img-mob
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    img
+      width: 60%
 //Header
 
 //Banner
@@ -974,6 +1013,10 @@ select::-ms-expand
     .title-address
       margin: 15px 0
       text-align: center
+    .img-fluid
+      width: 35%
+    .footer-facebook
+      width: 5%
 
 @media (max-width: 768px)
   #banner .top-img
@@ -2008,6 +2051,11 @@ select::-ms-expand
 
 .car-modal-close
   cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  img
+    width: 25%
 
 @media (min-width: 2000px)
   .modal-used-cars .modal-used-cars-container
@@ -2873,10 +2921,12 @@ select::-ms-expand
     margin-bottom: 3%
     font-size: 22px
     font-weight: 600
+  .feedback-body
+    line-height: 19px
   .title-feedback-body
-    //font-weight: 400
+    font-size: 15px
   .feedback-item
-    min-height: 200px
+    min-height: 230px
 
 #feedback
   order: 2
@@ -3199,7 +3249,7 @@ select::-ms-expand
     .row.modal-used-cars-blocks
       padding: 20px 14px 20px 7px
     .title-cross-block
-      padding: 0.5% 1% 1% 1%
+      padding: 1% 1% 1% 1%
     .first-title-modal
       margin: 35px 0 15px 0
       font-size: 17px
