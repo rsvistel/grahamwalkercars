@@ -740,12 +740,13 @@ select::-ms-expand {
       flex-direction: column;
       padding: 4% 0; }
       .car-tile .car-price .col-6:first-child {
-        border-left: 1px solid #fff;
+        border-right: 1.2px solid rgba(255, 255, 255, 0.5);
         font-weight: 600;
         font-family: Arial Rounded MT Bold, sans-serif;
         border-top-right-radius: 7px; }
       .car-tile .car-price .col-6:last-child {
-        border-right: 1px solid #fff;
+        border-right: 1.2px solid rgba(255, 255, 255, 0.5);
+        background-clip: padding-box;
         color: #D10609;
         font-weight: 600;
         font-family: Arial Rounded MT Bold, sans-serif;
@@ -756,7 +757,7 @@ select::-ms-expand {
           font-weight: 400;
           font-family: Arial, sans-serif; }
   .car-tile .car-desc {
-    padding: 4% 0 2% 0;
+    padding: 1% 0 2% 0;
     font-family: Arial, Helvetica, sans-serif; }
     .car-tile .car-desc .row {
       margin: 0; }
@@ -1127,27 +1128,40 @@ select::-ms-expand {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400; }
-  .shortlist h6 {
+  .shortlist .title-desc {
     margin-bottom: 5%;
     padding: 0 50% 0 0; }
-  .shortlist .owl-carousel.owl-drag .owl-item {
-    width: 270px !important;
-    margin-right: 15px !important; }
-  .shortlist #special-offers .owl-carousel {
+  .shortlist #special-offers {
     padding: 0;
     margin-bottom: 15%; }
-  .shortlist .car-tile .car-image .car-like img {
-    max-height: 29px;
-    margin: 2px 7px; }
+
+#used-cars.main-wrapper.short-list-items {
+  background: #47494A; }
 
 @media (max-width: 768px) {
-  .shortlist h6 {
-    display: none; }
+  .shortlist #special-offers-section {
+    background-color: white !important;
+    padding-bottom: 15%; }
+    .shortlist #special-offers-section #special-offers {
+      background-color: white !important;
+      margin-bottom: 0; }
+    .shortlist #special-offers-section .featured .title-featured {
+      background-color: white;
+      color: #000000;
+      font-size: 22px; }
+    .shortlist #special-offers-section .short-list-title {
+      padding: 10% 0 7% 0 !important; }
+    .shortlist #special-offers-section .title-desc {
+      color: #000000;
+      margin-bottom: 0;
+      line-height: 24px;
+      font-size: 20px;
+      padding: 10px 10px 30px 10px; }
 
-  .shortlist {
-    background-color: white; }
-    .shortlist .featured .title-featured, .shortlist h6 {
-      color: #000000; } }
+  #used-cars.main-wrapper.short-list-items {
+    background: white; }
+    #used-cars.main-wrapper.short-list-items .title-featured {
+      background: white; } }
 .about-title-section {
   background-color: #47494A; }
   .about-title-section .container {
@@ -2824,7 +2838,7 @@ select::-ms-expand {
   margin-top: 20px;
   margin-bottom: 15px !important; }
 .reserve-page__pay {
-  font-size: 22px;
+  font-size: 29px;
   display: inline-block;
   margin-bottom: 17px;
   margin-top: 17px; }
@@ -2860,10 +2874,12 @@ select::-ms-expand {
   width: 100%;
   border-radius: 5px;
   font-family: Arial, sans-serif; }
+  .reserve-page__button span {
+    display: none; }
 .reserve-page__stripe-wrapper {
   margin: 10px 0; }
 .reserve-page__details-description-third {
-  padding-bottom: 28px; }
+  padding-bottom: 42px; }
 .reserve-page__conditions {
   color: #777777;
   font-weight: bold;
@@ -2890,10 +2906,10 @@ select::-ms-expand {
   height: 20px; }
 
 .reserve-page__button-container {
-  margin-top: 1rem; }
+  margin-top: 1.3rem; }
 
 .reserve-page__checkbox-confirm {
-  margin: 0.5rem 0 0 0 !important;
+  margin: 0.5rem 0 10px 0 !important;
   color: #8C8C8C;
   line-height: 23px;
   font-size: 20px; }
@@ -2908,9 +2924,15 @@ select::-ms-expand {
   font-weight: bold; }
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber, #cc-number, #cc-expiration, #cc-cvv {
-  height: calc(1em + 1.53rem + 2px);
+  height: calc(1.2em + 1.53rem + 2px);
   border-radius: 0;
   box-shadow: none; }
+
+#cc-number, #cc-expiration, #cc-cvv {
+  height: calc(1.6em + 1.53rem + 2px); }
+
+#cc-number {
+  margin-bottom: 1.5rem; }
 
 #inputLastName::-webkit-input-placeholder {
   color: #777777;
@@ -2987,13 +3009,13 @@ select::-ms-expand {
   .modal-used-cars.reserve-car-modal .container .third-title-modal {
     font-size: 17px; }
   .modal-used-cars.reserve-car-modal .container .form-group {
-    margin: 0;
-    margin-bottom: 10px; }
+    margin: 0; }
     .modal-used-cars.reserve-car-modal .container .form-group input[type="text"] {
       margin: 0 0 1rem 0; }
   .modal-used-cars.reserve-car-modal .container label {
     color: #8C8C8C;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0.8rem; }
   .modal-used-cars.reserve-car-modal .container .img-block {
     padding-left: 1.8rem;
     line-height: 23px; }
@@ -3004,8 +3026,15 @@ select::-ms-expand {
     line-height: 23px; }
   .modal-used-cars.reserve-car-modal .container .block-ul-modal {
     padding-right: 1.6rem;
+    padding-left: 0.8rem;
     font-family: "Roboto", sans-serif;
     font-size: 20px; }
+
+.modal-used-cars.reserve-car-modal .custom-control-label::before, .modal-used-cars.reserve-car-modal .custom-control-label::after {
+  top: 0.8rem;
+  left: -1.9rem;
+  width: 1.56rem;
+  height: 1.56rem; }
 
 @media only screen and (max-width: 991px) {
   .reserve-page__card-name {
@@ -3014,7 +3043,7 @@ select::-ms-expand {
     font-weight: bold; }
 
   .form-group-mobile {
-    margin-bottom: 2rem; }
+    margin-bottom: 10px; }
 
   .form-group-mobile-last {
     margin-bottom: 0rem; }
@@ -3049,9 +3078,13 @@ select::-ms-expand {
     overflow: scroll;
     height: 100vh; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal {
-      padding: 1rem 2rem !important; }
+      padding: 0; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block {
       text-align: center; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal {
+      padding-top: 20px; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block {
+      padding-top: 20px; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .title-cross-block {
       display: none; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .title-cross-block {
@@ -3063,6 +3096,11 @@ select::-ms-expand {
       font-size: 24px; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal {
       font-size: 16px; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .row.modal-used-cars-blocks {
+      padding: 1rem 2.2rem; }
+
+  .reserve-page-padding {
+    padding: 8px; }
 
   .reserve-page__title-block {
     align-items: flex-start;
@@ -3088,6 +3126,7 @@ select::-ms-expand {
   .reserve-page__card {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     text-align: left; }
   .reserve-page__card-title {
     padding-left: 10px; }
@@ -3101,35 +3140,42 @@ select::-ms-expand {
     background: #00509F;
     font-size: 20px;
     height: 60px;
-    width: 84%;
+    width: 100%;
     border-radius: 0;
     font-weight: 300; }
+    .reserve-page__button span {
+      display: inline; }
   .reserve-page__conditions {
     font-size: 20px; }
   .reserve-page__summary {
     display: none; }
   .reserve-page__summary-mobile {
     display: flex;
-    font-size: 4vw;
+    font-size: 25px;
     font-weight: bold;
     font-family: Arial Rounded MT, sans-serif; }
   .reserve-page__summary-vehicle {
-    font-size: 3vw;
+    font-size: 20px;
     font-weight: 500;
     padding-top: 2%; }
   .reserve-page__summary-title {
-    padding-top: 2%; } }
+    padding-top: 2%; }
+  .reserve-page__pay-value {
+    padding-top: 10%; } }
 @media only screen and (max-width: 768px) {
   .modal-used-cars.reserve-car-modal .modal-used-cars-container .first-title-modal {
-    font-size: 5vw; }
+    font-size: 19px; }
   .modal-used-cars.reserve-car-modal .modal-used-cars-container .second-title-modal {
-    font-size: 5vw; }
+    font-size: 18px; }
   .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal {
-    font-size: 3vw; }
+    font-size: 16px; }
 
   .reserve-page__pay-value {
     display: flex;
-    font-size: 8vw !important; } }
+    font-size: 30px !important; } }
+@media only screen and (max-width: 320px) {
+  .reserve-page__pay-value {
+    padding-top: 1%; } }
 .reserve-car-modal textarea {
   height: 181px;
   width: 100%;
