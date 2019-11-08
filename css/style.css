@@ -34,12 +34,18 @@ select::-ms-expand {
 .m-top-10 {
   margin-top: 10px; }
 
+.m-top-100 {
+  margin-top: 119px; }
+
 .red {
   color: #BD1316; }
 
 .header.topnav {
-  background: #333;
-  color: #ffffff; }
+  background: #222222;
+  color: #ffffff;
+  position: fixed;
+  z-index: 10100;
+  width: 100%; }
 
 .upper-half-header {
   padding: 0.5% 0 1% 0;
@@ -139,7 +145,8 @@ select::-ms-expand {
 
 .social-icon img {
   pointer-events: none;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 70%; }
 
 .social-icon {
   display: -webkit-box;
@@ -240,6 +247,10 @@ select::-ms-expand {
 
 .homepage .featured .title-featured {
   text-align: center; }
+
+.homepage .owl-carousel.owl-drag .owl-item {
+  margin-right: 15px !important;
+  width: 254px !important; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar ul li .nav-link {
@@ -938,6 +949,10 @@ select::-ms-expand {
     .footer .container .title-address {
       margin: 15px 0;
       text-align: center; }
+    .footer .container .facebook-footer {
+      width: 5%; }
+    .footer .container .img-fluid {
+      width: 35%; }
 
 @media (max-width: 768px) {
   #banner .top-img {
@@ -1127,9 +1142,9 @@ select::-ms-expand {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400; }
-  .shortlist h6 {
+  .shortlist .about-title-section h6 {
     margin-bottom: 5%;
-    padding: 0 50% 0 0; }
+    padding: 0 45% 0 0; }
   .shortlist .owl-carousel.owl-drag .owl-item {
     width: 270px !important;
     margin-right: 15px !important; }
@@ -1864,7 +1879,12 @@ select::-ms-expand {
   font-size: 16px; }
 
 .car-modal-close {
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .car-modal-close img {
+    width: 25%; }
 
 @media (min-width: 2000px) {
   .modal-used-cars .modal-used-cars-container {
@@ -2680,8 +2700,6 @@ select::-ms-expand {
   margin-bottom: 3%;
   font-size: 22px;
   font-weight: 600; }
-#feedback.feedback-home .feedback-item {
-  min-height: 200px; }
 
 #feedback {
   order: 2;
@@ -2690,6 +2708,8 @@ select::-ms-expand {
   background-repeat: no-repeat;
   padding: 2% 0 0 0;
   text-align: center; }
+  #feedback .title-feedback-body {
+    font-size: 15px; }
   #feedback h3.feedback-rating, #feedback h4.feedback-title {
     text-transform: uppercase;
     margin-bottom: 2%; }
@@ -2699,6 +2719,7 @@ select::-ms-expand {
     padding: 15px 15px 25px 15px;
     position: relative;
     width: 100%;
+    min-height: 258px;
     margin-bottom: 1rem; }
     #feedback .feedback-item .feedback-title h3 {
       font-family: Arial, sans-serif;
