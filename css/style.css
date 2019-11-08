@@ -248,7 +248,7 @@ select::-ms-expand {
 .homepage .featured .title-featured {
   text-align: center; }
 
-.homepage .owl-carousel.owl-drag .owl-item {
+.homepage #special-offers-section .owl-carousel.owl-drag .owl-item {
   width: 254px !important;
   margin-right: 14.5px !important; }
 
