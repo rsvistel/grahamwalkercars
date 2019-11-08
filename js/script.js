@@ -189,9 +189,15 @@ $(document).ready(function () {
         });
         $('#thumb-inner').click(function () {
             $('#carousel-example-multi').removeClass('vertical').css('height', 'auto');
-            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail').addClass('fullscreen');
+            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close').addClass('fullscreen');
             $('body').append('<div class="overlay"></div>');
         });
+
+        $('.carousel-close').click(function () {
+            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close').removeClass('fullscreen');
+            $('.overlay').remove();
+        });
+
     }
     $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
         var next = $(this).next();

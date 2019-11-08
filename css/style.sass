@@ -3495,7 +3495,10 @@ select::-ms-expand
       padding: 17px 45px
   //reviews-page
 
-//Car Detail
+.no-gatters-all
+  padding: 0
+  margin: 0
+
 .car-page
   .overlay
     position: absolute
@@ -3523,10 +3526,10 @@ select::-ms-expand
 #carousel-thumb
   display: flex
   z-index: 101
-  width: 75%
+  width: 100%
   &.fullscreen
     display: block
-    width: 70%
+    width: 100%
     .carousel-control-prev
       left: 0
       right: auto
@@ -3607,6 +3610,14 @@ select::-ms-expand
         display: block
 .vertical .carousel-inner
   height: 100%
+.carousel-close
+  display: none
+  &.fullscreen
+    display: flex
+    background: url("/img/car-detail/close.png")
+    width: 28px
+    background-repeat: no-repeat
+    cursor: pointer
 
 .carousel.vertical .carousel-item
   -webkit-transition: 0.6s ease-in-out top
@@ -3658,13 +3669,11 @@ select::-ms-expand
   display: flex
   z-index: 101
   display: block
-  width: 20%
-  // position: absolute
-  // top: 10%
-  // right: 5%
+  width: 100%
   position: absolute
-  right: 0
-  top: 0
+  overflow: hidden
+  // right: 0
+  // top: 0
 .car-page-container
   position: relative
 
@@ -3673,33 +3682,44 @@ select::-ms-expand
     display: none
 
 .detailse-used-car__title
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -ms-flex-direction: column
-    flex-direction: column
-    padding-left: 0
-    padding-right: 0
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+      padding-left: 0
+      padding-right: 0
 
 .detailse-used-car__value
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
 
 .detailse-used-car__data
-    font-size: 18px
-    font-weight: bold
-    text-align: right
+      font-size: 18px
+      font-weight: bold
+      text-align: right
 
 .detailse-used-car__name
-    font-size: 18px
-    text-align: left
-//Car Detail
+      font-size: 18px
+      text-align: left
+
+#feedback.reviews-page.car-detail-feedback
+  background: #EEEEEE
+  padding: 2% 0.6%
+  -webkit-column-count: 1
+  -moz-column-count: 1
+  column-count: 1
+  -webkit-column-gap: 3px
+  -moz-column-gap: 3px
+  column-gap: 3px
+  width: 100vw
+
