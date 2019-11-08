@@ -125,13 +125,13 @@ $(document).ready(function () {
             $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
         });
     }
-    $(".car-like").click(function (e) {
+    $(".saved-click").click(function (e) {
         $(this).toggleClass('liked');
         if ($(this).hasClass('liked')) {
-            $(this).find('img').attr('src', 'img/heart-red.png')
+            $(this).find('img').attr('src', 'img/heart-red.svg')
             e.preventDefault();
         } else {
-            $(this).find('img').attr('src', 'img/home/heart.png')
+            $(this).find('img').attr('src', 'img/home/heart.svg')
             e.preventDefault();
         }
     });
