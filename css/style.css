@@ -2824,7 +2824,7 @@ select::-ms-expand {
   margin-top: 20px;
   margin-bottom: 15px !important; }
 .reserve-page__pay {
-  font-size: 22px;
+  font-size: 29px;
   display: inline-block;
   margin-bottom: 17px;
   margin-top: 17px; }
@@ -2860,10 +2860,12 @@ select::-ms-expand {
   width: 100%;
   border-radius: 5px;
   font-family: Arial, sans-serif; }
+  .reserve-page__button span {
+    display: none; }
 .reserve-page__stripe-wrapper {
   margin: 10px 0; }
 .reserve-page__details-description-third {
-  padding-bottom: 28px; }
+  padding-bottom: 42px; }
 .reserve-page__conditions {
   color: #777777;
   font-weight: bold;
@@ -2890,10 +2892,10 @@ select::-ms-expand {
   height: 20px; }
 
 .reserve-page__button-container {
-  margin-top: 1rem; }
+  margin-top: 1.3rem; }
 
 .reserve-page__checkbox-confirm {
-  margin: 0.5rem 0 0 0 !important;
+  margin: 0.5rem 0 10px 0 !important;
   color: #8C8C8C;
   line-height: 23px;
   font-size: 20px; }
@@ -2908,9 +2910,15 @@ select::-ms-expand {
   font-weight: bold; }
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber, #cc-number, #cc-expiration, #cc-cvv {
-  height: calc(1em + 1.53rem + 2px);
+  height: calc(1.2em + 1.53rem + 2px);
   border-radius: 0;
   box-shadow: none; }
+
+#cc-number, #cc-expiration, #cc-cvv {
+  height: calc(1.6em + 1.53rem + 2px); }
+
+#cc-number {
+  margin-bottom: 1.5rem; }
 
 #inputLastName::-webkit-input-placeholder {
   color: #777777;
@@ -2987,13 +2995,13 @@ select::-ms-expand {
   .modal-used-cars.reserve-car-modal .container .third-title-modal {
     font-size: 17px; }
   .modal-used-cars.reserve-car-modal .container .form-group {
-    margin: 0;
-    margin-bottom: 10px; }
+    margin: 0; }
     .modal-used-cars.reserve-car-modal .container .form-group input[type="text"] {
       margin: 0 0 1rem 0; }
   .modal-used-cars.reserve-car-modal .container label {
     color: #8C8C8C;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0.8rem; }
   .modal-used-cars.reserve-car-modal .container .img-block {
     padding-left: 1.8rem;
     line-height: 23px; }
@@ -3004,8 +3012,15 @@ select::-ms-expand {
     line-height: 23px; }
   .modal-used-cars.reserve-car-modal .container .block-ul-modal {
     padding-right: 1.6rem;
+    padding-left: 0.8rem;
     font-family: "Roboto", sans-serif;
     font-size: 20px; }
+
+.modal-used-cars.reserve-car-modal .custom-control-label::before, .modal-used-cars.reserve-car-modal .custom-control-label::after {
+  top: 0.8rem;
+  left: -1.9rem;
+  width: 1.56rem;
+  height: 1.56rem; }
 
 @media only screen and (max-width: 991px) {
   .reserve-page__card-name {
@@ -3014,7 +3029,7 @@ select::-ms-expand {
     font-weight: bold; }
 
   .form-group-mobile {
-    margin-bottom: 2rem; }
+    margin-bottom: 10px; }
 
   .form-group-mobile-last {
     margin-bottom: 0rem; }
@@ -3049,7 +3064,7 @@ select::-ms-expand {
     overflow: scroll;
     height: 100vh; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal {
-      padding: 1rem 2rem !important; }
+      padding: 0; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block {
       text-align: center; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .title-cross-block {
@@ -3063,6 +3078,8 @@ select::-ms-expand {
       font-size: 24px; }
     .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal {
       font-size: 16px; }
+    .modal-used-cars.reserve-car-modal .modal-used-cars-container .row.modal-used-cars-blocks {
+      padding: 1rem 2.2rem; }
 
   .reserve-page__title-block {
     align-items: flex-start;
@@ -3101,9 +3118,11 @@ select::-ms-expand {
     background: #00509F;
     font-size: 20px;
     height: 60px;
-    width: 84%;
+    width: 100%;
     border-radius: 0;
     font-weight: 300; }
+    .reserve-page__button span {
+      display: inline; }
   .reserve-page__conditions {
     font-size: 20px; }
   .reserve-page__summary {
