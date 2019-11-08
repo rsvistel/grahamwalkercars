@@ -1858,7 +1858,8 @@ select::-ms-expand
   position: fixed
   top: 0
   z-index: 101
-  background-color: #f8f8fa
+  background-color: rgba(0,0,0,0.6)
+  //background-color: #f8f8fa
   //background: rgba(0, 0, 0, 0.7)
   //background: white
   display: block
@@ -1877,9 +1878,9 @@ select::-ms-expand
     background: white
     margin-top: 4%
     padding: 0
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    -moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //-webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //-moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
     .block-ul-modal
       color: #171717
     .title-cross-block
@@ -3011,7 +3012,7 @@ select::-ms-expand
         margin-top: 20px
         margin-bottom: 15px!important
   &__pay
-        font-size: 22px
+        font-size: 24px
         display: inline-block
         margin-bottom: 17px
         margin-top: 17px
@@ -3149,7 +3150,7 @@ select::-ms-expand
 
 #cc-number, #cc-expiration, #cc-cvv
   border: 1px solid #808080
-  color: #8C8C8C
+  color: #777
 
 .reserve-page-margin-padding
   margin: 0
@@ -3177,7 +3178,7 @@ select::-ms-expand
     .second-title-modal
       font-size: 21px
     .third-title-modal
-      font-size: 17px
+      display: none
     .form-group
       margin: 0
       margin-bottom: 10px
@@ -3205,7 +3206,9 @@ select::-ms-expand
     font-family: $secondary-font
     font-weight: bold
   .form-group-mobile
-    margin-bottom: 2rem
+    margin-bottom: 0.7rem
+  .modal-used-cars.reserve-car-modal .container .form-group input[type="text"], .modal-used-cars.reserve-car-modal .container .form-group
+    margin-bottom: 0
   .form-group-mobile-last
     margin-bottom: 0rem
   .form-group-first
@@ -3238,10 +3241,6 @@ select::-ms-expand
       .img-block
 
         text-align: center
-      .hire-block
-
-      .block-ul-modal
-
       .title-cross-block
         display: none
       .title-cross-block
@@ -3408,6 +3407,9 @@ select::-ms-expand
     column-count: 2
     width: 100vw
 
+  .modal-used-cars.reserve-car-modal .row.modal-used-cars-blocks .col-sm-6.col-md-6.mb-3
+    width: 50%
+
 @media only screen and (max-width: 768px)
   #feedback.reviews-page
     -webkit-column-count: 1
@@ -3425,5 +3427,16 @@ select::-ms-expand
     margin-top: 10%
     button
       padding: 17px 45px
+  .modal-used-cars.reserve-car-modal .container .third-title-modal
+    display: block
+
+@media only screen and (max-width: 450px)
+  .reserve-page__summary-vehicle, .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal
+    font-size: 4vw
+
+  .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal
+    padding: 1rem 1.2rem!important
+
+
   //reviews-page
 
