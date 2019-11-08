@@ -1139,13 +1139,22 @@ select::-ms-expand {
   background: #47494A; }
 
 @media (max-width: 768px) {
-  .shortlist h6 {
-    display: none; }
-
   .shortlist {
     background-color: white; }
-    .shortlist .featured .title-featured, .shortlist h6 {
-      color: #000000; } }
+    .shortlist #special-offers.featured .title-featured {
+      background-color: white;
+      color: #000000; }
+    .shortlist .short-list-title {
+      padding: 6% 0 7% 0 !important; }
+    .shortlist .title-desc {
+      color: #000000;
+      margin-bottom: 0;
+      padding: 10px; }
+
+  #used-cars.main-wrapper.short-list-items {
+    background: white; }
+    #used-cars.main-wrapper.short-list-items .title-featured {
+      background: white; } }
 .about-title-section {
   background-color: #47494A; }
   .about-title-section .container {
