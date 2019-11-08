@@ -1140,16 +1140,23 @@ select::-ms-expand {
 
 @media (max-width: 768px) {
   .shortlist #special-offers-section {
-    background-color: white !important; }
-    .shortlist #special-offers-section #special-offers.featured .title-featured {
+    background-color: white !important;
+    padding-bottom: 15%; }
+    .shortlist #special-offers-section #special-offers {
+      background-color: white !important;
+      margin-bottom: 0; }
+    .shortlist #special-offers-section .featured .title-featured {
       background-color: white;
-      color: #000000; }
+      color: #000000;
+      font-size: 22px; }
     .shortlist #special-offers-section .short-list-title {
-      padding: 6% 0 7% 0 !important; }
+      padding: 10% 0 7% 0 !important; }
     .shortlist #special-offers-section .title-desc {
       color: #000000;
       margin-bottom: 0;
-      padding: 10px; }
+      line-height: 24px;
+      font-size: 20px;
+      padding: 10px 10px 30px 10px; }
 
   #used-cars.main-wrapper.short-list-items {
     background: white; }

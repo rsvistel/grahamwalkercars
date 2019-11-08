@@ -125,14 +125,14 @@ $(document).ready(function () {
             $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
         });
     }
-    $(".saved-click").click(function (e) {
+    $(".car-like").click(function (e) {
         $(this).toggleClass('liked');
         if ($(this).hasClass('liked')) {
             $(this).find('img').attr('src', 'img/heart-red.svg')
-            e.preventDefault();
+            //e.preventDefault();
         } else {
             $(this).find('img').attr('src', 'img/home/heart.svg')
-            e.preventDefault();
+            //e.preventDefault();
         }
     });
 
