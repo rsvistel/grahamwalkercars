@@ -27,7 +27,6 @@ body
   margin: 0
   min-height: 100vh
   font-family: $primary-font
-  width: 1115px
   margin: 0 auto
 
 object, embed
@@ -1894,10 +1893,10 @@ select::-ms-expand
 #carousel-thumb
   display: flex
   z-index: 101
-  width: 75%
+  width: 100%
   &.fullscreen
     display: block
-    width: 70%
+    width: 100%
     .carousel-control-prev
       left: 0
       right: auto
@@ -2029,13 +2028,11 @@ select::-ms-expand
   display: flex
   z-index: 101
   display: block
-  width: 20%
-  // position: absolute
-  // top: 10%
-  // right: 5%
+  width: 100%
   position: absolute
-  right: 0
-  top: 0
+  overflow: hidden
+  // right: 0
+  // top: 0
 .car-page-container
   position: relative
 
