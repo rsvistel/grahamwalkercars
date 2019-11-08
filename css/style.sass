@@ -761,12 +761,15 @@ select::-ms-expand
       flex-direction: column
       padding: 4% 0
       &:first-child
-        border-left: 1px solid #fff
+        border-color:transparent
+        border-right: 1.2px solid rgba(255, 255, 255, .5)
         font-weight: 600
         font-family: Arial Rounded MT Bold, sans-serif
         border-top-right-radius: 7px
       &:last-child
-        border-right: 1px solid #fff
+        border-color:transparent
+        border-right: 1.2px solid rgba(255, 255, 255, .5)
+        background-clip: padding-box
         color: #D10609
         font-weight: 600
         font-family: Arial Rounded MT Bold, sans-serif
@@ -1169,18 +1172,22 @@ select::-ms-expand
     color: white
     font-family: $primary-font
     font-weight: 400
-  h6
+  .title-desc
     margin-bottom: 5%
     padding: 0 50% 0 0
-  .owl-carousel.owl-drag .owl-item
-    width: 270px!important
-    margin-right: 15px!important
-  #special-offers .owl-carousel
+  // .owl-carousel.owl-drag .owl-item
+  //   width: 270px!important
+  //   margin-right: 15px!important
+  #special-offers
     padding: 0
     margin-bottom: 15%
-  .car-tile .car-image .car-like img
-    max-height: 29px
-    margin: 2px 7px
+  // .car-tile .car-image .car-like img
+  //   max-height: 29px
+  //   margin: 2px 7px
+
+#used-cars.main-wrapper.short-list-items
+  background: #47494A
+
 
 @media (max-width: 768px)
   .shortlist h6

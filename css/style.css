@@ -740,12 +740,13 @@ select::-ms-expand {
       flex-direction: column;
       padding: 4% 0; }
       .car-tile .car-price .col-6:first-child {
-        border-left: 1px solid #fff;
+        border-right: 1.2px solid rgba(255, 255, 255, 0.5);
         font-weight: 600;
         font-family: Arial Rounded MT Bold, sans-serif;
         border-top-right-radius: 7px; }
       .car-tile .car-price .col-6:last-child {
-        border-right: 1px solid #fff;
+        border-right: 1.2px solid rgba(255, 255, 255, 0.5);
+        background-clip: padding-box;
         color: #D10609;
         font-weight: 600;
         font-family: Arial Rounded MT Bold, sans-serif;
@@ -1127,18 +1128,15 @@ select::-ms-expand {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400; }
-  .shortlist h6 {
+  .shortlist .title-desc {
     margin-bottom: 5%;
     padding: 0 50% 0 0; }
-  .shortlist .owl-carousel.owl-drag .owl-item {
-    width: 270px !important;
-    margin-right: 15px !important; }
-  .shortlist #special-offers .owl-carousel {
+  .shortlist #special-offers {
     padding: 0;
     margin-bottom: 15%; }
-  .shortlist .car-tile .car-image .car-like img {
-    max-height: 29px;
-    margin: 2px 7px; }
+
+#used-cars.main-wrapper.short-list-items {
+  background: #47494A; }
 
 @media (max-width: 768px) {
   .shortlist h6 {
