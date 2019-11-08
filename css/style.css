@@ -3112,6 +3112,7 @@ select::-ms-expand {
   .reserve-page__card {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     text-align: left; }
   .reserve-page__card-title {
     padding-left: 10px; }
@@ -3136,11 +3137,11 @@ select::-ms-expand {
     display: none; }
   .reserve-page__summary-mobile {
     display: flex;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     font-family: Arial Rounded MT, sans-serif; }
   .reserve-page__summary-vehicle {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
     padding-top: 2%; }
   .reserve-page__summary-title {
