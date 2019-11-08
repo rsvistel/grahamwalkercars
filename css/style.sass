@@ -37,17 +37,12 @@ select::-ms-expand
   display: none
 .m-top-10
   margin-top: 10px
-.m-top-100
-  margin-top: 119px
 .red
   color: #BD1316
 //Header
 .header.topnav
-  background: #222222
+  background: #333
   color: #ffffff
-  position: fixed
-  z-index: 10100
-  width: 100%
 .upper-half-header
   padding: 0.5% 0 1% 0
   display: -webkit-box
@@ -137,7 +132,6 @@ select::-ms-expand
 .social-icon img
   pointer-events: none
   cursor: pointer
-  width: 70%
   // width: 40px
   // height: 40px
 .social-icon
@@ -239,11 +233,6 @@ select::-ms-expand
 
 .homepage .featured .title-featured
   text-align: center
-
-.homepage
-  .owl-carousel.owl-drag .owl-item
-    margin-right: 15px!important
-    width: 254px!important
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
     ul
@@ -985,10 +974,6 @@ select::-ms-expand
     .title-address
       margin: 15px 0
       text-align: center
-    .facebook-footer
-      width: 5%
-    .img-fluid
-      width: 35%
 
 @media (max-width: 768px)
   #banner .top-img
@@ -1166,7 +1151,7 @@ select::-ms-expand
   #banner .advanced-text
     margin-top: 15px
 
-  //.apply
+  .apply
     //min-height: 73vh
 
 @media (min-width: 320px) and (max-width: 600px)
@@ -1185,13 +1170,6 @@ select::-ms-expand
     color: white
     font-family: $primary-font
     font-weight: 400
-  .about-title-section h6
-    margin-bottom: 5%
-    padding: 0 45% 0 0
-  .owl-carousel.owl-drag .owl-item
-    width: 270px!important
-    margin-right: 15px!important
-  #special-offers .owl-carousel
   .title-desc
     margin-bottom: 5%
     padding: 0 50% 0 0
@@ -1901,8 +1879,7 @@ select::-ms-expand
   position: fixed
   top: 0
   z-index: 101
-  background-color: rgba(0,0,0,0.6)
-  //background-color: #f8f8fa
+  background-color: #f8f8fa
   //background: rgba(0, 0, 0, 0.7)
   //background: white
   display: block
@@ -1921,9 +1898,9 @@ select::-ms-expand
     background: white
     margin-top: 4%
     padding: 0
-    //-webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    //-moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    //box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    -moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
     .block-ul-modal
       color: #171717
     .title-cross-block
@@ -2031,12 +2008,6 @@ select::-ms-expand
 
 .car-modal-close
   cursor: pointer
-  display: flex
-  align-items: center
-  justify-content: flex-end
-  img
-    width: 25%
-
 
 @media (min-width: 2000px)
   .modal-used-cars .modal-used-cars-container
@@ -2902,6 +2873,11 @@ select::-ms-expand
     margin-bottom: 3%
     font-size: 22px
     font-weight: 600
+  .title-feedback-body
+    //font-weight: 400
+  .feedback-item
+    min-height: 200px
+
 #feedback
   order: 2
   background: #EEEEEE
@@ -2909,8 +2885,6 @@ select::-ms-expand
   background-repeat: no-repeat
   padding: 2% 0 0 0
   text-align: center
-  .title-feedback-body
-    font-size: 15px
   h3.feedback-rating, h4.feedback-title
     text-transform: uppercase
     margin-bottom: 2%
@@ -2920,7 +2894,7 @@ select::-ms-expand
       padding: 15px 15px 25px 15px
       position: relative
       width: 100%
-      min-height: 258px
+      // min-height: 230px
       // max-height: 230px
       margin-bottom: 1rem
       .feedback-title h3
@@ -2946,7 +2920,6 @@ select::-ms-expand
           font-size: 22px
       .feedback-author
         margin-top: 15px
-
 
   .button-feedback
     color: white
@@ -3059,7 +3032,7 @@ select::-ms-expand
         margin-top: 20px
         margin-bottom: 15px!important
   &__pay
-        font-size: 24px
+        font-size: 29px
         display: inline-block
         margin-bottom: 17px
         margin-top: 17px
@@ -3205,7 +3178,7 @@ select::-ms-expand
 
 #cc-number, #cc-expiration, #cc-cvv
   border: 1px solid #808080
-  color: #777
+  color: #8C8C8C
 
 .reserve-page-margin-padding
   margin: 0
@@ -3233,7 +3206,7 @@ select::-ms-expand
     .second-title-modal
       font-size: 21px
     .third-title-modal
-      display: none
+      font-size: 17px
     .form-group
       margin: 0
       //margin-bottom: 10px
@@ -3273,9 +3246,7 @@ select::-ms-expand
     font-family: $secondary-font
     font-weight: bold
   .form-group-mobile
-    margin-bottom: 0.7rem
-  .modal-used-cars.reserve-car-modal .container .form-group input[type="text"], .modal-used-cars.reserve-car-modal .container .form-group
-    margin-bottom: 0
+    margin-bottom: 10px
   .form-group-mobile-last
     margin-bottom: 0rem
   .form-group-first
@@ -3505,9 +3476,6 @@ select::-ms-expand
     column-count: 2
     width: 100vw
 
-  .modal-used-cars.reserve-car-modal .row.modal-used-cars-blocks .col-sm-6.col-md-6.mb-3
-    width: 50%
-
 @media only screen and (max-width: 768px)
   #feedback.reviews-page
     -webkit-column-count: 1
@@ -3525,16 +3493,5 @@ select::-ms-expand
     margin-top: 10%
     button
       padding: 17px 45px
-  .modal-used-cars.reserve-car-modal .container .third-title-modal
-    display: block
-
-@media only screen and (max-width: 450px)
-  .reserve-page__summary-vehicle, .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal
-    font-size: 4vw
-
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .hire-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .img-block, .modal-used-cars.reserve-car-modal .modal-used-cars-container .block-ul-modal
-    padding: 1rem 1.2rem!important
-
-
   //reviews-page
 
