@@ -27,6 +27,7 @@ body
   margin: 0
   min-height: 100vh
   font-family: $primary-font
+  
 object, embed
   pointer-events: none
 
@@ -2176,6 +2177,214 @@ select::-ms-expand
     padding: 4% 0 3% 0
     .block-workshop-section
       margin-top: 40px
+
+
+//Car Detail
+.car-page
+  .overlay
+    position: absolute
+    background: black
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: 1
+#car-title
+  display: flex
+  justify-content: space-between
+  div.price-block
+    display: flex
+    div:first-child
+      order: 1
+  &.fullscreen
+    color: #fff
+    z-index: 1001
+    position: absolute
+    width: 100%
+    left: 0
+    .price-block
+      display: block
+#carousel-thumb
+  display: flex
+  z-index: 101
+  width: 100%
+  &.fullscreen
+    display: block
+    width: 100%
+    .carousel-control-prev
+      left: 0
+      right: auto
+      bottom: 0
+      transform: rotate(-90deg)
+    .carousel-control-next
+      top: 0
+      transform: rotate(-90deg)
+    .carousel-indicators
+      position: relative
+      flex-direction: row
+      li
+        margin: 0
+        width: 14%
+        &:nth-child(-n+6)
+          display: block
+    #carousel-example-multi
+      height: auto
+      .carousel-inner
+        width: 95%
+        margin: 0 auto
+      .carousel-control-prev
+        right: auto
+        left: 0
+        width: auto
+      .carousel-control-next
+        right: 0
+        left: auto
+        width: auto
+      .carousel-item
+        img
+          width: 13.775%
+          margin-right: 0.6%
+          margin-left: 0
+          margin-bottom: 0
+          &:first-child,&:last-child
+            margin: 0
+  .carousel-inner
+    flex: 0 0 80.2%
+    cursor: pointer
+    #slideshow-counter
+      position: absolute
+      z-index: 10
+      bottom: 0
+      color: #fff
+  .carousel-control-next, .carousel-control-prev
+    bottom: auto
+    z-index: 101
+    width: 19.7%
+  .carousel-control-prev
+    right: 0
+    left: auto
+    top: 0
+  .carousel-control-next
+    right: 0
+    bottom: 0
+    top: auto
+  .carousel-indicators
+    position: static
+    flex-direction: column
+    flex: 0 0 19.7%
+    margin: 0
+    justify-content: space-between
+    li
+      width: auto
+      height: auto
+      text-indent: 0
+      margin-right: 0
+      margin-left: 4.5%
+      border: 0
+      display: none
+      opacity: 1
+      &:first-child
+        border-top: 0
+      &:last-child
+        border-bottom: 0
+      &:nth-child(-n+4)
+        display: block
+.vertical .carousel-inner
+  height: 100%
+
+.carousel.vertical .carousel-item
+  -webkit-transition: 0.6s ease-in-out top
+  -moz-transition: 0.6s ease-in-out top
+  -ms-transition: 0.6s ease-in-out top
+  -o-transition: 0.6s ease-in-out top
+  transition: 0.6s ease-in-out top
+
+.carousel.vertical .active
+  top: 0
+
+.carousel.vertical .next
+  top: 100%
+
+.carousel.vertical .prev
+  top: -100%
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right
+  top: 0
+
+.carousel.vertical .active.left
+  top: -100%
+
+.carousel.vertical .active.right
+  top: 100%
+
+.carousel.vertical .carousel-item
+  left: 0
+
+#carousel-example-multi
+  .carousel-control-next, .carousel-control-prev
+    bottom: auto
+    right: 0
+    left: 0
+    width: 100%
+  .carousel-control-prev
+    top: 0
+  .carousel-control-next
+    bottom: 0
+    top: auto
+  .carousel-inner
+    img
+      cursor: pointer
+      margin-left: 1.4%
+      margin-bottom: 1.4%
+
+#car-accordion
+  display: flex
+  z-index: 101
+  display: block
+  width: 100%
+  position: absolute
+  overflow: hidden
+  // right: 0
+  // top: 0
+.car-page-container
+  position: relative
+
+#car-detail-value, #reviews-car-detail, #description-car-detail
+  &.fullscreen
+    display: none
+
+.detailse-used-car__title
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+      padding-left: 0
+      padding-right: 0
+
+.detailse-used-car__value
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+
+.detailse-used-car__data
+      font-size: 18px
+      font-weight: bold
+      text-align: right
+
+.detailse-used-car__name
+      font-size: 18px
+      text-align: left
+//Car Detail
 
 .from
   font-family: $primary-font
