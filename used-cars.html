@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
+    <title>Used cars</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
@@ -256,17 +256,17 @@
 
                         <div class="navbar-collapse collapse darck-btn-reserve">
                             <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                            <li>Reserve</li>
+                                <li>Reserve</li>
                             </ul>
                         </div>
                         <div class="navbar-collapse collapse darck-btn-favourites">
-                                <ul class="navbar-nav ml-auto py-md-0  darck-btn">
+                            <ul class="navbar-nav ml-auto py-md-0  darck-btn">
                                 <li>Favourites</li>
-                                </ul>
+                            </ul>
                         </div>
                         <div class="navbar-collapse collapse darck-btn-phone">
                             <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                            <li>Phone</li>
+                                <li>Phone</li>
                             </ul>
                         </div>
 
@@ -281,34 +281,37 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">home</a>
+                                    <a class="nav-link" href="index.html">home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">used cars</a>
+                                    <a class="nav-link" href="used-cars.html">used cars</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="#">workshop</a>
+                                    <a class="nav-link" href="workshop.html">workshop</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="#">valeting</a>
+                                    <a class="nav-link" href="valeting.html">valeting</a>
                                 </li>
                                 <li class="nav-item  ">
-                                    <a class="nav-link" href="#">selling your car</a>
+                                    <a class="nav-link" href="selling-your-car.html">selling your car</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="#">finance</a>
+                                    <a class="nav-link" href="finance-example.html">FINANCE</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="#">shortlist</a>
+                                    <a class="nav-link" href="shortlist.html">FAVOURITES</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="#">about</a>
+                                    <a class="nav-link" href="about.html">about</a>
                                 </li>
                                 <li class="nav-item  ">
-                                    <a class="nav-link" href="#">previously sold</a>
+                                    <a class="nav-link" href="reviews.html">REVIEWS</a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a class="nav-link" href="previously-sold.html">PREVIOUSLY SOLD</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="#">contact us</a>
+                                    <a class="nav-link" href="contact-us.html">contact </a>
                                 </li>
                             </ul>
                         </div>
@@ -320,6 +323,8 @@
             <img class="img-fluid" src="img/header/graham.png" alt="">
         </div>
     </section>
+    <div class="m-top-100"></div>
+
     <div id="used-cars" class="main-wrapper">
         <div class="wrapper-title">
             <div class="container">
@@ -327,63 +332,52 @@
                     <h4 class="title-top-img about-title">Used Cars</h4>
                     <div class="search-box">
                         <div class="container">
-                            <form action="homepage.html">
-                                <div class="row">
-                                    <div class="col-md-2 offset-md-1">
-                                        <select>
-                                            <option>Make</option>
-                                            <option>Make 1</option>
-                                            <option>Make 2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <select>
-                                            <option>Model</option>
-                                            <option>Model 1</option>
-                                            <option>Model 2</option>
-                                        </select>
-                                    </div>
-        
-                                    <div class="col-md-2">
-                                        <select>
-                                            <option>Price</option>
-                                            <option>Year 1</option>
-                                            <option>Year 2</option>
-                                        </select>
-                                    </div>
-        
-                                    <div class="col-md-2 year">
-                                        <select>
-                                            <option>Year</option>
-                                            <option>Year 1</option>
-                                            <option>Year 2</option>
-                                        </select>
-                                    </div>
-        
-                                    <div class="col-md-2 body-type">
-                                        <select>
-                                            <option>Body Type</option>
-                                            <option>Year 1</option>
-                                            <option>Year 2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-10 offset-1">
-                                        <div class="search-box-info">
-                                                <div>
+                                <form action="homepage.html">
+                                        <div class="row">
+                                            <div class="col-md-3 desktop-sort-cars">
+                                                <select class="first-select-used-cars">
+                                                    <option>Make</option>
+                                                    <option>Make 1</option>
+                                                    <option>Make 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 desktop-sort-cars">
+                                                <select>
+                                                    <option>Model</option>
+                                                    <option>Model 1</option>
+                                                    <option>Model 2</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-3 year desktop-sort-cars">
+                                                <select>
+                                                    <option>Year</option>
+                                                    <option>Year 1</option>
+                                                    <option>Year 2</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-2 desktop-sort-cars">
+                                                <button type="submit"><img src="img/home/magnifying-glass.png" alt="" /> Search <span class="mobile-word"> 85 used cars</span></button>
+                                            </div>
+
+                                            <div class="search-box-info">
                                                     <span>Shoving 41-60 of 126 Vehicles</span>
-                                                </div>
-                                                <div>
-                                                    <h6 class="advanced-text">Advanced Search</h6>
-                                                </div>
-                                        </div>
+                                            </div>
+                                            <div class="col-md-12 mobile-sort-cars">
+                                                    <p>Sort By:</p>
+                                                <select>
+                                                    <option>Year: Newest</option>
+                                                    <option>Model 1</option>
+                                                    <option>Model 2</option>
+                                                </select>
+                                            </div>
                                     </div>
-                                </div>
-                            </form>
-                         
+                                    </form>
                         </div>
                     </div>
                 </div>
-  
+
             </div>
         </div>
         <div class="used-car-items">
@@ -402,13 +396,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/bmw.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png" alt=""> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -417,6 +414,30 @@
                                                     <h2>1998 BMW 8 SERIES</h2>
                                                     <p>840 CI SPORT 4.4 AUTO</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -433,13 +454,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/audi.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png" alt=""> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -448,6 +472,30 @@
                                                     <h2>2012 AUDI A1</h2>
                                                     <p>1.2 PETROL</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -464,13 +512,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/golf.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png"> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -479,6 +530,30 @@
                                                     <h2>2017 VOLKSWAGEN GOLF</h2>
                                                     <p>840 CI SPORT 4.4 AUTO</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -495,13 +570,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/x5.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png"> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -510,6 +588,30 @@
                                                     <h2>2017 BMW X5</h2>
                                                     <p>XDRIVE 30D M SPORT</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -525,13 +627,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/bmw.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png" alt=""> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -540,6 +645,30 @@
                                                     <h2>1998 BMW 8 SERIES</h2>
                                                     <p>840 CI SPORT 4.4 AUTO</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -556,13 +685,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/audi.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png" alt=""> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -571,6 +703,30 @@
                                                     <h2>2012 AUDI A1</h2>
                                                     <p>1.2 PETROL</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -587,13 +743,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/golf.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png"> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -602,6 +761,30 @@
                                                     <h2>2017 VOLKSWAGEN GOLF</h2>
                                                     <p>840 CI SPORT 4.4 AUTO</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -618,13 +801,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/x5.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png"> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -633,6 +819,30 @@
                                                     <h2>2017 BMW X5</h2>
                                                     <p>XDRIVE 30D M SPORT</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -648,13 +858,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/bmw.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png" alt=""> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -663,6 +876,30 @@
                                                     <h2>1998 BMW 8 SERIES</h2>
                                                     <p>840 CI SPORT 4.4 AUTO</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -679,13 +916,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/audi.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png" alt=""> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -694,6 +934,30 @@
                                                     <h2>2012 AUDI A1</h2>
                                                     <p>1.2 PETROL</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -710,13 +974,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/golf.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png"> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -725,6 +992,30 @@
                                                     <h2>2017 VOLKSWAGEN GOLF</h2>
                                                     <p>840 CI SPORT 4.4 AUTO</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -741,13 +1032,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/x5.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png"> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -756,6 +1050,30 @@
                                                     <h2>2017 BMW X5</h2>
                                                     <p>XDRIVE 30D M SPORT</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -771,13 +1089,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/bmw.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png" alt=""> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -786,6 +1107,30 @@
                                                     <h2>1998 BMW 8 SERIES</h2>
                                                     <p>840 CI SPORT 4.4 AUTO</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -802,13 +1147,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/audi.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png" alt=""> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -817,6 +1165,30 @@
                                                     <h2>2012 AUDI A1</h2>
                                                     <p>1.2 PETROL</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -833,13 +1205,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/golf.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png"> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -848,6 +1223,30 @@
                                                     <h2>2017 VOLKSWAGEN GOLF</h2>
                                                     <p>840 CI SPORT 4.4 AUTO</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
@@ -863,13 +1262,16 @@
                                                 </div>
                                             </div>
                                             <div class="car-image">
+                                                    <div class="car-image-wrap">
+                                                            <div class="car-image-gradient"></div>
                                                 <img src="img/home/x5.png" alt="frame-car-image">
+                                                    </div>
                                                 <div class="car-image-counter car-image-counter-home">
                                                     <img src="img/home/photo.png"> 16
                                                 </div>
                                                 <div class="car-like">
                                                     <a href="#">
-                                                        <img src="img/home/heart.png" alt="">
+                                                        <img src="img/home/heart.svg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -878,32 +1280,53 @@
                                                     <h2>2017 BMW X5</h2>
                                                     <p>XDRIVE 30D M SPORT</p>
                                                 </div>
+                                                <div class="car-desc">
+                                                        <div class="row">
+                                                            <div class="col-6 car-desc-left">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>4.4 Litre</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>67,234 km</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 car-desc-right">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Automatic</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Petrol</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </a>
                             </div>
-                                <!-- <div class="container"> -->
-                                        <div class="filter-navigation-menu">
-                                                <div class="row pagination pagination-bottom">
-                                                    <!-- <div class="col-md-6">
-                                                    </div> -->
-                                                    <div class="col-md-12">
-                                                        <ul>
-                                                            <li>Prev</li>
-                                                            <li>1</li>
-                                                            <li>2</li>
-                                                            <li class="pagination-active-item">3</li>
-                                                            <li>4</li>
-                                                            <li>5</li>
-                                                            <li>6</li>
-                                                            <li>Next</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            <!-- </div> -->
-                                </div>
-
                         </div>
+
                 </div>
+                <div class="filter-navigation-menu">
+                        <div class="row pagination pagination-bottom">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Prev</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li class="pagination-active-item">3</li>
+                                    <li class="more-pages">...</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>Next</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
             </div>
             </div>
     </div>
@@ -921,29 +1344,6 @@
             <img src="img/header/facebook.png" alt="" />
         </div>
     </div>
-    <script src="owl-carousel/dist/owl-carousel.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-        $('.owl-special-offers').owlCarousel({
-            loop: true,
-            margin: 30,
-            nav: false,
-            dots: false,
-            // navText: ["<img  src=\"img/home/arrow-left.svg\"/>","<img src=\"img/home/arrow-right.svg\"/>"],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        });
-    </script>
     <script src="./js/script.js"></script>
 
 </body>
