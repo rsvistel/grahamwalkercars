@@ -3145,7 +3145,9 @@ select::-ms-expand {
     font-weight: 500;
     padding-top: 2%; }
   .reserve-page__summary-title {
-    padding-top: 2%; } }
+    padding-top: 2%; }
+  .reserve-page__pay-value {
+    padding-top: 10%; } }
 @media only screen and (max-width: 768px) {
   .modal-used-cars.reserve-car-modal .modal-used-cars-container .first-title-modal {
     font-size: 19px; }
@@ -3158,16 +3160,8 @@ select::-ms-expand {
     display: flex;
     font-size: 30px !important; } }
 @media only screen and (max-width: 320px) {
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .first-title-modal {
-    font-size: 20px; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .second-title-modal {
-    font-size: 18px; }
-  .modal-used-cars.reserve-car-modal .modal-used-cars-container .third-title-modal {
-    font-size: 17px; }
-
   .reserve-page__pay-value {
-    display: flex;
-    font-size: 25px !important; } }
+    padding-top: 1%; } }
 .reserve-car-modal textarea {
   height: 181px;
   width: 100%;
