@@ -76,10 +76,6 @@ $(document).ready(function () {
 
     });
 
-    $('#carouselExampleControls').carousel({
-        interval: false
-    });
-
     $(".more").click(function () {
         var elem = $(".more").text();
         if (elem == "more") {
@@ -220,5 +216,9 @@ $(document).ready(function () {
             }
             next.children(':first-child').clone().appendTo($(this));
         }
+    });
+
+    $('#carousel-example-multi').carousel({
+        interval: false
     });
 });

@@ -3353,8 +3353,7 @@ select::-ms-expand {
     justify-content: space-evenly;
     align-items: center;
     background: #EEEEEC;
-    min-height: 72px;
-    min-width: 380px;
+    padding: 1% 2.1%;
     margin-bottom: 10px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px; }
@@ -3432,7 +3431,7 @@ select::-ms-expand {
         left: auto;
         width: auto; }
       #carousel-thumb.fullscreen #carousel-example-multi .carousel-item img {
-        width: 13.775%;
+        width: 13.7%;
         margin-right: 0.6%;
         margin-left: 0;
         margin-bottom: 0; }
@@ -3445,7 +3444,20 @@ select::-ms-expand {
       position: absolute;
       z-index: 10;
       bottom: 0;
-      color: #fff; }
+      color: #fff;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 25px;
+      display: flex;
+      align-items: center; }
+    #carousel-thumb .carousel-inner #slideshow-shape {
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      right: 0;
+      padding: 20px; }
   #carousel-thumb .carousel-control-next, #carousel-thumb .carousel-control-prev {
     bottom: auto;
     z-index: 101;
@@ -3494,7 +3506,7 @@ select::-ms-expand {
     cursor: pointer; }
 
 .car-detail-main-section {
-  padding-top: 11%;
+  padding-top: 150px;
   padding-bottom: 60vh; }
   .car-detail-main-section.fullscreen {
     padding-top: 0;
@@ -3558,7 +3570,7 @@ select::-ms-expand {
     padding: 1rem;
     margin-bottom: 14px; }
     #car-accordion #accordion-used-car.fullscreen {
-      padding-bottom: 40%; }
+      background-color: rgba(221, 221, 221, 0.5); }
   #car-accordion .card {
     background: #DBDBDB;
     border-radius: 5px;
@@ -3573,15 +3585,15 @@ select::-ms-expand {
   #car-accordion .heading-message {
     background: url("/img/car-detail/massage.png"); }
     #car-accordion .heading-message .accordion-used-car__title {
-      padding-right: 2.5rem; }
+      padding-right: 21%; }
   #car-accordion .heading-finance {
     background: url("/img/car-detail/finance.png"); }
     #car-accordion .heading-finance .accordion-used-car__title {
-      padding-right: 3.8rem; }
+      padding-right: 26%; }
   #car-accordion .heading-reserve {
     background: url("/img/car-detail/reserve.png"); }
     #car-accordion .heading-reserve .accordion-used-car__title {
-      padding-right: 2.24rem; }
+      padding-right: 19%; }
   #car-accordion .accordion-used-car__card-header {
     text-transform: uppercase;
     background-repeat: no-repeat;
@@ -3638,7 +3650,9 @@ select::-ms-expand {
       height: 50px;
       width: 150px;
       border-radius: 5px;
-      background-color: #454146; }
+      background-color: #454146;
+      text-transform: uppercase;
+      color: #fff; }
 
 .car-page-container {
   position: relative; }
@@ -3700,7 +3714,8 @@ select::-ms-expand {
 
 .detailse-used-car__data {
   font-size: 20px;
-  text-align: right; }
+  text-align: right;
+  display: flex; }
 
 .detailse-used-car__name {
   font-size: 20px;
@@ -3739,5 +3754,24 @@ select::-ms-expand {
   #feedback.reviews-page.car-detail-feedback .reviews-page-btn button {
     border-radius: 4px;
     padding: 14px 60px; }
+
+@media only screen and (max-width: 992px) {
+  #car-accordion {
+    display: none; }
+
+  #carousel-example-multi {
+    display: none; }
+
+  #carousel-thumb .carousel-inner {
+    flex: 0 0 100%; }
+
+  .order-price {
+    order: 1; }
+
+  .order-carousel {
+    order: 2; }
+
+  .order-value {
+    order: 2; } }
 
 /*# sourceMappingURL=style.css.map */
