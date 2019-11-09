@@ -3814,25 +3814,18 @@ select::-ms-expand
     padding: 0
   .heading-message
     background: url("/img/car-detail/massage.png")
-    .accordion-used-car__title
-      padding-right: 21%
   .heading-finance
     background: url("/img/car-detail/finance.png")
-    .accordion-used-car__title
-      padding-right: 26%
   .heading-reserve
     background: url("/img/car-detail/reserve.png")
-    .accordion-used-car__title
-      padding-right: 19%
   .accordion-used-car__card-header
     text-transform: uppercase
     background-repeat: no-repeat
     background-position: 10px center
     background-size: 10%
   .accordion-used-car__title
-    //padding: 1.2rem 1rem
-    padding: 1.2rem 1.5rem 1.2rem 5rem
-    //width: 100%
+    padding: 5%
+    width: 100%
     font-family: Arial, sans-serif
     font-weight: 700
     font-size: 20px
@@ -3967,7 +3960,7 @@ select::-ms-expand
   font-family: Roboto, sans-serif
   font-size: 20px
   line-height: 23px
-  padding: 5% 0
+  //padding: 5% 0
   .description-car-detail-title
     padding: 2rem 0
 
@@ -3995,6 +3988,73 @@ select::-ms-expand
       padding: 14px 60px
 
 @media only screen and (max-width: 992px)
+  #car-title
+    display: flex
+    justify-content: space-between
+    h2
+      font-size: 24px
+      line-height: 29px
+    p
+      font-size: 18px
+      font-weight: 700
+      line-height: 20px
+      padding: 5px 0 5px 0
+    div.price-block
+      // display: flex
+      // justify-content: space-evenly
+      // align-items: center
+      // background: #EEEEEC
+      // padding: 1% 2.1%
+      // margin-bottom: 10px
+      border-top-right-radius: 0
+      border-top-left-radius: 0
+  //   .price-right
+  //     color: #232323
+  //     font-size: 35px
+  //     line-height: 43px
+  //   .price-left-block
+  //     color: #D10609
+  //     text-align: center
+  //   .price-left
+  //     font-size: 33px
+  //     line-height: 40px
+  //   div:first-child
+  //     order: 1
+  // &.fullscreen
+  //   color: #fff
+  //   z-index: 1001
+  //   position: relative
+  //   width: 100%
+  //   left: 0
+  //   padding-top: 2%
+  //   h2
+  //     color: #fff
+  //   .price-block
+  //     display: block
+  //     flex-direction: column-reverse
+  //     background: none
+  //     text-align: right
+  //     .price-right
+  //       color: #fff
+  //     .price-left-block
+  //       color: #fff
+  //       text-align: right
+  //       align-items: baseline
+  //       display: flex
+  //       justify-content: flex-end
+  //     .price-left
+  //       margin-left: 10px
+
+  #carousel-thumb .carousel-control-prev
+    left: 0
+    top: 50%
+    bottom: auto
+    transform: rotate(-90deg)
+  #carousel-thumb .carousel-control-next
+    top: 50%
+    right: 0
+    bottom: auto
+    transform: rotate(-90deg)
   #car-accordion
     display: none
   #carousel-example-multi
@@ -4007,5 +4067,9 @@ select::-ms-expand
     order: 2
   .order-value
     order: 2
-  
+  #car-title
+    flex-direction: column
+  #car-detail-value
+    .gatters-left
+      padding-left: 15px
 
