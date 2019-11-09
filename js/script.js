@@ -148,4 +148,70 @@ $(document).ready(function () {
         // $('body').toggleClass('active-menu');
         $('.btn-search').toggleClass('indexcity');
     });
+
+    if ($('body').hasClass('car-page')) {
+        var activeItem = 1;
+        var carouselItems = [];
+        $('#carouselExampleControls .carousel-item').each(function () {
+            carouselItems.push($(this));
+        });
+        $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
+        $('.carousel-control-next').click(function () {
+            if (activeItem < carouselItems.length) {
+                activeItem++
+            } else {
+                activeItem = 1
+            }
+            $('.num.mobile-counter__value.counter__value').html(activeItem + ' of ' + carouselItems.length);
+        });
+        $('.carousel-control-prev').click(function () {
+            if (activeItem > 1) {
+                activeItem--
+            } else {
+                activeItem = carouselItems.length
+            }
+            $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
+        });
+    }
+
+    if ($('body').hasClass('car-page')) {
+
+        var carouselItems = [];
+        $('#carousel-thumb #thumb-inner .carousel-item').each(function () {
+            carouselItems.push($(this));
+        });
+        $('#carousel-example-multi').css('height', $('#thumb-inner .carousel-item').outerHeight());
+        $('#slideshow-counter span').html($('#carousel-thumb .carousel-item.active').index() + ' of ' + carouselItems.length);
+        $('#carousel-thumb').bind('slide.bs.carousel', function (e) {
+            setTimeout(function () {
+                $('#slideshow-counter span').html($('#carousel-thumb .carousel-item.active').index() + ' of ' + carouselItems.length);
+            }, 650);
+        });
+        $('#thumb-inner').click(function () {
+            $('#carousel-example-multi').removeClass('vertical').css('height', 'auto');
+            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close').addClass('fullscreen');
+            $('body').append('<div class="overlay"></div>');
+        });
+
+        $('.carousel-close').click(function () {
+            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close').removeClass('fullscreen');
+            $('.overlay').remove();
+        });
+
+    }
+    $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        for (var i=0;i<5;i++) {
+            next=next.next();
+            if (!next.length) {
+                next=$(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+        }
+    });
 });
