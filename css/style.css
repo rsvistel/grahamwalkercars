@@ -3447,7 +3447,8 @@ select::-ms-expand {
     cursor: pointer; }
 
 .car-detail-main-section {
-  margin-top: 11%; }
+  margin-top: 11%;
+  margin-bottom: 60vh; }
   .car-detail-main-section.fullscreen {
     margin-top: 0; }
 
@@ -3623,6 +3624,8 @@ select::-ms-expand {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 14px 0; }
+  .detailse-used-car__value .fas.fa-star {
+    font-size: 22px; }
   .detailse-used-car__value:after {
     content: "";
     position: absolute;
@@ -3633,6 +3636,15 @@ select::-ms-expand {
     z-index: -1;
     padding: 19px;
     margin-left: 10%; }
+  .detailse-used-car__value:last-child:after {
+    border-bottom: none; }
+  .detailse-used-car__value .detailse-used-car__star-green .fas.fa-star {
+    color: #437824;
+    font-size: 22px;
+    line-height: 22px; }
+
+.safety {
+  padding-left: 10px; }
 
 .detailse-used-car__data {
   font-size: 20px;
@@ -3641,6 +3653,18 @@ select::-ms-expand {
 .detailse-used-car__name {
   font-size: 20px;
   text-align: left; }
+
+.detailse-used-car__name-first {
+  font-weight: 700; }
+
+.description-car-detail {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 5% 0; }
+  .description-car-detail .description-car-detail-title {
+    padding: 2rem 0; }
 
 #feedback.reviews-page.car-detail-feedback {
   background: #EEEEEE;
@@ -3660,5 +3684,8 @@ select::-ms-expand {
     text-transform: uppercase;
     text-align: left;
     margin: 5% 0 6% 2%; }
+  #feedback.reviews-page.car-detail-feedback .reviews-page-btn button {
+    border-radius: 4px;
+    padding: 14px 60px; }
 
 /*# sourceMappingURL=style.css.map */
