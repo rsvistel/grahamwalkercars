@@ -3319,8 +3319,10 @@ select::-ms-expand {
     .reviews-page-btn button {
       padding: 17px 45px; } }
 .no-gatters-all {
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
+
+.no-gatters-left {
+  padding-left: 0; }
 
 .car-page .topnav.fullscreen {
   display: none; }
@@ -3336,18 +3338,62 @@ select::-ms-expand {
 #car-title {
   display: flex;
   justify-content: space-between; }
+  #car-title h2 {
+    font-size: 30px;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000; }
+  #car-title p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 10px 0 5px 0; }
   #car-title div.price-block {
-    display: flex; }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #EEEEEC;
+    min-height: 72px;
+    min-width: 380px;
+    margin-bottom: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+    #car-title div.price-block .price-right {
+      color: #232323;
+      font-size: 35px;
+      line-height: 43px; }
+    #car-title div.price-block .price-left-block {
+      color: #D10609;
+      text-align: center; }
+    #car-title div.price-block .price-left {
+      font-size: 33px;
+      line-height: 40px; }
     #car-title div.price-block div:first-child {
       order: 1; }
   #car-title.fullscreen {
     color: #fff;
     z-index: 1001;
-    position: absolute;
+    position: relative;
     width: 100%;
-    left: 0; }
+    left: 0;
+    padding-top: 2%; }
+    #car-title.fullscreen h2 {
+      color: #fff; }
     #car-title.fullscreen .price-block {
-      display: block; }
+      display: block;
+      flex-direction: column-reverse;
+      background: none;
+      text-align: right; }
+      #car-title.fullscreen .price-block .price-right {
+        color: #fff; }
+      #car-title.fullscreen .price-block .price-left-block {
+        color: #fff;
+        text-align: right;
+        align-items: baseline;
+        display: flex;
+        justify-content: flex-end; }
+      #car-title.fullscreen .price-block .price-left {
+        margin-left: 10px; }
 
 #carousel-thumb {
   display: flex;
@@ -3444,13 +3490,15 @@ select::-ms-expand {
     background: url("/img/car-detail/close.png");
     width: 28px;
     background-repeat: no-repeat;
+    background-position: top;
     cursor: pointer; }
 
 .car-detail-main-section {
-  margin-top: 11%;
-  margin-bottom: 60vh; }
+  padding-top: 11%;
+  padding-bottom: 60vh; }
   .car-detail-main-section.fullscreen {
-    margin-top: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
 
 .carousel.vertical .carousel-item {
   -webkit-transition: 0.6s ease-in-out top;
@@ -3502,6 +3550,8 @@ select::-ms-expand {
   display: block;
   width: 100%;
   position: absolute;
+  top: 0;
+  right: 0;
   overflow: hidden; }
   #car-accordion #accordion-used-car {
     background: #EEEEEE;
@@ -3553,6 +3603,7 @@ select::-ms-expand {
       line-height: 23px; }
     #car-accordion .accordion-used-car__card-body #InputName, #car-accordion .accordion-used-car__card-body #InputPhone, #car-accordion .accordion-used-car__card-body #InputEmail, #car-accordion .accordion-used-car__card-body #FormControlTextarea {
       color: #777;
+      box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
       border-radius: 5px !important; }
     #car-accordion .accordion-used-car__card-body #FormControlTextarea {
       resize: none;
@@ -3593,11 +3644,12 @@ select::-ms-expand {
   position: relative; }
 
 #car-detail-value {
-  padding: 3% 0 6% 1%;
+  padding: 3% 0 6% 0.5%;
   color: #432A49;
   font-family: Roboto;
   font-size: 20px;
-  line-height: 23px; }
+  line-height: 23px;
+  margin-right: 0; }
 
 #car-detail-value.fullscreen, #reviews-car-detail.fullscreen, #description-car-detail.fullscreen {
   display: none; }
