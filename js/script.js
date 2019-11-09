@@ -190,11 +190,16 @@ $(document).ready(function () {
         $('#thumb-inner').click(function () {
             $('#carousel-example-multi').removeClass('vertical').css('height', 'auto');
             $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close').addClass('fullscreen');
+            $('.car-page .header').addClass('fullscreen');
+            $('.car-detail-main-section').addClass('fullscreen');
+
             $('body').append('<div class="overlay"></div>');
         });
 
         $('.carousel-close').click(function () {
             $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close').removeClass('fullscreen');
+            $('.car-page .header').removeClass('fullscreen');
+            $('.car-detail-main-section').removeClass('fullscreen');
             $('.overlay').remove();
         });
 
