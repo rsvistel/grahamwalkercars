@@ -3447,7 +3447,7 @@ select::-ms-expand {
     cursor: pointer; }
 
 .car-detail-main-section {
-  margin-top: 25vh; }
+  margin-top: 11%; }
   .car-detail-main-section.fullscreen {
     margin-top: 0; }
 
@@ -3504,36 +3504,99 @@ select::-ms-expand {
   overflow: hidden; }
   #car-accordion #accordion-used-car {
     background: #EEEEEE;
-    padding: 1rem; }
+    padding: 1rem;
+    margin-bottom: 14px; }
+    #car-accordion #accordion-used-car.fullscreen {
+      padding-bottom: 40%; }
+  #car-accordion .card {
+    background: #DBDBDB;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
+    margin-bottom: 1.1rem; }
+    #car-accordion .card .card-header:first-child {
+      border: 0; }
   #car-accordion .card-header {
-    padding: 0;
-    background: #DBDBDB; }
+    padding: 0; }
   #car-accordion .heading-message {
-    background: url("/img/car-detail/massage.png");
-    background-repeat: no-repeat;
-    background-position: 10px center; }
+    background: url("/img/car-detail/massage.png"); }
+    #car-accordion .heading-message .accordion-used-car__title {
+      padding-right: 2.5rem; }
   #car-accordion .heading-finance {
-    background: url("/img/car-detail/finance.png");
-    background-repeat: no-repeat;
-    background-position: 10px center; }
+    background: url("/img/car-detail/finance.png"); }
+    #car-accordion .heading-finance .accordion-used-car__title {
+      padding-right: 3.8rem; }
   #car-accordion .heading-reserve {
-    background: url("/img/car-detail/reserve.png");
-    background-repeat: no-repeat;
-    background-position: 10px center; }
+    background: url("/img/car-detail/reserve.png"); }
+    #car-accordion .heading-reserve .accordion-used-car__title {
+      padding-right: 2.24rem; }
   #car-accordion .accordion-used-car__card-header {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 10%; }
   #car-accordion .accordion-used-car__title {
-    padding: 1.2rem 1rem;
-    width: 100%;
+    padding: 1.2rem 1.5rem 1.2rem 5rem;
     font-family: Arial, sans-serif;
-    font-weight: 800;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 25px;
     cursor: pointer;
     text-align: center; }
+  #car-accordion .accordion-used-car__card-body {
+    font-family: Roboto, sans-serif; }
+    #car-accordion .accordion-used-car__card-body .form-control {
+      font-size: 20px;
+      border-radius: 5px;
+      line-height: 23px; }
+    #car-accordion .accordion-used-car__card-body #InputName, #car-accordion .accordion-used-car__card-body #InputPhone, #car-accordion .accordion-used-car__card-body #InputEmail, #car-accordion .accordion-used-car__card-body #FormControlTextarea {
+      color: #777;
+      border-radius: 5px !important; }
+    #car-accordion .accordion-used-car__card-body #FormControlTextarea {
+      resize: none;
+      box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5); }
+    #car-accordion .accordion-used-car__card-body .form-check {
+      padding-left: 0; }
+    #car-accordion .accordion-used-car__card-body .selling-chechbox {
+      font-family: Open Sans, sans-serif;
+      margin: 0 0 2rem 0;
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      #car-accordion .accordion-used-car__card-body .selling-chechbox input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 21px;
+        width: 21px;
+        background-color: #fff; }
+    #car-accordion .accordion-used-car__card-body .chechbox-text {
+      font-size: 14px;
+      line-height: 19px;
+      display: flex; }
+    #car-accordion .accordion-used-car__card-body .massege-btn-box {
+      display: flex;
+      justify-content: center; }
+    #car-accordion .accordion-used-car__card-body button {
+      height: 50px;
+      width: 150px;
+      border-radius: 5px;
+      background-color: #454146; }
 
 .car-page-container {
   position: relative; }
+
+#car-detail-value {
+  padding: 3% 0 6% 1%;
+  color: #432A49;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 23px; }
 
 #car-detail-value.fullscreen, #reviews-car-detail.fullscreen, #description-car-detail.fullscreen {
   display: none; }
@@ -3558,20 +3621,30 @@ select::-ms-expand {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 14px 0; }
+  .detailse-used-car__value:after {
+    content: "";
+    position: absolute;
+    height: 0.5em;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+    z-index: -1;
+    padding: 19px;
+    margin-left: 10%; }
 
 .detailse-used-car__data {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
   text-align: right; }
 
 .detailse-used-car__name {
-  font-size: 18px;
+  font-size: 20px;
   text-align: left; }
 
 #feedback.reviews-page.car-detail-feedback {
   background: #EEEEEE;
-  padding: 2% 0.6%;
+  padding: 2% 3%;
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
@@ -3579,5 +3652,13 @@ select::-ms-expand {
   -moz-column-gap: 3px;
   column-gap: 3px;
   width: 100vw; }
+  #feedback.reviews-page.car-detail-feedback .feedback-car-title {
+    font-size: 22px;
+    color: #2D2D2D;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 5% 0 6% 2%; }
 
 /*# sourceMappingURL=style.css.map */

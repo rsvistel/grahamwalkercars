@@ -3672,7 +3672,7 @@ select::-ms-expand
     background-repeat: no-repeat
     cursor: pointer
 .car-detail-main-section
-  margin-top: 25vh
+  margin-top: 11%
   &.fullscreen
     margin-top: 0
 
@@ -3732,34 +3732,100 @@ select::-ms-expand
   #accordion-used-car
     background: #EEEEEE
     padding: 1rem
+    margin-bottom: 14px
+    &.fullscreen
+      padding-bottom: 40%
+  .card
+    background: #DBDBDB
+    border-radius: 5px
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35)
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35)
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35)
+    margin-bottom: 1.1rem
+    .card-header
+      &:first-child
+        border: 0
   .card-header
     padding: 0
-    background: #DBDBDB
   .heading-message
     background: url("/img/car-detail/massage.png")
-    background-repeat: no-repeat
-    background-position: 10px center
+    .accordion-used-car__title
+      padding-right: 2.5rem
   .heading-finance
     background: url("/img/car-detail/finance.png")
-    background-repeat: no-repeat
-    background-position: 10px center
+    .accordion-used-car__title
+      padding-right: 3.8rem
   .heading-reserve
     background: url("/img/car-detail/reserve.png")
-    background-repeat: no-repeat
-    background-position: 10px center
+    .accordion-used-car__title
+      padding-right: 2.24rem
   .accordion-used-car__card-header
     text-transform: uppercase
+    background-repeat: no-repeat
+    background-position: 10px center
+    background-size: 10%
   .accordion-used-car__title
-    padding: 1.2rem 1rem
-    width: 100%
+    //padding: 1.2rem 1rem
+    padding: 1.2rem 1.5rem 1.2rem 5rem
+    //width: 100%
     font-family: Arial, sans-serif
-    font-weight: 800
-    font-size: 22px
+    font-weight: 700
+    font-size: 20px
     line-height: 25px
     cursor: pointer
     text-align: center
+  .accordion-used-car__card-body
+    font-family: Roboto, sans-serif
+    .form-control
+      font-size: 20px
+      border-radius: 5px
+      line-height: 23px
+    #InputName, #InputPhone, #InputEmail, #FormControlTextarea
+      color: #777
+      border-radius: 5px!important
+    #FormControlTextarea
+      resize: none
+      box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5)
+    .form-check
+      padding-left: 0
+    .selling-chechbox
+      font-family: Open Sans, sans-serif
+      margin: 0 0 2rem 0
+      position: relative
+      padding-left: 35px
+      cursor: pointer
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      input
+        position: absolute
+        top: 0
+        left: 0
+        height: 21px
+        width: 21px
+        background-color: #fff
+    .chechbox-text
+      font-size: 14px
+      line-height: 19px
+      display: flex
+    .massege-btn-box
+      display: flex
+      justify-content: center
+    button
+      height: 50px
+      width: 150px
+      border-radius: 5px
+      background-color: #454146
 .car-page-container
   position: relative
+
+#car-detail-value
+  padding: 3% 0 6% 1%
+  color: #432A49
+  font-family: Roboto
+  font-size: 20px
+  line-height: 23px
 
 
 #car-detail-value, #reviews-car-detail, #description-car-detail
@@ -3787,19 +3853,33 @@ select::-ms-expand
       -webkit-box-pack: justify
       -ms-flex-pack: justify
       justify-content: space-between
+      padding: 14px 0
+      &:after
+        content: ""
+        position: absolute
+        // bottom: 0
+        // left: 0
+        // right: 0
+        height: 0.5em
+        width: 80%
+        text-align: center
+        border-bottom: 1px solid #CCC
+        z-index: -1
+        padding: 19px
+        margin-left: 10%
 
 .detailse-used-car__data
-      font-size: 18px
-      font-weight: bold
+      font-size: 20px
       text-align: right
 
+
 .detailse-used-car__name
-      font-size: 18px
+      font-size: 20px
       text-align: left
 
 #feedback.reviews-page.car-detail-feedback
   background: #EEEEEE
-  padding: 2% 0.6%
+  padding: 2% 3%
   -webkit-column-count: 1
   -moz-column-count: 1
   column-count: 1
@@ -3807,4 +3887,11 @@ select::-ms-expand
   -moz-column-gap: 3px
   column-gap: 3px
   width: 100vw
-
+  .feedback-car-title
+    font-size: 22px
+    color: #2D2D2D
+    font-family: Arial, Helvetica, sans-serif
+    line-height: 25px
+    text-transform: uppercase
+    text-align: left
+    margin: 5% 0 6% 2%
