@@ -88,7 +88,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="navbar-collapse collapse menu-search">
+                        <div class="navbar-collapse collapse menu-search menu-search-results">
                             <div class="navbar-nav ml-auto py-md-0">
                                 <div class="accordion__wrapper">
                                     <div class="accordion" id="accordion">
@@ -113,7 +113,14 @@
                                             </div>
                                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    1
+                                                    <div>
+                                                        <label for="make-model" class="m-top-10">Select Make</label>
+                                                        <select id="make-select">
+                                                            <option value="">Select a Make</option>
+                                                            <option value="">Model 1</option>
+                                                            <option value="">Model 2</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,7 +134,14 @@
                                             </div>
                                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    2
+                                                    <div>
+                                                        <label for="make-model" class="m-top-10">Select Model</label>
+                                                        <select id="year-to-model">
+                                                            <option value="">Select a Model</option>
+                                                            <option value="">Model 1</option>
+                                                            <option value="">Model 2</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,15 +153,42 @@
                                                         Year
                                                     </button>
 
+
                                                 </div>
                                             </div>
                                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    4
+                                                    <div>
+                                                        <label for="make-model" class="m-top-10">From</label>
+                                                        <select id="year-from-select">
+                                                            <option value="">Select a Year</option>
+                                                            <option value="">Model 1</option>
+                                                            <option value="">Model 2</option>
+                                                        </select>
+
+                                                        <div>
+                                                            <label for="make-model" class="m-top-10">To</label>
+                                                            <select id="make-model">
+                                                                <option value="">Select a Year</option>
+                                                                <option value="">Model 1</option>
+                                                                <option value="">Model 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
+                                        <div class="mobile-accordion-filter">
+                                            <div class="reset-block">
+                                                <img src="img/header/reset.svg" alt=""/>
+                                                <p>Reset</p>
+                                            </div>
+
+                                            <div class="button-done-block">
+                                                Done
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -175,8 +216,9 @@
                                     <div>
                                         <span>Options</span>
                                     </div>
-                                    <div>
-                                        <i class="fas fa-times"></i>
+                                    <div class="cross-img-mob">
+                                        <!--<i class="fas fa-times"></i>-->
+                                        <img src="img/crossss-white.svg">
                                     </div>
                                 </li>
                                 <li class="nav-item">
