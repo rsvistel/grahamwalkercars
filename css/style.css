@@ -3449,6 +3449,35 @@ select::-ms-expand {
   width: 100%;
   position: absolute;
   overflow: hidden; }
+  #car-accordion #accordion-used-car {
+    background: #EEEEEE;
+    padding: 1rem; }
+  #car-accordion .card-header {
+    padding: 0;
+    background: #DBDBDB; }
+  #car-accordion .heading-message {
+    background: url("/img/car-detail/massage.png");
+    background-repeat: no-repeat;
+    background-position: 10px center; }
+  #car-accordion .heading-finance {
+    background: url("/img/car-detail/finance.png");
+    background-repeat: no-repeat;
+    background-position: 10px center; }
+  #car-accordion .heading-reserve {
+    background: url("/img/car-detail/reserve.png");
+    background-repeat: no-repeat;
+    background-position: 10px center; }
+  #car-accordion .accordion-used-car__card-header {
+    text-transform: uppercase; }
+  #car-accordion .accordion-used-car__title {
+    padding: 1.2rem 1rem;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 25px;
+    cursor: pointer;
+    text-align: center; }
 
 .car-page-container {
   position: relative; }
