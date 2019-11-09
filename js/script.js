@@ -76,10 +76,6 @@ $(document).ready(function () {
 
     });
 
-    $('#carouselExampleControls').carousel({
-        interval: false
-    });
-
     $(".more").click(function () {
         var elem = $(".more").text();
         if (elem == "more") {
@@ -190,11 +186,18 @@ $(document).ready(function () {
         $('#thumb-inner').click(function () {
             $('#carousel-example-multi').removeClass('vertical').css('height', 'auto');
             $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close').addClass('fullscreen');
+            $('.car-page .header').addClass('fullscreen');
+            $('.accordion-used-car').addClass('fullscreen');
+            $('.car-detail-main-section').addClass('fullscreen');
+
             $('body').append('<div class="overlay"></div>');
         });
 
         $('.carousel-close').click(function () {
             $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close').removeClass('fullscreen');
+            $('.car-page .header').removeClass('fullscreen');
+            $('.car-detail-main-section').removeClass('fullscreen');
+            $('.accordion-used-car').removeClass('fullscreen');
             $('.overlay').remove();
         });
 
@@ -213,5 +216,9 @@ $(document).ready(function () {
             }
             next.children(':first-child').clone().appendTo($(this));
         }
+    });
+
+    $('#carousel-example-multi').carousel({
+        interval: false
     });
 });
