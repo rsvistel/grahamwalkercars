@@ -3907,7 +3907,7 @@ select::-ms-expand {
     transform: rotate(-90deg); }
 
   .order-accordion-mobile {
-    order: 3;
+    order: 6;
     flex: 0 0 100%;
     max-width: 100%; }
 
@@ -3940,12 +3940,19 @@ select::-ms-expand {
     order: 1; }
 
   .order-carousel {
-    padding-right: 0; }
+    padding-right: 0;
+    order: 0; }
 
   .order-value {
     order: 2;
     margin-right: -15px;
     margin-left: -15px; }
+
+  #description-car-detail {
+    order: 3; }
+
+  .order-detail {
+    order: 2; }
 
   #car-title {
     padding-top: 10px;
