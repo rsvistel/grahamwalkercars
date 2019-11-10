@@ -42,6 +42,10 @@ select::-ms-expand
   margin-top: 119px
 .red
   color: #BD1316
+
+.homepage #special-offers-section .owl-carousel.owl-special-offers.owl-loaded.owl-drag
+  height: 42vh
+  max-height: 330px
 //Header
 .header.topnav
   background: #222222
@@ -261,6 +265,10 @@ select::-ms-expand
   .navbar-expand-md .navbar-nav .nav-link
     padding: 1vw 0.75vw
 
+@media (min-width: 1200px)
+  .homepage #special-offers-section .owl-carousel.owl-drag .owl-item
+    width: 254px!important
+    margin-right: 15px!important
 @media (min-width: 1000px) and (max-width: 1200px)
   .navbar-expand-md .navbar-nav .nav-link
     padding: 1vw 0.5vw
@@ -740,7 +748,6 @@ select::-ms-expand
 //Special Offers
 #special-offers
   order: 3
-  margin-bottom: 2%
   .title-special-offer
     font-size: 1.6rem
     text-align: center
@@ -937,7 +944,12 @@ select::-ms-expand
 
 @media (min-width: 1000px) and (max-width: 1200px)
   .car-tile .car-price .col-6:last-child p
-    font-size: 10px
+    //font-size: 10px
+    font-size: 0.75vw
+
+  .homepage #special-offers-section .owl-carousel.owl-drag .owl-item
+    width: 208px!important
+    margin-right: 18px!important
 //Car Tile
 //Featured
 @media (min-width: 992px) and (max-width: 1250px)
@@ -954,7 +966,8 @@ select::-ms-expand
 .apply
   background-image: url("../img/home/ban.png")
   min-height: 700px
-  background-size: 100% 100%
+  //background-size: 100% 100%
+  background-size: cover
   display: flex
   align-items: center
   background-position: bottom
@@ -1343,6 +1356,12 @@ select::-ms-expand
   font-size: 1.9rem
   text-align: left
   font-weight: 400
+
+.workshop.valeting .about-title
+  padding: 3% 0
+
+.workshop-section.valeting-section
+  padding: 4% 0 2%
 .about
   .about-section
     background-image: url("../img/about/banner.png")
@@ -2022,7 +2041,7 @@ select::-ms-expand
   position: fixed
   top: 0
   z-index: 101
-  background-color: #f8f8fa
+  background-color: rgba(0,0,0,0.6)
   //background: rgba(0, 0, 0, 0.7)
   //background: white
   display: block
@@ -2041,9 +2060,9 @@ select::-ms-expand
     background: white
     margin-top: 4%
     padding: 0
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    -moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //-webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //-moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
     .block-ul-modal
       color: #171717
     .title-cross-block
@@ -2840,9 +2859,9 @@ select::-ms-expand
   .form-row
     margin-bottom: 2rem
   .form-control
-    height: calc(2.2em + .75rem + 2px)
+    height: calc(2.1em + .75rem + 2px)
     padding-left: 1rem
-    font-size: 20px
+    font-size: 19px
     color: #777
   .image-input-container
     input[type='file']
@@ -2875,13 +2894,14 @@ select::-ms-expand
         display: block
         font-size: 18px
         font-family: Arial, sans-serif
-      .drop-description
+
   .button-block
     width: 94.5%
     button
       background: #3399FF
       text-transform: uppercase
       padding: 12px 50px
+      font-weight: 500
   .radio-inline
     display: block
     position: relative
@@ -2904,8 +2924,8 @@ select::-ms-expand
     margin: 0
     padding: 0
     li
-      padding: 1rem 1rem 0.7rem 0
-      font-size: 24px
+      padding: 0.4rem 1rem 0.7rem 0
+      font-size: 22px
       &:before
         content: ''
         display: inline-block
@@ -2968,14 +2988,26 @@ select::-ms-expand
     .form-control
       font-size: 17px
 
+@media only screen and (min-width: 768px) and (max-width: 1000px)
+  .m-top-100
+    margin-top: 88px
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px)
+  .m-top-100
+    margin-top: 104px
 @media only screen and (max-width: 768px)
   .selling-title-container
     padding: 0 1rem
     .selling-title
       text-align: center
-      padding: 2rem 0
+      //padding: 2rem 0
+      font-family: Arial, sans-serif
+      font-size: 5.3vw
+      margin: 15px 0 20px 0
+      text-transform: uppercase
+      font-weight: 600
   .selling-section
-    padding: 0 1rem
+    padding: 0 1.7rem
   .selling-form
     padding-bottom: 2rem
     .col-form-label
@@ -2993,6 +3025,10 @@ select::-ms-expand
         margin-bottom: 3rem
 
   .selling-form
+    .form-control
+      height: calc(1.6em + .75rem + 2px)
+    .form-row
+      margin-bottom: 1.5rem
     .radio-mobile
       display: contents
       &:first-child
@@ -3005,6 +3041,10 @@ select::-ms-expand
       margin-left: 80px!important
     .radio-last
       margin-left: 58px!important
+
+  .selling .selling-title-container .selling-title
+    padding-top: 10%
+
 
 @media only screen and (max-width: 577px)
   .selling-form
@@ -3654,7 +3694,7 @@ select::-ms-expand
   .reviews-page-title
     text-align: center
   .reviews-page-btn
-    margin-bottom: 14%
+    margin-bottom: 20%
     margin-top: 10%
     button
       padding: 17px 45px
