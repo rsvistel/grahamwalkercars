@@ -241,12 +241,6 @@ select::-ms-expand
 .homepage .featured .title-featured
   text-align: center
 
-@media (min-width: 768px) and (max-width: 991px)
-  .navbar
-    ul
-      li
-        .nav-link
-          font-size: 10px
 
 @media (min-width: 768px)
   .mobile-block, .mobile-section-under-header, .accordion__wrapper, .darck-btn
@@ -254,10 +248,22 @@ select::-ms-expand
   .mobile-close-btn
     display: none
   .navbar-expand-md .navbar-nav .nav-link
-    padding: 0.95vw
+    //padding: 0.95vw
+    padding: 14px
 
+@media (min-width: 768px) and (max-width: 991px)
+  .navbar
+    ul
+      li
+        .nav-link
+          font-size: 9px
 
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 1vw 0.75vw
 
+@media (min-width: 1000px) and (max-width: 1200px)
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 1vw 0.5vw
 @media only screen and (max-width: 767px)
   .upper-half-header
     display: none
@@ -266,6 +272,7 @@ select::-ms-expand
   .mobile-section-under-header
     display: flex
     justify-content: center
+    align-items: center
   .mobile-close-btn
     display: flex
   .mobile-block-items
@@ -728,7 +735,7 @@ select::-ms-expand
     width: 100%
     font-weight: 300
     font-size: 1.9rem
-    margin: 3% 0 2% 0
+    padding: 4% 0 2% 0
 
 //Special Offers
 #special-offers
@@ -875,11 +882,12 @@ select::-ms-expand
         color: #D10609
         font-weight: 600
         font-family: Arial Rounded MT Bold, sans-serif
-        line-height: 15px
+        line-height: 19px
         border-top-left-radius: 7px
+        font-size: 29px
         p
-          font-size: 9px
-          font-weight: 400
+          font-size: 11px
+          font-weight: 600
           font-family: Arial, sans-serif
   .car-desc
     padding: 1% 0 2% 0
@@ -927,6 +935,9 @@ select::-ms-expand
       .col-6
         padding-left: 7%
 
+@media (min-width: 1000px) and (max-width: 1200px)
+  .car-tile .car-price .col-6:last-child p
+    font-size: 10px
 //Car Tile
 //Featured
 @media (min-width: 992px) and (max-width: 1250px)
@@ -1042,7 +1053,7 @@ select::-ms-expand
       color: #ffffff
       li
         font-size: 18px
-        margin-bottom: 15px
+        margin-bottom: 18px
         .col-6
           font-family: Arial, sans-serif
           text-transform: uppercase
@@ -1053,6 +1064,7 @@ select::-ms-expand
 @media (max-width: 768px)
   .pay-us-visit .card-body
       padding-left: 0
+
 
 //pay-us-visit
 
@@ -1307,7 +1319,7 @@ select::-ms-expand
         color: #000000
         margin-bottom: 0
         line-height: 24px
-        font-size: 20px
+        font-size: 19px
         padding: 10px 10px 30px 10px
 
   #used-cars.main-wrapper.short-list-items
@@ -1327,7 +1339,7 @@ select::-ms-expand
   font-family: $primary-font
   text-transform: uppercase
   color: white
-  padding: 3% 0
+  padding: 5% 0 3% 0
   font-size: 1.9rem
   text-align: left
   font-weight: 400
@@ -1625,10 +1637,12 @@ select::-ms-expand
     background-color: #47494A
   .pay-us-visit
     .col-md-4
-      padding: 0 19px
+      padding: 0 18px
+      &:first-child
+        padding-left: 10px
     .form-section
       background-color: #828282
-      padding: 20px 25px
+      padding: 20px 23px
       .form-control
         font-family: 'Roboto', sans-serif
         font-weight: 400
@@ -1660,6 +1674,7 @@ select::-ms-expand
     .opening-hours
       background-color: #828282
       padding: 20px 17px
+      height: 100%
     .card-body
       padding-left: 0
       padding-bottom: 0
@@ -1679,6 +1694,11 @@ select::-ms-expand
     text-align: center
     margin: 10px 0 30px 0
     text-transform: uppercase
+  .map-block-visit
+    height: 100%
+    .title-form-section
+      margin: 10px 0 60px 0
+
 @media (max-width: 768px)
   .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit .text-container, .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.opening-hours, .contact-us .pay-us-visit.pay-us-visit-contact
     background-color: #515151
@@ -1803,10 +1823,11 @@ select::-ms-expand
     padding: 0 10px
 
 #used-cars.main-wrapper .car-tile:nth-child(1)
-  margin-left: 0.4%
+  //margin-left: 0.4%
+  margin-left: 0
 
 #used-cars.main-wrapper .car-tile:nth-child(4n-7)
-  margin-left: 0.4%
+  margin-left: 0
 
 @media (min-width: 769px) and (max-width: 992px)
   #used-cars.main-wrapper
@@ -1841,7 +1862,7 @@ select::-ms-expand
     .about-title
       color: #000
       text-align: center
-      padding: 8% 0 1% 0
+      padding: 8% 0 6% 0
     .search-box
       position: static
       //padding: 2% 5% 2%
@@ -1874,7 +1895,7 @@ select::-ms-expand
           padding: 0
           p
             font-size: 19px
-            font-weight: 900
+            font-weight: 600
             color: #D10609
             margin-right: 9px
           select
@@ -1886,8 +1907,9 @@ select::-ms-expand
             background-size: 15px
             background-repeat: no-repeat
             background-color: white
-            border-radius: 0
             padding-left: 20px
+            border: 1px solid #808080
+            color: #515151
             font-family: Montserrat, sans-serif
             font-size: 20px
             height: 54px
@@ -1949,13 +1971,17 @@ select::-ms-expand
       .text-container
         background-color: #47494A
         margin-top: 10px
-        padding: 20px 0 10px 0
+        //padding: 20px 0 10px 0
+        padding: 20px 10px 0 10px
         .title-form-section
           text-align: left
       .opening-hours
-        background-color: #47494A
+        background-color: #515151
       .text-container h6, .text-under-hours
         font-size: 18px
+
+  .contact-us .pay-us-visit .col-md-4, .contact-us .pay-us-visit .col-md-4:first-child
+    padding: 0
 
 @media (min-width: 769px) and (max-width: 1000px)
   .contact-us .pay-us-visit
@@ -1980,6 +2006,15 @@ select::-ms-expand
 
   .contact-us .pay-us-visit .card-body ul li .col-6
     font-size: 18px
+
+  .contact-us .pay-us-visit .col-md-4
+    padding: 0 1px
+
+  .contact-us .pay-us-visit .form-section, .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit .text-container, .contact-us .pay-us-visit .opening-hours
+    padding: 5px 10px
+
+  .contact-us .form-check-label
+    font-size: 11px
 //Contact
 
 //Modal
@@ -2330,6 +2365,8 @@ select::-ms-expand
       text-align: center
       p
         font-size: 11px
+.block-workshop-section-first
+  padding-left: 15px
 
 @media (max-width: 768px)
   .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section
@@ -2364,6 +2401,14 @@ select::-ms-expand
 
   .valeting .workshop-section .down-block-workshop-section .img-left, .valeting .valeting-section .down-block-workshop-section .img-left
     width: 40%
+  .workshop-page .about-title-section
+    display: none
+
+  .workshop.workshop-page .m-top-100
+    margin-top: 47px
+
+  .footer .container .img-fluid
+    width: 95%
 
 @media (min-width: 769px) and (max-width: 1000px)
   .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section
