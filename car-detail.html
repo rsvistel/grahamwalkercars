@@ -744,7 +744,7 @@
             </a>
         </div>
         <div  class="car-detail-message">
-         <a href="#">Enquire
+         <a href="#" data-toggle="modal" data-target="#modalLoginForm">Enquire
              <span class="car-detail-hyperlink"></span>
          </a>
      </div>
@@ -768,4 +768,84 @@
       </div>
       <script src="js/script.js"></script>
    </body>
+
+
+<div class="modal fade modal-car-detail" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="modal-close" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+            <!-- <div id="car-accordion" class="accordion-used-car__mobile-padding">
+                  <div id="accordion-used-car" class="accordion-used-car"> -->
+                     <!-- <div class="card order-heading-message"> -->
+                        <!-- <div class="card-header accordion-used-car__card-header heading-message form-icon"
+                           id="headingMessage">
+                           <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse"
+                              data-target="#collapseMessage" aria-expanded="false"
+                              aria-controls="collapseMessage" role="button">
+                           Make an enquiry
+                           </a>
+                        </div> -->
+                        <!-- <div id="collapseMessage" class="collapse accordion-used-car__collapse"
+                           aria-labelledby="headingMessage" data-parent="#accordion-used-car"> -->
+                           <div class="modal-form-car">
+                              <div class="form-container">
+                                 <form action="#" method="post" class="accordion-used-car__form">
+                                    <div class="form-group">
+                                       <input type="text"
+                                          class="form-control accordion-used-car__form-control"
+                                          id="InputName" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                       <input type="text"
+                                          class="form-control accordion-used-car__form-control"
+                                          id="InputPhone" placeholder="Phone Number">
+                                    </div>
+                                    <div class="form-group">
+                                       <input type="text"
+                                          class="form-control accordion-used-car__form-control"
+                                          id="InputEmail" placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group">
+                                       <textarea
+                                          class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
+                                          id="FormControlTextarea" rows="5"
+                                          placeholder="Your message"></textarea>
+                                    </div>
+                                    <div class="form-check">
+                                       <label class="selling-chechbox">
+                                       <input  id="exampleCheck1" class="selling-title-chechbox" type="checkbox" value="" />
+                                       <span for="exampleCheck1" class="chechbox-text">
+                                       I agree that Graham Walker Cars may store the information submitted here in order to process my enquiry.</span>
+                                       </label>
+                                    </div>
+                                    <div class="massege-btn-box">
+                                       <button type="submit"
+                                          class="btn accordion-used-car__form-button">Send
+                                       </button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        <!-- </div> -->
+                     <!-- </div>
+                  </div>
+               </div> -->
+      </div>
+      <!-- <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- <div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
+    Modal Login Form</a>
+</div> -->
 </html>

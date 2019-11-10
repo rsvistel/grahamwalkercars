@@ -4306,6 +4306,71 @@ select::-ms-expand
     top: 0
     z-index: 1
 
+  .modal-car-detail
+    z-index: 100000
+    font-family: Roboto, sans-serif
+    .modal-lg
+      //max-width: 100%!important
+    .modal-content
+      background-color: #515151
+      .modal-header
+        border-bottom: 0
+      .modal-close
+        background-image: url("/img/car-detail/close.png")
+        width: 28px
+        background-position: center
+        padding: 20px
+        background-repeat: no-repeat
+        
+  .modal-form-car
+    .form-control
+      font-size: 20px
+      border-radius: 5px
+      line-height: 23px
+    #InputName, #InputPhone, #InputEmail, #FormControlTextarea
+      color: #777
+      //box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5)
+      border-radius: 5px!important
+    #FormControlTextarea
+      resize: none
+      //box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5)
+    .form-check
+      padding-left: 0
+    .selling-chechbox
+      font-family: Open Sans, sans-serif
+      margin: 0 0 2rem 0
+      position: relative
+      padding-left: 35px
+      cursor: pointer
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      color: #fff
+      input
+        position: absolute
+        top: 0
+        left: 0
+        height: 21px
+        width: 21px
+        background-color: #fff
+    .chechbox-text
+      font-size: 14px
+      line-height: 19px
+      display: flex
+    .massege-btn-box
+      display: flex
+      justify-content: center
+    button
+      height: 50px
+      width: 150px
+      border-radius: 5px
+      background-color: #000
+      text-transform: uppercase
+      color: #fff
+      &:hover
+        color: #fff
+
 @media only screen and (max-width: 380px)
   .car-detail-button-mobile
     div
