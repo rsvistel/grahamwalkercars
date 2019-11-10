@@ -42,6 +42,10 @@ select::-ms-expand
   margin-top: 119px
 .red
   color: #BD1316
+
+.homepage #special-offers-section .owl-carousel.owl-special-offers.owl-loaded.owl-drag
+  height: 42vh
+  max-height: 330px
 //Header
 .header.topnav
   background: #222222
@@ -241,12 +245,6 @@ select::-ms-expand
 .homepage .featured .title-featured
   text-align: center
 
-@media (min-width: 768px) and (max-width: 991px)
-  .navbar
-    ul
-      li
-        .nav-link
-          font-size: 10px
 
 @media (min-width: 768px)
   .mobile-block, .mobile-section-under-header, .accordion__wrapper, .darck-btn
@@ -254,10 +252,26 @@ select::-ms-expand
   .mobile-close-btn
     display: none
   .navbar-expand-md .navbar-nav .nav-link
-    padding: 0.95vw
+    //padding: 0.95vw
+    padding: 14px
 
+@media (min-width: 768px) and (max-width: 991px)
+  .navbar
+    ul
+      li
+        .nav-link
+          font-size: 9px
 
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 1vw 0.75vw
 
+@media (min-width: 1200px)
+  .homepage #special-offers-section .owl-carousel.owl-drag .owl-item
+    width: 254px!important
+    margin-right: 15px!important
+@media (min-width: 1000px) and (max-width: 1200px)
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 1vw 0.5vw
 @media only screen and (max-width: 767px)
   .upper-half-header
     display: none
@@ -266,6 +280,7 @@ select::-ms-expand
   .mobile-section-under-header
     display: flex
     justify-content: center
+    align-items: center
   .mobile-close-btn
     display: flex
   .mobile-block-items
@@ -728,12 +743,11 @@ select::-ms-expand
     width: 100%
     font-weight: 300
     font-size: 1.9rem
-    margin: 3% 0 2% 0
+    padding: 4% 0 2% 0
 
 //Special Offers
 #special-offers
   order: 3
-  margin-bottom: 2%
   .title-special-offer
     font-size: 1.6rem
     text-align: center
@@ -875,11 +889,12 @@ select::-ms-expand
         color: #D10609
         font-weight: 600
         font-family: Arial Rounded MT Bold, sans-serif
-        line-height: 15px
+        line-height: 19px
         border-top-left-radius: 7px
+        font-size: 29px
         p
-          font-size: 9px
-          font-weight: 400
+          font-size: 11px
+          font-weight: 600
           font-family: Arial, sans-serif
   .car-desc
     padding: 1% 0 2% 0
@@ -927,6 +942,14 @@ select::-ms-expand
       .col-6
         padding-left: 7%
 
+@media (min-width: 1000px) and (max-width: 1200px)
+  .car-tile .car-price .col-6:last-child p
+    //font-size: 10px
+    font-size: 0.75vw
+
+  .homepage #special-offers-section .owl-carousel.owl-drag .owl-item
+    width: 208px!important
+    margin-right: 18px!important
 //Car Tile
 //Featured
 @media (min-width: 992px) and (max-width: 1250px)
@@ -943,7 +966,8 @@ select::-ms-expand
 .apply
   background-image: url("../img/home/ban.png")
   min-height: 700px
-  background-size: 100% 100%
+  //background-size: 100% 100%
+  background-size: cover
   display: flex
   align-items: center
   background-position: bottom
@@ -1042,7 +1066,7 @@ select::-ms-expand
       color: #ffffff
       li
         font-size: 18px
-        margin-bottom: 15px
+        margin-bottom: 18px
         .col-6
           font-family: Arial, sans-serif
           text-transform: uppercase
@@ -1053,6 +1077,7 @@ select::-ms-expand
 @media (max-width: 768px)
   .pay-us-visit .card-body
       padding-left: 0
+
 
 //pay-us-visit
 
@@ -1307,7 +1332,7 @@ select::-ms-expand
         color: #000000
         margin-bottom: 0
         line-height: 24px
-        font-size: 20px
+        font-size: 19px
         padding: 10px 10px 30px 10px
 
   #used-cars.main-wrapper.short-list-items
@@ -1327,10 +1352,16 @@ select::-ms-expand
   font-family: $primary-font
   text-transform: uppercase
   color: white
-  padding: 3% 0
+  padding: 5% 0 3% 0
   font-size: 1.9rem
   text-align: left
   font-weight: 400
+
+.workshop.valeting .about-title
+  padding: 3% 0
+
+.workshop-section.valeting-section
+  padding: 4% 0 2%
 .about
   .about-section
     background-image: url("../img/about/banner.png")
@@ -1625,10 +1656,12 @@ select::-ms-expand
     background-color: #47494A
   .pay-us-visit
     .col-md-4
-      padding: 0 19px
+      padding: 0 18px
+      &:first-child
+        padding-left: 10px
     .form-section
       background-color: #828282
-      padding: 20px 25px
+      padding: 20px 23px
       .form-control
         font-family: 'Roboto', sans-serif
         font-weight: 400
@@ -1660,6 +1693,7 @@ select::-ms-expand
     .opening-hours
       background-color: #828282
       padding: 20px 17px
+      height: 100%
     .card-body
       padding-left: 0
       padding-bottom: 0
@@ -1679,6 +1713,11 @@ select::-ms-expand
     text-align: center
     margin: 10px 0 30px 0
     text-transform: uppercase
+  .map-block-visit
+    height: 100%
+    .title-form-section
+      margin: 10px 0 60px 0
+
 @media (max-width: 768px)
   .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit .text-container, .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.opening-hours, .contact-us .pay-us-visit.pay-us-visit-contact
     background-color: #515151
@@ -1803,10 +1842,11 @@ select::-ms-expand
     padding: 0 10px
 
 #used-cars.main-wrapper .car-tile:nth-child(1)
-  margin-left: 0.4%
+  //margin-left: 0.4%
+  margin-left: 0
 
 #used-cars.main-wrapper .car-tile:nth-child(4n-7)
-  margin-left: 0.4%
+  margin-left: 0
 
 @media (min-width: 769px) and (max-width: 992px)
   #used-cars.main-wrapper
@@ -1841,7 +1881,7 @@ select::-ms-expand
     .about-title
       color: #000
       text-align: center
-      padding: 8% 0 1% 0
+      padding: 8% 0 6% 0
     .search-box
       position: static
       //padding: 2% 5% 2%
@@ -1874,7 +1914,7 @@ select::-ms-expand
           padding: 0
           p
             font-size: 19px
-            font-weight: 900
+            font-weight: 600
             color: #D10609
             margin-right: 9px
           select
@@ -1886,8 +1926,9 @@ select::-ms-expand
             background-size: 15px
             background-repeat: no-repeat
             background-color: white
-            border-radius: 0
             padding-left: 20px
+            border: 1px solid #808080
+            color: #515151
             font-family: Montserrat, sans-serif
             font-size: 20px
             height: 54px
@@ -1949,13 +1990,17 @@ select::-ms-expand
       .text-container
         background-color: #47494A
         margin-top: 10px
-        padding: 20px 0 10px 0
+        //padding: 20px 0 10px 0
+        padding: 20px 10px 0 10px
         .title-form-section
           text-align: left
       .opening-hours
-        background-color: #47494A
+        background-color: #515151
       .text-container h6, .text-under-hours
         font-size: 18px
+
+  .contact-us .pay-us-visit .col-md-4, .contact-us .pay-us-visit .col-md-4:first-child
+    padding: 0
 
 @media (min-width: 769px) and (max-width: 1000px)
   .contact-us .pay-us-visit
@@ -1980,6 +2025,15 @@ select::-ms-expand
 
   .contact-us .pay-us-visit .card-body ul li .col-6
     font-size: 18px
+
+  .contact-us .pay-us-visit .col-md-4
+    padding: 0 1px
+
+  .contact-us .pay-us-visit .form-section, .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit .text-container, .contact-us .pay-us-visit .opening-hours
+    padding: 5px 10px
+
+  .contact-us .form-check-label
+    font-size: 11px
 //Contact
 
 //Modal
@@ -1987,7 +2041,7 @@ select::-ms-expand
   position: fixed
   top: 0
   z-index: 101
-  background-color: #f8f8fa
+  background-color: rgba(0,0,0,0.6)
   //background: rgba(0, 0, 0, 0.7)
   //background: white
   display: block
@@ -2006,9 +2060,9 @@ select::-ms-expand
     background: white
     margin-top: 4%
     padding: 0
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    -moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //-webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //-moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    //box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
     .block-ul-modal
       color: #171717
     .title-cross-block
@@ -2330,6 +2384,8 @@ select::-ms-expand
       text-align: center
       p
         font-size: 11px
+.block-workshop-section-first
+  padding-left: 15px
 
 @media (max-width: 768px)
   .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section
@@ -2364,6 +2420,14 @@ select::-ms-expand
 
   .valeting .workshop-section .down-block-workshop-section .img-left, .valeting .valeting-section .down-block-workshop-section .img-left
     width: 40%
+  .workshop-page .about-title-section
+    display: none
+
+  .workshop.workshop-page .m-top-100
+    margin-top: 47px
+
+  .footer .container .img-fluid
+    width: 95%
 
 @media (min-width: 769px) and (max-width: 1000px)
   .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section
@@ -2795,9 +2859,9 @@ select::-ms-expand
   .form-row
     margin-bottom: 2rem
   .form-control
-    height: calc(2.2em + .75rem + 2px)
+    height: calc(2.1em + .75rem + 2px)
     padding-left: 1rem
-    font-size: 20px
+    font-size: 19px
     color: #777
   .image-input-container
     input[type='file']
@@ -2830,13 +2894,14 @@ select::-ms-expand
         display: block
         font-size: 18px
         font-family: Arial, sans-serif
-      .drop-description
+
   .button-block
     width: 94.5%
     button
       background: #3399FF
       text-transform: uppercase
       padding: 12px 50px
+      font-weight: 500
   .radio-inline
     display: block
     position: relative
@@ -2859,8 +2924,8 @@ select::-ms-expand
     margin: 0
     padding: 0
     li
-      padding: 1rem 1rem 0.7rem 0
-      font-size: 24px
+      padding: 0.4rem 1rem 0.7rem 0
+      font-size: 22px
       &:before
         content: ''
         display: inline-block
@@ -2923,14 +2988,26 @@ select::-ms-expand
     .form-control
       font-size: 17px
 
+@media only screen and (min-width: 768px) and (max-width: 1000px)
+  .m-top-100
+    margin-top: 88px
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px)
+  .m-top-100
+    margin-top: 104px
 @media only screen and (max-width: 768px)
   .selling-title-container
     padding: 0 1rem
     .selling-title
       text-align: center
-      padding: 2rem 0
+      //padding: 2rem 0
+      font-family: Arial, sans-serif
+      font-size: 5.3vw
+      margin: 15px 0 20px 0
+      text-transform: uppercase
+      font-weight: 600
   .selling-section
-    padding: 0 1rem
+    padding: 0 1.7rem
   .selling-form
     padding-bottom: 2rem
     .col-form-label
@@ -2948,6 +3025,10 @@ select::-ms-expand
         margin-bottom: 3rem
 
   .selling-form
+    .form-control
+      height: calc(1.6em + .75rem + 2px)
+    .form-row
+      margin-bottom: 1.5rem
     .radio-mobile
       display: contents
       &:first-child
@@ -2960,6 +3041,10 @@ select::-ms-expand
       margin-left: 80px!important
     .radio-last
       margin-left: 58px!important
+
+  .selling .selling-title-container .selling-title
+    padding-top: 10%
+
 
 @media only screen and (max-width: 577px)
   .selling-form
@@ -3609,7 +3694,7 @@ select::-ms-expand
   .reviews-page-title
     text-align: center
   .reviews-page-btn
-    margin-bottom: 14%
+    margin-bottom: 20%
     margin-top: 10%
     button
       padding: 17px 45px
