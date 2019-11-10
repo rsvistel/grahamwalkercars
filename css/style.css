@@ -3824,11 +3824,15 @@ select::-ms-expand {
   .car-page .footer {
     display: none; }
   .car-page .car-detail-main-section {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-top: 116px; }
 
   #car-title {
     display: flex;
     justify-content: space-between; }
+    #car-title .car-mobile-name {
+      padding-right: 15px;
+      padding-left: 15px; }
     #car-title h2 {
       font-size: 24px;
       line-height: 29px; }
@@ -3910,8 +3914,13 @@ select::-ms-expand {
   .order-price {
     order: 1; }
 
+  .order-carousel {
+    padding-right: 0; }
+
   .order-value {
-    order: 2; }
+    order: 2;
+    margin-right: -15px;
+    margin-left: -15px; }
 
   #car-title {
     padding-top: 10px;
@@ -3919,7 +3928,13 @@ select::-ms-expand {
     #car-title p {
       padding-bottom: 10px; }
 
-  #car-detail-value .gatters-left {
+  #car-detail-value {
+    padding-left: 12px; }
+    #car-detail-value .gatters-left {
+      padding-left: 15px; }
+
+  .description-car-detail {
+    padding-right: 15px;
     padding-left: 15px; } }
 .car-detail-button-mobile {
   margin: 0;
