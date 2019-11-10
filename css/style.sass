@@ -3625,6 +3625,9 @@ select::-ms-expand
   .topnav
     &.fullscreen
       display: none
+  .footer
+    &.fullscreen
+      display: none
   .overlay
     position: absolute
     background: black
@@ -3754,6 +3757,8 @@ select::-ms-expand
       line-height: 25px
       display: flex
       align-items: center
+      img
+        padding-right: 5px
     #slideshow-shape
       position: absolute
       z-index: 10
@@ -3811,6 +3816,9 @@ select::-ms-expand
   &.fullscreen
     padding-top: 0
     padding-bottom: 0
+
+.carousel-close-mobile
+  display: none
 
 .carousel.vertical .carousel-item
   -webkit-transition: 0.6s ease-in-out top
@@ -4074,6 +4082,8 @@ select::-ms-expand
   #car-title
     display: flex
     justify-content: space-between
+    &.fullscreen
+      display: none
     .car-mobile-name
       padding-right: 15px
       padding-left: 15px
@@ -4135,14 +4145,29 @@ select::-ms-expand
   //       justify-content: flex-end
   //     .price-left
   //       margin-left: 10px
-
+  #carousel-thumb
+    display: flex
+    z-index: 101
+    width: 100%
+    &.fullscreen
+      display: block
+      width: 100%
+      position: relative
+      .carousel-control-prev
+        top: 45%
+        left: 0
+        bottom: auto
+        transform: rotate(-90deg)
+      .carousel-control-next
+        top: 45%
+        transform: rotate(-90deg)
   #carousel-thumb .carousel-control-prev
+    top: 45%
     left: 0
-    top: 50%
     bottom: auto
     transform: rotate(-90deg)
   #carousel-thumb .carousel-control-next
-    top: 50%
+    top: 45%
     right: 0
     bottom: auto
     transform: rotate(-90deg)
@@ -4152,9 +4177,8 @@ select::-ms-expand
     max-width: 100%
   #car-accordion
     overflow: visible
-    width: auto
-    top: auto
-    right: auto
+    &.fullscreen
+      display: none
     #accordion-used-car
       background: none
       display: flex
@@ -4196,11 +4220,30 @@ select::-ms-expand
     padding-right: 15px
     padding-left: 15px
 
-.car-detail-button-mobile
-  margin: 0
-  padding: 0
-  text-align: center
-  .row
+  .car-detail-button-mobile
     margin: 0
     padding: 0
+    text-align: center
+    .row
+      margin: 0
+      padding: 0
+
+  .carousel-close-mobile
+    display: none
+    &.fullscreen
+      display: flex
+      background: url(/img/car-detail/close.png)
+      width: 28px
+      background-repeat: no-repeat
+      background-position: top right
+      cursor: pointer
+      z-index: 1001
+      position: absolute
+      width: 100%
+      padding-bottom: 45px
+
+  #slideshow-counter
+    &.fullscreen
+      position: relative!important
+      z-index: 1001
 
