@@ -91,6 +91,7 @@ $(document).ready(function () {
     });
     if ($('body').hasClass('shortlist') && !$('.shortlist .car-tile').length) {
         $('.empty-shortlist-message').show()
+        $('.shortlist #special-offers').css("margin-bottom", "0");
     }
 
     $('.image-input').click(function () {
