@@ -3822,10 +3822,10 @@ select::-ms-expand
         bottom: -15%
         left: -2%
         padding: 0% 0% 1% 0
-        font-size: 19px
+        //font-size: 19px
         line-height: 25px
         img
-          width: 32px
+          //width: 32px
     .carousel-control-prev-top, .carousel-control-next-top
       display: flex
       width: 9%
@@ -4193,6 +4193,8 @@ select::-ms-expand
 
 .line-detailse-full
   border-top: 1px solid #CCC
+  &.fullscreen
+    display: none
 
 .line-detailse-small
   height: 0.5em
@@ -4221,7 +4223,7 @@ select::-ms-expand
       display: none
     .car-detail-main-section
       padding-bottom: 0
-      padding-top: 107px
+      padding-top: 9%
       &.fullscreen
         padding-bottom: 0
         padding-top: 2%
@@ -4478,6 +4480,8 @@ select::-ms-expand
       background-color: #515151
       .modal-header
         border-bottom: 0
+        .close
+          opacity: 1
       .modal-close
         background-image: url("/img/car-detail/close.png")
         width: 28px
@@ -4545,6 +4549,7 @@ select::-ms-expand
     left: 2%
     margin-bottom: 4%
     padding: 10px 0 0 0
+
 @media only screen and (max-width: 992px) and (orientation: landscape)
   #carousel-thumb
     &.fullscreen
@@ -4554,10 +4559,20 @@ select::-ms-expand
             width: 61%!important
             margin: auto
 
+@media only screen and (max-width: 768px) and (orientation: portrait)
+  .car-page .car-detail-main-section
+    padding-top: 75px
+
+@media only screen and (max-width: 600px)
+  .car-page .car-detail-main-section
+    padding-top: 27%
+
 @media only screen and (max-width: 320px)
   .car-detail-button-mobile
     div
       min-width: 114px
   .car-title-payment
     font-size: 12px!important
+  .car-page .car-detail-main-section
+    padding-top: 34%
 

@@ -3580,10 +3580,7 @@ select::-ms-expand {
         bottom: -15%;
         left: -2%;
         padding: 0% 0% 1% 0;
-        font-size: 19px;
         line-height: 25px; }
-        #carousel-thumb.fullscreen .carousel-inner-top #slideshow-counter img {
-          width: 32px; }
     #carousel-thumb.fullscreen .carousel-control-prev-top, #carousel-thumb.fullscreen .carousel-control-next-top {
       display: flex;
       width: 9%; }
@@ -3925,6 +3922,8 @@ select::-ms-expand {
 
 .line-detailse-full {
   border-top: 1px solid #CCC; }
+  .line-detailse-full.fullscreen {
+    display: none; }
 
 .line-detailse-small {
   height: 0.5em;
@@ -3953,7 +3952,7 @@ select::-ms-expand {
     display: none; }
   .car-page .car-detail-main-section {
     padding-bottom: 0;
-    padding-top: 107px; }
+    padding-top: 9%; }
     .car-page .car-detail-main-section.fullscreen {
       padding-bottom: 0;
       padding-top: 2%; }
@@ -4174,6 +4173,8 @@ select::-ms-expand {
       background-color: #515151; }
       .modal-car-detail .modal-content .modal-header {
         border-bottom: 0; }
+        .modal-car-detail .modal-content .modal-header .close {
+          opacity: 1; }
       .modal-car-detail .modal-content .modal-close {
         background-image: url("/img/car-detail/close.png");
         width: 28px;
@@ -4241,11 +4242,20 @@ select::-ms-expand {
   #carousel-thumb.fullscreen .carousel-inner-top .carousel-item img {
     width: 61% !important;
     margin: auto; } }
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .car-page .car-detail-main-section {
+    padding-top: 75px; } }
+@media only screen and (max-width: 600px) {
+  .car-page .car-detail-main-section {
+    padding-top: 27%; } }
 @media only screen and (max-width: 320px) {
   .car-detail-button-mobile div {
     min-width: 114px; }
 
   .car-title-payment {
-    font-size: 12px !important; } }
+    font-size: 12px !important; }
+
+  .car-page .car-detail-main-section {
+    padding-top: 34%; } }
 
 /*# sourceMappingURL=style.css.map */
