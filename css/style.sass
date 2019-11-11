@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 
 html, body
   max-width: 100%
-  //overflow-x: hidden
+  overflow-x: hidden
   font-size: 16px
 
 body
@@ -4116,23 +4116,23 @@ select::-ms-expand
       position: relative
       .fas.fa-star
         font-size: 22px
-      &:after
-        // display: block
-        content: ""
-        position: absolute
-        // bottom: 0
-        // left: 0
-        // right: 0
-        height: 0.5em
-        width: 80%
-        text-align: center
-        border-bottom: 1px solid #CCC
-        //z-index: -1
-        padding: 19px
-        margin-left: 10%
-      &:last-child
-        &:after
-          border-bottom: none
+      // &:after
+      //   // display: block
+      //   content: ""
+      //   position: absolute
+      //   // bottom: 0
+      //   // left: 0
+      //   // right: 0
+      //   height: 0.5em
+      //   width: 80%
+      //   text-align: center
+      //   border-bottom: 1px solid #CCC
+      //   //z-index: -1
+      //   padding: 19px
+      //   margin-left: 10%
+      // &:last-child
+      //   &:after
+      //     border-bottom: none
       .detailse-used-car__star-green
         .fas.fa-star
           color: #437824
@@ -4190,6 +4190,30 @@ select::-ms-expand
     display: none
     div
       display: none
+
+.line-detailse-full
+  border-top: 1px solid #CCC
+
+.line-detailse-small
+  height: 0.5em
+  width: 80%
+  text-align: center
+  border-top: 1px solid #CCC
+  margin: 0 auto
+
+
+@media only screen and (max-width: 1025px) and (min-width: 993px)
+  .car-detail-main-section
+    padding-top: 120px
+  #car-title .car-title-payment
+    font-size: 12px
+  #car-title div.price-block .price-right
+    font-size: 33px
+  #car-detail-value
+    .detailse-used-car__name, .detailse-used-car__data, .detailse-used-car__name-first, .detailse-used-car__value .fas.fa-star
+      font-size: 17px
+  .description-car-detail
+      font-size: 17px
 
 @media only screen and (max-width: 992px)
   .car-page
