@@ -230,5 +230,24 @@ $(document).ready(function () {
     $('.menubar .mobile-close-btn').click(function () {
         $('.menubar').animate({left: '100%'});
         $('body, .navbar').animate({left: '0'})
+    });
+    $('.mobile-phone').click(function () {
+        $('.phonebar').animate({left: '30%'});
+        $('body, .navbar').animate({left: '-70%'})
+    });
+    $('.phonebar .mobile-close-btn').click(function () {
+        $('.phonebar').animate({left: '100%'});
+        $('body, .navbar').animate({left: '0'})
+    });
+    $('.btn-search').click(function () {
+        $('.menu-search').animate({left: '0'});
+        $('body').animate({left: '74%'});
+        $('.navbar').animate({left: '43%'})
+            .css('width', 'auto')
+    });
+    $('.navbar-toggler.mobile-search-btn.btn-search').click(function () {
+        $('.menu-search').animate({left: '-43%'});
+        $('body').animate({left: '0'});
+        $('.navbar').animate({left: '0'}, { complete: function () { $('.navbar').css('width', '100%') }})
     })
 });
