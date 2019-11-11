@@ -478,8 +478,8 @@
                               </div>
                               <div class="card accordion-used-car__card car-modal-open order-heading-finance">
                                  <div class="card-header accordion-used-car__card-header heading-finance"
-                                    id="headingFinance">
-                                    <a href="#" class=" btn shadow-none collapsed accordion-used-car__title">
+                                    id="headingFinance" >
+                                    <a href="#" class="btn shadow-none collapsed accordion-used-car__title " data-toggle="modal" data-target="#modalFinance">
                                     Finance Option
                                     </a>
                                  </div>
@@ -487,7 +487,7 @@
                               <div class="card order-heading-reserve">
                                  <div class="card-header accordion-used-car__card-header reserve-icon heading-reserve"
                                     id="headingReserve">
-                                    <a href="#" class=" btn shadow-none collapsed accordion-used-car__title">
+                                    <a href="#" class=" btn shadow-none collapsed accordion-used-car__title" data-toggle="modal" data-target="#modalReserve">
                                     Reserve This Car
                                     </a>
                                  </div>
@@ -768,7 +768,7 @@
       <div class="car-detail-button-mobile">
       <div class="container">
          <div  class="car-detail-recerve">
-            <a href="#">Reserve
+            <a href="#" data-toggle="modal" data-target="#modalReserve">Reserve
                 <span class="car-detail-hyperlink"></span>
             </a>
         </div>
@@ -778,7 +778,7 @@
          </a>
      </div>
      <div  class="car-detail-finance">
-      <a href="#">Finance
+      <a href="#" data-toggle="modal" data-target="#modalFinance">Finance
           <span class="car-detail-hyperlink"></span>
       </a>
   </div>
@@ -809,50 +809,306 @@
         </button>
       </div>
       <div class="modal-body mx-3">
-                           <div class="modal-form-car">
-                              <div class="form-container">
-                                 <form action="#" method="post" class="accordion-used-car__form">
-                                    <div class="form-group">
-                                       <input type="text"
-                                          class="form-control accordion-used-car__form-control"
-                                          id="InputNameModal" placeholder="Name">
-                                    </div>
-                                    <div class="form-group">
-                                       <input type="text"
-                                          class="form-control accordion-used-car__form-control"
-                                          id="InputPhoneModal" placeholder="Phone Number">
-                                    </div>
-                                    <div class="form-group">
-                                       <input type="text"
-                                          class="form-control accordion-used-car__form-control"
-                                          id="InputEmailModal" placeholder="Email Address">
-                                    </div>
-                                    <div class="form-group">
-                                       <textarea
-                                          class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
-                                          id="FormControlTextareaModal" rows="5"
-                                          placeholder="Your message"></textarea>
-                                    </div>
-                                    <div class="form-check">
-                                       <label class="selling-chechbox">
-                                       <input  id="exampleCheckModall" class="selling-title-chechbox" type="checkbox" value="" />
-                                       <span for="exampleCheckModal" class="chechbox-text">
-                                       I agree that Graham Walker Cars may store the information submitted here in order to process my enquiry.</span>
-                                       </label>
-                                    </div>
-                                    <div class="massege-btn-box">
-                                       <button type="submit"
-                                          class="btn accordion-used-car__form-button">Send
-                                       </button>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
+               <div class="modal-form-car">
+                  <div class="form-container">
+                     <form action="#" method="post" class="accordion-used-car__form">
+                        <div class="form-group">
+                           <input type="text"
+                              class="form-control accordion-used-car__form-control"
+                              id="InputNameModal" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                           <input type="text"
+                              class="form-control accordion-used-car__form-control"
+                              id="InputPhoneModal" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                           <input type="text"
+                              class="form-control accordion-used-car__form-control"
+                              id="InputEmailModal" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                           <textarea
+                              class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
+                              id="FormControlTextareaModal" rows="5"
+                              placeholder="Your message"></textarea>
+                        </div>
+                        <div class="form-check">
+                           <label class="selling-chechbox">
+                           <input  id="exampleCheckModall" class="selling-title-chechbox" type="checkbox" value="" />
+                           <span for="exampleCheckModal" class="chechbox-text">
+                           I agree that Graham Walker Cars may store the information submitted here in order to process my enquiry.</span>
+                           </label>
+                        </div>
+                        <div class="massege-btn-box">
+                           <button type="submit"
+                              class="btn accordion-used-car__form-button">Send
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
   
       </div>
 
     </div>
   </div>
 </div>
+
+<div class="modal" id="modalFinance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+         <div class="modal-used-cars">
+            <div class="modal-used-cars-container container">
+                   <div class="title-cross-block col-md-12">
+                       <h5 class="title-modal-used-cars">Hire Purchase representative example</h5>
+                       <div class="car-modal-close"  data-dismiss="modal" aria-label="Close">
+                           <img src="img/crossss.png" class="modal-close" alt=""  aria-hidden="true">
+                       </div>
+                   </div>
+                   <div class="row modal-used-cars-blocks">
+                       <div class="col-md-4 img-block">
+                           <h6 class="first-title-modal">Your Vehicle Summary</h6>
+                           <h6 class="second-title-modal">2017 VOLKSWAGEN GOLF</h6>
+                           <p>R 2.0 TSI 5DR 310BHP</p>
+                           <img src="img/home/golf.png" alt="d">
+                       </div>
+        
+                       <div class="col-md-4 block-ul-modal">
+                           <ul>
+                               <li>
+                                   <h6>finance type</h6>
+                                   <h6>hire purchase</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Term</h6>
+                                   <h6>36 months</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Contract Length</h6>
+                                   <h6>36 months</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Cash Price</h6>
+                                   <h6>€1,500.00</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Customer Deposit</h6>
+                                   <h6>€1,000.00</h6>
+                               </li>
+        
+                               <hr>
+                               <li>
+                                   <h6>Total amount of credit</h6>
+                                   <h6>€500.00</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Total amount payable</h6>
+                                   <h6>€1,881.92</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Representative APR</h6>
+                                   <h6>49.7%</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Total interest payable</h6>
+                                   <h6>€381.92</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Fixed rate of interest pa</h6>
+                                   <h6>8.25%</h6>
+                               </li>
+                               <hr>
+                               <li>
+                                   <h6>Admin Fee</h6>
+                                   <h6>€199.0</h6>
+                               </li>
+        
+                           </ul>
+                       </div>
+                       <div class="col-md-4 hire-block">
+                           <div class="text-hire-block">
+                               <span class="modal-used-cars__title">What is Hire Purchase (HP)</span>
+                               <p class="modal-used-cars__description">Pay any deposit and fees, and then the monthly
+                                   repayments to own the vehicle at the end of the
+                                   agreement.</p>
+                           </div>
+                           <div class="modal-used-cars__payments">
+                               <div class="modal-used-cars__value-text">
+                                   <span>monthly payments</span>
+                               </div>
+                               <div class="modal-used-cars__value">
+                                   <span>€24.22</span>
+                               </div>
+                           </div>
+                           <div class="accordion-used-car" id="accordion-used-car-modal">
+                               <div class="card accordion-used-car__card">
+                                   <div class="card-header accordion-used-car__card-header finance-icon" id="headingFinance-title">
+                                       <a  href="#" class="btn shadow-none accordion-used-car__title modal-used-cars__finance">
+                                           Apply for Finance
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modalReserve" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-used-cars reserve-car-modal">
+         <div class="modal-used-cars-container container">
+                <div class="title-cross-block col-md-12">
+                    <h5 class="title-modal-used-cars">Reserve this car</h5>
+                    <div class="car-modal-close"  data-dismiss="modal" aria-label="Close">
+                     <img src="img/crossss.png" class="modal-close" alt=""  aria-hidden="true">
+                 </div>
+                </div>
+                <div class="row modal-used-cars-blocks">
+                    <div class="col-lg-4 img-block">
+                         <h3 class="title-about-us title-reserve-page reserve-page__title">Reserve This Car
+                         </h3>
+                         <div>
+                             <hr class="reserve-page__line">
+                         </div>
+                       <div>
+                             <hr class="reserve-page__line reserve-page__line-half">
+                       </div>
+                         <div>
+                             <p class="reserve-page__desctiption-pay">Total to pay to reserve this car</p>
+                             <div class="reserve-page__pay-block">
+                                     <span class="reserve-page__pay">€100.00</span>
+                             </div>
+                             <hr class="reserve-page__line">
+                         </div>
+                         <p class="reserve-page__summary-mobile reserve-page__summary-title">Summary</p>
+                         <p class="reserve-page__summary-mobile reserve-page__summary-vehicle">Your Vehicle</p>
+                         <h6 class="first-title-modal reserve-page__summary">Your Vehicle Summary</h6>
+                         <div class="reserve-page__card">
+                             <div class="reserve-page__card-title">
+                                 <h6 class="second-title-modal">2017 VOLKSWAGEN GOLF</h6>
+                                 <p class="third-title-modal">R 2.0 TSI 5DR 310BHP</p>
+                                 <span class="reserve-page__pay-value">€13,995</span>
+                             </div>
+                             <div class="reserve-page__card-img-container">
+                                 <img class="img-fluid" src="img/home/golf.png" alt="">
+                             </div>
+                         </div>
+                    </div>
+     
+                    <div class="col-lg-4 block-ul-modal">
+                     <div class="reserve-page__details">
+                         <span class="reserve-page__details-title">Your details</span>
+                         <div>
+                             <span class="reserve-page__details-description">Please provide a few personal details</span>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12 reserve-page-margin-padding">
+                             <form class="reserve-page-margin-padding">
+                                 <div class="form-group row form-group-first">
+                                     <div class="col-sm-12  form-group-mobile">
+                                         <input type="text" class="form-control" id="inputFirstName"
+                                                placeholder="First name *">
+                                     </div>
+                                     <div class="col-sm-12  form-group-mobile">
+                                         <input type="text" class="form-control" id="inputLastName"
+                                                placeholder="Last name *">
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <div class="col-sm-12  form-group-mobile">
+                                         <input type="text" class="form-control" id="inputEmailAddress"
+                                                placeholder="Email Address *">
+                                     </div>
+                                     <div class="col-sm-12 form-group-mobile form-group-mobile-last">
+                                         <input type="text" class="form-control" id="inputContactNumber"
+                                                placeholder="Contact Number *">
+                                     </div>
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+                    </div>
+                    <div class="col-lg-4 hire-block">
+                         <div class="reserve-page__details">
+                             <span class="reserve-page__details-title">Payment Details</span>
+                             <div>
+                                 <span class="reserve-page__details-description reserve-page__details-description-third">Please provide the payment details that you would like to use to reserve this vehicle</span>
+                             </div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-12 col-md-12">
+                                 <label for="cc-number">Credit / Debit Card Number *</label>
+                                 <input type="text" class="form-control" id="cc-number" placeholder="Card Number "
+                                        required="">
+                                 <div class="invalid-feedback">
+                                     Credit card number is required
+                                 </div>
+                             </div>
+                             <div class="col-6 col-sm-6 col-md-6 mb-3">
+                                 <label for="cc-expiration">Expiry Date *</label>
+                                 <input type="text" class="form-control" id="cc-expiration" placeholder="MM  /  YY"
+                                        required="">
+                                 <div class="invalid-feedback">
+                                     Expiration date required
+                                 </div>
+                             </div>
+                             <div class="col-6 col-sm-6 col-md-6 mb-3">
+                                 <label for="cc-cvv">CVC *</label>
+                                 <input type="text" class="form-control" id="cc-cvv" placeholder="CVC" required="">
+                                 <div class="invalid-feedback">
+                                     Security code required
+                                 </div>
+                             </div>
+                         </div>
+     
+                         <div class="col-md-12 col-lg-8 offset-md-0 offset-md-2 d-block reserve-page__stripe no-gutters-mobile">
+                             <div class="reserve-page__stripe-wrapper">
+                                 <img class="d-flex justify-content-center img-fluid" src="img/reserve/stripe.png" alt="stripe">
+                             </div>
+                         </div>
+     
+                         <div class="col-md-12 col-lg-12 d-block reserve-page-margin-padding reserve-page-padding">
+                                 <div class="form-group row reserve-page__checkbox-group custom-control custom-checkbox custom-control-left">
+                                         <input type="checkbox" class="reserve-page__checkbox custom-control-input custom-control-input" id="customCheck" name="example1">
+                                         <label class="reserve-page__checkbox-confirm custom-control-label" for="customCheck">Please confirm you have read and agree to our<a
+                                         class="reserve-page__conditions" href="#"> Terms and Conditions <img
+                                         src="img/reserve/terms.png" alt="Terms and Conditions"></a></p>
+                                 </div>
+                                 <div>
+                                         <hr class="reserve-page__сonditions"></label>
+                                 </div>
+                         <div class="col-md-12 col-lg-12 d-block ml-auto">
+                             <div class="reserve-page__button-container">
+                                 <button class="reviews-button reserve-page__button">Submit Payment<span> Now</span></button>
+                             </div>
+                         </div>
+                     </div>
+                    </div>
+                </div>
+         </div>
+     </div>
+      </div>
+
+    </div>
+  </div>
 
 </html>

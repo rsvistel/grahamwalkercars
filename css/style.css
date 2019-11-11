@@ -1982,12 +1982,15 @@ select::-ms-expand {
   position: fixed;
   top: 0;
   z-index: 101;
-  background-color: rgba(0, 0, 0, 0.6);
   display: block;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  width: 100%; }
+  width: 100%;
+  top: 62%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
   .modal-used-cars .col-md-4 {
     float: left;
     padding: 35px 20px;
@@ -2059,7 +2062,7 @@ select::-ms-expand {
     padding: 0;
     font-family: "Arial Rounded MT Bold", sans-serif;
     font-weight: 600;
-    font-size: 24px; }
+    font-size: 22px; }
   .modal-used-cars .card.accordion-used-car__card {
     background-color: #DBDBDB;
     border: 0; }
@@ -2105,7 +2108,7 @@ select::-ms-expand {
   align-items: center;
   justify-content: flex-end; }
   .car-modal-close img {
-    width: 25%; }
+    width: 72%; }
 
 @media (min-width: 2000px) {
   .modal-used-cars .modal-used-cars-container {
@@ -2192,7 +2195,7 @@ select::-ms-expand {
 .finance-icon {
   background-image: url("../img/finance-icon.png");
   background-repeat: no-repeat;
-  background-position: 1.6rem center; }
+  background-position: 14px center; }
 
 .previously {
   background-color: #47494A;
@@ -4487,4 +4490,3 @@ select::-ms-expand {
     background-size: 14%; } }
 
 /*# sourceMappingURL=style.css.map */
-
