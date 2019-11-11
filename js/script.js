@@ -200,6 +200,7 @@ $(document).ready(function () {
             $('.car-detail-main-section').removeClass('fullscreen');
             $('.accordion-used-car').removeClass('fullscreen');
             $('.overlay').remove();
+            $('#carousel-example-multi').css('height', $('#thumb-inner .carousel-item').outerHeight());
         });
 
     }
