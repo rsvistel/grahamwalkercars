@@ -3759,7 +3759,44 @@ select::-ms-expand {
     padding: 1rem;
     margin-bottom: 14px; }
     #car-accordion #accordion-used-car.fullscreen {
-      background-color: rgba(221, 221, 221, 0.5); }
+      background-color: rgba(221, 221, 221, 0.5);
+      height: 507px;
+      padding-top: 14px; }
+      #car-accordion #accordion-used-car.fullscreen .card {
+        margin-bottom: 9px; }
+      #car-accordion #accordion-used-car.fullscreen .card-header {
+        padding: 0; }
+      #car-accordion #accordion-used-car.fullscreen .card-body {
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 10px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-header {
+        background-size: 7%; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__title {
+        padding: 3.7%;
+        padding-left: 19%;
+        font-size: 18px;
+        line-height: 20px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-control {
+        font-size: 16px;
+        line-height: 11px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body #InputName, #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body #InputPhone, #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body #InputEmail {
+        height: calc(1.2em + .75rem + 2px); }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-group {
+        margin-bottom: 10px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-check {
+        padding-left: 0; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .selling-chechbox {
+        margin: 0 0 5px 0;
+        padding-left: 25px;
+        line-height: 1; }
+        #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .selling-chechbox input {
+          height: 18px;
+          width: 18px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .chechbox-text {
+        font-size: 13px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body button {
+        padding: 6px 41px; }
   #car-accordion .card {
     background: #DBDBDB;
     border-radius: 5px;
@@ -3767,6 +3804,8 @@ select::-ms-expand {
     -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
     margin-bottom: 1.1rem; }
+    #car-accordion .card:last-child {
+      margin-bottom: 0; }
     #car-accordion .card .card-header:first-child {
       border: 0; }
   #car-accordion .card-header {
@@ -3784,13 +3823,14 @@ select::-ms-expand {
     background-size: 10%; }
   #car-accordion .accordion-used-car__title {
     padding: 5%;
+    padding-left: 23%;
     width: 100%;
     font-family: Arial, sans-serif;
     font-weight: 700;
     font-size: 20px;
+    text-align: justify;
     line-height: 25px;
-    cursor: pointer;
-    text-align: center; }
+    cursor: pointer; }
   #car-accordion .accordion-used-car__card-body {
     font-family: Roboto, sans-serif; }
     #car-accordion .accordion-used-car__card-body .form-control {
@@ -3825,14 +3865,12 @@ select::-ms-expand {
         background-color: #fff; }
     #car-accordion .accordion-used-car__card-body .chechbox-text {
       font-size: 14px;
-      line-height: 19px;
-      display: flex; }
+      line-height: 19px; }
     #car-accordion .accordion-used-car__card-body .massege-btn-box {
       display: flex;
       justify-content: center; }
     #car-accordion .accordion-used-car__card-body button {
-      height: 50px;
-      width: 150px;
+      padding: 10px 43px;
       border-radius: 5px;
       background-color: #454146;
       text-transform: uppercase;
@@ -4196,10 +4234,10 @@ select::-ms-expand {
     font-size: 20px;
     border-radius: 5px;
     line-height: 23px; }
-  .modal-form-car #InputName, .modal-form-car #InputPhone, .modal-form-car #InputEmail, .modal-form-car #FormControlTextarea {
+  .modal-form-car #InputNameModal, .modal-form-car #InputPhoneModal, .modal-form-car #InputEmailModal, .modal-form-car #FormControlTextareaModal {
     color: #777;
     border-radius: 5px !important; }
-  .modal-form-car #FormControlTextarea {
+  .modal-form-car #FormControlTextareaModal {
     resize: none; }
   .modal-form-car .form-check {
     padding-left: 0; }

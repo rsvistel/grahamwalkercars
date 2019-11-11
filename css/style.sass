@@ -4012,6 +4012,44 @@ select::-ms-expand
     &.fullscreen
       //padding-bottom: 40%
       background-color: rgba(221,221,221,0.5)
+      height: 507px
+      padding-top: 14px
+      .card
+        margin-bottom: 9px
+      .card-header
+        padding: 0
+      .card-body
+        padding: 1rem
+        padding-top: 0
+        padding-bottom: 10px
+      .accordion-used-car__card-header
+        background-size: 7%
+      .accordion-used-car__title
+        padding: 3.7%
+        padding-left: 19%
+        font-size: 18px
+        line-height: 20px
+      .accordion-used-car__card-body
+        .form-control
+          font-size: 16px
+          line-height: 11px
+        #InputName, #InputPhone, #InputEmail
+          height: calc(1.2em + .75rem + 2px)
+        .form-group
+          margin-bottom: 10px
+        .form-check
+          padding-left: 0
+        .selling-chechbox
+          margin: 0 0 5px 0
+          padding-left: 25px
+          line-height: 1
+          input
+            height: 18px
+            width: 18px
+        .chechbox-text
+          font-size: 13px
+        button
+          padding: 6px 41px
   .card
     background: #DBDBDB
     border-radius: 5px
@@ -4019,6 +4057,8 @@ select::-ms-expand
     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35)
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35)
     margin-bottom: 1.1rem
+    &:last-child
+      margin-bottom: 0
     .card-header
       &:first-child
         border: 0
@@ -4037,13 +4077,14 @@ select::-ms-expand
     background-size: 10%
   .accordion-used-car__title
     padding: 5%
+    padding-left: 23%
     width: 100%
     font-family: Arial, sans-serif
     font-weight: 700
     font-size: 20px
+    text-align: justify
     line-height: 25px
     cursor: pointer
-    text-align: center
   .accordion-used-car__card-body
     font-family: Roboto, sans-serif
     .form-control
@@ -4079,13 +4120,11 @@ select::-ms-expand
     .chechbox-text
       font-size: 14px
       line-height: 19px
-      display: flex
     .massege-btn-box
       display: flex
       justify-content: center
     button
-      height: 50px
-      width: 150px
+      padding: 10px 43px
       border-radius: 5px
       background-color: #454146
       text-transform: uppercase
@@ -4492,11 +4531,11 @@ select::-ms-expand
       font-size: 20px
       border-radius: 5px
       line-height: 23px
-    #InputName, #InputPhone, #InputEmail, #FormControlTextarea
+    #InputNameModal, #InputPhoneModal, #InputEmailModal, #FormControlTextareaModal
       color: #777
       //box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5)
       border-radius: 5px!important
-    #FormControlTextarea
+    #FormControlTextareaModal
       resize: none
       //box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5)
     .form-check
