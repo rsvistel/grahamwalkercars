@@ -3765,20 +3765,22 @@ select::-ms-expand {
 .carousel.vertical .carousel-item {
   left: 0; }
 
-#carousel-example-multi .carousel-control-next, #carousel-example-multi .carousel-control-prev {
-  bottom: auto;
-  right: 0;
-  left: 0;
-  width: 100%; }
-#carousel-example-multi .carousel-control-prev {
-  top: 0; }
-#carousel-example-multi .carousel-control-next {
-  bottom: 0;
-  top: auto; }
-#carousel-example-multi .carousel-inner img {
-  cursor: pointer;
-  margin-left: 1.4%;
-  margin-bottom: 1.4%; }
+#carousel-example-multi {
+  overflow: hidden; }
+  #carousel-example-multi .carousel-control-next, #carousel-example-multi .carousel-control-prev {
+    bottom: auto;
+    right: 0;
+    left: 0;
+    width: 100%; }
+  #carousel-example-multi .carousel-control-prev {
+    top: 0; }
+  #carousel-example-multi .carousel-control-next {
+    bottom: 0;
+    top: auto; }
+  #carousel-example-multi .carousel-inner img {
+    cursor: pointer;
+    margin-left: 1.4%;
+    margin-bottom: 1.4%; }
 
 #car-accordion {
   display: flex;
