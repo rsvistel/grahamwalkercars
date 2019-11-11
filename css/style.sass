@@ -40,7 +40,7 @@ select::-ms-expand
   margin-top: 10px
 
 .m-top-100
-  margin-top: 119px
+  margin-top: 125px
 .red
   color: #BD1316
 
@@ -55,7 +55,7 @@ select::-ms-expand
   width: 100%
   z-index: 11111
 .upper-half-header
-  padding: 0.5% 0 1% 0
+  padding: 0.5% 0 0.5% 0
   display: -webkit-box
   display: -ms-flexbox
   display: flex
@@ -109,7 +109,7 @@ select::-ms-expand
     font-size: 1.05rem
 .stars-block
   color: #FFA500
-  font-size: 1rem
+  font-size: 1.25rem
 .title-logo-bottom
   margin: 0 1.5rem
   font-family: $secondary-font
@@ -139,11 +139,12 @@ select::-ms-expand
   line-height: 0.7rem
 .sales-number
   font-family: $secondary-font
-  font-weight: 700
+  font-weight: 500
+  font-size: 18px
 .social-icon img
   pointer-events: none
   cursor: pointer
-  width: 70%
+  width: 61%
   // width: 40px
   // height: 40px
 .social-icon
@@ -174,6 +175,7 @@ select::-ms-expand
       display: -webkit-box
       display: -ms-flexbox
       display: flex
+      justify-content: center
 .social-icon.stars-block.col-md-1
   justify-content: flex-start
 
@@ -226,7 +228,7 @@ select::-ms-expand
       .nav-link
         text-transform: uppercase
         font-family: 'Montserrat', sans-serif
-        font-weight: 600
+        font-weight: 700
         font-size: 13px
         color: #000000
         text-align: center
@@ -254,7 +256,7 @@ select::-ms-expand
     display: none
   .navbar-expand-md .navbar-nav .nav-link
     //padding: 0.95vw
-    padding: 14px
+    padding: 13px
 
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
@@ -272,7 +274,7 @@ select::-ms-expand
     margin-right: 15px!important
 @media (min-width: 1000px) and (max-width: 1200px)
   .navbar-expand-md .navbar-nav .nav-link
-    padding: 1vw 0.5vw
+    padding: 13px 5px
 @media only screen and (max-width: 767px)
   .upper-half-header
     display: none
@@ -408,6 +410,8 @@ select::-ms-expand
     background-repeat: no-repeat
     background-size: 4%
 
+  .footer .container .img-fluid
+    width: 95%
   .menu-search
     .card
       border-radius: 0
@@ -1091,7 +1095,7 @@ select::-ms-expand
 .footer
   background-color: #333
   color: #ffffff
-  padding: 5% 0
+  padding: 4% 0
   .container
     display: flex
     flex-direction: column
@@ -1108,7 +1112,7 @@ select::-ms-expand
       margin: 15px 0
       text-align: center
     .img-fluid
-      width: 35%
+      width: 33%
     .footer-facebook
       width: 5%
 
@@ -1228,12 +1232,17 @@ select::-ms-expand
       font-size: 4.5vw
       font-weight: 600
 
+
+
 @media (min-width: 450px) and (max-width: 768px)
   #banner #banner-image img
     height: auto
 
+  .footer .container .img-fluid
+    width: 55%
+
 @media (min-width: 769px) and (max-width: 1000px)
-  #banner .search-box .col-md-2 button, #banner .search-box .col-md-2 select
+  #banner .search-box .col-md-2 button, #banner .search-box .col-md-2 select, #banner .search-box .col-md-3 button, #banner .search-box .col-md-3 select
     height: 45px
 
   #banner .search-box .col-md-2 button img
@@ -1351,18 +1360,20 @@ select::-ms-expand
 .about-title-section
   background-color: #47494A
   .container
-    padding: 0 9px
+    padding: 0
 .about-title
   font-family: $primary-font
   text-transform: uppercase
   color: white
-  padding: 5% 0 3% 0
+  padding: 4% 0 4% 0
   font-size: 1.9rem
   text-align: left
   font-weight: 400
 
 .workshop.valeting .about-title
   padding: 3% 0
+
+
 
 .workshop-section.valeting-section
   padding: 4% 0 2%
@@ -1374,7 +1385,7 @@ select::-ms-expand
     background-position: center
     background-size: cover
     .text-about-section
-      padding-left: 10px
+      padding-left: 0
     p
       font-family: Arial, sans-serif
       color: white
@@ -2188,6 +2199,8 @@ select::-ms-expand
     .owl-carousel.owl-drag .owl-item
       width: 254px!important
       margin-right: 14.5px!important
+  .footer
+    padding: 2% 0
 
 @media (min-width: 1650px)
   .mechanic-image img
@@ -2430,8 +2443,7 @@ select::-ms-expand
   .workshop.workshop-page .m-top-100
     margin-top: 47px
 
-  .footer .container .img-fluid
-    width: 95%
+
 
 @media (min-width: 769px) and (max-width: 1000px)
   .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section
@@ -3735,7 +3747,6 @@ select::-ms-expand
     color: #000
   p
     font-size: 18px
-    font-weight: 700
     line-height: 22px
     padding: 10px 0 5px 0
   .car-title-payment
@@ -3770,6 +3781,7 @@ select::-ms-expand
     width: 100%
     left: 0
     padding-top: 2%
+    padding-bottom: 1%
     h2
       color: #fff
     .price-block
@@ -3777,6 +3789,9 @@ select::-ms-expand
       flex-direction: column-reverse
       background: none
       text-align: right
+      position: absolute
+      top: 10%
+      right: 33%
       .price-right
         color: #fff
       .price-left-block
@@ -3791,9 +3806,12 @@ select::-ms-expand
   display: flex
   z-index: 101
   width: 100%
+  .carousel-control-next-top, .carousel-control-prev-top
+    display: none
   &.fullscreen
     display: block
     width: 100%
+    position: relative
     .carousel-control-prev
       left: 0
       right: auto
@@ -3810,17 +3828,36 @@ select::-ms-expand
         width: 14%
         &:nth-child(-n+6)
           display: block
+    .carousel-inner-top
+      position: initial
+      .carousel-item
+        img
+          width: 80%!important
+          margin: auto
+      #slideshow-counter
+        bottom: -15%
+        left: -2%
+        padding: 0% 0% 1% 0
+        //font-size: 19px
+        line-height: 25px
+        img
+          //width: 32px
+    .carousel-control-prev-top, .carousel-control-next-top
+      display: flex
+      width: 9%
     #carousel-example-multi
       height: auto
+      position: absolute
+      margin-top: 7%
       .carousel-inner
-        width: 95%
+        width: 100%
         margin: 0 auto
       .carousel-control-prev
         right: auto
-        left: 0
+        left: -4%
         width: auto
       .carousel-control-next
-        right: 0
+        right: -4%
         left: auto
         width: auto
       .carousel-item
@@ -3848,12 +3885,15 @@ select::-ms-expand
       align-items: center
       img
         padding-right: 5px
+        //width: 32px
     #slideshow-shape
       position: absolute
       z-index: 10
       bottom: 0
       right: 0
       padding: 20px
+      &.fullscreen
+        display: none
   .carousel-control-next, .carousel-control-prev
     bottom: auto
     z-index: 101
@@ -3898,6 +3938,7 @@ select::-ms-expand
     background-repeat: no-repeat
     background-position: top
     cursor: pointer
+    padding: 23px
 .car-detail-main-section
   //padding-top: 11%
   padding-top: 150px
@@ -4091,23 +4132,23 @@ select::-ms-expand
       position: relative
       .fas.fa-star
         font-size: 22px
-      &:after
-        // display: block
-        content: ""
-        position: absolute
-        // bottom: 0
-        // left: 0
-        // right: 0
-        height: 0.5em
-        width: 80%
-        text-align: center
-        border-bottom: 1px solid #CCC
-        //z-index: -1
-        padding: 19px
-        margin-left: 10%
-      &:last-child
-        &:after
-          border-bottom: none
+      // &:after
+      //   // display: block
+      //   content: ""
+      //   position: absolute
+      //   // bottom: 0
+      //   // left: 0
+      //   // right: 0
+      //   height: 0.5em
+      //   width: 80%
+      //   text-align: center
+      //   border-bottom: 1px solid #CCC
+      //   //z-index: -1
+      //   padding: 19px
+      //   margin-left: 10%
+      // &:last-child
+      //   &:after
+      //     border-bottom: none
       .detailse-used-car__star-green
         .fas.fa-star
           color: #437824
@@ -4166,13 +4207,42 @@ select::-ms-expand
     div
       display: none
 
+.line-detailse-full
+  border-top: 1px solid #CCC
+  &.fullscreen
+    display: none
+
+.line-detailse-small
+  height: 0.5em
+  width: 80%
+  text-align: center
+  border-top: 1px solid #CCC
+  margin: 0 auto
+
+
+@media only screen and (max-width: 1025px) and (min-width: 993px)
+  .car-detail-main-section
+    padding-top: 120px
+  #car-title .car-title-payment
+    font-size: 12px
+  #car-title div.price-block .price-right
+    font-size: 33px
+  #car-detail-value
+    .detailse-used-car__name, .detailse-used-car__data, .detailse-used-car__name-first, .detailse-used-car__value .fas.fa-star
+      font-size: 17px
+  .description-car-detail
+      font-size: 17px
+
 @media only screen and (max-width: 992px)
   .car-page
     .footer
       display: none
     .car-detail-main-section
       padding-bottom: 0
-      padding-top: 116px
+      padding-top: 9%
+      &.fullscreen
+        padding-bottom: 0
+        padding-top: 2%
   #car-title
     display: flex
     justify-content: space-between
@@ -4186,7 +4256,6 @@ select::-ms-expand
       line-height: 29px
     p
       font-size: 18px
-      font-weight: 700
       line-height: 20px
       padding: 5px 0 5px 0
     div.price-block
@@ -4255,13 +4324,18 @@ select::-ms-expand
       .carousel-control-next
         top: 45%
         transform: rotate(-90deg)
+      .carousel-inner-top
+        .carousel-item
+          img
+            width: 95%!important
+            margin: auto
   #carousel-thumb .carousel-control-prev
-    top: 45%
+    top: 40%
     left: 0
     bottom: auto
     transform: rotate(-90deg)
   #carousel-thumb .carousel-control-next
-    top: 45%
+    top: 40%
     right: 0
     bottom: auto
     transform: rotate(-90deg)
@@ -4312,7 +4386,7 @@ select::-ms-expand
     p
       padding-bottom: 10px
   #car-detail-value
-    padding-left: 12px
+    //padding-left: 12px
     .gatters-left
       padding-left: 15px
   .description-car-detail
@@ -4332,14 +4406,12 @@ select::-ms-expand
     &.fullscreen
       display: flex
       background: url(/img/car-detail/close.png)
-      width: 28px
-      background-repeat: no-repeat
-      background-position: top right
-      cursor: pointer
-      z-index: 1001
       position: absolute
-      width: 100%
-      padding-bottom: 45px
+      z-index: 10
+      top: 0
+      right: 0
+      padding: 20px
+      z-index: 1001
 
   #slideshow-counter
     &.fullscreen
@@ -4351,6 +4423,8 @@ select::-ms-expand
     justify-content: space-around
     background: #515151
     margin-top: 50%
+    &.fullscreen
+      display: none
     div
       display: flex
       align-items: flex-end
@@ -4398,12 +4472,14 @@ select::-ms-expand
   .modal-car-detail
     z-index: 100000
     font-family: Roboto, sans-serif
-    .modal-lg
+    //.modal-lg
       //max-width: 100%!important
     .modal-content
       background-color: #515151
       .modal-header
         border-bottom: 0
+        .close
+          opacity: 1
       .modal-close
         background-image: url("/img/car-detail/close.png")
         width: 28px
@@ -4460,8 +4536,93 @@ select::-ms-expand
       &:hover
         color: #fff
 
-@media only screen and (max-width: 380px)
+  #carousel-thumb .carousel-control-next-top, #carousel-thumb .carousel-control-prev-top
+    display: flex
+    &.fullscreen
+
+  #carousel-thumb.fullscreen .carousel-control-prev-top, #carousel-thumb.fullscreen .carousel-control-next-top
+    width: 19.7%
+
+  #carousel-thumb.fullscreen .carousel-inner-top #slideshow-counter
+    left: 2%
+    margin-bottom: 4%
+    padding: 10px 0 0 0
+
+  #carousel-thumb
+    .carousel-inner-top
+      .carousel-item
+        &:before
+          content: ""
+          position: absolute
+          width: 100%
+          height: 100%
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0)), to(rgba(0, 0, 0, 0.8)))
+          background: -o-linear-gradient(rgba(4, 4, 4, 0), rgba(0, 0, 0, 0.8))
+          background: linear-gradient(rgba(4, 4, 4, 0), rgba(0, 0, 0, 0.8))
+
+@media only screen and (max-width: 992px) and (orientation: landscape)
+  #carousel-thumb
+    &.fullscreen
+      .carousel-inner-top
+        .carousel-item
+          img
+            width: 61%!important
+            margin: auto
+
+@media only screen and (max-width: 768px) and (orientation: portrait)
+  .car-page .car-detail-main-section
+    padding-top: 75px
+
+@media only screen and (max-width: 600px)
+  .car-page .car-detail-main-section
+    padding-top: 27%
+
+@media only screen and (max-width: 320px)
   .car-detail-button-mobile
     div
       min-width: 114px
+  .car-title-payment
+    font-size: 12px!important
+  .car-page .car-detail-main-section
+    padding-top: 34%
+
+@media (min-width: 768px) and (max-width: 1200px)
+  .header.topnav
+    .container
+      padding: 0
+
+@media (min-width: 1000px) and (max-width: 1200px)
+  .upper-half-header .col-md-2
+    -ms-flex: 0 0 14%
+    flex: 0 0 14%
+    max-width: 14%
+
+  .titles-logo
+    margin-right: 2%
+
+  .title-address.col-md-3
+    -ms-flex: 0 0 27%
+    flex: 0 0 27%
+    max-width: 27%
+
+  .footer .container .img-fluid
+    width: 40%
+
+@media (min-width: 769px) and (max-width: 1000px)
+  .social-icon img
+    width: 100%
+@media (min-width: 769px) and (max-width: 991px)
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 15px 6px
+
+@media (min-width: 767px) and (max-width: 1000px) and (orientation: portrait)
+  .footer .container
+    .img-fluid
+      width: 57%
+    .title-number, .title-address
+      font-size: 1.25rem
+    .footer-facebook
+      width: 7.5%
+  .established
+    font-size: 1.45rem
 
