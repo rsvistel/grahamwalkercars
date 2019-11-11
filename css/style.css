@@ -4086,10 +4086,8 @@ select::-ms-expand {
     #car-title p {
       padding-bottom: 10px; }
 
-  #car-detail-value {
-    padding-left: 12px; }
-    #car-detail-value .gatters-left {
-      padding-left: 15px; }
+  #car-detail-value .gatters-left {
+    padding-left: 15px; }
 
   .description-car-detail {
     padding-right: 15px;
