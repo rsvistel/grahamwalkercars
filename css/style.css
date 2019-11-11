@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
 
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
   font-size: 16px; }
 
 body {
@@ -3489,7 +3488,6 @@ select::-ms-expand {
     color: #000; }
   #car-title p {
     font-size: 18px;
-    font-weight: 700;
     line-height: 22px;
     padding: 10px 0 5px 0; }
   #car-title .car-title-payment {
@@ -3546,9 +3544,12 @@ select::-ms-expand {
   display: flex;
   z-index: 101;
   width: 100%; }
+  #carousel-thumb .carousel-control-next-top, #carousel-thumb .carousel-control-prev-top {
+    display: none; }
   #carousel-thumb.fullscreen {
     display: block;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     #carousel-thumb.fullscreen .carousel-control-prev {
       left: 0;
       right: auto;
@@ -3565,10 +3566,24 @@ select::-ms-expand {
         width: 14%; }
         #carousel-thumb.fullscreen .carousel-indicators li:nth-child(-n+6) {
           display: block; }
+    #carousel-thumb.fullscreen .carousel-inner-top {
+      position: initial; }
+      #carousel-thumb.fullscreen .carousel-inner-top .carousel-item img {
+        width: 80% !important;
+        margin: auto; }
+      #carousel-thumb.fullscreen .carousel-inner-top #slideshow-counter {
+        bottom: -15%;
+        left: -2%;
+        padding: 0% 0% 1% 0; }
+    #carousel-thumb.fullscreen .carousel-control-prev-top, #carousel-thumb.fullscreen .carousel-control-next-top {
+      display: flex;
+      width: 9%; }
     #carousel-thumb.fullscreen #carousel-example-multi {
-      height: auto; }
+      height: auto;
+      position: absolute;
+      margin-top: 7%; }
       #carousel-thumb.fullscreen #carousel-example-multi .carousel-inner {
-        width: 95%;
+        width: 100%;
         margin: 0 auto; }
       #carousel-thumb.fullscreen #carousel-example-multi .carousel-control-prev {
         right: auto;
@@ -3608,6 +3623,8 @@ select::-ms-expand {
       bottom: 0;
       right: 0;
       padding: 20px; }
+      #carousel-thumb .carousel-inner #slideshow-shape.fullscreen {
+        display: none; }
   #carousel-thumb .carousel-control-next, #carousel-thumb .carousel-control-prev {
     bottom: auto;
     z-index: 101;
@@ -3973,6 +3990,9 @@ select::-ms-expand {
       #carousel-thumb.fullscreen .carousel-control-next {
         top: 45%;
         transform: rotate(-90deg); }
+      #carousel-thumb.fullscreen .carousel-inner-top .carousel-item img {
+        width: 100% !important;
+        margin: auto; }
 
   #carousel-thumb .carousel-control-prev {
     top: 45%;
@@ -4179,7 +4199,10 @@ select::-ms-expand {
     text-transform: uppercase;
     color: #fff; }
     .modal-form-car button:hover {
-      color: #fff; } }
+      color: #fff; }
+
+  #carousel-thumb .carousel-control-next-top, #carousel-thumb .carousel-control-prev-top {
+    display: flex; } }
 @media only screen and (max-width: 380px) {
   .car-detail-button-mobile div {
     min-width: 114px; } }

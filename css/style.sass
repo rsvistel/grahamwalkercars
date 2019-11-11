@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 
 html, body
   max-width: 100%
-  overflow-x: hidden
+  //overflow-x: hidden
   font-size: 16px
 
 body
@@ -3731,7 +3731,6 @@ select::-ms-expand
     color: #000
   p
     font-size: 18px
-    font-weight: 700
     line-height: 22px
     padding: 10px 0 5px 0
   .car-title-payment
@@ -3787,9 +3786,12 @@ select::-ms-expand
   display: flex
   z-index: 101
   width: 100%
+  .carousel-control-next-top, .carousel-control-prev-top
+    display: none
   &.fullscreen
     display: block
     width: 100%
+    position: relative
     .carousel-control-prev
       left: 0
       right: auto
@@ -3806,10 +3808,25 @@ select::-ms-expand
         width: 14%
         &:nth-child(-n+6)
           display: block
+    .carousel-inner-top
+      position: initial
+      .carousel-item
+        img
+          width: 80%!important
+          margin: auto
+      #slideshow-counter
+        bottom: -15%
+        left: -2%
+        padding: 0% 0% 1% 0
+    .carousel-control-prev-top, .carousel-control-next-top
+      display: flex
+      width: 9%
     #carousel-example-multi
       height: auto
+      position: absolute
+      margin-top: 7%
       .carousel-inner
-        width: 95%
+        width: 100%
         margin: 0 auto
       .carousel-control-prev
         right: auto
@@ -3850,6 +3867,8 @@ select::-ms-expand
       bottom: 0
       right: 0
       padding: 20px
+      &.fullscreen
+        display: none
   .carousel-control-next, .carousel-control-prev
     bottom: auto
     z-index: 101
@@ -4251,6 +4270,11 @@ select::-ms-expand
       .carousel-control-next
         top: 45%
         transform: rotate(-90deg)
+      .carousel-inner-top
+        .carousel-item
+          img
+            width: 100%!important
+            margin: auto
   #carousel-thumb .carousel-control-prev
     top: 45%
     left: 0
@@ -4455,6 +4479,9 @@ select::-ms-expand
       color: #fff
       &:hover
         color: #fff
+
+  #carousel-thumb .carousel-control-next-top, #carousel-thumb .carousel-control-prev-top
+    display: flex
 
 @media only screen and (max-width: 380px)
   .car-detail-button-mobile
