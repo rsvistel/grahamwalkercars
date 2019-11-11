@@ -1269,6 +1269,17 @@ select::-ms-expand {
 #used-cars.main-wrapper.short-list-items {
   background: #47494A; }
 
+.shortlist .empty-shortlist-message {
+  display: none;
+  color: #000;
+  font-size: 22px;
+  text-align: left;
+  padding: 2% 0;
+  background: #EEEEEC;
+  font-family: Arial, sans-serif; }
+  .shortlist .empty-shortlist-message .container {
+    padding: 0; }
+
 @media (max-width: 768px) {
   .shortlist #special-offers-section {
     background-color: white !important;
@@ -4307,7 +4318,13 @@ select::-ms-expand {
     padding-top: 27%; } }
 @media only screen and (max-width: 320px) {
   .car-detail-button-mobile div {
-    min-width: 114px; } }
+    min-width: 114px; }
+
+  .car-title-payment {
+    font-size: 12px !important; }
+
+  .car-page .car-detail-main-section {
+    padding-top: 34%; } }
 @media (min-width: 768px) and (max-width: 1200px) {
   .header.topnav .container {
     padding: 0; } }
@@ -4343,11 +4360,5 @@ select::-ms-expand {
 
   .established {
     font-size: 1.45rem; } }
-
-  .car-title-payment {
-    font-size: 12px !important; }
-
-  .car-page .car-detail-main-section {
-    padding-top: 34%; } }
 
 /*# sourceMappingURL=style.css.map */
