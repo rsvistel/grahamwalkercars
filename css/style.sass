@@ -4396,24 +4396,6 @@ select::-ms-expand
       right: 0
       padding: 20px
       z-index: 1001
-      // width: 28px
-      // background-repeat: no-repeat
-      // background-position: top right
-      // cursor: pointer
-      // z-index: 1001
-      // position: absolute
-      // width: 100%
-      // padding-bottom: 45px
-      // display: flex
-      // background: url(/img/car-detail/close.png)
-      // width: 28px
-      // background-repeat: no-repeat
-      // background-position: top right
-      // cursor: pointer
-      // z-index: 1001
-      // position: absolute
-      // width: 100%
-      // padding-bottom: 45px
 
   #slideshow-counter
     &.fullscreen
@@ -4549,6 +4531,18 @@ select::-ms-expand
     left: 2%
     margin-bottom: 4%
     padding: 10px 0 0 0
+
+  #carousel-thumb
+    .carousel-inner-top
+      .carousel-item
+        &:before
+          content: ""
+          position: absolute
+          width: 100%
+          height: 100%
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0)), to(rgba(0, 0, 0, 0.8)))
+          background: -o-linear-gradient(rgba(4, 4, 4, 0), rgba(0, 0, 0, 0.8))
+          background: linear-gradient(rgba(4, 4, 4, 0), rgba(0, 0, 0, 0.8))
 
 @media only screen and (max-width: 992px) and (orientation: landscape)
   #carousel-thumb
