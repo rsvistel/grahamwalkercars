@@ -3747,7 +3747,39 @@ select::-ms-expand {
     padding: 1rem;
     margin-bottom: 14px; }
     #car-accordion #accordion-used-car.fullscreen {
-      background-color: rgba(221, 221, 221, 0.5); }
+      background-color: rgba(221, 221, 221, 0.5);
+      height: 507px; }
+      #car-accordion #accordion-used-car.fullscreen .card {
+        margin-bottom: 9px; }
+      #car-accordion #accordion-used-car.fullscreen .card-header {
+        padding: 0; }
+      #car-accordion #accordion-used-car.fullscreen .card-body {
+        padding: 1rem;
+        padding-top: 0; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-header {
+        background-size: 7%; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__title {
+        padding: 4%;
+        font-size: 18px;
+        line-height: 20px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-control {
+        font-size: 18px;
+        line-height: 14px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-group {
+        margin-bottom: 10px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-check {
+        padding-left: 0; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .selling-chechbox {
+        margin: 0 0 5px 0;
+        padding-left: 25px;
+        line-height: 1; }
+        #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .selling-chechbox input {
+          height: 18px;
+          width: 18px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .chechbox-text {
+        font-size: 13px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body button {
+        padding: 6px 41px; }
   #car-accordion .card {
     background: #DBDBDB;
     border-radius: 5px;
@@ -3813,14 +3845,12 @@ select::-ms-expand {
         background-color: #fff; }
     #car-accordion .accordion-used-car__card-body .chechbox-text {
       font-size: 14px;
-      line-height: 19px;
-      display: flex; }
+      line-height: 19px; }
     #car-accordion .accordion-used-car__card-body .massege-btn-box {
       display: flex;
       justify-content: center; }
     #car-accordion .accordion-used-car__card-body button {
-      height: 50px;
-      width: 150px;
+      padding: 10px 43px;
       border-radius: 5px;
       background-color: #454146;
       text-transform: uppercase;
