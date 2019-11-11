@@ -1326,6 +1326,17 @@ select::-ms-expand
 #used-cars.main-wrapper.short-list-items
   background: #47494A
 
+.shortlist .empty-shortlist-message
+    display: none
+    color: #000
+    font-size: 22px
+    text-align: left
+    padding: 2% 0
+    background: #EEEEEC
+    font-family: Arial, sans-serif
+    .container
+      padding: 0
+
 
 @media (max-width: 768px)
   .shortlist
@@ -2859,12 +2870,10 @@ select::-ms-expand
       height: 21px
       width: 21px
       background-color: #fff
-  .selling-title-chechbox
-    //margin-right: 10px
   .chechbox-text
     font-size: 13.5px
     font-weight: 300
-    display: flex
+    vertical-align: text-top
 .selling-title-padding
   padding: 0
 
@@ -2998,11 +3007,27 @@ select::-ms-expand
 .radio input:checked + .radio__text:after
   opacity: 1
 
+@media only screen and (min-width: 768px) and (max-width: 991px)
+  .selling-section
+    .selling-form
+      .col-form-label
+        display: none
+      .radio-mobile
+        display: block!important
+  .selling-form .image-input-container .image-input
+    width: 100%
+
+  .selling-form .button-block
+    width: 100%
+    display: initial
+
 @media only screen and (min-width: 768px) and (max-width: 1200px)
   .selling-form
     font-size: 17px
     .form-control
       font-size: 17px
+  .selling-section
+    padding-top: 1%
 
 @media only screen and (min-width: 768px) and (max-width: 1000px)
   .m-top-100
@@ -3011,7 +3036,7 @@ select::-ms-expand
 @media only screen and (min-width: 1000px) and (max-width: 1200px)
   .m-top-100
     margin-top: 104px
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 767px)
   .selling-title-container
     padding: 0 1rem
     .selling-title
@@ -3070,13 +3095,18 @@ select::-ms-expand
       margin-left: 18px!important
 
 @media only screen and (max-width: 360px)
+  .selling-title-container
+    padding: 0 8px
+    .container
+      padding-right: 10px
+      padding-left: 10px
   .selling-form
     .radio-inline
       //padding-left: 0.4rem
     .radio-first
       //margin-left: 5%!important
     .radio-last
-      margin-left: 17px!important
+      margin-left: 16px!important
     .radio__text
       font-size: 14px
     .radio__text
