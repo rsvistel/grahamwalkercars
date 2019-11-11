@@ -14,30 +14,30 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body class="selling">
     <!-- <div class="overlay"></div> -->
     <section class="header topnav" id="myTopnav">
-        <div class="container">
+        <div class="container container-topnav">
             <div class="row">
                 <div class="col-md-12 upper-half-header">
                     <div class="titles-logo col-md-4 col-lg-4">
                         <img class="img-fluid" src="img/header/graham.png" alt="">
                     </div>
                     <div class="title-contact col-md-2 col-lg-3">
-                        <img class="img-fluid" src="img/header/phone.png" alt="" />
+                        <img class="img-fluid" src="img/header/phone.svg" alt="" />
                         <div class="number-phone">
                             <h6 class="sales-number">01-4973333</h6>
                         </div>
                     </div>
                     <div class="title-address col-md-3">
-                        <img class="img-fluid" src="img/header/location.png" alt="" />
+                        <img class="img-fluid" src="img/header/location.svg" alt="" />
                         <h4 class="text-title-address">Harold's Cross Road, Dublin 6</h4>
                     </div>
                     <div class="social-icon col-md-1">
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img class="img-fluid" src="img/header/facebook.png" alt="" />
+                                    <img class="img-fluid" src="img/header/facebook.svg" alt="" />
                                 </a>
                             </li>
                         </ul>
@@ -88,21 +88,22 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="navbar-collapse collapse menu-search">
+                        <div class="navbar-collapse collapse menu-search menu-search-results">
                             <div class="navbar-nav ml-auto py-md-0">
                                 <div class="accordion__wrapper">
                                     <div class="accordion" id="accordion">
-                                        <div class="card">
+                                        <div class="card card-search">
                                             <div class="navbar-toggler mobile-search-btn btn-search" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" role="navigation">
                                                 <div>
                                                     <span>Search</span>
                                                 </div>
-                                                <div>
-                                                    <i class="fas fa-times"></i>
+                                                <div class="cross-img-mob">
+                                                    <!--<i class="fas fa-times"></i>-->
+                                                    <img src="img/crossss-white.svg">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card">
+                                        <div class="card first-card">
                                             <div class="card-header" id="headingOne">
                                                 <div class="mb-0 accordion__title">
                                                     <button class="btn  shadow-none accordion__button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -112,7 +113,14 @@
                                             </div>
                                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    1
+                                                    <div>
+                                                        <label for="make-model" class="m-top-10">Select Make</label>
+                                                        <select id="make-select">
+                                                            <option value="">Select a Make</option>
+                                                            <option value="">Model 1</option>
+                                                            <option value="">Model 2</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -126,127 +134,59 @@
                                             </div>
                                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    2
+                                                    <div>
+                                                        <label for="make-model" class="m-top-10">Select Model</label>
+                                                        <select id="year-to-model">
+                                                            <option value="">Select a Model</option>
+                                                            <option value="">Model 1</option>
+                                                            <option value="">Model 2</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Price
-                                                    </button>
 
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    3
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
+                                        <div class="card card-year">
                                             <div class="card-header" id="headingFour">
                                                 <div class="mb-0 accordion__title">
                                                     <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                         Year
                                                     </button>
 
+
                                                 </div>
                                             </div>
                                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                                                 <div class="card-body">
-                                                    4
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="heading5">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                                        Body Type
-                                                    </button>
+                                                    <div>
+                                                        <label for="make-model" class="m-top-10">From</label>
+                                                        <select id="year-from-select">
+                                                            <option value="">Select a Year</option>
+                                                            <option value="">Model 1</option>
+                                                            <option value="">Model 2</option>
+                                                        </select>
 
-                                                </div>
-                                            </div>
-                                            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    5
+                                                        <div>
+                                                            <label for="make-model" class="m-top-10">To</label>
+                                                            <select id="make-model">
+                                                                <option value="">Select a Year</option>
+                                                                <option value="">Model 1</option>
+                                                                <option value="">Model 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="mb-0 accordion__title" id="heading6">
-                                                    <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                                        Milage
-                                                    </button>
 
-                                                </div>
+                                        <div class="mobile-accordion-filter">
+                                            <div class="reset-block">
+                                                <img src="img/header/reset.svg" alt=""/>
+                                                <p>Reset</p>
                                             </div>
-                                            <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    6
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn collapsed shadow-none accordion__button" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                                        Fuel Type
-                                                    </button>
 
-                                                </div>
-                                            </div>
-                                            <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    7
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn collapsed shadow-none accordion__button" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                                        Transmission
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                            <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    8
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn collapsed shadow-none accordion__button" id="heading9" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                                        Enginer size
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                            <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    9
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn collapsed shadow-none accordion__button" id="heading10" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                                                        Colour
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    10
-                                                </div>
+                                            <div class="button-done-block">
+                                                Done
                                             </div>
                                         </div>
                                     </div>
@@ -276,8 +216,9 @@
                                     <div>
                                         <span>Options</span>
                                     </div>
-                                    <div>
-                                        <i class="fas fa-times"></i>
+                                    <div class="cross-img-mob">
+                                        <!--<i class="fas fa-times"></i>-->
+                                        <img src="img/crossss-white.svg">
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -323,6 +264,7 @@
             <img class="img-fluid" src="img/header/graham.png" alt="">
         </div>
     </section>
+    <div class="m-top-100"></div>
     <div class="selling-title-container">
         <div class="container selling-title-padding">
                 <h2 class="about-title selling-title">Selling your car</h2>
