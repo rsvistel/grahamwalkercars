@@ -3762,6 +3762,7 @@ select::-ms-expand {
         background-size: 7%; }
       #car-accordion #accordion-used-car.fullscreen .accordion-used-car__title {
         padding: 3.7%;
+        padding-left: 19%;
         font-size: 18px;
         line-height: 20px; }
       #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-control {
@@ -3791,6 +3792,8 @@ select::-ms-expand {
     -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
     margin-bottom: 1.1rem; }
+    #car-accordion .card:last-child {
+      margin-bottom: 0; }
     #car-accordion .card .card-header:first-child {
       border: 0; }
   #car-accordion .card-header {
@@ -3808,13 +3811,14 @@ select::-ms-expand {
     background-size: 10%; }
   #car-accordion .accordion-used-car__title {
     padding: 5%;
+    padding-left: 23%;
     width: 100%;
     font-family: Arial, sans-serif;
     font-weight: 700;
     font-size: 20px;
+    text-align: justify;
     line-height: 25px;
-    cursor: pointer;
-    text-align: center; }
+    cursor: pointer; }
   #car-accordion .accordion-used-car__card-body {
     font-family: Roboto, sans-serif; }
     #car-accordion .accordion-used-car__card-body .form-control {
@@ -4218,10 +4222,10 @@ select::-ms-expand {
     font-size: 20px;
     border-radius: 5px;
     line-height: 23px; }
-  .modal-form-car #InputName, .modal-form-car #InputPhone, .modal-form-car #InputEmail, .modal-form-car #FormControlTextarea {
+  .modal-form-car #InputNameModal, .modal-form-car #InputPhoneModal, .modal-form-car #InputEmailModal, .modal-form-car #FormControlTextareaModal {
     color: #777;
     border-radius: 5px !important; }
-  .modal-form-car #FormControlTextarea {
+  .modal-form-car #FormControlTextareaModal {
     resize: none; }
   .modal-form-car .form-check {
     padding-left: 0; }
