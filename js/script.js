@@ -185,7 +185,7 @@ $(document).ready(function () {
         });
         $('#thumb-inner').click(function () {
             $('#carousel-example-multi').removeClass('vertical').css('height', 'auto');
-            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close, .footer, .carousel-close-mobile, #slideshow-counter, #slideshow-shape').addClass('fullscreen');
+            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close, .footer, .carousel-close-mobile, #slideshow-counter, #slideshow-shape, .car-detail-button-mobile').addClass('fullscreen');
             $('.car-page .header').addClass('fullscreen');
             $('.accordion-used-car').addClass('fullscreen');
             $('.car-detail-main-section').addClass('fullscreen');
@@ -194,7 +194,7 @@ $(document).ready(function () {
         });
 
         $('.carousel-close, .carousel-close-mobile').click(function () {
-            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close, .footer, .carousel-close-mobile, #slideshow-counter').removeClass('fullscreen');
+            $('#carousel-thumb, #car-title, #car-accordion, #car-detail-value, #reviews-car-detail, #description-car-detail, .carousel-close, .footer, .carousel-close-mobile, #slideshow-counter, #slideshow-shape, .car-detail-button-mobile').removeClass('fullscreen');
             $('.car-page .header').removeClass('fullscreen');
             $('.car-detail-main-section').removeClass('fullscreen');
             $('.accordion-used-car').removeClass('fullscreen');

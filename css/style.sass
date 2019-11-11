@@ -3838,10 +3838,10 @@ select::-ms-expand
         margin: 0 auto
       .carousel-control-prev
         right: auto
-        left: -5%
+        left: -4%
         width: auto
       .carousel-control-next
-        right: -5%
+        right: -4%
         left: auto
         width: auto
       .carousel-item
@@ -3922,6 +3922,7 @@ select::-ms-expand
     background-repeat: no-repeat
     background-position: top
     cursor: pointer
+    padding: 23px
 .car-detail-main-section
   //padding-top: 11%
   padding-top: 150px
@@ -4197,6 +4198,9 @@ select::-ms-expand
     .car-detail-main-section
       padding-bottom: 0
       padding-top: 116px
+      &.fullscreen
+        padding-bottom: 0
+        padding-top: 2%
   #car-title
     display: flex
     justify-content: space-between
@@ -4282,7 +4286,7 @@ select::-ms-expand
       .carousel-inner-top
         .carousel-item
           img
-            width: 100%!important
+            width: 95%!important
             margin: auto
   #carousel-thumb .carousel-control-prev
     top: 45%
@@ -4361,14 +4365,30 @@ select::-ms-expand
     &.fullscreen
       display: flex
       background: url(/img/car-detail/close.png)
-      width: 28px
-      background-repeat: no-repeat
-      background-position: top right
-      cursor: pointer
-      z-index: 1001
       position: absolute
-      width: 100%
-      padding-bottom: 45px
+      z-index: 10
+      top: 0
+      right: 0
+      padding: 20px
+      z-index: 1001
+      // width: 28px
+      // background-repeat: no-repeat
+      // background-position: top right
+      // cursor: pointer
+      // z-index: 1001
+      // position: absolute
+      // width: 100%
+      // padding-bottom: 45px
+      // display: flex
+      // background: url(/img/car-detail/close.png)
+      // width: 28px
+      // background-repeat: no-repeat
+      // background-position: top right
+      // cursor: pointer
+      // z-index: 1001
+      // position: absolute
+      // width: 100%
+      // padding-bottom: 45px
 
   #slideshow-counter
     &.fullscreen
@@ -4380,6 +4400,8 @@ select::-ms-expand
     justify-content: space-around
     background: #515151
     margin-top: 50%
+    &.fullscreen
+      display: none
     div
       display: flex
       align-items: flex-end
@@ -4491,6 +4513,23 @@ select::-ms-expand
 
   #carousel-thumb .carousel-control-next-top, #carousel-thumb .carousel-control-prev-top
     display: flex
+    &.fullscreen
+
+  #carousel-thumb.fullscreen .carousel-control-prev-top, #carousel-thumb.fullscreen .carousel-control-next-top
+    width: 19.7%
+
+  #carousel-thumb.fullscreen .carousel-inner-top #slideshow-counter
+    left: 2%
+    margin-bottom: 4%
+    padding: 10px 0 0 0
+@media only screen and (max-width: 992px) and (orientation: landscape)
+  #carousel-thumb
+    &.fullscreen
+      .carousel-inner-top
+        .carousel-item
+          img
+            width: 61%!important
+            margin: auto
 
 @media only screen and (max-width: 380px)
   .car-detail-button-mobile
