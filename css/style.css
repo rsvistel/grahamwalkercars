@@ -7,6 +7,18 @@
 * {
   box-sizing: border-box; }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+@media (min-width: 769px) {
+  .container {
+    max-width: 720px; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
 h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   margin: 0;
   padding: 0; }
@@ -45,6 +57,24 @@ select::-ms-expand {
   height: 42vh;
   max-height: 330px; }
 
+#homepage {
+  overflow: hidden; }
+  #homepage #banner {
+    min-height: 500px;
+    max-height: 600px; }
+    #homepage #banner #banner-image {
+      overflow: hidden;
+      max-height: 600px;
+      min-height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #homepage #banner #banner-image img {
+        position: absolute; }
+
+@media (min-width: 1700px) {
+  #homepage #banner #banner-image img {
+    width: 100%; } }
 .header.topnav {
   background: #222222;
   color: #ffffff;
@@ -263,7 +293,10 @@ select::-ms-expand {
     display: none; }
 
   .navbar-expand-md .navbar-nav .nav-link {
-    padding: 13px; } }
+    padding: 13px; }
+
+  .top-img-mobile {
+    display: block; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar ul li .nav-link {
     font-size: 9px; }
@@ -560,10 +593,8 @@ select::-ms-expand {
   text-align: center; }
   #banner .top-img {
     position: absolute;
-    bottom: 0;
-    margin-bottom: 14.35%;
+    top: -25%;
     width: 100%;
-    height: 5.7%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -575,7 +606,7 @@ select::-ms-expand {
     justify-content: center;
     text-align: center; }
     #banner .top-img img {
-      width: 35%;
+      max-width: 560px;
       position: relative; }
     #banner .top-img .title-top-img {
       color: white;
@@ -588,8 +619,6 @@ select::-ms-expand {
       transform: translate(-50%, -50%); }
   #banner #banner-image {
     text-align: center; }
-    #banner #banner-image img {
-      width: 100%; }
   #banner .advanced-text {
     color: white;
     font-family: Arial, sans-serif;
@@ -601,12 +630,12 @@ select::-ms-expand {
     padding: 0 15px; }
   #banner .search-box {
     width: 100%;
-    height: 40%;
-    position: absolute;
+    height: 200px;
+    position: relative;
+    margin-top: -200px;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0 auto;
     background: rgba(34, 34, 34, 0.85);
     display: flex;
     align-items: center; }
@@ -726,7 +755,7 @@ select::-ms-expand {
   width: 100%;
   font-weight: 300;
   font-size: 1.9rem;
-  padding: 4% 0 2% 0; }
+  padding: 3% 0 3% 0; }
 
 #special-offers {
   order: 3; }
@@ -871,9 +900,9 @@ select::-ms-expand {
         font-family: Arial Rounded MT Bold, sans-serif;
         line-height: 19px;
         border-top-left-radius: 7px;
-        font-size: 29px; }
+        font-size: 22px; }
         .car-tile .car-price .col-6:last-child p {
-          font-size: 11px;
+          font-size: 10px;
           font-weight: 600;
           font-family: Arial, sans-serif; }
   .car-tile .car-desc {
@@ -1198,7 +1227,7 @@ select::-ms-expand {
       font-weight: 600; } }
 @media (min-width: 450px) and (max-width: 768px) {
   #banner #banner-image img {
-    height: auto; }
+    height: 50vh; }
 
   .footer .container .img-fluid {
     width: 55%; } }
@@ -1387,6 +1416,9 @@ select::-ms-expand {
     .mobile-header-img img {
       width: 95%;
       text-align: center; } }
+@media (min-width: 450px) and (max-width: 768px) {
+  .about .about-section p {
+    font-size: 3vw; } }
 @media (min-width: 769px) and (max-width: 1000px) {
   .about .about-section .container .row {
     display: flex;
@@ -1397,7 +1429,13 @@ select::-ms-expand {
       flex: 0 0 75%;
       max-width: 75%; }
     .about .about-section .container .row .img-about-section {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+
+  .about .img-about-section img {
+    width: 100%; }
+
+  .about .about-section .container .row .img-about-section {
+    padding: 0; } }
 .mobile-title-workshop-section {
   display: none;
   font-family: Arial, sans-serif;
@@ -1585,7 +1623,7 @@ select::-ms-expand {
 .contact-us .pay-us-visit .col-md-4 {
   padding: 0 18px; }
   .contact-us .pay-us-visit .col-md-4:first-child {
-    padding-left: 10px; }
+    padding-left: 0; }
 .contact-us .pay-us-visit .form-section {
   background-color: #828282;
   padding: 20px 23px; }
@@ -1639,10 +1677,8 @@ select::-ms-expand {
   text-align: center;
   margin: 10px 0 30px 0;
   text-transform: uppercase; }
-.contact-us .map-block-visit {
-  height: 100%; }
-  .contact-us .map-block-visit .title-form-section {
-    margin: 10px 0 60px 0; }
+.contact-us .map-block-visit .title-form-section {
+  margin: 10px 0 60px 0; }
 
 @media (max-width: 768px) {
   .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit .text-container, .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.opening-hours, .contact-us .pay-us-visit.pay-us-visit-contact {
@@ -1908,13 +1944,19 @@ select::-ms-expand {
     flex-direction: column;
     align-items: center; }
   .contact-us .pay-us-visit .col-md-4 {
-    -ms-flex: 0 0 60%;
-    flex: 0 0 60%;
-    max-width: 60%;
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
     background-color: #47494A; }
 
   .contact-us .pay-us-visit .text-container {
     background-color: #47494A; } }
+@media (min-width: 450px) and (max-width: 769px) {
+  .contact-us .pay-us-visit.pay-us-visit-contact {
+    padding-top: 10%; }
+
+  .pay-us-visit .card-body.card-body-opening-hours ul li .row .col-6 {
+    font-size: 3vw; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit {
     padding: 0 10px; }
@@ -1931,7 +1973,11 @@ select::-ms-expand {
     padding: 5px 10px; }
 
   .contact-us .form-check-label {
-    font-size: 11px; } }
+    font-size: 11px; }
+
+  .pay-us-visit.pay-us-visit-contact .container {
+    padding: 0;
+    max-width: 920px; } }
 .modal-used-cars {
   position: fixed;
   top: 0;
@@ -2113,6 +2159,9 @@ select::-ms-expand {
   .modal-used-cars .modal-used-cars-container.container .title-cross-block {
     padding: 10px 7px; }
 
+  .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
+    font-size: 20px; } }
+@media (max-width: 768px) {
   .card-header.accordion-used-car__card-header.finance-icon {
     background-image: url("../img/finance-icon-white.png");
     background-color: #39F; }
@@ -2857,7 +2906,15 @@ select::-ms-expand {
     padding-top: 1%; } }
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   .m-top-100 {
-    margin-top: 88px; } }
+    margin-top: 120px; }
+
+  .about-section .row {
+    display: flex;
+    justify-content: center; }
+    .about-section .row .col-md-6.text-about-section {
+      -ms-flex: 0 0 90%;
+      flex: 0 0 90%;
+      max-width: 90%; } }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   .m-top-100 {
     margin-top: 104px; } }
@@ -3128,7 +3185,7 @@ select::-ms-expand {
     color: #777777;
     text-decoration: none; }
   .reserve-page__conditions img {
-    width: 23px !important; }
+    width: 30px !important; }
 
 .reserve-page___stripe {
   padding: 0; }
@@ -3152,7 +3209,7 @@ select::-ms-expand {
   margin: 0.5rem 0 10px 0 !important;
   color: #8C8C8C;
   line-height: 23px;
-  font-size: 20px; }
+  font-size: 18px; }
 
 .reserve-page__сonditions {
   width: 100%;
@@ -3231,7 +3288,7 @@ select::-ms-expand {
 .modal-used-cars.reserve-car-modal .container {
   width: 100% !important; }
   .modal-used-cars.reserve-car-modal .container .col-lg-4 {
-    padding: 1% 2%; }
+    padding: 1% 1.5%; }
   .modal-used-cars.reserve-car-modal .container .col-lg-4 {
     float: left;
     overflow: hidden; }
@@ -3768,20 +3825,22 @@ select::-ms-expand {
 .carousel.vertical .carousel-item {
   left: 0; }
 
-#carousel-example-multi .carousel-control-next, #carousel-example-multi .carousel-control-prev {
-  bottom: auto;
-  right: 0;
-  left: 0;
-  width: 100%; }
-#carousel-example-multi .carousel-control-prev {
-  top: 0; }
-#carousel-example-multi .carousel-control-next {
-  bottom: 0;
-  top: auto; }
-#carousel-example-multi .carousel-inner img {
-  cursor: pointer;
-  margin-left: 1.4%;
-  margin-bottom: 1.4%; }
+#carousel-example-multi {
+  overflow: hidden; }
+  #carousel-example-multi .carousel-control-next, #carousel-example-multi .carousel-control-prev {
+    bottom: auto;
+    right: 0;
+    left: 0;
+    width: 100%; }
+  #carousel-example-multi .carousel-control-prev {
+    top: 0; }
+  #carousel-example-multi .carousel-control-next {
+    bottom: 0;
+    top: auto; }
+  #carousel-example-multi .carousel-inner img {
+    cursor: pointer;
+    margin-left: 1.4%;
+    margin-bottom: 1.4%; }
 
 #car-accordion {
   display: flex;
@@ -4337,6 +4396,36 @@ select::-ms-expand {
   #carousel-thumb.fullscreen .carousel-inner-top .carousel-item img {
     width: 61% !important;
     margin: auto; } }
+@media only screen and (max-width: 768px) {
+  #homepage {
+    overflow: initial; }
+    #homepage #banner {
+      min-height: initial;
+      max-height: initial; }
+      #homepage #banner #banner-image {
+        overflow: initial;
+        max-height: initial;
+        min-height: initial; }
+        #homepage #banner #banner-image img {
+          position: relative;
+          width: auto; }
+    #homepage .search-box {
+      position: static;
+      margin-top: 0;
+      height: auto; }
+
+  #banner .top-img {
+    top: initial;
+    z-index: 11100000; }
+
+  #banner .top-img.top-img-desktop {
+    display: none; }
+
+  .top-img-mobile {
+    display: block; }
+
+  .homepage .m-top-100 {
+    margin-top: 100px; } }
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   .car-page .car-detail-main-section {
     padding-top: 75px; } }
@@ -4386,6 +4475,18 @@ select::-ms-expand {
     width: 7.5%; }
 
   .established {
-    font-size: 1.45rem; } }
+    font-size: 1.45rem; }
+
+  .modal-used-cars .modal-used-cars-container.container {
+    width: 100%;
+    max-width: initial; }
+
+  .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
+    margin-left: 17%;
+    font-size: 15px; }
+
+  .card-header.accordion-used-car__card-header.finance-icon {
+    background-position: 0.5rem;
+    background-size: 14%; } }
 
 /*# sourceMappingURL=style.css.map */
