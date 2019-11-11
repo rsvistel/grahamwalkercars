@@ -391,7 +391,7 @@ select::-ms-expand {
     border-right: 1px solid #ffff;
     border-bottom: 1px solid #ffff; }
 
-  .menubar {
+  .menubar, .phonebar {
     background-color: #333333;
     position: fixed;
     top: 0;
@@ -399,7 +399,7 @@ select::-ms-expand {
     width: 100%;
     left: 100%;
     overflow-y: scroll; }
-    .menubar:not(.show) {
+    .menubar:not(.show), .phonebar:not(.show) {
       display: block; }
 
   .menu-search {
@@ -407,8 +407,11 @@ select::-ms-expand {
     top: 0;
     background-color: #F7F7F9;
     height: 100%;
-    width: 74%;
+    width: 43%;
+    left: -43%;
     overflow-y: scroll; }
+    .menu-search:not(.show) {
+      display: block; }
 
   .navbar-nav .nav-item .nav-link {
     color: #ffffff; }
@@ -1297,6 +1300,17 @@ select::-ms-expand {
 
 #used-cars.main-wrapper.short-list-items {
   background: #47494A; }
+
+.shortlist .empty-shortlist-message {
+  display: none;
+  color: #000;
+  font-size: 22px;
+  text-align: left;
+  padding: 2% 0;
+  background: #EEEEEC;
+  font-family: Arial, sans-serif; }
+  .shortlist .empty-shortlist-message .container {
+    padding: 0; }
 
 @media (max-width: 768px) {
   .shortlist #special-offers-section {
@@ -2736,7 +2750,7 @@ select::-ms-expand {
   .selling-title-container .chechbox-text {
     font-size: 13.5px;
     font-weight: 300;
-    display: flex; }
+    vertical-align: text-top; }
 
 .selling-title-padding {
   padding: 0; }
@@ -2867,11 +2881,26 @@ select::-ms-expand {
 .radio input:checked + .radio__text:after {
   opacity: 1; }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .selling-section .selling-form .col-form-label {
+    display: none; }
+  .selling-section .selling-form .radio-mobile {
+    display: block !important; }
+
+  .selling-form .image-input-container .image-input {
+    width: 100%; }
+
+  .selling-form .button-block {
+    width: 100%;
+    display: initial; } }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .selling-form {
     font-size: 17px; }
     .selling-form .form-control {
-      font-size: 17px; } }
+      font-size: 17px; }
+
+  .selling-section {
+    padding-top: 1%; } }
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   .m-top-100 {
     margin-top: 120px; }
@@ -2886,7 +2915,7 @@ select::-ms-expand {
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   .m-top-100 {
     margin-top: 104px; } }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .selling-title-container {
     padding: 0 1rem; }
     .selling-title-container .selling-title {
@@ -2940,8 +2969,14 @@ select::-ms-expand {
   .selling-form .radio-last {
     margin-left: 18px !important; } }
 @media only screen and (max-width: 360px) {
+  .selling-title-container {
+    padding: 0 8px; }
+    .selling-title-container .container {
+      padding-right: 10px;
+      padding-left: 10px; }
+
   .selling-form .radio-last {
-    margin-left: 17px !important; }
+    margin-left: 16px !important; }
   .selling-form .radio__text {
     font-size: 14px; }
   .selling-form .radio__text {
@@ -3787,20 +3822,22 @@ select::-ms-expand {
 .carousel.vertical .carousel-item {
   left: 0; }
 
-#carousel-example-multi .carousel-control-next, #carousel-example-multi .carousel-control-prev {
-  bottom: auto;
-  right: 0;
-  left: 0;
-  width: 100%; }
-#carousel-example-multi .carousel-control-prev {
-  top: 0; }
-#carousel-example-multi .carousel-control-next {
-  bottom: 0;
-  top: auto; }
-#carousel-example-multi .carousel-inner img {
-  cursor: pointer;
-  margin-left: 1.4%;
-  margin-bottom: 1.4%; }
+#carousel-example-multi {
+  overflow: hidden; }
+  #carousel-example-multi .carousel-control-next, #carousel-example-multi .carousel-control-prev {
+    bottom: auto;
+    right: 0;
+    left: 0;
+    width: 100%; }
+  #carousel-example-multi .carousel-control-prev {
+    top: 0; }
+  #carousel-example-multi .carousel-control-next {
+    bottom: 0;
+    top: auto; }
+  #carousel-example-multi .carousel-inner img {
+    cursor: pointer;
+    margin-left: 1.4%;
+    margin-bottom: 1.4%; }
 
 #car-accordion {
   display: flex;
@@ -3816,7 +3853,44 @@ select::-ms-expand {
     padding: 1rem;
     margin-bottom: 14px; }
     #car-accordion #accordion-used-car.fullscreen {
-      background-color: rgba(221, 221, 221, 0.5); }
+      background-color: rgba(221, 221, 221, 0.5);
+      height: 507px;
+      padding-top: 14px; }
+      #car-accordion #accordion-used-car.fullscreen .card {
+        margin-bottom: 9px; }
+      #car-accordion #accordion-used-car.fullscreen .card-header {
+        padding: 0; }
+      #car-accordion #accordion-used-car.fullscreen .card-body {
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 10px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-header {
+        background-size: 7%; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__title {
+        padding: 3.7%;
+        padding-left: 19%;
+        font-size: 18px;
+        line-height: 20px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-control {
+        font-size: 16px;
+        line-height: 11px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body #InputName, #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body #InputPhone, #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body #InputEmail {
+        height: calc(1.2em + .75rem + 2px); }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-group {
+        margin-bottom: 10px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .form-check {
+        padding-left: 0; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .selling-chechbox {
+        margin: 0 0 5px 0;
+        padding-left: 25px;
+        line-height: 1; }
+        #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .selling-chechbox input {
+          height: 18px;
+          width: 18px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body .chechbox-text {
+        font-size: 13px; }
+      #car-accordion #accordion-used-car.fullscreen .accordion-used-car__card-body button {
+        padding: 6px 41px; }
   #car-accordion .card {
     background: #DBDBDB;
     border-radius: 5px;
@@ -3824,6 +3898,8 @@ select::-ms-expand {
     -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
     margin-bottom: 1.1rem; }
+    #car-accordion .card:last-child {
+      margin-bottom: 0; }
     #car-accordion .card .card-header:first-child {
       border: 0; }
   #car-accordion .card-header {
@@ -3841,13 +3917,14 @@ select::-ms-expand {
     background-size: 10%; }
   #car-accordion .accordion-used-car__title {
     padding: 5%;
+    padding-left: 23%;
     width: 100%;
     font-family: Arial, sans-serif;
     font-weight: 700;
     font-size: 20px;
+    text-align: justify;
     line-height: 25px;
-    cursor: pointer;
-    text-align: center; }
+    cursor: pointer; }
   #car-accordion .accordion-used-car__card-body {
     font-family: Roboto, sans-serif; }
     #car-accordion .accordion-used-car__card-body .form-control {
@@ -3882,14 +3959,12 @@ select::-ms-expand {
         background-color: #fff; }
     #car-accordion .accordion-used-car__card-body .chechbox-text {
       font-size: 14px;
-      line-height: 19px;
-      display: flex; }
+      line-height: 19px; }
     #car-accordion .accordion-used-car__card-body .massege-btn-box {
       display: flex;
       justify-content: center; }
     #car-accordion .accordion-used-car__card-body button {
-      height: 50px;
-      width: 150px;
+      padding: 10px 43px;
       border-radius: 5px;
       background-color: #454146;
       text-transform: uppercase;
@@ -4253,10 +4328,10 @@ select::-ms-expand {
     font-size: 20px;
     border-radius: 5px;
     line-height: 23px; }
-  .modal-form-car #InputName, .modal-form-car #InputPhone, .modal-form-car #InputEmail, .modal-form-car #FormControlTextarea {
+  .modal-form-car #InputNameModal, .modal-form-car #InputPhoneModal, .modal-form-car #InputEmailModal, .modal-form-car #FormControlTextareaModal {
     color: #777;
     border-radius: 5px !important; }
-  .modal-form-car #FormControlTextarea {
+  .modal-form-car #FormControlTextareaModal {
     resize: none; }
   .modal-form-car .form-check {
     padding-left: 0; }
@@ -4412,3 +4487,4 @@ select::-ms-expand {
     background-size: 14%; } }
 
 /*# sourceMappingURL=style.css.map */
+
