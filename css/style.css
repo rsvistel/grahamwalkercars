@@ -20,7 +20,8 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  position: relative; }
 
 object, embed {
   pointer-events: none; }
@@ -298,7 +299,8 @@ select::-ms-expand {
     left: 0;
     border-radius: 0;
     top: 0;
-    border-width: 0 0 1px; }
+    border-width: 0 0 1px;
+    width: 100%; }
 
   .mobile-block-items .navbar-toggler {
     outline: none;
@@ -362,6 +364,8 @@ select::-ms-expand {
     width: 100%;
     left: 100%;
     overflow-y: scroll; }
+    .menubar:not(.show) {
+      display: block; }
 
   .menu-search {
     position: fixed;
@@ -4183,5 +4187,3 @@ select::-ms-expand {
 @media only screen and (max-width: 380px) {
   .car-detail-button-mobile div {
     min-width: 114px; } }
-
-/*# sourceMappingURL=style.css.map */

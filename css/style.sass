@@ -27,6 +27,7 @@ body
   margin: 0
   min-height: 100vh
   font-family: $primary-font
+  position: relative
 object, embed
   pointer-events: none
 
@@ -294,6 +295,7 @@ select::-ms-expand
     border-radius: 0
     top: 0
     border-width: 0 0 1px
+    width: 100%
   .mobile-block-items
     .navbar-toggler
       outline: none
@@ -356,6 +358,8 @@ select::-ms-expand
     width: 100%
     left: 100%
     overflow-y: scroll
+    &:not(.show)
+      display: block
   .menu-search
     position: fixed
     top: 0

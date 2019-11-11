@@ -133,7 +133,7 @@ $(document).ready(function () {
     });
 
         $('.mobile-menu-btn').click(function() {
-        $('.menubar').toggleClass('right');
+        // $('.menubar').toggleClass('right');
         // $('.overlay').toggleClass('active');
         // $('body').toggleClass('active-menu');
         $('.mobile-menu-btn').toggleClass('indexcity');
@@ -221,4 +221,13 @@ $(document).ready(function () {
     $('#carousel-example-multi').carousel({
         interval: false
     });
+
+    $('.mobile-menu').click(function () {
+        $('.menubar').animate({left: '30%'});
+        $('body, .navbar').animate({left: '-70%'})
+    });
+    $('.menubar .mobile-close-btn').click(function () {
+        $('.menubar').animate({left: '100%'});
+        $('body, .navbar').animate({left: '0'})
+    })
 });
