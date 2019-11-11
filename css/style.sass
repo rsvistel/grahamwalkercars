@@ -39,7 +39,7 @@ select::-ms-expand
   margin-top: 10px
 
 .m-top-100
-  margin-top: 119px
+  margin-top: 125px
 .red
   color: #BD1316
 
@@ -54,7 +54,7 @@ select::-ms-expand
   width: 100%
   z-index: 11111
 .upper-half-header
-  padding: 0.5% 0 1% 0
+  padding: 0.5% 0 0.5% 0
   display: -webkit-box
   display: -ms-flexbox
   display: flex
@@ -108,7 +108,7 @@ select::-ms-expand
     font-size: 1.05rem
 .stars-block
   color: #FFA500
-  font-size: 1rem
+  font-size: 1.25rem
 .title-logo-bottom
   margin: 0 1.5rem
   font-family: $secondary-font
@@ -138,11 +138,12 @@ select::-ms-expand
   line-height: 0.7rem
 .sales-number
   font-family: $secondary-font
-  font-weight: 700
+  font-weight: 500
+  font-size: 18px
 .social-icon img
   pointer-events: none
   cursor: pointer
-  width: 70%
+  width: 61%
   // width: 40px
   // height: 40px
 .social-icon
@@ -173,6 +174,7 @@ select::-ms-expand
       display: -webkit-box
       display: -ms-flexbox
       display: flex
+      justify-content: center
 .social-icon.stars-block.col-md-1
   justify-content: flex-start
 
@@ -225,7 +227,7 @@ select::-ms-expand
       .nav-link
         text-transform: uppercase
         font-family: 'Montserrat', sans-serif
-        font-weight: 600
+        font-weight: 700
         font-size: 13px
         color: #000000
         text-align: center
@@ -253,7 +255,7 @@ select::-ms-expand
     display: none
   .navbar-expand-md .navbar-nav .nav-link
     //padding: 0.95vw
-    padding: 14px
+    padding: 13px
 
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
@@ -271,7 +273,7 @@ select::-ms-expand
     margin-right: 15px!important
 @media (min-width: 1000px) and (max-width: 1200px)
   .navbar-expand-md .navbar-nav .nav-link
-    padding: 1vw 0.5vw
+    padding: 13px 5px
 @media only screen and (max-width: 767px)
   .upper-half-header
     display: none
@@ -404,6 +406,8 @@ select::-ms-expand
     background-repeat: no-repeat
     background-size: 4%
 
+  .footer .container .img-fluid
+    width: 95%
   .menu-search
     .card
       border-radius: 0
@@ -1087,7 +1091,7 @@ select::-ms-expand
 .footer
   background-color: #333
   color: #ffffff
-  padding: 5% 0
+  padding: 4% 0
   .container
     display: flex
     flex-direction: column
@@ -1104,7 +1108,7 @@ select::-ms-expand
       margin: 15px 0
       text-align: center
     .img-fluid
-      width: 35%
+      width: 33%
     .footer-facebook
       width: 5%
 
@@ -1224,12 +1228,17 @@ select::-ms-expand
       font-size: 4.5vw
       font-weight: 600
 
+
+
 @media (min-width: 450px) and (max-width: 768px)
   #banner #banner-image img
     height: auto
 
+  .footer .container .img-fluid
+    width: 55%
+
 @media (min-width: 769px) and (max-width: 1000px)
-  #banner .search-box .col-md-2 button, #banner .search-box .col-md-2 select
+  #banner .search-box .col-md-2 button, #banner .search-box .col-md-2 select, #banner .search-box .col-md-3 button, #banner .search-box .col-md-3 select
     height: 45px
 
   #banner .search-box .col-md-2 button img
@@ -1347,18 +1356,20 @@ select::-ms-expand
 .about-title-section
   background-color: #47494A
   .container
-    padding: 0 9px
+    padding: 0
 .about-title
   font-family: $primary-font
   text-transform: uppercase
   color: white
-  padding: 5% 0 3% 0
+  padding: 4% 0 4% 0
   font-size: 1.9rem
   text-align: left
   font-weight: 400
 
 .workshop.valeting .about-title
   padding: 3% 0
+
+
 
 .workshop-section.valeting-section
   padding: 4% 0 2%
@@ -1370,7 +1381,7 @@ select::-ms-expand
     background-position: center
     background-size: cover
     .text-about-section
-      padding-left: 10px
+      padding-left: 0
     p
       font-family: Arial, sans-serif
       color: white
@@ -2184,6 +2195,8 @@ select::-ms-expand
     .owl-carousel.owl-drag .owl-item
       width: 254px!important
       margin-right: 14.5px!important
+  .footer
+    padding: 2% 0
 
 @media (min-width: 1650px)
   .mechanic-image img
@@ -2426,8 +2439,7 @@ select::-ms-expand
   .workshop.workshop-page .m-top-100
     margin-top: 47px
 
-  .footer .container .img-fluid
-    width: 95%
+
 
 @media (min-width: 769px) and (max-width: 1000px)
   .valeting .workshop-section .text-top-workshop-section, .valeting .valeting-section .text-top-workshop-section
@@ -4394,7 +4406,7 @@ select::-ms-expand
   .modal-car-detail
     z-index: 100000
     font-family: Roboto, sans-serif
-    .modal-lg
+    //.modal-lg
       //max-width: 100%!important
     .modal-content
       background-color: #515151
@@ -4460,4 +4472,44 @@ select::-ms-expand
   .car-detail-button-mobile
     div
       min-width: 114px
+
+@media (min-width: 768px) and (max-width: 1200px)
+  .header.topnav
+    .container
+      padding: 0
+
+@media (min-width: 1000px) and (max-width: 1200px)
+  .upper-half-header .col-md-2
+    -ms-flex: 0 0 14%
+    flex: 0 0 14%
+    max-width: 14%
+
+  .titles-logo
+    margin-right: 2%
+
+  .title-address.col-md-3
+    -ms-flex: 0 0 27%
+    flex: 0 0 27%
+    max-width: 27%
+
+  .footer .container .img-fluid
+    width: 40%
+
+@media (min-width: 769px) and (max-width: 1000px)
+  .social-icon img
+    width: 100%
+@media (min-width: 769px) and (max-width: 991px)
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 15px 6px
+
+@media (min-width: 767px) and (max-width: 1000px) and (orientation: portrait)
+  .footer .container
+    .img-fluid
+      width: 57%
+    .title-number, .title-address
+      font-size: 1.25rem
+    .footer-facebook
+      width: 7.5%
+  .established
+    font-size: 1.45rem
 
