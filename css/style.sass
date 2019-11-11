@@ -352,7 +352,7 @@ select::-ms-expand
     width: 22%
     border-right: 1px solid #ffff
     border-bottom: 1px solid #ffff
-  .menubar
+  .menubar, .phonebar
     background-color: #333333
     position: fixed
     top: 0
@@ -367,8 +367,11 @@ select::-ms-expand
     top: 0
     background-color: #F7F7F9
     height: 100%
-    width: 74%
+    width: 43%
+    left: -43%
     overflow-y: scroll
+    &:not(.show)
+      display: block
   .navbar-nav
     .nav-item
       .nav-link
