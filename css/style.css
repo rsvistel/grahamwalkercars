@@ -54,7 +54,6 @@ select::-ms-expand {
   color: #BD1316; }
 
 .homepage #special-offers-section .owl-carousel.owl-special-offers.owl-loaded.owl-drag {
-  height: 42vh;
   max-height: 330px; }
 
 #homepage {
@@ -303,10 +302,6 @@ select::-ms-expand {
 
   .navbar-expand-md .navbar-nav .nav-link {
     padding: 1vw 0.75vw; } }
-@media (min-width: 1200px) {
-  .homepage #special-offers-section .owl-carousel.owl-drag .owl-item {
-    width: 254px !important;
-    margin-right: 15px !important; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .navbar-expand-md .navbar-nav .nav-link {
     padding: 13px 5px; } }
@@ -951,11 +946,7 @@ select::-ms-expand {
     padding-left: 7%; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .car-tile .car-price .col-6:last-child p {
-    font-size: 0.75vw; }
-
-  .homepage #special-offers-section .owl-carousel.owl-drag .owl-item {
-    width: 208px !important;
-    margin-right: 18px !important; } }
+    font-size: 0.75vw; } }
 @media (min-width: 992px) and (max-width: 1250px) {
   .car-title h2 {
     font-size: 13px !important; }
@@ -1149,13 +1140,6 @@ select::-ms-expand {
 
   #special-offers .owl-carousel {
     padding: 0 2%; }
-    #special-offers .owl-carousel .owl-stage {
-      width: 2995px !important;
-      display: flex;
-      justify-content: center; }
-      #special-offers .owl-carousel .owl-stage .owl-item {
-        margin-right: 10px !important;
-        width: 350px !important; }
 
   #feedback .container h4.feedback-title {
     display: none; }
@@ -1989,7 +1973,7 @@ select::-ms-expand {
 
 @media (min-width: 992px) {
   .modal-dialog {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 1.75rem auto; } }
 .modal-one-style {
   display: block;
@@ -2006,10 +1990,6 @@ select::-ms-expand {
   background-color: rgba(0, 0, 0, 0.6);
   background: white;
   padding-top: 4%; }
-  .modal-one-style .modal-used-cars-container.container {
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73);
-    -moz-box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73);
-    box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73); }
 
 @media (max-width: 991px) {
   .modal-one-style {
@@ -4433,7 +4413,7 @@ select::-ms-expand {
 
   #banner .top-img {
     top: initial;
-    z-index: 11100000; }
+    z-index: 111; }
 
   #banner .top-img.top-img-desktop {
     display: none; }
