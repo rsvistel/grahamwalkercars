@@ -56,10 +56,12 @@
                 <nav class="navbar navbar-expand-md">
                     <div class="navbar-header">
                         <div class="mobile-block-items mobile-search">
-                            <button class="navbar-toggler custom-toggler btn-search" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
-                                <i class="fas fa-search"></i>
-                                <span>Search</span>
-                            </button>
+                            <a href="index.html">
+                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
+                                <i class="fas fa-home"></i>
+                                <span>home</span>
+                               </button>
+                            </a>
                         </div>
                         <div class="mobile-block-items mobile-reserve">
                             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve" aria-expanded="false" aria-label="reserve">
@@ -74,7 +76,7 @@
                             </button>
                         </div>
                         <div class="mobile-block-items mobile-phone">
-                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-phone" aria-controls="darck-btn-phone" aria-expanded="false" aria-label="phone">
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".phonebar" aria-controls="phonebar" aria-expanded="false" aria-label="phone">
                                 <i class="fas fa-phone-alt"></i>
                                 <span>Phone</span>
                             </button>
@@ -192,16 +194,6 @@
                         </div>
                     </div>
 
-                    <div class="navbar-collapse collapse darck-btn-reserve">
-                        <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                            <li>Reserve</li>
-                        </ul>
-                    </div>
-                    <div class="navbar-collapse collapse darck-btn-favourites">
-                        <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                            <li>Favourites</li>
-                        </ul>
-                    </div>
                     <div class="navbar-collapse collapse darck-btn-phone">
                         <ul class="navbar-nav ml-auto py-md-0  darck-btn">
                             <li>Phone</li>
@@ -251,6 +243,28 @@
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="contact-us.html">contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse collapse phonebar">
+                        <ul class="navbar-nav ml-auto py-md-0">
+                            <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse" data-target=".phonebar" aria-controls="phonebar" aria-expanded="false">
+                                <div>
+                                    <span class="title-phone-filter">Call us</span>
+                                </div>
+                                <div class="cross-img-mob">
+                                    <!--<i class="fas fa-times"></i>-->
+                                    <img src="img/crossss-white.svg">
+                                </div>
+                            </li>
+                            <li class="column-content">
+                                <h6 class="office-text">office</h6>
+                                <h6 class="text-numb">01-2345678</h6>
+                            </li>
+
+                            <li class="column-content">
+                                <h6 class="office-text">FORECOURT</h6>
+                                <h6 class="text-numb">086-1234567</h6>
                             </li>
                         </ul>
                     </div>

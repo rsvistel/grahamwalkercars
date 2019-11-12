@@ -179,8 +179,8 @@ select::-ms-expand {
   font-weight: 500;
   font-size: 18px; }
 
-.navbar .phonebar {
-  display: none; }
+.navbar-collapse.phonebar {
+  display: none !important; }
 
 .social-icon img {
   pointer-events: none;
@@ -410,8 +410,8 @@ select::-ms-expand {
     top: 0;
     background-color: #F7F7F9;
     height: 100%;
-    width: 43%;
-    left: -43%;
+    width: 74%;
+    left: -74%;
     overflow-y: scroll; }
     .menu-search:not(.show) {
       display: block; }
@@ -447,35 +447,38 @@ select::-ms-expand {
       background-color: #333333 !important;
       padding: 3vw 2.6vw 3vw 5vw !important;
       border-radius: 0; }
-    .phonebar .cross-img-mob img {
-      width: 60%; }
+    .phonebar .cross-img-mob {
+      margin-right: 5px; }
+      .phonebar .cross-img-mob img {
+        width: 60%; }
 
-  .navbar .phonebar {
-    display: block; }
-    .navbar .phonebar .mobile-close-btn span {
+  .navbar .navbar-collapse.phonebar {
+    display: block !important; }
+    .navbar .navbar-collapse.phonebar .mobile-close-btn span {
       font-size: 0.8rem !important;
       font-family: Arial, sans-serif; }
-    .navbar .phonebar ul li {
+    .navbar .navbar-collapse.phonebar ul li {
       border: 0; }
-      .navbar .phonebar ul li:hover {
+      .navbar .navbar-collapse.phonebar ul li:hover {
         background-color: initial; }
-      .navbar .phonebar ul li .office-text {
+      .navbar .navbar-collapse.phonebar ul li .office-text {
         color: #333333;
         text-transform: uppercase;
         margin-bottom: 20px;
         font-weight: 600;
         font-size: 14px; }
-      .navbar .phonebar ul li .text-numb {
+      .navbar .navbar-collapse.phonebar ul li .text-numb {
         color: #D10609;
         font-weight: 700;
         margin-top: 20px; }
-    .navbar .phonebar .column-content {
+    .navbar .navbar-collapse.phonebar .column-content {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       border-top: 1px solid #D1D3D4;
       border-bottom: 1.5px solid #D1D3D4;
-      margin-top: 60px; }
+      margin-top: 55px;
+      padding: 5%; }
 
   .mobile-section-under-header {
     padding: 52px 2vw 1vw 2vw; }
@@ -1722,6 +1725,9 @@ select::-ms-expand {
 @media (max-width: 768px) {
   .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.text-img-pay-us-visit .text-container, .contact-us .pay-us-visit .col-4.col-md-4.col-lg-4.opening-hours, .contact-us .pay-us-visit.pay-us-visit-contact {
     background-color: #515151; } }
+.search-used-cars {
+  display: none; }
+
 #used-cars.main-wrapper {
   background-color: white;
   background-image: url("../img/used-cars/bg-used-cars.png");
@@ -1851,6 +1857,9 @@ select::-ms-expand {
   #used-cars.main-wrapper .search-box .col-md-2 button img {
     width: 22px; } }
 @media (max-width: 768px) {
+  .search-used-cars {
+    display: block; }
+
   #used-cars.main-wrapper .car-tile:nth-child(1) {
     margin: 10px auto; }
 
@@ -4472,7 +4481,7 @@ select::-ms-expand {
 
   #banner .top-img {
     top: initial;
-    z-index: 11100000; }
+    z-index: 50; }
 
   #banner .top-img.top-img-desktop {
     display: none; }
