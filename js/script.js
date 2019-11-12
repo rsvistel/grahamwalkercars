@@ -91,6 +91,7 @@ $(document).ready(function () {
     });
     if ($('body').hasClass('shortlist') && !$('.shortlist .car-tile').length) {
         $('.empty-shortlist-message').show()
+        $('.shortlist #special-offers').css("margin-bottom", "0");
     }
 
     $('.image-input').click(function () {
@@ -199,6 +200,7 @@ $(document).ready(function () {
             $('.car-detail-main-section').removeClass('fullscreen');
             $('.accordion-used-car').removeClass('fullscreen');
             $('.overlay').remove();
+            $('#carousel-example-multi').css('height', $('#thumb-inner .carousel-item').outerHeight());
         });
 
     }
@@ -229,5 +231,24 @@ $(document).ready(function () {
     $('.menubar .mobile-close-btn').click(function () {
         $('.menubar').animate({left: '100%'});
         $('body, .navbar').animate({left: '0'})
+    });
+    $('.mobile-phone').click(function () {
+        $('.phonebar').animate({left: '30%'});
+        $('body, .navbar').animate({left: '-70%'})
+    });
+    $('.phonebar .mobile-close-btn').click(function () {
+        $('.phonebar').animate({left: '100%'});
+        $('body, .navbar').animate({left: '0'})
+    });
+    $('.btn-search').click(function () {
+        $('.menu-search').animate({left: '0'});
+        $('body').animate({left: '74%'});
+        $('.navbar').animate({left: '43%'})
+            .css('width', 'auto')
+    });
+    $('.navbar-toggler.mobile-search-btn.btn-search').click(function () {
+        $('.menu-search').animate({left: '-43%'});
+        $('body').animate({left: '0'});
+        $('.navbar').animate({left: '0'}, { complete: function () { $('.navbar').css('width', '100%') }})
     })
 });
