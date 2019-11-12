@@ -243,11 +243,11 @@ $(document).ready(function () {
     $('.btn-search').click(function () {
         $('.menu-search').animate({left: '0'});
         $('body').animate({left: '74%'});
-        $('.navbar').animate({left: '43%'})
-            .css('width', 'auto')
+        $('.navbar').animate({left: '74%'})
+            // .css('width', 'auto')
     });
     $('.navbar-toggler.mobile-search-btn.btn-search').click(function () {
-        $('.menu-search').animate({left: '-43%'});
+        $('.menu-search').animate({left: '-74%'});
         $('body').animate({left: '0'});
         $('.navbar').animate({left: '0'}, { complete: function () { $('.navbar').css('width', '100%') }})
     })

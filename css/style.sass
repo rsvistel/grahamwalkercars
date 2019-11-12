@@ -61,7 +61,7 @@ select::-ms-expand
   color: #BD1316
 
 .homepage #special-offers-section .owl-carousel.owl-special-offers.owl-loaded.owl-drag
-  height: 42vh
+  //height: 42vh
   max-height: 330px
 
 #homepage
@@ -176,6 +176,9 @@ select::-ms-expand
   font-family: $secondary-font
   font-weight: 500
   font-size: 18px
+
+.navbar-collapse.phonebar
+  display: none!important
 .social-icon img
   pointer-events: none
   cursor: pointer
@@ -305,10 +308,10 @@ select::-ms-expand
   .navbar-expand-md .navbar-nav .nav-link
     padding: 1vw 0.75vw
 
-@media (min-width: 1200px)
-  .homepage #special-offers-section .owl-carousel.owl-drag .owl-item
-    width: 254px!important
-    margin-right: 15px!important
+// @media (min-width: 1200px)
+//   .homepage #special-offers-section .owl-carousel.owl-drag .owl-item
+//     width: 254px!important
+//     margin-right: 15px!important
 @media (min-width: 1000px) and (max-width: 1200px)
   .navbar-expand-md .navbar-nav .nav-link
     padding: 13px 5px
@@ -404,8 +407,9 @@ select::-ms-expand
     top: 0
     background-color: #F7F7F9
     height: 100%
-    width: 43%
-    left: -43%
+    //width: 43%
+    width: 74%
+    left: -74%
     overflow-y: scroll
     &:not(.show)
       display: block
@@ -436,6 +440,44 @@ select::-ms-expand
       padding: 3vw 1vw 3vw 0
     .fa-times
       padding-right: 1vw
+  .phonebar
+    background-color: #F7F7F9
+    .mobile-close-btn
+      background-color: #333333!important
+      padding: 3vw 2.6vw 3vw 5vw !important
+      border-radius: 0
+    .cross-img-mob
+      margin-right: 5px
+      img
+        width: 60%
+
+  .navbar .navbar-collapse.phonebar
+    display: block!important
+    .mobile-close-btn span
+      font-size: 0.8rem!important
+      font-family: Arial, sans-serif
+    ul li
+      border: 0
+      &:hover
+        background-color: initial
+      .office-text
+        color: #333333
+        text-transform: uppercase
+        margin-bottom: 20px
+        font-weight: 600
+        font-size: 14px
+      .text-numb
+        color: #D10609
+        font-weight: 700
+        margin-top: 20px
+    .column-content
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      border-top: 1px solid #D1D3D4
+      border-bottom: 1.5px solid #D1D3D4
+      margin-top: 55px
+      padding: 5%
 
   .mobile-section-under-header
     padding: 52px 2vw 1vw 2vw
@@ -1003,9 +1045,9 @@ select::-ms-expand
     //font-size: 10px
     font-size: 0.75vw
 
-  .homepage #special-offers-section .owl-carousel.owl-drag .owl-item
-    width: 208px!important
-    margin-right: 18px!important
+  // .homepage #special-offers-section .owl-carousel.owl-drag .owl-item
+  //   width: 208px!important
+  //   margin-right: 18px!important
 //Car Tile
 //Featured
 @media (min-width: 992px) and (max-width: 1250px)
@@ -1209,12 +1251,12 @@ select::-ms-expand
   #special-offers .owl-carousel
     padding: 0 2%
     .owl-stage
-      width: 2995px!important
-      display: flex
-      justify-content: center
+      // width: 2995px!important
+      // display: flex
+      // justify-content: center
       .owl-item
-        margin-right: 10px!important
-        width: 350px!important
+        // margin-right: 10px!important
+        // width: 350px!important
   #feedback .container h4.feedback-title
     display: none
   .car-tile .car-title
@@ -1806,7 +1848,8 @@ select::-ms-expand
 //Contact
 
 //search-resalt
-
+.search-used-cars
+  display: none
 #used-cars.main-wrapper
   background-color: white
   background-image: url('../img/used-cars/bg-used-cars.png')
@@ -1948,6 +1991,8 @@ select::-ms-expand
             width: 22px
 
 @media (max-width: 768px)
+  .search-used-cars
+    display: block
   #used-cars.main-wrapper .car-tile:nth-child(1)
     margin: 10px auto
 
@@ -2128,37 +2173,62 @@ select::-ms-expand
 
 //Contact
 
+.modal
+  z-index: 11112
+  padding-right: 0!important
+  .modal-body
+    padding: 0
+
+.modal-backdrop
+  z-index: 11111
+
+
+@media (min-width: 992px)
+  .modal-dialog
+    max-width: 1100px
+    margin: 1.75rem auto
+
+
+
+
 //Modal
-.modal-used-cars
-  position: fixed
-  top: 0
-  z-index: 101
-  //background-color: rgba(0,0,0,0.6)
-  //background: rgba(0, 0, 0, 0.7)
-  //background: white
+
+.modal-one-style
   display: block
   justify-content: center
   align-items: flex-start
   min-height: 100vh
   width: 100%
-  top: 62%
-  left: 50%
-  margin-right: -50%
-  transform: translate(-50%, -50%)
-  .col-md-4
+  background: white
+  z-index: 101
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 101
+  background-color: rgba(0,0,0,0.6)
+  background: white
+  padding-top: 4%
+  .modal-used-cars-container.container
+    // -webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    // -moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    // box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+
+@media (max-width: 991px)
+  .modal-one-style
+    overflow: scroll
+    height: 100vh
+
+
+.modal-used-cars-one, .modal-used-cars-two
+  display: block
+  .col-lg-4
     float: left
     padding: 35px 20px
     overflow: hidden
     img
       width: 100%
   .modal-used-cars-container.container
-    width: 75%
-    background: white
-    margin-top: 4%
     padding: 0
-    //-webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    //-moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
-    //box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
     .block-ul-modal
       color: #171717
     .title-cross-block
@@ -2224,12 +2294,12 @@ select::-ms-expand
     font-weight: 600
     font-size: 22px
   .card.accordion-used-car__card
-    background-color: #DBDBDB
     border: 0
     .card-header:first-child
       border: 0
       border-radius: 7px
       padding: 1.5rem 1.25rem
+      background-color: #DBDBDB
   .modal-used-cars__payments
     font-family: "Arial Rounded MT Bold", sans-serif
 
@@ -2273,7 +2343,7 @@ select::-ms-expand
     width: 72%
 
 @media (min-width: 2000px)
-  .modal-used-cars .modal-used-cars-container
+  .modal-used-cars-one .modal-used-cars-container
     width: 60%
 
   .homepage #special-offers-section
@@ -2295,16 +2365,16 @@ select::-ms-expand
   .mechanic-image img
     top: 20%
 @media (max-width: 768px)
-  .modal-used-cars
+  .modal-used-cars-one
     .modal-used-cars-container.container
-      width: 100%
-      margin-top: 0
-  .modal-used-cars
-    overflow-x: hidden
-    height: 100vh
+      // width: 100%
+      // margin-top: 0
+  .modal-used-cars-one
+    // overflow-x: hidden
+    // height: 100vh
     .col-md-4
       padding: 15px 10px
-  .modal-used-cars .modal-used-cars-container.container
+  .modal-used-cars-one .modal-used-cars-container.container
     .title-modal-used-cars
       text-transform: capitalize
       font-size: 17px
@@ -2314,54 +2384,50 @@ select::-ms-expand
       display: none
     .modal-used-cars__payments
       padding-top: 0
-  .modal-used-cars .modal-used-cars-container.container .first-title-modal
+  .modal-used-cars-one .modal-used-cars-container.container .first-title-modal
     display: none
-  .modal-used-cars .modal-used-cars-container.container .row.modal-used-cars-blocks
+  .modal-used-cars-one .modal-used-cars-container.container .row.modal-used-cars-blocks
     padding: 7px 15px
 
-  .modal-used-cars .modal-used-cars-container.container .title-cross-block
+  .modal-used-cars-one .modal-used-cars-container.container .title-cross-block
     padding: 10px 7px
 
-  .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
+  .modal-used-cars-one .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
     font-size: 20px
 
 @media (max-width: 768px)
   .card-header.accordion-used-car__card-header.finance-icon
     background-image: url("../img/finance-icon-white.png")
-    background-color: #39F
+    background-color: #39F!important
     .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
       color: white
 
   .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
     font-size: 15px
 
-@media (min-width: 450px) and (max-width: 768px)
-  .modal-used-cars .modal-used-cars-container.container
-    width: 70%
-    margin-top: 5%
-
 @media (min-width: 769px) and (max-width: 1000px)
-  .modal-used-cars .col-md-4 img, .modal-used-cars .modal-used-cars-container.container
+  .modal-used-cars-one .col-md-4 img, .modal-used-cars .modal-used-cars-container.container
     width: 100%
 
-  .modal-used-cars .modal-used-cars-container.container ul li h6, .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
+  .modal-used-cars-one .modal-used-cars-container.container ul li h6, .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
     font-size: 14px
   .finance-icon
     background-size: 16%
-  .modal-used-cars .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
+  .modal-used-cars-one .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
     margin-left: 30%
 
-  .modal-used-cars .card.accordion-used-car__card .card-header:first-child
+  .modal-used-cars-one .card.accordion-used-car__card .card-header:first-child
     padding: 1.5rem 1rem
 
-@media (min-width: 1000px) and (max-width: 1200px)
-  .modal-used-cars .modal-used-cars-container.container
-    width: 100%
+// @media (min-width: 1000px) and (max-width: 1200px)
+//   .modal-used-cars-one .modal-used-cars-container.container
+//     width: 100%
 
 .finance-icon
   background-image: url("../img/finance-icon.png")
   background-repeat: no-repeat
-  background-position: 14px center
+  background-position: 1.1rem center
+  background-size: 9%
 //Modal
 
 //previously
@@ -3383,9 +3449,9 @@ select::-ms-expand
   &__details-title
         display: inline-block
         padding-bottom: 10px
-        font-size: 20px
+        font-size: 17px
   &__details-description
-        font-size: 20px
+        font-size: 17px
         padding-bottom: 9%
         display: inline-block
   &__pay-value
@@ -3407,17 +3473,31 @@ select::-ms-expand
       display: none
   &__stripe-wrapper
     margin: 10px 0
+    img
+      width: 60%!important
+      margin: auto
   &__details-description-third
     padding-bottom: 42px
   &__conditions
         color: #777777
         font-weight: bold
-        font-size: 17px
+        font-size: 16px
         &:hover
           color: #777777
           text-decoration: none
         img
-          width: 30px!important
+          width: 25px!important
+
+.padding-bottom-enquire
+  padding-bottom: 17%
+
+#EnquireTextArea
+  resize: none
+  color: #777
+  border: 1px solid #808080
+  font-family: Roboto
+  font-size: 19px
+  line-height: 23px
 
 
 .reserve-page___stripe
@@ -3443,7 +3523,7 @@ select::-ms-expand
   margin: 0.5rem 0 10px 0!important
   color: #8C8C8C
   line-height: 23px
-  font-size: 18px
+  font-size: 16px
 
 .reserve-page__сonditions
   width: 100%
@@ -3467,35 +3547,36 @@ select::-ms-expand
 
 #inputLastName::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputFirstName::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputEmailAddress::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputContactNumber::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-number::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-expiration::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-cvv::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
-#textareaReserve::-webkit-input-placeholder
+#textareaReserve::placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
+
 
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber
@@ -3518,9 +3599,9 @@ select::-ms-expand
   margin: 0
   padding: 0
 
-.modal-used-cars.reserve-car-modal
+.modal-used-cars-two.reserve-car-modal
   .modal-used-cars-container
-    margin-top: 1%
+    //margin-top: 1%
   .container
     width: 100%!important
     .col-lg-4
@@ -3549,22 +3630,22 @@ select::-ms-expand
     label
       color: #8C8C8C
       font-family: 'Roboto', sans-serif
-      margin-bottom: .8rem
+      margin-bottom: .4rem
     .img-block
       padding-left: 1.8rem
       line-height: 23px
     .hire-block
       padding-right: 1.8rem
       font-family: 'Roboto', sans-serif
-      font-size: 20px
+      font-size: 19px
       line-height: 23px
     .block-ul-modal
       padding-right: 1.6rem
       padding-left: 0.8rem
       font-family: 'Roboto', sans-serif
-      font-size: 20px
+      font-size: 19px
 
-.modal-used-cars.reserve-car-modal
+.modal-used-cars-two.reserve-car-modal
   .custom-control-label::before, .custom-control-label::after
     top: .8rem
     left: -1.9rem
@@ -3604,9 +3685,9 @@ select::-ms-expand
     -webkit-box-pack: center
     -ms-flex-pack: center
     justify-content: center
-  .modal-used-cars.reserve-car-modal
-    overflow: scroll
-    height: 100vh
+  .modal-used-cars-two.reserve-car-modal
+    // overflow: scroll
+    // height: 100vh
     .modal-used-cars-container
       .hire-block, .img-block, .block-ul-modal
         padding: 0
@@ -3632,6 +3713,10 @@ select::-ms-expand
 
   .reserve-page-padding
     padding: 8px
+
+
+  .modal-used-cars-two.reserve-car-modal .container .form-group
+    margin: 0 8px
 
   .reserve-page
     &__title-block
@@ -3679,7 +3764,7 @@ select::-ms-expand
       span
         display: inline
     &__conditions
-      font-size: 20px
+      font-size: 16px
     &__summary
       display: none
     &__summary-mobile
@@ -3698,7 +3783,7 @@ select::-ms-expand
 
 
 @media only screen and (max-width: 768px)
-    .modal-used-cars.reserve-car-modal
+    .modal-used-cars-two.reserve-car-modal
       .modal-used-cars-container
         .first-title-modal
           font-size: 19px
@@ -3714,7 +3799,7 @@ select::-ms-expand
 
 
 @media only screen and (max-width: 320px)
-    .modal-used-cars.reserve-car-modal
+    .modal-used-cars-two.reserve-car-modal
       .modal-used-cars-container
         .first-title-modal
           font-size: 16px
@@ -3730,12 +3815,6 @@ select::-ms-expand
         padding-top: 1%
 
 //Reserve-vehicle- page
-
-.reserve-car-modal
-  textarea
-    height: 181px
-    width: 100%
-    color: #777777
 
 
   //reviews-page
@@ -3962,6 +4041,7 @@ select::-ms-expand
       height: auto
       position: absolute
       margin-top: 7%
+      overflow: visible
       .carousel-inner
         width: 100%
         margin: 0 auto
@@ -4046,7 +4126,7 @@ select::-ms-expand
   display: none
   &.fullscreen
     display: flex
-    background: url("/img/car-detail/close.png")
+    background: url("../img/car-detail/close.png")
     width: 28px
     background-repeat: no-repeat
     background-position: top
@@ -4179,11 +4259,11 @@ select::-ms-expand
   .card-header
     padding: 0
   .heading-message
-    background: url("/img/car-detail/massage.png")
+    background: url("../img/car-detail/massage.png")
   .heading-finance
-    background: url("/img/car-detail/finance.png")
+    background: url("../img/car-detail/finance.png")
   .heading-reserve
-    background: url("/img/car-detail/reserve.png")
+    background: url("../img/car-detail/reserve.png")
   .accordion-used-car__card-header
     text-transform: uppercase
     background-repeat: no-repeat
@@ -4558,7 +4638,7 @@ select::-ms-expand
     display: none
     &.fullscreen
       display: flex
-      background: url(/img/car-detail/close.png)
+      background: url(../img/car-detail/close.png)
       position: absolute
       z-index: 10
       top: 0
@@ -4594,20 +4674,20 @@ select::-ms-expand
       a
         color: #FFF
     .car-detail-message
-      background: url("/img/car-detail/massage-mobile.png")
+      background: url("../img/car-detail/massage-mobile.png")
       background-repeat: no-repeat
       background-position:  50% 24%
       border-left: 1px solid #FFF
       border-right: 1px solid #FFF
       //background-size: 10%
     .car-detail-finance
-      background: url("/img/car-detail/finance-mobile.png")
+      background: url("../img/car-detail/finance-mobile.png")
       background-repeat: no-repeat
       background-position: 50% 11%
       border-right: 1px solid #FFF
       //background-size: 10%
     .car-detail-recerve
-      background: url("/img/car-detail/reserve-mobile.png")
+      background: url("../img/car-detail/reserve-mobile.png")
       background-repeat: no-repeat
       background-position: 50% 11%
       border-left: 1px solid #FFF
@@ -4634,7 +4714,7 @@ select::-ms-expand
         .close
           opacity: 1
       .modal-close
-        background-image: url("/img/car-detail/close.png")
+        background-image: url("../img/car-detail/close.png")
         width: 28px
         background-position: center
         padding: 20px
@@ -4679,6 +4759,7 @@ select::-ms-expand
     .massege-btn-box
       display: flex
       justify-content: center
+      margin-bottom: 2rem
     button
       height: 50px
       width: 150px
