@@ -58,10 +58,12 @@
                     <nav class="navbar navbar-expand-md">
                         <div class="navbar-header">
                             <div class="mobile-block-items mobile-search">
-                                <button class="navbar-toggler custom-toggler btn-search" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
-                                    <i class="fas fa-search"></i>
-                                    <span>Search</span>
-                                </button>
+                                <a href="index.html">
+                                    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
+                                        <i class="fas fa-home"></i>
+                                        <span>home</span>
+                                    </button>
+                                </a>
                             </div>
                             <div class="mobile-block-items mobile-reserve">
                                 <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve" aria-expanded="false" aria-label="reserve">
@@ -194,16 +196,6 @@
                             </div>
                         </div>
 
-                        <div class="navbar-collapse collapse darck-btn-reserve">
-                            <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                                <li>Reserve</li>
-                            </ul>
-                        </div>
-                        <div class="navbar-collapse collapse darck-btn-favourites">
-                            <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                                <li>Favourites</li>
-                            </ul>
-                        </div>
                         <div class="navbar-collapse collapse darck-btn-phone">
                             <ul class="navbar-nav ml-auto py-md-0  darck-btn">
                                 <li>Phone</li>
@@ -260,14 +252,22 @@
                             <ul class="navbar-nav ml-auto py-md-0">
                                 <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse" data-target=".phonebar" aria-controls="phonebar" aria-expanded="false">
                                     <div>
-                                        <span>Phone</span>
+                                        <span class="title-phone-filter">Call us</span>
                                     </div>
                                     <div class="cross-img-mob">
                                         <!--<i class="fas fa-times"></i>-->
                                         <img src="img/crossss-white.svg">
                                     </div>
                                 </li>
-                                <li>Hi</li>
+                                <li class="column-content">
+                                    <h6 class="office-text">office</h6>
+                                    <h6 class="text-numb">01-2345678</h6>
+                                </li>
+
+                                <li class="column-content">
+                                    <h6 class="office-text">FORECOURT</h6>
+                                    <h6 class="text-numb">086-1234567</h6>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -278,34 +278,22 @@
             <img class="img-fluid" src="img/header/graham.png" alt="">
         </div>
 
+        <div class="search-used-cars">
+            <button class="navbar-toggler custom-toggler btn-search collapsed" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
+                <img src="img/used-cars/refine.svg" alt=""/>
+                Refine
+            </button>
 
-       <div class="search-used-cars">
-          <button class="navbar-toggler custom-toggler btn-search collapsed" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
-              <img src="img/used-cars/refine.svg" alt=""/>
-              Refine
-          </button>
-
-           <div class="contact-section-header">
-               <img src="img/header/phone.svg">
-               <div class="number-phone">
-                   <h4 class="contact-text">Contact Us:</h4>
-                   <h6 class="sales-number">01-4569562</h6>
-               </div>
-           </div>
-       </div>
-        <!--<div class="mobile-section-under-header mobile-section-under-header-search-results col-xs-12 col-md-12">-->
-            <!--<div class="accordion-tumbler">-->
-
-            <!--</div>-->
-            <!--<div class="contact-section-header">-->
-                <!--<embed src="img/header/white-phone.svg">-->
-                <!--<div class="number-phone">-->
-                    <!--<h4 class="contact-text">Contact Us:</h4>-->
-                    <!--<h6 class="sales-number">01-4569562</h6>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+            <div class="contact-section-header">
+                <img src="img/header/phone.svg">
+                <div class="number-phone">
+                    <h4 class="contact-text">Contact Us:</h4>
+                    <h6 class="sales-number">01-4569562</h6>
+                </div>
+            </div>
+        </div>
     </section>
+
     <div class="m-top-100"></div>
     <div id="used-cars" class="main-wrapper">
         <div class="wrapper-title">
