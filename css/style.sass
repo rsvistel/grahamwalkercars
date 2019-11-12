@@ -177,8 +177,8 @@ select::-ms-expand
   font-weight: 500
   font-size: 18px
 
-.navbar .phonebar
-  display: none
+.navbar-collapse.phonebar
+  display: none!important
 .social-icon img
   pointer-events: none
   cursor: pointer
@@ -407,8 +407,9 @@ select::-ms-expand
     top: 0
     background-color: #F7F7F9
     height: 100%
-    width: 43%
-    left: -43%
+    //width: 43%
+    width: 74%
+    left: -74%
     overflow-y: scroll
     &:not(.show)
       display: block
@@ -446,11 +447,12 @@ select::-ms-expand
       padding: 3vw 2.6vw 3vw 5vw !important
       border-radius: 0
     .cross-img-mob
+      margin-right: 5px
       img
         width: 60%
 
-  .navbar .phonebar
-    display: block
+  .navbar .navbar-collapse.phonebar
+    display: block!important
     .mobile-close-btn span
       font-size: 0.8rem!important
       font-family: Arial, sans-serif
@@ -474,7 +476,8 @@ select::-ms-expand
       align-items: flex-start
       border-top: 1px solid #D1D3D4
       border-bottom: 1.5px solid #D1D3D4
-      margin-top: 60px
+      margin-top: 55px
+      padding: 5%
 
   .mobile-section-under-header
     padding: 52px 2vw 1vw 2vw
@@ -1845,7 +1848,8 @@ select::-ms-expand
 //Contact
 
 //search-resalt
-
+.search-used-cars
+  display: none
 #used-cars.main-wrapper
   background-color: white
   background-image: url('../img/used-cars/bg-used-cars.png')
@@ -1987,6 +1991,8 @@ select::-ms-expand
             width: 22px
 
 @media (max-width: 768px)
+  .search-used-cars
+    display: block
   #used-cars.main-wrapper .car-tile:nth-child(1)
     margin: 10px auto
 
@@ -4816,7 +4822,7 @@ select::-ms-expand
 
   #banner .top-img
     top: initial
-    z-index: 111
+    z-index: 50
 
   #banner .top-img.top-img-desktop
     display: none
