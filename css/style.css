@@ -1513,7 +1513,7 @@ select::-ms-expand {
 
 @media (max-width: 768px) {
   .workshop.workshop-page .workshop-section {
-    padding: 4% 0 15% 0; }
+    padding: 8% 0 15% 0; }
     .workshop.workshop-page .workshop-section .left-block-workshop-section, .workshop.workshop-page .workshop-section .right-block-workshop-section {
       margin: 0;
       padding: 0 25px; }
@@ -1535,17 +1535,20 @@ select::-ms-expand {
     .workshop.workshop-page .workshop-section .text-under-block-workshop-section {
       margin-top: 15px; }
 
+  .valeting-mobile {
+    display: none; }
+
   .workshop-section .item-text {
     padding-left: 10px; }
     .workshop-section .item-text h6 {
-      font-size: 5.3vw; }
+      font-size: 3.3vw; }
     .workshop-section .item-text p {
       font-size: 4.5vw; }
   .workshop-section .item-img {
     padding-right: 5px; }
   .workshop-section .text-top-workshop-section {
     padding: 0 3%;
-    font-size: 4.5vw; }
+    font-size: 3vw; }
   .workshop-section .block-workshop-section:nth-child(2n) {
     flex-direction: row-reverse; }
     .workshop-section .block-workshop-section:nth-child(2n) .item-text {
@@ -4561,3 +4564,5 @@ select::-ms-expand {
   .card-header.accordion-used-car__card-header.finance-icon {
     background-position: 0.5rem;
     background-size: 14%; } }
+
+/*# sourceMappingURL=style.css.map */
