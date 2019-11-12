@@ -224,6 +224,8 @@ $(document).ready(function () {
         interval: false
     });
 
+    $('.navbar').css('width', $(window).outerWidth());
+
     $('.mobile-menu').click(function () {
         $('.menubar').animate({left: '30%'});
         $('body, .navbar').animate({left: '-70%'})
@@ -242,13 +244,13 @@ $(document).ready(function () {
     });
     $('.btn-search').click(function () {
         $('.menu-search').animate({left: '0'});
-        $('body').animate({left: '74%'});
-        $('.navbar').animate({left: '74%'})
+        $('body').animate({left: $('.menu-search').outerWidth()});
+        $('.navbar').animate({left: '304px'})
             // .css('width', 'auto')
     });
     $('.navbar-toggler.mobile-search-btn.btn-search').click(function () {
-        $('.menu-search').animate({left: '-74%'});
+        $('.menu-search').animate({left: '-304px'});
         $('body').animate({left: '0'});
-        $('.navbar').animate({left: '0'}, { complete: function () { $('.navbar').css('width', '100%') }})
+        $('.navbar').animate({left: '0'}, { complete: function () {  }})
     })
 });

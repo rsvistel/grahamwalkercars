@@ -405,8 +405,8 @@ select::-ms-expand {
     top: 0;
     background-color: #F7F7F9;
     height: 100%;
-    width: 74%;
-    left: -74%;
+    width: 304px;
+    left: -304px;
     overflow-y: scroll; }
     .menu-search:not(.show) {
       display: block; }
