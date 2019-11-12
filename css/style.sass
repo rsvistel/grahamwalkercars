@@ -2143,7 +2143,37 @@ select::-ms-expand
     max-width: 1000px
     margin: 1.75rem auto
 
+
+
+
 //Modal
+
+.modal-one-style
+  display: block
+  justify-content: center
+  align-items: flex-start
+  min-height: 100vh
+  width: 100%
+  background: white
+  z-index: 101
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 101
+  background-color: rgba(0,0,0,0.6)
+  background: white
+  padding-top: 4%
+  .modal-used-cars-container.container
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    -moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+
+@media (max-width: 991px)
+  .modal-one-style
+    overflow: scroll
+    height: 100vh
+
+
 .modal-used-cars-one, .modal-used-cars-two
   display: block
   .col-lg-4
@@ -2219,12 +2249,12 @@ select::-ms-expand
     font-weight: 600
     font-size: 22px
   .card.accordion-used-car__card
-    background-color: #DBDBDB
     border: 0
     .card-header:first-child
       border: 0
       border-radius: 7px
       padding: 1.5rem 1.25rem
+      background-color: #DBDBDB
   .modal-used-cars__payments
     font-family: "Arial Rounded MT Bold", sans-serif
 
@@ -2323,7 +2353,7 @@ select::-ms-expand
 @media (max-width: 768px)
   .card-header.accordion-used-car__card-header.finance-icon
     background-image: url("../img/finance-icon-white.png")
-    background-color: #39F
+    background-color: #39F!important
     .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
       color: white
 
@@ -3374,9 +3404,9 @@ select::-ms-expand
   &__details-title
         display: inline-block
         padding-bottom: 10px
-        font-size: 20px
+        font-size: 17px
   &__details-description
-        font-size: 20px
+        font-size: 17px
         padding-bottom: 9%
         display: inline-block
   &__pay-value
@@ -3406,12 +3436,23 @@ select::-ms-expand
   &__conditions
         color: #777777
         font-weight: bold
-        font-size: 17px
+        font-size: 16px
         &:hover
           color: #777777
           text-decoration: none
         img
-          width: 30px!important
+          width: 25px!important
+
+.padding-bottom-enquire
+  padding-bottom: 17%
+
+#EnquireTextArea
+  resize: none
+  color: #777
+  border: 1px solid #808080
+  font-family: Roboto
+  font-size: 19px
+  line-height: 23px
 
 
 .reserve-page___stripe
@@ -3437,7 +3478,7 @@ select::-ms-expand
   margin: 0.5rem 0 10px 0!important
   color: #8C8C8C
   line-height: 23px
-  font-size: 18px
+  font-size: 16px
 
 .reserve-page__сonditions
   width: 100%
@@ -3461,35 +3502,36 @@ select::-ms-expand
 
 #inputLastName::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputFirstName::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputEmailAddress::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputContactNumber::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-number::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-expiration::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-cvv::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
-#textareaReserve::-webkit-input-placeholder
+#textareaReserve::placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
+
 
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber
@@ -3543,20 +3585,20 @@ select::-ms-expand
     label
       color: #8C8C8C
       font-family: 'Roboto', sans-serif
-      margin-bottom: .8rem
+      margin-bottom: .4rem
     .img-block
       padding-left: 1.8rem
       line-height: 23px
     .hire-block
       padding-right: 1.8rem
       font-family: 'Roboto', sans-serif
-      font-size: 20px
+      font-size: 19px
       line-height: 23px
     .block-ul-modal
       padding-right: 1.6rem
       padding-left: 0.8rem
       font-family: 'Roboto', sans-serif
-      font-size: 20px
+      font-size: 19px
 
 .modal-used-cars-two.reserve-car-modal
   .custom-control-label::before, .custom-control-label::after
@@ -3627,6 +3669,10 @@ select::-ms-expand
   .reserve-page-padding
     padding: 8px
 
+
+  .modal-used-cars-two.reserve-car-modal .container .form-group
+    margin: 0 8px
+
   .reserve-page
     &__title-block
           align-items: flex-start
@@ -3673,7 +3719,7 @@ select::-ms-expand
       span
         display: inline
     &__conditions
-      font-size: 20px
+      font-size: 16px
     &__summary
       display: none
     &__summary-mobile
@@ -3724,12 +3770,6 @@ select::-ms-expand
         padding-top: 1%
 
 //Reserve-vehicle- page
-
-.reserve-car-modal
-  textarea
-    height: 181px
-    width: 100%
-    color: #777777
 
 
   //reviews-page

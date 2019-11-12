@@ -1991,6 +1991,30 @@ select::-ms-expand {
   .modal-dialog {
     max-width: 1000px;
     margin: 1.75rem auto; } }
+.modal-one-style {
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  z-index: 101;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.6);
+  background: white;
+  padding-top: 4%; }
+  .modal-one-style .modal-used-cars-container.container {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73);
+    box-shadow: 0px 0px 10px 2px rgba(143, 140, 143, 0.73); }
+
+@media (max-width: 991px) {
+  .modal-one-style {
+    overflow: scroll;
+    height: 100vh; } }
 .modal-used-cars-one, .modal-used-cars-two {
   display: block; }
   .modal-used-cars-one .col-lg-4, .modal-used-cars-two .col-lg-4 {
@@ -2063,12 +2087,12 @@ select::-ms-expand {
     font-weight: 600;
     font-size: 22px; }
   .modal-used-cars-one .card.accordion-used-car__card, .modal-used-cars-two .card.accordion-used-car__card {
-    background-color: #DBDBDB;
     border: 0; }
     .modal-used-cars-one .card.accordion-used-car__card .card-header:first-child, .modal-used-cars-two .card.accordion-used-car__card .card-header:first-child {
       border: 0;
       border-radius: 7px;
-      padding: 1.5rem 1.25rem; }
+      padding: 1.5rem 1.25rem;
+      background-color: #DBDBDB; }
   .modal-used-cars-one .modal-used-cars__payments, .modal-used-cars-two .modal-used-cars__payments {
     font-family: "Arial Rounded MT Bold", sans-serif; }
 
@@ -2156,7 +2180,7 @@ select::-ms-expand {
 @media (max-width: 768px) {
   .card-header.accordion-used-car__card-header.finance-icon {
     background-image: url("../img/finance-icon-white.png");
-    background-color: #39F; }
+    background-color: #39F !important; }
     .card-header.accordion-used-car__card-header.finance-icon .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
       color: white; }
 
@@ -3138,9 +3162,9 @@ select::-ms-expand {
 .reserve-page__details-title {
   display: inline-block;
   padding-bottom: 10px;
-  font-size: 20px; }
+  font-size: 17px; }
 .reserve-page__details-description {
-  font-size: 20px;
+  font-size: 17px;
   padding-bottom: 9%;
   display: inline-block; }
 .reserve-page__pay-value {
@@ -3169,12 +3193,23 @@ select::-ms-expand {
 .reserve-page__conditions {
   color: #777777;
   font-weight: bold;
-  font-size: 17px; }
+  font-size: 16px; }
   .reserve-page__conditions:hover {
     color: #777777;
     text-decoration: none; }
   .reserve-page__conditions img {
-    width: 30px !important; }
+    width: 25px !important; }
+
+.padding-bottom-enquire {
+  padding-bottom: 17%; }
+
+#EnquireTextArea {
+  resize: none;
+  color: #777;
+  border: 1px solid #808080;
+  font-family: Roboto;
+  font-size: 19px;
+  line-height: 23px; }
 
 .reserve-page___stripe {
   padding: 0; }
@@ -3198,7 +3233,7 @@ select::-ms-expand {
   margin: 0.5rem 0 10px 0 !important;
   color: #8C8C8C;
   line-height: 23px;
-  font-size: 18px; }
+  font-size: 16px; }
 
 .reserve-page__сonditions {
   width: 100%;
@@ -3222,35 +3257,35 @@ select::-ms-expand {
 
 #inputLastName::-webkit-input-placeholder {
   color: #777777;
-  font-size: 20px; }
+  font-size: 19px; }
 
 #inputFirstName::-webkit-input-placeholder {
   color: #777777;
-  font-size: 20px; }
+  font-size: 19px; }
 
 #inputEmailAddress::-webkit-input-placeholder {
   color: #777777;
-  font-size: 20px; }
+  font-size: 19px; }
 
 #inputContactNumber::-webkit-input-placeholder {
   color: #777777;
-  font-size: 20px; }
+  font-size: 19px; }
 
 #cc-number::-webkit-input-placeholder {
   color: #777777;
-  font-size: 20px; }
+  font-size: 19px; }
 
 #cc-expiration::-webkit-input-placeholder {
   color: #777777;
-  font-size: 20px; }
+  font-size: 19px; }
 
 #cc-cvv::-webkit-input-placeholder {
   color: #777777;
-  font-size: 20px; }
+  font-size: 19px; }
 
-#textareaReserve::-webkit-input-placeholder {
+#textareaReserve::placeholder {
   color: #777777;
-  font-size: 20px; }
+  font-size: 19px; }
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber {
   border-top: 0;
@@ -3299,20 +3334,20 @@ select::-ms-expand {
   .modal-used-cars-two.reserve-car-modal .container label {
     color: #8C8C8C;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 0.8rem; }
+    margin-bottom: 0.4rem; }
   .modal-used-cars-two.reserve-car-modal .container .img-block {
     padding-left: 1.8rem;
     line-height: 23px; }
   .modal-used-cars-two.reserve-car-modal .container .hire-block {
     padding-right: 1.8rem;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 23px; }
   .modal-used-cars-two.reserve-car-modal .container .block-ul-modal {
     padding-right: 1.6rem;
     padding-left: 0.8rem;
     font-family: "Roboto", sans-serif;
-    font-size: 20px; }
+    font-size: 19px; }
 
 .modal-used-cars-two.reserve-car-modal .custom-control-label::before, .modal-used-cars-two.reserve-car-modal .custom-control-label::after {
   top: 0.8rem;
@@ -3383,6 +3418,9 @@ select::-ms-expand {
   .reserve-page-padding {
     padding: 8px; }
 
+  .modal-used-cars-two.reserve-car-modal .container .form-group {
+    margin: 0 8px; }
+
   .reserve-page__title-block {
     align-items: flex-start;
     margin: 10px 0 15px 0; }
@@ -3427,7 +3465,7 @@ select::-ms-expand {
     .reserve-page__button span {
       display: inline; }
   .reserve-page__conditions {
-    font-size: 20px; }
+    font-size: 16px; }
   .reserve-page__summary {
     display: none; }
   .reserve-page__summary-mobile {
@@ -3457,11 +3495,6 @@ select::-ms-expand {
 @media only screen and (max-width: 320px) {
   .reserve-page__pay-value {
     padding-top: 1%; } }
-.reserve-car-modal textarea {
-  height: 181px;
-  width: 100%;
-  color: #777777; }
-
 #feedback.reviews-page {
   background: #EEEEEE;
   padding: 2% 0.6%;
