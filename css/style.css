@@ -179,6 +179,9 @@ select::-ms-expand {
   font-weight: 500;
   font-size: 18px; }
 
+.navbar .phonebar {
+  display: none; }
+
 .social-icon img {
   pointer-events: none;
   cursor: pointer;
@@ -437,6 +440,42 @@ select::-ms-expand {
       padding: 3vw 1vw 3vw 0; }
     .mobile-close-btn .fa-times {
       padding-right: 1vw; }
+
+  .phonebar {
+    background-color: #F7F7F9; }
+    .phonebar .mobile-close-btn {
+      background-color: #333333 !important;
+      padding: 3vw 2.6vw 3vw 5vw !important;
+      border-radius: 0; }
+    .phonebar .cross-img-mob img {
+      width: 60%; }
+
+  .navbar .phonebar {
+    display: block; }
+    .navbar .phonebar .mobile-close-btn span {
+      font-size: 0.8rem !important;
+      font-family: Arial, sans-serif; }
+    .navbar .phonebar ul li {
+      border: 0; }
+      .navbar .phonebar ul li:hover {
+        background-color: initial; }
+      .navbar .phonebar ul li .office-text {
+        color: #333333;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 14px; }
+      .navbar .phonebar ul li .text-numb {
+        color: #D10609;
+        font-weight: 700;
+        margin-top: 20px; }
+    .navbar .phonebar .column-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-top: 1px solid #D1D3D4;
+      border-bottom: 1.5px solid #D1D3D4;
+      margin-top: 60px; }
 
   .mobile-section-under-header {
     padding: 52px 2vw 1vw 2vw; }
