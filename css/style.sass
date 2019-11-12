@@ -56,7 +56,7 @@ select::-ms-expand
   margin-top: 10px
 
 .m-top-100
-  margin-top: 112px
+  margin-top: 122px
 .red
   color: #BD1316
 
@@ -492,8 +492,7 @@ select::-ms-expand
     background-repeat: no-repeat
     background-size: 4%
 
-  .footer .container .img-fluid
-    width: 95%
+
   .menu-search
     .card
       border-radius: 0
@@ -1024,6 +1023,8 @@ select::-ms-expand
       pointer-events: auto
       img
         pointer-events: none
+  .m-top-100
+    margin-top: 108px
 
   #special-offers
     padding: 0 7px
@@ -1471,8 +1472,11 @@ select::-ms-expand
   text-align: left
   font-weight: 400
 
-.workshop.valeting .about-title
-  padding: 3% 0
+.workshop.valeting
+  .about-title
+    padding: 3% 0
+  .m-top-100
+    margin-top: 125px
 
 
 
@@ -1616,7 +1620,7 @@ select::-ms-expand
 @media (max-width: 768px)
   .workshop.workshop-page
     .workshop-section
-      padding: 8% 0 15% 0
+      padding: 6% 0 15% 0
       .left-block-workshop-section, .right-block-workshop-section
         margin: 0
         padding: 0 25px
@@ -2006,6 +2010,7 @@ select::-ms-expand
       font-family: $secondary-font
       display: flex
       justify-content: flex-start
+      align-items: center
       img
         margin-right: 5px
 
@@ -2624,8 +2629,6 @@ select::-ms-expand
   .workshop-page .about-title-section
     display: none
 
-  .workshop.workshop-page .m-top-100
-    margin-top: 47px
 
 
 
@@ -2644,108 +2647,108 @@ select::-ms-expand
 
 
 //PDF
-.pdf
-  width: 700px
-  margin: 0 auto
-  .text-pdf
-    font-family: $secondary-font
-    padding: 5% 0
-    h1
-      //font-size: 11.5rem
-      font-size: 10.2rem
-      color: #333333
-      line-height: 8rem
-    h2
-      //font-size: 4rem
-      font-size: 7rem
-      text-align: right
-      color: $dark-blue
-      font-weight: 400
-    h3
-      font-size: 2rem
-    h4
-      font-size: 1.5rem
-    .under-title
-      font-weight: 400
-    .table-pdf
-      display: flex
-      ul
-        width: 33.3333%
-        padding: 15px 10px
-        border: 1.5px solid #737373
-        border-right: 0
-        &:last-child
-          border-right: 1.5px solid #737373
-        li
-          display: flex
-          justify-content: space-between
-          h5
-            font-size: 0.85rem
-            margin-bottom: 10px
-            text-transform: capitalize
-            &:first-child
-              font-weight: 400
-    .star-first .fa.fa-star
-      color: #f2ef52
-    .star-second .fa.fa-star
-      color: #5e8d37
+//.pdf
+//  width: 700px
+//  margin: 0 auto
+//  .text-pdf
+//    font-family: $secondary-font
+//    padding: 5% 0
+//    h1
+//      //font-size: 11.5rem
+//      font-size: 10.2rem
+//      color: #333333
+//      line-height: 8rem
+//    h2
+//      //font-size: 4rem
+//      font-size: 7rem
+//      text-align: right
+//      color: $dark-blue
+//      font-weight: 400
+//    h3
+//      font-size: 2rem
+//    h4
+//      font-size: 1.5rem
+//    .under-title
+//      font-weight: 400
+//    .table-pdf
+//      display: flex
+//      ul
+//        width: 33.3333%
+//        padding: 15px 10px
+//        border: 1.5px solid #737373
+//        border-right: 0
+//        &:last-child
+//          border-right: 1.5px solid #737373
+//        li
+//          display: flex
+//          justify-content: space-between
+//          h5
+//            font-size: 0.85rem
+//            margin-bottom: 10px
+//            text-transform: capitalize
+//            &:first-child
+//              font-weight: 400
+//    .star-first .fa.fa-star
+//      color: #f2ef52
+//    .star-second .fa.fa-star
+//      color: #5e8d37
 //PDF
 //car-page
 
-#car-page.car-page
-  background: #F9F9FB
-  border: 3px solid #517731
-  padding: 0 20px
-  margin-top: 5%
-  color: #333333
-  .description__sub-title
-    margin-bottom: 10px
+//#car-page.car-page
+//  background: #F9F9FB
+//  border: 3px solid #517731
+//  padding: 0 20px
+//  margin-top: 5%
+//  color: #333333
+//  .description__sub-title
+//    margin-bottom: 10px
+//
+//.car-page
+//  &__value
+//    width: 100%
+//    padding-top: 20px
+//    margin-bottom: 10px
+//    &_name
+//      font-size: 30px
+//      font-weight: bold
+//    &_price
+//      font-size: 30px
+//      font-weight: bold
+//      color: #537127
+//      font-family: $secondary-font
+//    &_name-second
+//      font-weight: 300
+//    &_price-bottom
+//      font-weight: 300
+//      color: $dark-blue
+//      font-family: $secondary-font
+//    &_top
+//      display: flex
+//      justify-content: space-between
+//    &_bottom
+//      display: flex
+//      justify-content: space-between
 
-.car-page
-  &__value
-    width: 100%
-    padding-top: 20px
-    margin-bottom: 10px
-    &_name
-      font-size: 30px
-      font-weight: bold
-    &_price
-      font-size: 30px
-      font-weight: bold
-      color: #537127
-      font-family: $secondary-font
-    &_name-second
-      font-weight: 300
-    &_price-bottom
-      font-weight: 300
-      color: $dark-blue
-      font-family: $secondary-font
-    &_top
-      display: flex
-      justify-content: space-between
-    &_bottom
-      display: flex
-      justify-content: space-between
-
-.gallery
-  //display: flex
-  //justify-content: center
-  padding-bottom: 6px
-  &__center-container
-    //width: 70%
-    img
-      width: 69%
-      //height: 609px
-      float: left
-      &:nth-last-child(-n+3)
-        width: 21.6%
-        height: auto
-        margin-bottom: 27px
-    img.main-img
-      width: 76%
-      height: auto
-      text-align: center
-      margin-right: 20px
+//.gallery
+//  //display: flex
+//  //justify-content: center
+//  padding-bottom: 6px
+//  &__center-container
+//    //width: 70%
+//    img
+//      width: 69%
+//      //height: 609px
+//      float: left
+//      &:nth-last-child(-n+3)
+//        width: 21.6%
+//        height: auto
+//        margin-bottom: 27px
+//    img.main-img
+//      width: 76%
+//      height: auto
+//      text-align: center
+//      margin-right: 20px
   // &__right-container
   //   //width: 27%
   //   margin-left: 6%
@@ -2757,95 +2760,95 @@ select::-ms-expand
   //     width: 302px
   //     height: 191px
   //     margin-bottom: 17px
-.last-img
-  margin-bottom: 0!important
-#pdf-carss
-  background-color: #F9F9FB
-.car-propertis
-  display: flex
-  width: 100%
-  background: #FFFFFF
-  border: 3px solid #D0D0D0
-  padding: 10px 0
-  font-size: 15px
-  margin-bottom: 8px
-  font-family: $secondary-font
-  &__item
-    width: 25%
-    padding: 10px 15px
-    display: flex
-    justify-content: space-between
-  &__value
-    font-weight: bold
-    text-align: right
-
-.star-green
-  color: green!important
-
-.description-car
-  width: 100%
-  background: #FFFFFF
-  border: 3px solid #D0D0D0
-  padding: 10px 10px 20px 10px
-  font-size: 15px
-.img-pdf-carss
-  position: absolute
-  left: 0
-  margin: 10px 0
-  cursor: pointer
-.detailes
-  &__title
-    width: 100%
-    display: flex
-    color: #68686A
-    padding: 20px 0 6px 0
-  &__items
-    display: flex
-    justify-content: space-around
-    width: 100%
-    background: #FFFFFF
-    border: 3px solid #D0D0D0
-    font-size: 15px
-    padding: 3px 0
-  &__left-title
-    font-weight: bold
-    padding-top: 10px
-    font-size: 25px
-    padding-bottom: 8px
-  &__star
-    padding-bottom: 8px
-  &__address
-    padding-bottom: 8px
-  &__phone
-    color: #5B7249
-    font-weight: 700
-  &__item-map
-    margin: 0 50px 0 100px
-    img
-      height: 100%
-      width: 379px
-  &__item-hours
-    //margin-left: 174px
-  &__title-opening
-    padding-bottom: 20px
-    padding-top: 10px
-  &__opening
-    display: flex
-  &__day
-    text-align: left
-    div
-      //padding-bottom: 3px
-  &__hours
-    text-align: right
-    div
-      //padding-bottom: 3px
-
-.information-dealer
-  padding: 30px 0 15px 6px
-
-@media print
-  body
-    -webkit-print-color-adjust: exact
+//.last-img
+//  margin-bottom: 0!important
+//#pdf-carss
+//  background-color: #F9F9FB
+//.car-propertis
+//  display: flex
+//  width: 100%
+//  background: #FFFFFF
+//  border: 3px solid #D0D0D0
+//  padding: 10px 0
+//  font-size: 15px
+//  margin-bottom: 8px
+//  font-family: $secondary-font
+//  &__item
+//    width: 25%
+//    padding: 10px 15px
+//    display: flex
+//    justify-content: space-between
+//  &__value
+//    font-weight: bold
+//    text-align: right
+//
+//.star-green
+//  color: green!important
+//
+//.description-car
+//  width: 100%
+//  background: #FFFFFF
+//  border: 3px solid #D0D0D0
+//  padding: 10px 10px 20px 10px
+//  font-size: 15px
+//.img-pdf-carss
+//  position: absolute
+//  left: 0
+//  margin: 10px 0
+//  cursor: pointer
+//.detailes
+//  &__title
+//    width: 100%
+//    display: flex
+//    color: #68686A
+//    padding: 20px 0 6px 0
+//  &__items
+//    display: flex
+//    justify-content: space-around
+//    width: 100%
+//    background: #FFFFFF
+//    border: 3px solid #D0D0D0
+//    font-size: 15px
+//    padding: 3px 0
+//  &__left-title
+//    font-weight: bold
+//    padding-top: 10px
+//    font-size: 25px
+//    padding-bottom: 8px
+//  &__star
+//    padding-bottom: 8px
+//  &__address
+//    padding-bottom: 8px
+//  &__phone
+//    color: #5B7249
+//    font-weight: 700
+//  &__item-map
+//    margin: 0 50px 0 100px
+//    img
+//      height: 100%
+//      width: 379px
+//  &__item-hours
+//    //margin-left: 174px
+//  &__title-opening
+//    padding-bottom: 20px
+//    padding-top: 10px
+//  &__opening
+//    display: flex
+//  &__day
+//    text-align: left
+//    div
+//      //padding-bottom: 3px
+//  &__hours
+//    text-align: right
+//    div
+//      //padding-bottom: 3px
+//
+//.information-dealer
+//  padding: 30px 0 15px 6px
+//
+//@media print
+//  body
+//    -webkit-print-color-adjust: exact
 
 //FAQ-page
 .section__title-blue
@@ -2963,6 +2966,11 @@ select::-ms-expand
     padding-bottom: 31px
     margin-top: 0
 
+  .footer .container .img-fluid
+    width: 80%
+
+  .footer .container .footer-facebook
+    width: 12%
   .section__title-blue .container, .accordion__wrapper .container
     padding: 0
     max-width: 100%
@@ -2991,6 +2999,13 @@ select::-ms-expand
 
   .accordion__wrapper-faq .container
     padding: 0
+
+@media (min-width: 500px) and (max-width: 767px)
+  .footer .container .img-fluid
+    width: 60%
+
+  .footer .container .footer-facebook
+    width: 7%
 
 
 @media only screen and  (max-width: 390px)
@@ -3216,7 +3231,10 @@ select::-ms-expand
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px)
   .m-top-100
-    margin-top: 104px
+    margin-top: 123px
+
+  .about .img-about-section img
+    width: 100%
 @media only screen and (max-width: 767px)
   .selling-title-container
     padding: 0 1rem
@@ -4904,6 +4922,11 @@ select::-ms-expand
   .footer .container .img-fluid
     width: 40%
 
+  .modal-used-cars-one .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
+    margin-left: 15%
+
+  .finance-icon
+    background-size: 11%
 @media (min-width: 769px) and (max-width: 1000px)
   .social-icon img
     width: 100%
@@ -4932,6 +4955,69 @@ select::-ms-expand
 
   .card-header.accordion-used-car__card-header.finance-icon
     background-position: 0.5rem
-    background-size: 14%
+    background-size: 7%
+
+@media (max-width: 1024px)
+  #feedback.reviews-page .feedback-item-reviews-page
+    .feedback-stars .fas.fa-star
+      font-size: 17px
+    .feedback-stars
+      top: 17px
 
 
+@media (min-width: 500px) and (max-width: 768px)
+  #used-cars.main-wrapper .car-tile
+    max-width: 75%
+
+  .car-tile .car-price .col-6:last-child p
+    font-size: 13px
+
+  .car-tile .car-price .col-6:last-child, .car-tile .car-price .col-6:first-child
+    font-size: 27px
+    line-height: 22px
+
+  .car-tile .car-title h2, .car-tile .car-title p
+    font-size: 19px
+
+  .car-tile .car-desc .col-6 ul li
+    font-size: 18px
+
+  .car-tile .car-image .car-like img
+    max-height: 24px
+    margin: 15px
+
+  .car-tile .car-image .car-image-counter-home img
+    width: 30px
+    margin: 8px
+
+  .car-tile .car-image .car-image-counter-home
+    font-size: 21px
+
+  .car-tile .car-title p
+    font-size: 17px
+    line-height: 25px
+
+  .search-used-cars .navbar-toggler.custom-toggler.btn-search img
+    width: 19%
+
+  .search-used-cars .navbar-toggler.custom-toggler.btn-search
+    font-size: 18px
+
+  .mobile-title-workshop-section, .about .mobile-title, .selling-title-container .selling-title
+    font-size: 4.5vw
+
+  .valeting .workshop-section .down-block-workshop-section .img-left, .valeting .valeting-section .down-block-workshop-section .img-left
+    width: 25%
+
+  .valeting .valeting-section .block-workshop-section.text-right-block .col-md-6 p, .valeting .workshop-section .down-block-workshop-section .text-block-auto p, .valeting .valeting-section .down-block-workshop-section .text-block-auto p
+    font-size: 16px
+
+  .workshop-section.valeting-section
+    padding: 4% 0 5% 0
+
+  .block-workshop-section .item-text p
+    font-size: 16px
+    line-height: 18px
+
+  .shortlist #special-offers-section .featured .title-featured
+    font-size: 27px
