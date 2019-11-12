@@ -3730,7 +3730,8 @@ select::-ms-expand {
     #carousel-thumb.fullscreen #carousel-example-multi {
       height: auto;
       position: absolute;
-      margin-top: 7%; }
+      margin-top: 7%;
+      overflow: visible; }
       #carousel-thumb.fullscreen #carousel-example-multi .carousel-inner {
         width: 100%;
         margin: 0 auto; }
@@ -3815,7 +3816,7 @@ select::-ms-expand {
   display: none; }
   .carousel-close.fullscreen {
     display: flex;
-    background: url("/img/car-detail/close.png");
+    background: url("../img/car-detail/close.png");
     width: 28px;
     background-repeat: no-repeat;
     background-position: top;
@@ -3944,11 +3945,11 @@ select::-ms-expand {
   #car-accordion .card-header {
     padding: 0; }
   #car-accordion .heading-message {
-    background: url("/img/car-detail/massage.png"); }
+    background: url("../img/car-detail/massage.png"); }
   #car-accordion .heading-finance {
-    background: url("/img/car-detail/finance.png"); }
+    background: url("../img/car-detail/finance.png"); }
   #car-accordion .heading-reserve {
-    background: url("/img/car-detail/reserve.png"); }
+    background: url("../img/car-detail/reserve.png"); }
   #car-accordion .accordion-used-car__card-header {
     text-transform: uppercase;
     background-repeat: no-repeat;
@@ -4288,7 +4289,7 @@ select::-ms-expand {
     display: none; }
     .carousel-close-mobile.fullscreen {
       display: flex;
-      background: url(/img/car-detail/close.png);
+      background: url(../img/car-detail/close.png);
       position: absolute;
       z-index: 10;
       top: 0;
@@ -4322,18 +4323,18 @@ select::-ms-expand {
       .car-detail-button-mobile div a {
         color: #FFF; }
     .car-detail-button-mobile .car-detail-message {
-      background: url("/img/car-detail/massage-mobile.png");
+      background: url("../img/car-detail/massage-mobile.png");
       background-repeat: no-repeat;
       background-position: 50% 24%;
       border-left: 1px solid #FFF;
       border-right: 1px solid #FFF; }
     .car-detail-button-mobile .car-detail-finance {
-      background: url("/img/car-detail/finance-mobile.png");
+      background: url("../img/car-detail/finance-mobile.png");
       background-repeat: no-repeat;
       background-position: 50% 11%;
       border-right: 1px solid #FFF; }
     .car-detail-button-mobile .car-detail-recerve {
-      background: url("/img/car-detail/reserve-mobile.png");
+      background: url("../img/car-detail/reserve-mobile.png");
       background-repeat: no-repeat;
       background-position: 50% 11%;
       border-left: 1px solid #FFF; }
@@ -4357,7 +4358,7 @@ select::-ms-expand {
         .modal-car-detail .modal-content .modal-header .close {
           opacity: 1; }
       .modal-car-detail .modal-content .modal-close {
-        background-image: url("/img/car-detail/close.png");
+        background-image: url("../img/car-detail/close.png");
         width: 28px;
         background-position: center;
         padding: 20px;
@@ -4398,7 +4399,8 @@ select::-ms-expand {
     display: flex; }
   .modal-form-car .massege-btn-box {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 2rem; }
   .modal-form-car button {
     height: 50px;
     width: 150px;
