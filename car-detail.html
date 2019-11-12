@@ -1,1076 +1,1136 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Car Detail</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <link rel="stylesheet" type="text/css" href="owl-carousel/dist/assets/owl.carousel.min.css">
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-   </head>
-   <body class="car-page">
-      <!-- <div class="overlay"></div> -->
-      <section class="header topnav" id="myTopnav">
-         <div class="container container-topnav">
-            <div class="row">
-               <div class="col-md-12 upper-half-header">
-                  <div class="titles-logo col-md-4 col-lg-4">
-                     <img class="img-fluid" src="img/header/graham.png" alt="">
-                  </div>
-                  <div class="title-contact col-md-2 col-lg-3">
-                     <img class="img-fluid" src="img/header/phone.svg" alt="" />
-                     <div class="number-phone">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Detail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="owl-carousel/dist/assets/owl.carousel.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="car-page">
+<!-- <div class="overlay"></div> -->
+<section class="header topnav" id="myTopnav">
+    <div class="container container-topnav">
+        <div class="row">
+            <div class="col-md-12 upper-half-header">
+                <div class="titles-logo col-md-4 col-lg-4">
+                    <img class="img-fluid" src="img/header/graham.png" alt="">
+                </div>
+                <div class="title-contact col-md-2 col-lg-3">
+                    <img class="img-fluid" src="img/header/phone.svg" alt=""/>
+                    <div class="number-phone">
                         <h6 class="sales-number">01-4973333</h6>
-                     </div>
-                  </div>
-                  <div class="title-address col-md-3">
-                     <img class="img-fluid" src="img/header/location.svg" alt="" />
-                     <h4 class="text-title-address">Harold's Cross Road, Dublin 6</h4>
-                  </div>
-                  <div class="social-icon col-md-1">
-                     <ul>
+                    </div>
+                </div>
+                <div class="title-address col-md-3">
+                    <img class="img-fluid" src="img/header/location.svg" alt=""/>
+                    <h4 class="text-title-address">Harold's Cross Road, Dublin 6</h4>
+                </div>
+                <div class="social-icon col-md-1">
+                    <ul>
                         <li>
-                           <a href="#">
-                              <img class="img-fluid" src="img/header/facebook.svg" alt="" />
-                           </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/header/facebook.svg" alt=""/>
+                            </a>
                         </li>
-                     </ul>
-                  </div>
-                  <div class="social-icon stars-block col-md-1">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                  </div>
-               </div>
+                    </ul>
+                </div>
+                <div class="social-icon stars-block col-md-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-         </div>
-         <div class="bottom-half-header">
-            <div class="container">
-               <div class="row">
-                  <nav class="navbar navbar-expand-md">
-                     <div class="navbar-header">
+        </div>
+    </div>
+    <div class="bottom-half-header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-md">
+                    <div class="navbar-header">
                         <div class="mobile-block-items mobile-search">
-                           <a href="index.html">
-                              <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
-                                 <i class="fas fa-home"></i>
-                                 <span>home</span>
-                              </button>
-                           </a>
+                            <a href="index.html">
+                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                                        data-target=".menu-search" aria-controls="menu-search" aria-expanded="false"
+                                        aria-label="search">
+                                    <i class="fas fa-home"></i>
+                                    <span>home</span>
+                                </button>
+                            </a>
                         </div>
                         <div class="mobile-block-items mobile-reserve">
-                           <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve" aria-expanded="false" aria-label="reserve">
-                              <i class="fas fa-star"></i>
-                              <span>Reserve</span>
-                           </button>
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                                    data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve"
+                                    aria-expanded="false" aria-label="reserve">
+                                <i class="fas fa-star"></i>
+                                <span>Reserve</span>
+                            </button>
                         </div>
                         <div class="mobile-block-items mobile-favourite">
-                           <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".darck-btn-favourites" aria-controls="darck-btn-favourites" aria-expanded="false" aria-label="favourites">
-                              <i class="far fa-heart"></i>
-                              <span>Favourites</span>
-                           </button>
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                                    data-target=".darck-btn-favourites" aria-controls="darck-btn-favourites"
+                                    aria-expanded="false" aria-label="favourites">
+                                <i class="far fa-heart"></i>
+                                <span>Favourites</span>
+                            </button>
                         </div>
                         <div class="mobile-block-items mobile-phone">
-                           <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".phonebar" aria-controls="phonebar" aria-expanded="false" aria-label="phone">
-                              <i class="fas fa-phone-alt"></i>
-                              <span>Phone</span>
-                           </button>
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                                    data-target=".phonebar" aria-controls="phonebar" aria-expanded="false"
+                                    aria-label="phone">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Phone</span>
+                            </button>
                         </div>
                         <div class="mobile-block-items mobile-menu">
-                           <button class="navbar-toggler custom-toggler mobile-menu-btn" type="button" data-toggle="collapse" data-target=".menubar" aria-controls="menubar" aria-expanded="false" aria-label="navigation">
-                              <i class="fas fa-bars"></i>
-                              <span>Options</span>
-                           </button>
+                            <button class="navbar-toggler custom-toggler mobile-menu-btn" type="button"
+                                    data-toggle="collapse" data-target=".menubar" aria-controls="menubar"
+                                    aria-expanded="false" aria-label="navigation">
+                                <i class="fas fa-bars"></i>
+                                <span>Options</span>
+                            </button>
                         </div>
-                     </div>
-                     <div class="navbar-collapse collapse menu-search menu-search-results">
+                    </div>
+                    <div class="navbar-collapse collapse menu-search menu-search-results">
                         <div class="navbar-nav ml-auto py-md-0">
-                           <div class="accordion__wrapper">
-                              <div class="accordion" id="accordion">
-                                 <div class="card card-search">
-                                    <div class="navbar-toggler mobile-search-btn btn-search" data-toggle="collapse" data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" role="navigation">
-                                       <div>
-                                          <span>Search</span>
-                                       </div>
-                                       <div class="cross-img-mob">
-                                          <!--<i class="fas fa-times"></i>-->
-                                          <img src="img/crossss-white.svg">
-                                       </div>
+                            <div class="accordion__wrapper">
+                                <div class="accordion" id="accordion">
+                                    <div class="card card-search">
+                                        <div class="navbar-toggler mobile-search-btn btn-search" data-toggle="collapse"
+                                             data-target=".menu-search" aria-controls="menu-search"
+                                             aria-expanded="false" role="navigation">
+                                            <div>
+                                                <span>Search</span>
+                                            </div>
+                                            <div class="cross-img-mob">
+                                                <!--<i class="fas fa-times"></i>-->
+                                                <img src="img/crossss-white.svg">
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="card first-card">
-                                    <div class="card-header" id="headingOne">
-                                       <div class="mb-0 accordion__title">
-                                          <button class="btn  shadow-none accordion__button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                             Make
-                                          </button>
-                                       </div>
+                                    <div class="card first-card">
+                                        <div class="card-header" id="headingOne">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn  shadow-none accordion__button"
+                                                        data-toggle="collapse" data-target="#collapseOne"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                    Make
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                             data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div>
+                                                    <label for="make-model" class="m-top-10">Select Make</label>
+                                                    <select id="make-select">
+                                                        <option value="">Select a Make</option>
+                                                        <option value="">Model 1</option>
+                                                        <option value="">Model 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                       <div class="card-body">
-                                          <div>
-                                             <label for="make-model" class="m-top-10">Select Make</label>
-                                             <select id="make-select">
-                                                <option value="">Select a Make</option>
-                                                <option value="">Model 1</option>
-                                                <option value="">Model 2</option>
-                                             </select>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                       <div class="mb-0 accordion__title">
-                                          <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                             Modal
-                                          </button>
-                                       </div>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                       <div class="card-body">
-                                          <div>
-                                             <label for="make-model" class="m-top-10">Select Model</label>
-                                             <select id="year-to-model">
-                                                <option value="">Select a Model</option>
-                                                <option value="">Model 1</option>
-                                                <option value="">Model 2</option>
-                                             </select>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="card card-year">
-                                    <div class="card-header" id="headingFour">
-                                       <div class="mb-0 accordion__title">
-                                          <button class="btn collapsed shadow-none accordion__button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                             Year
-                                          </button>
-
-
-                                       </div>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                       <div class="card-body">
-                                          <div>
-                                             <label for="make-model" class="m-top-10">From</label>
-                                             <select id="year-from-select">
-                                                <option value="">Select a Year</option>
-                                                <option value="">Model 1</option>
-                                                <option value="">Model 2</option>
-                                             </select>
-
-                                             <div>
-                                                <label for="make-model" class="m-top-10">To</label>
-                                                <select id="make-model">
-                                                   <option value="">Select a Year</option>
-                                                   <option value="">Model 1</option>
-                                                   <option value="">Model 2</option>
-                                                </select>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="mobile-accordion-filter">
-                                    <div class="reset-block">
-                                       <img src="img/header/reset.svg" alt=""/>
-                                       <p>Reset</p>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button"
+                                                        data-toggle="collapse" data-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                    Modal
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                             data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div>
+                                                    <label for="make-model" class="m-top-10">Select Model</label>
+                                                    <select id="year-to-model">
+                                                        <option value="">Select a Model</option>
+                                                        <option value="">Model 1</option>
+                                                        <option value="">Model 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div class="button-done-block">
-                                       Done
+                                    <div class="card card-year">
+                                        <div class="card-header" id="headingFour">
+                                            <div class="mb-0 accordion__title">
+                                                <button class="btn collapsed shadow-none accordion__button"
+                                                        data-toggle="collapse" data-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseFour">
+                                                    Year
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                             data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div>
+                                                    <label for="make-model" class="m-top-10">From</label>
+                                                    <select id="year-from-select">
+                                                        <option value="">Select a Year</option>
+                                                        <option value="">Model 1</option>
+                                                        <option value="">Model 2</option>
+                                                    </select>
+
+                                                    <div>
+                                                        <label for="make-model" class="m-top-10">To</label>
+                                                        <select id="make-model">
+                                                            <option value="">Select a Year</option>
+                                                            <option value="">Model 1</option>
+                                                            <option value="">Model 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
+
+                                    <div class="mobile-accordion-filter">
+                                        <div class="reset-block">
+                                            <img src="img/header/reset.svg" alt=""/>
+                                            <p>Reset</p>
+                                        </div>
+
+                                        <div class="button-done-block">
+                                            Done
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
+                    </div>
 
-                     <div class="navbar-collapse collapse darck-btn-phone">
+                    <div class="navbar-collapse collapse darck-btn-phone">
                         <ul class="navbar-nav ml-auto py-md-0  darck-btn">
-                           <li>Phone</li>
+                            <li>Phone</li>
                         </ul>
-                     </div>
+                    </div>
 
-                     <div class="navbar-collapse collapse menubar">
+                    <div class="navbar-collapse collapse menubar">
                         <ul class="navbar-nav ml-auto py-md-0">
-                           <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse" data-target=".menubar" aria-controls="menubar" aria-expanded="false">
-                              <div>
-                                 <span>Options</span>
-                              </div>
-                              <div class="cross-img-mob">
-                                 <!--<i class="fas fa-times"></i>-->
-                                 <img src="img/crossss-white.svg">
-                              </div>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="index.html">home</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="used-cars.html">used cars</a>
-                           </li>
-                           <li class="nav-item ">
-                              <a class="nav-link" href="workshop.html">workshop</a>
-                           </li>
-                           <li class="nav-item ">
-                              <a class="nav-link" href="valeting.html">valeting</a>
-                           </li>
-                           <li class="nav-item  ">
-                              <a class="nav-link" href="selling-your-car.html">selling your car</a>
-                           </li>
-                           <li class="nav-item ">
-                              <a class="nav-link" href="finance-example.html">FINANCE</a>
-                           </li>
-                           <li class="nav-item ">
-                              <a class="nav-link" href="shortlist.html">FAVOURITES</a>
-                           </li>
-                           <li class="nav-item ">
-                              <a class="nav-link" href="about.html">about</a>
-                           </li>
-                           <li class="nav-item  ">
-                              <a class="nav-link" href="reviews.html">REVIEWS</a>
-                           </li>
-                           <li class="nav-item  ">
-                              <a class="nav-link" href="previously-sold.html">PREVIOUSLY SOLD</a>
-                           </li>
-                           <li class="nav-item ">
-                              <a class="nav-link" href="contact-us.html">contact </a>
-                           </li>
+                            <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse"
+                                data-target=".menubar" aria-controls="menubar" aria-expanded="false">
+                                <div>
+                                    <span>Options</span>
+                                </div>
+                                <div class="cross-img-mob">
+                                    <!--<i class="fas fa-times"></i>-->
+                                    <img src="img/crossss-white.svg">
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="used-cars.html">used cars</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="workshop.html">workshop</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="valeting.html">valeting</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="selling-your-car.html">selling your car</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="finance-example.html">FINANCE</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="shortlist.html">FAVOURITES</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="about.html">about</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="reviews.html">REVIEWS</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="previously-sold.html">PREVIOUSLY SOLD</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="contact-us.html">contact </a>
+                            </li>
                         </ul>
-                     </div>
-                     <div class="navbar-collapse collapse phonebar">
+                    </div>
+                    <div class="navbar-collapse collapse phonebar">
                         <ul class="navbar-nav ml-auto py-md-0">
-                           <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse" data-target=".phonebar" aria-controls="phonebar" aria-expanded="false">
-                              <div>
-                                 <span class="title-phone-filter">Call us</span>
-                              </div>
-                              <div class="cross-img-mob">
-                                 <!--<i class="fas fa-times"></i>-->
-                                 <img src="img/crossss-white.svg">
-                              </div>
-                           </li>
-                           <li class="column-content">
-                              <h6 class="office-text">office</h6>
-                              <h6 class="text-numb">01-2345678</h6>
-                           </li>
+                            <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse"
+                                data-target=".phonebar" aria-controls="phonebar" aria-expanded="false">
+                                <div>
+                                    <span class="title-phone-filter">Call us</span>
+                                </div>
+                                <div class="cross-img-mob">
+                                    <!--<i class="fas fa-times"></i>-->
+                                    <img src="img/crossss-white.svg">
+                                </div>
+                            </li>
+                            <li class="column-content">
+                                <h6 class="office-text">office</h6>
+                                <h6 class="text-numb">01-2345678</h6>
+                            </li>
 
-                           <li class="column-content">
-                              <h6 class="office-text">FORECOURT</h6>
-                              <h6 class="text-numb">086-1234567</h6>
-                           </li>
+                            <li class="column-content">
+                                <h6 class="office-text">FORECOURT</h6>
+                                <h6 class="text-numb">086-1234567</h6>
+                            </li>
                         </ul>
-                     </div>
-                  </nav>
-               </div>
+                    </div>
+                </nav>
             </div>
-         </div>
-         <div class="mobile-section-under-header col-xs-12 col-md-12">
-            <img class="img-fluid" src="img/header/graham.png" alt="">
-         </div>
-      </section>
-      <section class="car-detail-main-section">
-         <div class="container">
-            <div class="row no-gatters-all">
-               <div class="col-12 no-gatters-all order-price">
-                  <div id="car-title">
-                     <div class="car-mobile-name">
+        </div>
+    </div>
+    <div class="mobile-section-under-header col-xs-12 col-md-12">
+        <img class="img-fluid" src="img/header/graham.png" alt="">
+    </div>
+</section>
+<section class="car-detail-main-section">
+    <div class="container">
+        <div class="row no-gatters-all">
+            <div class="col-12 no-gatters-all order-price">
+                <div id="car-title">
+                    <div class="car-mobile-name">
                         <h2>2017 VOLKSWAGEN GOLF</h2>
                         <p><b>R 2.0 TSI 5DR 310BHP</b></p>
-                     </div>
-                     <div class="price-block">
+                    </div>
+                    <div class="price-block">
                         <div class="price-right-block"><span class="price price-right">€38,995</span></div>
-                        <div class="price-left-block"><span class="car-title-payment">Monthly payment from</span><br><span class="price price-left">€220</span></div>
-                     </div>
-                     <div class="carousel-close"></div>
-                  </div>
-               </div>
-               <!-- <div class="col-12 col-sm-12 col-md-12"></div> -->
-                  <!-- <div class="row"> -->
-                     <div class="col-12 col-md-12 col-lg-8 no-gatters-left  order-carousel">
-                        <!--Carousel Wrapper-->
-                        <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
-                           <!--Slides-->
-                           <div class="carousel-close-mobile"></div>
-                           <div id="thumb-inner" class="carousel-inner carousel-inner-top" role="listbox">
-                              <div id="slideshow-counter"><img src="/img/car-detail/camera.png" alt=""><span></span></div>
-                              <div id="slideshow-shape"><img src="/img/car-detail/shape.png" alt=""></div>
-                              <div class="carousel-item active">
-                                 <img class="d-block w-100" src="img/car-detail/car1.jpg"
-                                    alt="First slide">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="d-block w-100" src="img/car-detail/car2.jpg"
-                                    alt="Second slide">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="d-block w-100" src="img/car-detail/car3.jpg"
-                                    alt="Third slide">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="d-block w-100" src="img/car-detail/car4.jpg"
-                                    alt="Fourth slide">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="d-block w-100" src="img/car-detail/car1.jpg"
-                                    alt="First slide">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="d-block w-100" src="img/car-detail/car2.jpg"
-                                    alt="Second slide">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="d-block w-100" src="img/car-detail/car3.jpg"
-                                    alt="Third slide">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="d-block w-100" src="img/car-detail/car4.jpg"
-                                    alt="Fourth slide">
-                              </div>
-                           </div>
-                           <!--/.Slides-->
-                           <!--Controls-->
-                           <a class="carousel-control-prev carousel-control-prev-top" href="#carousel-thumb" role="button" data-slide="prev">
-                           <img src="img/car-detail/up.png" alt="up">
-                           <span class="sr-only">Previous</span>
-                           </a>
-                           <a class="carousel-control-next carousel-control-next-top" href="#carousel-thumb" role="button" data-slide="next">
-                           <img src="img/car-detail/down.png" alt="up">
-                           <span class="sr-only">Next</span>
-                           </a>
-                           <!--/.Controls-->
-                           <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 vertical">
-                              <a class="carousel-control-prev" href="#carousel-example-multi" role="button" data-slide="prev">
-                              <img src="img/car-detail/up.png" alt="up">
-                              <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="carousel-control-next" href="#carousel-example-multi" role="button" data-slide="next">
-                              <img src="img/car-detail/down.png" alt="up">
-                              <span class="sr-only">Next</span>
-                              </a>
-                              <div class="carousel-inner v-2" role="listbox">
-                                 <div class="carousel-item active">
-                                    <img src="img/car-detail/car1.jpg" width="100%" data-target="#carousel-thumb" data-slide-to="0">
-                                 </div>
-                                 <div class="carousel-item">
-                                    <img src="img/car-detail/car2.jpg" width="100%" data-target="#carousel-thumb" data-slide-to="1">
-                                 </div>
-                                 <div class="carousel-item">
-                                    <img src="img/car-detail/car3.jpg" width="100%" data-target="#carousel-thumb" data-slide-to="2">
-                                 </div>
-                                 <div class="carousel-item">
-                                    <img src="img/car-detail/car4.jpg" width="100%" data-target="#carousel-thumb" data-slide-to="3">
-                                 </div>
-                                 <div class="carousel-item">
-                                    <img src="img/car-detail/car1.jpg" width="100%" data-target="#carousel-thumb" data-slide-to="4">
-                                 </div>
-                                 <div class="carousel-item">
-                                    <img src="img/car-detail/car2.jpg" width="100%" data-target="#carousel-thumb" data-slide-to="5">
-                                 </div>
-                                 <div class="carousel-item">
-                                    <img src="img/car-detail/car3.jpg" width="100%" data-target="#carousel-thumb" data-slide-to="6">
-                                 </div>
-                                 <div class="carousel-item">
-                                    <img src="img/car-detail/car4.jpg" width="100%" data-target="#carousel-thumb" data-slide-to="7">
-                                 </div>
-                              </div>
-                           </div>
+                        <div class="price-left-block"><span
+                                class="car-title-payment">Monthly payment from</span><br><span class="price price-left">€220</span>
                         </div>
-                     </div>
-                     <!--/.Carousel Wrapper-->
-                     <div class="col-4 order-accordion-mobile">
-                        <div id="car-accordion" class="accordion-used-car__mobile-padding">
-                           <div id="accordion-used-car" class="accordion-used-car">
-                              <div class="card order-heading-message">
-                                 <div class="card-header accordion-used-car__card-header heading-message form-icon"
-                                    id="headingMessage">
-                                    <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse"
-                                       data-target="#collapseMessage" aria-expanded="false"
-                                       aria-controls="collapseMessage" role="button">
+                    </div>
+                    <div class="carousel-close"></div>
+                </div>
+            </div>
+            <!-- <div class="col-12 col-sm-12 col-md-12"></div> -->
+            <!-- <div class="row"> -->
+            <div class="col-12 col-md-12 col-lg-8 no-gatters-left  order-carousel">
+                <!--Carousel Wrapper-->
+                <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-close-mobile"></div>
+                    <div id="thumb-inner" class="carousel-inner carousel-inner-top" role="listbox">
+                        <div id="slideshow-counter"><img src="/img/car-detail/camera.png" alt=""><span></span></div>
+                        <div id="slideshow-shape"><img src="/img/car-detail/shape.png" alt=""></div>
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/car-detail/car1.jpg"
+                                 alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/car-detail/car2.jpg"
+                                 alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/car-detail/car3.jpg"
+                                 alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/car-detail/car4.jpg"
+                                 alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/car-detail/car1.jpg"
+                                 alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/car-detail/car2.jpg"
+                                 alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/car-detail/car3.jpg"
+                                 alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/car-detail/car4.jpg"
+                                 alt="Fourth slide">
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev carousel-control-prev-top" href="#carousel-thumb" role="button"
+                       data-slide="prev">
+                        <img src="img/car-detail/up.png" alt="up">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next carousel-control-next-top" href="#carousel-thumb" role="button"
+                       data-slide="next">
+                        <img src="img/car-detail/down.png" alt="up">
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                    <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 vertical">
+                        <a class="carousel-control-prev" href="#carousel-example-multi" role="button" data-slide="prev">
+                            <img src="img/car-detail/up.png" alt="up">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example-multi" role="button" data-slide="next">
+                            <img src="img/car-detail/down.png" alt="up">
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <div class="carousel-inner v-2" role="listbox">
+                            <div class="carousel-item active">
+                                <img src="img/car-detail/car1.jpg" width="100%" data-target="#carousel-thumb"
+                                     data-slide-to="0">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/car-detail/car2.jpg" width="100%" data-target="#carousel-thumb"
+                                     data-slide-to="1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/car-detail/car3.jpg" width="100%" data-target="#carousel-thumb"
+                                     data-slide-to="2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/car-detail/car4.jpg" width="100%" data-target="#carousel-thumb"
+                                     data-slide-to="3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/car-detail/car1.jpg" width="100%" data-target="#carousel-thumb"
+                                     data-slide-to="4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/car-detail/car2.jpg" width="100%" data-target="#carousel-thumb"
+                                     data-slide-to="5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/car-detail/car3.jpg" width="100%" data-target="#carousel-thumb"
+                                     data-slide-to="6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/car-detail/car4.jpg" width="100%" data-target="#carousel-thumb"
+                                     data-slide-to="7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.Carousel Wrapper-->
+            <div class="col-4 order-accordion-mobile">
+                <div id="car-accordion" class="accordion-used-car__mobile-padding">
+                    <div id="accordion-used-car" class="accordion-used-car">
+                        <div class="card order-heading-message">
+                            <div class="card-header accordion-used-car__card-header heading-message form-icon"
+                                 id="headingMessage">
+                                <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse"
+                                   data-target="#collapseMessage" aria-expanded="false"
+                                   aria-controls="collapseMessage" role="button">
                                     Make an enquiry
-                                    </a>
-                                 </div>
-                                 <div id="collapseMessage" class="collapse accordion-used-car__collapse"
-                                    aria-labelledby="headingMessage" data-parent="#accordion-used-car">
-                                    <div class="card-body accordion-used-car__card-body">
-                                       <div class="form-container">
-                                          <form action="#" method="post" class="accordion-used-car__form">
-                                             <div class="form-group">
+                                </a>
+                            </div>
+                            <div id="collapseMessage" class="collapse accordion-used-car__collapse"
+                                 aria-labelledby="headingMessage" data-parent="#accordion-used-car">
+                                <div class="card-body accordion-used-car__card-body">
+                                    <div class="form-container">
+                                        <form action="#" method="post" class="accordion-used-car__form">
+                                            <div class="form-group">
                                                 <input type="text"
-                                                   class="form-control accordion-used-car__form-control"
-                                                   id="InputName" placeholder="Name">
-                                             </div>
-                                             <div class="form-group">
+                                                       class="form-control accordion-used-car__form-control"
+                                                       id="InputName" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
                                                 <input type="text"
-                                                   class="form-control accordion-used-car__form-control"
-                                                   id="InputPhone" placeholder="Phone Number">
-                                             </div>
-                                             <div class="form-group">
+                                                       class="form-control accordion-used-car__form-control"
+                                                       id="InputPhone" placeholder="Phone Number">
+                                            </div>
+                                            <div class="form-group">
                                                 <input type="text"
-                                                   class="form-control accordion-used-car__form-control"
-                                                   id="InputEmail" placeholder="Email Address">
-                                             </div>
-                                             <div class="form-group">
+                                                       class="form-control accordion-used-car__form-control"
+                                                       id="InputEmail" placeholder="Email Address">
+                                            </div>
+                                            <div class="form-group">
                                                 <textarea
-                                                   class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
-                                                   id="FormControlTextarea" rows="5"
-                                                   placeholder="Your message"></textarea>
-                                             </div>
-                                             <div class="form-check">
+                                                        class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
+                                                        id="FormControlTextarea" rows="5"
+                                                        placeholder="Your message"></textarea>
+                                            </div>
+                                            <div class="form-check">
                                                 <label class="selling-chechbox">
-                                                <input  id="exampleCheck1" class="selling-title-chechbox" type="checkbox" value="" />
-                                                <span for="exampleCheck1" class="chechbox-text">
+                                                    <input id="exampleCheck1" class="selling-title-chechbox"
+                                                           type="checkbox" value=""/>
+                                                    <span for="exampleCheck1" class="chechbox-text">
                                                 I agree that Graham Walker Cars may store the information submitted here in order to process my enquiry.</span>
                                                 </label>
-                                             </div>
-                                             <div class="massege-btn-box">
+                                            </div>
+                                            <div class="massege-btn-box">
                                                 <button type="submit"
-                                                   class="btn accordion-used-car__form-button">Send
+                                                        class="btn accordion-used-car__form-button">Send
                                                 </button>
-                                             </div>
-                                          </form>
-                                       </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="card accordion-used-car__card car-modal-open order-heading-finance">
-                                 <div class="card-header accordion-used-car__card-header heading-finance"
-                                    id="headingFinance" >
-                                    <a href="#" class="btn shadow-none collapsed accordion-used-car__title " data-toggle="modal" data-target="#demo-1">
-                                    Finance Option
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="card order-heading-reserve">
-                                 <div class="card-header accordion-used-car__card-header reserve-icon heading-reserve"
-                                    id="headingReserve">
-                                    <a href="#" class=" btn shadow-none collapsed accordion-used-car__title" data-toggle="modal" data-target="#demo-2">
-                                    Reserve This Car
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div id="reviews-car-detail" class="container feedback-padding">
-                              <div class="row">
-                                 <div id="feedback" class="reviews-page car-detail-feedback">
-                                    <h4 class="feedback-car-title">Customer reviews</h4>
-                                    <div class="feedback-item-reviews-page">
-                                       <div class="feedback-title">
-                                          <h3>Mary Shelly</h3>
-                                       </div>
-                                       <div class="feedback-date">Rathmines</div>
-                                       <div class="feedback-stars">
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                       </div>
-                                       <div class="feedback-body">
-                                          <span class="title-feedback-body">Happened to be in the market for a new car when I stumbled across Graham's website. Saw a car that caught my eye and called him up. From the get go he was a straight shooter and very professional. He gave ame a fair price for my old car. Today I'm a happy owner of a beautiful car. Will use him again.</span>
-                                       </div>
-                                    </div>
-                                    <div class="feedback-item-reviews-page">
-                                       <div class="feedback-title">
-                                          <h3>Paul Keating</h3>
-                                       </div>
-                                       <div class="feedback-date">Terenure</div>
-                                       <div class="feedback-stars">
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                       </div>
-                                       <div class="feedback-body">
-                                          <span class="title-feedback-body">Graham bought my car from me. The money was in my account the next working day. Everything was conducted professionally. Would highly recommend.</span>
-                                       </div>
-                                    </div>
-                                    <div class="feedback-item-reviews-page">
-                                       <div class="feedback-title">
-                                          <h3>Susan O'Neil</h3>
-                                       </div>
-                                       <div class="feedback-date">Rathgar</div>
-                                       <div class="feedback-stars">
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                       </div>
-                                       <div class="feedback-body">
-                                          <span class="title-feedback-body">Excellent service at short notice - I needed a couple of bulbs changed, Graham waited past closing time and did it in a matter of minutes at a v reasonable cost.  Would recommend.</span>
-                                       </div>
-                                    </div>
-                                    <div class="feedback-item-reviews-page">
-                                       <div class="feedback-title">
-                                          <h3>Mary Shelly</h3>
-                                       </div>
-                                       <div class="feedback-date">Rathmines</div>
-                                       <div class="feedback-stars">
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                          <i class="fas fa-star"></i>
-                                       </div>
-                                       <div class="feedback-body">
-                                          <span class="title-feedback-body">Happened to be in the market for a new car when I stumbled across Graham's website. Saw a car that caught my eye and called him up. From the get go he was a straight shooter and very professional. He gave ame a fair price for my old car. Today I'm a happy owner of a beautiful car. Will use him again.</span>
-                                       </div>
-                                    </div>
-                                    <div class="reviews-page-btn">
-                                       <button>More reviews</button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-md-12 col-lg-8 order-detail">
-                           <div class="detailse-used-car">
-                                 <div id="car-detail-value" class="row no-gatters-left order-value">
-                                       <div class="col-12 col-md-12 col-lg-6 no-gatters-left gatters-left">
-
-                                             <div class="col-12 col-lg-12 col-xl-11 detailse-used-car__title">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Make:</span><span
-                                                      class="detailse-used-car__data">Volkswagen</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Model:</span><span
-                                                      class="detailse-used-car__data">Golf</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Engine Size:</span> <span
-                                                      class="detailse-used-car__data">2.0</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Price:</span><span
-                                                      class="detailse-used-car__data">€38,995</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Monthly Price From:</span><span
-                                                      class="detailse-used-car__data">€220</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Year:</span><span
-                                                      class="detailse-used-car__data">2017</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Mileage:</span><span
-                                                      class="detailse-used-car__data">23,988 mi / 38,604  km</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Gearbox:</span><span
-                                                      class="detailse-used-car__data">Automatic</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Fuel Type:</span><span
-                                                      class="detailse-used-car__data">Petrol</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Owners:</span><span
-                                                      class="detailse-used-car__data">2</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Body Type:</span><span
-                                                      class="detailse-used-car__data">Hatchback</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Seats:</span><span
-                                                      class="detailse-used-car__data">5</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Doors:</span><span
-                                                      class="detailse-used-car__data">4</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Colour:</span><span
-                                                      class="detailse-used-car__data">Lapiz Blue</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Engine Power:</span><span
-                                                      class="detailse-used-car__data">310 bhp</span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-12 col-md-12 col-lg-6">
-                                             <div class="col-12 col-lg-12 col-xl-11 offset-xl-1 detailse-used-car__title">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Engine Torque:</span><span
-                                                      class="detailse-used-car__data">295.04 lbs/ft</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Fuel Economy Urban:</span><span
-                                                      class="detailse-used-car__data">54.3 mpg</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Fuel Economy Rural:</span><span
-                                                      class="detailse-used-car__data">72.4 mpg</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Fuel Economy Combined:</span><span
-                                                      class="detailse-used-car__data">64.2 mpg</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Road Tax:</span><span
-                                                      class="detailse-used-car__data">€570</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Road Tax Due:</span><span
-                                                      class="detailse-used-car__data">05 / 2020</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">NCT Due:</span><span
-                                                      class="detailse-used-car__data">05 / 2021</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">0-62mph:</span><span
-                                                      class="detailse-used-car__data">8.4 seconds</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Top Speed:</span><span
-                                                      class="detailse-used-car__data">144 mph</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Last Updated:</span><span
-                                                      class="detailse-used-car__data">21/09/2019</span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__name-first detailse-used-car__value">Safety Ratings</div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value safety">
-                                                   <span class=" detailse-used-car__name detailse-used-car__name-adult">Child Occupant:</span>
-                                                   <span class="detailse-used-car__data detailse-used-car__star">
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   </span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value safety">
-                                                   <span class="detailse-used-car__name detailse-used-car__name-adult">Adult Occupant:</span>
-                                                   <span class="detailse-used-car__data detailse-used-car__star">
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   </span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value safety">
-                                                   <span class="detailse-used-car__name detailse-used-car__name-adult">Overall:</span>
-                                                   <span class="detailse-used-car__data detailse-used-car__star">
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   </span>
-                                                </div>
-                                                <hr class="line-detailse-small">
-                                                <div class="detailse-used-car__value">
-                                                   <span class="detailse-used-car__name">Environmental:</span>
-                                                   <span class="detailse-used-car__data detailse-used-car__star-green">
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   <i class="fas fa-star" aria-hidden="true"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                          </div>
-                           </div>
-                           <hr class="line-detailse-full">
-                     </div>
-               </div>
-               <div id="description-car-detail" class="col-12 col-md-12 col-lg-8 no-gatters-all description-car-detail">
-                     <div class="description-car-detail-title">
-                        <p>More Information:</p>
-                     </div>
-                     <p>
-                        Lovely car in great condition. Only one previous owner. You won't want to miss this one. ABS, Cruise Control, Auto Dimming Rear View Mirror, Driver Knee Airbag, Auto Handbrake, Bluetooth Phone, Tiptronic, CD player, 3x3point rear seat belts, Climate Control, Power Steering, Satellite Navigation, Multi-Function Steering Wheel, Privacy Glass, Onboard Computer, Telephone, Outside temperature meter, Heated Mirrors, Media Connection, Foglights, Mirrors electric and heated, Front Fog Lights, Keyless Start & GO, Front Parking Sensors, Leather Upholstery.
-                     </p>
-               </div>
-               </div>
+                        <div class="card accordion-used-car__card car-modal-open order-heading-finance">
+                            <div class="card-header accordion-used-car__card-header heading-finance"
+                                 id="headingFinance">
+                                <a href="#" class="btn shadow-none collapsed accordion-used-car__title "
+                                   data-toggle="modal" data-target="#demo-1">
+                                    Finance Option
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card order-heading-reserve">
+                            <div class="card-header accordion-used-car__card-header reserve-icon heading-reserve"
+                                 id="headingReserve">
+                                <a href="#" class=" btn shadow-none collapsed accordion-used-car__title"
+                                   data-toggle="modal" data-target="#demo-2">
+                                    Reserve This Car
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="reviews-car-detail" class="container feedback-padding">
+                        <div class="row">
+                            <div id="feedback" class="reviews-page car-detail-feedback">
+                                <h4 class="feedback-car-title">Customer reviews</h4>
+                                <div class="feedback-item-reviews-page">
+                                    <div class="feedback-title">
+                                        <h3>Mary Shelly</h3>
+                                    </div>
+                                    <div class="feedback-date">Rathmines</div>
+                                    <div class="feedback-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="feedback-body">
+                                        <span class="title-feedback-body">Happened to be in the market for a new car when I stumbled across Graham's website. Saw a car that caught my eye and called him up. From the get go he was a straight shooter and very professional. He gave ame a fair price for my old car. Today I'm a happy owner of a beautiful car. Will use him again.</span>
+                                    </div>
+                                </div>
+                                <div class="feedback-item-reviews-page">
+                                    <div class="feedback-title">
+                                        <h3>Paul Keating</h3>
+                                    </div>
+                                    <div class="feedback-date">Terenure</div>
+                                    <div class="feedback-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="feedback-body">
+                                        <span class="title-feedback-body">Graham bought my car from me. The money was in my account the next working day. Everything was conducted professionally. Would highly recommend.</span>
+                                    </div>
+                                </div>
+                                <div class="feedback-item-reviews-page">
+                                    <div class="feedback-title">
+                                        <h3>Susan O'Neil</h3>
+                                    </div>
+                                    <div class="feedback-date">Rathgar</div>
+                                    <div class="feedback-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="feedback-body">
+                                        <span class="title-feedback-body">Excellent service at short notice - I needed a couple of bulbs changed, Graham waited past closing time and did it in a matter of minutes at a v reasonable cost.  Would recommend.</span>
+                                    </div>
+                                </div>
+                                <div class="feedback-item-reviews-page">
+                                    <div class="feedback-title">
+                                        <h3>Mary Shelly</h3>
+                                    </div>
+                                    <div class="feedback-date">Rathmines</div>
+                                    <div class="feedback-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="feedback-body">
+                                        <span class="title-feedback-body">Happened to be in the market for a new car when I stumbled across Graham's website. Saw a car that caught my eye and called him up. From the get go he was a straight shooter and very professional. He gave ame a fair price for my old car. Today I'm a happy owner of a beautiful car. Will use him again.</span>
+                                    </div>
+                                </div>
+                                <div class="reviews-page-btn">
+                                    <button>More reviews</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-      </section>
-      <div class="car-detail-button-mobile">
-      <div class="container">
-         <div  class="car-detail-recerve">
+            <div class="col-md-12 col-lg-8 order-detail">
+                <div class="detailse-used-car">
+                    <div id="car-detail-value" class="row no-gatters-left order-value">
+                        <div class="col-12 col-md-12 col-lg-6 no-gatters-left gatters-left">
+
+                            <div class="col-12 col-lg-12 col-xl-11 detailse-used-car__title">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Make:</span><span
+                                        class="detailse-used-car__data">Volkswagen</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Model:</span><span
+                                        class="detailse-used-car__data">Golf</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Engine Size:</span> <span
+                                        class="detailse-used-car__data">2.0</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Price:</span><span
+                                        class="detailse-used-car__data">€38,995</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Monthly Price From:</span><span
+                                        class="detailse-used-car__data">€220</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Year:</span><span
+                                        class="detailse-used-car__data">2017</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Mileage:</span><span
+                                        class="detailse-used-car__data">23,988 mi / 38,604  km</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Gearbox:</span><span
+                                        class="detailse-used-car__data">Automatic</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Fuel Type:</span><span
+                                        class="detailse-used-car__data">Petrol</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Owners:</span><span
+                                        class="detailse-used-car__data">2</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Body Type:</span><span
+                                        class="detailse-used-car__data">Hatchback</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Seats:</span><span
+                                        class="detailse-used-car__data">5</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Doors:</span><span
+                                        class="detailse-used-car__data">4</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Colour:</span><span
+                                        class="detailse-used-car__data">Lapiz Blue</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Engine Power:</span><span
+                                        class="detailse-used-car__data">310 bhp</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="col-12 col-lg-12 col-xl-11 offset-xl-1 detailse-used-car__title">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Engine Torque:</span><span
+                                        class="detailse-used-car__data">295.04 lbs/ft</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Fuel Economy Urban:</span><span
+                                        class="detailse-used-car__data">54.3 mpg</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Fuel Economy Rural:</span><span
+                                        class="detailse-used-car__data">72.4 mpg</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Fuel Economy Combined:</span><span
+                                        class="detailse-used-car__data">64.2 mpg</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Road Tax:</span><span
+                                        class="detailse-used-car__data">€570</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Road Tax Due:</span><span
+                                        class="detailse-used-car__data">05 / 2020</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">NCT Due:</span><span
+                                        class="detailse-used-car__data">05 / 2021</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">0-62mph:</span><span
+                                        class="detailse-used-car__data">8.4 seconds</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Top Speed:</span><span
+                                        class="detailse-used-car__data">144 mph</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Last Updated:</span><span
+                                        class="detailse-used-car__data">21/09/2019</span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__name-first detailse-used-car__value">Safety Ratings</div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value safety">
+                                    <span class=" detailse-used-car__name detailse-used-car__name-adult">Child Occupant:</span>
+                                    <span class="detailse-used-car__data detailse-used-car__star">
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   </span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value safety">
+                                    <span class="detailse-used-car__name detailse-used-car__name-adult">Adult Occupant:</span>
+                                    <span class="detailse-used-car__data detailse-used-car__star">
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   </span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value safety">
+                                    <span class="detailse-used-car__name detailse-used-car__name-adult">Overall:</span>
+                                    <span class="detailse-used-car__data detailse-used-car__star">
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   </span>
+                                </div>
+                                <hr class="line-detailse-small">
+                                <div class="detailse-used-car__value">
+                                    <span class="detailse-used-car__name">Environmental:</span>
+                                    <span class="detailse-used-car__data detailse-used-car__star-green">
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   <i class="fas fa-star" aria-hidden="true"></i>
+                                                   </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="line-detailse-full">
+                </div>
+            </div>
+            <div id="description-car-detail" class="col-12 col-md-12 col-lg-8 no-gatters-all description-car-detail">
+                <div class="description-car-detail-title">
+                    <p>More Information:</p>
+                </div>
+                <p>
+                    Lovely car in great condition. Only one previous owner. You won't want to miss this one. ABS, Cruise
+                    Control, Auto Dimming Rear View Mirror, Driver Knee Airbag, Auto Handbrake, Bluetooth Phone,
+                    Tiptronic, CD player, 3x3point rear seat belts, Climate Control, Power Steering, Satellite
+                    Navigation, Multi-Function Steering Wheel, Privacy Glass, Onboard Computer, Telephone, Outside
+                    temperature meter, Heated Mirrors, Media Connection, Foglights, Mirrors electric and heated, Front
+                    Fog Lights, Keyless Start & GO, Front Parking Sensors, Leather Upholstery.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="car-detail-button-mobile">
+    <div class="container">
+        <div class="car-detail-recerve">
             <a href="#" data-toggle="modal" data-target="#demo-2">Reserve
                 <span class="car-detail-hyperlink"></span>
             </a>
         </div>
-        <div  class="car-detail-message">
-         <a href="#" data-toggle="modal" data-target="#modalLoginForm">Enquire
-             <span class="car-detail-hyperlink"></span>
-         </a>
-     </div>
-     <div  class="car-detail-finance">
-      <a href="#" data-toggle="modal" data-target="#demo-1">Finance
-          <span class="car-detail-hyperlink"></span>
-      </a>
-  </div>
-   </div>
-      </div>
-      <div class="footer">
-         <div class="container">
-            <img class="img-fluid" src="img/footer/logo.png" alt="">
-            <h5 class="established">Established 2010</h5>
-            <h6 class="title-number">086-0221982</h6>
-            <h6 class="title-address">Harold's Cross Road,<br>
-               Dublin 6
-            </h6>
-            <img src="img/header/facebook.png" alt="" />
-         </div>
-      </div>
-
-      <!-- [ Modal #1 ] -->
-      <div class="modal fade" id="demo-1" tabindex="-1">
-        <div class="modal-dialog">
-         <div class="modal-content">
-          <div class="modal-body">
-            <div class="modal-used-cars-one">
-               <div class="modal-used-cars-container container">
-                      <div class="title-cross-block col-md-12">
-                          <h5 class="title-modal-used-cars">Hire Purchase representative example</h5>
-                          <div class="car-modal-close" data-dismiss="modal">
-                           <img src="img/crossss.png" class="modal-close" alt=""  aria-hidden="true">
-                       </div>
-                      </div>
-                      <div class="row modal-used-cars-blocks">
-                          <div class="col-lg-4 img-block">
-                              <h6 class="first-title-modal">Your Vehicle Summary</h6>
-                              <h6 class="second-title-modal">2017 VOLKSWAGEN GOLF</h6>
-                              <p>R 2.0 TSI 5DR 310BHP</p>
-                              <img src="img/home/golf.png" alt="d">
-                          </div>
-   
-                          <div class="col-lg-4 block-ul-modal">
-                              <ul>
-                                  <li>
-                                      <h6>finance type</h6>
-                                      <h6>hire purchase</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Term</h6>
-                                      <h6>36 months</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Contract Length</h6>
-                                      <h6>36 months</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Cash Price</h6>
-                                      <h6>€1,500.00</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Customer Deposit</h6>
-                                      <h6>€1,000.00</h6>
-                                  </li>
-           
-                                  <hr>
-                                  <li>
-                                      <h6>Total amount of credit</h6>
-                                      <h6>€500.00</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Total amount payable</h6>
-                                      <h6>€1,881.92</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Representative APR</h6>
-                                      <h6>49.7%</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Total interest payable</h6>
-                                      <h6>€381.92</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Fixed rate of interest pa</h6>
-                                      <h6>8.25%</h6>
-                                  </li>
-                                  <hr>
-                                  <li>
-                                      <h6>Admin Fee</h6>
-                                      <h6>€199.0</h6>
-                                  </li>
-
-                              </ul>
-                          </div>
-                          <div class="col-lg-4 hire-block">
-                              <div class="text-hire-block">
-                                  <span class="modal-used-cars__title">What is Hire Purchase (HP)</span>
-                                  <p class="modal-used-cars__description">Pay any deposit and fees, and then the monthly
-                                      repayments to own the vehicle at the end of the
-                                      agreement.</p>
-                              </div>
-                              <div class="modal-used-cars__payments">
-                                  <div class="modal-used-cars__value-text">
-                                      <span>monthly payments</span>
-                                  </div>
-                                  <div class="modal-used-cars__value">
-                                      <span>€24.22</span>
-                                  </div>
-                              </div>
-                              <div class="accordion-used-car" id="accordion-used-car-modal">
-                                  <div class="card accordion-used-car__card">
-                                      <div class="card-header accordion-used-car__card-header finance-icon" id="headingFinance-title">
-                                          <a  href="#" class="btn shadow-none accordion-used-car__title modal-used-cars__finance">
-                                              Apply for Finance
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-               </div>
-          </div>
-         </div>
+        <div class="car-detail-message">
+            <a href="#" data-toggle="modal" data-target="#modalLoginForm">Enquire
+                <span class="car-detail-hyperlink"></span>
+            </a>
         </div>
-      </div>
-   </div>
-      <!-- [ Modal #2 ] -->
-      <div class="modal fade" id="demo-2" tabindex="-1">
-        <div class="modal-dialog">
-         <div class="modal-content">
-          <div class="modal-body">
-            <div class="modal-used-cars-two reserve-car-modal">
-               <div class="modal-used-cars-container container">
-                      <div class="title-cross-block col-md-12">
-                          <h5 class="title-modal-used-cars">Reserve this car</h5>
-                          <div class="car-modal-close" data-dismiss="modal">
-                           <img src="img/crossss.png" class="modal-close" alt=""  aria-hidden="true">
-                       </div>
-                      </div>
-                      <div class="row modal-used-cars-blocks">
-                          <div class="col-lg-4 img-block">
-                               <h3 class="title-about-us title-reserve-page reserve-page__title">Reserve This Car
-                               </h3>
-                               <div>
-                                   <hr class="reserve-page__line">
-                               </div>
-                             <div>
-                                   <hr class="reserve-page__line reserve-page__line-half">
-                             </div>
-                               <div>
-                                   <p class="reserve-page__desctiption-pay">Total to pay to reserve this car</p>
-                                   <div class="reserve-page__pay-block">
-                                           <span class="reserve-page__pay">€100.00</span>
-                                   </div>
-                                   <hr class="reserve-page__line">
-                               </div>
-                               <p class="reserve-page__summary-mobile reserve-page__summary-title">Summary</p>
-                               <p class="reserve-page__summary-mobile reserve-page__summary-vehicle">Your Vehicle</p>
-                               <h6 class="first-title-modal reserve-page__summary">Your Vehicle Summary</h6>
-                               <div class="reserve-page__card">
-                                   <div class="reserve-page__card-title">
-                                       <h6 class="second-title-modal">2017 VOLKSWAGEN GOLF</h6>
-                                       <p class="third-title-modal">R 2.0 TSI 5DR 310BHP</p>
-                                       <span class="reserve-page__pay-value">€13,995</span>
-                                   </div>
-                                   <div class="reserve-page__card-img-container">
-                                       <img class="img-fluid" src="img/home/golf.png" alt="">
-                                   </div>
-                               </div>
-                          </div>
-           
-                          <div class="col-lg-4 block-ul-modal">
-                           <div class="reserve-page__details">
-                               <span class="reserve-page__details-title">Your details</span>
-                               <div>
-                                   <span class="reserve-page__details-description">Please provide a few personal details</span>
-                               </div>
-                           </div>
-                           <div class="row">
-                               <div class="col-12 reserve-page-margin-padding">
-                                   <form class="reserve-page-margin-padding">
-                                       <div class="form-group row form-group-first">
-                                           <div class="col-sm-12  form-group-mobile">
-                                               <input type="text" class="form-control" id="inputFirstName"
-                                                      placeholder="First name *">
-                                           </div>
-                                           <div class="col-sm-12  form-group-mobile">
-                                               <input type="text" class="form-control" id="inputLastName"
-                                                      placeholder="Last name *">
-                                           </div>
-                                       </div>
-                                       <div class="form-group row">
-                                           <div class="col-sm-12  form-group-mobile">
-                                               <input type="text" class="form-control" id="inputEmailAddress"
-                                                      placeholder="Email Address *">
-                                           </div>
-                                           <div class="col-sm-12 form-group-mobile form-group-mobile-last">
-                                               <input type="text" class="form-control" id="inputContactNumber"
-                                                      placeholder="Contact Number *">
-                                           </div>
-                                       </div>
-                                   </form>
-                               </div>
-                           </div>
-                          </div>
-                          <div class="col-lg-4 hire-block">
-                               <div class="reserve-page__details">
-                                   <span class="reserve-page__details-title">Payment Details</span>
-                                   <div>
-                                       <span class="reserve-page__details-description reserve-page__details-description-third">Please provide the payment details that you would like to use to reserve this vehicle</span>
-                                   </div>
-                               </div>
-                               <div class="row">
-                                   <div class="col-sm-12 col-md-12">
-                                       <label for="cc-number">Credit / Debit Card Number *</label>
-                                       <input type="text" class="form-control" id="cc-number" placeholder="Card Number "
-                                              required="">
-                                       <div class="invalid-feedback">
-                                           Credit card number is required
-                                       </div>
-                                   </div>
-                                   <div class="col-6 col-sm-6 col-md-6 mb-3">
-                                       <label for="cc-expiration">Expiry Date *</label>
-                                       <input type="text" class="form-control" id="cc-expiration" placeholder="MM  /  YY"
-                                              required="">
-                                       <div class="invalid-feedback">
-                                           Expiration date required
-                                       </div>
-                                   </div>
-                                   <div class="col-6 col-sm-6 col-md-6 mb-3">
-                                       <label for="cc-cvv">CVC *</label>
-                                       <input type="text" class="form-control" id="cc-cvv" placeholder="CVC" required="">
-                                       <div class="invalid-feedback">
-                                           Security code required
-                                       </div>
-                                   </div>
-                               </div>
-           
-                               <div class="col-md-12 col-lg-12 reserve-page__stripe no-gutters-mobile">
-                                   <div class="reserve-page__stripe-wrapper">
-                                       <img class="d-flex justify-content-center img-fluid" src="img/reserve/stripe.png" alt="stripe">
-                                   </div>
-                               </div>
-           
-                               <div class="col-md-12 col-lg-12 d-block reserve-page-margin-padding reserve-page-padding">
-                                       <div class="form-group row reserve-page__checkbox-group custom-control custom-checkbox custom-control-left">
-                                               <input type="checkbox" class="reserve-page__checkbox custom-control-input custom-control-input" id="customCheck" name="example1">
-                                               <label class="reserve-page__checkbox-confirm custom-control-label" for="customCheck">Please confirm you have read and agree to our<a
-                                               class="reserve-page__conditions" href="#"> Terms and Conditions <img
-                                               src="img/reserve/terms.png" alt="Terms and Conditions"></a></p>
-                                       </div>
-                                       <div>
-                                               <hr class="reserve-page__сonditions"></label>
-                                       </div>
-                               <div class="col-md-12 col-lg-12 d-block ml-auto">
-                                   <div class="reserve-page__button-container">
-                                       <button class="reviews-button reserve-page__button">Submit Payment<span> Now</span></button>
-                                   </div>
-                               </div>
-                           </div>
-                          </div>
-                      </div>
-               </div>
-           </div>
-          </div>
-       
-         </div>
+        <div class="car-detail-finance">
+            <a href="#" data-toggle="modal" data-target="#demo-1">Finance
+                <span class="car-detail-hyperlink"></span>
+            </a>
         </div>
-      </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <img class="img-fluid" src="img/footer/logo.svg" alt="">
+        <h5 class="established">Established 2010</h5>
+        <h6 class="title-number">086-0221982</h6>
+        <h6 class="title-address">Harold's Cross Road,<br>
+            Dublin 6</h6>
+        <img class="footer-facebook" src="img/header/facebook.svg" alt=""/>
+    </div>
+</div>
+<!-- [ Modal #1 ] -->
+<div class="modal fade" id="demo-1" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-used-cars-one">
+                    <div class="modal-used-cars-container container">
+                        <div class="title-cross-block col-md-12">
+                            <h5 class="title-modal-used-cars">Hire Purchase representative example</h5>
+                            <div class="car-modal-close" data-dismiss="modal">
+                                <img src="img/crossss.png" class="modal-close" alt="" aria-hidden="true">
+                            </div>
+                        </div>
+                        <div class="row modal-used-cars-blocks">
+                            <div class="col-lg-4 img-block">
+                                <h6 class="first-title-modal">Your Vehicle Summary</h6>
+                                <h6 class="second-title-modal">2017 VOLKSWAGEN GOLF</h6>
+                                <p>R 2.0 TSI 5DR 310BHP</p>
+                                <img src="img/home/golf.png" alt="d">
+                            </div>
+
+                            <div class="col-lg-4 block-ul-modal">
+                                <ul>
+                                    <li>
+                                        <h6>finance type</h6>
+                                        <h6>hire purchase</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Term</h6>
+                                        <h6>36 months</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Contract Length</h6>
+                                        <h6>36 months</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Cash Price</h6>
+                                        <h6>€1,500.00</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Customer Deposit</h6>
+                                        <h6>€1,000.00</h6>
+                                    </li>
+
+                                    <hr>
+                                    <li>
+                                        <h6>Total amount of credit</h6>
+                                        <h6>€500.00</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Total amount payable</h6>
+                                        <h6>€1,881.92</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Representative APR</h6>
+                                        <h6>49.7%</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Total interest payable</h6>
+                                        <h6>€381.92</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Fixed rate of interest pa</h6>
+                                        <h6>8.25%</h6>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h6>Admin Fee</h6>
+                                        <h6>€199.0</h6>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 hire-block">
+                                <div class="text-hire-block">
+                                    <span class="modal-used-cars__title">What is Hire Purchase (HP)</span>
+                                    <p class="modal-used-cars__description">Pay any deposit and fees, and then the
+                                        monthly
+                                        repayments to own the vehicle at the end of the
+                                        agreement.</p>
+                                </div>
+                                <div class="modal-used-cars__payments">
+                                    <div class="modal-used-cars__value-text">
+                                        <span>monthly payments</span>
+                                    </div>
+                                    <div class="modal-used-cars__value">
+                                        <span>€24.22</span>
+                                    </div>
+                                </div>
+                                <div class="accordion-used-car" id="accordion-used-car-modal">
+                                    <div class="card accordion-used-car__card">
+                                        <div class="card-header accordion-used-car__card-header finance-icon"
+                                             id="headingFinance-title">
+                                            <a href="#"
+                                               class="btn shadow-none accordion-used-car__title modal-used-cars__finance">
+                                                Apply for Finance
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Modal #2 ] -->
+<div class="modal fade" id="demo-2" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-used-cars-two reserve-car-modal">
+                    <div class="modal-used-cars-container container">
+                        <div class="title-cross-block col-md-12">
+                            <h5 class="title-modal-used-cars">Reserve this car</h5>
+                            <div class="car-modal-close" data-dismiss="modal">
+                                <img src="img/crossss.png" class="modal-close" alt="" aria-hidden="true">
+                            </div>
+                        </div>
+                        <div class="row modal-used-cars-blocks">
+                            <div class="col-lg-4 img-block">
+                                <h3 class="title-about-us title-reserve-page reserve-page__title">Reserve This Car
+                                </h3>
+                                <div>
+                                    <hr class="reserve-page__line">
+                                </div>
+                                <div>
+                                    <hr class="reserve-page__line reserve-page__line-half">
+                                </div>
+                                <div>
+                                    <p class="reserve-page__desctiption-pay">Total to pay to reserve this car</p>
+                                    <div class="reserve-page__pay-block">
+                                        <span class="reserve-page__pay">€100.00</span>
+                                    </div>
+                                    <hr class="reserve-page__line">
+                                </div>
+                                <p class="reserve-page__summary-mobile reserve-page__summary-title">Summary</p>
+                                <p class="reserve-page__summary-mobile reserve-page__summary-vehicle">Your Vehicle</p>
+                                <h6 class="first-title-modal reserve-page__summary">Your Vehicle Summary</h6>
+                                <div class="reserve-page__card">
+                                    <div class="reserve-page__card-title">
+                                        <h6 class="second-title-modal">2017 VOLKSWAGEN GOLF</h6>
+                                        <p class="third-title-modal">R 2.0 TSI 5DR 310BHP</p>
+                                        <span class="reserve-page__pay-value">€13,995</span>
+                                    </div>
+                                    <div class="reserve-page__card-img-container">
+                                        <img class="img-fluid" src="img/home/golf.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 block-ul-modal">
+                                <div class="reserve-page__details">
+                                    <span class="reserve-page__details-title">Your details</span>
+                                    <div>
+                                        <span class="reserve-page__details-description">Please provide a few personal details</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 reserve-page-margin-padding">
+                                        <form class="reserve-page-margin-padding">
+                                            <div class="form-group row form-group-first">
+                                                <div class="col-sm-12  form-group-mobile">
+                                                    <input type="text" class="form-control" id="inputFirstName"
+                                                           placeholder="First name *">
+                                                </div>
+                                                <div class="col-sm-12  form-group-mobile">
+                                                    <input type="text" class="form-control" id="inputLastName"
+                                                           placeholder="Last name *">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-12  form-group-mobile">
+                                                    <input type="text" class="form-control" id="inputEmailAddress"
+                                                           placeholder="Email Address *">
+                                                </div>
+                                                <div class="col-sm-12 form-group-mobile form-group-mobile-last">
+                                                    <input type="text" class="form-control" id="inputContactNumber"
+                                                           placeholder="Contact Number *">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 hire-block">
+                                <div class="reserve-page__details">
+                                    <span class="reserve-page__details-title">Payment Details</span>
+                                    <div>
+                                        <span class="reserve-page__details-description reserve-page__details-description-third">Please provide the payment details that you would like to use to reserve this vehicle</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <label for="cc-number">Credit / Debit Card Number *</label>
+                                        <input type="text" class="form-control" id="cc-number"
+                                               placeholder="Card Number "
+                                               required="">
+                                        <div class="invalid-feedback">
+                                            Credit card number is required
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 mb-3">
+                                        <label for="cc-expiration">Expiry Date *</label>
+                                        <input type="text" class="form-control" id="cc-expiration"
+                                               placeholder="MM  /  YY"
+                                               required="">
+                                        <div class="invalid-feedback">
+                                            Expiration date required
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 mb-3">
+                                        <label for="cc-cvv">CVC *</label>
+                                        <input type="text" class="form-control" id="cc-cvv" placeholder="CVC"
+                                               required="">
+                                        <div class="invalid-feedback">
+                                            Security code required
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-12 reserve-page__stripe no-gutters-mobile">
+                                    <div class="reserve-page__stripe-wrapper">
+                                        <img class="d-flex justify-content-center img-fluid"
+                                             src="img/reserve/stripe.png" alt="stripe">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-12 d-block reserve-page-margin-padding reserve-page-padding">
+                                    <div class="form-group row reserve-page__checkbox-group custom-control custom-checkbox custom-control-left">
+                                        <input type="checkbox"
+                                               class="reserve-page__checkbox custom-control-input custom-control-input"
+                                               id="customCheck" name="example1">
+                                        <label class="reserve-page__checkbox-confirm custom-control-label"
+                                               for="customCheck">Please confirm you have read and agree to our<a
+                                                class="reserve-page__conditions" href="#"> Terms and Conditions <img
+                                                src="img/reserve/terms.png" alt="Terms and Conditions"></a></p>
+                                    </div>
+                                    <div>
+                                        <hr class="reserve-page__сonditions">
+                                        </label>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 d-block ml-auto">
+                                        <div class="reserve-page__button-container">
+                                            <button class="reviews-button reserve-page__button">Submit
+                                                Payment<span> Now</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <div class="modal fade modal-car-detail" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="modal-close" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-               <div class="modal-form-car">
-                  <div class="form-container">
-                     <form action="#" method="post" class="accordion-used-car__form">
-                        <div class="form-group">
-                           <input type="text"
-                              class="form-control accordion-used-car__form-control"
-                              id="InputNameModal" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                           <input type="text"
-                              class="form-control accordion-used-car__form-control"
-                              id="InputPhoneModal" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-                           <input type="text"
-                              class="form-control accordion-used-car__form-control"
-                              id="InputEmailModal" placeholder="Email Address">
-                        </div>
-                        <div class="form-group">
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="modal-close" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="modal-form-car">
+                    <div class="form-container">
+                        <form action="#" method="post" class="accordion-used-car__form">
+                            <div class="form-group">
+                                <input type="text"
+                                       class="form-control accordion-used-car__form-control"
+                                       id="InputNameModal" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text"
+                                       class="form-control accordion-used-car__form-control"
+                                       id="InputPhoneModal" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="text"
+                                       class="form-control accordion-used-car__form-control"
+                                       id="InputEmailModal" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
                            <textarea
-                              class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
-                              id="FormControlTextareaModal" rows="5"
-                              placeholder="Your message"></textarea>
-                        </div>
-                        <div class="form-check">
-                           <label class="selling-chechbox">
-                           <input  id="exampleCheckModall" class="selling-title-chechbox" type="checkbox" value="" />
-                           <span for="exampleCheckModal" class="chechbox-text">
+                                   class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"
+                                   id="FormControlTextareaModal" rows="5"
+                                   placeholder="Your message"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <label class="selling-chechbox">
+                                    <input id="exampleCheckModall" class="selling-title-chechbox" type="checkbox"
+                                           value=""/>
+                                    <span for="exampleCheckModal" class="chechbox-text">
                            I agree that Graham Walker Cars may store the information submitted here in order to process my enquiry.</span>
-                           </label>
-                        </div>
-                        <div class="massege-btn-box">
-                           <button type="submit"
-                              class="btn accordion-used-car__form-button">Send
-                           </button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-  
-      </div>
+                                </label>
+                            </div>
+                            <div class="massege-btn-box">
+                                <button type="submit"
+                                        class="btn accordion-used-car__form-button">Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
+            </div>
+
+        </div>
     </div>
-  </div>
 </div>
 
 <script src="js/script.js"></script>

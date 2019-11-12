@@ -800,9 +800,6 @@ select::-ms-expand {
   #special-offers .owl-carousel {
     padding: 0 3%; }
     #special-offers .owl-carousel .owl-nav.disabled {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -1815,7 +1812,7 @@ select::-ms-expand {
         color: #000;
         font-size: 20px;
         padding: 15px 15px;
-        linr-height: 24px;
+        line-height: 24px;
         margin-right: 6px;
         border-radius: 5px;
         cursor: pointer; }
@@ -1952,8 +1949,7 @@ select::-ms-expand {
           #used-cars.main-wrapper .search-box .container .col-md-3 select {
             font-size: 12.5px;
             height: 43px;
-            background-image: none;
-            font-size: 12.5px; }
+            background-image: none; }
     #used-cars.main-wrapper .filter-navigation-menu {
       margin: 9% 0 13% 0; }
     #used-cars.main-wrapper .pagination-bottom .col-md-6 {
@@ -2066,7 +2062,6 @@ select::-ms-expand {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 101;
   background-color: rgba(0, 0, 0, 0.6);
   background: white;
   padding-top: 4%; }
@@ -2680,7 +2675,6 @@ select::-ms-expand {
     width: 92%;
     color: #4DA6FF;
     text-align: center;
-    background: white;
     cursor: pointer;
     background-color: #fff;
     background-clip: padding-box;
@@ -2982,7 +2976,6 @@ select::-ms-expand {
         display: block; }
         #feedback .container .owl-feedback .feedback-item {
           min-height: 170px;
-          min-height: 170px;
           padding: 10px 10px;
           margin-bottom: 1rem; }
           #feedback .container .owl-feedback .feedback-item .feedback-title h3 {
@@ -3100,7 +3093,7 @@ select::-ms-expand {
   resize: none;
   color: #777;
   border: 1px solid #808080;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 19px;
   line-height: 23px; }
 
@@ -3386,6 +3379,17 @@ select::-ms-expand {
     display: flex;
     font-size: 30px !important; } }
 @media only screen and (max-width: 320px) {
+  .modal-used-cars-two.reserve-car-modal .modal-used-cars-container .first-title-modal {
+    font-size: 16px; }
+  .modal-used-cars-two.reserve-car-modal .modal-used-cars-container .second-title-modal {
+    font-size: 16px; }
+  .modal-used-cars-two.reserve-car-modal .modal-used-cars-container .third-title-modal {
+    font-size: 16px; }
+
+  .reserve-page__pay-value {
+    display: flex;
+    font-size: 17px !important; }
+
   .reserve-page__pay-value {
     padding-top: 1%; } }
 #feedback.reviews-page {
@@ -3500,7 +3504,6 @@ select::-ms-expand {
   display: flex;
   justify-content: space-between; }
   #car-title h2 {
-    font-size: 30px;
     font-size: 30px;
     line-height: 37px;
     color: #000; }
@@ -3890,7 +3893,7 @@ select::-ms-expand {
 #car-detail-value {
   padding: 3% 0 6% 0.5%;
   color: #432A49;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   line-height: 23px;
   margin-right: 0; }
@@ -4165,7 +4168,6 @@ select::-ms-expand {
       display: flex;
       background: url(../img/car-detail/close.png);
       position: absolute;
-      z-index: 10;
       top: 0;
       right: 0;
       padding: 20px;
@@ -4190,7 +4192,7 @@ select::-ms-expand {
       min-height: 100px;
       min-width: 138px;
       color: #FFF;
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       font-size: 20px;
       line-height: 23px;
       text-transform: uppercase; }
@@ -4416,7 +4418,7 @@ select::-ms-expand {
     max-width: 75%; }
 
   .car-tile .car-price .col-6:last-child p {
-    font-size: 13px; }
+    font-size: 10px; }
 
   .car-tile .car-price .col-6:last-child, .car-tile .car-price .col-6:first-child {
     font-size: 27px;
@@ -4425,7 +4427,7 @@ select::-ms-expand {
   .car-tile .car-title h2, .car-tile .car-title p {
     font-size: 19px; }
 
-  .car-tile .car-desc .col-6 ul li {
+  .car-tile .car-desc .col-6 ul li, #banner .search-box .container .col-md-3 select {
     font-size: 18px; }
 
   .car-tile .car-image .car-like img {
@@ -4449,8 +4451,11 @@ select::-ms-expand {
   .search-used-cars .navbar-toggler.custom-toggler.btn-search {
     font-size: 18px; }
 
-  .mobile-title-workshop-section, .about .mobile-title, .selling-title-container .selling-title {
-    font-size: 4.5vw; }
+  .mobile-title-workshop-section, .about .mobile-title, .selling-title-container .selling-title, #banner .top-img .title-top-img {
+    font-size: 4.2vw; }
+
+  .homepage #special-offers-section .owl-carousel.owl-special-offers.owl-loaded.owl-drag {
+    max-height: initial; }
 
   .valeting .workshop-section .down-block-workshop-section .img-left, .valeting .valeting-section .down-block-workshop-section .img-left {
     width: 25%; }
@@ -4466,6 +4471,34 @@ select::-ms-expand {
     line-height: 18px; }
 
   .shortlist #special-offers-section .featured .title-featured {
-    font-size: 27px; } }
+    font-size: 27px; }
+
+  #banner .search-box {
+    padding: 7% 0% 9% 0%; }
+
+  .apply .title-apply, .apply-description .title-apply, .pay-us-visit .col-lg-6 h6 {
+    font-size: 4vw; }
+
+  .apply .text-p-apply, .apply-description .text-p-apply, .apply .button-half-apply button, .apply-description .button-half-apply button, .pay-us-visit .text-img-pay-us-visit p, .pay-us-visit .col-lg-6 p.text-under-hours {
+    font-size: 3.5vw; }
+
+  #feedback .container .owl-feedback .feedback-item .feedback-title h3, .pay-us-visit .title-pay-us-visit {
+    font-size: 23px; }
+
+  #feedback .feedback-item .feedback-date {
+    font-size: 18px; }
+
+  #feedback.feedback-home .title-feedback-body {
+    font-size: 19px;
+    line-height: 25px; } }
+@media (min-width: 767px) and (max-width: 768px) and (orientation: portrait) {
+  #banner .search-box .col-md-3 {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+    max-width: 32%; }
+  #banner .search-box .col-md-2 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
