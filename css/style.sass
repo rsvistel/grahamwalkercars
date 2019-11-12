@@ -2143,7 +2143,31 @@ select::-ms-expand
     max-width: 1000px
     margin: 1.75rem auto
 
+
+
+
 //Modal
+
+.modal-one-style
+  display: block
+  justify-content: center
+  align-items: flex-start
+  min-height: 100vh
+  width: 100%
+  background: white
+  z-index: 101
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 101
+  background-color: rgba(0,0,0,0.6)
+  background: white
+  margin-top: 4%
+  .modal-used-cars-container.container
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    -moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+    box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+
 .modal-used-cars-one, .modal-used-cars-two
   display: block
   .col-lg-4
@@ -3487,9 +3511,10 @@ select::-ms-expand
   color: #777777
   font-size: 20px
 
-#textareaReserve::-webkit-input-placeholder
+#textareaReserve::placeholder
   color: #777777
   font-size: 20px
+
 
 
 #inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber
