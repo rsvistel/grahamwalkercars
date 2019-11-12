@@ -48,7 +48,7 @@ select::-ms-expand {
   margin-top: 10px; }
 
 .m-top-100 {
-  margin-top: 122px; }
+  margin-top: 112px; }
 
 .red {
   color: #BD1316; }
@@ -426,7 +426,7 @@ select::-ms-expand {
     display: flex;
     justify-content: space-between;
     padding: 2vw 6vw 2vw 5vw !important;
-    border-radius: none; }
+    border-radius: 0; }
     .mobile-close-btn span {
       text-transform: uppercase;
       color: #ffffff;
@@ -919,11 +919,13 @@ select::-ms-expand {
       flex-direction: column;
       padding: 4% 0; }
       .car-tile .car-price .col-6:first-child {
+        border-color: transparent;
         border-right: 1.2px solid rgba(255, 255, 255, 0.5);
         font-weight: 600;
         font-family: Arial Rounded MT Bold, sans-serif;
         border-top-right-radius: 7px; }
       .car-tile .car-price .col-6:last-child {
+        border-color: transparent;
         border-right: 1.2px solid rgba(255, 255, 255, 0.5);
         background-clip: padding-box;
         color: #D10609;
