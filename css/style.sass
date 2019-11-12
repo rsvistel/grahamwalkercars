@@ -2162,11 +2162,17 @@ select::-ms-expand
   z-index: 101
   background-color: rgba(0,0,0,0.6)
   background: white
-  margin-top: 4%
+  padding-top: 4%
   .modal-used-cars-container.container
     -webkit-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
     -moz-box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
     box-shadow: 0px 0px 10px 2px rgba(143,140,143,0.73)
+
+@media (max-width: 991px)
+  .modal-one-style
+    overflow: scroll
+    height: 100vh
+
 
 .modal-used-cars-one, .modal-used-cars-two
   display: block
@@ -3398,9 +3404,9 @@ select::-ms-expand
   &__details-title
         display: inline-block
         padding-bottom: 10px
-        font-size: 20px
+        font-size: 17px
   &__details-description
-        font-size: 20px
+        font-size: 17px
         padding-bottom: 9%
         display: inline-block
   &__pay-value
@@ -3430,12 +3436,23 @@ select::-ms-expand
   &__conditions
         color: #777777
         font-weight: bold
-        font-size: 17px
+        font-size: 16px
         &:hover
           color: #777777
           text-decoration: none
         img
           width: 30px!important
+
+.padding-bottom-enquire
+  padding-bottom: 17%
+
+#EnquireTextArea
+  resize: none
+  color: #777
+  border: 1px solid #808080
+  font-family: Roboto
+  font-size: 19px
+  line-height: 23px
 
 
 .reserve-page___stripe
@@ -3461,7 +3478,7 @@ select::-ms-expand
   margin: 0.5rem 0 10px 0!important
   color: #8C8C8C
   line-height: 23px
-  font-size: 18px
+  font-size: 16px
 
 .reserve-page__сonditions
   width: 100%
@@ -3485,35 +3502,35 @@ select::-ms-expand
 
 #inputLastName::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputFirstName::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputEmailAddress::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #inputContactNumber::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-number::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-expiration::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #cc-cvv::-webkit-input-placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 #textareaReserve::placeholder
   color: #777777
-  font-size: 20px
+  font-size: 19px
 
 
 
@@ -3568,20 +3585,20 @@ select::-ms-expand
     label
       color: #8C8C8C
       font-family: 'Roboto', sans-serif
-      margin-bottom: .8rem
+      margin-bottom: .4rem
     .img-block
       padding-left: 1.8rem
       line-height: 23px
     .hire-block
       padding-right: 1.8rem
       font-family: 'Roboto', sans-serif
-      font-size: 20px
+      font-size: 19px
       line-height: 23px
     .block-ul-modal
       padding-right: 1.6rem
       padding-left: 0.8rem
       font-family: 'Roboto', sans-serif
-      font-size: 20px
+      font-size: 19px
 
 .modal-used-cars-two.reserve-car-modal
   .custom-control-label::before, .custom-control-label::after
@@ -3749,12 +3766,6 @@ select::-ms-expand
         padding-top: 1%
 
 //Reserve-vehicle- page
-
-.reserve-car-modal
-  textarea
-    height: 181px
-    width: 100%
-    color: #777777
 
 
   //reviews-page
