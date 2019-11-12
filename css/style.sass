@@ -1992,7 +1992,35 @@ select::-ms-expand
 
 @media (max-width: 768px)
   .search-used-cars
-    display: block
+    display: flex
+    justify-content: space-between
+    padding: 7px 0
+    .navbar-toggler.custom-toggler.btn-search
+      width: 40%
+      color: white
+      font-size: 15px
+      font-family: $secondary-font
+      display: flex
+      justify-content: flex-start
+      img
+        margin-right: 5px
+
+    .contact-section-header
+      display: flex
+      justify-content: flex-end
+      width: 60%
+      padding: .25rem .75rem
+      img
+        margin-right: 5px
+      .contact-text
+        font-size: 18px
+        line-height: 28px
+        font-weight: 300
+        font-family: $secondary-font
+      .sales-number
+        font-size: 18px
+        font-weight: 700
+
   #used-cars.main-wrapper .car-tile:nth-child(1)
     margin: 10px auto
 
