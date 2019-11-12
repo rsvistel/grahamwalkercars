@@ -2087,12 +2087,12 @@ select::-ms-expand {
     font-weight: 600;
     font-size: 22px; }
   .modal-used-cars-one .card.accordion-used-car__card, .modal-used-cars-two .card.accordion-used-car__card {
-    background-color: #DBDBDB;
     border: 0; }
     .modal-used-cars-one .card.accordion-used-car__card .card-header:first-child, .modal-used-cars-two .card.accordion-used-car__card .card-header:first-child {
       border: 0;
       border-radius: 7px;
-      padding: 1.5rem 1.25rem; }
+      padding: 1.5rem 1.25rem;
+      background-color: #DBDBDB; }
   .modal-used-cars-one .modal-used-cars__payments, .modal-used-cars-two .modal-used-cars__payments {
     font-family: "Arial Rounded MT Bold", sans-serif; }
 
@@ -2180,7 +2180,7 @@ select::-ms-expand {
 @media (max-width: 768px) {
   .card-header.accordion-used-car__card-header.finance-icon {
     background-image: url("../img/finance-icon-white.png");
-    background-color: #39F; }
+    background-color: #39F !important; }
     .card-header.accordion-used-car__card-header.finance-icon .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
       color: white; }
 
@@ -3198,7 +3198,7 @@ select::-ms-expand {
     color: #777777;
     text-decoration: none; }
   .reserve-page__conditions img {
-    width: 30px !important; }
+    width: 25px !important; }
 
 .padding-bottom-enquire {
   padding-bottom: 17%; }
@@ -3418,6 +3418,9 @@ select::-ms-expand {
   .reserve-page-padding {
     padding: 8px; }
 
+  .modal-used-cars-two.reserve-car-modal .container .form-group {
+    margin: 0 8px; }
+
   .reserve-page__title-block {
     align-items: flex-start;
     margin: 10px 0 15px 0; }
@@ -3462,7 +3465,7 @@ select::-ms-expand {
     .reserve-page__button span {
       display: inline; }
   .reserve-page__conditions {
-    font-size: 20px; }
+    font-size: 16px; }
   .reserve-page__summary {
     display: none; }
   .reserve-page__summary-mobile {
