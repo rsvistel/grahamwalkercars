@@ -1036,7 +1036,8 @@ select::-ms-expand {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 40px;
-  font-size: 17px; }
+  font-size: 17px;
+  padding-top: 2rem; }
 
 .text-p-apply {
   font-weight: 700;
