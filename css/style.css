@@ -2379,7 +2379,11 @@ select::-ms-expand {
     .block-workshop-section .item-img .text-item-img {
       position: absolute;
       font-family: Arial, sans-serif;
-      text-align: center; }
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
       .block-workshop-section .item-img .text-item-img p {
         font-size: 11px; }
 
