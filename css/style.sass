@@ -80,6 +80,10 @@ select::-ms-expand
       align-items: center
       img
         position: absolute
+        top: 50%
+        left: 50%
+        margin-right: 50%
+        transform: translate(-50%, -50%)
 
 @media (min-width: 1700px)
   #homepage #banner #banner-image img
@@ -305,6 +309,10 @@ select::-ms-expand
 .homepage .featured .title-featured
   text-align: center
 
+@media (max-width: 767px)
+  .header.topnav
+    position: absolute
+
 @media (min-width: 768px)
   .mobile-block, .mobile-section-under-header, .accordion__wrapper, .darck-btn
     display: none !important
@@ -358,7 +366,7 @@ select::-ms-expand
       padding: 0
       width: 100%
       text-align: center
-    .far, .fas
+    .far, .fas, .fa
       display: block
       color: #ffffff
       font-size: 17px
@@ -1037,7 +1045,11 @@ select::-ms-expand
   background-image: url("../img/home/ban.png")
   min-height: 700px
   background-size: cover
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
   background-position: bottom
   background-repeat: no-repeat
@@ -1047,6 +1059,7 @@ select::-ms-expand
 
 .button-half-apply, .text-half-apply
   padding-bottom: 13%
+  //padding-top: 6%
 
 .button-half-apply button
   background: #D10609
@@ -1065,6 +1078,7 @@ select::-ms-expand
   font-family: $primary-font
   margin-bottom: 40px
   font-size: 17px
+  padding-top: 2rem
 
 .text-p-apply
   font-weight: 700
@@ -1176,8 +1190,10 @@ select::-ms-expand
       text-align: center
     .img-fluid
       width: 33%
+      height: 20%
     .footer-facebook
       width: 5%
+      height: 1%
 
 @media (max-width: 768px)
   #banner .top-img
@@ -2510,6 +2526,10 @@ select::-ms-expand
       position: absolute
       font-family: Arial, sans-serif
       text-align: center
+      top: 50%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -50%)
       p
         font-size: 11px
 
@@ -4483,6 +4503,7 @@ select::-ms-expand
             width: 61% !important
             margin: auto
 
+
 @media only screen and (max-width: 768px)
   #homepage
     overflow: initial
@@ -4496,6 +4517,10 @@ select::-ms-expand
         img
           position: relative
           width: auto
+          top: 0
+          left: 0
+          margin-right: 0
+          transform: translate(0%, 0%)
     .search-box
       position: static
       margin-top: 0
@@ -4513,6 +4538,13 @@ select::-ms-expand
 
   .homepage .m-top-100
     margin-top: 100px
+
+@media only screen and (max-width: 768px) and (orientation: landscape)
+  #homepage
+    #banner
+      #banner-image
+        img
+          width: 100%
 
 @media only screen and (max-width: 768px) and (orientation: portrait)
   .car-page .car-detail-main-section
