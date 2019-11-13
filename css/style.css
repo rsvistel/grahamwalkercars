@@ -69,7 +69,11 @@ select::-ms-expand {
       justify-content: center;
       align-items: center; }
       #homepage #banner #banner-image img {
-        position: absolute; }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: 50%;
+        transform: translate(-50%, -50%); }
 
 @media (min-width: 1700px) {
   #homepage #banner #banner-image img {
