@@ -80,10 +80,10 @@ select::-ms-expand
       align-items: center
       img
         position: absolute
-        top: 50%
-        left: 50%
-        margin-right: 50%
-        transform: translate(-50%, -50%)
+        // top: 50%
+        // left: 50%
+        // margin-right: 50%
+        // transform: translate(-50%, -50%)
 
 @media (min-width: 1700px)
   #homepage #banner #banner-image img
@@ -309,6 +309,10 @@ select::-ms-expand
 .homepage .featured .title-featured
   text-align: center
 
+@media (max-width: 767px)
+  .header.topnav
+    position: absolute
+
 @media (min-width: 768px)
   .mobile-block, .mobile-section-under-header, .accordion__wrapper, .darck-btn
     display: none !important
@@ -362,7 +366,7 @@ select::-ms-expand
       padding: 0
       width: 100%
       text-align: center
-    .far, .fas
+    .far, .fas, .fa
       display: block
       color: #ffffff
       font-size: 17px
