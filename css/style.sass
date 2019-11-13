@@ -1041,7 +1041,11 @@ select::-ms-expand
   background-image: url("../img/home/ban.png")
   min-height: 700px
   background-size: cover
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
   background-position: bottom
   background-repeat: no-repeat
@@ -1051,6 +1055,7 @@ select::-ms-expand
 
 .button-half-apply, .text-half-apply
   padding-bottom: 13%
+  //padding-top: 6%
 
 .button-half-apply button
   background: #D10609
@@ -1180,8 +1185,10 @@ select::-ms-expand
       text-align: center
     .img-fluid
       width: 33%
+      height: 20%
     .footer-facebook
       width: 5%
+      height: 1%
 
 @media (max-width: 768px)
   #banner .top-img
