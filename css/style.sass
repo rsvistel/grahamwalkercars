@@ -286,17 +286,18 @@ select::-ms-expand
         color: #000000
         &:hover
           color: #ffffff
-      .nav-link
-        text-transform: uppercase
-        font-family: 'Montserrat', sans-serif
-        font-weight: 700
-        font-size: 13px
-        color: #000000
-        text-align: center
-        display: inline-block
+    .nav-link
+      text-transform: uppercase
+      font-family: 'Montserrat', sans-serif
+      font-weight: 700
+      font-size: 13px
+      color: #000000
+      text-align: center
+      display: inline-block
 
 .indexcity
   z-index: 100
+
 
 .right
   right: 0 !important
@@ -435,7 +436,8 @@ select::-ms-expand
     ul
       align-items: flex-start
       li
-        padding: 1.5vw 0 1.5vw 5vw
+        //padding: 1.5vw 0 1.5vw 5vw
+        padding: 0
         border-bottom: 2px solid #6E6E6E
         width: 74%
   .mobile-close-btn
@@ -642,6 +644,25 @@ select::-ms-expand
       font-size: 16px
       font-weight: 300
 
+  .navbar-collapse.menubar.menubar-navbar .nav-link
+    width: 100%
+    color: white
+    text-transform: uppercase
+    font-family: "Montserrat", sans-serif
+    font-weight: 700
+    font-size: 13px
+    display: inline-block
+    border-bottom: 2px solid #6E6E6E
+    transition: 0.3s
+    padding: 3vw 6vw 3vw 5vw
+    &:hover
+      background-color: #005EAA
+    li
+      border-bottom: 0
+      font-weight: 600
+      font-size: 12px
+    .navbar ul li:hover
+      background-color: initial
 //Header
 
 //Banner
@@ -898,10 +919,11 @@ select::-ms-expand
           content: ''
           position: absolute
           width: 100%
-          height: 100%
-          background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0)), to(rgba(0, 0, 0, 0.8)))
-          background: -o-linear-gradient(rgba(4, 4, 4, 0), rgba(0, 0, 0, 0.8))
-          background: linear-gradient(rgba(4, 4, 4, 0), rgba(0, 0, 0, 0.8))
+          height: 45%
+          bottom: 0
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0)), to(rgba(0, 0, 0, 0.9)))
+          background: -o-linear-gradient(rgba(4, 4, 4, 0), rgba(0, 0, 0, 0.9))
+          background: linear-gradient(rgba(4, 4, 4, 0), rgba(0, 0, 0, 0.9))
     img
       width: 100%
     .car-like, .car-image-counter
@@ -1435,6 +1457,16 @@ select::-ms-expand
   background-color: #47494A
   .container
     padding: 0
+  h5
+    font-family: "SF Pro Display", sans-serif
+    text-transform: capitalize
+    color: white
+.height-60
+  height: 60vh
+  background-color: #47494A
+
+.finance-title-section .about-title
+  padding-bottom: 3%
 
 .about-title
   font-family: $primary-font
@@ -1489,6 +1521,8 @@ select::-ms-expand
   background-color: #47494A
 
 @media (max-width: 768px)
+  .finance-title-section
+    padding: 13% 5%
   .about
     .about-title
       display: none
@@ -2028,7 +2062,7 @@ select::-ms-expand
           padding: 0 7px
         .search-box-info
           margin: auto
-          padding: 0 0 10% 0
+          padding: 6% 0
           font-size: 20px
         .desktop-sort-cars
           display: none
@@ -2471,7 +2505,6 @@ select::-ms-expand
   color: #ffffff
   font-weight: 400
   .workshop-section, .valeting-section
-    background-image: url("../img/valeting/ca.png")
     .text-top-workshop-section
       padding-right: 50%
     .down-block-workshop-section
@@ -2491,6 +2524,10 @@ select::-ms-expand
       p
         font-size: 13px
         padding-left: 15px
+.workshop.valeting .valeting-section
+  background-image: url("../img/valeting/valeting.jpg")
+.workshop-section
+  background-image: url("../img/workshop/work.jpg")
 
 .block-workshop-section
   padding: 25px
@@ -2847,10 +2884,18 @@ select::-ms-expand
   .button-block
     width: 94.5%
     button
-      background: #3399FF
+      //background: #3399FF
+      background: #D10609
       text-transform: uppercase
       padding: 12px 50px
       font-weight: 500
+      border: none
+      &:focus
+        box-shadow: none
+      &:active
+        box-shadow: none
+        background-color: #890204!important
+        border: 0
   .radio-inline
     display: block
     position: relative
@@ -3077,7 +3122,7 @@ select::-ms-expand
     .feedback-title h3
       font-family: Arial, sans-serif
       color: #000000
-      font-weight: 900
+      font-weight: 700
       font-size: 22px
     .feedback-body
       color: #525252
@@ -3596,7 +3641,7 @@ select::-ms-expand
     .feedback-title h3
       font-family: Arial, sans-serif
       color: #000000
-      font-weight: 900
+      font-weight: 700
       font-size: 22px
     .feedback-body
       color: #525252
@@ -3962,7 +4007,7 @@ select::-ms-expand
     &.fullscreen
       background-color: rgba(221, 221, 221, 0.5)
       height: 507px
-      padding-top: 14px
+      padding-top: 10px
       .card
         margin-bottom: 9px
       .card-header
@@ -3974,18 +4019,18 @@ select::-ms-expand
       .accordion-used-car__card-header
         background-size: 7%
       .accordion-used-car__title
-        padding: 3.7%
+        padding: 3%
         padding-left: 19%
         font-size: 18px
         line-height: 20px
       .accordion-used-car__card-body
         .form-control
-          font-size: 16px
-          line-height: 11px
+          font-size: 15px
+          line-height: 13px
         #InputName, #InputPhone, #InputEmail
           height: calc(1.2em + .75rem + 2px)
         .form-group
-          margin-bottom: 10px
+          margin-bottom: 8px
         .form-check
           padding-left: 0
         .selling-chechbox
@@ -4200,7 +4245,12 @@ select::-ms-expand
       font-size: 17px
   .description-car-detail
     font-size: 17px
+.mobile-line
+  display: none
 
+@media only screen and (max-width: 1200px) and (min-width: 1025px)
+  #car-title .car-title-payment
+    font-size: 11px
 @media only screen and (max-width: 992px)
   .car-page
     .footer
@@ -4361,9 +4411,15 @@ select::-ms-expand
 
   .car-detail-button-mobile
     display: flex
-    justify-content: space-around
+    //justify-content: space-around
+    position: fixed
+    bottom: 0
+    width: 100%
     background: #515151
-    margin-top: 50%
+    z-index: 11111
+    //margin-top: 50%
+    .container
+      padding: 0
     &.fullscreen
       display: none
     div
@@ -4371,7 +4427,8 @@ select::-ms-expand
       align-items: flex-end
       justify-content: center
       position: relative
-      min-height: 100px
+      //min-height: 100px
+      min-height: 80px
       min-width: 138px
       color: #FFF
       font-family: Roboto, sans-serif
@@ -4396,7 +4453,8 @@ select::-ms-expand
       background-repeat: no-repeat
       background-position: 50% 11%
       border-left: 1px solid #FFF
-
+  .line-detailse-small.mobile-line
+    display: block
   .car-detail-hyperlink
     opacity: .3
     position: absolute
@@ -4552,7 +4610,7 @@ select::-ms-expand
 
 @media only screen and (max-width: 600px)
   .car-page .car-detail-main-section
-    padding-top: 27%
+    padding-top: 33.5%
 
 @media only screen and (max-width: 320px)
   .car-detail-button-mobile
