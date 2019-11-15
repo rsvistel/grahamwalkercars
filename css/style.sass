@@ -29,6 +29,10 @@ $gray: #EAEDF0
   .container
     max-width: 1140px
 
+@media (min-width: 1400px)
+  .container
+    max-width: 1340px
+
 h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
   margin: 0
   padding: 0
@@ -444,8 +448,10 @@ select::-ms-expand
     background: #014563 !important
     display: flex
     justify-content: space-between
-    padding: 2vw 6vw 2vw 5vw !important
+    //padding: 3.5vw 6vw 3.5vw 5vw !important
+    padding: 13px 23px 13px 14px !important
     border-radius: 0
+    //min-height: 48px
     span
       text-transform: uppercase
       color: #ffffff
@@ -458,7 +464,8 @@ select::-ms-expand
     background-color: #F7F7F9
     .mobile-close-btn
       background-color: #333333 !important
-      padding: 3vw 2.6vw 3vw 5vw !important
+      //padding: 3vw 2.6vw 3vw 5vw !important
+      padding: 13px 10px 13px 14px !important
       border-radius: 0
     .cross-img-mob
       margin-right: 5px
@@ -522,10 +529,12 @@ select::-ms-expand
       background: #D20709
       display: flex
       justify-content: space-between
-      padding: 3vw 2.6vw 3vw 5vw !important
+      //padding: 3.5vw 2.6vw 3.5vw 5vw
+      padding: 13px 10px 13px 14px !important
       border-radius: 0
       border: none
       text-transform: uppercase
+      //min-height: 48px
       span
         font-size: 0.8rem
         font-family: Arial, sans-serif
@@ -549,6 +558,20 @@ select::-ms-expand
   .mobile-section-under-header
     padding: 70px 2vw 2vw 2vw
     justify-content: center
+
+@media only screen and (max-width: 767px) and (orientation: landscape)
+  .mobile-close-btn
+    padding: 15px 38px 15px 32px !important
+
+  .phonebar .mobile-close-btn
+    padding: 15px 38px 15px 32px !important
+
+  .menu-search .mobile-search-btn
+    padding: 15px 15px 15px 15px !important
+
+@media only screen and (max-width: 320px)
+  .mobile-close-btn
+    padding: 12px 23px 12px 14px!important
 
 @media (min-width: 768px) and (max-width: 1000px)
   .titles-logo
@@ -663,6 +686,7 @@ select::-ms-expand
       font-size: 12px
     .navbar ul li:hover
       background-color: initial
+
 //Header
 
 //Banner
