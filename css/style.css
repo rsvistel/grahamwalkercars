@@ -255,22 +255,6 @@ select::-ms-expand {
       -ms-flex-align: center;
       align-items: center;
       transition: 0.5s; }
-      .navbar ul li .fa-chevron-down {
-        color: #000000; }
-      .navbar ul li:hover {
-        background-color: #005EAA;
-        cursor: pointer; }
-        .navbar ul li:hover .h6-title, .navbar ul li:hover .fa-chevron-down {
-          color: #ffffff; }
-      .navbar ul li.active {
-        background-color: #005EAA; }
-        .navbar ul li.active .h6-title {
-          color: #ffffff; }
-      .navbar ul li a {
-        text-decoration: none;
-        color: #000000; }
-        .navbar ul li a:hover {
-          color: #ffffff; }
     .navbar ul .nav-link {
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
