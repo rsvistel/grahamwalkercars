@@ -21,7 +21,6 @@
 </head>
 
 <body class="selling">
-<!-- <div class="overlay"></div> -->
 <section class="header topnav" id="myTopnav">
     <div class="container container-topnav">
         <div class="row">
@@ -74,20 +73,24 @@
                             </a>
                         </div>
                         <div class="mobile-block-items mobile-reserve">
-                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-                                    data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve"
-                                    aria-expanded="false" aria-label="reserve">
+                            <a href="finance.html">
+                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                                        data-target=".darck-btn-reserve" aria-controls="darck-btn-reserve"
+                                        aria-expanded="false" aria-label="reserve">
                                     <i class="fa fa-calculator"></i>
                                     <span>finance</span>
-                            </button>
+                                </button>
+                            </a>
                         </div>
                         <div class="mobile-block-items mobile-favourite">
-                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-                                    data-target=".darck-btn-favourites" aria-controls="darck-btn-favourites"
-                                    aria-expanded="false" aria-label="favourites">
-                                <i class="far fa-heart"></i>
-                                <span>Favourites</span>
-                            </button>
+                            <a href="shortlist.html">
+                                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                                        data-target=".darck-btn-favourites" aria-controls="darck-btn-favourites"
+                                        aria-expanded="false" aria-label="favourites">
+                                    <i class="far fa-heart"></i>
+                                    <span>Favourites</span>
+                                </button>
+                            </a>
                         </div>
                         <div class="mobile-block-items mobile-phone">
                             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
@@ -118,7 +121,6 @@
                                                 <span>Search</span>
                                             </div>
                                             <div class="cross-img-mob">
-                                                <!--<i class="fas fa-times"></i>-->
                                                 <img src="img/crossss-white.svg">
                                             </div>
                                         </div>
@@ -229,7 +231,7 @@
                         </ul>
                     </div>
 
-                    <div class="navbar-collapse collapse menubar">
+                    <div class="navbar-collapse collapse menubar menubar-navbar">
                         <ul class="navbar-nav ml-auto py-md-0">
                             <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse"
                                 data-target=".menubar" aria-controls="menubar" aria-expanded="false">
@@ -237,43 +239,75 @@
                                     <span>Options</span>
                                 </div>
                                 <div class="cross-img-mob">
-                                    <!--<i class="fas fa-times"></i>-->
                                     <img src="img/crossss-white.svg">
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="used-cars.html">used cars</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="workshop.html">workshop</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="valeting.html">valeting</a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a class="nav-link" href="selling-your-car.html">selling your car</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="finance-example.html">FINANCE</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="shortlist.html">FAVOURITES</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="about.html">about</a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a class="nav-link" href="reviews.html">REVIEWS</a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a class="nav-link" href="previously-sold.html">PREVIOUSLY SOLD</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="contact-us.html">contact </a>
-                            </li>
+
+                            <a class="nav-link" href="index.html">
+                                <li class="nav-item">
+                                    home
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="used-cars.html">
+                                <li class="nav-item">
+                                    used cars
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="workshop.html">
+                                <li class="nav-item ">
+                                    workshop
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="valeting.html">
+                                <li class="nav-item ">
+                                    valeting
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="selling-your-car.html">
+                                <li class="nav-item  ">
+                                    selling your car
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="finance-example.html">
+                                <li class="nav-item ">
+                                    FINANCE
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="shortlist.html">
+                                <li class="nav-item ">
+                                    FAVOURITES
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="about.html">
+                                <li class="nav-item ">
+                                    about
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="reviews.html">
+                                <li class="nav-item  ">
+                                    REVIEWS
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="previously-sold.html">
+                                <li class="nav-item  ">
+                                    PREVIOUSLY SOLD
+                                </li>
+                            </a>
+
+                            <a class="nav-link" href="contact-us.html">
+                                <li class="nav-item ">
+                                    contact
+                                </li>
+                            </a>
                         </ul>
                     </div>
                     <div class="navbar-collapse collapse phonebar">
@@ -290,12 +324,12 @@
                             </li>
                             <li class="column-content">
                                 <h6 class="office-text">office</h6>
-                                <h6 class="text-numb">01-2345678</h6>
+                                <a href="tel:01-2345678" class="text-numb">01-2345678</a>
                             </li>
 
                             <li class="column-content">
                                 <h6 class="office-text">FORECOURT</h6>
-                                <h6 class="text-numb">086-1234567</h6>
+                                <a href="tel:086-1234567" class="text-numb">086-1234567</a>
                             </li>
                         </ul>
                     </div>
