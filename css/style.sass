@@ -13,21 +13,21 @@ $gray: #EAEDF0
 *
   box-sizing: border-box
 
-@media (min-width: 576px)
-  .container
-    max-width: 540px
+// @media (min-width: 576px)
+//   .container
+//     max-width: 540px
 
-@media (min-width: 769px)
-  .container
-    max-width: 720px
+// @media (min-width: 769px)
+//   .container
+//     max-width: 720px
 
-@media (min-width: 992px)
-  .container
-    max-width: 960px
+// @media (min-width: 992px)
+//   .container
+//     max-width: 960px
 
-@media (min-width: 1200px)
-  .container
-    max-width: 1140px
+// @media (min-width: 1200px)
+//   .container
+//     max-width: 1140px
 
 @media (min-width: 1400px)
   .container
@@ -315,13 +315,25 @@ select::-ms-expand
 
 @media (min-width: 768px) and (max-width: 991px)
   .navbar
-    ul
-      li
-        .nav-link
-          font-size: 9px
+    .nav-link
+      font-size: 9px!important
 
   .navbar-expand-md .navbar-nav .nav-link
     padding: 1vw 0.75vw
+
+  .social-icon img
+    width: 100%
+
+// @media (min-width: 768px) and (max-width: 768px)
+//   .navbar-expand-md .navbar-nav .nav-link
+//     padding: 0.2vw 0.4vw
+
+//   .navbar
+//     .nav-link
+//       font-size: 8px!important
+
+//   .social-icon img
+//     width: 100%
 
 @media (min-width: 1000px) and (max-width: 1200px)
   .navbar-expand-md .navbar-nav .nav-link
@@ -576,7 +588,7 @@ select::-ms-expand
       color: #ffffff
       font-size: 9px
 
-@media (max-width: 768px)
+@media (max-width: 767px)
   .navbar-collapse.menu-search .navbar-toggler.mobile-search-btn .cross-img-mob, .navbar-collapse.menubar .mobile-menu-btn .cross-img-mob
     display: flex
     align-items: center
@@ -2002,7 +2014,7 @@ select::-ms-expand
           img
             width: 22px
 
-@media (max-width: 768px)
+@media (max-width: 767px)
   .search-used-cars
     display: flex
     justify-content: space-between
