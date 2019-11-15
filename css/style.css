@@ -924,7 +924,7 @@ select::-ms-expand {
       justify-content: flex-end;
       top: 0;
       margin: 0 auto; }
-      .car-tile .car-image .car-like a {
+      .car-tile .car-image .car-like div {
         display: flex;
         align-items: flex-end; }
       .car-tile .car-image .car-like img {

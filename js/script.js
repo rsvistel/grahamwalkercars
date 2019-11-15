@@ -123,18 +123,17 @@ $(document).ready(function () {
             $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
         });
     }
-    $(".car-tile .car-image .car-like a img").click(function (e) {
+    $(".car-tile .car-image .car-like img").click(function (e) {
         $(this).toggleClass('liked');
         if ($(this).hasClass('liked')) {
             $(this).attr('src', 'img/heart-red.svg')
+            e.preventDefault();
         } else {
             $(this).attr('src', 'img/home/heart.svg')
+            e.preventDefault();
         }
     });
 
-    $(".car-tile .car-image .car-like a").click(function (e) {
-        e.preventDefault();
-    });
 
         $('.mobile-menu-btn').click(function() {
         // $('.menubar').toggleClass('right');
