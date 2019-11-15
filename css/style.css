@@ -7,18 +7,9 @@
 * {
   box-sizing: border-box; }
 
-@media (min-width: 576px) {
+@media (min-width: 1400px) {
   .container {
-    max-width: 540px; } }
-@media (min-width: 769px) {
-  .container {
-    max-width: 720px; } }
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px; } }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px; } }
+    max-width: 1340px; } }
 h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   margin: 0;
   padding: 0; }
@@ -252,22 +243,6 @@ select::-ms-expand {
       -ms-flex-align: center;
       align-items: center;
       transition: 0.5s; }
-      .navbar ul li .fa-chevron-down {
-        color: #000000; }
-      .navbar ul li:hover {
-        background-color: #005EAA;
-        cursor: pointer; }
-        .navbar ul li:hover .h6-title, .navbar ul li:hover .fa-chevron-down {
-          color: #ffffff; }
-      .navbar ul li.active {
-        background-color: #005EAA; }
-        .navbar ul li.active .h6-title {
-          color: #ffffff; }
-      .navbar ul li a {
-        text-decoration: none;
-        color: #000000; }
-        .navbar ul li a:hover {
-          color: #ffffff; }
     .navbar ul .nav-link {
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
@@ -307,11 +282,14 @@ select::-ms-expand {
   .top-img-mobile {
     display: block; } }
 @media (min-width: 768px) and (max-width: 991px) {
-  .navbar ul li .nav-link {
-    font-size: 9px; }
+  .navbar .nav-link {
+    font-size: 9px !important; }
 
   .navbar-expand-md .navbar-nav .nav-link {
-    padding: 1vw 0.75vw; } }
+    padding: 1vw 0.75vw; }
+
+  .social-icon img {
+    width: 100%; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .navbar-expand-md .navbar-nav .nav-link {
     padding: 13px 5px; } }
@@ -432,7 +410,7 @@ select::-ms-expand {
     background: #014563 !important;
     display: flex;
     justify-content: space-between;
-    padding: 2vw 6vw 2vw 5vw !important;
+    padding: 13px 23px 13px 14px !important;
     border-radius: 0; }
     .mobile-close-btn span {
       text-transform: uppercase;
@@ -447,7 +425,7 @@ select::-ms-expand {
     background-color: #F7F7F9; }
     .phonebar .mobile-close-btn {
       background-color: #333333 !important;
-      padding: 3vw 2.6vw 3vw 5vw !important;
+      padding: 13px 10px 13px 14px !important;
       border-radius: 0; }
     .phonebar .cross-img-mob {
       margin-right: 5px; }
@@ -512,7 +490,7 @@ select::-ms-expand {
     background: #D20709;
     display: flex;
     justify-content: space-between;
-    padding: 3vw 2.6vw 3vw 5vw !important;
+    padding: 13px 10px 13px 14px !important;
     border-radius: 0;
     border: none;
     text-transform: uppercase; }
@@ -538,6 +516,18 @@ select::-ms-expand {
   .mobile-section-under-header {
     padding: 70px 2vw 2vw 2vw;
     justify-content: center; } }
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .mobile-close-btn {
+    padding: 15px 38px 15px 32px !important; }
+
+  .phonebar .mobile-close-btn {
+    padding: 15px 38px 15px 32px !important; }
+
+  .menu-search .mobile-search-btn {
+    padding: 15px 15px 15px 15px !important; } }
+@media only screen and (max-width: 320px) {
+  .mobile-close-btn {
+    padding: 12px 23px 12px 14px !important; } }
 @media (min-width: 768px) and (max-width: 1000px) {
   .titles-logo {
     margin-right: 0; }
@@ -554,7 +544,7 @@ select::-ms-expand {
   .mobile-block-items span {
     color: #ffffff;
     font-size: 9px; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-collapse.menu-search .navbar-toggler.mobile-search-btn .cross-img-mob, .navbar-collapse.menubar .mobile-menu-btn .cross-img-mob {
     display: flex;
     align-items: center;
@@ -909,7 +899,7 @@ select::-ms-expand {
       justify-content: flex-end;
       top: 0;
       margin: 0 auto; }
-      .car-tile .car-image .car-like a {
+      .car-tile .car-image .car-like div {
         display: flex;
         align-items: flex-end; }
       .car-tile .car-image .car-like img {
@@ -1893,7 +1883,7 @@ select::-ms-expand {
 
   #used-cars.main-wrapper .search-box .col-md-2 button img {
     width: 22px; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .search-used-cars {
     display: flex;
     justify-content: space-between;
@@ -4208,7 +4198,8 @@ select::-ms-expand {
     margin-left: -15px; }
 
   #description-car-detail {
-    order: 3; }
+    order: 3;
+    padding-bottom: 30%; }
 
   .order-detail {
     order: 2; }
@@ -4266,7 +4257,7 @@ select::-ms-expand {
       justify-content: center;
       position: relative;
       min-height: 80px;
-      min-width: 138px;
+      min-width: 125px;
       color: #FFF;
       font-family: Roboto, sans-serif;
       font-size: 20px;
@@ -4432,9 +4423,12 @@ select::-ms-expand {
 @media only screen and (max-width: 600px) {
   .car-page .car-detail-main-section {
     padding-top: 33.5%; } }
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .car-detail-button-mobile div {
+    min-width: 138px; } }
 @media only screen and (max-width: 320px) {
   .car-detail-button-mobile div {
-    min-width: 114px; }
+    min-width: 107px; }
 
   .car-title-payment {
     font-size: 12px !important; }
