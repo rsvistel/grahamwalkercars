@@ -109,13 +109,12 @@
                             </button>
                         </div>
                     </div>
-                    <div class="navbar-collapse collapse menu-search menu-search-results">
+                    <div id="navbarMenuSearch" class="navbar-collapse collapse menu-search menu-search-results">
                         <div class="navbar-nav ml-auto py-md-0">
                             <div class="accordion__wrapper">
                                 <div class="accordion" id="accordion">
                                     <div class="card card-search">
                                         <div class="navbar-toggler mobile-search-btn btn-search" data-toggle="collapse"
-                                             data-target=".menu-search" aria-controls="menu-search"
                                              aria-expanded="false" role="navigation">
                                             <div>
                                                 <span>Search</span>
@@ -343,7 +342,7 @@
 
     <div class="search-used-cars">
         <button class="navbar-toggler custom-toggler btn-search collapsed" type="button" data-toggle="collapse"
-                data-target=".menu-search" aria-controls="menu-search" aria-expanded="false" aria-label="search">
+        data-target="#navbarMenuSearch" aria-controls="navbarMenuSearch" aria-expanded="false" aria-label="search">
             <img src="img/used-cars/refine.svg" alt=""/>
             Refine
         </button>

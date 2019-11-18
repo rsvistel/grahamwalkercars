@@ -629,7 +629,8 @@ select::-ms-expand {
     display: inline-block;
     border-bottom: 2px solid #6E6E6E;
     transition: 0.3s;
-    padding: 3vw 6vw 3vw 5vw; }
+    padding: 3vw 6vw 3vw 5vw;
+    text-align: justify; }
     .navbar-collapse.menubar.menubar-navbar .nav-link:hover {
       background-color: #005EAA; }
     .navbar-collapse.menubar.menubar-navbar .nav-link li {
