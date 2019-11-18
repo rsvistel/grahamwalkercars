@@ -14,233 +14,320 @@
 </head>
 <body class="homepage-1">
 
-<section class="header topnav" id="myTopnav">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 upper-half-header">
-                <div class="titles-logo col-md-4">
-                    <!--<h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>-->
-                    <!--<h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>-->
+        <section class="header topnav" id="myTopnav">
+                <div class="container container-topnav">
+                    <div class="row">
+                        <div class="col-md-12 upper-half-header">
+                            <div class="titles-logo col-md-4 col-lg-4">
+                                <img class="img-fluid" src="img/header/graham.png" alt="">
+                            </div>
+                            <div class="title-contact col-md-2 col-lg-3">
+                                <img class="img-fluid" src="img/header/phone.svg" alt=""/>
+                                <div class="number-phone">
+                                    <h6 class="sales-number">01-4973333</h6>
+                                </div>
+                            </div>
+                            <div class="title-address col-md-3">
+                                <img class="img-fluid" src="img/header/location.svg" alt=""/>
+                                <h4 class="text-title-address">Harold's Cross Road, Dublin 6</h4>
+                            </div>
+                            <div class="social-icon col-md-1">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/header/facebook.svg" alt=""/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="social-icon stars-block col-md-1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-half-header">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="navbar navbar-expand-md">
+                                <div class="navbar-header">
+                                    <div class="mobile-block-items mobile-search">
+                                        <div class="navbar-toggler custom-toggler">
+                                            <a href="index.html">
+                                                <i class="fas fa-home"></i>
+                                                <span>home</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-block-items mobile-reserve">
+                                        <div class="navbar-toggler custom-toggler">
+                                            <a href="finance.html">
+                                                <i class="fa fa-calculator"></i>
+                                                <span>finance</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-block-items mobile-favourite">
+                                        <div class="navbar-toggler custom-toggler">
+                                            <a href="shortlist.html">
+                                                <i class="far fa-heart"></i>
+                                                <span>Favourites</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-block-items mobile-phone">
+                                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                                                data-target="#navbarPhoneBar" aria-controls="navbarPhoneBar" aria-expanded="false"
+                                                aria-label="phone">
+                                            <i class="fas fa-phone-alt"></i>
+                                            <span>Phone</span>
+                                        </button>
+                                    </div>
+                                    <div class="mobile-block-items mobile-menu">
+                                        <button class="navbar-toggler custom-toggler mobile-menu-btn" type="button"
+                                                data-toggle="collapse"
+                                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                                aria-expanded="false" aria-label="navigation">
+                                            <i class="fas fa-bars"></i>
+                                            <span>Options</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="navbarMenuSearch" class="navbar-collapse collapse menu-search menu-search-results">
+                                    <div class="navbar-nav ml-auto py-md-0">
+                                        <div class="accordion__wrapper">
+                                            <div class="accordion" id="accordion">
+                                                <div class="card card-search">
+                                                    <div class="navbar-toggler mobile-search-btn btn-search" data-toggle="collapse"
+                                                         aria-expanded="false" role="navigation">
+                                                        <div>
+                                                            <span>Search</span>
+                                                        </div>
+                                                        <div class="cross-img-mob">
+                                                            <img src="img/crossss-white.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card first-card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <div class="mb-0 accordion__title">
+                                                            <button class="btn  shadow-none accordion__button"
+                                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                                Make
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                         data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <label for="make-model" class="m-top-10">Select Make</label>
+                                                                <select id="make-select">
+                                                                    <option value="">Select a Make</option>
+                                                                    <option value="">Model 1</option>
+                                                                    <option value="">Model 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <div class="mb-0 accordion__title">
+                                                            <button class="btn collapsed shadow-none accordion__button"
+                                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                                Modal
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                         data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <label for="make-model" class="m-top-10">Select Model</label>
+                                                                <select id="year-to-model">
+                                                                    <option value="">Select a Model</option>
+                                                                    <option value="">Model 1</option>
+                                                                    <option value="">Model 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="card card-year">
+                                                    <div class="card-header" id="headingFour">
+                                                        <div class="mb-0 accordion__title">
+                                                            <button class="btn collapsed shadow-none accordion__button"
+                                                                    data-toggle="collapse" data-target="#collapseFour"
+                                                                    aria-expanded="false" aria-controls="collapseFour">
+                                                                Year
+                                                            </button>
+            
+            
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                                         data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <label for="make-model" class="m-top-10">From</label>
+                                                                <select id="year-from-select">
+                                                                    <option value="">Select a Year</option>
+                                                                    <option value="">Model 1</option>
+                                                                    <option value="">Model 2</option>
+                                                                </select>
+            
+                                                                <div>
+                                                                    <label for="make-model" class="m-top-10">To</label>
+                                                                    <select id="make-model">
+                                                                        <option value="">Select a Year</option>
+                                                                        <option value="">Model 1</option>
+                                                                        <option value="">Model 2</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="mobile-accordion-filter">
+                                                    <div class="reset-block">
+                                                        <img src="img/header/reset.svg" alt=""/>
+                                                        <p>Reset</p>
+                                                    </div>
+            
+                                                    <div class="button-done-block">
+                                                        Done
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="navbar-collapse collapse darck-btn-phone">
+                                    <ul class="navbar-nav ml-auto py-md-0  darck-btn">
+                                        <li>Phone</li>
+                                    </ul>
+                                </div>
+            
+                                <div id="navbarSupportedContent" class="navbar-collapse collapse menubar menubar-navbar">
+                                    <ul class="navbar-nav ml-auto py-md-0">
+                                        <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse"
+                                            id="navbarClose" aria-expanded="false">
+                                            <div>
+                                                <span>Options</span>
+                                            </div>
+                                            <div class="cross-img-mob">
+                                                <img src="img/crossss-white.svg" alt="">
+                                            </div>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">
+                                                home
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="used-cars.html">
+                                                used cars
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="workshop.html">
+                                                workshop
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="valeting.html">
+                                                valeting
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="selling-your-car.html">
+                                                selling your car
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="finance-example.html">
+                                                FINANCE
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="shortlist.html">
+                                                FAVOURITES
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html">
+                                                about
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="reviews.html">
+                                                REVIEWS
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="previously-sold.html">
+                                                PREVIOUSLY SOLD
+                                            </a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact-us.html">
+                                                contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="navbarPhoneBar" class="navbar-collapse collapse phonebar">
+                                    <ul class="navbar-nav ml-auto py-md-0">
+                                        <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse"
+                                           id="navbarPhoneBarClose" aria-expanded="false">
+                                            <div>
+                                                <span class="title-phone-filter">Call us</span>
+                                            </div>
+                                            <div class="cross-img-mob">
+                                                <!--<i class="fas fa-times"></i>-->
+                                                <img src="img/crossss-white.svg" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="column-content">
+                                            <h6 class="office-text">office</h6>
+                                            <a href="tel:01-2345678" class="text-numb">01-2345678</a>
+                                        </li>
+            
+                                        <li class="column-content">
+                                            <h6 class="office-text">FORECOURT</h6>
+                                            <a href="tel:086-1234567" class="text-numb">086-1234567</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-section-under-header col-xs-12 col-md-12">
                     <img class="img-fluid" src="img/header/graham.png" alt="">
                 </div>
-                <!-- <div class="mobile-open">
-                    <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
-                    <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
-                </div> -->
-
-                <div class="title-contact col-md-2">
-                    <img class="img-fluid" src="img/header/phone.png" alt=""/>
-                    <div class="number-phone">
-                        <h6 class="sales-number">01-4973333</h6>
-                    </div>
-                </div>
-
-                <div class="title-address col-md-3 offset-md-1 offset-lg-0">
-                    <img class="img-fluid" src="img/header/location.png" alt=""/>
-                    <h4 class="text-title-address">Harold's Cross Road, Dublin 6</h4>
-                </div>
-
-                <div class="social-icon col-md-1">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img class="img-fluid" src="img/header/facebook.png" alt=""/>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="social-icon stars-block col-md-1">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bottom-half-header">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-md">
-                    <div class="mobile-block-items mobile-search">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-search"></i>
-                            <span>Search</span>
-                        </button>
-                    </div>
-                    <div class="mobile-block-items mobile-reserve">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fa fa-calculator"></i>
-                            <span>finance</span>
-                        </button>
-                    </div>
-                    <div class="mobile-block-items mobile-favourite">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="far fa-heart"></i>
-                            <span>Favourites</span>
-                        </button>
-                    </div>
-                    <div class="mobile-block-items mobile-phone">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>Phone</span>
-                        </button>
-                    </div>
-                    <div class="mobile-block-items mobile-menu">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                            <span>Options</span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto py-4 py-md-0">
-                            <li class="nav-item ml-0">
-                                <a class="nav-link" href="index.html">home</a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a class="nav-link" href="#">used cars</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="workshop.html">workshop</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">valeting</a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a class="nav-link" href="#">selling your car</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">finance</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="shortlist.html">shortlist</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="about.html">about</a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a class="nav-link" href="#">previously sold</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="contact-us.html">contact us</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="col-md-12 bottom-half-header">
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="#">
-                        <span class="h6-title">home</span>
-                    </a>
-                </li> -->
-    <!--<li>-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">about</span>-->
-    <!--</a>-->
-    <!--</li>-->
-    <!-- <li>
-        <a href="#">
-            <span class="h6-title">used cars</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="h6-title">workshop</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="h6-title">valeting</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="h6-title">selling your car</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="h6-title">finance</span>
-        </a>
-    </li>
-
-    <li>
-        <a href="#">
-            <span class="h6-title">shortlist</span>
-        </a>
-    </li>
-
-    <li>
-        <a href="#">
-            <span class="h6-title">about</span>
-        </a>
-    </li>
-
-    <li>
-        <a href="#">
-            <span class="h6-title">previously sold</span>
-        </a>
-    </li>
-
-    <li>
-        <a href="#">
-            <span class="h6-title">contact us</span>
-        </a>
-    </li> -->
-    <!--<li class="bottom-half-header__dropdown-link">-->
-    <!--<div class="dropdown">-->
-    <!--<a href="#" class="flex-dropdown">-->
-    <!--<div class="dropbtn">-->
-    <!--<span class="h6-title">more</span>-->
-    <!--<i class="fas fa-chevron-down flex-dropdown__chevron-dow"></i>-->
-    <!--</div>-->
-    <!--</a>-->
-    <!--<div class="dropdown-content">-->
-    <!--<a href="#"><span class="h6-title h6-title-dropdown">valeting</span></a>-->
-    <!--<a href="#"><span class="h6-title h6-title-dropdown">value my car</span></a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</li>-->
-    <!--<li class="bottom-half-header__link-mobile">-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">shortlist</span>-->
-    <!--</a>-->
-    <!--</li>-->
-    <!--<li class="bottom-half-header__link-mobile">-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">about</span>-->
-    <!--</a>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">previously sold</span>-->
-    <!--</a>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<a href="#">-->
-    <!--<span class="h6-title">contact us</span>-->
-    <!--</a>-->
-    <!--</li>-->
-
-    <!-- </ul>
-</div>
-</div> -->
-    <!-- <div class="mobile-section-under-header col-xs-12 col-md-12">
-        <embed class="" src="img/header/white-phone.svg">
-        <div class="number-phone">
-            <h4 class="contact-text">Contact Us:</h4>
-            <h6 class="sales-number">01-4569562</h6>
-        </div>
-    </div> -->
-</section>
+            </section>
 
 <div id="homepage">
     <div id="banner">
@@ -354,127 +441,147 @@
     </div>
 </div>
 <div id="special-offers-section">
-    <div id="special-offers" class="container featured">
-        <h2 class="title-featured">FEATURED CARS</h2>
-        <div class="owl-carousel owl-special-offers">
-            <div class="car-tile">
-                <a href="#">
-                    <div class="car-price">
-                        <div class="row">
-                            <div class="col-6 сar-price-full">€6,900</div>
-                            <div class="col-6 car-price-parts">
-                                <p>Mounthly payment from</p>
-                                €160
+        <div id="special-offers" class="container featured">
+            <h2 class="title-featured">FEATURED CARS</h2>
+            <div class="owl-carousel owl-special-offers">
+                <div class="car-tile">
+                    <a href="car-detail.html">
+                        <div class="car-price">
+                            <div class="row">
+                                <div class="col-6 сar-price-full">€29,995</div>
+                                <div class="col-6 car-price-parts">
+                                    <p>Monthly payment from</p>
+                                    €220
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="car-image">
-                        <img src="img/home/bmw.png" alt="frame-car-image">
-                        <div class="car-image-counter car-image-counter-home">
-                            <img  src="img/home/photo.png" alt=""/> 16
-                        </div>
-                        <div class="car-like">
-                            <a href="#saved"><img src="img/home/heart.png"  alt="saved"/></a>
-                        </div>
-                    </div>
-                    <div class="car-title">
-                        <div class="col-md-12 titles-car-card">
-                            <h2>1998 BMW 8 SERIES</h2>
-                            <p>840 CI SPORT 4.4 AUTO</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="car-tile">
-                <a href="#">
-                    <div class="car-price">
-                        <div class="row">
-                            <div class="col-6 сar-price-full">€6,900</div>
-                            <div class="col-6 car-price-parts">
-                                <p>Mounthly payment from</p>
-                                €160
+                        <div class="car-image">
+                            <div class="car-image-wrap">
+                                <div class="car-image-gradient"></div>
+                                <img src="img/home/bmw.png" alt="frame-car-image">
+                            </div>
+                            <div class="car-image-counter car-image-counter-home">
+                                <img src="img/home/photo.png" alt=""> 16
+                            </div>
+                            <div class="car-like">
+                                <div>
+                                    <img src="img/home/heart.svg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="car-image">
-                        <img src="img/home/audi.png" alt="frame-car-image">
-                        <div class="car-image-counter car-image-counter-home">
-                            <img  src="img/home/photo.png"/> 16
-                        </div>
-                        <div class="car-like">
-                            <a href="#saved"><img src="img/home/heart.png"  alt="saved"/></a>
-                        </div>
-                    </div>
-                    <div class="car-title">
-                        <div class="col-md-12 titles-car-card">
-                            <h2>2012 AUDI A1</h2>
-                            <p>1.2 PETROL</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="car-tile">
-                <a href="#">
-                    <div class="car-price">
-                        <div class="row">
-                            <div class="col-6 сar-price-full">€6,900</div>
-                            <div class="col-6 car-price-parts">
-                                <p>Mounthly payment from</p>
-                                €160
+                        <div class="car-title">
+                            <div class="col-md-12 titles-car-card">
+                                <h2>1998 BMW 8 SERIES</h2>
+                                <p>840 CI SPORT 4.4 AUTO</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="car-image">
-                        <img src="img/home/golf.png" alt="frame-car-image">
-                        <div class="car-image-counter car-image-counter-home">
-                            <img  src="img/home/photo.png"/> 16
-                        </div>
-                        <div class="car-like">
-                            <a href="#saved"><img src="img/home/heart.png"  alt="saved"/></a>
-                        </div>
-                    </div>
-                    <div class="car-title">
-                        <div class="col-md-12 titles-car-card">
-                            <h2>2017 VOLKSWAGEN GOLF</h2>
-                            <p>840 CI SPORT 4.4 AUTO</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="car-tile">
-                <a href="#">
-                    <div class="car-price">
-                        <div class="row">
-                            <div class="col-6 сar-price-full">€6,900</div>
-                            <div class="col-6 car-price-parts">
-                                <p>Mounthly payment from</p>
-                                €160
+                    </a>
+                </div>
+    
+                <div class="car-tile">
+                    <a href="car-detail.html">
+                        <div class="car-price">
+                            <div class="row">
+                                <div class="col-6 сar-price-full">€13,995</div>
+                                <div class="col-6 car-price-parts">
+                                    <p>Monthly payment from</p>
+                                    €160
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="car-image">
-                        <img src="img/home/x5.png" alt="frame-car-image">
-                        <div class="car-image-counter car-image-counter-home">
-                            <img  src="img/home/photo.png"/> 16
+                        <div class="car-image">
+                            <div class="car-image-wrap">
+                                <div class="car-image-gradient"></div>
+                                <img src="img/home/audi.png" alt="frame-car-image">
+                            </div>
+                            <div class="car-image-counter car-image-counter-home">
+                                <img src="img/home/photo.png" alt=""> 16
+                            </div>
+                            <div class="car-like">
+                                <div>
+                                    <img src="img/home/heart.svg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="car-like">
-                            <a href="#saved"><img src="img/home/heart.png"  alt="saved"/></a>
+                        <div class="car-title">
+                            <div class="col-md-12 titles-car-card">
+                                <h2>2012 AUDI A1</h2>
+                                <p>1.2 PETROL</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="car-title">
-                        <div class="col-md-12 titles-car-card">
-                            <h2>2017 BMW X5</h2>
-                            <p>XDRIVE 30D M SPORT</p>
+                    </a>
+                </div>
+    
+                <div class="car-tile">
+                    <a href="car-detail.html">
+                        <div class="car-price">
+                            <div class="row">
+                                <div class="col-6 сar-price-full">€38,995</div>
+                                <div class="col-6 car-price-parts">
+                                    <p>Monthly payment from</p>
+                                    €220
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                        <div class="car-image">
+                            <div class="car-image-wrap">
+                                <div class="car-image-gradient"></div>
+                                <img src="img/home/golf.png" alt="frame-car-image">
+                            </div>
+                            <div class="car-image-counter car-image-counter-home">
+                                <img src="img/home/photo.png" alt=""> 16
+                            </div>
+                            <div class="car-like">
+                                <div>
+                                    <img src="img/home/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-title">
+                            <div class="col-md-12 titles-car-card">
+                                <h2>2017 VOLKSWAGEN GOLF</h2>
+                                <p>840 CI SPORT 4.4 AUTO</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="car-tile">
+                    <a href="car-detail.html">
+                        <div class="car-price">
+                            <div class="row">
+                                <div class="col-6 сar-price-full">€67,950</div>
+                                <div class="col-6 car-price-parts">
+                                    <p>Monthly payment from</p>
+                                    €250
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-image">
+                            <div class="car-image-wrap">
+                                <div class="car-image-gradient"></div>
+                                <img src="img/home/x5.png" alt="frame-car-image">
+                            </div>
+                            <div class="car-image-counter car-image-counter-home">
+                                <img src="img/home/photo.png" alt=""> 16
+                            </div>
+                            <div class="car-like">
+                                <div>
+                                    <img src="img/home/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-title">
+                            <div class="col-md-12 titles-car-card">
+                                <h2>2017 BMW X5</h2>
+                                <p>XDRIVE 30D M SPORT</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 <div class="apply">
     <div class="container">
@@ -602,23 +709,38 @@
 <script>
     new WOW().init();
     $('.owl-special-offers').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
+        loop: true,
+        margin: 20,
+        nav: false,
         dots: false,
-        // navText: ["<img  src=\"img/home/arrow-left.svg\"/>","<img src=\"img/home/arrow-right.svg\"/>"],
-        responsive:{
-            0:{
-                items:1
+        autoHeight: true,
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding: 30,
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            1000:{
-                items:4
+            1000: {
+                items: 4
             }
         }
     });
+    if ($(window).width() > 992) {
+        $('.owl-feedback').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 3
+                }
+            }
+        });
+    } else {
+        $('.owl-feedback').addClass('off')
+    }
 </script>
 <script src="./js/script.js"></script>
 

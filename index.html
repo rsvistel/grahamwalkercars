@@ -63,36 +63,32 @@
                 <nav class="navbar navbar-expand-md">
                     <div class="navbar-header">
                         <div class="mobile-block-items mobile-search">
-                            <button class="navbar-toggler custom-toggler" type="button">
+                            <div class="navbar-toggler custom-toggler">
                                 <a href="index.html">
                                     <i class="fas fa-home"></i>
                                     <span>home</span>
                                 </a>
-                            </button>
+                            </div>
                         </div>
                         <div class="mobile-block-items mobile-reserve">
-                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-                                    data-target=".darck-btn-reserve" aria-controls=".darck-btn-reserve"
-                                    aria-expanded="false" aria-label="reserve">
+                            <div class="navbar-toggler custom-toggler">
                                 <a href="finance.html">
                                     <i class="fa fa-calculator"></i>
                                     <span>finance</span>
                                 </a>
-                            </button>
+                            </div>
                         </div>
                         <div class="mobile-block-items mobile-favourite">
-                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-                                    data-target=".darck-btn-favourites" aria-controls=".darck-btn-favourites"
-                                    aria-expanded="false" aria-label="favourites">
+                            <div class="navbar-toggler custom-toggler">
                                 <a href="shortlist.html">
                                     <i class="far fa-heart"></i>
                                     <span>Favourites</span>
                                 </a>
-                            </button>
+                            </div>
                         </div>
                         <div class="mobile-block-items mobile-phone">
                             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-                                    data-target=".phonebar" aria-controls=".phonebar" aria-expanded="false"
+                                    data-target="#navbarPhoneBar" aria-controls="navbarPhoneBar" aria-expanded="false"
                                     aria-label="phone">
                                 <i class="fas fa-phone-alt"></i>
                                 <span>Phone</span>
@@ -100,20 +96,20 @@
                         </div>
                         <div class="mobile-block-items mobile-menu">
                             <button class="navbar-toggler custom-toggler mobile-menu-btn" type="button"
-                                    data-toggle="collapse" data-target=".menubar" aria-controls=".menubar"
+                                    data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="navigation">
                                 <i class="fas fa-bars"></i>
                                 <span>Options</span>
                             </button>
                         </div>
                     </div>
-                    <div class="navbar-collapse collapse menu-search menu-search-results">
+                    <div id="navbarMenuSearch" class="navbar-collapse collapse menu-search menu-search-results">
                         <div class="navbar-nav ml-auto py-md-0">
                             <div class="accordion__wrapper">
                                 <div class="accordion" id="accordion">
                                     <div class="card card-search">
                                         <div class="navbar-toggler mobile-search-btn btn-search" data-toggle="collapse"
-                                             data-target=".menu-search" aria-controls=".menu-search"
                                              aria-expanded="false" role="navigation">
                                             <div>
                                                 <span>Search</span>
@@ -229,10 +225,10 @@
                         </ul>
                     </div>
 
-                    <div class="navbar-collapse collapse menubar menubar-navbar">
+                    <div id="navbarSupportedContent" class="navbar-collapse collapse menubar menubar-navbar">
                         <ul class="navbar-nav ml-auto py-md-0">
                             <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse"
-                                data-target=".menubar" aria-controls=".menubar" aria-expanded="false">
+                                id="navbarClose" aria-expanded="false">
                                 <div>
                                     <span>Options</span>
                                 </div>
@@ -308,10 +304,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="navbar-collapse collapse phonebar">
+                    <div id="navbarPhoneBar" class="navbar-collapse collapse phonebar">
                         <ul class="navbar-nav ml-auto py-md-0">
                             <li class="navbar-toggler mobile-close-btn mobile-menu-btn" data-toggle="collapse"
-                                data-target=".phonebar" aria-controls=".phonebar" aria-expanded="false">
+                               id="navbarPhoneBarClose" aria-expanded="false">
                                 <div>
                                     <span class="title-phone-filter">Call us</span>
                                 </div>
@@ -736,7 +732,8 @@
                 items: 2
             },
             1000: {
-                items: 4
+                items: 4,
+                margin: 25,
             }
         }
     });

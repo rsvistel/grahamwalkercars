@@ -62,7 +62,7 @@ select::-ms-expand
   margin-top: 10px
 
 .m-top-100
-  margin-top: 112px
+  margin-top: 107px
 
 .red
   color: #BD1316
@@ -84,7 +84,7 @@ select::-ms-expand
       align-items: center
       img
         position: absolute
-        top: 50%
+        top: 59%
         left: 50%
         margin-right: 50%
         transform: translate(-50%, -50%)
@@ -251,9 +251,9 @@ select::-ms-expand
       font-size: 14px
 
 .bottom-half-header
-  background-color: #ebedf0
+  background-color: #FFFFFF
   .container
-    padding: 0
+    //padding: 0
 
 .navbar
   padding: 0
@@ -264,6 +264,7 @@ select::-ms-expand
     -webkit-box-align: center
     -ms-flex-align: center
     align-items: center
+    justify-content: space-between
     list-style-type: none
     margin-bottom: 0
     li
@@ -282,9 +283,15 @@ select::-ms-expand
       color: #000000
       text-align: center
       display: inline-block
+      //padding: 0
 
 .indexcity
   z-index: 100
+
+
+@media (min-width: 768px)
+  .navbar-expand-md
+    justify-content: space-between
 
 
 .right
@@ -338,6 +345,10 @@ select::-ms-expand
 @media (min-width: 1000px) and (max-width: 1200px)
   .navbar-expand-md .navbar-nav .nav-link
     padding: 13px 5px
+
+@media (min-width: 1400px)
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 15px 22px
 
 @media only screen and (max-width: 767px)
   .upper-half-header
@@ -674,6 +685,7 @@ select::-ms-expand
     border-bottom: 2px solid #6E6E6E
     transition: 0.3s
     padding: 3vw 6vw 3vw 5vw
+    text-align: justify
     &:hover
       background-color: #005EAA
     li
@@ -977,7 +989,8 @@ select::-ms-expand
         margin-right: 4px
         width: 25px
   .car-price
-    font-size: 22px
+    font-size: 28px
+    border-bottom: 2px solid rgba(0, 0, 0, 0)
     .row
       margin: 0
       flex-direction: row-reverse
@@ -999,20 +1012,20 @@ select::-ms-expand
       padding: 4% 0
       &:first-child
         border-color: transparent
-        border-right: 1.2px solid rgba(255, 255, 255, .5)
+        border-right: 2px solid rgba(0, 0, 0, 0)
         font-weight: 600
         font-family: Arial Rounded MT Bold, sans-serif
         border-top-right-radius: 7px
       &:last-child
         border-color: transparent
-        border-right: 1.2px solid rgba(255, 255, 255, .5)
+        border-right: 2px solid rgba(0, 0, 0, 0)
         background-clip: padding-box
         color: #D10609
         font-weight: 600
         font-family: Arial Rounded MT Bold, sans-serif
         line-height: 19px
         border-top-left-radius: 7px
-        font-size: 22px
+        font-size: 28px
         p
           font-size: 10px
           font-weight: 600
@@ -1500,8 +1513,8 @@ select::-ms-expand
 .workshop.valeting
   .about-title
     padding: 3% 0
-  .m-top-100
-    margin-top: 125px
+  // .m-top-100
+  //   margin-top: 125px
 
 .workshop-section.valeting-section
   padding: 4% 0 2%
@@ -2303,9 +2316,11 @@ select::-ms-expand
       margin-bottom: 15px
     ul
       list-style-type: none
-      hr
-        margin: 0 15px
-        color: #C8C8C8
+      li
+        hr
+          margin: 0 15px
+          color: #C8C8C8
+          width: 100%
       li
         display: -webkit-box
         display: -ms-flexbox
@@ -2316,7 +2331,7 @@ select::-ms-expand
         -webkit-box-align: center
         -ms-flex-align: center
         align-items: center
-        padding: 9px 0
+        padding: 4px 0
         h6
           font-size: 15px
           text-transform: capitalize
@@ -3875,12 +3890,12 @@ select::-ms-expand
         width: auto
       .carousel-item
         img
-          width: 13.7%
-          margin-right: 0.6%
-          margin-left: 0
-          margin-bottom: 0
+          width: 13.7%!important
+          margin-right: 0.6%!important
+          margin-left: 0!important
+          margin-bottom: 0!important
           &:first-child, &:last-child
-            margin: 0
+            margin: 0!important
   .carousel-inner
     flex: 0 0 80.2%
     cursor: pointer
@@ -4026,7 +4041,7 @@ select::-ms-expand
     margin-bottom: 14px
     &.fullscreen
       background-color: rgba(221, 221, 221, 0.5)
-      height: 507px
+      min-height: 507px
       padding-top: 10px
       .card
         margin-bottom: 9px
