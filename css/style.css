@@ -220,21 +220,18 @@ select::-ms-expand {
   .upper-half-header .text-title-address {
     font-size: 14px; } }
 .bottom-half-header {
-  background-color: #ebedf0; }
-  .bottom-half-header .container {
-    padding: 0; }
+  background-color: #FFFFFF; }
 
 .navbar {
   padding: 0; }
   .navbar ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    list-style-type: none;
-    margin-bottom: 0; }
+    justify-content: space-between;
+    list-style-type: none; }
     .navbar ul li {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -242,7 +239,8 @@ select::-ms-expand {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      transition: 0.5s; }
+      flex: 1 1;
+      padding: 10px 0; }
     .navbar ul .nav-link {
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
@@ -250,7 +248,8 @@ select::-ms-expand {
       font-size: 13px;
       color: #000000;
       text-align: center;
-      display: inline-block; }
+      display: inline-block;
+      padding: 0; }
 
 .indexcity {
   z-index: 100; }
@@ -276,9 +275,6 @@ select::-ms-expand {
   .mobile-close-btn {
     display: none; }
 
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding: 13px; }
-
   .top-img-mobile {
     display: block; } }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -290,9 +286,6 @@ select::-ms-expand {
 
   .social-icon img {
     width: 100%; } }
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding: 13px 5px; } }
 @media only screen and (max-width: 767px) {
   .upper-half-header {
     display: none; }
