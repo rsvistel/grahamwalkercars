@@ -61,7 +61,7 @@ select::-ms-expand {
       align-items: center; }
       #homepage #banner #banner-image img {
         position: absolute;
-        top: 50%;
+        top: 59%;
         left: 50%;
         margin-right: 50%;
         transform: translate(-50%, -50%); }
@@ -3822,7 +3822,7 @@ select::-ms-expand {
     margin-bottom: 14px; }
     #car-accordion #accordion-used-car.fullscreen {
       background-color: rgba(221, 221, 221, 0.5);
-      height: 507px;
+      min-height: 507px;
       padding-top: 10px; }
       #car-accordion #accordion-used-car.fullscreen .card {
         margin-bottom: 9px; }
