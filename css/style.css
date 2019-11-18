@@ -910,7 +910,8 @@ select::-ms-expand {
         margin-right: 4px;
         width: 25px; }
   .car-tile .car-price {
-    font-size: 22px; }
+    font-size: 22px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0); }
     .car-tile .car-price .row {
       margin: 0;
       flex-direction: row-reverse; }
@@ -932,13 +933,13 @@ select::-ms-expand {
       padding: 4% 0; }
       .car-tile .car-price .col-6:first-child {
         border-color: transparent;
-        border-right: 1.2px solid rgba(255, 255, 255, 0.5);
+        border-right: 2px solid rgba(0, 0, 0, 0);
         font-weight: 600;
         font-family: Arial Rounded MT Bold, sans-serif;
         border-top-right-radius: 7px; }
       .car-tile .car-price .col-6:last-child {
         border-color: transparent;
-        border-right: 1.2px solid rgba(255, 255, 255, 0.5);
+        border-right: 2px solid rgba(0, 0, 0, 0);
         background-clip: padding-box;
         color: #D10609;
         font-weight: 600;
