@@ -62,7 +62,7 @@ select::-ms-expand
   margin-top: 10px
 
 .m-top-100
-  margin-top: 112px
+  margin-top: 107px
 
 .red
   color: #BD1316
@@ -260,12 +260,13 @@ select::-ms-expand
   ul
     display: -webkit-box
     display: -ms-flexbox
-    //display: flex
+    display: flex
     -webkit-box-align: center
     -ms-flex-align: center
     align-items: center
     justify-content: space-between
     list-style-type: none
+    margin-bottom: 0
     li
       display: -webkit-box
       display: -ms-flexbox
@@ -273,8 +274,7 @@ select::-ms-expand
       -webkit-box-align: center
       -ms-flex-align: center
       align-items: center
-      flex: 1 1
-      padding: 10px 0
+      transition: 0.5s
     .nav-link
       text-transform: uppercase
       font-family: 'Montserrat', sans-serif
@@ -283,10 +283,15 @@ select::-ms-expand
       color: #000000
       text-align: center
       display: inline-block
-      padding: 0
+      //padding: 0
 
 .indexcity
   z-index: 100
+
+
+@media (min-width: 768px)
+  .navbar-expand-md
+    justify-content: space-between
 
 
 .right
@@ -310,7 +315,7 @@ select::-ms-expand
   .mobile-close-btn
     display: none
   .navbar-expand-md .navbar-nav .nav-link
-    //padding: 13px
+    padding: 13px
 
   .top-img-mobile
     display: block
@@ -337,9 +342,9 @@ select::-ms-expand
 //   .social-icon img
 //     width: 100%
 
-// @media (min-width: 1000px) and (max-width: 1200px)
-//   .navbar-expand-md .navbar-nav .nav-link
-//     padding: 13px 5px
+@media (min-width: 1000px) and (max-width: 1200px)
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 13px 5px
 
 @media only screen and (max-width: 767px)
   .upper-half-header
@@ -1016,7 +1021,7 @@ select::-ms-expand
         font-family: Arial Rounded MT Bold, sans-serif
         line-height: 19px
         border-top-left-radius: 7px
-        font-size: 22px
+        font-size: 28px
         p
           font-size: 10px
           font-weight: 600
