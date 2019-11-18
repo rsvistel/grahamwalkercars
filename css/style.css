@@ -629,7 +629,8 @@ select::-ms-expand {
     display: inline-block;
     border-bottom: 2px solid #6E6E6E;
     transition: 0.3s;
-    padding: 3vw 6vw 3vw 5vw; }
+    padding: 3vw 6vw 3vw 5vw;
+    text-align: justify; }
     .navbar-collapse.menubar.menubar-navbar .nav-link:hover {
       background-color: #005EAA; }
     .navbar-collapse.menubar.menubar-navbar .nav-link li {
@@ -2155,9 +2156,10 @@ select::-ms-expand {
       margin-bottom: 15px; }
     .modal-used-cars-one .modal-used-cars-container.container ul, .modal-used-cars-two .modal-used-cars-container.container ul {
       list-style-type: none; }
-      .modal-used-cars-one .modal-used-cars-container.container ul hr, .modal-used-cars-two .modal-used-cars-container.container ul hr {
+      .modal-used-cars-one .modal-used-cars-container.container ul li hr, .modal-used-cars-two .modal-used-cars-container.container ul li hr {
         margin: 0 15px;
-        color: #C8C8C8; }
+        color: #C8C8C8;
+        width: 100%; }
       .modal-used-cars-one .modal-used-cars-container.container ul li, .modal-used-cars-two .modal-used-cars-container.container ul li {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2168,7 +2170,7 @@ select::-ms-expand {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 9px 0; }
+        padding: 4px 0; }
         .modal-used-cars-one .modal-used-cars-container.container ul li h6, .modal-used-cars-two .modal-used-cars-container.container ul li h6 {
           font-size: 15px;
           text-transform: capitalize;
@@ -3677,12 +3679,12 @@ select::-ms-expand {
         left: auto;
         width: auto; }
       #carousel-thumb.fullscreen #carousel-example-multi .carousel-item img {
-        width: 13.7%;
-        margin-right: 0.6%;
-        margin-left: 0;
-        margin-bottom: 0; }
+        width: 13.7% !important;
+        margin-right: 0.6% !important;
+        margin-left: 0 !important;
+        margin-bottom: 0 !important; }
         #carousel-thumb.fullscreen #carousel-example-multi .carousel-item img:first-child, #carousel-thumb.fullscreen #carousel-example-multi .carousel-item img:last-child {
-          margin: 0; }
+          margin: 0 !important; }
   #carousel-thumb .carousel-inner {
     flex: 0 0 80.2%;
     cursor: pointer; }
