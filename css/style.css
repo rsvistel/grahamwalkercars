@@ -1166,6 +1166,7 @@ select::-ms-expand {
     .footer .container .title-number, .footer .container .title-address {
       font-family: "Open Sans", sans-serif; }
     .footer .container .title-number {
+      color: white;
       margin-top: 20px; }
     .footer .container .title-address {
       margin: 15px 0;
@@ -4616,5 +4617,3 @@ select::-ms-expand {
 
   #used-cars.main-wrapper .car-tile {
     max-width: 70%; } }
-
-/*# sourceMappingURL=style.css.map */
