@@ -1168,6 +1168,8 @@ select::-ms-expand {
     .footer .container .title-number {
       color: white;
       margin-top: 20px; }
+      .footer .container .title-number * {
+        color: white; }
     .footer .container .title-address {
       margin: 15px 0;
       text-align: center; }
