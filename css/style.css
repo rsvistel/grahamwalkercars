@@ -640,7 +640,7 @@ select::-ms-expand {
     font-weight: 700;
     font-size: 13px;
     display: inline-block;
-    border-bottom: 2px solid #6E6E6E;
+    border-bottom: 0.5px solid #6E6E6E;
     transition: 0.3s;
     padding: 3vw 6vw 3vw 5vw;
     text-align: justify; }
@@ -931,7 +931,7 @@ select::-ms-expand {
         margin-right: 4px;
         width: 25px; }
   .car-tile .car-price {
-    font-size: 30px;
+    font-size: 27px;
     border-bottom: 2px solid rgba(0, 0, 0, 0); }
     .car-tile .car-price .row {
       margin: 0;
@@ -955,7 +955,7 @@ select::-ms-expand {
       .car-tile .car-price .col-6:first-child {
         border-color: transparent;
         border-right: 2px solid rgba(0, 0, 0, 0);
-        font-weight: 600;
+        font-weight: 500;
         font-family: Arial Rounded MT Bold, sans-serif;
         border-top-right-radius: 7px; }
       .car-tile .car-price .col-6:last-child {
@@ -963,11 +963,11 @@ select::-ms-expand {
         border-right: 2px solid rgba(0, 0, 0, 0);
         background-clip: padding-box;
         color: #D10609;
-        font-weight: 600;
+        font-weight: 500;
         font-family: Arial Rounded MT Bold, sans-serif;
-        line-height: 19px;
+        line-height: 22px;
         border-top-left-radius: 7px;
-        font-size: 30px; }
+        font-size: 27px; }
         .car-tile .car-price .col-6:last-child p {
           font-size: 11px;
           font-weight: 600;
@@ -1031,7 +1031,7 @@ select::-ms-expand {
 .apply {
   background-image: url("../img/home/ban.png");
   min-height: 700px;
-  background-size: cover;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1042,7 +1042,7 @@ select::-ms-expand {
   background-repeat: no-repeat; }
 
 .text-half-apply {
-  padding-left: 21%; }
+  padding-left: 20%; }
 
 .button-half-apply, .text-half-apply {
   padding-bottom: 13%; }
@@ -1063,13 +1063,13 @@ select::-ms-expand {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 40px;
-  font-size: 17px;
+  font-size: 21px;
   padding-top: 2rem; }
 
 .text-p-apply {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   padding-right: 5%; }
 
 .apply-description {
@@ -2339,7 +2339,9 @@ select::-ms-expand {
   .previously .about-title {
     font-size: 1.3rem;
     font-weight: 600;
-    padding: 10% 0; }
+    padding: 10% 0 0 0; }
+  .previously .fotorama-container {
+    margin-top: 0; }
 
   .mobile-title {
     display: block; } }
@@ -2885,7 +2887,10 @@ select::-ms-expand {
     margin-top: 123px; }
 
   .about .img-about-section img {
-    width: 100%; } }
+    width: 100%; }
+
+  .car-tile .car-price .col-6:first-child, .car-tile .car-price .col-6:last-child {
+    font-size: 23px; } }
 @media only screen and (max-width: 767px) {
   .selling-title-container {
     padding: 0 1rem; }
@@ -4261,7 +4266,7 @@ select::-ms-expand {
     bottom: 0;
     width: 100%;
     background: #515151;
-    z-index: 11111; }
+    z-index: 11; }
     .car-detail-button-mobile .container {
       padding: 0; }
     .car-detail-button-mobile.fullscreen {
@@ -4597,6 +4602,19 @@ select::-ms-expand {
     max-width: 50%; }
 
   .used-cars .m-top-100, .workshop .m-top-100, .valeting .m-top-100, .selling .m-top-100, .about .m-top-100, .contact-us .m-top-100 {
-    margin-top: 105px; } }
+    margin-top: 105px; }
+
+  .used-car-items .row {
+    display: flex;
+    justify-content: center; }
+
+  #used-cars.main-wrapper .car-tile {
+    margin-top: 15px; }
+
+  .used-cars #used-cars {
+    background-color: #47494a; }
+
+  #used-cars.main-wrapper .car-tile {
+    max-width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */
