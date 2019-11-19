@@ -68,7 +68,7 @@ select::-ms-expand
   color: #BD1316
 
 .homepage #special-offers-section .owl-carousel.owl-special-offers.owl-loaded.owl-drag
-  max-height: 330px
+  max-height: 350px
 
 #homepage
   overflow: hidden
@@ -87,13 +87,15 @@ select::-ms-expand
         top: 59%
         left: 50%
         margin-right: 50%
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -46%)
 
 @media (min-width: 1700px)
   #homepage #banner #banner-image img
     width: 100%
 
-
+@media (min-width: 2000px)
+  #homepage #banner #banner-image img
+    transform: translate(-50%, -40%)
 //Header
 .header.topnav
   background: #222222
@@ -353,7 +355,7 @@ select::-ms-expand
 
 @media (min-width: 1400px)
   .navbar-expand-md .navbar-nav .nav-link
-    padding: 15px 22px
+    padding: 15px 21px
 
 @media only screen and (max-width: 767px)
   .upper-half-header
@@ -907,6 +909,7 @@ select::-ms-expand
 
 #special-offers .owl-carousel .owl-stage-outer
   width: 102%
+  height: auto!important
 
 //Special Offers
 
@@ -994,7 +997,7 @@ select::-ms-expand
         margin-right: 4px
         width: 25px
   .car-price
-    font-size: 25px
+    font-size: 30px
     border-bottom: 2px solid rgba(0, 0, 0, 0)
     .row
       margin: 0
@@ -1030,9 +1033,9 @@ select::-ms-expand
         font-family: Arial Rounded MT Bold, sans-serif
         line-height: 19px
         border-top-left-radius: 7px
-        font-size: 25px
+        font-size: 30px
         p
-          font-size: 10px
+          font-size: 11px
           font-weight: 600
           font-family: Arial, sans-serif
   .car-desc
@@ -1224,6 +1227,10 @@ select::-ms-expand
   .pay-us-visit .card-body
     padding-left: 0
 
+@media (min-width: 1600px)
+  .apply
+    background-position: top
+    align-items: flex-end
 //pay-us-visit
 
 
@@ -2402,10 +2409,10 @@ select::-ms-expand
   .modal-used-cars-one .modal-used-cars-container
     width: 60%
 
-  .homepage #special-offers-section
-    .owl-carousel.owl-drag .owl-item
-      width: 254px !important
-      margin-right: 14.5px !important
+  //.homepage #special-offers-section
+  //  .owl-carousel.owl-drag .owl-item
+  //    width: 254px !important
+  //    margin-right: 14.5px !important
   .footer
     padding: 2% 0
 
@@ -4046,7 +4053,7 @@ select::-ms-expand
     margin-bottom: 14px
     &.fullscreen
       background-color: rgba(221, 221, 221, 0.5)
-      min-height: 507px
+      min-height: 520px
       padding-top: 10px
       .card
         margin-bottom: 9px
@@ -4823,3 +4830,6 @@ select::-ms-expand
       -ms-flex: 0 0 50%
       flex: 0 0 50%
       max-width: 50%
+
+  .used-cars .m-top-100, .workshop .m-top-100, .valeting .m-top-100, .selling .m-top-100, .about .m-top-100, .contact-us .m-top-100
+    margin-top: 105px
