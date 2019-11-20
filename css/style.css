@@ -1150,7 +1150,11 @@ select::-ms-expand {
 @media (min-width: 1600px) {
   .apply {
     align-items: flex-end;
-    background-size: cover; } }
+    background-size: cover;
+    min-height: 80vh; } }
+@media (min-width: 2000px) {
+  .apply {
+    min-height: 100vh; } }
 .footer {
   background-color: #333;
   color: #ffffff;
