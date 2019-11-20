@@ -45,7 +45,7 @@ select::-ms-expand {
   color: #BD1316; }
 
 .homepage #special-offers-section .owl-carousel.owl-special-offers.owl-loaded.owl-drag {
-  max-height: 350px; }
+  max-height: 380px; }
 
 #homepage {
   overflow: hidden; }
@@ -1149,8 +1149,8 @@ select::-ms-expand {
     padding-left: 0; } }
 @media (min-width: 1600px) {
   .apply {
-    background-position: top;
-    align-items: flex-end; } }
+    align-items: flex-end;
+    background-size: cover; } }
 .footer {
   background-color: #333;
   color: #ffffff;
@@ -4619,3 +4619,5 @@ select::-ms-expand {
 
   #used-cars.main-wrapper .car-tile {
     max-width: 70%; } }
+
+/*# sourceMappingURL=style.css.map */
