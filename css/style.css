@@ -174,7 +174,10 @@ select::-ms-expand {
 .sales-number {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 18px; }
+  font-size: 18px;
+  color: white; }
+  .sales-number:hover {
+    color: white; }
 
 .navbar-collapse.phonebar {
   display: none !important; }
