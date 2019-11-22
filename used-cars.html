@@ -119,23 +119,33 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card first-card">
+
+
+                                        <div class="card">
                                             <div class="card-header" id="headingOne">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn  shadow-none accordion__button"
-                                                            data-toggle="collapse" data-target="#collapseOne"
-                                                            aria-expanded="false" aria-controls="collapseOne">
-                                                        Make
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link shadow-none accordion__button" data-toggle="collapse" data-target="#collapseOne"
+                                                            aria-expanded="true" aria-controls="collapseOne">
+                                                        Search Make & Model
                                                     </button>
-                                                </div>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
                                             </div>
-                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                                    data-parent="#accordion">
+
+                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
                                                 <div class="card-body">
                                                     <div>
-                                                        <label for="make-model" class="m-top-10">Select Make</label>
+                                                        <label for="make-select">Select Make</label>
                                                         <select id="make-select">
                                                             <option value="">Select a Make</option>
+                                                            <option value="">Make 1</option>
+                                                            <option value="">Make 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label for="make-model" class="m-top-10">Select Model</label>
+                                                        <select id="make-model">
+                                                            <option value="">Select a Model</option>
                                                             <option value="">Model 1</option>
                                                             <option value="">Model 2</option>
                                                         </select>
@@ -145,71 +155,477 @@
                                         </div>
                                         <div class="card">
                                             <div class="card-header" id="headingTwo">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn collapsed shadow-none accordion__button"
-                                                            data-toggle="collapse" data-target="#collapseTwo"
-                                                            aria-expanded="false" aria-controls="collapseTwo">
-                                                        Modal
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                                            aria-expanded="true" aria-controls="collapseTwo">
+                                                        Year
                                                     </button>
-                                                </div>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
                                             </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                                    data-parent="#accordion">
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
                                                 <div class="card-body">
                                                     <div>
-                                                        <label for="make-model" class="m-top-10">Select Model</label>
+                                                        <label for="year-from-select">From</label>
+                                                        <select id="year-from-select">
+                                                            <option value="">Select a Year</option>
+                                                            <option value="">Year 1</option>
+                                                            <option value="">Year 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label for="year-to-model">To</label>
                                                         <select id="year-to-model">
-                                                            <option value="">Select a Model</option>
-                                                            <option value="">Model 1</option>
-                                                            <option value="">Model 2</option>
+                                                            <option value="">Select a Year</option>
+                                                            <option value="">Year 1</option>
+                                                            <option value="">Year 2</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-    
-                                        <div class="card card-year">
-                                            <div class="card-header" id="headingFour">
-                                                <div class="mb-0 accordion__title">
-                                                    <button class="btn collapsed shadow-none accordion__button"
-                                                            data-toggle="collapse" data-target="#collapseFour"
-                                                            aria-expanded="false" aria-controls="collapseFour">
-                                                        Year
+                                        <div class="card">
+                                            <div class="card-header" id="headingThree">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                        Price
                                                     </button>
-    
-    
-                                                </div>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
                                             </div>
-                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                                    data-parent="#accordion">
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
                                                 <div class="card-body">
-                                                    <div>
-                                                        <label for="make-model" class="m-top-10">From</label>
-                                                        <select id="year-from-select">
-                                                            <option value="">Select a Year</option>
-                                                            <option value="">Model 1</option>
-                                                            <option value="">Model 2</option>
-                                                        </select>
-    
+                                                   
+                                                    <div class="total-price">
                                                         <div>
-                                                            <label for="make-model" class="m-top-10">To</label>
-                                                            <select id="make-model">
-                                                                <option value="">Select a Year</option>
-                                                                <option value="">Model 1</option>
-                                                                <option value="">Model 2</option>
+                                                            <label for="price-from-select">From</label>
+                                                            <select id="price-from-select">
+                                                                <option value="">(any)</option>
+                                                                <option value="">Option 1</option>
+                                                                <option value="">Option 2</option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <label for="price-to-model" class="m-top-10">To</label>
+                                                            <select id="price-to-model">
+                                                                <option value="">(any)</option>
+                                                                <option value="">Option 1</option>
+                                                                <option value="">Option 2</option>
                                                             </select>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
-    
+
+                                        <div class="card">
+                                            <div class="card-header" id="heading-Mileage">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link" data-toggle="collapse" data-target="#collapse-Mileage"
+                                                            aria-expanded="true" aria-controls="collapse-Mileage">
+                                                        Mileage
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+
+                                            <div id="collapse-Mileage" class="collapse" aria-labelledby="heading-Mileage">
+                                                <div class="card-body">
+                                                    <label for="mileage-select">Max Mileage</label>
+                                                    <select id="mileage-select">
+                                                        <option value="">Select Mileage</option>
+                                                        <option value="">Make 1</option>
+                                                        <option value="">Make 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="heading-body-type">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapse-body-type" aria-expanded="true"
+                                                            aria-controls="collapse-body-type">
+                                                        Body Type
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapse-body-type" class="collapse" aria-labelledby="heading-body-type">
+                                                <div class="card-body">
+                                                    <div id="body-type-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Body Type<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 7 Seater<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 8+ Seater<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Convertible<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Coupe<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Estate<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 7 Seater<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 8+ Seater<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Convertible<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Coupe<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 7 Seater<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 8+ Seater<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Convertible<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Coupe<br></div>
+                                                    </div>
+                                                    <button class="button-show">Show all Body Types <i class="fas fa-arrow-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="heading-fuel-type">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapse-fuel-type" aria-expanded="true"
+                                                            aria-controls="collapse-fuel-type">
+                                                        Fuel Type
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapse-fuel-type" class="collapse" aria-labelledby="heading-fuel-type">
+                                                <div class="card-body">
+                                                    <div id="fuel-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Fuel Type<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Petrol<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Diesel<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Hybrid<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Electric<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> LPG<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Petrol<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Diesel<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Hybrid<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Electric<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> LPG<br></div>
+                                                    </div>
+                                                    <button class="button-show">Show all Fuel Types<i class="fas fa-arrow-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="heading-engine">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link" data-toggle="collapse" data-target="#collapse-engine"
+                                                            aria-expanded="true" aria-controls="collapse-engine">
+                                                        Engine Size
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+
+                                            <div id="collapse-engine" class="collapse" aria-labelledby="heading-engine">
+                                                <div class="card-body">
+                                                    <div>
+                                                        <label for="capacity-from-select">Capacity From</label>
+                                                        <select id="capacity-from-select">
+                                                            <option value="">1.2 Litres</option>
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label for="capacity-to-model" class="m-top-10">To</label>
+                                                        <select id="capacity-to-model">
+                                                            <option value="">4+ Litres</option>
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="heading-Fuel">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapse-Fuel" aria-expanded="true" aria-controls="collapse-Fuel">
+                                                        Fuel Consumption
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapse-Fuel" class="collapse" aria-labelledby="heading-Fuel">
+                                                <div class="card-body">
+                                                    <div>
+                                                        <label for="mpg-from-select">MPG From</label>
+                                                        <select id="mpg-from-select">
+                                                            <option value="">30 mpg</option>
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label for="mpg-to-model" class="m-top-10">To</label>
+                                                        <select id="mpg-to-model">
+                                                            <option value="">70+ Litres</option>
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="heading-Gearbox">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapse-Gearbox" aria-expanded="true"
+                                                            aria-controls="collapse-Gearbox">
+                                                        Gearbox
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapse-Gearbox" class="collapse" aria-labelledby="heading-Gearbox">
+                                                <div class="card-body">
+                                                    <div id="gear-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Gearbox Type<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Manual<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Automatic<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> CVT<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Semi-Auto<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Other<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Manual<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Automatic<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> CVT<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Semi-Auto<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Other<br></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="heading-colour">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link" data-toggle="collapse" data-target="#collapse-colour"
+                                                            aria-expanded="true" aria-controls="collapse-colour">
+                                                        Colour
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+
+                                            <div id="collapse-colour" class="collapse" aria-labelledby="heading-colour">
+                                                <div class="card-body">
+                                                    <div id="colour-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Colour<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Black<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Blue<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Brown<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Green<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Orange<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Black<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Blue<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Brown<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Green<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Orange<br></div>
+                                                    </div>
+                                                    <button class="button-show">Show all Colours<i class="fas fa-arrow-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="heading-doors">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapse-doors" aria-expanded="true"
+                                                            aria-controls="collapse-doors">
+                                                        Doors
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapse-doors" class="collapse" aria-labelledby="heading-doors">
+                                                <div class="card-body">
+                                                    <div id="doors-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Doors<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 2<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 3<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 4<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 5<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 6<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 7<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 8<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 9<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 10<br></div>
+                                                    </div>
+                                                    <button class="button-show">Show all Doors<i class="fas fa-arrow-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingSeats">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseSeats" aria-expanded="true" aria-controls="collapseSeats">
+                                                        Seats
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapseSeats" class="collapse" aria-labelledby="headingSeats">
+                                                <div class="card-body">
+                                                    <div id="seats-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Doors<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 2<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 3<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 4<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 5<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 6<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 7<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 8<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 9<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 10<br></div>
+                                                    </div>
+                                                    <button class="button-show">Show all Seats<i class="fas fa-arrow-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="headingSafety">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link" data-toggle="collapse" data-target="#collapseSafety"
+                                                            aria-expanded="true" aria-controls="collapseSafety">
+                                                        Safety Rating
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+
+                                            <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety">
+                                                <div class="card-body">
+                                                    <div id="safety-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Safety Rating<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 1 Star or More<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 2 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 3 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 4 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 5 Stars<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 1 Star or More<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 2 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 3 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 4 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 5 Stars<br></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="headingAcceleration">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseAcceleration" aria-expanded="true"
+                                                            aria-controls="collapseAcceleration">
+                                                        Acceleration
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapseAcceleration" class="collapse" aria-labelledby="headingAcceleration">
+                                                <div class="card-body">
+                                                    <div id="acceleration-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Acceleration<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 0-5s (0-60mph)<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 5-8s (0-60mph)<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 8-12s (0-60mph)<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 12+s (0-60mph)<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 16+s (0-60mph)<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 20+s (0-60mph)<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 25+s (0-60mph)<br></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingEngine">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseEngine" aria-expanded="true"
+                                                            aria-controls="collapseEngine">
+                                                        Engine Power
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapseEngine" class="collapse" aria-labelledby="headingEngine">
+                                                <div class="card-body">
+                                                    <div id="engine-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any BHP<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 0-70 BHP<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 71-100 BHP<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 101-150 BHP<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 151-200 BHP<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 201-250 BHP<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 251-300 BHP<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 301+ BHP<br></div>
+                                                    </div>
+                                                    <button class="button-show">Show all Powers<i class="fas fa-arrow-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="headingEnvironmental">
+                                                <h5 class="mb-0">
+                                                    <button class="btn shadow-none accordion__button btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseEnvironmental" aria-expanded="true"
+                                                            aria-controls="collapseEnvironmental">
+                                                        Environmental
+                                                    </button>
+                                                </h5>
+                                                <span class="mobile-accordion-filter-value">Any</span>
+                                            </div>
+                                            <div id="collapseEnvironmental" class="collapse" aria-labelledby="headingEnvironmental">
+                                                <div class="card-body">
+                                                    <div id="enviroment-checkboxes" class="checkbox-container">
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> Any Rating<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 1 Star or More<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 2 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 3 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 4 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 5 Stars<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 1 Star or More<br></div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 2 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 3 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 4 Stars or More<br>
+                                                        </div>
+                                                        <div class="text-checkbox"><input type="checkbox" value=""> 5 Stars<br></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                         <div class="mobile-accordion-filter">
                                             <div class="reset-block">
                                                 <img src="img/header/reset.svg" alt=""/>
                                                 <p>Reset</p>
                                             </div>
-    
+
                                             <div class="button-done-block">
                                                 Done
                                             </div>
@@ -217,8 +633,11 @@
                                     </div>
                                 </div>
                             </div>
+                    </nav>
                         </div>
-    
+
+
+
                         <div class="navbar-collapse collapse darck-btn-phone">
                             <ul class="navbar-nav ml-auto py-md-0  darck-btn">
                                 <li>Phone</li>
