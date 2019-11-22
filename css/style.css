@@ -492,8 +492,17 @@ select::-ms-expand {
     border-radius: 0;
     border: none;
     border-bottom: 1px solid #DADCDD !important; }
+  .menu-search .mobile-accordion-filter-value {
+    color: #BBB;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    margin-right: 10px; }
   .menu-search .card-header {
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #D1D3D4; }
   .menu-search .accordion__button {
     padding: 0.75rem 1.25rem;
     text-transform: uppercase;
@@ -513,8 +522,7 @@ select::-ms-expand {
       vertical-align: middle; }
   .menu-search .btn.shadow-none.accordion__button {
     background-color: #F7F7F9;
-    color: #333;
-    border-bottom: 1.5px solid #D1D3D4; }
+    color: #333; }
   .menu-search .accordion__wrapper {
     margin-top: 0; }
   .menu-search .first-card .accordion__button {
@@ -568,9 +576,11 @@ select::-ms-expand {
   .menu-search .btn.shadow-none.accordion__button {
     background-image: url(../img/chevron-down.png);
     background-position: center left 10px;
-    background-size: 6.5%;
+    background-size: 14px;
     background-repeat: no-repeat;
-    padding: 0.75rem 3rem; }
+    padding: 1rem 3rem; }
+    .menu-search .btn.shadow-none.accordion__button:hover {
+      text-decoration: initial; }
 
   .menu-search-results .mobile-accordion-filter {
     display: flex;
@@ -612,8 +622,9 @@ select::-ms-expand {
       color: #D20709;
       font-family: "Montserrat", sans-serif;
       font-size: 16px;
-      font-weight: 300; }
-  .menu-search-results #make-select, .menu-search-results #make-model, .menu-search-results #year-from-select, .menu-search-results #year-to-model {
+      font-weight: 300;
+      margin-top: 15px; }
+  .menu-search-results #make-select, .menu-search-results #make-model, .menu-search-results #year-from-select, .menu-search-results #year-to-model, .menu-search-results #price-from-select, .menu-search-results #price-to-model, .menu-search-results #deposit-amount-select, .menu-search-results #price-from-monthly-select, .menu-search-results #price-to-monthly-select, .menu-search-results #mileage-select, .menu-search-results #capacity-from-select, .menu-search-results #capacity-to-model, .menu-search-results #mpg-from-select, .menu-search-results #mpg-to-model {
     width: 100%;
     height: 40px;
     background-color: white;
@@ -631,6 +642,23 @@ select::-ms-expand {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 300; }
+  .menu-search-results #collapse-body-type .checkbox-container, .menu-search-results #collapse-fuel-type .checkbox-container, .menu-search-results #collapse-Gearbox .checkbox-container, .menu-search-results #collapse-colour .checkbox-container, .menu-search-results #collapse-doors .checkbox-container, .menu-search-results #collapseSeats .checkbox-container, .menu-search-results #collapseSafety .checkbox-container, .menu-search-results #collapseAcceleration .checkbox-container, .menu-search-results #collapseEngine .checkbox-container, .menu-search-results #collapseEnvironmental .checkbox-container {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #CCCCCC;
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px; }
+  .menu-search-results .button-show {
+    background: none;
+    border: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+    text-align: right; }
+    .menu-search-results .button-show .fas.fa-arrow-down {
+      margin-left: 5px; }
 
   .navbar-collapse.menubar.menubar-navbar .nav-link {
     width: 100%;
